@@ -32,7 +32,7 @@ export default function Navbar() {
     <>
       <nav className={`fixed top-0 left-0 right-0 z-[100] transition-all duration-300 ${scrolled ? 'py-0' : 'py-0'}`}
         style={{ background: scrolled ? 'rgba(7,8,16,0.98)' : 'linear-gradient(180deg, rgba(7,8,16,0.95) 0%, transparent 100%)', backdropFilter: scrolled ? 'blur(20px)' : 'none', borderBottom: scrolled ? '1px solid rgba(255,215,0,0.12)' : 'none' }}>
-        <div className="max-w-screen-xl mx-auto px-6 h-16 flex items-center gap-0">
+        <div className="max-w-screen-2xl mx-auto px-4 xl:px-6 h-16 flex items-center gap-2">
 
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2.5 mr-8 flex-none group">
@@ -47,17 +47,20 @@ export default function Navbar() {
           </Link>
 
           {/* Desktop Nav */}
-          <div className="hidden lg:flex items-center gap-0 flex-1 overflow-hidden">
+          <div className="hidden xl:flex items-center gap-1 flex-1 min-w-0">
             {NAV_LINKS.map(({ label, href }) => (
-              <Link key={label} href={href}
-                className="text-gray-400 hover:text-yellow-400 text-xs font-semibold font-rajdhani tracking-widest uppercase px-3 py-2 rounded-lg hover:bg-yellow-400/8 transition-all whitespace-nowrap">
+              <Link
+                key={label}
+                href={href}
+                className="text-gray-400 hover:text-yellow-400 text-[11px] font-semibold font-rajdhani tracking-wide uppercase px-2 xl:px-3 py-2 rounded-lg hover:bg-yellow-400/8 transition-all whitespace-nowrap"
+              >
                 {label}
               </Link>
             ))}
           </div>
 
           {/* Right side */}
-          <div className="ml-auto flex items-center gap-3">
+          <div className="ml-auto flex items-center gap-2 xl:gap-3 flex-none">
             {/* Language toggle */}
             <div className="hidden sm:flex items-center bg-surface border border-border rounded-lg overflow-hidden text-xs">
               <button onClick={toggleLanguage} className={`px-3 py-1.5 font-bold font-rajdhani transition-all ${language === 'en' ? 'bg-yellow-500 text-black' : 'text-gray-400 hover:text-white'}`}>EN</button>
@@ -66,9 +69,9 @@ export default function Navbar() {
 
             {/* Search */}
             <button onClick={openSearch}
-              className="flex items-center gap-2 px-4 py-2 rounded-lg border border-yellow-400/20 text-yellow-400 bg-yellow-400/8 hover:bg-yellow-400/15 hover:border-yellow-400/40 transition-all text-xs font-bold font-rajdhani tracking-wide">
+              className="flex items-center gap-2 px-3 xl:px-4 py-2 rounded-lg border border-yellow-400/20 text-yellow-400 bg-yellow-400/8 hover:bg-yellow-400/15 hover:border-yellow-400/40 transition-all text-xs font-bold font-rajdhani tracking-wide">
               <span>🔍</span>
-              <span className="hidden sm:block">Search</span>
+              <span className="hidden xl:block">Search</span>
               <span className="hidden md:block text-[10px] text-yellow-400/50 border border-yellow-400/20 rounded px-1">⌘K</span>
             </button>
 
