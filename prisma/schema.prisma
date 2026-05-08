@@ -1,0 +1,430 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum ContentType {
+  MOVIE
+  ANIME
+  SERIES
+  KDRAMA
+  CARTOON
+  HOLLYWOOD
+  DOCUMENTARY
+}
+
+enum ContentStatus {
+  ONGOING
+  COMPLETED
+  UPCOMING
+  HIATUS
+  CANCELLED
+}
+
+enum OttPlatform {
+  NETFLIX
+  AMAZON_PRIME
+  HOTSTAR
+  ZEE5
+  SONY_LIV
+  AHAN
+  MXPLAYER
+  VOOT
+  CRUNCHYROLL
+  FUNIMATION
+  VIKI
+  OTHER
+}
+
+enum UserRole {
+  USER
+  MODERATOR
+  ADMIN
+  SUPER_ADMIN
+}
+
+model User {
+  id             String         @id @default(cuid())
+  email          String         @unique
+  username       String         @unique
+  displayName    String
+  password       String?
+  avatar         String?
+  role           UserRole       @default(USER)
+  bio            String?
+  googleId       String?        @unique
+  isVerified     Boolean        @default(false)
+  createdAt      DateTime       @default(now())
+  updatedAt      DateTime       @updatedAt
+  lastActive     DateTime       @default(now())
+
+  reviews        Review[]
+  ratings        Rating[]
+  watchlist      WatchlistItem[]
+  favorites      Favorite[]
+  watchHistory   WatchHistory[]
+  notifications  Notification[]
+  following      Follow[]       @relation("Follower")
+  followers      Follow[]       @relation("Following")
+  badges         UserBadge[]
+  sessions       Session[]
+
+  @@index([email])
+  @@index([username])
+}
+
+model Session {
+  id        String   @id @default(cuid())
+  userId    String
+  token     String   @unique
+  expiresAt DateTime
+  createdAt DateTime @default(now())
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([token])
+}
+
+model Content {
+  id               String        @id @default(cuid())
+  slug             String        @unique
+  type             ContentType
+  status           ContentStatus @default(COMPLETED)
+
+  titleEnglish     String
+  titleTelugu      String?
+  titleOriginal    String?
+  descriptionEnglish  String?   @db.Text
+  descriptionTelugu   String?   @db.Text
+  storyExplanation    String?   @db.Text
+  endingExplanation   String?   @db.Text
+  funFacts         Json?
+
+  poster           String?
+  banner           String?
+  trailer          String?
+  screenshots      String[]
+
+  year             Int?
+  releaseDate      DateTime?
+  endDate          DateTime?
+  runtime          Int?
+  totalEpisodes    Int?
+  totalSeasons     Int?
+
+  imdbRating       Float?
+  malRating        Float?
+  tvRating         Float?
+  ageRating        String?
+
+  studio           String?
+  network          String?
+  country          String        @default("India")
+  language         String        @default("Telugu")
+
+  teluguDubAvail   Boolean       @default(false)
+  teluguSubAvail   Boolean       @default(false)
+  hindiDubAvail    Boolean       @default(false)
+
+  isFeatured       Boolean       @default(false)
+  isTrending       Boolean       @default(false)
+  isTopRated       Boolean       @default(false)
+  trendingScore    Float         @default(0)
+  popularityScore  Float         @default(0)
+  viewCount        Int           @default(0)
+
+  createdAt        DateTime      @default(now())
+  updatedAt        DateTime      @updatedAt
+
+  genres           ContentGenre[]
+  cast             CastMember[]
+  streamingLinks   StreamingLink[]
+  reviews          Review[]
+  ratings          Rating[]
+  watchlist        WatchlistItem[]
+  favorites        Favorite[]
+  watchHistory     WatchHistory[]
+  episodes         Episode[]
+  seasons          Season[]
+  characters       Character[]
+  recommendations  ContentRelation[] @relation("Source")
+  recommendedBy    ContentRelation[] @relation("Target")
+  universe         UniverseContent[]
+  tags             ContentTag[]
+  directors        Director[]
+
+  @@index([type])
+  @@index([slug])
+  @@index([isFeatured])
+  @@index([isTrending])
+  @@index([trendingScore])
+  @@index([popularityScore])
+  @@index([year])
+  @@index([teluguDubAvail])
+}
+
+model Genre {
+  id       String         @id @default(cuid())
+  name     String         @unique
+  nameTe   String?
+  slug     String         @unique
+  icon     String?
+  color    String?
+  contents ContentGenre[]
+}
+
+model ContentGenre {
+  contentId String
+  genreId   String
+  content   Content @relation(fields: [contentId], references: [id], onDelete: Cascade)
+  genre     Genre   @relation(fields: [genreId], references: [id], onDelete: Cascade)
+  @@id([contentId, genreId])
+}
+
+model Tag {
+  id       String       @id @default(cuid())
+  name     String       @unique
+  nameTe   String?
+  contents ContentTag[]
+}
+
+model ContentTag {
+  contentId String
+  tagId     String
+  content   Content @relation(fields: [contentId], references: [id], onDelete: Cascade)
+  tag       Tag     @relation(fields: [tagId], references: [id], onDelete: Cascade)
+  @@id([contentId, tagId])
+}
+
+model Director {
+  id        String    @id @default(cuid())
+  name      String
+  nameTe    String?
+  photo     String?
+  bio       String?   @db.Text
+  contents  Content[]
+}
+
+model CastMember {
+  id          String   @id @default(cuid())
+  contentId   String
+  name        String
+  nameTe      String?
+  role        String?
+  character   String?
+  photo       String?
+  isVoiceActor Boolean @default(false)
+  order       Int      @default(0)
+  content     Content  @relation(fields: [contentId], references: [id], onDelete: Cascade)
+  @@index([contentId])
+}
+
+model Character {
+  id          String  @id @default(cuid())
+  contentId   String
+  name        String
+  nameTe      String?
+  description String? @db.Text
+  photo       String?
+  voiceActor  String?
+  isMain      Boolean @default(false)
+  content     Content @relation(fields: [contentId], references: [id], onDelete: Cascade)
+  @@index([contentId])
+}
+
+model StreamingLink {
+  id          String      @id @default(cuid())
+  contentId   String
+  platform    OttPlatform
+  url         String?
+  isAvailable Boolean     @default(true)
+  isTeluguDub Boolean     @default(false)
+  isPremium   Boolean     @default(true)
+  content     Content     @relation(fields: [contentId], references: [id], onDelete: Cascade)
+  @@unique([contentId, platform])
+}
+
+model Season {
+  id         String    @id @default(cuid())
+  contentId  String
+  number     Int
+  title      String?
+  titleTe    String?
+  episodes   Int?
+  releaseDate DateTime?
+  poster     String?
+  content    Content   @relation(fields: [contentId], references: [id], onDelete: Cascade)
+  episodeList Episode[]
+  @@unique([contentId, number])
+}
+
+model Episode {
+  id          String   @id @default(cuid())
+  contentId   String
+  seasonId    String?
+  number      Int
+  title       String?
+  titleTe     String?
+  description String?  @db.Text
+  runtime     Int?
+  airDate     DateTime?
+  thumbnail   String?
+  content     Content  @relation(fields: [contentId], references: [id], onDelete: Cascade)
+  season      Season?  @relation(fields: [seasonId], references: [id])
+  @@unique([contentId, seasonId, number])
+}
+
+model Review {
+  id          String   @id @default(cuid())
+  contentId   String
+  userId      String
+  title       String?
+  body        String   @db.Text
+  rating      Float?
+  language    String   @default("te")
+  likes       Int      @default(0)
+  isApproved  Boolean  @default(true)
+  isSpoiler   Boolean  @default(false)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  content     Content  @relation(fields: [contentId], references: [id], onDelete: Cascade)
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  @@index([contentId])
+  @@index([userId])
+}
+
+model Rating {
+  contentId String
+  userId    String
+  score     Float
+  createdAt DateTime @default(now())
+  content   Content @relation(fields: [contentId], references: [id], onDelete: Cascade)
+  user      User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+  @@id([contentId, userId])
+}
+
+model WatchlistItem {
+  contentId String
+  userId    String
+  createdAt DateTime @default(now())
+  content   Content  @relation(fields: [contentId], references: [id], onDelete: Cascade)
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  @@id([contentId, userId])
+}
+
+model Favorite {
+  contentId String
+  userId    String
+  createdAt DateTime @default(now())
+  content   Content  @relation(fields: [contentId], references: [id], onDelete: Cascade)
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  @@id([contentId, userId])
+}
+
+model WatchHistory {
+  id          String   @id @default(cuid())
+  contentId   String
+  userId      String
+  episodeId   String?
+  progress    Float    @default(0)
+  completedAt DateTime?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  content     Content  @relation(fields: [contentId], references: [id], onDelete: Cascade)
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  @@unique([contentId, userId])
+}
+
+model ContentRelation {
+  sourceId String
+  targetId String
+  type     String  @default("SIMILAR")
+  source   Content @relation("Source", fields: [sourceId], references: [id], onDelete: Cascade)
+  target   Content @relation("Target", fields: [targetId], references: [id], onDelete: Cascade)
+  @@id([sourceId, targetId])
+}
+
+model Universe {
+  id          String            @id @default(cuid())
+  name        String            @unique
+  nameTe      String?
+  description String?           @db.Text
+  logo        String?
+  color       String?
+  contents    UniverseContent[]
+}
+
+model UniverseContent {
+  universeId String
+  contentId  String
+  order      Int?
+  phase      String?
+  universe   Universe @relation(fields: [universeId], references: [id], onDelete: Cascade)
+  content    Content  @relation(fields: [contentId], references: [id], onDelete: Cascade)
+  @@id([universeId, contentId])
+}
+
+model Follow {
+  followerId  String
+  followingId String
+  createdAt   DateTime @default(now())
+  follower    User @relation("Follower", fields: [followerId], references: [id], onDelete: Cascade)
+  following   User @relation("Following", fields: [followingId], references: [id], onDelete: Cascade)
+  @@id([followerId, followingId])
+}
+
+model Badge {
+  id          String      @id @default(cuid())
+  name        String      @unique
+  nameTe      String?
+  description String?
+  icon        String?
+  color       String?
+  users       UserBadge[]
+}
+
+model UserBadge {
+  userId    String
+  badgeId   String
+  earnedAt  DateTime @default(now())
+  user      User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+  badge     Badge  @relation(fields: [badgeId], references: [id], onDelete: Cascade)
+  @@id([userId, badgeId])
+}
+
+model Notification {
+  id        String   @id @default(cuid())
+  userId    String
+  type      String
+  title     String
+  body      String?
+  link      String?
+  isRead    Boolean  @default(false)
+  createdAt DateTime @default(now())
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  @@index([userId, isRead])
+}
+
+model SearchLog {
+  id        String   @id @default(cuid())
+  query     String
+  count     Int      @default(1)
+  userId    String?
+  createdAt DateTime @default(now())
+  @@index([query])
+  @@index([count])
+}
+
+model Analytics {
+  id        String   @id @default(cuid())
+  event     String
+  entityId  String?
+  entityType String?
+  metadata  Json?
+  createdAt DateTime @default(now())
+  @@index([event])
+  @@index([entityId])
+}
