@@ -190,7 +190,7 @@ async function main() {
   for (const content of contents) {
     await prisma.content.upsert({
       where: { slug: content.slug },
-      update: {},
+      update: content,
       create: content,
     })
   }
