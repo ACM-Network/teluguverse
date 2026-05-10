@@ -4,7 +4,6 @@ import Link from 'next/link'
 import { ContentItem } from '@/types'
 
 const TYPE_COLORS: Record<string,string> = { MOVIE:'#E50914',ANIME:'#a855f7',SERIES:'#3b82f6',KDRAMA:'#ec4899',CARTOON:'#22c55e',HOLLYWOOD:'#f59e0b',DOCUMENTARY:'#06b6d4' }
-const TYPE_EMOJIS: Record<string,string> = { MOVIE:'🎬',ANIME:'⚡',SERIES:'📺',KDRAMA:'🌸',CARTOON:'🎭',HOLLYWOOD:'🎪',DOCUMENTARY:'📽️' }
 
 export default function TrendingSection() {
   const [items, setItems] = useState<ContentItem[]>([])
@@ -21,7 +20,7 @@ export default function TrendingSection() {
     <div>
       <div className="flex items-center gap-3 mb-7">
         <div className="w-1 h-7 rounded-full" style={{ background: 'linear-gradient(180deg,#FFD700,#FFA500)' }} />
-        <h2 className="font-cinzel text-xl font-bold text-white tracking-wide">📈 Top Rankings</h2>
+        <h2 className="font-cinzel text-xl font-bold text-white tracking-wide">Top Rankings</h2>
       </div>
       <div className="space-y-2">
         {loading ? (
@@ -35,7 +34,9 @@ export default function TrendingSection() {
             </span>
             <div className="w-10 h-14 rounded-lg flex items-center justify-center text-xl flex-none"
               style={{ background:`${TYPE_COLORS[item.type]||'#9CA3AF'}18`, border:`1px solid ${TYPE_COLORS[item.type]||'#9CA3AF'}30` }}>
-              {TYPE_EMOJIS[item.type]||'🎬'}
+              <span className="text-white font-bold text-sm">
+                {item.type.charAt(0)}
+              </span>
             </div>
             <div className="flex-1 min-w-0">
               <p className="text-white text-sm font-bold font-rajdhani truncate group-hover:text-yellow-400 transition-colors">{item.titleEnglish}</p>
