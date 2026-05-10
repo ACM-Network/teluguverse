@@ -1,4 +1,5 @@
 import { PrismaClient, ContentType, ContentStatus } from '@prisma/client'
+import bcrypt from 'bcryptjs'
 
 const prisma = new PrismaClient()
 
@@ -32,6 +33,8 @@ async function main() {
       slug: 'kalki-2898-ad',
       type: ContentType.MOVIE,
       status: ContentStatus.COMPLETED,
+      poster: 'https://wallpapercave.com/wp/wp15542527.png',
+      banner: 'https://wallpapercave.com/wp/wp15542527.png',
       titleEnglish: 'Kalki 2898 AD',
       titleTelugu: 'కల్కి 2898 AD',
       descriptionEnglish: 'Set in a dystopian future in 2898 AD, the story follows the mythological figure of Kalki, the 10th avatar of Vishnu, and a fierce warrior named Bhairava.',
@@ -80,6 +83,8 @@ async function main() {
       slug: 'attack-on-titan',
       type: ContentType.ANIME,
       status: ContentStatus.COMPLETED,
+      poster: 'https://wallpapercave.com/wp/wp8115145.png',
+      banner: 'https://wallpapercave.com/wp/wp8115145.png',
       titleEnglish: 'Attack on Titan',
       titleTelugu: 'ఎరేన్ యగర్ పోరాటం',
       titleOriginal: 'Shingeki no Kyojin',
@@ -105,6 +110,8 @@ async function main() {
       slug: 'demon-slayer',
       type: ContentType.ANIME,
       status: ContentStatus.ONGOING,
+      poster: 'https://wallpaperaccess.com/full/5627712.jpg',
+      banner: 'https://wallpaperaccess.com/full/5627712.jpg',
       titleEnglish: 'Demon Slayer',
       titleTelugu: 'కిమెత్సు నో యైబా',
       titleOriginal: 'Kimetsu no Yaiba',
@@ -130,6 +137,8 @@ async function main() {
       slug: 'squid-game',
       type: ContentType.KDRAMA,
       status: ContentStatus.COMPLETED,
+      poster: 'https://images6.alphacoders.com/119/1191374.jpg',
+      banner: 'https://images6.alphacoders.com/119/1191374.jpg',
       titleEnglish: 'Squid Game',
       titleTelugu: 'స్క్విడ్ గేమ్',
       titleOriginal: '오징어 게임',
@@ -154,6 +163,8 @@ async function main() {
       slug: 'crash-landing-on-you',
       type: ContentType.KDRAMA,
       status: ContentStatus.COMPLETED,
+      poster: 'https://upload.wikimedia.org/wikipedia/en/5/5e/Crash_Landing_on_You_poster.png',
+      banner: 'https://upload.wikimedia.org/wikipedia/en/5/5e/Crash_Landing_on_You_poster.png',
       titleEnglish: 'Crash Landing on You',
       titleTelugu: 'నీపై వాలిన నా హృదయం',
       titleOriginal: '사랑의 불시착',
@@ -209,7 +220,6 @@ async function main() {
   console.log('✅ Streaming links seeded')
 
   // Sample admin user
-  const bcrypt = require('bcryptjs')
   const hashedPassword = await bcrypt.hash('admin123456', 12)
   await prisma.user.upsert({
     where: { email: 'admin@teluguverse.com' },
