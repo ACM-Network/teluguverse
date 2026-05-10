@@ -25,9 +25,10 @@ const SLIDES = [
     bgGrad: 'linear-gradient(125deg, #2a0e00 0%, #1a0800 35%, #0d0510 65%, #070810 100%)',
     glowColor: 'rgba(255,107,0,0.18)',
     glowColor2: 'rgba(255,165,0,0.10)',
-    // Using CSS art / emoji as placeholder — in production swap with real poster URL
-    visual: { emoji: '🔥', bg: 'linear-gradient(145deg,#3d1200,#1f0800,#0d0204)' },
-  },
+    visual: {
+      poster: 'https://wallpapercave.com/wp/wp15542527.png'
+    },
+    },
   {
     id: '2',
     slug: 'attack-on-titan',
@@ -47,8 +48,10 @@ const SLIDES = [
     bgGrad: 'linear-gradient(125deg, #200000 0%, #140000 35%, #0a020d 65%, #070810 100%)',
     glowColor: 'rgba(220,38,38,0.20)',
     glowColor2: 'rgba(185,28,28,0.10)',
-    visual: { emoji: '⚔️', bg: 'linear-gradient(145deg,#2d0000,#140000,#060208)' },
-  },
+    visual: {
+      poster: 'https://wallpapercave.com/wp/wp8115145.png'
+    },
+    },
   {
     id: '3',
     slug: 'squid-game',
@@ -68,8 +71,10 @@ const SLIDES = [
     bgGrad: 'linear-gradient(125deg, #1a0018 0%, #10000e 35%, #080210 65%, #070810 100%)',
     glowColor: 'rgba(236,72,153,0.18)',
     glowColor2: 'rgba(168,85,247,0.10)',
-    visual: { emoji: '🦑', bg: 'linear-gradient(145deg,#260020,#100012,#050208)' },
-  },
+    visual: {
+      poster: 'https://images6.alphacoders.com/119/1191374.jpg'
+    },
+    },
   {
     id: '4',
     slug: 'pushpa-the-rule',
@@ -89,8 +94,10 @@ const SLIDES = [
     bgGrad: 'linear-gradient(125deg, #1a0500 0%, #0f0200 35%, #08040d 65%, #070810 100%)',
     glowColor: 'rgba(239,68,68,0.18)',
     glowColor2: 'rgba(245,158,11,0.10)',
-    visual: { emoji: '🌹', bg: 'linear-gradient(145deg,#2d0800,#180400,#060108)' },
-  },
+    visual: {
+      poster: 'https://4kwallpapers.com/images/walls/thumbs_3t/17953.jpg'
+    },
+    },
   {
     id: '5',
     slug: 'goblin',
@@ -110,8 +117,10 @@ const SLIDES = [
     bgGrad: 'linear-gradient(125deg, #0e0020 0%, #07001a 35%, #050212 65%, #070810 100%)',
     glowColor: 'rgba(124,58,237,0.20)',
     glowColor2: 'rgba(139,92,246,0.10)',
-    visual: { emoji: '🔮', bg: 'linear-gradient(145deg,#180030,#0a0018,#040210)' },
-  },
+    visual: {
+      poster: 'https://wallpapercave.com/wp/wp5709960.jpg'
+    },
+    },
 ]
 
 const OTT_COLORS: Record<string, string> = {
@@ -264,9 +273,11 @@ export default function HeroSection() {
               style={{ boxShadow: `0 40px 120px ${slide.accentColor}30, 0 0 0 1px ${slide.accentColor}25` }}>
               <div className="absolute inset-0 flex items-center justify-center"
                 style={{ background: slide.visual.bg }}>
-                <span className="text-[140px] select-none" style={{ filter: 'drop-shadow(0 20px 60px rgba(0,0,0,0.8))' }}>
-                  {slide.visual.emoji}
-                </span>
+                <img
+                  src={slide.visual.poster}
+                  alt={slide.title}
+                  className="w-full h-full object-cover"
+                />
               </div>
               {/* Poster shimmer */}
               <div className="absolute inset-0"
