@@ -4,7 +4,11 @@ import ContentDetailPage from '@/components/content/ContentDetailPage'
 
 async function getContent(slug: string) {
   try {
-    const baseUrl = process.env.NEXT_PUBLIC_APP_URL || 'http://localhost:3000'
+    const baseUrl =
+      process.env.NEXT_PUBLIC_APP_URL ||
+      (process.env.VERCEL_URL
+        ? `https://${process.env.VERCEL_URL}`
+        : 'http://localhost:3000')
     const [contentRes, similarRes] = await Promise.all([
       fetch(`${baseUrl}/api/content/${slug}`, { next: { revalidate: 3600 } }),
       fetch(`${baseUrl}/api/content/${slug}/similar`, { next: { revalidate: 3600 } }),
