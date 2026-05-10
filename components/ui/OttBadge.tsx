@@ -1,6 +1,6 @@
 const OTT_CONFIG: Record<string, { color: string; bg: string; label: string }> = {
   NETFLIX: { color: '#E50914', bg: 'rgba(229,9,20,0.15)', label: 'Netflix' },
-  AMAZON_PRIME: { color: '#00A8E0', bg: 'rgba(0,168,224,0.15)', label: 'Prime Video' },
+  PRIME_VIDEO: { color: '#00A8E0', bg: 'rgba(0,168,224,0.15)', label: 'Prime Video' },
   HOTSTAR: { color: '#1B74E4', bg: 'rgba(27,116,228,0.15)', label: 'Hotstar' },
   ZEE5: { color: '#7B2FBE', bg: 'rgba(123,47,190,0.15)', label: 'ZEE5' },
   SONY_LIV: { color: '#00558B', bg: 'rgba(0,85,139,0.15)', label: 'SonyLIV' },
@@ -8,9 +8,11 @@ const OTT_CONFIG: Record<string, { color: string; bg: string; label: string }> =
   VIKI: { color: '#1DA462', bg: 'rgba(29,164,98,0.15)', label: 'Viki' },
   FUNIMATION: { color: '#410099', bg: 'rgba(65,0,153,0.15)', label: 'Funimation' },
   MXPLAYER: { color: '#00B4D8', bg: 'rgba(0,180,216,0.15)', label: 'MX Player' },
-  AHAN: { color: '#FF6B35', bg: 'rgba(255,107,53,0.15)', label: 'Aha' },
+  AHA: { color: '#FF6B35', bg: 'rgba(255,107,53,0.15)', label: 'Aha' },
   VOOT: { color: '#FF5200', bg: 'rgba(255,82,0,0.15)', label: 'Voot' },
   OTHER: { color: '#9CA3AF', bg: 'rgba(156,163,175,0.1)', label: 'OTT' },
+  MUSE_India_YT: { color: '#FF0000', bg: 'rgba(255,0,0,0.15)', label: 'Muse India YouTube' },
+  Anime_times: { color: '#8B5CF6', bg: 'rgba(139,92,246,0.15)', label: 'Anime Times' },
 }
 
 interface Props { platform: string; isTeluguDub?: boolean; url?: string | null }

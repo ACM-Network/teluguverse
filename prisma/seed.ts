@@ -273,13 +273,37 @@ async function main() {
 
   // Streaming links
   const streamingData = [
-    { slug: 'kalki-2898-ad', links: [{ platform: 'NETFLIX', isTeluguDub: true }, { platform: 'HOTSTAR', isTeluguDub: false }] },
-    { slug: 'rrr', links: [{ platform: 'NETFLIX', isTeluguDub: true }, { platform: 'AMAZON_PRIME', isTeluguDub: false }] },
-    { slug: 'attack-on-titan', links: [{ platform: 'CRUNCHYROLL', isTeluguDub: true }, { platform: 'NETFLIX', isTeluguDub: false }] },
-    { slug: 'demon-slayer', links: [{ platform: 'CRUNCHYROLL', isTeluguDub: true }, { platform: 'NETFLIX', isTeluguDub: true }] },
-    { slug: 'squid-game', links: [{ platform: 'NETFLIX', isTeluguDub: true }] },
-    { slug: 'crash-landing-on-you', links: [{ platform: 'NETFLIX', isTeluguDub: false }, { platform: 'VIKI', isTeluguDub: false }] },
-  ]
+  { slug: 'kalki-2898-ad', links: [{ platform: 'AMAZON_PRIME', isTeluguDub: true }] },
+
+  { slug: 'rrr', links: [{ platform: 'ZEE5', isTeluguDub: true }] },
+
+  { slug: 'attack-on-titan', links: [
+    { platform: 'MUSE_INDIA_YT', isTeluguDub: true },
+    { platform: 'ANIME_TIMES', isTeluguDub: true }
+  ]},
+
+  { slug: 'demon-slayer', links: [
+    { platform: 'CRUNCHYROLL', isTeluguDub: true },
+    { platform: 'ANIME_TIMES', isTeluguDub: true }
+  ]},
+
+  { slug: 'squid-game', links: [
+    { platform: 'NETFLIX', isTeluguDub: true }
+  ]},
+
+  { slug: 'crash-landing-on-you', links: [
+    { platform: 'NETFLIX', isTeluguDub: false },
+    { platform: 'VIKI', isTeluguDub: false }
+  ]},
+
+  { slug: 'jujutsu-kaisen', links: [
+    { platform: 'CRUNCHYROLL', isTeluguDub: true }
+  ]},
+
+  { slug: 'frieren-beyond-journeys-end', links: [
+    { platform: 'CRUNCHYROLL', isTeluguDub: true }
+  ]},
+]
 
   for (const { slug, links } of streamingData) {
     const content = await prisma.content.findUnique({ where: { slug } })
