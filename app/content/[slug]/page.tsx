@@ -1,41 +1,72 @@
 import { Metadata } from 'next'
 import { notFound } from 'next/navigation'
+import { PrismaClient } from '@prisma/client'
 import ContentDetailPage from '@/components/content/ContentDetailPage'
 
+const prisma = new PrismaClient()
+
 async function getContent(slug: string) {
-  try {
-    const baseUrl =
-      process.env.NEXT_PUBLIC_APP_URL ||
-      (process.env.VERCEL_URL
-        ? `https://${process.env.VERCEL_URL}`
-        : 'http://localhost:3000')
-    const [contentRes, similarRes] = await Promise.all([
-      fetch(`${baseUrl}/api/content/${slug}`, { next: { revalidate: 3600 } }),
-      fetch(`${baseUrl}/api/content/${slug}/similar`, { next: { revalidate: 3600 } }),
-    ])
-    if (!contentRes.ok) return null
-    const [content, similar] = await Promise.all([contentRes.json(), similarRes.ok ? similarRes.json() : []])
-    return { content, similar }
-  } catch { return null }
+  const content = await prisma.content.findUnique({
+    where: { slug },
+    include: {
+      genres: true,
+      streamingLinks: true,
+    },
+  })
+
+  if (!content) return null
+
+  const similar = await prisma.content.findMany({
+    where: {
+      type: content.type,
+      NOT: { slug: content.slug },
+    },
+    take: 6,
+  })
+
+  return { content, similar }
 }
 
-export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
+export async function generateMetadata({
+  params,
+}: {
+  params: { slug: string }
+}): Promise<Metadata> {
   const data = await getContent(params.slug)
-  if (!data) return { title: 'Not Found' }
-  const { content } = data
+
+  if (!data) {
+    return {
+      title: 'Not Found',
+    }
+  }
+
   return {
-    title: `${content.titleEnglish} ${content.titleTelugu ? `(${content.titleTelugu})` : ''} – TeluguVerse`,
-    description: content.descriptionTelugu || content.descriptionEnglish || '',
-    openGraph: {
-      title: content.titleEnglish,
-      description: content.descriptionTelugu || content.descriptionEnglish || '',
-      images: content.poster ? [content.poster] : [],
-    },
+    title: `${data.content.titleEnglish} – TeluguVerse`,
+    description:
+      data.content.descriptionTelugu ||
+      data.content.descriptionEnglish ||
+      '',
   }
 }
 
-export default async function ContentPage({ params }: { params: { slug: string } }) {
+export default async function ContentPage({
+  params,
+}: {
+  params: { slug: string }
+}) {
   const data = await getContent(params.slug)
+
   if (!data) notFound()
-  return <ContentDetailPage content={data.content} similar={data.similar} />
+
+  return (
+    <ContentDetailPage
+      content={{
+        ...data.content,
+        releaseDate: data.content.releaseDate
+          ? data.content.releaseDate.toISOString()
+          : null,
+        similar: data.similar,
+      } as any}
+    />
+  )
 }
