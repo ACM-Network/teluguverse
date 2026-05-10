@@ -15,19 +15,28 @@ export default function HomePage() {
   return (
     <div className="min-h-screen bg-dark relative">
       <ParticleCanvas />
-      <Suspense fallback={<div className="h-screen bg-dark" />}>
+
+      {/* Hero — no top padding; navbar is fixed overlay */}
+      <Suspense fallback={<div className="bg-dark" style={{ height: 'clamp(600px,100vh,920px)' }} />}>
         <HeroSection />
       </Suspense>
+
+      {/* Stats bar — immediate, no gap */}
       <StatsBar />
-      <div className="container-tv py-12 space-y-16 relative z-10">
+
+      {/* Content sections — tightened top padding from py-12 to pt-8 */}
+      <div className="container-tv pt-8 pb-20 space-y-14 relative z-10">
         <Suspense fallback={null}>
           <div className="grid grid-cols-1 xl:grid-cols-[1fr_320px] gap-10">
             <PopularSection />
             <TrendingSection />
           </div>
         </Suspense>
+
         <CategoriesGrid />
+
         <div className="section-divider" />
+
         <AnimeSection />
         <KDramaSection />
         <UniverseExplorer />
