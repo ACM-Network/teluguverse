@@ -64,11 +64,23 @@ export default function ContentDetailPage({ content, similar = [] }: Props) {
             <div className="w-full aspect-[2/3] rounded-2xl overflow-hidden border-2 shadow-2xl"
               style={{ borderColor: `${color}50`, boxShadow: `0 30px 80px rgba(0,0,0,0.8), 0 0 40px ${color}20` }}>
               {content.poster ? (
-                <Image src={content.poster} alt={content.titleEnglish} fill className="object-cover" sizes="280px" />
+                <Image
+                  src={content.poster || '/placeholder.jpg'}
+                  alt={content.titleEnglish}
+                  fill
+                  className="object-cover"
+                  sizes="280px"
+              />
               ) : (
-                <div className="w-full h-full flex flex-col items-center justify-center gap-4"
-                  style={{ background: `linear-gradient(135deg, ${color}22, ${color}08)` }}>
-                  <span className="text-8xl">{TYPE_EMOJIS[content.type]}</span>
+                <div
+                  className="w-full h-full flex items-center justify-center"
+                  style={{
+                    background: `linear-gradient(135deg, ${color}22, ${color}08)`
+                  }}
+                >
+                  <span className="text-8xl opacity-40">
+                    {TYPE_EMOJIS[content.type]}
+                  </span>
                 </div>
               )}
             </div>
