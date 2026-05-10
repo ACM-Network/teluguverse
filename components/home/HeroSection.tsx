@@ -1,10 +1,10 @@
 'use client'
 import { useState, useEffect, useRef, useCallback } from 'react'
-import { motion, AnimatePresence, useMotionValue, useTransform } from 'framer-motion'
+import { motion, AnimatePresence } from 'framer-motion'
 import Link from 'next/link'
 import { useStore } from '@/store/useStore'
 
-/* ─── Slide data ─────────────────────────────────────────────────── */
+/* ─── Slide data — real poster images, zero emoji ─────────────────── */
 const SLIDES = [
   {
     id: '1',
@@ -14,21 +14,19 @@ const SLIDES = [
     desc: 'భవిష్యత్తులో 2898 సంవత్సరంలో ప్రపంచం చీకటి అధికారాల పట్టులో ఉంది. కల్కి అవతారం రావాలని పురాణాలు చెప్తున్నాయి. భైరా అనే యోధుడు ఒక అద్భుతమైన ప్రయాణం చేస్తాడు.',
     genres: ['Sci-Fi', 'Mythology', 'Action'],
     rating: '9.1',
-    votes: '2.4L',
     year: '2024',
     runtime: '3h 1m',
     type: 'TELUGU MOVIE',
-    badge: '🔥 Trending #1',
+    badge: 'Trending #1',
     ott: ['Netflix', 'Hotstar'],
     dubAvail: true,
     accentColor: '#FF6B00',
-    bgGrad: 'linear-gradient(125deg, #2a0e00 0%, #1a0800 35%, #0d0510 65%, #070810 100%)',
-    glowColor: 'rgba(255,107,0,0.18)',
-    glowColor2: 'rgba(255,165,0,0.10)',
+    glowColor: 'rgba(255,107,0,0.32)',
     visual: {
-      poster: 'https://wallpapercave.com/wp/wp15542527.png'
+      poster: 'https://wallpapercave.com/wp/wp15542527.png',
+      bgPosition: 'center top',
     },
-    },
+  },
   {
     id: '2',
     slug: 'attack-on-titan',
@@ -37,21 +35,19 @@ const SLIDES = [
     desc: 'భీమాకార రాక్షసులకు వ్యతిరేకంగా మానవుల చివరి పోరాటం. గోడల లోపల జీవించిన మానవులు స్వేచ్ఛ కోసం ప్రాణాలు పణంగా పెడతారు. ఎరేన్ యొక్క నిజమైన లక్ష్యం ఏమిటి?',
     genres: ['Action', 'Dark Fantasy', 'Post-Apocalyptic'],
     rating: '9.0',
-    votes: '5.1L',
     year: '2013–2023',
     runtime: '94 Episodes',
     type: 'ANIME',
-    badge: '⭐ Top Rated',
+    badge: 'Top Rated',
     ott: ['Crunchyroll', 'Netflix'],
     dubAvail: true,
     accentColor: '#DC2626',
-    bgGrad: 'linear-gradient(125deg, #200000 0%, #140000 35%, #0a020d 65%, #070810 100%)',
-    glowColor: 'rgba(220,38,38,0.20)',
-    glowColor2: 'rgba(185,28,28,0.10)',
+    glowColor: 'rgba(220,38,38,0.32)',
     visual: {
-      poster: 'https://wallpapercave.com/wp/wp8115145.png'
+      poster: 'https://wallpapercave.com/wp/wp8115145.png',
+      bgPosition: 'center center',
     },
-    },
+  },
   {
     id: '3',
     slug: 'squid-game',
@@ -60,21 +56,19 @@ const SLIDES = [
     desc: 'ఆర్థిక ఇబ్బందులతో ఉన్న వ్యక్తులు ఒక రహస్య మరణ ఆటలో పాల్గొంటారు. గెలుపు అంటే కోట్ల రూపాయలు — ఓటమి అంటే మరణం. ఈ ఆట ఆపగలరా?',
     genres: ['Thriller', 'Drama', 'Survival'],
     rating: '8.7',
-    votes: '9.2L',
     year: '2021–2024',
-    runtime: 'S2: 7 Eps',
+    runtime: 'S2: 7 Episodes',
     type: 'K-DRAMA',
-    badge: '🌟 Global Hit',
+    badge: 'Global Hit',
     ott: ['Netflix'],
     dubAvail: true,
     accentColor: '#EC4899',
-    bgGrad: 'linear-gradient(125deg, #1a0018 0%, #10000e 35%, #080210 65%, #070810 100%)',
-    glowColor: 'rgba(236,72,153,0.18)',
-    glowColor2: 'rgba(168,85,247,0.10)',
+    glowColor: 'rgba(236,72,153,0.30)',
     visual: {
-      poster: 'https://images6.alphacoders.com/119/1191374.jpg'
+      poster: 'https://images6.alphacoders.com/119/1191374.jpg',
+      bgPosition: 'center center',
     },
-    },
+  },
   {
     id: '4',
     slug: 'pushpa-the-rule',
@@ -83,21 +77,19 @@ const SLIDES = [
     desc: 'పుష్పరాజ్ సామ్రాజ్యం మరింత విస్తరిస్తోంది. శంకర్ IPS తో తీవ్రమైన ఘర్షణ, ప్రేమ మరియు అధికారం మధ్య సంఘర్షణ. "పుష్ప నేల మీద ఉన్నా — జ్వాలలు రేపుతాడు!"',
     genres: ['Action', 'Crime', 'Drama'],
     rating: '8.5',
-    votes: '3.8L',
     year: '2024',
     runtime: '3h 20m',
     type: 'TELUGU MOVIE',
-    badge: '💥 Blockbuster',
+    badge: 'Blockbuster',
     ott: ['Amazon Prime'],
     dubAvail: true,
     accentColor: '#EF4444',
-    bgGrad: 'linear-gradient(125deg, #1a0500 0%, #0f0200 35%, #08040d 65%, #070810 100%)',
-    glowColor: 'rgba(239,68,68,0.18)',
-    glowColor2: 'rgba(245,158,11,0.10)',
+    glowColor: 'rgba(239,68,68,0.30)',
     visual: {
-      poster: 'https://4kwallpapers.com/images/walls/thumbs_3t/17953.jpg'
+      poster: 'https://4kwallpapers.com/images/walls/thumbs_3t/17953.jpg',
+      bgPosition: 'center 20%',
     },
-    },
+  },
   {
     id: '5',
     slug: 'goblin',
@@ -106,36 +98,48 @@ const SLIDES = [
     desc: '930 సంవత్సరాల అమరత్వం పొందిన మంత్రగాడు తన జీవితాన్ని ముగించే "కంచె" కోసం వెతుకుతాడు. ఆ కంచె ఒక యువతి — ప్రేమ మరియు విధి యొక్క అద్భుతమైన కలయిక.',
     genres: ['Fantasy', 'Romance', 'Supernatural'],
     rating: '8.9',
-    votes: '4.5L',
     year: '2016–2017',
     runtime: '16 Episodes',
     type: 'K-DRAMA',
-    badge: '💜 Fan Favorite',
+    badge: 'Fan Favorite',
     ott: ['Netflix', 'Viki'],
     dubAvail: true,
     accentColor: '#7C3AED',
-    bgGrad: 'linear-gradient(125deg, #0e0020 0%, #07001a 35%, #050212 65%, #070810 100%)',
-    glowColor: 'rgba(124,58,237,0.20)',
-    glowColor2: 'rgba(139,92,246,0.10)',
+    glowColor: 'rgba(124,58,237,0.30)',
     visual: {
-      poster: 'https://wallpapercave.com/wp/wp5709960.jpg'
+      poster: 'https://wallpapercave.com/wp/wp5709960.jpg',
+      bgPosition: 'center top',
     },
-    },
+  },
 ]
 
 const OTT_COLORS: Record<string, string> = {
-  Netflix: '#E50914', Hotstar: '#1B74E4', 'Amazon Prime': '#00A8E0',
-  Crunchyroll: '#F47521', Viki: '#1DA462', ZEE5: '#7B2FBE',
+  Netflix: '#E50914',
+  Hotstar: '#1B74E4',
+  'Amazon Prime': '#00A8E0',
+  Crunchyroll: '#F47521',
+  Viki: '#1DA462',
+  ZEE5: '#7B2FBE',
 }
 
-/* ─── Progress bar ───────────────────────────────────────────────── */
-function ProgressBar({ active, duration, paused }: { active: boolean; duration: number; paused: boolean }) {
+/* ─── Slide progress bar ─────────────────────────────────────────── */
+function ProgressBar({
+  active,
+  duration,
+  paused,
+  color,
+}: {
+  active: boolean
+  duration: number
+  paused: boolean
+  color: string
+}) {
   return (
-    <div className="h-0.5 w-full bg-white/10 rounded-full overflow-hidden">
+    <div className="h-[3px] w-full rounded-full overflow-hidden" style={{ background: 'rgba(255,255,255,0.15)' }}>
       {active && (
         <motion.div
           className="h-full rounded-full"
-          style={{ background: 'linear-gradient(90deg,#FFD700,#FFA500)' }}
+          style={{ background: `linear-gradient(90deg, ${color}, #FFD700)` }}
           initial={{ width: '0%' }}
           animate={{ width: paused ? undefined : '100%' }}
           transition={{ duration: duration / 1000, ease: 'linear' }}
@@ -145,15 +149,77 @@ function ProgressBar({ active, duration, paused }: { active: boolean; duration: 
   )
 }
 
-/* ─── Floating orb ───────────────────────────────────────────────── */
-function FloatingOrb({ color, size, x, y, delay, duration }: { color: string; size: number; x: string; y: string; delay: number; duration: number }) {
+/* ─── Poster thumbnail card ──────────────────────────────────────── */
+function ThumbCard({
+  slide,
+  active,
+  onClick,
+}: {
+  slide: (typeof SLIDES)[0]
+  active: boolean
+  onClick: () => void
+}) {
   return (
-    <motion.div
-      className="absolute rounded-full pointer-events-none"
-      style={{ width: size, height: size, left: x, top: y, background: color, filter: `blur(${size * 0.55}px)` }}
-      animate={{ y: [0, -30, 0], opacity: [0.12, 0.22, 0.12], scale: [1, 1.12, 1] }}
-      transition={{ duration, delay, repeat: Infinity, ease: 'easeInOut' }}
-    />
+    <button
+      onClick={onClick}
+      className="relative flex-none rounded-xl overflow-hidden border-2 transition-all duration-300 group"
+      style={{
+        width: 'clamp(100px, 9vw, 136px)',
+        height: '72px',
+        borderColor: active ? `${slide.accentColor}CC` : 'rgba(255,255,255,0.10)',
+        transform: active ? 'scale(1.06)' : 'scale(1)',
+        boxShadow: active ? `0 0 22px ${slide.accentColor}55, 0 4px 20px rgba(0,0,0,0.6)` : '0 2px 12px rgba(0,0,0,0.4)',
+      }}
+    >
+      {/* Poster image */}
+      <img
+        src={slide.visual.poster}
+        alt={slide.title}
+        className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+        style={{ objectPosition: slide.visual.bgPosition }}
+        loading="lazy"
+        draggable={false}
+      />
+
+      {/* Dark overlay */}
+      <div
+        className="absolute inset-0 transition-opacity duration-300"
+        style={{
+          background: active
+            ? 'linear-gradient(to top, rgba(7,8,16,0.88) 0%, rgba(7,8,16,0.18) 100%)'
+            : 'linear-gradient(to top, rgba(7,8,16,0.92) 0%, rgba(7,8,16,0.45) 100%)',
+        }}
+      />
+
+      {/* Accent top border line */}
+      {active && (
+        <div
+          className="absolute top-0 left-0 right-0 h-[2px]"
+          style={{ background: `linear-gradient(90deg, ${slide.accentColor}, #FFD700, ${slide.accentColor})` }}
+        />
+      )}
+
+      {/* Label */}
+      <div className="absolute bottom-0 left-0 right-0 px-2 pb-1.5">
+        <p
+          className="text-[10px] font-black font-rajdhani leading-tight truncate transition-colors"
+          style={{ color: active ? '#FFD700' : '#D1D5DB' }}
+        >
+          {slide.title.length > 15 ? slide.title.slice(0, 15) + '…' : slide.title}
+        </p>
+        <p className="text-[9px] font-rajdhani uppercase tracking-wide text-gray-600 truncate">
+          {slide.type}
+        </p>
+      </div>
+
+      {/* Active pulse dot */}
+      {active && (
+        <div
+          className="absolute top-2 right-2 w-1.5 h-1.5 rounded-full animate-pulse"
+          style={{ background: '#FFD700', boxShadow: '0 0 6px #FFD700' }}
+        />
+      )}
+    </button>
   )
 }
 
@@ -162,7 +228,6 @@ const SLIDE_DURATION = 7000
 
 export default function HeroSection() {
   const [current, setCurrent] = useState(0)
-  const [prev, setPrev]       = useState<number | null>(null)
   const [isPaused, setIsPaused] = useState(false)
   const [direction, setDirection] = useState<1 | -1>(1)
   const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null)
@@ -171,369 +236,518 @@ export default function HeroSection() {
   const slide = SLIDES[current]
 
   const goTo = useCallback((idx: number, dir: 1 | -1 = 1) => {
-    setPrev(current)
     setDirection(dir)
     setCurrent(idx)
-  }, [current])
+  }, [])
 
-  const next = useCallback(() => goTo((current + 1) % SLIDES.length, 1), [current, goTo])
+  const next  = useCallback(() => goTo((current + 1) % SLIDES.length, 1), [current, goTo])
   const prev_ = useCallback(() => goTo((current - 1 + SLIDES.length) % SLIDES.length, -1), [current, goTo])
 
-  // Auto-advance
+  /* Auto-advance */
   useEffect(() => {
     if (isPaused) return
     timerRef.current = setTimeout(next, SLIDE_DURATION)
     return () => { if (timerRef.current) clearTimeout(timerRef.current) }
   }, [current, isPaused, next])
 
-  // Keyboard navigation
+  /* Keyboard navigation */
   useEffect(() => {
     const handler = (e: KeyboardEvent) => {
       if (e.key === 'ArrowRight') next()
       if (e.key === 'ArrowLeft')  prev_()
+      if (e.key === ' ')          { e.preventDefault(); setIsPaused(p => !p) }
     }
     window.addEventListener('keydown', handler)
     return () => window.removeEventListener('keydown', handler)
   }, [next, prev_])
 
-  const contentVariants = {
-    enter: (dir: number) => ({ opacity: 0, x: dir > 0 ? 60 : -60, filter: 'blur(4px)' }),
-    center: { opacity: 1, x: 0, filter: 'blur(0px)', transition: { duration: 0.65, ease: [0.25, 0.46, 0.45, 0.94] } },
-    exit:  (dir: number) => ({ opacity: 0, x: dir > 0 ? -40 : 40, filter: 'blur(4px)', transition: { duration: 0.4 } }),
-  }
+  /* Preload adjacent slide images */
+  useEffect(() => {
+    [(current + 1) % SLIDES.length, (current - 1 + SLIDES.length) % SLIDES.length].forEach(i => {
+      const img = new Image()
+      img.src = SLIDES[i].visual.poster
+    })
+  }, [current])
 
+  /* ── animation variants ── */
   const bgVariants = {
-    enter: { opacity: 0, scale: 1.06 },
-    center: { opacity: 1, scale: 1, transition: { duration: 1.1, ease: [0.25, 0.46, 0.45, 0.94] } },
-    exit:   { opacity: 0, scale: 0.97, transition: { duration: 0.6 } },
+    enter: (dir: number) => ({ opacity: 0, scale: 1.07, x: dir > 0 ? '2.5%' : '-2.5%' }),
+    center: {
+      opacity: 1, scale: 1, x: '0%',
+      transition: { duration: 1.15, ease: [0.25, 0.46, 0.45, 0.94] },
+    },
+    exit: (dir: number) => ({
+      opacity: 0, scale: 0.97, x: dir > 0 ? '-2.5%' : '2.5%',
+      transition: { duration: 0.65, ease: [0.55, 0, 1, 0.45] },
+    }),
   }
 
-  const visualVariants = {
-    enter: { opacity: 0, scale: 0.88, x: 80 },
-    center: { opacity: 1, scale: 1, x: 0, transition: { duration: 0.9, ease: [0.25, 0.46, 0.45, 0.94] } },
-    exit:   { opacity: 0, scale: 1.06, x: -60, transition: { duration: 0.5 } },
+  const contentVariants = {
+    enter: (dir: number) => ({ opacity: 0, y: 30, x: dir > 0 ? 24 : -24, filter: 'blur(5px)' }),
+    center: {
+      opacity: 1, y: 0, x: 0, filter: 'blur(0px)',
+      transition: { duration: 0.65, ease: [0.25, 0.46, 0.45, 0.94], delay: 0.18 },
+    },
+    exit: (dir: number) => ({
+      opacity: 0, y: -14, x: dir > 0 ? -20 : 20, filter: 'blur(4px)',
+      transition: { duration: 0.38 },
+    }),
   }
 
   return (
     <section
       className="relative overflow-hidden"
-      style={{ height: 'clamp(600px, 100vh, 920px)' }}
+      style={{ height: 'clamp(620px, 100vh, 940px)' }}
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
     >
 
-      {/* ── BG layer ── */}
+      {/* ══════════════════════════════════════════════
+          LAYER 1 — Full-bleed cinematic background
+      ══════════════════════════════════════════════ */}
       <AnimatePresence mode="sync" custom={direction}>
         <motion.div
           key={`bg-${slide.id}`}
           custom={direction}
           variants={bgVariants}
-          initial="enter" animate="center" exit="exit"
+          initial="enter"
+          animate="center"
+          exit="exit"
           className="absolute inset-0"
-          style={{ background: slide.bgGrad }}
+          style={{
+            backgroundImage: `url(${slide.visual.poster})`,
+            backgroundSize: 'cover',
+            backgroundPosition: slide.visual.bgPosition,
+            backgroundRepeat: 'no-repeat',
+            willChange: 'transform, opacity',
+          }}
         />
       </AnimatePresence>
 
-      {/* ── Floating orbs ── */}
+      {/* ══════════════════════════════════════════════
+          LAYER 2 — Stacked cinematic gradient overlays
+      ══════════════════════════════════════════════ */}
+
+      {/* Primary left readability gradient */}
+      <div
+        className="absolute inset-0 pointer-events-none"
+        style={{
+          background:
+            'linear-gradient(to right, rgba(7,8,16,0.97) 0%, rgba(7,8,16,0.90) 28%, rgba(7,8,16,0.65) 52%, rgba(7,8,16,0.20) 75%, rgba(7,8,16,0.04) 100%)',
+        }}
+      />
+
+      {/* Bottom-to-top fade — merges seamlessly into the rest of the page */}
+      <div
+        className="absolute bottom-0 left-0 right-0 pointer-events-none"
+        style={{
+          height: '58%',
+          background:
+            'linear-gradient(to top, rgba(7,8,16,1) 0%, rgba(7,8,16,0.85) 25%, rgba(7,8,16,0.45) 55%, transparent 100%)',
+        }}
+      />
+
+      {/* Top navbar fade */}
+      <div
+        className="absolute top-0 left-0 right-0 pointer-events-none"
+        style={{
+          height: '200px',
+          background: 'linear-gradient(to bottom, rgba(7,8,16,0.72) 0%, rgba(7,8,16,0.20) 60%, transparent 100%)',
+        }}
+      />
+
+      {/* Accent color atmospheric glow — left side, matches slide */}
       <AnimatePresence>
-        <motion.div key={`orbs-${slide.id}`} initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 1.2 }} className="absolute inset-0 pointer-events-none overflow-hidden">
-          <FloatingOrb color={slide.glowColor}  size={520} x="5%"  y="10%"  delay={0}   duration={8}  />
-          <FloatingOrb color={slide.glowColor2} size={380} x="60%" y="0%"   delay={1.5} duration={10} />
-          <FloatingOrb color={slide.glowColor}  size={280} x="45%" y="55%"  delay={0.8} duration={7}  />
-          <FloatingOrb color={slide.glowColor2} size={200} x="80%" y="30%"  delay={2}   duration={9}  />
-        </motion.div>
+        <motion.div
+          key={`glow-${slide.id}`}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 1.5 }}
+          className="absolute inset-0 pointer-events-none"
+          style={{
+            background: `radial-gradient(ellipse 60% 80% at -5% 65%, ${slide.glowColor} 0%, transparent 68%)`,
+          }}
+        />
       </AnimatePresence>
 
-      {/* ── Cinematic grain overlay ── */}
-      <div className="absolute inset-0 pointer-events-none opacity-[0.03]"
-        style={{ backgroundImage: 'url("data:image/svg+xml,%3Csvg viewBox=\'0 0 200 200\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cfilter id=\'n\'%3E%3CfeTurbulence type=\'fractalNoise\' baseFrequency=\'0.9\' numOctaves=\'4\' stitchTiles=\'stitch\'/%3E%3C/filter%3E%3Crect width=\'100%25\' height=\'100%25\' filter=\'url(%23n)\'/%3E%3C/svg%3E")', backgroundSize: '180px' }} />
+      {/* Cinematic film-grain noise */}
+      <div
+        className="absolute inset-0 pointer-events-none opacity-[0.032] mix-blend-overlay"
+        style={{
+          backgroundImage:
+            'url("data:image/svg+xml,%3Csvg viewBox=\'0 0 256 256\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cfilter id=\'grain\'%3E%3CfeTurbulence type=\'fractalNoise\' baseFrequency=\'0.82\' numOctaves=\'4\' stitchTiles=\'stitch\'/%3E%3C/filter%3E%3Crect width=\'100%25\' height=\'100%25\' filter=\'url(%23grain)\'/%3E%3C/svg%3E")',
+          backgroundSize: '180px',
+        }}
+      />
 
-      {/* ── Left gradient vignette ── */}
-      <div className="absolute inset-0 pointer-events-none"
-        style={{ background: 'linear-gradient(to right, rgba(7,8,16,0.97) 0%, rgba(7,8,16,0.75) 45%, rgba(7,8,16,0.25) 70%, rgba(7,8,16,0.05) 100%)' }} />
-      {/* ── Bottom fade ── */}
-      <div className="absolute bottom-0 left-0 right-0 pointer-events-none"
-        style={{ height: '45%', background: 'linear-gradient(to top, rgba(7,8,16,1) 0%, rgba(7,8,16,0.7) 40%, transparent 100%)' }} />
-      {/* ── Top fade ── */}
-      <div className="absolute top-0 left-0 right-0 h-36 pointer-events-none"
-        style={{ background: 'linear-gradient(to bottom, rgba(7,8,16,0.5) 0%, transparent 100%)' }} />
+      {/* Edge vignette */}
+      <div
+        className="absolute inset-0 pointer-events-none"
+        style={{ boxShadow: 'inset 0 0 200px rgba(7,8,16,0.45)' }}
+      />
 
-      {/* ── Right side visual (poster art) ── */}
-      <div className="absolute right-0 top-0 bottom-0 w-[55%] pointer-events-none overflow-hidden hidden lg:block">
-        <AnimatePresence mode="sync" custom={direction}>
-          <motion.div
-            key={`visual-${slide.id}`}
-            custom={direction}
-            variants={visualVariants}
-            initial="enter" animate="center" exit="exit"
-            className="absolute inset-0 flex items-center justify-center"
-          >
-            {/* Poster card */}
-            <div className="relative w-[340px] h-[480px] rounded-2xl overflow-hidden shadow-2xl"
-              style={{ boxShadow: `0 40px 120px ${slide.accentColor}30, 0 0 0 1px ${slide.accentColor}25` }}>
-              <div className="absolute inset-0">
-                <img
-                  src={slide.visual.poster}
-                  alt={slide.title}
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              {/* Poster shimmer */}
-              <div className="absolute inset-0"
-                style={{ background: `linear-gradient(135deg, ${slide.accentColor}08 0%, transparent 60%, ${slide.accentColor}05 100%)` }} />
-              {/* Poster bottom label */}
-              <div className="absolute bottom-0 left-0 right-0 p-4"
-                style={{ background: 'linear-gradient(to top,rgba(0,0,0,0.9),transparent)' }}>
-                <p className="font-cinzel text-white font-black text-base leading-tight">{slide.title}</p>
-                <p className="font-telugu text-xs mt-1" style={{ color: slide.accentColor }}>{slide.titleTe}</p>
-              </div>
-            </div>
-            {/* Poster reflection */}
-            <div className="absolute bottom-[8%] left-1/2 -translate-x-1/2 w-[340px] h-24 rounded-2xl opacity-20"
-              style={{ background: slide.bgGrad, filter: 'blur(16px)', transform: 'translateX(-50%) scaleY(-0.35) translateY(90%)' }} />
-          </motion.div>
-        </AnimatePresence>
-      </div>
-
-      {/* ── Main content ── */}
-      <div className="container-tv relative z-10 h-full flex items-center">
-        <div className="w-full max-w-[640px] pb-8 pt-20">
-          <AnimatePresence mode="wait" custom={direction}>
-            <motion.div
-              key={`content-${slide.id}`}
-              custom={direction}
-              variants={contentVariants}
-              initial="enter" animate="center" exit="exit"
-            >
-
-              {/* Badge row */}
-              <div className="flex items-center gap-3 mb-5">
-                <motion.span
-                  initial={{ opacity: 0, scale: 0.8 }} animate={{ opacity: 1, scale: 1 }} transition={{ delay: 0.1 }}
-                  className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-[11px] font-black font-rajdhani tracking-[0.12em] uppercase"
-                  style={{ background: `${slide.accentColor}20`, border: `1px solid ${slide.accentColor}50`, color: slide.accentColor }}>
-                  <span className="w-1.5 h-1.5 rounded-full animate-pulse" style={{ background: slide.accentColor }} />
-                  {slide.badge}
-                </motion.span>
-                <motion.span
-                  initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.15 }}
-                  className="text-[11px] font-bold font-rajdhani tracking-[0.15em] uppercase text-gray-500">
-                  {slide.type}
-                </motion.span>
-              </div>
-
-              {/* Telugu subtitle */}
-              <motion.p
-                initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.18 }}
-                className="font-telugu text-lg font-light mb-2 leading-relaxed"
-                style={{ color: `${slide.accentColor}bb` }}>
-                {slide.titleTe}
-              </motion.p>
-
-              {/* Main title */}
-              <motion.h1
-                initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.22, ease: [0.25, 0.46, 0.45, 0.94] }}
-                className="font-cinzel font-black leading-[1.0] mb-4"
-                style={{
-                  fontSize: 'clamp(36px, 5.5vw, 76px)',
-                  background: 'linear-gradient(135deg, #ffffff 0%, #FFD700 50%, #FFA500 100%)',
-                  WebkitBackgroundClip: 'text',
-                  WebkitTextFillColor: 'transparent',
-                  backgroundClip: 'text',
-                  textShadow: 'none',
-                  filter: `drop-shadow(0 4px 24px ${slide.accentColor}40)`,
-                }}>
-                {slide.title}
-              </motion.h1>
-
-              {/* Rating + meta row */}
+      {/* ══════════════════════════════════════════════
+          LAYER 3 — Text content (left-aligned)
+      ══════════════════════════════════════════════ */}
+      <div className="absolute inset-0 z-10 flex items-center">
+        <div className="container-tv w-full pb-28 pt-20">
+          <div className="max-w-[600px] xl:max-w-[650px]">
+            <AnimatePresence mode="wait" custom={direction}>
               <motion.div
-                initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.28 }}
-                className="flex items-center gap-3 mb-4 flex-wrap">
-                {/* Star rating */}
-                <div className="flex items-center gap-1.5 bg-yellow-400/10 border border-yellow-400/25 rounded-lg px-3 py-1.5">
-                  <span className="text-yellow-400 text-base leading-none">★</span>
-                  <span className="text-yellow-400 font-black font-cinzel text-base leading-none">{slide.rating}</span>
-                  <span className="text-gray-500 text-xs font-rajdhani font-semibold">/ 10</span>
-                </div>
-                <span className="text-gray-600 text-sm">·</span>
-                <span className="text-gray-300 text-sm font-semibold font-rajdhani">{slide.year}</span>
-                <span className="text-gray-600 text-sm">·</span>
-                <span className="text-gray-300 text-sm font-semibold font-rajdhani">{slide.runtime}</span>
-                {slide.dubAvail && (
-                  <>
-                    <span className="text-gray-600 text-sm">·</span>
-                    <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-md text-[11px] font-black font-rajdhani tracking-wide bg-yellow-400/12 border border-yellow-400/30 text-yellow-400">
-                      తె DUB ✓
+                key={`content-${slide.id}`}
+                custom={direction}
+                variants={contentVariants}
+                initial="enter"
+                animate="center"
+                exit="exit"
+              >
+                {/* Badge */}
+                <motion.div
+                  initial={{ opacity: 0, x: -18 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ delay: 0.10 }}
+                  className="flex items-center gap-3 mb-5"
+                >
+                  <span
+                    className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-[11px] font-black font-rajdhani tracking-[0.14em] uppercase"
+                    style={{
+                      background: `${slide.accentColor}22`,
+                      border: `1px solid ${slide.accentColor}55`,
+                      color: slide.accentColor,
+                    }}
+                  >
+                    <span
+                      className="w-1.5 h-1.5 rounded-full"
+                      style={{
+                        background: slide.accentColor,
+                        boxShadow: `0 0 8px ${slide.accentColor}`,
+                        animation: 'pulse 2s ease-in-out infinite',
+                      }}
+                    />
+                    {slide.badge}
+                  </span>
+                  <span className="text-[11px] font-bold font-rajdhani tracking-[0.16em] uppercase text-gray-500">
+                    {slide.type}
+                  </span>
+                </motion.div>
+
+                {/* Telugu subtitle */}
+                <motion.p
+                  initial={{ opacity: 0, y: 8 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.17 }}
+                  className="font-telugu text-base lg:text-lg font-light mb-2 leading-relaxed"
+                  style={{
+                    color: `${slide.accentColor}cc`,
+                    textShadow: `0 2px 20px ${slide.accentColor}44`,
+                  }}
+                >
+                  {slide.titleTe}
+                </motion.p>
+
+                {/* Main title */}
+                <motion.h1
+                  initial={{ opacity: 0, y: 28 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.22, ease: [0.25, 0.46, 0.45, 0.94] }}
+                  className="font-cinzel font-black leading-[1.0] mb-5"
+                  style={{
+                    fontSize: 'clamp(34px, 5.8vw, 80px)',
+                    background: 'linear-gradient(140deg, #ffffff 0%, #FFD700 55%, #FFA500 100%)',
+                    WebkitBackgroundClip: 'text',
+                    WebkitTextFillColor: 'transparent',
+                    backgroundClip: 'text',
+                    filter: `drop-shadow(0 4px 32px ${slide.accentColor}50)`,
+                  }}
+                >
+                  {slide.title}
+                </motion.h1>
+
+                {/* Rating + meta */}
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ delay: 0.28 }}
+                  className="flex items-center gap-3 mb-4 flex-wrap"
+                >
+                  <div
+                    className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg"
+                    style={{
+                      background: 'rgba(255,215,0,0.12)',
+                      border: '1px solid rgba(255,215,0,0.28)',
+                    }}
+                  >
+                    <svg className="w-3.5 h-3.5 fill-yellow-400" viewBox="0 0 24 24">
+                      <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                    </svg>
+                    <span className="text-yellow-400 font-black font-cinzel text-sm leading-none">{slide.rating}</span>
+                    <span className="text-gray-500 text-xs font-rajdhani">/10</span>
+                  </div>
+
+                  <span className="text-gray-600">·</span>
+                  <span className="text-gray-200 text-sm font-semibold font-rajdhani">{slide.year}</span>
+                  <span className="text-gray-600">·</span>
+                  <span className="text-gray-200 text-sm font-semibold font-rajdhani">{slide.runtime}</span>
+
+                  {slide.dubAvail && (
+                    <>
+                      <span className="text-gray-600">·</span>
+                      <span
+                        className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-[11px] font-black font-rajdhani tracking-wide"
+                        style={{
+                          background: 'rgba(255,215,0,0.12)',
+                          border: '1px solid rgba(255,215,0,0.30)',
+                          color: '#FFD700',
+                        }}
+                      >
+                        <svg className="w-3 h-3 fill-current" viewBox="0 0 24 24">
+                          <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                        </svg>
+                        తె DUB
+                      </span>
+                    </>
+                  )}
+                </motion.div>
+
+                {/* Genre chips */}
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ delay: 0.32 }}
+                  className="flex items-center gap-2 mb-5 flex-wrap"
+                >
+                  {slide.genres.map((g, i) => (
+                    <span
+                      key={g}
+                      className="px-3 py-1 rounded-full text-[11px] font-bold font-rajdhani tracking-wide border"
+                      style={{
+                        background: i === 0 ? `${slide.accentColor}18` : 'rgba(255,255,255,0.06)',
+                        borderColor: i === 0 ? `${slide.accentColor}45` : 'rgba(255,255,255,0.12)',
+                        color: i === 0 ? slide.accentColor : '#9CA3AF',
+                      }}
+                    >
+                      {g}
                     </span>
-                  </>
-                )}
-              </motion.div>
+                  ))}
+                </motion.div>
 
-              {/* Genres */}
-              <motion.div
-                initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.32 }}
-                className="flex items-center gap-2 mb-5 flex-wrap">
-                {slide.genres.map((g, i) => (
-                  <span key={g}
-                    className="px-3 py-1 rounded-full text-xs font-bold font-rajdhani tracking-wide border"
-                    style={{
-                      background: i === 0 ? `${slide.accentColor}15` : 'rgba(255,255,255,0.05)',
-                      borderColor: i === 0 ? `${slide.accentColor}40` : 'rgba(255,255,255,0.1)',
-                      color: i === 0 ? slide.accentColor : '#9CA3AF',
-                    }}>
-                    {g}
+                {/* Telugu description */}
+                <motion.p
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ delay: 0.36 }}
+                  className="font-telugu text-gray-300 leading-[2.0] mb-6 line-clamp-3"
+                  style={{
+                    fontSize: 'clamp(13px, 1.25vw, 15px)',
+                    textShadow: '0 1px 12px rgba(0,0,0,0.95)',
+                  }}
+                >
+                  {slide.desc}
+                </motion.p>
+
+                {/* OTT platforms */}
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ delay: 0.40 }}
+                  className="flex items-center gap-2 mb-7 flex-wrap"
+                >
+                  <span className="text-gray-600 text-[11px] font-semibold font-rajdhani uppercase tracking-widest">
+                    Watch on
                   </span>
-                ))}
-              </motion.div>
+                  {slide.ott.map(platform => (
+                    <span
+                      key={platform}
+                      className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-[11px] font-bold font-rajdhani border"
+                      style={{
+                        background: `${OTT_COLORS[platform] ?? '#9CA3AF'}18`,
+                        borderColor: `${OTT_COLORS[platform] ?? '#9CA3AF'}40`,
+                        color: OTT_COLORS[platform] ?? '#9CA3AF',
+                      }}
+                    >
+                      <span
+                        className="w-1.5 h-1.5 rounded-full"
+                        style={{ background: OTT_COLORS[platform] ?? '#9CA3AF' }}
+                      />
+                      {platform}
+                    </span>
+                  ))}
+                </motion.div>
 
-              {/* Description */}
-              <motion.p
-                initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.36 }}
-                className="font-telugu text-gray-300 leading-[1.9] mb-6 line-clamp-3"
-                style={{ fontSize: 'clamp(13px, 1.3vw, 15px)' }}>
-                {slide.desc}
-              </motion.p>
-
-              {/* OTT platforms */}
-              <motion.div
-                initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.40 }}
-                className="flex items-center gap-2 mb-7 flex-wrap">
-                <span className="text-gray-600 text-xs font-semibold font-rajdhani uppercase tracking-widest mr-1">Watch on</span>
-                {slide.ott.map(platform => (
-                  <span key={platform}
-                    className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold font-rajdhani border"
+                {/* CTA buttons */}
+                <motion.div
+                  initial={{ opacity: 0, y: 16 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.44, ease: [0.25, 0.46, 0.45, 0.94] }}
+                  className="flex gap-3 flex-wrap"
+                >
+                  {/* Watch Now */}
+                  <Link
+                    href={`/content/${slide.slug}`}
+                    className="group relative flex items-center gap-2.5 px-7 py-3.5 rounded-xl font-cinzel font-bold text-sm tracking-wide text-white overflow-hidden transition-all duration-300 hover:-translate-y-0.5 active:scale-95"
                     style={{
-                      background: `${OTT_COLORS[platform] || '#9CA3AF'}15`,
-                      borderColor: `${OTT_COLORS[platform] || '#9CA3AF'}35`,
-                      color: OTT_COLORS[platform] || '#9CA3AF',
-                    }}>
-                    <span className="w-1.5 h-1.5 rounded-full" style={{ background: OTT_COLORS[platform] || '#9CA3AF' }} />
-                    {platform}
-                  </span>
-                ))}
-              </motion.div>
-
-              {/* CTA buttons */}
-              <motion.div
-                initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.44, ease: [0.25, 0.46, 0.45, 0.94] }}
-                className="flex gap-3 flex-wrap">
-
-                <Link href={`/content/${slide.slug}`}
-                  className="group relative flex items-center gap-2.5 px-7 py-3.5 rounded-xl font-cinzel font-bold text-sm tracking-wide text-white overflow-hidden transition-all duration-300 hover:-translate-y-0.5"
-                  style={{ background: 'linear-gradient(135deg,#E50914,#b5000b)', boxShadow: '0 8px 32px rgba(229,9,20,0.4), 0 2px 8px rgba(0,0,0,0.5)' }}>
-                  <span className="relative z-10 flex items-center gap-2.5">
-                    <svg className="w-4 h-4 fill-white" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                      background: 'linear-gradient(135deg, #E50914 0%, #b5000b 100%)',
+                      boxShadow: '0 8px 32px rgba(229,9,20,0.45), 0 2px 8px rgba(0,0,0,0.6)',
+                    }}
+                  >
+                    <svg className="w-4 h-4 fill-white flex-none" viewBox="0 0 24 24">
+                      <path d="M8 5v14l11-7z" />
+                    </svg>
                     Watch Now
-                  </span>
-                  {/* Shine */}
-                  <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-                    style={{ background: 'linear-gradient(105deg,transparent 40%,rgba(255,255,255,0.12) 50%,transparent 60%)' }} />
-                </Link>
+                    <div
+                      className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
+                      style={{
+                        background: 'linear-gradient(105deg, transparent 35%, rgba(255,255,255,0.14) 50%, transparent 65%)',
+                      }}
+                    />
+                  </Link>
 
-                <Link href={`/content/${slide.slug}`}
-                  className="flex items-center gap-2.5 px-7 py-3.5 rounded-xl font-rajdhani font-bold text-sm tracking-wide text-white border border-white/20 bg-white/6 hover:bg-white/12 hover:border-white/35 transition-all duration-300 backdrop-blur-sm hover:-translate-y-0.5"
-                  style={{ boxShadow: '0 4px 16px rgba(0,0,0,0.3)' }}>
-                  <svg className="w-4 h-4 opacity-70" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                  More Details
-                </Link>
+                  {/* More Details */}
+                  <Link
+                    href={`/content/${slide.slug}`}
+                    className="flex items-center gap-2.5 px-7 py-3.5 rounded-xl font-rajdhani font-bold text-sm tracking-wide text-white border border-white/22 transition-all duration-300 hover:-translate-y-0.5 hover:bg-white/12 hover:border-white/35 active:scale-95"
+                    style={{
+                      background: 'rgba(255,255,255,0.07)',
+                      backdropFilter: 'blur(12px)',
+                      boxShadow: '0 4px 20px rgba(0,0,0,0.35)',
+                    }}
+                  >
+                    <svg
+                      className="w-4 h-4 opacity-75 flex-none"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      strokeWidth={2}
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    More Details
+                  </Link>
 
-                <button
-                  onClick={() => toggleWatchlist(slide.id)}
-                  className={`flex items-center gap-2 px-5 py-3.5 rounded-xl font-rajdhani font-bold text-sm tracking-wide border transition-all duration-300 hover:-translate-y-0.5 ${
-                    watchlist.includes(slide.id)
-                      ? 'bg-yellow-500/20 border-yellow-500/50 text-yellow-400'
-                      : 'border-white/15 text-gray-300 hover:border-yellow-400/40 hover:text-yellow-400 bg-white/5'
-                  }`}>
-                  {watchlist.includes(slide.id)
-                    ? <><svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Saved</>
-                    : <><svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M12 4v16m8-8H4"/></svg> Watchlist</>
-                  }
-                </button>
+                  {/* Watchlist */}
+                  <button
+                    onClick={() => toggleWatchlist(slide.id)}
+                    className={`flex items-center gap-2 px-5 py-3.5 rounded-xl font-rajdhani font-bold text-sm tracking-wide border transition-all duration-300 hover:-translate-y-0.5 active:scale-95 ${
+                      watchlist.includes(slide.id)
+                        ? 'bg-yellow-500/22 border-yellow-500/55 text-yellow-400'
+                        : 'border-white/15 text-gray-300 hover:border-yellow-400/45 hover:text-yellow-400'
+                    }`}
+                    style={{
+                      background: watchlist.includes(slide.id) ? undefined : 'rgba(255,255,255,0.05)',
+                      backdropFilter: 'blur(12px)',
+                    }}
+                  >
+                    {watchlist.includes(slide.id) ? (
+                      <>
+                        <svg className="w-4 h-4 flex-none" fill="currentColor" viewBox="0 0 24 24">
+                          <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                        </svg>
+                        Saved
+                      </>
+                    ) : (
+                      <>
+                        <svg className="w-4 h-4 flex-none" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M12 4v16m8-8H4" />
+                        </svg>
+                        Watchlist
+                      </>
+                    )}
+                  </button>
+                </motion.div>
               </motion.div>
-
-            </motion.div>
-          </AnimatePresence>
+            </AnimatePresence>
+          </div>
         </div>
       </div>
 
-      {/* ── Bottom controls bar ── */}
-      <div className="absolute bottom-0 left-0 right-0 z-20 pb-5 pt-3" style={{ background: 'linear-gradient(to top,rgba(7,8,16,0.6) 0%,transparent 100%)' }}>
-        <div className="container-tv flex items-end gap-6">
+      {/* ══════════════════════════════════════════════
+          LAYER 4 — Bottom controls bar
+      ══════════════════════════════════════════════ */}
+      <div
+        className="absolute bottom-0 left-0 right-0 z-20 pt-8 pb-4"
+        style={{
+          background: 'linear-gradient(to top, rgba(7,8,16,0.90) 0%, rgba(7,8,16,0.55) 55%, transparent 100%)',
+        }}
+      >
+        <div className="container-tv flex items-end gap-5">
 
-          {/* Progress + thumbnails */}
-          <div className="flex-1 flex flex-col gap-3">
-            {/* Slide progress bars */}
-            <div className="flex gap-1.5 max-w-xs">
+          {/* Progress bars + counter */}
+          <div className="flex flex-col gap-3 flex-1 min-w-0">
+            <div className="flex gap-1.5" style={{ maxWidth: '220px' }}>
               {SLIDES.map((s, i) => (
-                <button key={s.id} onClick={() => goTo(i, i > current ? 1 : -1)} className="flex-1 group">
-                  <ProgressBar active={i === current} duration={SLIDE_DURATION} paused={isPaused} />
-                  {i !== current && (
-                    <div className="h-0.5 w-full rounded-full mt-0 bg-white/20 -mt-0.5 opacity-0 group-hover:opacity-100 transition-opacity" />
-                  )}
+                <button
+                  key={s.id}
+                  onClick={() => goTo(i, i > current ? 1 : -1)}
+                  className="flex-1 py-1.5"
+                  aria-label={`Slide ${i + 1}: ${s.title}`}
+                >
+                  <ProgressBar
+                    active={i === current}
+                    duration={SLIDE_DURATION}
+                    paused={isPaused}
+                    color={slide.accentColor}
+                  />
                 </button>
               ))}
             </div>
-
-            {/* Current slide info */}
-            <div className="flex items-center gap-3">
-              <span className="font-cinzel text-white font-bold text-sm">{String(current + 1).padStart(2, '0')}</span>
-              <span className="text-gray-600 text-xs font-rajdhani">/</span>
-              <span className="text-gray-600 text-xs font-rajdhani">{String(SLIDES.length).padStart(2, '0')}</span>
-              <span className="w-px h-3 bg-gray-700 mx-1" />
-              <span className="text-gray-400 text-xs font-semibold font-rajdhani">{slide.title}</span>
+            <div className="flex items-center gap-2">
+              <span className="font-cinzel text-white font-bold text-sm tabular-nums">
+                {String(current + 1).padStart(2, '0')}
+              </span>
+              <span className="text-gray-700 text-xs">/</span>
+              <span className="text-gray-600 text-xs font-rajdhani tabular-nums">
+                {String(SLIDES.length).padStart(2, '0')}
+              </span>
+              <span className="w-px h-3 bg-gray-800 mx-1.5" />
+              <span className="text-gray-400 text-xs font-semibold font-rajdhani truncate">{slide.title}</span>
             </div>
           </div>
 
-          {/* Thumbnail navigation (desktop) */}
-          <div className="hidden md:flex items-center gap-2">
+          {/* Poster thumbnail strip */}
+          <div className="hidden md:flex items-end gap-2">
             {SLIDES.map((s, i) => (
-              <button
+              <ThumbCard
                 key={s.id}
+                slide={s}
+                active={i === current}
                 onClick={() => goTo(i, i > current ? 1 : -1)}
-                className={`flex items-center gap-2.5 px-3 py-2 rounded-xl border transition-all duration-300 backdrop-blur-md ${
-                  i === current
-                    ? 'border-yellow-400/50 bg-yellow-400/10'
-                    : 'border-white/10 bg-black/40 hover:border-white/25 hover:bg-white/8'
-                }`}>
-                <img
-                  src={s.visual.poster}
-                  alt={s.title}
-                  className="w-10 h-14 object-cover rounded-md"
-                />
-                <div className="text-left hidden lg:block">
-                  <p className={`text-[11px] font-bold font-rajdhani leading-none transition-colors ${i === current ? 'text-yellow-400' : 'text-gray-300'}`}>
-                    {s.title.length > 14 ? s.title.slice(0, 14) + '…' : s.title}
-                  </p>
-                  <p className="text-gray-600 text-[9px] font-rajdhani mt-0.5 uppercase tracking-wide">{s.type}</p>
-                </div>
-                {i === current && (
-                  <div className="w-1 h-1 rounded-full bg-yellow-400 ml-1 animate-pulse" />
-                )}
-              </button>
+              />
             ))}
           </div>
 
-          {/* Prev / Next arrows */}
-          <div className="flex items-center gap-1.5">
-            <button onClick={prev_}
-              className="w-9 h-9 rounded-full border border-white/15 bg-black/40 hover:border-white/35 hover:bg-white/10 backdrop-blur-sm flex items-center justify-center text-white transition-all hover:-translate-y-0.5">
+          {/* Prev / Pause / Next */}
+          <div className="flex items-center gap-1.5 flex-none">
+            <button
+              onClick={prev_}
+              aria-label="Previous"
+              className="w-9 h-9 rounded-full border border-white/15 flex items-center justify-center text-white transition-all duration-200 hover:border-white/35 hover:bg-white/10 hover:-translate-y-0.5 active:scale-90"
+              style={{ background: 'rgba(0,0,0,0.5)', backdropFilter: 'blur(8px)' }}
+            >
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
               </svg>
             </button>
+
             <button
               onClick={() => setIsPaused(p => !p)}
-              className="w-9 h-9 rounded-full border border-white/15 bg-black/40 hover:border-yellow-400/35 hover:bg-yellow-400/10 backdrop-blur-sm flex items-center justify-center text-white transition-all">
-              {isPaused
-                ? <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-                : <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
-              }
+              aria-label={isPaused ? 'Play' : 'Pause'}
+              className="w-9 h-9 rounded-full border border-white/15 flex items-center justify-center text-white transition-all duration-200 hover:border-yellow-400/40 hover:bg-yellow-400/12 active:scale-90"
+              style={{ background: 'rgba(0,0,0,0.5)', backdropFilter: 'blur(8px)' }}
+            >
+              {isPaused ? (
+                <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M8 5v14l11-7z" /></svg>
+              ) : (
+                <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z" /></svg>
+              )}
             </button>
-            <button onClick={next}
-              className="w-9 h-9 rounded-full border border-white/15 bg-black/40 hover:border-white/35 hover:bg-white/10 backdrop-blur-sm flex items-center justify-center text-white transition-all hover:-translate-y-0.5">
+
+            <button
+              onClick={next}
+              aria-label="Next"
+              className="w-9 h-9 rounded-full border border-white/15 flex items-center justify-center text-white transition-all duration-200 hover:border-white/35 hover:bg-white/10 hover:-translate-y-0.5 active:scale-90"
+              style={{ background: 'rgba(0,0,0,0.5)', backdropFilter: 'blur(8px)' }}
+            >
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
               </svg>
@@ -542,21 +756,39 @@ export default function HeroSection() {
         </div>
       </div>
 
-      {/* ── Vertical side indicator (desktop) ── */}
-      <div className="absolute right-5 top-1/2 -translate-y-1/2 flex-col gap-2 z-20 hidden xl:flex">
+      {/* ══════════════════════════════════════════════
+          LAYER 5 — Right vertical dot indicators
+      ══════════════════════════════════════════════ */}
+      <div className="absolute right-5 top-1/2 -translate-y-1/2 z-20 hidden xl:flex flex-col gap-2.5">
         {SLIDES.map((s, i) => (
-          <button key={s.id} onClick={() => goTo(i, i > current ? 1 : -1)}
-            className="relative flex items-center justify-center group">
+          <button
+            key={s.id}
+            onClick={() => goTo(i, i > current ? 1 : -1)}
+            className="relative group flex items-center justify-center w-5"
+            aria-label={s.title}
+          >
             <motion.div
-              animate={{ height: i === current ? 36 : 8, opacity: i === current ? 1 : 0.3 }}
-              transition={{ duration: 0.3 }}
-              className="w-1 rounded-full"
-              style={{ background: i === current ? slide.accentColor : '#fff' }}
+              animate={{
+                height: i === current ? 42 : 10,
+                opacity: i === current ? 1 : 0.28,
+              }}
+              transition={{ duration: 0.35, ease: [0.25, 0.46, 0.45, 0.94] }}
+              className="w-[3px] rounded-full"
+              style={{
+                background: i === current
+                  ? `linear-gradient(180deg, ${slide.accentColor}, #FFD700)`
+                  : '#ffffff',
+                boxShadow: i === current ? `0 0 12px ${slide.accentColor}` : 'none',
+              }}
             />
             {/* Tooltip */}
-            <div className="absolute right-5 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
-              <div className="bg-black/90 backdrop-blur-sm border border-white/10 rounded-lg px-3 py-1.5 whitespace-nowrap">
+            <div className="absolute right-7 opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none">
+              <div
+                className="rounded-lg px-3 py-1.5 whitespace-nowrap border border-white/10"
+                style={{ background: 'rgba(7,8,16,0.94)', backdropFilter: 'blur(12px)' }}
+              >
                 <p className="text-white text-[11px] font-bold font-rajdhani">{s.title}</p>
+                <p className="text-gray-500 text-[9px] font-rajdhani uppercase tracking-wide">{s.type}</p>
               </div>
             </div>
           </button>
