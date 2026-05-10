@@ -61,16 +61,17 @@ export default function ContentDetailPage({ content, similar = [] }: Props) {
 
           {/* LEFT: Poster */}
           <motion.div initial={{ opacity: 0, x: -30 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.1 }}>
-            <div className="w-full aspect-[2/3] rounded-2xl overflow-hidden border-2 shadow-2xl"
+            <div className="relative w-[280px] h-[420px] rounded-2xl overflow-hidden border-2 shadow-2xl"
               style={{ borderColor: `${color}50`, boxShadow: `0 30px 80px rgba(0,0,0,0.8), 0 0 40px ${color}20` }}>
               {content.poster ? (
                 <Image
                   src={content.poster || '/placeholder.jpg'}
                   alt={content.titleEnglish}
                   fill
-                  className="object-cover"
+                  className="object-cover object-top"
                   sizes="280px"
-              />
+                  unoptimized
+                />
               ) : (
                 <div
                   className="w-full h-full flex items-center justify-center"
