@@ -271,8 +271,7 @@ export default function HeroSection() {
             {/* Poster card */}
             <div className="relative w-[340px] h-[480px] rounded-2xl overflow-hidden shadow-2xl"
               style={{ boxShadow: `0 40px 120px ${slide.accentColor}30, 0 0 0 1px ${slide.accentColor}25` }}>
-              <div className="absolute inset-0 flex items-center justify-center"
-                style={{ background: slide.visual.bg }}>
+              <div className="absolute inset-0">
                 <img
                   src={slide.visual.poster}
                   alt={slide.title}
@@ -291,7 +290,7 @@ export default function HeroSection() {
             </div>
             {/* Poster reflection */}
             <div className="absolute bottom-[8%] left-1/2 -translate-x-1/2 w-[340px] h-24 rounded-2xl opacity-20"
-              style={{ background: slide.visual.bg, filter: 'blur(16px)', transform: 'translateX(-50%) scaleY(-0.35) translateY(90%)' }} />
+              style={{ background: slide.bgGrad, filter: 'blur(16px)', transform: 'translateX(-50%) scaleY(-0.35) translateY(90%)' }} />
           </motion.div>
         </AnimatePresence>
       </div>
@@ -499,7 +498,11 @@ export default function HeroSection() {
                     ? 'border-yellow-400/50 bg-yellow-400/10'
                     : 'border-white/10 bg-black/40 hover:border-white/25 hover:bg-white/8'
                 }`}>
-                <span className="text-base leading-none">{s.visual.emoji}</span>
+                <img
+                  src={s.visual.poster}
+                  alt={s.title}
+                  className="w-10 h-14 object-cover rounded-md"
+                />
                 <div className="text-left hidden lg:block">
                   <p className={`text-[11px] font-bold font-rajdhani leading-none transition-colors ${i === current ? 'text-yellow-400' : 'text-gray-300'}`}>
                     {s.title.length > 14 ? s.title.slice(0, 14) + '…' : s.title}
