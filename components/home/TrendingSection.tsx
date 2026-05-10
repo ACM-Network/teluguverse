@@ -32,11 +32,13 @@ export default function TrendingSection() {
               style={i<3?{background:'linear-gradient(135deg,#FFD700,#FFA500)',WebkitBackgroundClip:'text',WebkitTextFillColor:'transparent',backgroundClip:'text'}:{}}>
               {i+1}
             </span>
-            <div className="w-10 h-14 rounded-lg flex items-center justify-center text-xl flex-none"
+            <div className="w-10 h-14 rounded-lg overflow-hidden flex-none"
               style={{ background:`${TYPE_COLORS[item.type]||'#9CA3AF'}18`, border:`1px solid ${TYPE_COLORS[item.type]||'#9CA3AF'}30` }}>
-              <span className="text-white font-bold text-sm">
-                {item.type.charAt(0)}
-              </span>
+              <img
+                src={item.poster || '/placeholder.jpg'}
+                alt={item.titleEnglish}
+                className="w-full h-full object-cover rounded-lg"
+              />
             </div>
             <div className="flex-1 min-w-0">
               <p className="text-white text-sm font-bold font-rajdhani truncate group-hover:text-yellow-400 transition-colors">{item.titleEnglish}</p>
