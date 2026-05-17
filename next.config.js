@@ -2,8 +2,9 @@
 const nextConfig = {
   images: {
     domains: ['image.tmdb.org', 'cdn.myanimelist.net', 'lh3.googleusercontent.com', 'avatars.githubusercontent.com'],
-    remotePatterns: [{protocol: 'https', hostname: '**'}],
+    remotePatterns: [{ protocol: 'https', hostname: '**' }],
   },
   experimental: { serverActions: { allowedOrigins: ['*'] } },
 }
-module.exports = nextConfig
+
+export default nextConfig

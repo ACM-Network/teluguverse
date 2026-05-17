@@ -1,5 +1,9 @@
-import { PrismaClient, ContentType, ContentStatus } from '@prisma/client'
+import { PrismaClient } from '@prisma/client'
 import bcrypt from 'bcryptjs'
+
+import { movies } from './data/movies.ts'
+import { animes } from './data/animes.ts'
+import { series } from './data/series.ts'
 
 const prisma = new PrismaClient()
 
@@ -23,303 +27,180 @@ async function main() {
     { name: 'Supernatural', nameTe: 'అతీంద్రియ', slug: 'supernatural', color: '#7c3aed', icon: '✨' },
     { name: 'Family', nameTe: 'కుటుంబ', slug: 'family', color: '#16a34a', icon: '👨‍👩‍👧' },
     { name: 'Sports', nameTe: 'స్పోర్ట్స్', slug: 'sports', color: '#2563eb', icon: '⚽' },
-  ].map(g => prisma.genre.upsert({ where: { slug: g.slug }, update: {}, create: g })))
+  ].map(g =>
+    prisma.genre.upsert({
+      where: { slug: g.slug },
+      update: {},
+      create: g,
+    })
+  ))
 
   console.log(`✅ ${genres.length} genres seeded`)
 
-  // Sample content
+  // Content
   const contents = [
-    {
-      slug: 'kalki-2898-ad',
-      type: ContentType.MOVIE,
-      status: ContentStatus.COMPLETED,
-      poster: 'https://wallpaperaccess.com/full/13891674.jpg',
-      banner: 'https://wallpapercave.com/wp/wp15542527.png',
-      trailer: 'https://www.youtube.com/embed/y1-w1kUGuz8?si=q75G5H4jA8qsvgbc',
-      titleEnglish: 'Kalki 2898 AD',
-      titleTelugu: 'కల్కి 2898 AD',
-      descriptionEnglish: 'Set in a dystopian future in 2898 AD, the story follows the mythological figure of Kalki, the 10th avatar of Vishnu, and a fierce warrior named Bhairava.',
-      descriptionTelugu: 'భవిష్యత్తులో, 2898 సంవత్సరంలో, ప్రపంచం చీకటి అధికారాల పట్టులో ఉంది. కల్కి అవతారం రావాలని పురాణాలు చెప్తున్నాయి. భైరా అనే యోధుడు ఒక అద్భుతమైన ప్రయాణం చేస్తాడు.',
-      storyExplanation: 'కల్కి 2898 AD కథ పురాణాలు మరియు భవిష్యత్తు సంయోగంతో నడుస్తుంది...',
-      endingExplanation: 'చివర్లో కల్కి అవతారం తీసుకుంటాడు మరియు చీకటి శక్తులకు వ్యతిరేకంగా పోరాటం మొదలవుతుంది...',
-      funFacts: ['Production took over 3 years', 'Budget was ₹600 crore', 'Released in 7 languages simultaneously', 'VFX team of 400+ artists worked for 2 years'],
-      year: 2024,
-      runtime: 181,
-      imdbRating: 6.8,
-      studio: 'Vyjayanthi Movies',
-      language: 'Telugu',
-      country: 'India',
-      teluguDubAvail: true,
-      teluguSubAvail: true,
-      hindiDubAvail: true,
-      isFeatured: true,
-      isTrending: true,
-      isTopRated: false,
-      trendingScore: 95.5,
-      popularityScore: 98.2,
-    },
-    {
-      slug: 'rrr',
-      type: ContentType.MOVIE,
-      status: ContentStatus.COMPLETED,
-      poster: 'https://m.media-amazon.com/images/M/MV5BNWMwODYyMjQtMTczMi00NTQ1LWFkYjItMGJhMWRkY2E3NDAyXkEyXkFqcGc@._V1_.jpg',
-      banner: 'https://images5.alphacoders.com/131/1319750.jpeg',
-      trailer: 'https://www.youtube.com/embed/NgBoMJy386M?si=04lfesWQ21lHrlju',
-      titleEnglish: 'RRR',
-      titleTelugu: 'RRR',
-      descriptionEnglish: 'A fictional story about two legendary revolutionaries and their journey away from home before they started fighting for their country in 1920s.',
-      descriptionTelugu: 'బ్రిటీష్ పాలనలో ఇద్దరు వీరుల కథ. కోమారం భీమ్ మరియు అల్లూరి సీతారామరాజు – అడవి నుండి వచ్చిన విప్లవ శక్తులు.',
-      year: 2022,
-      runtime: 187,
-      imdbRating: 8.0,
-      studio: 'DVV Entertainment',
-      language: 'Telugu',
-      country: 'India',
-      teluguDubAvail: true,
-      teluguSubAvail: true,
-      hindiDubAvail: true,
-      isTrending: true,
-      isTopRated: true,
-      trendingScore: 88.0,
-      popularityScore: 95.0,
-    },
-    {
-      slug: 'attack-on-titan',
-      type: ContentType.ANIME,
-      status: ContentStatus.COMPLETED,
-      poster: 'https://m.media-amazon.com/images/I/61t9ie31jgL._AC_UF894,1000_QL80_.jpg',
-      banner: 'https://wallpapercave.com/wp/wp8115145.png',
-      trailer: 'https://www.youtube.com/embed/g4KsydBnM7s?si=L1GLkHXvXlWxaWCO',
-      titleEnglish: 'Attack on Titan',
-      titleTelugu: 'ఎరేన్ యగర్ పోరాటం',
-      titleOriginal: 'Shingeki no Kyojin',
-      descriptionEnglish: 'After his hometown is destroyed and his mother is killed, young Eren Yeager vows to cleanse the earth of the giant humanoid Titans that have brought humanity to the brink of extinction.',
-      descriptionTelugu: 'భీమాకార రాక్షసుల నుండి మానవులు తమ గోడలలో రక్షించుకున్న కథ. ఎరేన్ తన స్వేచ్ఛ కోసం పోరాటం. అద్భుతమైన కథ మరియు పాత్రలతో ఈ అనిమే తెలుగు అభిమానులకు చాలా ప్రత్యేకమైనది.',
-      year: 2013,
-      totalEpisodes: 94,
-      totalSeasons: 4,
-      imdbRating: 9.0,
-      malRating: 9.1,
-      studio: 'MAPPA / Wit Studio',
-      language: 'Japanese',
-      country: 'Japan',
-      teluguDubAvail: true,
-      teluguSubAvail: true,
-      hindiDubAvail: true,
-      isTrending: true,
-      isTopRated: true,
-      trendingScore: 92.0,
-      popularityScore: 97.5,
-    },
-    {
-      slug: 'demon-slayer',
-      type: ContentType.ANIME,
-      status: ContentStatus.ONGOING,
-      poster: 'https://wallpaperaccess.com/full/5627712.jpg',
-      banner: 'https://4kwallpapers.com/images/walls/thumbs_3t/22988.jpg',
-      trailer: 'https://www.youtube.com/embed/VQGCKyvzIM4?si=oAklj34tytvIqvA7',
-      titleEnglish: 'Demon Slayer',
-      titleTelugu: 'కిమెత్సు నో యైబా',
-      titleOriginal: 'Kimetsu no Yaiba',
-      descriptionEnglish: 'A family is attacked by demons and only two members survive - Tanjiro and his sister Nezuko, who is turning into a demon.',
-      descriptionTelugu: 'తన కుటుంబాన్ని రాక్షసి చేసిన శత్రువుకు వ్యతిరేకంగా టాంజిరో పోరాటం. అద్భుతమైన యానిమేషన్ మరియు భావోద్వేగ కథ.',
-      year: 2019,
-      totalEpisodes: 55,
-      totalSeasons: 4,
-      imdbRating: 8.7,
-      malRating: 8.6,
-      studio: 'ufotable',
-      language: 'Japanese',
-      country: 'Japan',
-      teluguDubAvail: true,
-      teluguSubAvail: true,
-      hindiDubAvail: true,
-      isTrending: true,
-      isTopRated: true,
-      trendingScore: 90.0,
-      popularityScore: 96.0,
-    },
-    {
-      slug: 'squid-game',
-      type: ContentType.KDRAMA,
-      status: ContentStatus.COMPLETED,
-      poster: 'https://4kwallpapers.com/images/walls/thumbs_3t/20940.png',
-      banner: 'https://4kwallpapers.com/images/walls/thumbs_3t/20373.jpg',
-      trailer: 'https://www.youtube.com/embed/P0EjP6mBOVA?si=jKyA-E2kayd8tFf7',
-      titleEnglish: 'Squid Game',
-      titleTelugu: 'స్క్విడ్ గేమ్',
-      titleOriginal: '오징어 게임',
-      descriptionEnglish: 'Hundreds of cash-strapped players accept a strange invitation to compete in children\'s games for a tempting prize, but the stakes are deadly.',
-      descriptionTelugu: 'ఆర్థిక ఇబ్బందులతో ఉన్న వ్యక్తులు ఒక రహస్య ఆటలో పాల్గొంటారు. గెలిచినవారికి భారీ బహుమతి, మిగిలినవారికి మరణం.',
-      year: 2021,
-      totalEpisodes: 9,
-      totalSeasons: 2,
-      imdbRating: 8.0,
-      studio: 'Netflix Korea',
-      language: 'Korean',
-      country: 'South Korea',
-      teluguDubAvail: true,
-      teluguSubAvail: true,
-      hindiDubAvail: true,
-      isTrending: true,
-      isTopRated: true,
-      trendingScore: 89.0,
-      popularityScore: 99.0,
-    },
-    {
-  slug: 'frieren-beyond-journeys-end',
-  type: ContentType.ANIME,
-  status: ContentStatus.ONGOING,
-  poster: 'https://image.tmdb.org/t/p/original/lI41MVzYGVSfmMyr0vE1sZyTRlM.jpg',
-  banner: 'https://4kwallpapers.com/images/walls/thumbs_3t/24799.jpg',
-  trailer: 'https://www.youtube.com/embed/de00ETIRe3U?si=H6DuUHrOsJD02HbI',
-  titleEnglish: 'Frieren: Beyond Journey’s End',
-  titleTelugu: 'ఫ్రిరెన్',
-  descriptionEnglish: 'An elven mage reflects on life and friendship after defeating the Demon King.',
-  descriptionTelugu: 'డీమన్ కింగ్‌ను ఓడించిన తర్వాత జీవితం మరియు స్నేహం అర్థం తెలుసుకునే ఎల్వెన్ మేజ్ కథ.',
-  storyExplanation: 'ఫ్రిరెన్ తన పాత సహచరుల జ్ఞాపకాలతో కొత్త ప్రయాణాన్ని కొనసాగిస్తుంది...',
-  endingExplanation: 'కథ ఇంకా కొనసాగుతోంది...',
-  funFacts: [
-    'Animated by Madhouse',
-    'One of the highest rated anime on IMDb and MAL',
-    'Season 2 began airing in 2026'
-  ],
-  year: 2023,
-  totalEpisodes: 28,
-  totalSeasons: 2,
-  imdbRating: 8.9,
-  studio: 'Madhouse',
-  language: 'Japanese',
-  country: 'Japan',
-  teluguSubAvail: true,
-  hindiDubAvail: false,
-  isFeatured: true,
-  isTrending: true,
-  isTopRated: true,
-  trendingScore: 98.8,
-  popularityScore: 99.0,
-},
-{
-  slug: 'jujutsu-kaisen',
-  type: ContentType.ANIME,
-  status: ContentStatus.ONGOING,
-  poster: 'https://i.pinimg.com/736x/c5/5a/85/c55a85aef4143eb20e4a5b1db4b62e70.jpg',
-  banner: 'https://4kwallpapers.com/images/walls/thumbs_3t/19746.jpg',
-  trailer: 'https://www.youtube.com/embed/JQith4sV4Qs?si=xJL8ehtfYuzIUy9O',
-  titleEnglish: 'Jujutsu Kaisen',
-  titleTelugu: 'జుజుట్సు కైసెన్',
-  descriptionEnglish: 'Yuji Itadori joins a secret world of sorcerers after becoming host to a powerful curse.',
-  descriptionTelugu: 'శక్తివంతమైన శాపానికి హోస్ట్ అయిన తర్వాత యూజి మాంత్రికుల ప్రపంచంలోకి ప్రవేశిస్తాడు.',
-  storyExplanation: 'సుకునా అనే శాపంతో యూజి జీవితం పూర్తిగా మారిపోతుంది...',
-  endingExplanation: 'కథ ఇంకా కొనసాగుతోంది...',
-  funFacts: [
-    'Animated by MAPPA',
-    'Shibuya Incident arc became hugely popular',
-    'IMDb rating crossed 8.5'
-  ],
-  year: 2020,
-  totalEpisodes: 47,
-  totalSeasons: 3,
-  imdbRating: 8.5,
-  runtime: 24,
-  studio: 'MAPPA',
-  language: 'Japanese',
-  country: 'Japan',
-  teluguSubAvail: true,
-  hindiDubAvail: true,
-  isFeatured: true,
-  isTrending: true,
-  isTopRated: true,
-  trendingScore: 97.5,
-  popularityScore: 98.3,
-},
-    {
-      slug: 'crash-landing-on-you',
-      type: ContentType.KDRAMA,
-      status: ContentStatus.COMPLETED,
-      poster: 'https://i.pinimg.com/736x/66/a0/ca/66a0ca649cf87f7d4ef28954365a04d2.jpg',
-      banner: 'https://upload.wikimedia.org/wikipedia/en/5/5e/Crash_Landing_on_You_poster.png',
-      trailer: 'https://www.youtube.com/embed/GVQGWgeVc4k?si=ll-_5hPnqDtaErIV',
-      titleEnglish: 'Crash Landing on You',
-      titleTelugu: 'నీపై వాలిన నా హృదయం',
-      titleOriginal: '사랑의 불시착',
-      descriptionEnglish: 'A South Korean heiress accidentally crash-lands in North Korea and falls in love with a North Korean military officer.',
-      descriptionTelugu: 'దక్షిణ కొరియా వ్యాపారవేత్త ఉత్తర కొరియాలో పడిపోయి ఒక సైనికుని ప్రేమలో పడుతుంది. అద్భుతమైన ప్రేమ కథ.',
-      year: 2019,
-      totalEpisodes: 16,
-      totalSeasons: 1,
-      imdbRating: 8.7,
-      studio: 'Studio Dragon',
-      language: 'Korean',
-      country: 'South Korea',
-      teluguDubAvail: true,
-      teluguSubAvail: true,
-      hindiDubAvail: false,
-      isTrending: false,
-      isTopRated: true,
-      trendingScore: 78.0,
-      popularityScore: 88.0,
-    },
+    ...movies,
+    ...animes,
+    ...series,
   ]
 
   for (const content of contents) {
-    await prisma.content.upsert({
-      where: { slug: content.slug },
-      update: content,
-      create: content,
-    })
-  }
+  await prisma.content.upsert({
+    where: { slug: content.slug },
+
+    update: {
+      slug: content.slug,
+      type: content.type,
+      status: content.status,
+
+      poster: content.poster,
+      banner: content.banner,
+      trailer: content.trailer,
+
+      titleEnglish: content.title.en,
+      titleTelugu: content.title.te,
+
+      descriptionEnglish: content.description.en,
+      descriptionTelugu: content.description.te,
+
+      year: content.year,
+      runtime: content.runtime,
+      imdbRating: content.imdbRating,
+
+      studio: content.studio,
+      language: content.language,
+      country: content.country,
+
+      teluguDubAvail: content.teluguDubAvail,
+      teluguSubAvail: content.teluguSubAvail,
+      hindiDubAvail: content.hindiDubAvail,
+
+      isFeatured: content.isFeatured ?? false,
+      isTrending: content.isTrending ?? false,
+      isTopRated: content.isTopRated ?? false,
+
+      trendingScore: content.trendingScore ?? 0,
+      popularityScore: content.popularityScore ?? 0,
+    },
+
+    create: {
+      slug: content.slug,
+      type: content.type,
+      status: content.status,
+
+      poster: content.poster,
+      banner: content.banner,
+      trailer: content.trailer,
+
+      titleEnglish: content.title.en,
+      titleTelugu: content.title.te,
+
+      descriptionEnglish: content.description.en,
+      descriptionTelugu: content.description.te,
+
+      year: content.year,
+      runtime: content.runtime,
+      imdbRating: content.imdbRating,
+
+      studio: content.studio,
+      language: content.language,
+      country: content.country,
+
+      teluguDubAvail: content.teluguDubAvail,
+      teluguSubAvail: content.teluguSubAvail,
+      hindiDubAvail: content.hindiDubAvail,
+
+      isFeatured: content.isFeatured ?? false,
+      isTrending: content.isTrending ?? false,
+      isTopRated: content.isTopRated ?? false,
+
+      trendingScore: content.trendingScore ?? 0,
+      popularityScore: content.popularityScore ?? 0,
+    },
+  })
+}
+
   console.log(`✅ ${contents.length} content items seeded`)
 
   // Streaming links
   const streamingData = [
-  { slug: 'kalki-2898-ad', links: [{ platform: 'AMAZON_PRIME', isTeluguDub: true }] },
+    {
+      slug: 'kalki-2898-ad',
+      links: [
+        { platform: 'AMAZON_PRIME', isTeluguDub: true }
+      ]
+    },
 
-  { slug: 'rrr', links: [{ platform: 'ZEE5', isTeluguDub: true }] },
+    {
+      slug: 'rrr',
+      links: [
+        { platform: 'ZEE5', isTeluguDub: true }
+      ]
+    },
 
-  { slug: 'attack-on-titan', links: [
-    { platform: 'MUSE_INDIA_YT', isTeluguDub: true },
-    { platform: 'ANIME_TIMES', isTeluguDub: true }
-  ]},
+    {
+      slug: 'attack-on-titan',
+      links: [
+        { platform: 'MUSE_INDIA_YT', isTeluguDub: true },
+        { platform: 'ANIME_TIMES', isTeluguDub: true }
+      ]
+    },
 
-  { slug: 'demon-slayer', links: [
-    { platform: 'CRUNCHYROLL', isTeluguDub: true },
-    { platform: 'ANIME_TIMES', isTeluguDub: true }
-  ]},
+    {
+      slug: 'demon-slayer',
+      links: [
+        { platform: 'CRUNCHYROLL', isTeluguDub: true },
+        { platform: 'ANIME_TIMES', isTeluguDub: true }
+      ]
+    },
 
-  { slug: 'squid-game', links: [
-    { platform: 'NETFLIX', isTeluguDub: true }
-  ]},
+    {
+      slug: 'jujutsu-kaisen',
+      links: [
+        { platform: 'CRUNCHYROLL', isTeluguDub: true }
+      ]
+    },
 
-  { slug: 'crash-landing-on-you', links: [
-    { platform: 'NETFLIX', isTeluguDub: false },
-    { platform: 'VIKI', isTeluguDub: false }
-  ]},
-
-  { slug: 'jujutsu-kaisen', links: [
-    { platform: 'CRUNCHYROLL', isTeluguDub: true }
-  ]},
-
-  { slug: 'frieren-beyond-journeys-end', links: [
-    { platform: 'CRUNCHYROLL', isTeluguDub: true }
-  ]},
-]
+    {
+      slug: 'frieren-beyond-journeys-end',
+      links: [
+        { platform: 'CRUNCHYROLL', isTeluguDub: true }
+      ]
+    },
+  ]
 
   for (const { slug, links } of streamingData) {
-    const content = await prisma.content.findUnique({ where: { slug } })
+    const content = await prisma.content.findUnique({
+      where: { slug },
+    })
+
     if (!content) continue
+
     for (const link of links) {
       await prisma.streamingLink.upsert({
-        where: { contentId_platform: { contentId: content.id, platform: link.platform as any } },
+        where: {
+          contentId_platform: {
+            contentId: content.id,
+            platform: link.platform as any,
+          },
+        },
         update: {},
-        create: { contentId: content.id, platform: link.platform as any, isAvailable: true, isTeluguDub: link.isTeluguDub, isPremium: true },
+        create: {
+          contentId: content.id,
+          platform: link.platform as any,
+          isAvailable: true,
+          isTeluguDub: link.isTeluguDub,
+          isPremium: true,
+        },
       })
     }
   }
+
   console.log('✅ Streaming links seeded')
 
-  // Sample admin user
+  // Admin user
   const hashedPassword = await bcrypt.hash('admin123456', 12)
+
   await prisma.user.upsert({
     where: { email: 'admin@teluguverse.com' },
     update: {},
@@ -332,8 +213,14 @@ async function main() {
       isVerified: true,
     },
   })
-  console.log('✅ Admin user seeded (admin@teluguverse.com / admin123456)')
+
+  console.log('✅ Admin user seeded')
   console.log('🎉 Seeding complete!')
 }
 
-main().catch(e => { console.error(e); process.exit(1) }).finally(() => prisma.$disconnect())
+main()
+  .catch(e => {
+    console.error(e)
+    process.exit(1)
+  })
+  .finally(() => prisma.$disconnect())

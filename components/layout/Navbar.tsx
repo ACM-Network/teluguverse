@@ -5,19 +5,56 @@ import { useStore } from '@/store/useStore'
 import { motion } from 'framer-motion'
 
 const NAV_LINKS = [
-  { label: 'Home', href: '/' },
-  { label: 'Movies', href: '/search?type=MOVIE' },
-  { label: 'Anime', href: '/search?type=ANIME' },
-  { label: 'Series', href: '/search?type=SERIES' },
-  { label: 'K-Dramas', href: '/search?type=KDRAMA' },
-  { label: 'Hollywood', href: '/search?type=HOLLYWOOD' },
-  { label: 'Trending', href: '/search?sort=trending' },
-  { label: 'Top Rated', href: '/search?sort=rating' },
-  { label: 'Upcoming', href: '/search?status=UPCOMING' },
+  {
+    labelEn: 'Home',
+    labelTe: 'హోమ్',
+    href: '/',
+  },
+  {
+    labelEn: 'Movies',
+    labelTe: 'సినిమాలు',
+    href: '/search?type=MOVIE',
+  },
+  {
+    labelEn: 'Anime',
+    labelTe: 'అనిమే',
+    href: '/search?type=ANIME',
+  },
+  {
+    labelEn: 'Series',
+    labelTe: 'సిరీస్',
+    href: '/search?type=SERIES',
+  },
+  {
+    labelEn: 'K-Dramas',
+    labelTe: 'కే-డ్రామాస్',
+    href: '/search?type=KDRAMA',
+  },
+  {
+    labelEn: 'Hollywood',
+    labelTe: 'హాలీవుడ్',
+    href: '/search?type=HOLLYWOOD',
+  },
+  // {
+  //   labelEn: 'Trending',
+  //   labelTe: 'ట్రెండింగ్',
+  //   href: '/search?sort=trending',
+  // },
+  // {
+  //   labelEn: 'Top Rated',
+  //   labelTe: 'టాప్ రేటెడ్',
+  //   href: '/search?sort=rating',
+  // },
+  // {
+  //   labelEn: 'Upcoming',
+  //   labelTe: 'రాబోయేవి',
+  //   href: '/search?status=UPCOMING',
+  // },
 ]
 
 export default function Navbar() {
   const { language, toggleLanguage, openSearch, user, logout } = useStore()
+  const isTelugu = language === 'te'
   const [scrolled, setScrolled] = useState(false)
   const [profileOpen, setProfileOpen] = useState(false)
   const [mobileOpen, setMobileOpen] = useState(false)
@@ -32,29 +69,45 @@ export default function Navbar() {
     <>
       <nav className={`fixed top-0 left-0 right-0 z-[100] transition-all duration-300 ${scrolled ? 'py-0' : 'py-0'}`}
         style={{ background: scrolled ? 'rgba(7,8,16,0.98)' : 'linear-gradient(180deg, rgba(7,8,16,0.95) 0%, transparent 100%)', backdropFilter: scrolled ? 'blur(20px)' : 'none', borderBottom: scrolled ? '1px solid rgba(255,215,0,0.12)' : 'none' }}>
-        <div className="max-w-screen-2xl mx-auto px-4 xl:px-6 h-16 flex items-center gap-2">
+        <div className="max-w-screen-2xl mx-auto px-4 xl:px-6 h-[78px] flex items-center gap-3 xl:gap-4">
 
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2.5 mr-8 flex-none group">
+          <Link href="/" className="flex items-center gap-3.5 mr-5 flex-none group">
             <div className="w-9 h-9 rounded-lg flex items-center justify-center font-cinzel font-black text-sm text-black"
               style={{ background: 'linear-gradient(135deg, #FFD700, #FFA500)', boxShadow: '0 0 20px rgba(255,215,0,0.4)' }}>
               TV
             </div>
-            <span className="font-cinzel text-lg font-bold tracking-[0.15em] hidden sm:block"
+            <span className="font-cinzel text-[22px] font-bold tracking-[0.18em] hidden sm:block"
               style={{ background: 'linear-gradient(135deg, #FFD700, #fff, #FFD700)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
               TeluguVerse
             </span>
           </Link>
 
           {/* Desktop Nav */}
-          <div className="hidden xl:flex items-center gap-1 flex-1 min-w-0">
-            {NAV_LINKS.map(({ label, href }) => (
+          <div className="hidden xl:flex items-center gap-1.5 xl:gap-2 flex-1 min-w-0">
+            {NAV_LINKS.map(({ labelEn, labelTe, href }) => (
               <Link
-                key={label}
+                key={isTelugu ? labelTe : labelEn}
                 href={href}
-                className="text-gray-400 hover:text-yellow-400 text-[11px] font-semibold font-rajdhani tracking-wide uppercase px-2 xl:px-3 py-2 rounded-lg hover:bg-yellow-400/8 transition-all whitespace-nowrap"
+                className={`
+                  ${
+                    isTelugu
+                      ? 'text-[13.5px] tracking-normal'
+                      : 'text-[12.5px] tracking-[0.14em]'
+                  }
+                  text-gray-300
+                  hover:text-yellow-400
+                  font-semibold
+                  font-rajdhani
+                  px-2.5 xl:px-3
+                  py-2.5
+                  rounded-xl
+                  hover:bg-yellow-400/10
+                  transition-all
+                  whitespace-nowrap
+                 `}
               >
-                {label}
+                {isTelugu ? labelTe : labelEn}
               </Link>
             ))}
           </div>
@@ -62,18 +115,88 @@ export default function Navbar() {
           {/* Right side */}
           <div className="ml-auto flex items-center gap-2 xl:gap-3 flex-none">
             {/* Language toggle */}
-            <div className="hidden sm:flex items-center bg-surface border border-border rounded-lg overflow-hidden text-xs">
-              <button onClick={toggleLanguage} className={`px-3 py-1.5 font-bold font-rajdhani transition-all ${language === 'en' ? 'bg-yellow-500 text-black' : 'text-gray-400 hover:text-white'}`}>EN</button>
-              <button onClick={toggleLanguage} className={`px-3 py-1.5 font-bold font-telugu transition-all ${language === 'te' ? 'bg-yellow-500 text-black' : 'text-gray-400 hover:text-white'}`}>తె</button>
-            </div>
+            <div
+  className="hidden sm:flex items-center rounded-xl overflow-hidden border border-yellow-500/20"
+  style={{
+    background: 'rgba(255,215,0,0.06)',
+    backdropFilter: 'blur(10px)',
+  }}
+>
+  <button
+    onClick={toggleLanguage}
+    className={`
+      px-3.5 py-2
+      text-xs font-bold font-rajdhani
+      transition-all
+      ${
+        language === 'en'
+          ? 'bg-yellow-500 text-black'
+          : 'text-gray-300 hover:text-yellow-400'
+      }
+    `}
+  >
+    EN
+  </button>
+
+  <button
+    onClick={toggleLanguage}
+    className={`
+      px-3.5 py-2
+      text-xs font-bold font-telugu
+      transition-all
+      ${
+        language === 'te'
+          ? 'bg-yellow-500 text-black'
+          : 'text-gray-300 hover:text-yellow-400'
+      }
+    `}
+  >
+    తె
+  </button>
+</div>
 
             {/* Search */}
-            <button onClick={openSearch}
-              className="flex items-center gap-2 px-3 xl:px-4 py-2 rounded-lg border border-yellow-400/20 text-yellow-400 bg-yellow-400/8 hover:bg-yellow-400/15 hover:border-yellow-400/40 transition-all text-xs font-bold font-rajdhani tracking-wide">
-              <span>🔍</span>
-              <span className="hidden xl:block">Search</span>
-              <span className="hidden md:block text-[10px] text-yellow-400/50 border border-yellow-400/20 rounded px-1">⌘K</span>
-            </button>
+<button
+  onClick={openSearch}
+  className="
+  flex items-center gap-2.5
+  px-3 py-2
+  rounded-2xl
+  border border-yellow-400/20
+  text-yellow-400
+  bg-yellow-400/[0.07]
+  hover:bg-yellow-400/[0.12]
+  hover:border-yellow-400/40
+  transition-all
+  text-sm
+  font-black
+  font-rajdhani
+  tracking-wide
+  shadow-[0_0_20px_rgba(255,215,0,0.08)]
+"
+>
+  <svg
+  className="w-4 h-4"
+  fill="none"
+  viewBox="0 0 24 24"
+  stroke="currentColor"
+  strokeWidth={2.2}
+>
+  <path
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    d="M21 21l-4.35-4.35m1.85-5.15a7 7 0 11-14 0 7 7 0 0114 0z"
+  />
+</svg>
+
+  <span className="hidden xl:block">
+    Search
+  </span>
+
+  <span className="hidden md:block text-[10px] text-yellow-400/50 border border-yellow-400/20 rounded px-1">
+    ⌘K
+  </span>
+</button>
 
             {/* Profile */}
             {user ? (
@@ -109,14 +232,39 @@ export default function Navbar() {
               </div>
             ) : (
               <Link href="/auth/login"
-                className="px-5 py-2 rounded-lg text-black text-xs font-bold font-rajdhani tracking-wide uppercase transition-all hover:opacity-90"
+                className="
+  px-5 py-2.5
+  rounded-2xl
+  text-black
+  text-sm
+  font-black
+  font-rajdhani
+  tracking-[0.08em]
+  transition-all
+  hover:scale-[1.03]
+  active:scale-95
+  shadow-[0_0_28px_rgba(255,165,0,0.22)]
+"
                 style={{ background: 'linear-gradient(135deg, #FFD700, #FFA500)', boxShadow: '0 0 20px rgba(255,165,0,0.3)' }}>
-                Sign In
+                {isTelugu ? 'సైన్ ఇన్' : 'Sign In'}
               </Link>
             )}
 
             {/* Mobile menu */}
-            <button onClick={() => setMobileOpen(p => !p)} className="lg:hidden p-2 rounded-lg border border-border text-gray-400 hover:text-white transition-colors">
+            <button 
+              onClick={() => setMobileOpen(p => !p)} 
+              className="
+                lg:hidden
+                p-2.5
+                rounded-xl
+                border border-white/10
+              bg-white/5
+              text-gray-300
+              hover:text-yellow-400
+              hover:border-yellow-400/30
+                transition-all
+               "
+              >
               {mobileOpen ? '✕' : '☰'}
             </button>
           </div>
@@ -127,10 +275,10 @@ export default function Navbar() {
           <motion.div initial={{ opacity: 0, height: 0 }} animate={{ opacity: 1, height: 'auto' }} exit={{ opacity: 0, height: 0 }}
             className="lg:hidden border-t border-border bg-dark-2 px-6 py-4">
             <div className="grid grid-cols-2 gap-1">
-              {NAV_LINKS.map(({ label, href }) => (
-                <Link key={label} href={href} onClick={() => setMobileOpen(false)}
+              {NAV_LINKS.map(({ labelEn, labelTe, href }) => (
+                <Link key={isTelugu ? labelTe : labelEn} href={href} onClick={() => setMobileOpen(false)}
                   className="px-4 py-3 rounded-lg text-gray-300 hover:text-yellow-400 hover:bg-yellow-400/8 transition-all text-sm font-semibold font-rajdhani">
-                  {label}
+                  {isTelugu ? labelTe : labelEn}
                 </Link>
               ))}
             </div>

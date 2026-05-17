@@ -1,117 +1,10 @@
 'use client'
+import { movies } from '@/prisma/data/movies'
+import { animes } from '@/prisma/data/animes'
 import { useState, useEffect, useRef, useCallback } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import Link from 'next/link'
 import { useStore } from '@/store/useStore'
-
-/* ─── Slide data — real poster images, zero emoji ─────────────────── */
-const SLIDES = [
-  {
-    id: '1',
-    slug: 'kalki-2898-ad',
-    title: 'Kalki 2898 AD',
-    titleTe: 'కల్కి 2898 AD',
-    desc: 'భవిష్యత్తులో 2898 సంవత్సరంలో ప్రపంచం చీకటి అధికారాల పట్టులో ఉంది. కల్కి అవతారం రావాలని పురాణాలు చెప్తున్నాయి. భైరా అనే యోధుడు ఒక అద్భుతమైన ప్రయాణం చేస్తాడు.',
-    genres: ['Sci-Fi', 'Mythology', 'Action'],
-    rating: '9.1',
-    year: '2024',
-    runtime: '3h 1m',
-    type: 'TELUGU MOVIE',
-    badge: 'Trending #1',
-    ott: ['Netflix', 'Hotstar'],
-    dubAvail: true,
-    accentColor: '#FF6B00',
-    glowColor: 'rgba(255,107,0,0.32)',
-    visual: {
-      poster: 'https://wallpapercave.com/wp/wp15542527.png',
-      bgPosition: 'center top',
-    },
-  },
-  {
-    id: '2',
-    slug: 'attack-on-titan',
-    title: 'Attack on Titan',
-    titleTe: 'ఎరేన్ యగర్ పోరాటం',
-    desc: 'భీమాకార రాక్షసులకు వ్యతిరేకంగా మానవుల చివరి పోరాటం. గోడల లోపల జీవించిన మానవులు స్వేచ్ఛ కోసం ప్రాణాలు పణంగా పెడతారు. ఎరేన్ యొక్క నిజమైన లక్ష్యం ఏమిటి?',
-    genres: ['Action', 'Dark Fantasy', 'Post-Apocalyptic'],
-    rating: '9.0',
-    year: '2013–2023',
-    runtime: '94 Episodes',
-    type: 'ANIME',
-    badge: 'Top Rated',
-    ott: ['Crunchyroll', 'Netflix'],
-    dubAvail: true,
-    accentColor: '#DC2626',
-    glowColor: 'rgba(220,38,38,0.32)',
-    visual: {
-      poster: 'https://wallpapercave.com/wp/wp8115145.png',
-      bgPosition: 'center center',
-    },
-  },
-  {
-    id: '3',
-    slug: 'squid-game',
-    title: 'Squid Game',
-    titleTe: 'స్క్విడ్ గేమ్',
-    desc: 'ఆర్థిక ఇబ్బందులతో ఉన్న వ్యక్తులు ఒక రహస్య మరణ ఆటలో పాల్గొంటారు. గెలుపు అంటే కోట్ల రూపాయలు — ఓటమి అంటే మరణం. ఈ ఆట ఆపగలరా?',
-    genres: ['Thriller', 'Drama', 'Survival'],
-    rating: '8.7',
-    year: '2021–2024',
-    runtime: 'S2: 7 Episodes',
-    type: 'K-DRAMA',
-    badge: 'Global Hit',
-    ott: ['Netflix'],
-    dubAvail: true,
-    accentColor: '#EC4899',
-    glowColor: 'rgba(236,72,153,0.30)',
-    visual: {
-      poster: 'https://images6.alphacoders.com/119/1191374.jpg',
-      bgPosition: 'center center',
-    },
-  },
-  {
-    id: '4',
-    slug: 'pushpa-the-rule',
-    title: 'Pushpa: The Rule',
-    titleTe: 'పుష్ప: ది రూల్',
-    desc: 'పుష్పరాజ్ సామ్రాజ్యం మరింత విస్తరిస్తోంది. శంకర్ IPS తో తీవ్రమైన ఘర్షణ, ప్రేమ మరియు అధికారం మధ్య సంఘర్షణ. "పుష్ప నేల మీద ఉన్నా — జ్వాలలు రేపుతాడు!"',
-    genres: ['Action', 'Crime', 'Drama'],
-    rating: '8.5',
-    year: '2024',
-    runtime: '3h 20m',
-    type: 'TELUGU MOVIE',
-    badge: 'Blockbuster',
-    ott: ['Amazon Prime'],
-    dubAvail: true,
-    accentColor: '#EF4444',
-    glowColor: 'rgba(239,68,68,0.30)',
-    visual: {
-      poster: 'https://4kwallpapers.com/images/walls/thumbs_3t/17953.jpg',
-      bgPosition: 'center 20%',
-    },
-  },
-  {
-    id: '5',
-    slug: 'goblin',
-    title: 'Goblin',
-    titleTe: 'గాబ్లిన్: ది లోన్లీ గాడ్',
-    desc: '930 సంవత్సరాల అమరత్వం పొందిన మంత్రగాడు తన జీవితాన్ని ముగించే "కంచె" కోసం వెతుకుతాడు. ఆ కంచె ఒక యువతి — ప్రేమ మరియు విధి యొక్క అద్భుతమైన కలయిక.',
-    genres: ['Fantasy', 'Romance', 'Supernatural'],
-    rating: '8.9',
-    year: '2016–2017',
-    runtime: '16 Episodes',
-    type: 'K-DRAMA',
-    badge: 'Fan Favorite',
-    ott: ['Netflix', 'Viki'],
-    dubAvail: true,
-    accentColor: '#7C3AED',
-    glowColor: 'rgba(124,58,237,0.30)',
-    visual: {
-      poster: 'https://wallpapercave.com/wp/wp5709960.jpg',
-      bgPosition: 'center top',
-    },
-  },
-]
 
 const OTT_COLORS: Record<string, string> = {
   Netflix: '#E50914',
@@ -122,108 +15,77 @@ const OTT_COLORS: Record<string, string> = {
   ZEE5: '#7B2FBE',
 }
 
-/* ─── Slide progress bar ─────────────────────────────────────────── */
-function ProgressBar({
-  active,
-  duration,
-  paused,
-  color,
-}: {
-  active: boolean
-  duration: number
-  paused: boolean
-  color: string
-}) {
-  return (
-    <div className="h-[3px] w-full rounded-full overflow-hidden" style={{ background: 'rgba(255,255,255,0.15)' }}>
-      {active && (
-        <motion.div
-          className="h-full rounded-full"
-          style={{ background: `linear-gradient(90deg, ${color}, #FFD700)` }}
-          initial={{ width: '0%' }}
-          animate={{ width: paused ? undefined : '100%' }}
-          transition={{ duration: duration / 1000, ease: 'linear' }}
-        />
-      )}
-    </div>
-  )
-}
-
-/* ─── Poster thumbnail card ──────────────────────────────────────── */
-function ThumbCard({
-  slide,
-  active,
-  onClick,
-}: {
-  slide: (typeof SLIDES)[0]
-  active: boolean
-  onClick: () => void
-}) {
-  return (
-    <button
-      onClick={onClick}
-      className="relative flex-none rounded-xl overflow-hidden border-2 transition-all duration-300 group"
-      style={{
-        width: 'clamp(100px, 9vw, 136px)',
-        height: '72px',
-        borderColor: active ? `${slide.accentColor}CC` : 'rgba(255,255,255,0.10)',
-        transform: active ? 'scale(1.06)' : 'scale(1)',
-        boxShadow: active ? `0 0 22px ${slide.accentColor}55, 0 4px 20px rgba(0,0,0,0.6)` : '0 2px 12px rgba(0,0,0,0.4)',
-      }}
-    >
-      {/* Poster image */}
-      <img
-        src={slide.visual.poster}
-        alt={slide.title}
-        className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-        style={{ objectPosition: slide.visual.bgPosition }}
-        loading="lazy"
-        draggable={false}
-      />
-
-      {/* Dark overlay */}
-      <div
-        className="absolute inset-0 transition-opacity duration-300"
-        style={{
-          background: active
-            ? 'linear-gradient(to top, rgba(7,8,16,0.88) 0%, rgba(7,8,16,0.18) 100%)'
-            : 'linear-gradient(to top, rgba(7,8,16,0.92) 0%, rgba(7,8,16,0.45) 100%)',
-        }}
-      />
-
-      {/* Accent top border line */}
-      {active && (
-        <div
-          className="absolute top-0 left-0 right-0 h-[2px]"
-          style={{ background: `linear-gradient(90deg, ${slide.accentColor}, #FFD700, ${slide.accentColor})` }}
-        />
-      )}
-
-      {/* Label */}
-      <div className="absolute bottom-0 left-0 right-0 px-2 pb-1.5">
-        <p
-          className="text-[10px] font-black font-rajdhani leading-tight truncate transition-colors"
-          style={{ color: active ? '#FFD700' : '#D1D5DB' }}
-        >
-          {slide.title.length > 15 ? slide.title.slice(0, 15) + '…' : slide.title}
-        </p>
-        <p className="text-[9px] font-rajdhani uppercase tracking-wide text-gray-600 truncate">
-          {slide.type}
-        </p>
-      </div>
-
-      {/* Active pulse dot */}
-      {active && (
-        <div
-          className="absolute top-2 right-2 w-1.5 h-1.5 rounded-full animate-pulse"
-          style={{ background: '#FFD700', boxShadow: '0 0 6px #FFD700' }}
-        />
-      )}
-    </button>
-  )
-}
-
 /* ─── Main component ─────────────────────────────────────────────── */
+const CONTENT = [...movies, ...animes]
+
+const SLIDES = CONTENT.map((item, index) => ({
+  id: String(index + 1),
+
+  slug: item.slug,
+
+  title: item.title,
+
+  desc: item.description,
+
+  genres: item.genres ?? ['Action'],
+
+  rating: item.imdbRating?.toString() ?? '8.0',
+
+  year: item.year?.toString() ?? '2024',
+
+  runtime: {
+    en:
+      'runtime' in item && item.runtime
+        ? `${Math.floor(item.runtime / 60)}h ${item.runtime % 60}m`
+        : `${'totalEpisodes' in item ? item.totalEpisodes : 12} Episodes`,
+
+    te:
+      'runtime' in item && item.runtime
+        ? `${Math.floor(item.runtime / 60)}గం ${item.runtime % 60}ని`
+        : `${'totalEpisodes' in item ? item.totalEpisodes : 12} ఎపిసోడ్స్`,
+  },
+
+  type: {
+    en:
+      item.type === 'ANIME'
+        ? 'ANIME'
+        : 'MOVIE',
+
+    te:
+      item.type === 'ANIME'
+        ? 'అనిమే'
+        : 'సినిమా',
+  },
+
+  badge: {
+    en: item.isTrending ? 'Trending' : 'Featured',
+
+    te: item.isTrending
+      ? 'ట్రెండింగ్'
+      : 'ఫీచర్డ్',
+  },
+
+  ott: ['Netflix'],
+
+  dubAvail: item.teluguDubAvail ?? false,
+
+  accentColor:
+    item.type === 'ANIME'
+      ? '#DC2626'
+      : '#E50914',
+
+  glowColor:
+    item.type === 'ANIME'
+      ? 'rgba(220,38,38,0.30)'
+      : 'rgba(229,9,20,0.30)',
+
+  visual: {
+    poster: item.banner || item.poster,
+
+    bgPosition: 'center center',
+  },
+}))
+
 const SLIDE_DURATION = 7000
 
 export default function HeroSection() {
@@ -231,7 +93,8 @@ export default function HeroSection() {
   const [isPaused, setIsPaused] = useState(false)
   const [direction, setDirection] = useState<1 | -1>(1)
   const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null)
-  const { toggleWatchlist, watchlist } = useStore()
+  const { toggleWatchlist, watchlist, language } = useStore()
+  const isTelugu = language === 'te'
 
   const slide = SLIDES[current]
 
@@ -392,7 +255,7 @@ export default function HeroSection() {
       ══════════════════════════════════════════════ */}
       <div className="absolute inset-0 z-10 flex items-center">
         <div className="container-tv w-full pb-28 pt-20">
-          <div className="max-w-[600px] xl:max-w-[650px]">
+          <div className="max-w-[680px] xl:max-w-[760px]">
             <AnimatePresence mode="wait" custom={direction}>
               <motion.div
                 key={`content-${slide.id}`}
@@ -425,10 +288,10 @@ export default function HeroSection() {
                         animation: 'pulse 2s ease-in-out infinite',
                       }}
                     />
-                    {slide.badge}
+                    {isTelugu ? slide.badge.te : slide.badge.en}
                   </span>
                   <span className="text-[11px] font-bold font-rajdhani tracking-[0.16em] uppercase text-gray-500">
-                    {slide.type}
+                    {isTelugu ? slide.type.te : slide.type.en}
                   </span>
                 </motion.div>
 
@@ -443,7 +306,7 @@ export default function HeroSection() {
                     textShadow: `0 2px 20px ${slide.accentColor}44`,
                   }}
                 >
-                  {slide.titleTe}
+                  {slide.title.te}
                 </motion.p>
 
                 {/* Main title */}
@@ -451,9 +314,9 @@ export default function HeroSection() {
                   initial={{ opacity: 0, y: 28 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.22, ease: [0.25, 0.46, 0.45, 0.94] }}
-                  className="font-cinzel font-black leading-[1.0] mb-5"
+                  className="font-cinzel font-black leading-[0.95] mb-5"
                   style={{
-                    fontSize: 'clamp(34px, 5.8vw, 80px)',
+                    fontSize: 'clamp(42px, 6vw, 88px)',
                     background: 'linear-gradient(140deg, #ffffff 0%, #FFD700 55%, #FFA500 100%)',
                     WebkitBackgroundClip: 'text',
                     WebkitTextFillColor: 'transparent',
@@ -461,7 +324,7 @@ export default function HeroSection() {
                     filter: `drop-shadow(0 4px 32px ${slide.accentColor}50)`,
                   }}
                 >
-                  {slide.title}
+                  {isTelugu ? slide.title.te : slide.title.en}
                 </motion.h1>
 
                 {/* Rating + meta */}
@@ -488,7 +351,7 @@ export default function HeroSection() {
                   <span className="text-gray-600">·</span>
                   <span className="text-gray-200 text-sm font-semibold font-rajdhani">{slide.year}</span>
                   <span className="text-gray-600">·</span>
-                  <span className="text-gray-200 text-sm font-semibold font-rajdhani">{slide.runtime}</span>
+                  <span className="text-gray-200 text-sm font-semibold font-rajdhani">{isTelugu ? slide.runtime.te : slide.runtime.en}</span>
 
                   {slide.dubAvail && (
                     <>
@@ -537,13 +400,13 @@ export default function HeroSection() {
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ delay: 0.36 }}
-                  className="font-telugu text-gray-300 leading-[2.0] mb-6 line-clamp-3"
+                  className="font-telugu text-gray-200 leading-[1.9] mb-6 line-clamp-3 max-w-[620px]"
                   style={{
-                    fontSize: 'clamp(13px, 1.25vw, 15px)',
+                    fontSize: 'clamp(14px, 1.1vw, 16px)',
                     textShadow: '0 1px 12px rgba(0,0,0,0.95)',
                   }}
                 >
-                  {slide.desc}
+                  {isTelugu ? slide.desc.te : slide.desc.en}
                 </motion.p>
 
                 {/* OTT platforms */}
@@ -554,7 +417,7 @@ export default function HeroSection() {
                   className="flex items-center gap-2 mb-7 flex-wrap"
                 >
                   <span className="text-gray-600 text-[11px] font-semibold font-rajdhani uppercase tracking-widest">
-                    Watch on
+                    {isTelugu ? 'ఓటీటీలో' : 'Watch on'}
                   </span>
                   {slide.ott.map(platform => (
                     <span
@@ -580,12 +443,12 @@ export default function HeroSection() {
                   initial={{ opacity: 0, y: 16 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.44, ease: [0.25, 0.46, 0.45, 0.94] }}
-                  className="flex gap-3 flex-wrap"
+                  className="flex gap-4 flex-wrap"
                 >
                   {/* Watch Now */}
                   <Link
                     href={`/content/${slide.slug}`}
-                    className="group relative flex items-center gap-2.5 px-7 py-3.5 rounded-xl font-cinzel font-bold text-sm tracking-wide text-white overflow-hidden transition-all duration-300 hover:-translate-y-0.5 active:scale-95"
+                    className="group relative flex items-center gap-2.5 px-8 py-4 min-h-[54px] rounded-xl font-cinzel font-bold text-sm tracking-[0.08em] text-white overflow-hidden transition-all duration-300 hover:-translate-y-0.5 active:scale-95"
                     style={{
                       background: 'linear-gradient(135deg, #E50914 0%, #b5000b 100%)',
                       boxShadow: '0 8px 32px rgba(229,9,20,0.45), 0 2px 8px rgba(0,0,0,0.6)',
@@ -594,7 +457,7 @@ export default function HeroSection() {
                     <svg className="w-4 h-4 fill-white flex-none" viewBox="0 0 24 24">
                       <path d="M8 5v14l11-7z" />
                     </svg>
-                    Watch Now
+                    {isTelugu ? 'ఇప్పుడే చూడండి' : 'Watch Now'}
                     <div
                       className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
                       style={{
@@ -606,7 +469,7 @@ export default function HeroSection() {
                   {/* More Details */}
                   <Link
                     href={`/content/${slide.slug}`}
-                    className="flex items-center gap-2.5 px-7 py-3.5 rounded-xl font-rajdhani font-bold text-sm tracking-wide text-white border border-white/22 transition-all duration-300 hover:-translate-y-0.5 hover:bg-white/12 hover:border-white/35 active:scale-95"
+                    className="flex items-center gap-2.5 px-7 py-3.5 min-h-[54px] rounded-xl font-rajdhani font-bold text-sm tracking-[0.08em] text-white border border-white/22 transition-all duration-300 hover:-translate-y-0.5 hover:bg-white/12 hover:border-white/35 active:scale-95"
                     style={{
                       background: 'rgba(255,255,255,0.07)',
                       backdropFilter: 'blur(12px)',
@@ -622,16 +485,16 @@ export default function HeroSection() {
                     >
                       <path strokeLinecap="round" strokeLinejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
-                    More Details
+                    {isTelugu ? 'వివరాలు' : 'More Details'}
                   </Link>
 
                   {/* Watchlist */}
                   <button
                     onClick={() => toggleWatchlist(slide.id)}
-                    className={`flex items-center gap-2 px-5 py-3.5 rounded-xl font-rajdhani font-bold text-sm tracking-wide border transition-all duration-300 hover:-translate-y-0.5 active:scale-95 ${
+                    className={`flex items-center gap-2 px-6 py-3.5 min-h-[54px] rounded-xl font-rajdhani font-bold text-sm tracking-[0.08em] border transition-all duration-300 hover:-translate-y-0.5 active:scale-95 ${
                       watchlist.includes(slide.id)
                         ? 'bg-yellow-500/22 border-yellow-500/55 text-yellow-400'
-                        : 'border-white/15 text-gray-300 hover:border-yellow-400/45 hover:text-yellow-400'
+                        : 'border-white/15 text-gray-200 hover:border-yellow-400/45 hover:text-yellow-400'
                     }`}
                     style={{
                       background: watchlist.includes(slide.id) ? undefined : 'rgba(255,255,255,0.05)',
@@ -643,14 +506,14 @@ export default function HeroSection() {
                         <svg className="w-4 h-4 flex-none" fill="currentColor" viewBox="0 0 24 24">
                           <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
                         </svg>
-                        Saved
+                        {isTelugu ? 'సేవ్ అయింది' : 'Saved'}
                       </>
                     ) : (
                       <>
                         <svg className="w-4 h-4 flex-none" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                           <path strokeLinecap="round" strokeLinejoin="round" d="M12 4v16m8-8H4" />
                         </svg>
-                        Watchlist
+                        {isTelugu ? 'వాచ్‌లిస్ట్' : 'Watchlist'}
                       </>
                     )}
                   </button>
@@ -659,104 +522,7 @@ export default function HeroSection() {
             </AnimatePresence>
           </div>
         </div>
-      </div>
-
-      {/* ══════════════════════════════════════════════
-          LAYER 4 — Bottom controls bar
-      ══════════════════════════════════════════════ */}
-      <div
-        className="absolute bottom-0 left-0 right-0 z-20 pt-8 pb-4"
-        style={{
-          background: 'linear-gradient(to top, rgba(7,8,16,0.90) 0%, rgba(7,8,16,0.55) 55%, transparent 100%)',
-        }}
-      >
-        <div className="container-tv flex items-end gap-5">
-
-          {/* Progress bars + counter */}
-          <div className="flex flex-col gap-3 flex-1 min-w-0">
-            <div className="flex gap-1.5" style={{ maxWidth: '220px' }}>
-              {SLIDES.map((s, i) => (
-                <button
-                  key={s.id}
-                  onClick={() => goTo(i, i > current ? 1 : -1)}
-                  className="flex-1 py-1.5"
-                  aria-label={`Slide ${i + 1}: ${s.title}`}
-                >
-                  <ProgressBar
-                    active={i === current}
-                    duration={SLIDE_DURATION}
-                    paused={isPaused}
-                    color={slide.accentColor}
-                  />
-                </button>
-              ))}
-            </div>
-            <div className="flex items-center gap-2">
-              <span className="font-cinzel text-white font-bold text-sm tabular-nums">
-                {String(current + 1).padStart(2, '0')}
-              </span>
-              <span className="text-gray-700 text-xs">/</span>
-              <span className="text-gray-600 text-xs font-rajdhani tabular-nums">
-                {String(SLIDES.length).padStart(2, '0')}
-              </span>
-              <span className="w-px h-3 bg-gray-800 mx-1.5" />
-              <span className="text-gray-400 text-xs font-semibold font-rajdhani truncate">{slide.title}</span>
-            </div>
-          </div>
-
-          {/* Poster thumbnail strip */}
-          <div className="hidden md:flex items-end gap-2">
-            {SLIDES.map((s, i) => (
-              <ThumbCard
-                key={s.id}
-                slide={s}
-                active={i === current}
-                onClick={() => goTo(i, i > current ? 1 : -1)}
-              />
-            ))}
-          </div>
-
-          {/* Prev / Pause / Next */}
-          <div className="flex items-center gap-1.5 flex-none">
-            <button
-              onClick={prev_}
-              aria-label="Previous"
-              className="w-9 h-9 rounded-full border border-white/15 flex items-center justify-center text-white transition-all duration-200 hover:border-white/35 hover:bg-white/10 hover:-translate-y-0.5 active:scale-90"
-              style={{ background: 'rgba(0,0,0,0.5)', backdropFilter: 'blur(8px)' }}
-            >
-              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
-              </svg>
-            </button>
-
-            <button
-              onClick={() => setIsPaused(p => !p)}
-              aria-label={isPaused ? 'Play' : 'Pause'}
-              className="w-9 h-9 rounded-full border border-white/15 flex items-center justify-center text-white transition-all duration-200 hover:border-yellow-400/40 hover:bg-yellow-400/12 active:scale-90"
-              style={{ background: 'rgba(0,0,0,0.5)', backdropFilter: 'blur(8px)' }}
-            >
-              {isPaused ? (
-                <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M8 5v14l11-7z" /></svg>
-              ) : (
-                <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z" /></svg>
-              )}
-            </button>
-
-            <button
-              onClick={next}
-              aria-label="Next"
-              className="w-9 h-9 rounded-full border border-white/15 flex items-center justify-center text-white transition-all duration-200 hover:border-white/35 hover:bg-white/10 hover:-translate-y-0.5 active:scale-90"
-              style={{ background: 'rgba(0,0,0,0.5)', backdropFilter: 'blur(8px)' }}
-            >
-              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
-              </svg>
-            </button>
-          </div>
-        </div>
-      </div>
-
-      {/* ══════════════════════════════════════════════
+        {/* ══════════════════════════════════════════════
           LAYER 5 — Right vertical dot indicators
       ══════════════════════════════════════════════ */}
       <div className="absolute right-5 top-1/2 -translate-y-1/2 z-20 hidden xl:flex flex-col gap-2.5">
@@ -765,7 +531,7 @@ export default function HeroSection() {
             key={s.id}
             onClick={() => goTo(i, i > current ? 1 : -1)}
             className="relative group flex items-center justify-center w-5"
-            aria-label={s.title}
+            aria-label={s.title.en}
           >
             <motion.div
               animate={{
@@ -787,14 +553,16 @@ export default function HeroSection() {
                 className="rounded-lg px-3 py-1.5 whitespace-nowrap border border-white/10"
                 style={{ background: 'rgba(7,8,16,0.94)', backdropFilter: 'blur(12px)' }}
               >
-                <p className="text-white text-[11px] font-bold font-rajdhani">{s.title}</p>
-                <p className="text-gray-500 text-[9px] font-rajdhani uppercase tracking-wide">{s.type}</p>
+                <p className="text-white text-[11px] font-bold font-rajdhani">
+                  {s.title.en}
+                </p>
+                <p className="text-gray-500 text-[9px] font-rajdhani uppercase tracking-wide">{s.type.en}</p>
               </div>
             </div>
           </button>
         ))}
       </div>
-
+</div>
     </section>
   )
 }
