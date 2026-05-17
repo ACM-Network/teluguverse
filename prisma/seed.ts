@@ -1,9 +1,9 @@
 import { PrismaClient } from '@prisma/client'
 import bcrypt from 'bcryptjs'
 
-import { movies } from './data/movies.ts'
-import { animes } from './data/animes.ts'
-import { series } from './data/series.ts'
+import { movies } from './data/movies'
+import { animes } from './data/animes'
+import { series } from './data/series'
 
 const prisma = new PrismaClient()
 
