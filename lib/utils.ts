@@ -28,3 +28,7 @@ export const paginate = (page: number = 1, limit: number = 20) => ({
   skip: (page - 1) * limit,
   take: limit,
 })
+
+export const PLACEHOLDER_POSTER = '/placeholder-poster.svg'
+export const PLACEHOLDER_BACKDROP = '/placeholder-backdrop.svg'
+

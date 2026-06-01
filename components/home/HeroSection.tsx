@@ -5,6 +5,7 @@ import { useState, useEffect, useRef, useCallback } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import Link from 'next/link'
 import { useStore } from '@/store/useStore'
+import { PLACEHOLDER_BACKDROP } from '@/lib/utils'
 
 const OTT_COLORS: Record<string, string> = {
   Netflix: '#E50914',
@@ -92,11 +93,22 @@ export default function HeroSection() {
   const [current, setCurrent] = useState(0)
   const [isPaused, setIsPaused] = useState(false)
   const [direction, setDirection] = useState<1 | -1>(1)
+  const [failedBgs, setFailedBgs] = useState<Record<string, boolean>>({})
   const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null)
   const { toggleWatchlist, watchlist, language } = useStore()
-  const isTelugu = language === 'te'
 
   const slide = SLIDES[current]
+
+  useEffect(() => {
+    if (typeof window === 'undefined') return
+    const img = new window.Image()
+    img.src = slide.visual.poster
+    img.onerror = () => {
+      setFailedBgs(prev => ({ ...prev, [slide.id]: true }))
+    }
+  }, [slide.id, slide.visual.poster])
+
+  const isTelugu = language === 'te'
 
   const goTo = useCallback((idx: number, dir: 1 | -1 = 1) => {
     setDirection(dir)
@@ -178,7 +190,7 @@ export default function HeroSection() {
           exit="exit"
           className="absolute inset-0"
           style={{
-            backgroundImage: `url(${slide.visual.poster})`,
+            backgroundImage: `url(${failedBgs[slide.id] ? PLACEHOLDER_BACKDROP : slide.visual.poster})`,
             backgroundSize: 'cover',
             backgroundPosition: slide.visual.bgPosition,
             backgroundRepeat: 'no-repeat',
@@ -193,29 +205,29 @@ export default function HeroSection() {
 
       {/* Primary left readability gradient */}
       <div
-        className="absolute inset-0 pointer-events-none"
+        className="absolute inset-0 pointer-events-none z-10"
         style={{
           background:
-            'linear-gradient(to right, rgba(7,8,16,0.97) 0%, rgba(7,8,16,0.90) 28%, rgba(7,8,16,0.65) 52%, rgba(7,8,16,0.20) 75%, rgba(7,8,16,0.04) 100%)',
+            'linear-gradient(to right, rgba(5,6,12,0.99) 0%, rgba(5,6,12,0.92) 25%, rgba(5,6,12,0.65) 50%, rgba(5,6,12,0.2) 78%, transparent 100%)',
         }}
       />
 
       {/* Bottom-to-top fade — merges seamlessly into the rest of the page */}
       <div
-        className="absolute bottom-0 left-0 right-0 pointer-events-none"
+        className="absolute bottom-0 left-0 right-0 pointer-events-none z-10"
         style={{
-          height: '58%',
+          height: '62%',
           background:
-            'linear-gradient(to top, rgba(7,8,16,1) 0%, rgba(7,8,16,0.85) 25%, rgba(7,8,16,0.45) 55%, transparent 100%)',
+            'linear-gradient(to top, rgba(5,6,12,1) 0%, rgba(5,6,12,0.9) 20%, rgba(5,6,12,0.4) 55%, transparent 100%)',
         }}
       />
 
       {/* Top navbar fade */}
       <div
-        className="absolute top-0 left-0 right-0 pointer-events-none"
+        className="absolute top-0 left-0 right-0 pointer-events-none z-10"
         style={{
-          height: '200px',
-          background: 'linear-gradient(to bottom, rgba(7,8,16,0.72) 0%, rgba(7,8,16,0.20) 60%, transparent 100%)',
+          height: '220px',
+          background: 'linear-gradient(to bottom, rgba(5,6,12,0.85) 0%, rgba(5,6,12,0.3) 60%, transparent 100%)',
         }}
       />
 
@@ -227,16 +239,25 @@ export default function HeroSection() {
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 1.5 }}
-          className="absolute inset-0 pointer-events-none"
+          className="absolute inset-0 pointer-events-none z-10"
           style={{
-            background: `radial-gradient(ellipse 60% 80% at -5% 65%, ${slide.glowColor} 0%, transparent 68%)`,
+            background: `radial-gradient(ellipse 65% 85% at -5% 65%, ${slide.glowColor} 0%, transparent 70%)`,
           }}
         />
       </AnimatePresence>
 
+      {/* Floating cinematic dust particles */}
+      <div className="absolute inset-0 pointer-events-none overflow-hidden z-10">
+        <div className="absolute w-1 h-1 rounded-full bg-white/20 animate-float-particle left-[8%] bottom-[12%]" style={{ animationDelay: '0s', animationDuration: '14s' }} />
+        <div className="absolute w-[1.5px] h-[1.5px] rounded-full bg-yellow-400/25 animate-float-particle left-[24%] bottom-[22%]" style={{ animationDelay: '3s', animationDuration: '19s' }} />
+        <div className="absolute w-2 h-2 rounded-full bg-white/10 animate-float-particle left-[55%] bottom-[8%]" style={{ animationDelay: '1s', animationDuration: '16s' }} />
+        <div className="absolute w-1 h-1 rounded-full bg-yellow-400/15 animate-float-particle left-[75%] bottom-[16%]" style={{ animationDelay: '5s', animationDuration: '24s' }} />
+        <div className="absolute w-[1.2px] h-[1.2px] rounded-full bg-white/15 animate-float-particle left-[40%] bottom-[28%]" style={{ animationDelay: '7s', animationDuration: '13s' }} />
+      </div>
+
       {/* Cinematic film-grain noise */}
       <div
-        className="absolute inset-0 pointer-events-none opacity-[0.032] mix-blend-overlay"
+        className="absolute inset-0 pointer-events-none opacity-[0.035] mix-blend-overlay z-10"
         style={{
           backgroundImage:
             'url("data:image/svg+xml,%3Csvg viewBox=\'0 0 256 256\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cfilter id=\'grain\'%3E%3CfeTurbulence type=\'fractalNoise\' baseFrequency=\'0.82\' numOctaves=\'4\' stitchTiles=\'stitch\'/%3E%3C/filter%3E%3Crect width=\'100%25\' height=\'100%25\' filter=\'url(%23grain)\'/%3E%3C/svg%3E")',
@@ -246,8 +267,8 @@ export default function HeroSection() {
 
       {/* Edge vignette */}
       <div
-        className="absolute inset-0 pointer-events-none"
-        style={{ boxShadow: 'inset 0 0 200px rgba(7,8,16,0.45)' }}
+        className="absolute inset-0 pointer-events-none z-10"
+        style={{ boxShadow: 'inset 0 0 240px rgba(5,6,12,0.6)' }}
       />
 
       {/* ══════════════════════════════════════════════

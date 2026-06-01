@@ -2,6 +2,8 @@
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { ContentItem } from '@/types'
+import SectionHeader from '@/components/ui/SectionHeader'
+import { PLACEHOLDER_POSTER } from '@/lib/utils'
 
 const TYPE_COLORS: Record<string,string> = { MOVIE:'#E50914',ANIME:'#a855f7',SERIES:'#3b82f6',KDRAMA:'#ec4899',CARTOON:'#22c55e',HOLLYWOOD:'#f59e0b',DOCUMENTARY:'#06b6d4' }
 
@@ -10,7 +12,7 @@ export default function TrendingSection() {
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    fetch('/api/content/trending?limit=7')
+    fetch('/api/content/trending?limit=20')
       .then(r => r.json())
       .then(d => { setItems(Array.isArray(d) ? d : []); setLoading(false) })
       .catch(() => setLoading(false))
@@ -18,10 +20,7 @@ export default function TrendingSection() {
 
   return (
     <div>
-      <div className="flex items-center gap-3 mb-7">
-        <div className="w-1 h-7 rounded-full" style={{ background: 'linear-gradient(180deg,#FFD700,#FFA500)' }} />
-        <h2 className="font-cinzel text-xl font-bold text-white tracking-wide">Top Rankings</h2>
-      </div>
+      <SectionHeader title="Top Rankings" titleTe="టాప్ ర్యాంకింగ్స్" icon="ranking" />
       <div className="space-y-2">
         {loading ? (
           Array.from({length:6}).map((_,i)=><div key={i} className="h-16 rounded-xl bg-surface shimmer" />)
@@ -35,9 +34,10 @@ export default function TrendingSection() {
             <div className="w-10 h-14 rounded-lg overflow-hidden flex-none"
               style={{ background:`${TYPE_COLORS[item.type]||'#9CA3AF'}18`, border:`1px solid ${TYPE_COLORS[item.type]||'#9CA3AF'}30` }}>
               <img
-                src={item.poster || '/placeholder.jpg'}
+                src={item.poster || PLACEHOLDER_POSTER}
                 alt={item.titleEnglish}
                 className="w-full h-full object-cover rounded-lg"
+                onError={(e) => { e.currentTarget.src = PLACEHOLDER_POSTER }}
               />
             </div>
             <div className="flex-1 min-w-0">

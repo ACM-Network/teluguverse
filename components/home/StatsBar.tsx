@@ -26,15 +26,27 @@ const STATS = [
 
 export default function StatsBar() {
   return (
-    <div className="bg-surface border-y border-border relative z-10">
-      <div className="container-tv py-5">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-0">
+    <div className="bg-dark-2/65 backdrop-blur-md border-y border-white/5 relative z-10 select-none">
+      <div className="container-tv py-6">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-0">
           {STATS.map((s, i) => (
-            <motion.div key={s.label} initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.1 }}
-              className={`text-center py-2 ${i < STATS.length - 1 ? 'border-r border-border' : ''}`}>
-              <p className="font-cinzel text-lg md:text-2xl font-black gradient-text-cinema leading-tight"></p>
-              <p className="text-gray-400 text-xs font-bold font-rajdhani uppercase tracking-wider mt-1">{s.label}</p>
-              <p className="font-telugu text-gray-600 text-[10px] mt-0.5">{s.labelTe}</p>
+            <motion.div 
+              key={s.label} 
+              initial={{ opacity: 0, y: 12 }} 
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: i * 0.08, duration: 0.4 }}
+              className={`text-center py-2.5 px-4 ${i < STATS.length - 1 ? 'md:border-r md:border-white/5' : ''}`}
+            >
+              <p className="font-cinzel text-base md:text-xl font-extrabold tracking-widest gradient-text-cinema leading-tight uppercase">
+                {s.num}
+              </p>
+              <p className="text-gray-300 text-[10px] md:text-xs font-bold font-rajdhani uppercase tracking-[0.12em] mt-1.5 leading-none">
+                {s.label}
+              </p>
+              <p className="font-telugu text-gray-500 text-[10px] mt-1 leading-normal">
+                {s.labelTe}
+              </p>
             </motion.div>
           ))}
         </div>
@@ -42,3 +54,4 @@ export default function StatsBar() {
     </div>
   )
 }
+

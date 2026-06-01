@@ -10,7 +10,7 @@ export default function KDramaSection() {
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    fetch('/api/content?type=KDRAMA&sort=rating&limit=12')
+    fetch('/api/content?type=KDRAMA&sort=rating&limit=20')
       .then(r => r.json())
       .then(d => { setItems(d.items || []); setLoading(false) })
       .catch(() => setLoading(false))
@@ -18,7 +18,7 @@ export default function KDramaSection() {
 
   return (
     <div>
-      <SectionHeader title="K-Drama Spotlight" titleTe="కొరియన్ డ్రామా" href="/search?type=KDRAMA" icon="🌸" />
+      <SectionHeader title="K-Drama Spotlight" titleTe="కొరియన్ డ్రామా" href="/search?type=KDRAMA" icon="kdrama" />
       <div className="cards-scroll">
         {loading ? <SkeletonCard count={8} /> : items.map((item, i) => <ContentCard key={item.id} content={item} index={i} />)}
       </div>

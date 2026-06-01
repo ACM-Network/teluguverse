@@ -3,259 +3,533 @@ import { ContentType, ContentStatus } from '@prisma/client'
 export const animes = [
   {
     slug: 'attack-on-titan',
-
     type: ContentType.ANIME,
-
     status: ContentStatus.COMPLETED,
-
-    poster: 'https://m.media-amazon.com/images/I/61t9ie31jgL._AC_UF894,1000_QL80_.jpg',
-
-    banner: 'https://wallpapercave.com/wp/wp8115145.png',
-
-    trailer: 'https://www.youtube.com/embed/g4KsydBnM7s?si=L1GLkHXvXlWxaWCO',
-
+    poster: 'https://image.tmdb.org/t/p/w500/hTP1DtLGFamjfu8WqjnuQdP1n4i.jpg',
+    banner: 'https://image.tmdb.org/t/p/original/rqbCbjB19amtOtFQbb3K2lgm2zv.jpg',
+    trailer: 'https://www.youtube.com/embed/g4KsydBnM7s',
     title: {
       en: 'Attack on Titan',
       te: 'అటాక్ ఆన్ టైటన్',
     },
-
     titleOriginal: 'Shingeki no Kyojin',
-
     description: {
       en: 'After his hometown is destroyed and his mother is killed, Eren Yeager vows to destroy the Titans that pushed humanity to the edge of extinction.',
-
       te: 'తన ఊరు నాశనం కావడం మరియు తల్లి మరణించిన తర్వాత, ఎరెన్ యేగర్ మానవజాతిని వినాశన అంచుకు తీసుకెళ్లిన టైటన్‌లను నాశనం చేయాలని నిర్ణయించుకుంటాడు.',
     },
-
-    genres: ['Action', 'Dark Fantasy', 'Post-Apocalyptic'],
-
+    genres: ['Action', 'Fantasy', 'Thriller', 'Supernatural'],
     year: 2013,
-
     totalEpisodes: 94,
-
     totalSeasons: 4,
-
     imdbRating: 9.0,
-
-    malRating: 9.1,
-
     studio: 'MAPPA / Wit Studio',
-
     language: 'Japanese',
-
     country: 'Japan',
-
+    ottPlatforms: ['CRUNCHYROLL', 'NETFLIX'],
     teluguDubAvail: true,
-
     teluguSubAvail: true,
-
     hindiDubAvail: true,
-
     isTrending: true,
-
     isTopRated: true,
-
     trendingScore: 92.0,
-
     popularityScore: 97.5,
+    similarSlugs: ['naruto-shippuden', 'jujutsu-kaisen', 'chainsaw-man'],
+    universeInfo: {
+      universeId: 'naruto', // Let's group under anime category or custom universe if applicable
+      order: 1
+    }
   },
-
   {
     slug: 'demon-slayer',
-
     type: ContentType.ANIME,
-
     status: ContentStatus.ONGOING,
-
-    poster: 'https://wallpaperaccess.com/full/5627712.jpg',
-
-    banner: 'https://4kwallpapers.com/images/walls/thumbs_3t/22988.jpg',
-
-    trailer: 'https://www.youtube.com/embed/VQGCKyvzIM4?si=oAklj34tytvIqvA7',
-
+    poster: 'https://image.tmdb.org/t/p/w500/xUfRZu2mi8jH6SzQEJGP6tjBuYj.jpg',
+    banner: 'https://image.tmdb.org/t/p/original/3GQKYh6Trm8pxd2AypovoYQf4Ay.jpg',
+    trailer: 'https://www.youtube.com/embed/VQGCKyvzIM4',
     title: {
       en: 'Demon Slayer',
       te: 'డీమన్ స్లేయర్',
     },
-
     titleOriginal: 'Kimetsu no Yaiba',
-
     description: {
       en: 'After demons slaughter his family, Tanjiro Kamado becomes a demon slayer to save his sister Nezuko and take revenge.',
-
       te: 'రాక్షసులు తన కుటుంబాన్ని చంపిన తర్వాత, తన చెల్లెలు నెజుకోను కాపాడేందుకు మరియు ప్రతీకారం తీర్చుకునేందుకు టాంజిరో డీమన్ స్లేయర్‌గా మారుతాడు.',
     },
-
-    genres: ['Action', 'Fantasy', 'Adventure'],
-
+    genres: ['Action', 'Fantasy', 'Adventure', 'Supernatural'],
     year: 2019,
-
     totalEpisodes: 55,
-
     totalSeasons: 4,
-
     imdbRating: 8.7,
-
-    malRating: 8.6,
-
     studio: 'ufotable',
-
     language: 'Japanese',
-
-    ottPlatforms: ['CRUNCHYROLL'],
-
     country: 'Japan',
-
+    ottPlatforms: ['CRUNCHYROLL', 'NETFLIX'],
     teluguDubAvail: true,
-
     teluguSubAvail: true,
-
     hindiDubAvail: true,
-
     isTrending: true,
-
     isTopRated: true,
-
     trendingScore: 90.0,
-
     popularityScore: 96.0,
+    similarSlugs: ['jujutsu-kaisen', 'hunter-x-hunter']
   },
-
   {
     slug: 'frieren-beyond-journeys-end',
-
     type: ContentType.ANIME,
-
-    status: ContentStatus.ONGOING,
-
-    poster: 'https://image.tmdb.org/t/p/original/lI41MVzYGVSfmMyr0vE1sZyTRlM.jpg',
-
-    banner: 'https://4kwallpapers.com/images/walls/thumbs_3t/24799.jpg',
-
-    trailer: 'https://www.youtube.com/embed/de00ETIRe3U?si=H6DuUHrOsJD02HbI',
-
+    status: ContentStatus.COMPLETED,
+    poster: 'https://image.tmdb.org/t/p/w500/dqZENchTd7lp5zht7BdlqM7RBhD.jpg',
+    banner: 'https://image.tmdb.org/t/p/original/rBOnrVlck7BIlGeWVlzYiZeg4l2.jpg',
+    trailer: 'https://www.youtube.com/embed/de00ETIRe3U',
     title: {
       en: 'Frieren: Beyond Journey’s End',
       te: 'ఫ్రిరెన్: బియాండ్ జర్నీస్ ఎండ్',
     },
-
+    titleOriginal: 'Sousou no Frieren',
     description: {
       en: 'After defeating the Demon King, the elf mage Frieren begins a new journey to understand human emotions and the meaning of life.',
-
       te: 'డీమన్ కింగ్‌ను ఓడించిన తర్వాత, ఎల్ఫ్ మేజ్ ఫ్రిరెన్ మానవ భావోద్వేగాలు మరియు జీవిత అర్థాన్ని తెలుసుకునేందుకు కొత్త ప్రయాణం ప్రారంభిస్తుంది.',
     },
-
     genres: ['Fantasy', 'Drama', 'Adventure'],
-
-    storyExplanation:
-      'ఫ్రిరెన్ తన పాత సహచరుల జ్ఞాపకాలతో కొత్త ప్రయాణాన్ని కొనసాగిస్తుంది...',
-
-    endingExplanation: 'కథ ఇంకా కొనసాగుతోంది...',
-
-    funFacts: [
-      'Animated by Madhouse',
-      'One of the highest rated anime on IMDb and MAL',
-      'Season 2 began airing in 2026',
-    ],
-
     year: 2023,
-
     totalEpisodes: 28,
-
-    totalSeasons: 2,
-
+    totalSeasons: 1,
     imdbRating: 8.9,
-
     studio: 'Madhouse',
-
     language: 'Japanese',
-
     country: 'Japan',
-
-    ottPlatforms: ['CRUNCHYROLL'],
-
+    ottPlatforms: ['CRUNCHYROLL', 'NETFLIX'],
+    teluguDubAvail: false,
     teluguSubAvail: true,
-
     hindiDubAvail: false,
-
     isFeatured: true,
-
     isTrending: true,
-
     isTopRated: true,
-
     trendingScore: 98.8,
-
     popularityScore: 99.0,
+    similarSlugs: ['fullmetal-alchemist-brotherhood']
   },
-
   {
     slug: 'jujutsu-kaisen',
-
     type: ContentType.ANIME,
-
     status: ContentStatus.ONGOING,
-
-    poster: 'https://i.pinimg.com/736x/c5/5a/85/c55a85aef4143eb20e4a5b1db4b62e70.jpg',
-
-    banner: 'https://4kwallpapers.com/images/walls/thumbs_3t/19746.jpg',
-
-    trailer: 'https://www.youtube.com/embed/JQith4sV4Qs?si=xJL8ehtfYuzIUy9O',
-
+    poster: 'https://image.tmdb.org/t/p/w500/fHpKWq9ayzSk8nSwqRuaAUemRKh.jpg',
+    banner: 'https://image.tmdb.org/t/p/original/lthkKBLe1rX6iThgVFg22O02sJw.jpg',
+    trailer: 'https://www.youtube.com/embed/JQith4sV4Qs',
     title: {
       en: 'Jujutsu Kaisen',
       te: 'జుజుట్సు కైసెన్',
     },
-
+    titleOriginal: 'Jujutsu Kaisen',
     description: {
       en: 'Yuji Itadori enters the dangerous world of curses and sorcerers after becoming the host of the powerful curse Sukuna.',
-
       te: 'శక్తివంతమైన శాపం సుకునాకు హోస్ట్ అయిన తర్వాత, యూజి ఇటడోరి మాంత్రికులు మరియు శాపాల ప్రమాదకర ప్రపంచంలోకి ప్రవేశిస్తాడు.',
     },
-
-    genres: ['Action', 'Supernatural', 'Dark Fantasy'],
-
-    storyExplanation:
-      'సుకునా అనే శాపంతో యూజి జీవితం పూర్తిగా మారిపోతుంది...',
-
-    endingExplanation: 'కథ ఇంకా కొనసాగుతోంది...',
-
-    funFacts: [
-      'Animated by MAPPA',
-      'Shibuya Incident arc became hugely popular',
-      'IMDb rating crossed 8.5',
-    ],
-
+    genres: ['Action', 'Supernatural', 'Thriller', 'Fantasy'],
     year: 2020,
-
     totalEpisodes: 47,
-
-    totalSeasons: 3,
-
+    totalSeasons: 2,
     imdbRating: 8.5,
-
-    runtime: 24,
-
     studio: 'MAPPA',
-
     language: 'Japanese',
-
     country: 'Japan',
-
-    ottPlatforms: ['CRUNCHYROLL'],
-
+    ottPlatforms: ['CRUNCHYROLL', 'NETFLIX'],
+    teluguDubAvail: true,
     teluguSubAvail: true,
-
     hindiDubAvail: true,
-
     isFeatured: true,
-
     isTrending: true,
-
     isTopRated: true,
-
     trendingScore: 97.5,
-
     popularityScore: 98.3,
+    similarSlugs: ['chainsaw-man', 'demon-slayer']
   },
+  {
+    slug: 'fullmetal-alchemist-brotherhood',
+    type: ContentType.ANIME,
+    status: ContentStatus.COMPLETED,
+    poster: 'https://image.tmdb.org/t/p/w500/5ZFUEOULaVml7pQuXxhpR2SmVUw.jpg',
+    banner: 'https://image.tmdb.org/t/p/original/A6tMQAo6t6eRFCPhsrShmxZLqFB.jpg',
+    trailer: 'https://www.youtube.com/embed/B8_pH47R4_g',
+    title: {
+      en: 'Fullmetal Alchemist: Brotherhood',
+      te: 'ఫుల్ మెటల్ ఆల్కెమిస్ట్: బ్రదర్‌హుడ్',
+    },
+    titleOriginal: 'Hagane no Renkinjutsushi: Fullmetal Alchemist',
+    description: {
+      en: 'Two brothers search for the Philosopher’s Stone after an attempt to revive their deceased mother goes horribly wrong.',
+      te: 'తమ మరణించిన తల్లిని బ్రతికించే ప్రయత్నంలో ఒక పెద్ద ప్రమాదానికి గురైన ఇద్దరు సోదరులు, తత్వవేత్త రాయి కోసం అన్వేషణ ప్రారంభిస్తారు.',
+    },
+    genres: ['Action', 'Adventure', 'Fantasy', 'Drama'],
+    year: 2009,
+    totalEpisodes: 64,
+    totalSeasons: 1,
+    imdbRating: 9.1,
+    studio: 'Bones',
+    language: 'Japanese',
+    country: 'Japan',
+    ottPlatforms: ['NETFLIX'],
+    teluguDubAvail: false,
+    teluguSubAvail: true,
+    hindiDubAvail: false,
+    isTrending: true,
+    isTopRated: true,
+    trendingScore: 89.0,
+    popularityScore: 95.0,
+    similarSlugs: ['frieren-beyond-journeys-end', 'hunter-x-hunter']
+  },
+  {
+    slug: 'death-note',
+    type: ContentType.ANIME,
+    status: ContentStatus.COMPLETED,
+    poster: 'https://image.tmdb.org/t/p/w500/tCZFfYTIwrR7n94J6G14Y4hAFU6.jpg',
+    banner: 'https://image.tmdb.org/t/p/original/koBa94NxTaGe2FoDzlXMuJptsv0.jpg',
+    trailer: 'https://www.youtube.com/embed/N3iF52zKq10',
+    title: {
+      en: 'Death Note',
+      te: 'డెత్ నోట్',
+    },
+    titleOriginal: 'Death Note',
+    description: {
+      en: 'An intelligent high school student goes on a secret crusade to eliminate criminals after discovering a notebook capable of killing anyone whose name is written in it.',
+      te: 'ఎవరి పేరు రాసినా చనిపోయే ఒక రహస్య నోట్‌బుక్‌ను పొందిన తర్వాత, ఒక తెలివైన విద్యార్థి నేరస్థులను అంతం చేయడానికి ఒక రహస్య పోరాటం ప్రారంభిస్తాడు.',
+    },
+    genres: ['Thriller', 'Supernatural', 'Crime', 'Drama'],
+    year: 2006,
+    totalEpisodes: 37,
+    totalSeasons: 1,
+    imdbRating: 8.9,
+    studio: 'Madhouse',
+    language: 'Japanese',
+    country: 'Japan',
+    ottPlatforms: ['NETFLIX'],
+    teluguDubAvail: false,
+    teluguSubAvail: true,
+    hindiDubAvail: true,
+    isTrending: false,
+    isTopRated: true,
+    trendingScore: 82.0,
+    popularityScore: 94.0,
+    similarSlugs: ['attack-on-titan']
+  },
+  {
+    slug: 'hunter-x-hunter',
+    type: ContentType.ANIME,
+    status: ContentStatus.COMPLETED,
+    poster: 'https://image.tmdb.org/t/p/w500/i2EEr2uBvRlAwJ8d8zTG2Y19mIa.jpg',
+    banner: 'https://image.tmdb.org/t/p/original/bFKKyCI89Xq98Gul8cGox8K3sZa.jpg',
+    trailer: 'https://www.youtube.com/embed/d6kBeJjR084',
+    title: {
+      en: 'Hunter x Hunter',
+      te: 'హంటర్ x హంటర్',
+    },
+    titleOriginal: 'Hunter x Hunter',
+    description: {
+      en: 'Gon Freecss aspires to become a legendary Hunter like his father, embarking on a dangerous journey to find him.',
+      te: 'గాన్ ఫ్రీక్స్ తన తండ్రిలాగే ఒక గొప్ప హంటర్‌గా మారడానికి మరియు అతన్ని కనుగొనడానికి ఒక ప్రమాదకరమైన ప్రయాణాన్ని ప్రారంభిస్తాడు.',
+    },
+    genres: ['Action', 'Adventure', 'Fantasy'],
+    year: 2011,
+    totalEpisodes: 148,
+    totalSeasons: 6,
+    imdbRating: 9.0,
+    studio: 'Madhouse',
+    language: 'Japanese',
+    country: 'Japan',
+    ottPlatforms: ['NETFLIX', 'CRUNCHYROLL'],
+    teluguDubAvail: false,
+    teluguSubAvail: true,
+    hindiDubAvail: false,
+    isTrending: true,
+    isTopRated: true,
+    trendingScore: 87.0,
+    popularityScore: 93.0,
+    similarSlugs: ['naruto', 'one-piece']
+  },
+  {
+    slug: 'bleach',
+    type: ContentType.ANIME,
+    status: ContentStatus.COMPLETED,
+    poster: 'https://image.tmdb.org/t/p/w500/5iVUUnE2tgBPypACYNobCKHagfV.jpg',
+    banner: 'https://image.tmdb.org/t/p/original/o0NsbcIvsllg6CJX0FBFY8wWbsn.jpg',
+    trailer: 'https://www.youtube.com/embed/oZ673322r8s',
+    title: {
+      en: 'Bleach',
+      te: 'బ్లీచ్',
+    },
+    titleOriginal: 'Bleach',
+    description: {
+      en: 'High school student Ichigo Kurosaki, who has the ability to see ghosts, obtains the powers of a Soul Reaper to protect his family and town.',
+      te: 'దయ్యాలను చూడగలిగే శక్తి ఉన్న ఇచిగో కురోసాకి, తన కుటుంబాన్ని మరియు ఊరిని కాపాడేందుకు ఒక సోల్ రీపర్ శక్తులను పొందుతాడు.',
+    },
+    genres: ['Action', 'Supernatural', 'Fantasy'],
+    year: 2004,
+    totalEpisodes: 366,
+    totalSeasons: 16,
+    imdbRating: 8.2,
+    studio: 'Studio Pierrot',
+    language: 'Japanese',
+    country: 'Japan',
+    ottPlatforms: ['NETFLIX'],
+    teluguDubAvail: false,
+    teluguSubAvail: true,
+    hindiDubAvail: false,
+    isTrending: false,
+    isTopRated: false,
+    trendingScore: 75.0,
+    popularityScore: 88.0,
+    similarSlugs: ['naruto', 'one-piece']
+  },
+  {
+    slug: 'naruto',
+    type: ContentType.ANIME,
+    status: ContentStatus.COMPLETED,
+    poster: 'https://image.tmdb.org/t/p/w500/xppeysfvDKVx775MFuH8Z9BlpMk.jpg',
+    banner: 'https://image.tmdb.org/t/p/original/mpsYIytXhDXjI9yYC1Fp1S3PxsS.jpg',
+    trailer: 'https://www.youtube.com/embed/QczGoHcJfoc',
+    title: {
+      en: 'Naruto',
+      te: 'నరుటో',
+    },
+    titleOriginal: 'Naruto',
+    description: {
+      en: 'Naruto Uzumaki, a mischievous adolescent ninja, struggles as he searches for recognition and dreams of becoming the Hokage, the leader of his village.',
+      te: 'నరుటో ఉజుమాకి అనే అల్లరి నింజా బాలుడు, సమాజంలో గుర్తింపు తెచ్చుకోవడానికి మరియు తన గ్రామానికి అధిపతి అయిన హొకాగే కావాలని కలలు కంటాడు.',
+    },
+    genres: ['Action', 'Adventure', 'Fantasy'],
+    year: 2002,
+    totalEpisodes: 220,
+    totalSeasons: 5,
+    imdbRating: 8.4,
+    studio: 'Studio Pierrot',
+    language: 'Japanese',
+    country: 'Japan',
+    ottPlatforms: ['NETFLIX', 'CRUNCHYROLL'],
+    teluguDubAvail: true,
+    teluguSubAvail: true,
+    hindiDubAvail: true,
+    isTrending: true,
+    isTopRated: true,
+    trendingScore: 91.0,
+    popularityScore: 96.0,
+    similarSlugs: ['naruto-shippuden', 'one-piece'],
+    universeInfo: {
+      universeId: 'naruto',
+      order: 1,
+      phase: 'Original Series'
+    }
+  },
+  {
+    slug: 'naruto-shippuden',
+    type: ContentType.ANIME,
+    status: ContentStatus.COMPLETED,
+    poster: 'https://image.tmdb.org/t/p/w500/kV27j3Nz4d5z8u6mN3EJw9RiLg2.jpg',
+    banner: 'https://image.tmdb.org/t/p/original/z0YhJvomqedHF85bplUJEotkN5l.jpg',
+    trailer: 'https://www.youtube.com/embed/1y_Kd7-P8BY',
+    title: {
+      en: 'Naruto Shippuden',
+      te: 'నరుటో షిప్పుడెన్',
+    },
+    titleOriginal: 'Naruto: Shippuuden',
+    description: {
+      en: 'Naruto Uzumaki returns to the Hidden Leaf Village after years of training and faces the formidable threat of the Akatsuki organization.',
+      te: 'కొన్ని సంవత్సరాల శిక్షణ తర్వాత నరుటో ఉజుమాకి తిరిగి వచ్చి, ప్రపంచాన్ని ప్రమాదంలో పడేస్తున్న అకాట్సుకి అనే రహస్య సంస్థతో పోరాటం మొదలుపెడతాడు.',
+    },
+    genres: ['Action', 'Adventure', 'Fantasy', 'Drama'],
+    year: 2007,
+    totalEpisodes: 500,
+    totalSeasons: 21,
+    imdbRating: 8.7,
+    studio: 'Studio Pierrot',
+    language: 'Japanese',
+    country: 'Japan',
+    ottPlatforms: ['NETFLIX', 'CRUNCHYROLL'],
+    teluguDubAvail: true,
+    teluguSubAvail: true,
+    hindiDubAvail: true,
+    isTrending: true,
+    isTopRated: true,
+    trendingScore: 95.0,
+    popularityScore: 98.0,
+    similarSlugs: ['naruto', 'one-piece'],
+    universeInfo: {
+      universeId: 'naruto',
+      order: 2,
+      phase: 'Shippuden Era'
+    }
+  },
+  {
+    slug: 'one-piece',
+    type: ContentType.ANIME,
+    status: ContentStatus.ONGOING,
+    poster: 'https://image.tmdb.org/t/p/w500/dB4EDhre2dsC2kxYDavyKWqLQwi.jpg',
+    banner: 'https://image.tmdb.org/t/p/original/4Mt7WHox67uJ1yErwTBFcV8KWgG.jpg',
+    trailer: 'https://www.youtube.com/embed/l_982295df2a37', // Custom placeholder YouTube link
+    title: {
+      en: 'One Piece',
+      te: 'వన్ పీస్',
+    },
+    titleOriginal: 'One Piece',
+    description: {
+      en: 'Monkey D. Luffy and his Straw Hat Pirates sail across the Grand Line to find the legendary treasure "One Piece" and make him the Pirate King.',
+      te: 'మంకీ డి. లూఫీ మరియు అతని స్ట్రా హాట్ పైరేట్స్ గ్రాండ్ లైన్ మీదుగా ప్రయాణించి, ఐతిహాసిక నిధి "వన్ పీస్" కనుగొని పైరేట్ కింగ్‌గా మారడానికి ప్రయాణం చేస్తారు.',
+    },
+    genres: ['Action', 'Adventure', 'Fantasy', 'Comedy'],
+    year: 1999,
+    totalEpisodes: 1100,
+    totalSeasons: 1,
+    imdbRating: 9.0,
+    studio: 'Toei Animation',
+    language: 'Japanese',
+    country: 'Japan',
+    ottPlatforms: ['NETFLIX', 'CRUNCHYROLL'],
+    teluguDubAvail: false,
+    teluguSubAvail: true,
+    hindiDubAvail: false,
+    isTrending: true,
+    isTopRated: true,
+    trendingScore: 96.0,
+    popularityScore: 98.5,
+    similarSlugs: ['naruto-shippuden', 'hunter-x-hunter'],
+    universeInfo: {
+      universeId: 'onepiece',
+      order: 1,
+      phase: 'Main Arc'
+    }
+  },
+  {
+    slug: 'chainsaw-man',
+    type: ContentType.ANIME,
+    status: ContentStatus.ONGOING,
+    poster: 'https://image.tmdb.org/t/p/w500/yVtx7Xn9UxNJqvG2BkvhCcmed9S.jpg',
+    banner: 'https://image.tmdb.org/t/p/original/5DUMPBSnHOZsbBv81GFXZXvDpo6.jpg',
+    trailer: 'https://www.youtube.com/embed/v4yZO29PdT8',
+    title: {
+      en: 'Chainsaw Man',
+      te: 'చైన్సా మ్యాన్',
+    },
+    titleOriginal: 'Chainsaw Man',
+    description: {
+      en: 'Denji, a poor young man, fuses with his pet chainsaw devil Pochita and becomes a public safety devil hunter in exchange for a normal life.',
+      te: 'డెంజీ అనే యువకుడు ఒక ప్రమాదం తర్వాత తన పెంపుడు చైన్సా డెవిల్ పోచీతాతో కలిసిపోయి, చైన్సా మ్యాన్‌గా మారి ప్రభుత్వ డెవిల్ హంటర్‌గా చేరతాడు.',
+    },
+    genres: ['Action', 'Supernatural', 'Horror', 'Thriller'],
+    year: 2022,
+    totalEpisodes: 12,
+    totalSeasons: 1,
+    imdbRating: 8.5,
+    studio: 'MAPPA',
+    language: 'Japanese',
+    country: 'Japan',
+    ottPlatforms: ['CRUNCHYROLL', 'NETFLIX'],
+    teluguDubAvail: true,
+    teluguSubAvail: true,
+    hindiDubAvail: true,
+    isTrending: true,
+    isTopRated: false,
+    trendingScore: 88.0,
+    popularityScore: 93.0,
+    similarSlugs: ['jujutsu-kaisen', 'attack-on-titan']
+  },
+  {
+    slug: 'solo-leveling',
+    type: ContentType.ANIME,
+    status: ContentStatus.ONGOING,
+    poster: 'https://image.tmdb.org/t/p/w500/geCRueV3ElhRTr0xtJuEWJt6dJ1.jpg',
+    banner: 'https://image.tmdb.org/t/p/original/xMNH87maNLt9n2bMDYeI6db5VFm.jpg',
+    trailer: 'https://www.youtube.com/embed/4a1d35Y2W0k',
+    title: {
+      en: 'Solo Leveling',
+      te: 'సోలో లెవలింగ్',
+    },
+    titleOriginal: 'Na Honja Man Level Up',
+    description: {
+      en: 'In a world where hunters fight monsters, the weakest hunter Sung Jinwoo receives a mysterious system that allows him to level up without limits.',
+      te: 'వేటగాళ్ళు రాక్షసులతో పోరాడే ప్రపంచంలో, అత్యంత బలహీనమైన వేటగాడు సంగ్ జిన్‌వూ ఒక రహస్య శక్తిని పొంది పరిమితులు లేకుండా తన బలాన్ని పెంచుకుంటాడు.',
+    },
+    genres: ['Action', 'Fantasy', 'Adventure'],
+    year: 2024,
+    totalEpisodes: 12,
+    totalSeasons: 1,
+    imdbRating: 8.4,
+    studio: 'A-1 Pictures',
+    language: 'Japanese',
+    country: 'Japan',
+    ottPlatforms: ['CRUNCHYROLL'],
+    teluguDubAvail: true,
+    teluguSubAvail: true,
+    hindiDubAvail: true,
+    isTrending: true,
+    isTopRated: false,
+    trendingScore: 94.0,
+    popularityScore: 96.5,
+    similarSlugs: ['jujutsu-kaisen', 'demon-slayer']
+  },
+  {
+    slug: 'blue-lock',
+    type: ContentType.ANIME,
+    status: ContentStatus.ONGOING,
+    poster: 'https://image.tmdb.org/t/p/w500/fcKH1NQzoTXiYO1OrhaFFwTKhBp.jpg',
+    banner: 'https://image.tmdb.org/t/p/original/seMRyWVwIVBWbC9xaMzDMZJ8fUH.jpg',
+    trailer: 'https://www.youtube.com/embed/y2V28mJea4k',
+    title: {
+      en: 'Blue Lock',
+      te: 'బ్లూ లాక్',
+    },
+    titleOriginal: 'Blue Lock',
+    description: {
+      en: 'Japan selects 300 young strikers to compete in a specialized training facility called Blue Lock to produce the ultimate egoist striker for the national team.',
+      te: 'జపాన్ ప్రభుత్వం దేశానికి ఒక అద్భుతమైన స్ట్రైకర్‌ను అందించడానికి 300 మంది యువ ఫుట్‌బాల్ క్రీడాకారులను "బ్లూ లాక్" అనే శిక్షణా శిబిరంలో బంధిస్తుంది.',
+    },
+    genres: ['Sports', 'Thriller', 'Drama'],
+    year: 2022,
+    totalEpisodes: 24,
+    totalSeasons: 2,
+    imdbRating: 8.2,
+    studio: '8bit',
+    language: 'Japanese',
+    country: 'Japan',
+    ottPlatforms: ['NETFLIX', 'CRUNCHYROLL'],
+    teluguDubAvail: false,
+    teluguSubAvail: true,
+    hindiDubAvail: true,
+    isTrending: true,
+    isTopRated: false,
+    trendingScore: 85.0,
+    popularityScore: 91.0,
+    similarSlugs: ['jujutsu-kaisen']
+  },
+  {
+    slug: 'spy-x-family',
+    type: ContentType.ANIME,
+    status: ContentStatus.ONGOING,
+    poster: 'https://image.tmdb.org/t/p/w500/7NAvPYPAu7MeHwP8E9sn81PqsRh.jpg',
+    banner: 'https://image.tmdb.org/t/p/original/lysUnU6V0VfcthDbviuVlIqgHOR.jpg',
+    trailer: 'https://www.youtube.com/embed/ofnOC2g1L2M',
+    title: {
+      en: 'Spy x Family',
+      te: 'స్పై x ఫ్యామిలీ',
+    },
+    titleOriginal: 'Spy x Family',
+    description: {
+      en: 'A spy on an undercover mission marries an assassin and adopts a telepathic daughter, all while keeping their true identities secret from each other.',
+      te: 'ఒక రహస్య ఏజెంట్ తన మిషన్ కోసం ఒక కిరాయి హంతకురాలిని పెళ్లి చేసుకుంటాడు మరియు మనసు చదవగలిగే అమ్మాయిని దత్తత తీసుకుంటాడు. వీరందరూ ఒకరికొకరు తమ రహస్యాలు దాచుకుంటారు.',
+    },
+    genres: ['Comedy', 'Action', 'Family'],
+    year: 2022,
+    totalEpisodes: 37,
+    totalSeasons: 2,
+    imdbRating: 8.4,
+    studio: 'Wit Studio / CloverWorks',
+    language: 'Japanese',
+    country: 'Japan',
+    ottPlatforms: ['NETFLIX', 'CRUNCHYROLL'],
+    teluguDubAvail: false,
+    teluguSubAvail: true,
+    hindiDubAvail: true,
+    isTrending: true,
+    isTopRated: true,
+    trendingScore: 90.0,
+    popularityScore: 94.0,
+    similarSlugs: ['blue-lock']
+  }
 ]

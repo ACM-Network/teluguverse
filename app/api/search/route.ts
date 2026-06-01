@@ -17,6 +17,7 @@ export async function GET(req: NextRequest) {
       rating: sp.get('rating') ? Number(sp.get('rating')) : undefined,
       page: sp.get('page') ? Number(sp.get('page')) : 1,
       sort: sp.get('sort') as any || 'trending',
+      universe: sp.get('universe') || undefined,
     })
     return ok(results)
   } catch (e) { return handleError(e) }

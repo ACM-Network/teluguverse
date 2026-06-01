@@ -32,21 +32,25 @@ export interface SearchParams {
   page?: number
   limit?: number
   sort?: 'trending' | 'rating' | 'newest' | 'popular' | 'az'
+  universe?: string
 }
 
 export const ContentService = {
   async search(params: SearchParams) {
-    const { q, type, genre, year, language, ott, dubAvail, rating, page = 1, limit = 20, sort = 'trending' } = params
+    const { q, type, genre, year, language, ott, dubAvail, rating, page = 1, limit = 20, sort = 'trending', universe } = params
     const { skip, take } = paginate(page, limit)
 
     const where: Prisma.ContentWhereInput = {
       ...(q && {
         OR: [
           { titleEnglish: { contains: q, mode: 'insensitive' } },
-          { titleTelugu: { contains: q } },
+          { titleTelugu: { contains: q, mode: 'insensitive' } },
           { titleOriginal: { contains: q, mode: 'insensitive' } },
           { descriptionEnglish: { contains: q, mode: 'insensitive' } },
           { studio: { contains: q, mode: 'insensitive' } },
+          { directors: { some: { name: { contains: q, mode: 'insensitive' } } } },
+          { universe: { some: { universe: { name: { contains: q, mode: 'insensitive' } } } } },
+          { tags: { some: { tag: { name: { contains: q, mode: 'insensitive' } } } } },
         ]
       }),
       ...(type && { type }),
@@ -56,6 +60,13 @@ export const ContentService = {
       ...(genre && { genres: { some: { genre: { slug: genre } } } }),
       ...(ott && { streamingLinks: { some: { platform: ott as any } } }),
       ...(rating && { imdbRating: { gte: rating } }),
+      ...(universe && {
+        universe: {
+          some: {
+            universeId: { equals: universe, mode: 'insensitive' }
+          }
+        }
+      }),
     }
 
     const orderBy: Prisma.ContentOrderByWithRelationInput =
@@ -79,7 +90,10 @@ export const ContentService = {
       where: {
         OR: [
           { titleEnglish: { contains: q, mode: 'insensitive' } },
-          { titleTelugu: { contains: q } },
+          { titleTelugu: { contains: q, mode: 'insensitive' } },
+          { titleOriginal: { contains: q, mode: 'insensitive' } },
+          { directors: { some: { name: { contains: q, mode: 'insensitive' } } } },
+          { universe: { some: { universe: { name: { contains: q, mode: 'insensitive' } } } } },
         ]
       },
       select: { id: true, slug: true, titleEnglish: true, titleTelugu: true, type: true, poster: true, year: true, imdbRating: true },
@@ -132,20 +146,115 @@ export const ContentService = {
   },
 
   async getSimilar(contentId: string, type: ContentType, limit = 12) {
-    const [related, byType] = await Promise.all([
-      prisma.content.findMany({
-        where: { recommendations: { some: { targetId: contentId } } },
-        select: contentSelect, take: 6,
-      }),
-      prisma.content.findMany({
-        where: { type, id: { not: contentId } },
+    // 1. Get explicit relations from database
+    const explicitRelations = await prisma.contentRelation.findMany({
+      where: {
+        OR: [
+          { sourceId: contentId },
+          { targetId: contentId }
+        ]
+      },
+      select: {
+        source: { select: contentSelect },
+        target: { select: contentSelect }
+      }
+    })
+
+    const related = explicitRelations.map(r => r.source.id === contentId ? r.target : r.source)
+    
+    if (related.length >= limit) {
+      return related.slice(0, limit)
+    }
+
+    const seenIds = new Set([contentId, ...related.map(r => r.id)])
+
+    // 2. Fetch target item details for fallback criteria
+    const item = await prisma.content.findUnique({
+      where: { id: contentId },
+      select: {
+        year: true,
+        genres: { select: { genre: { select: { id: true } } } },
+        universe: { select: { universeId: true } }
+      }
+    })
+
+    if (!item) return related
+
+    const genreIds = item.genres.map(g => g.genre.id)
+    const universeIds = item.universe.map(u => u.universeId)
+
+    // 3. Find candidates that have same type
+    // If universe exists, try to find other items in the same universe first
+    let universeCandidates: any[] = []
+    if (universeIds.length > 0) {
+      universeCandidates = await prisma.content.findMany({
+        where: {
+          id: { notIn: Array.from(seenIds) },
+          universe: { some: { universeId: { in: universeIds } } }
+        },
         select: contentSelect,
         orderBy: { popularityScore: 'desc' },
-        take: limit,
+        take: limit
       })
-    ])
-    const seen = new Set(related.map(r => r.id))
-    return [...related, ...byType.filter(c => !seen.has(c.id))].slice(0, limit)
+      universeCandidates.forEach(c => seenIds.add(c.id))
+    }
+
+    // 4. Find candidates with matching genres & type
+    let genreCandidates: any[] = []
+    if (genreIds.length > 0) {
+      genreCandidates = await prisma.content.findMany({
+        where: {
+          id: { notIn: Array.from(seenIds) },
+          type,
+          genres: { some: { genreId: { in: genreIds } } }
+        },
+        select: contentSelect,
+        orderBy: { popularityScore: 'desc' },
+        take: limit
+      })
+      genreCandidates.forEach(c => seenIds.add(c.id))
+    }
+
+    // 5. General fallback by same type and close year (+/- 3 years)
+    const yearCandidates = await prisma.content.findMany({
+      where: {
+        id: { notIn: Array.from(seenIds) },
+        type,
+        ...(item.year && {
+          year: {
+            gte: item.year - 3,
+            lte: item.year + 3
+          }
+        })
+      },
+      select: contentSelect,
+      orderBy: { popularityScore: 'desc' },
+      take: limit
+    })
+    yearCandidates.forEach(c => seenIds.add(c.id))
+
+    const combined = [
+      ...related,
+      ...universeCandidates,
+      ...genreCandidates,
+      ...yearCandidates
+    ]
+
+    // Fallback to general same-type popularity if still not enough
+    if (combined.length < limit) {
+      const typeCandidates = await prisma.content.findMany({
+        where: {
+          id: { notIn: combined.map(c => c.id).concat(contentId) },
+          type
+        },
+        select: contentSelect,
+        orderBy: { popularityScore: 'desc' },
+        take: limit - combined.length
+      })
+      combined.push(...typeCandidates)
+    }
+
+    return combined.slice(0, limit)
   },
 
   async getTopRated(type?: ContentType, limit = 20) {

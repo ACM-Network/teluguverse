@@ -4,14 +4,17 @@ import bcrypt from 'bcryptjs'
 import { movies } from './data/movies'
 import { animes } from './data/animes'
 import { series } from './data/series'
+import { kdramas } from './data/kdramas'
+import { hollywood } from './data/hollywood'
 
 const prisma = new PrismaClient()
 
 async function main() {
   console.log('🌱 Seeding TeluguVerse database...')
 
-  // Genres
-  const genres = await Promise.all([
+  // 1. Seed Genres
+  console.log('⏳ Seeding genres...')
+  const genreSeeds = [
     { name: 'Action', nameTe: 'యాక్షన్', slug: 'action', color: '#E50914', icon: '⚔️' },
     { name: 'Romance', nameTe: 'రొమాన్స్', slug: 'romance', color: '#ec4899', icon: '❤️' },
     { name: 'Thriller', nameTe: 'థ్రిల్లర్', slug: 'thriller', color: '#f59e0b', icon: '🎭' },
@@ -27,180 +30,311 @@ async function main() {
     { name: 'Supernatural', nameTe: 'అతీంద్రియ', slug: 'supernatural', color: '#7c3aed', icon: '✨' },
     { name: 'Family', nameTe: 'కుటుంబ', slug: 'family', color: '#16a34a', icon: '👨‍👩‍👧' },
     { name: 'Sports', nameTe: 'స్పోర్ట్స్', slug: 'sports', color: '#2563eb', icon: '⚽' },
-  ].map(g =>
-    prisma.genre.upsert({
-      where: { slug: g.slug },
-      update: {},
-      create: g,
-    })
-  ))
+    { name: 'Super Hero', nameTe: 'సూపర్ హీరో', slug: 'super-hero', color: '#ff0000', icon: '🦸' },
+  ]
 
-  console.log(`✅ ${genres.length} genres seeded`)
+  const seededGenres = await Promise.all(
+    genreSeeds.map(g =>
+      prisma.genre.upsert({
+        where: { slug: g.slug },
+        update: {},
+        create: g,
+      })
+    )
+  )
+  console.log(`✅ ${seededGenres.length} genres ready`)
 
-  // Content
-  const contents = [
+  // 2. Seed Universes
+  console.log('⏳ Seeding universes...')
+  const universesData = [
+    {
+      id: 'mcu',
+      name: 'Marvel Cinematic Universe',
+      nameTe: 'మార్వెల్ యూనివర్స్',
+      description: 'The epic franchise of Marvel super heroes.',
+      color: '#E50914',
+    },
+    {
+      id: 'dc',
+      name: 'DC Universe',
+      nameTe: 'DC యూనివర్స్',
+      description: 'The dark and legendary world of DC comics.',
+      color: '#00A8E0',
+    },
+    {
+      id: 'rajamouli',
+      name: 'Rajamouli Universe',
+      nameTe: 'రాజమౌళి యూనివర్స్',
+      description: 'Cinematic masterpieces from the visionary director S.S. Rajamouli.',
+      color: '#F59E0B',
+    },
+    {
+      id: 'onepiece',
+      name: 'One Piece Universe',
+      nameTe: 'వన్ పీస్ జగత్తు',
+      description: 'The legendary anime journey of Monkey D. Luffy and the Straw Hat Pirates.',
+      color: '#A855F7',
+    },
+    {
+      id: 'monsterverse',
+      name: 'MonsterVerse',
+      nameTe: 'మాన్స్టర్వర్స్',
+      description: 'The cinematic franchise featuring Godzilla, King Kong, and other titans.',
+      color: '#22C55E',
+    },
+    {
+      id: 'naruto',
+      name: 'Naruto Universe',
+      nameTe: 'నరుటో విశ్వం',
+      description: 'The journey of Naruto Uzumaki and the ninja world of Hidden Leaf.',
+      color: '#FF8C00',
+    },
+    {
+      id: 'telugu',
+      name: 'Telugu Cinematic Universe',
+      nameTe: 'తెలుగు సినిమా',
+      description: 'The vibrant and larger-than-life world of Telugu cinema.',
+      color: '#06B6D4',
+    }
+  ]
+
+  const seededUniverses = await Promise.all(
+    universesData.map(u =>
+      prisma.universe.upsert({
+        where: { id: u.id },
+        update: {
+          name: u.name,
+          nameTe: u.nameTe,
+          description: u.description,
+          color: u.color
+        },
+        create: u
+      })
+    )
+  )
+  console.log(`✅ ${seededUniverses.length} universes ready`)
+
+  // 3. Merge & Seed Content items
+  const contents: any[] = [
     ...movies,
     ...animes,
     ...series,
+    ...kdramas,
+    ...hollywood,
   ]
 
+  console.log(`⏳ Seeding ${contents.length} content items...`)
   for (const content of contents) {
-  await prisma.content.upsert({
-    where: { slug: content.slug },
-
-    update: {
-      slug: content.slug,
-      type: content.type,
-      status: content.status,
-
-      poster: content.poster,
-      banner: content.banner,
-      trailer: content.trailer,
-
-      titleEnglish: content.title.en,
-      titleTelugu: content.title.te,
-
-      descriptionEnglish: content.description.en,
-      descriptionTelugu: content.description.te,
-
-      year: content.year,
-      runtime: content.runtime,
-      imdbRating: content.imdbRating,
-
-      studio: content.studio,
-      language: content.language,
-      country: content.country,
-
-      teluguDubAvail: content.teluguDubAvail,
-      teluguSubAvail: content.teluguSubAvail,
-      hindiDubAvail: content.hindiDubAvail,
-
-      isFeatured: content.isFeatured ?? false,
-      isTrending: content.isTrending ?? false,
-      isTopRated: content.isTopRated ?? false,
-
-      trendingScore: content.trendingScore ?? 0,
-      popularityScore: content.popularityScore ?? 0,
-    },
-
-    create: {
-      slug: content.slug,
-      type: content.type,
-      status: content.status,
-
-      poster: content.poster,
-      banner: content.banner,
-      trailer: content.trailer,
-
-      titleEnglish: content.title.en,
-      titleTelugu: content.title.te,
-
-      descriptionEnglish: content.description.en,
-      descriptionTelugu: content.description.te,
-
-      year: content.year,
-      runtime: content.runtime,
-      imdbRating: content.imdbRating,
-
-      studio: content.studio,
-      language: content.language,
-      country: content.country,
-
-      teluguDubAvail: content.teluguDubAvail,
-      teluguSubAvail: content.teluguSubAvail,
-      hindiDubAvail: content.hindiDubAvail,
-
-      isFeatured: content.isFeatured ?? false,
-      isTrending: content.isTrending ?? false,
-      isTopRated: content.isTopRated ?? false,
-
-      trendingScore: content.trendingScore ?? 0,
-      popularityScore: content.popularityScore ?? 0,
-    },
-  })
-}
-
-  console.log(`✅ ${contents.length} content items seeded`)
-
-  // Streaming links
-  const streamingData = [
-    {
-      slug: 'kalki-2898-ad',
-      links: [
-        { platform: 'AMAZON_PRIME', isTeluguDub: true }
-      ]
-    },
-
-    {
-      slug: 'rrr',
-      links: [
-        { platform: 'ZEE5', isTeluguDub: true }
-      ]
-    },
-
-    {
-      slug: 'attack-on-titan',
-      links: [
-        { platform: 'MUSE_INDIA_YT', isTeluguDub: true },
-        { platform: 'ANIME_TIMES', isTeluguDub: true }
-      ]
-    },
-
-    {
-      slug: 'demon-slayer',
-      links: [
-        { platform: 'CRUNCHYROLL', isTeluguDub: true },
-        { platform: 'ANIME_TIMES', isTeluguDub: true }
-      ]
-    },
-
-    {
-      slug: 'jujutsu-kaisen',
-      links: [
-        { platform: 'CRUNCHYROLL', isTeluguDub: true }
-      ]
-    },
-
-    {
-      slug: 'frieren-beyond-journeys-end',
-      links: [
-        { platform: 'CRUNCHYROLL', isTeluguDub: true }
-      ]
-    },
-  ]
-
-  for (const { slug, links } of streamingData) {
-    const content = await prisma.content.findUnique({
-      where: { slug },
+    // Upsert base content item
+    const dbContent = await prisma.content.upsert({
+      where: { slug: content.slug },
+      update: {
+        slug: content.slug,
+        type: content.type,
+        status: content.status,
+        poster: content.poster,
+        banner: content.banner,
+        trailer: content.trailer,
+        titleEnglish: content.title.en,
+        titleTelugu: content.title.te,
+        titleOriginal: content.titleOriginal || null,
+        descriptionEnglish: content.description.en,
+        descriptionTelugu: content.description.te,
+        storyExplanation: content.storyExplanation || null,
+        endingExplanation: content.endingExplanation || null,
+        funFacts: content.funFacts || null,
+        year: content.year,
+        runtime: content.runtime || null,
+        totalEpisodes: content.totalEpisodes || null,
+        totalSeasons: content.totalSeasons || null,
+        imdbRating: content.imdbRating || null,
+        malRating: content.malRating || null,
+        ageRating: content.ageRating || null,
+        studio: content.studio || null,
+        language: content.language,
+        country: content.country,
+        teluguDubAvail: content.teluguDubAvail || false,
+        teluguSubAvail: content.teluguSubAvail || false,
+        hindiDubAvail: content.hindiDubAvail || false,
+        isFeatured: content.isFeatured || false,
+        isTrending: content.isTrending || false,
+        isTopRated: content.isTopRated || false,
+        trendingScore: content.trendingScore || 0,
+        popularityScore: content.popularityScore || 0,
+      },
+      create: {
+        slug: content.slug,
+        type: content.type,
+        status: content.status,
+        poster: content.poster,
+        banner: content.banner,
+        trailer: content.trailer,
+        titleEnglish: content.title.en,
+        titleTelugu: content.title.te,
+        titleOriginal: content.titleOriginal || null,
+        descriptionEnglish: content.description.en,
+        descriptionTelugu: content.description.te,
+        storyExplanation: content.storyExplanation || null,
+        endingExplanation: content.endingExplanation || null,
+        funFacts: content.funFacts || null,
+        year: content.year,
+        runtime: content.runtime || null,
+        totalEpisodes: content.totalEpisodes || null,
+        totalSeasons: content.totalSeasons || null,
+        imdbRating: content.imdbRating || null,
+        malRating: content.malRating || null,
+        ageRating: content.ageRating || null,
+        studio: content.studio || null,
+        language: content.language,
+        country: content.country,
+        teluguDubAvail: content.teluguDubAvail || false,
+        teluguSubAvail: content.teluguSubAvail || false,
+        hindiDubAvail: content.hindiDubAvail || false,
+        isFeatured: content.isFeatured || false,
+        isTrending: content.isTrending || false,
+        isTopRated: content.isTopRated || false,
+        trendingScore: content.trendingScore || 0,
+        popularityScore: content.popularityScore || 0,
+      },
     })
 
-    if (!content) continue
+    // Dynamic Seeding: OTT platforms / streaming links
+    if (content.ottPlatforms) {
+      for (const platform of content.ottPlatforms) {
+        await prisma.streamingLink.upsert({
+          where: {
+            contentId_platform: {
+              contentId: dbContent.id,
+              platform: platform as any,
+            },
+          },
+          update: {
+            isTeluguDub: content.teluguDubAvail || false,
+            isAvailable: true,
+          },
+          create: {
+            contentId: dbContent.id,
+            platform: platform as any,
+            isAvailable: true,
+            isTeluguDub: content.teluguDubAvail || false,
+            isPremium: true,
+          },
+        })
+      }
+    }
 
-    for (const link of links) {
-      await prisma.streamingLink.upsert({
+    // Dynamic Seeding: Genres
+    if (content.genres) {
+      for (const genreName of content.genres) {
+        const genreSlug = genreName.toLowerCase().replace(/[^a-z0-9]+/g, '-')
+        const dbGenre = await prisma.genre.findUnique({
+          where: { slug: genreSlug },
+        })
+        if (dbGenre) {
+          await prisma.contentGenre.upsert({
+            where: {
+              contentId_genreId: {
+                contentId: dbContent.id,
+                genreId: dbGenre.id,
+              },
+            },
+            update: {},
+            create: {
+              contentId: dbContent.id,
+              genreId: dbGenre.id,
+            },
+          })
+        }
+      }
+    }
+
+    // Dynamic Seeding: Directors
+    if (content.directors) {
+      for (const dirName of content.directors) {
+        let dbDirector = await prisma.director.findFirst({
+          where: { name: dirName },
+        })
+        if (!dbDirector) {
+          dbDirector = await prisma.director.create({
+            data: { name: dirName },
+          })
+        }
+        // Link content to director
+        await prisma.content.update({
+          where: { id: dbContent.id },
+          data: {
+            directors: {
+              connect: { id: dbDirector.id }
+            }
+          }
+        })
+      }
+    }
+
+    // Dynamic Seeding: Universe link
+    if (content.universeInfo) {
+      const { universeId, order, phase } = content.universeInfo
+      await prisma.universeContent.upsert({
         where: {
-          contentId_platform: {
-            contentId: content.id,
-            platform: link.platform as any,
+          universeId_contentId: {
+            universeId,
+            contentId: dbContent.id,
           },
         },
-        update: {},
+        update: {
+          order,
+          phase,
+        },
         create: {
-          contentId: content.id,
-          platform: link.platform as any,
-          isAvailable: true,
-          isTeluguDub: link.isTeluguDub,
-          isPremium: true,
+          universeId,
+          contentId: dbContent.id,
+          order,
+          phase,
         },
       })
     }
   }
+  console.log(`✅ Seeding of ${contents.length} content items completed`)
 
-  console.log('✅ Streaming links seeded')
+  // 4. Seeding: Similar Content Relations (Post-Creation Pass)
+  console.log('⏳ Seeding similar content relations...')
+  let relationCount = 0
+  for (const content of contents) {
+    if (content.similarSlugs) {
+      const source = await prisma.content.findUnique({
+        where: { slug: content.slug },
+      })
+      if (!source) continue
 
-  // Admin user
+      for (const targetSlug of content.similarSlugs) {
+        const target = await prisma.content.findUnique({
+          where: { slug: targetSlug },
+        })
+        if (!target) continue
+
+        await prisma.contentRelation.upsert({
+          where: {
+            sourceId_targetId: {
+              sourceId: source.id,
+              targetId: target.id,
+            },
+          },
+          update: {},
+          create: {
+            sourceId: source.id,
+            targetId: target.id,
+            type: 'SIMILAR',
+          },
+        })
+        relationCount++
+      }
+    }
+  }
+  console.log(`✅ Seeded ${relationCount} similar content relationships`)
+
+  // 5. Seed Admin user
+  console.log('⏳ Seeding admin user...')
   const hashedPassword = await bcrypt.hash('admin123456', 12)
-
   await prisma.user.upsert({
     where: { email: 'admin@teluguverse.com' },
     update: {},
@@ -213,14 +347,13 @@ async function main() {
       isVerified: true,
     },
   })
-
   console.log('✅ Admin user seeded')
   console.log('🎉 Seeding complete!')
 }
 
 main()
   .catch(e => {
-    console.error(e)
+    console.error('❌ Seeding failed:', e)
     process.exit(1)
   })
   .finally(() => prisma.$disconnect())

@@ -10,7 +10,7 @@ export default function AnimeSection() {
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    fetch('/api/content?type=ANIME&sort=rating&limit=12')
+    fetch('/api/content?type=ANIME&sort=rating&limit=24')
       .then(r => r.json())
       .then(d => { setItems(d.items || []); setLoading(false) })
       .catch(() => setLoading(false))
@@ -18,7 +18,7 @@ export default function AnimeSection() {
 
   return (
     <div>
-      <SectionHeader title="Top Rated Anime" titleTe="అత్యుత్తమ అనిమే" href="/search?type=ANIME" icon="⚡" />
+      <SectionHeader title="Top Rated Anime" titleTe="అత్యుత్తమ అనిమే" href="/search?type=ANIME" icon="anime" />
       <div className="cards-scroll">
         {loading ? <SkeletonCard count={8} /> : items.map((item, i) => <ContentCard key={item.id} content={item} index={i} />)}
       </div>

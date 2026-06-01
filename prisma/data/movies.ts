@@ -2,185 +2,545 @@ import { ContentType, ContentStatus } from '@prisma/client'
 
 export const movies = [
   {
-    slug: 'kalki-2898-ad',
-
-    type: ContentType.MOVIE,
-
-    status: ContentStatus.COMPLETED,
-
-    poster: 'https://wallpaperaccess.com/full/13891674.jpg',
-
-    banner: 'https://wallpapercave.com/wp/wp15542527.png',
-
-    trailer: 'https://www.youtube.com/embed/y1-w1kUGuz8?si=q75G5H4jA8qsvgbc',
-
-    title: {
-      en: 'Kalki 2898 AD',
-      te: 'కల్కి 2898 AD',
-    },
-
-    description: {
-      en: 'In a dystopian future ruled by darkness, Bhairava becomes part of a legendary mission connected to Kalki, the final avatar destined to restore balance to the world.',
-
-      te: 'భవిష్యత్తులో 2898 సంవత్సరంలో ప్రపంచం చీకటి అధికారాల పట్టులో ఉంది. కల్కి అవతారం రావాలని పురాణాలు చెప్తున్నాయి. భైరా అనే యోధుడు ఒక అద్భుతమైన ప్రయాణం చేస్తాడు.',
-    },
-
-    genres: ['Sci-Fi', 'Mythology', 'Action'],
-
-    storyExplanation:
-      'కల్కి 2898 AD కథ పురాణాలు మరియు భవిష్యత్తు సంయోగంతో నడుస్తుంది...',
-
-    endingExplanation:
-      'చివర్లో కల్కి అవతారం తీసుకుంటాడు మరియు చీకటి శక్తులకు వ్యతిరేకంగా పోరాటం మొదలవుతుంది...',
-
-    funFacts: [
-      'Production took over 3 years',
-      'Budget was ₹600 crore',
-      'Released in 7 languages simultaneously',
-      'VFX team of 400+ artists worked for 2 years',
-    ],
-
-    year: 2024,
-
-    runtime: 181,
-
-    imdbRating: 6.8,
-
-    studio: 'Vyjayanthi Movies',
-
-    language: 'Telugu',
-
-    country: 'India',
-
-    ottPlatforms: ['AMAZON_PRIME'],
-
-    teluguDubAvail: true,
-
-    teluguSubAvail: true,
-
-    hindiDubAvail: true,
-
-    isFeatured: true,
-
-    isTrending: true,
-
-    isTopRated: false,
-
-    trendingScore: 95.5,
-
-    popularityScore: 98.2,
-  },
-
-  {
     slug: 'rrr',
-
     type: ContentType.MOVIE,
-
     status: ContentStatus.COMPLETED,
-
-    poster:
-      'https://m.media-amazon.com/images/M/MV5BNWMwODYyMjQtMTczMi00NTQ1LWFkYjItMGJhMWRkY2E3NDAyXkEyXkFqcGc@._V1_.jpg',
-
-    banner: 'https://images5.alphacoders.com/131/1319750.jpeg',
-
-    trailer: 'https://www.youtube.com/embed/NgBoMJy386M?si=04lfesWQ21lHrlju',
-
+    poster: 'https://image.tmdb.org/t/p/w500/u0XUBNQWlOvrh0Gd97ARGpIkL0.jpg',
+    banner: 'https://image.tmdb.org/t/p/original/i0Y0wP8H6SRgjr6QmuwbtQbS24D.jpg',
+    trailer: 'https://www.youtube.com/embed/NgBoMJy386M',
     title: {
       en: 'RRR',
       te: 'RRR',
     },
-
     description: {
       en: 'A fictional story about two legendary revolutionaries and their journey away from home before they started fighting for their country in 1920s.',
-
       te: 'బ్రిటీష్ పాలనలో ఇద్దరు వీరుల కథ. కోమారం భీమ్ మరియు అల్లూరి సీతారామరాజు అడవిలో నుంచి వచ్చిన విప్లవ శక్తులుగా బ్రిటీష్ సామ్రాజ్యానికి ఎదురు నిలుస్తారు.',
     },
-
     genres: ['Action', 'Drama', 'Historical'],
-
     year: 2022,
-
     runtime: 187,
-
     imdbRating: 8.0,
-
     studio: 'DVV Entertainment',
-
     language: 'Telugu',
-
     country: 'India',
-
-    ottPlatforms: ['ZEE5'],
-
+    ottPlatforms: ['ZEE5', 'NETFLIX'],
     teluguDubAvail: true,
-
     teluguSubAvail: true,
-
     hindiDubAvail: true,
-
     isTrending: true,
-
     isTopRated: true,
-
-    trendingScore: 88.0,
-
-    popularityScore: 95.0,
+    trendingScore: 92.0,
+    popularityScore: 98.0,
+    similarSlugs: ['baahubali-2-the-conclusion', 'baahubali-the-beginning', 'magadheera'],
+    directors: ['S.S. Rajamouli'],
+    universeInfo: {
+      universeId: 'rajamouli',
+      order: 5,
+      phase: 'Modern Era'
+    }
   },
-
+  {
+    slug: 'kalki-2898-ad',
+    type: ContentType.MOVIE,
+    status: ContentStatus.COMPLETED,
+    poster: 'https://image.tmdb.org/t/p/w500/rstcAnBeCkxNQjNp3YXrF6IP1tW.jpg',
+    banner: 'https://image.tmdb.org/t/p/original/o8XSR1SONnjcsv84NRu6Mwsl5io.jpg',
+    trailer: 'https://www.youtube.com/embed/y1-w1kUGuz8',
+    title: {
+      en: 'Kalki 2898 AD',
+      te: 'కల్కి 2898 AD',
+    },
+    description: {
+      en: 'In a dystopian future ruled by darkness, Bhairava becomes part of a legendary mission connected to Kalki, the final avatar destined to restore balance to the world.',
+      te: 'భవిష్యత్తులో 2898 సంవత్సరంలో ప్రపంచం చీకటి అధికారాల పట్టులో ఉంది. కల్కి అవతారం రావాలని పురాణాలు చెప్తున్నాయి. భైరవ అనే యోధుడు ఒక అద్భుతమైన ప్రయాణం చేస్తాడు.',
+    },
+    genres: ['Sci-Fi', 'Mythology', 'Action'],
+    year: 2024,
+    runtime: 181,
+    imdbRating: 6.8,
+    studio: 'Vyjayanthi Movies',
+    language: 'Telugu',
+    country: 'India',
+    ottPlatforms: ['AMAZON_PRIME', 'NETFLIX'],
+    teluguDubAvail: true,
+    teluguSubAvail: true,
+    hindiDubAvail: true,
+    isFeatured: true,
+    isTrending: true,
+    isTopRated: false,
+    trendingScore: 95.5,
+    popularityScore: 98.2,
+    similarSlugs: ['rrr', 'salaar-part-1-ceasefire'],
+    directors: ['Nag Ashwin'],
+    universeInfo: {
+      universeId: 'telugu',
+      order: 1,
+      phase: 'Kalki Cinematic Universe'
+    }
+  },
   {
     slug: 'pushpa-the-rule',
-
     type: ContentType.MOVIE,
-
     status: ContentStatus.COMPLETED,
-
-    poster: 'https://4kwallpapers.com/images/walls/thumbs_3t/17953.jpg',
-
-    banner: 'https://4kwallpapers.com/images/walls/thumbs_3t/17953.jpg',
-
+    poster: 'https://image.tmdb.org/t/p/w500/bhxZj3y59cK7JtGdV285dhDRaMe.jpg',
+    banner: 'https://image.tmdb.org/t/p/original/keC82cQ8q0ZHthrbvzWq04kGnbv.jpg',
     trailer: 'https://www.youtube.com/embed/g3JUbgOHgdw',
-
     title: {
-      en: 'Pushpa: The Rule',
-      te: 'పుష్ప: ది రూల్',
+      en: 'Pushpa 2: The Rule',
+      te: 'పుష్ప 2: ది రూల్',
     },
-
     description: {
       en: 'Pushpa Raj rises as a powerful smuggling king while his rivalry with SP Bhanwar Singh grows more intense. As power and revenge collide, Pushpa fights to protect his empire and reputation.',
-
       te: 'పుష్ప రాజ్ శక్తివంతమైన స్మగ్లింగ్ సామ్రాజ్యాధిపతిగా ఎదుగుతుండగా, ఎస్పీ భన్వర్ సింగ్‌తో అతని వైరం మరింత తీవ్రమవుతుంది. అధికారం మరియు ప్రతీకారం మధ్య తన సామ్రాజ్యాన్ని మరియు గౌరవాన్ని కాపాడుకునేందుకు పుష్ప పోరాడతాడు.',
     },
-
     genres: ['Action', 'Crime', 'Drama'],
-
     year: 2024,
-
     runtime: 200,
-
     imdbRating: 8.5,
-
     studio: 'Mythri Movie Makers',
-
     language: 'Telugu',
-
     country: 'India',
-
     ottPlatforms: ['NETFLIX'],
-
     teluguDubAvail: true,
-
     teluguSubAvail: true,
-
     hindiDubAvail: true,
-
     isFeatured: true,
-
     isTrending: true,
-
     isTopRated: false,
-
     trendingScore: 97.0,
-
     popularityScore: 99.0,
+    similarSlugs: ['pushpa-the-rise', 'rangasthalam'],
+    directors: ['Sukumar'],
+    universeInfo: {
+      universeId: 'telugu',
+      order: 3,
+      phase: 'Pushpa Trilogy'
+    }
   },
+  {
+    slug: 'pushpa-the-rise',
+    type: ContentType.MOVIE,
+    status: ContentStatus.COMPLETED,
+    poster: 'https://image.tmdb.org/t/p/w500/oaRk2HgOirEeNuDCwwScmq7rKvS.jpg',
+    banner: 'https://image.tmdb.org/t/p/original/jQIcn51nsvMrpB9NFwEOb9QHhFt.jpg',
+    trailer: 'https://www.youtube.com/embed/pKctjlxbFDQ',
+    title: {
+      en: 'Pushpa: The Rise',
+      te: 'పుష్ప: ది రైజ్',
+    },
+    description: {
+      en: 'A coolie rises in the world of red sandalwood smuggling, earning enemies and generating a massive gangland empire.',
+      te: 'ఎర్ర చందనం స్మగ్లింగ్ ప్రపంచంలో ఒక సాధారణ కూలీ ఎలా పైకి ఎదిగాడు, ఎందరో శత్రువులను సంపాదించుకుని ఎలా సామ్రాజ్యాన్ని సృష్టించుకున్నాడు అనేది ఈ కథ.',
+    },
+    genres: ['Action', 'Crime', 'Drama'],
+    year: 2021,
+    runtime: 179,
+    imdbRating: 7.6,
+    studio: 'Mythri Movie Makers',
+    language: 'Telugu',
+    country: 'India',
+    ottPlatforms: ['AMAZON_PRIME'],
+    teluguDubAvail: true,
+    teluguSubAvail: true,
+    hindiDubAvail: true,
+    isTrending: false,
+    isTopRated: true,
+    trendingScore: 80.0,
+    popularityScore: 94.0,
+    similarSlugs: ['pushpa-the-rule', 'rangasthalam'],
+    directors: ['Sukumar'],
+    universeInfo: {
+      universeId: 'telugu',
+      order: 2,
+      phase: 'Pushpa Trilogy'
+    }
+  },
+  {
+    slug: 'baahubali-the-beginning',
+    type: ContentType.MOVIE,
+    status: ContentStatus.COMPLETED,
+    poster: 'https://image.tmdb.org/t/p/w500/9BAjt8nSSms62uOVYn1t3C3dVto.jpg',
+    banner: 'https://image.tmdb.org/t/p/original/e9ZEuHGHZ06AToHlfN1L7nejJ7W.jpg',
+    trailer: 'https://www.youtube.com/embed/sOEg_970IFY',
+    title: {
+      en: 'Baahubali: The Beginning',
+      te: 'బాహుబలి: ది బిగినింగ్',
+    },
+    description: {
+      en: 'A young man in ancient India gets involved in a long-standing conflict between two warring brothers for the control of a wealthy kingdom.',
+      te: 'శివుడు అనే యువకుడు ఒక పెద్ద జలపాతం దాటి వెళ్ళిన తర్వాత, మహేశ్మతి సామ్రాజ్యంలో తన గతం గురించి తెలుసుకుని, తన తల్లిని కాపాడటానికి సిద్ధమవుతాడు.',
+    },
+    genres: ['Action', 'Fantasy', 'Historical', 'Drama'],
+    year: 2015,
+    runtime: 159,
+    imdbRating: 8.0,
+    studio: 'Arka Media Works',
+    language: 'Telugu',
+    country: 'India',
+    ottPlatforms: ['AMAZON_PRIME', 'NETFLIX'],
+    teluguDubAvail: true,
+    teluguSubAvail: true,
+    hindiDubAvail: true,
+    isTrending: false,
+    isTopRated: true,
+    trendingScore: 84.0,
+    popularityScore: 96.0,
+    similarSlugs: ['baahubali-2-the-conclusion', 'rrr', 'magadheera'],
+    directors: ['S.S. Rajamouli'],
+    universeInfo: {
+      universeId: 'rajamouli',
+      order: 2,
+      phase: 'Baahubali Saga'
+    }
+  },
+  {
+    slug: 'baahubali-2-the-conclusion',
+    type: ContentType.MOVIE,
+    status: ContentStatus.COMPLETED,
+    poster: 'https://image.tmdb.org/t/p/w500/21sC2assImQIYCEDA84Qh9d1RsK.jpg',
+    banner: 'https://image.tmdb.org/t/p/original/whNjsTOUVg2lZLCKgGhnACnmV8E.jpg',
+    trailer: 'https://www.youtube.com/embed/qD-6d8EFCgA',
+    title: {
+      en: 'Baahubali 2: The Conclusion',
+      te: 'బాహుబలి 2: ది కన్క్లూజన్',
+    },
+    description: {
+      en: 'When Bhallaladeva conspires against his brother to become king, Baahubali is murdered, prompting his son to return to avenge his death.',
+      te: 'ఎందుకు కట్టప్ప బాహుబలిని చంపాడు? అమరేంద్ర బాహుబలి ఎలా మరణించాడు మరియు అతని కుమారుడు మహేంద్ర బాహుబలి ఎలా ప్రతీకారం తీర్చుకున్నాడు అనేదే ఈ కథాంశం.',
+    },
+    genres: ['Action', 'Fantasy', 'Historical', 'Drama'],
+    year: 2017,
+    runtime: 167,
+    imdbRating: 8.2,
+    studio: 'Arka Media Works',
+    language: 'Telugu',
+    country: 'India',
+    ottPlatforms: ['AMAZON_PRIME', 'NETFLIX'],
+    teluguDubAvail: true,
+    teluguSubAvail: true,
+    hindiDubAvail: true,
+    isTrending: true,
+    isTopRated: true,
+    trendingScore: 92.0,
+    popularityScore: 97.5,
+    similarSlugs: ['baahubali-the-beginning', 'rrr', 'magadheera'],
+    directors: ['S.S. Rajamouli'],
+    universeInfo: {
+      universeId: 'rajamouli',
+      order: 3,
+      phase: 'Baahubali Saga'
+    }
+  },
+  {
+    slug: 'eega',
+    type: ContentType.MOVIE,
+    status: ContentStatus.COMPLETED,
+    poster: 'https://image.tmdb.org/t/p/w500/pX7fn4EZrg2YFlV4GNMIfHDOQZ6.jpg',
+    banner: 'https://image.tmdb.org/t/p/original/fuCfQ0D2HtNa7kRLFDkPWl87Zs9.jpg',
+    trailer: 'https://www.youtube.com/embed/gWn_ZqP8dG0',
+    title: {
+      en: 'Eega',
+      te: 'ఈగ',
+    },
+    description: {
+      en: 'A murdered man is reincarnated as a housefly and seeks to avenge his death and protect his lover from his killer.',
+      te: 'ఒక దుర్మార్గుడి చేతిలో చనిపోయిన నాని, ఒక ఈగగా పునర్జన్మ ఎత్తి తన ప్రియురాలిని కాపాడటానికి మరియు తన హంతకుడిపై ప్రతీకారం తీర్చుకోవడానికి పోరాడతాడు.',
+    },
+    genres: ['Fantasy', 'Comedy', 'Action'],
+    year: 2012,
+    runtime: 145,
+    imdbRating: 7.7,
+    studio: 'Varahi Chalana Chitram',
+    language: 'Telugu',
+    country: 'India',
+    ottPlatforms: ['AMAZON_PRIME'],
+    teluguDubAvail: true,
+    teluguSubAvail: true,
+    hindiDubAvail: true,
+    isTrending: false,
+    isTopRated: true,
+    trendingScore: 78.0,
+    popularityScore: 92.0,
+    similarSlugs: ['magadheera', 'baahubali-the-beginning'],
+    directors: ['S.S. Rajamouli'],
+    universeInfo: {
+      universeId: 'rajamouli',
+      order: 4,
+      phase: 'Fantasy Era'
+    }
+  },
+  {
+    slug: 'magadheera',
+    type: ContentType.MOVIE,
+    status: ContentStatus.COMPLETED,
+    poster: 'https://image.tmdb.org/t/p/w500/xK7MEV56GF291VG0U5XnVJuvNv3.jpg',
+    banner: 'https://image.tmdb.org/t/p/original/p2SvjtejMgiBDCLL3ugOmCxk3sY.jpg',
+    trailer: 'https://www.youtube.com/embed/V6dK1cMhyKk',
+    title: {
+      en: 'Magadheera',
+      te: 'మగధీర',
+    },
+    description: {
+      en: 'A bike stuntman recalls his past life as a legendary warrior in the 17th century and seeks to reunite with his lover who also reincarnated.',
+      te: '400 సంవత్సరాల క్రితం మరణించిన ఒక యోధుడు మరియు యువరాణి, ఈ కాలంలో తిరిగి జన్మించి తమ ప్రేమను ఎలా దక్కించుకున్నారనేది ఈ చిత్రం.',
+    },
+    genres: ['Fantasy', 'Action', 'Romance', 'Historical'],
+    year: 2009,
+    runtime: 165,
+    imdbRating: 7.7,
+    studio: 'Geetha Arts',
+    language: 'Telugu',
+    country: 'India',
+    ottPlatforms: ['ZEE5'],
+    teluguDubAvail: true,
+    teluguSubAvail: true,
+    hindiDubAvail: true,
+    isTrending: false,
+    isTopRated: true,
+    trendingScore: 74.0,
+    popularityScore: 91.0,
+    similarSlugs: ['baahubali-the-beginning', 'eega'],
+    directors: ['S.S. Rajamouli'],
+    universeInfo: {
+      universeId: 'rajamouli',
+      order: 1,
+      phase: 'Fantasy Era'
+    }
+  },
+  {
+    slug: 'chatrapathi',
+    type: ContentType.MOVIE,
+    status: ContentStatus.COMPLETED,
+    poster: 'https://image.tmdb.org/t/p/w500/f9SjU4lj4jraX9WBYZAasbc79GX.jpg',
+    banner: 'https://image.tmdb.org/t/p/original/i4DC8qD8TWjgTyCYgNRZ7lYqABY.jpg',
+    trailer: 'https://www.youtube.com/embed/d2-Fk-x6Uuo',
+    title: {
+      en: 'Chatrapathi',
+      te: 'ఛత్రపతి',
+    },
+    description: {
+      en: 'Displaced Sri Lankan refugees in Vizag are oppressed by local goons, until Shivaji rises to become their leader and defender.',
+      te: 'లంక నుండి వచ్చిన వలసదారులు విశాఖ తీరంలో రౌడీల చేతిలో అన్యాయానికి గురవుతుండగా, శివాజీ వారికి అండగా నిలిచి ఛత్రపతిగా ఎలా ఎదిగాడనేది ఈ చిత్రం.',
+    },
+    genres: ['Action', 'Drama'],
+    year: 2005,
+    runtime: 168,
+    imdbRating: 7.7,
+    studio: 'Sri Venkateswara Cine Chitra',
+    language: 'Telugu',
+    country: 'India',
+    ottPlatforms: ['YOUTUBE'],
+    teluguDubAvail: true,
+    teluguSubAvail: true,
+    hindiDubAvail: true,
+    isTrending: false,
+    isTopRated: false,
+    trendingScore: 68.0,
+    popularityScore: 89.0,
+    similarSlugs: ['pokiri', 'magadheera'],
+    directors: ['S.S. Rajamouli']
+  },
+  {
+    slug: 'pokiri',
+    type: ContentType.MOVIE,
+    status: ContentStatus.COMPLETED,
+    poster: 'https://image.tmdb.org/t/p/w500/rQ8NH5f3CxRrmqZWMZNYPwLmjDS.jpg',
+    banner: 'https://image.tmdb.org/t/p/original/z3mlTunM7Ck7WB6inIuKJ6b8hjb.jpg',
+    trailer: 'https://www.youtube.com/embed/l8982295df2a37',
+    title: {
+      en: 'Pokiri',
+      te: 'పోకిరి',
+    },
+    description: {
+      en: 'A ruthless killer for hire joins a gang but is actually an undercover cop seeking to clean up the city and its mafia.',
+      te: 'డబ్బు కోసం ఎంతటి నేరానికైనా వెనుకాడని ఒక రౌడీ మాఫియాలో చేరతాడు. అయితే చివర్లో అతను ఒక రహస్య పోలీస్ ఆఫీసర్ కృష్ణ మనోహర్ అని తెలుస్తుంది.',
+    },
+    genres: ['Action', 'Crime', 'Thriller'],
+    year: 2006,
+    runtime: 162,
+    imdbRating: 8.0,
+    studio: 'Indira Productions',
+    language: 'Telugu',
+    country: 'India',
+    ottPlatforms: ['AMAZON_PRIME'],
+    teluguDubAvail: true,
+    teluguSubAvail: true,
+    hindiDubAvail: true,
+    isTrending: false,
+    isTopRated: true,
+    trendingScore: 83.0,
+    popularityScore: 94.0,
+    similarSlugs: ['businessman', 'athadu'],
+    directors: ['Puri Jagannadh']
+  },
+  {
+    slug: 'athadu',
+    type: ContentType.MOVIE,
+    status: ContentStatus.COMPLETED,
+    poster: 'https://image.tmdb.org/t/p/w500/AlopJ5sUgsf0pFn8FfXqdhyfL2Z.jpg',
+    banner: 'https://image.tmdb.org/t/p/original/8SByVmuLzQDpITwotmFFdTo1qEp.jpg',
+    trailer: 'https://www.youtube.com/embed/5a4d35Y2W0k',
+    title: {
+      en: 'Athadu',
+      te: 'అతడు',
+    },
+    description: {
+      en: 'A professional hitman is framed for a murder and hides in a large village family under the identity of a deceased grandson.',
+      te: 'ఒక ప్రొఫెషనల్ కిల్లర్ అనుకోని హత్య కేసులో ఇరుక్కుని ఒక పల్లెటూరి పెద్ద కుటుంబంలో తప్పిపోయిన మనవడిగా ప్రవేశించి దాక్కుంటాడు.',
+    },
+    genres: ['Action', 'Drama', 'Thriller'],
+    year: 2005,
+    runtime: 172,
+    imdbRating: 8.2,
+    studio: 'Jayabheri Art Productions',
+    language: 'Telugu',
+    country: 'India',
+    ottPlatforms: ['AMAZON_PRIME', 'YOUTUBE'],
+    teluguDubAvail: true,
+    teluguSubAvail: true,
+    hindiDubAvail: true,
+    isTrending: true,
+    isTopRated: true,
+    trendingScore: 89.0,
+    popularityScore: 95.0,
+    similarSlugs: ['pokiri', 'ala-vaikunthapurramuloo'],
+    directors: ['Trivikram Srinivas']
+  },
+  {
+    slug: 'ala-vaikunthapurramuloo',
+    type: ContentType.MOVIE,
+    status: ContentStatus.COMPLETED,
+    poster: 'https://image.tmdb.org/t/p/w500/2rzORJaegE2bbKNVkQXbZCeV0BP.jpg',
+    banner: 'https://image.tmdb.org/t/p/original/5SDMPORslLXaYPx7S1kRqsBJYI3.jpg',
+    trailer: 'https://www.youtube.com/embed/seU8z2mP2W8',
+    title: {
+      en: 'Ala Vaikunthapurramuloo',
+      te: 'అలా వైకుంఠపురములో',
+    },
+    description: {
+      en: 'Bantu, a hard-working youth, discovers that he was swapped at birth and belongs to a multi-millionaire family, and enters their palace to solve their family problems.',
+      te: 'పుట్టినప్పుడే ఒక దురాశపరుడి వల్ల తన తండ్రి మారినట్టు తెలుసుకున్న బంటు, తన అసలైన ధనవంతుల ఇంటికి వైకుంఠపురము లోకి వెళ్లి వారి సమస్యలను ఎలా పరిష్కరించాడో చూపే చిత్రం.',
+    },
+    genres: ['Comedy', 'Drama', 'Family'],
+    year: 2020,
+    runtime: 163,
+    imdbRating: 7.3,
+    studio: 'Haarika & Hassine Creations',
+    language: 'Telugu',
+    country: 'India',
+    ottPlatforms: ['NETFLIX'],
+    teluguDubAvail: true,
+    teluguSubAvail: true,
+    hindiDubAvail: true,
+    isTrending: true,
+    isTopRated: false,
+    trendingScore: 84.0,
+    popularityScore: 92.5,
+    similarSlugs: ['athadu'],
+    directors: ['Trivikram Srinivas']
+  },
+  {
+    slug: 'rangasthalam',
+    type: ContentType.MOVIE,
+    status: ContentStatus.COMPLETED,
+    poster: 'https://image.tmdb.org/t/p/w500/yiEzDgBBFC25Zd6z0r7sMngn5vr.jpg',
+    banner: 'https://image.tmdb.org/t/p/original/6JdOkSgd8wkAQbT6Ncib4DrnyiS.jpg',
+    trailer: 'https://www.youtube.com/embed/6T2wWn8Rz8s',
+    title: {
+      en: 'Rangasthalam',
+      te: 'రంగస్థలం',
+    },
+    description: {
+      en: 'A partially deaf young man, Chitti Babu, stands up against a ruthless village president to avenge his brother and free the village from tyranny.',
+      te: 'చెవుడు ఉన్న చిట్టిబాబు, 30 ఏళ్లుగా గ్రామాన్ని పాలిస్తూ దోచుకుంటున్న ప్రెసిడెంట్ దౌర్జన్యాలకు వ్యతిరేకంగా తన అన్నయ్యతో కలిసి ఎలా పోరాడాడు అనే గ్రామీణ రాజకీయ కథ.',
+    },
+    genres: ['Drama', 'Action'],
+    year: 2018,
+    runtime: 170,
+    imdbRating: 8.2,
+    studio: 'Mythri Movie Makers',
+    language: 'Telugu',
+    country: 'India',
+    ottPlatforms: ['AMAZON_PRIME'],
+    teluguDubAvail: true,
+    teluguSubAvail: true,
+    hindiDubAvail: true,
+    isTrending: true,
+    isTopRated: true,
+    trendingScore: 89.0,
+    popularityScore: 95.0,
+    similarSlugs: ['pushpa-the-rise', 'pushpa-the-rule'],
+    directors: ['Sukumar']
+  },
+  {
+    slug: 'hanuman',
+    type: ContentType.MOVIE,
+    status: ContentStatus.COMPLETED,
+    poster: 'https://image.tmdb.org/t/p/w500/m1zq48rWSXxplzoJR8YtbXWnnHM.jpg',
+    banner: 'https://image.tmdb.org/t/p/original/evUpfs4dw7AuZ5k8dkePVMFSg0T.jpg',
+    trailer: 'https://www.youtube.com/embed/O4S05HkH8P8',
+    title: {
+      en: 'HanuMan',
+      te: 'హను-మాన్',
+    },
+    description: {
+      en: 'An imaginary place called Anjanadri where a petty thief Hanumanthu gets the power of Lord Hanuman and fights against a villain to save his village.',
+      te: 'అంజనాద్రి అనే పల్లెటూర్లో ఒక సామాన్యుడు హనుమంతుడు, శ్రీరాముని సేవకుడైన హనుమంతుడి మహాశక్తులను పొంది, సూపర్ విలన్‌తో పోరాడి తన ఊరిని రక్షించుకునే కథ.',
+    },
+    genres: ['Super Hero', 'Fantasy', 'Action', 'Comedy'],
+    year: 2024,
+    runtime: 158,
+    imdbRating: 7.9,
+    studio: 'Primeshow Entertainment',
+    language: 'Telugu',
+    country: 'India',
+    ottPlatforms: ['ZEE5'],
+    teluguDubAvail: true,
+    teluguSubAvail: true,
+    hindiDubAvail: true,
+    isTrending: true,
+    isTopRated: true,
+    trendingScore: 93.0,
+    popularityScore: 96.0,
+    similarSlugs: ['kalki-2898-ad', 'eega'],
+    directors: ['Prasanth Varma'],
+    universeInfo: {
+      universeId: 'telugu',
+      order: 4,
+      phase: 'Prasanth Varma Cinematic Universe'
+    }
+  },
+  {
+    slug: 'salaar-part-1-ceasefire',
+    type: ContentType.MOVIE,
+    status: ContentStatus.COMPLETED,
+    poster: 'https://image.tmdb.org/t/p/w500/nlu9WbcetNFRGXXPWITr30ob7W6.jpg',
+    banner: 'https://image.tmdb.org/t/p/original/xtOCTmGemASooRkAxRorYODig1p.jpg',
+    trailer: 'https://www.youtube.com/embed/4GPvYV_ZqyU',
+    title: {
+      en: 'Salaar: Part 1 – Ceasefire',
+      te: 'సలార్: పార్ట్ 1 – సీజ్‌ఫైర్',
+    },
+    description: {
+      en: 'A gang leader makes a promise to a dying friend and takes on other criminal gangs in the lawless city-state of Khansaar.',
+      te: 'దేవా తన చిన్ననాటి స్నేహితుడు వరదరాజును కాపాడటానికి ఖాన్సార్ అనే హింసాత్మక సామ్రాజ్యంలోకి ప్రవేశించి అక్కడ మాఫియా ముఠాలతో చేసే యుద్ధం.',
+    },
+    genres: ['Action', 'Drama', 'Thriller'],
+    year: 2023,
+    runtime: 175,
+    imdbRating: 6.5,
+    studio: 'Hombale Films',
+    language: 'Kannada', // Original is Telugu/Kannada bilingual
+    country: 'India',
+    ottPlatforms: ['NETFLIX'],
+    teluguDubAvail: true,
+    teluguSubAvail: true,
+    hindiDubAvail: true,
+    isTrending: true,
+    isTopRated: false,
+    trendingScore: 89.0,
+    popularityScore: 94.0,
+    similarSlugs: ['kalki-2898-ad', 'rrr'],
+    directors: ['Prashanth Neel']
+  }
 ]

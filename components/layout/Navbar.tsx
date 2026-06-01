@@ -3,6 +3,8 @@ import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { useStore } from '@/store/useStore'
 import { motion } from 'framer-motion'
+import Logo from '@/components/ui/Logo'
+import PremiumIcon from '@/components/ui/PremiumIcon'
 
 const NAV_LINKS = [
   {
@@ -72,15 +74,8 @@ export default function Navbar() {
         <div className="max-w-screen-2xl mx-auto px-4 xl:px-6 h-[78px] flex items-center gap-3 xl:gap-4">
 
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-3.5 mr-5 flex-none group">
-            <div className="w-9 h-9 rounded-lg flex items-center justify-center font-cinzel font-black text-sm text-black"
-              style={{ background: 'linear-gradient(135deg, #FFD700, #FFA500)', boxShadow: '0 0 20px rgba(255,215,0,0.4)' }}>
-              TV
-            </div>
-            <span className="font-cinzel text-[22px] font-bold tracking-[0.18em] hidden sm:block"
-              style={{ background: 'linear-gradient(135deg, #FFD700, #fff, #FFD700)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
-              TeluguVerse
-            </span>
+          <Link href="/" className="flex items-center mr-5 flex-none group">
+            <Logo variant="primary" />
           </Link>
 
           {/* Desktop Nav */}
@@ -212,19 +207,29 @@ export default function Navbar() {
                       <p className="text-sm font-bold text-white font-rajdhani">{user.displayName}</p>
                       <p className="text-xs text-gray-500">@{user.username}</p>
                     </div>
-                    {[{ label: '👤 Profile', href: `/user/${user.username}` }, { label: '📋 Watchlist', href: '/watchlist' }, { label: '❤️ Favorites', href: '/favorites' }, { label: '⭐ Reviews', href: '/my-reviews' }].map(item => (
+                    {[
+                      { label: 'Profile', href: `/user/${user.username}`, icon: 'user' },
+                      { label: 'Watchlist', href: '/watchlist', icon: 'watchlist' },
+                      { label: 'Favorites', href: '/favorites', icon: 'favorite' },
+                      { label: 'Reviews', href: '/my-reviews', icon: 'review' }
+                    ].map(item => (
                       <Link key={item.href} href={item.href} onClick={() => setProfileOpen(false)}
-                        className="block px-3 py-2 rounded-lg text-sm text-gray-300 hover:bg-yellow-400/10 hover:text-yellow-400 transition-all font-rajdhani font-semibold">
+                        className="flex items-center gap-2.5 px-3 py-2 rounded-lg text-sm text-gray-300 hover:bg-yellow-400/10 hover:text-yellow-400 transition-all font-rajdhani font-semibold">
+                        <PremiumIcon name={item.icon} size={14} />
                         {item.label}
                       </Link>
                     ))}
                     {user.role === 'ADMIN' || user.role === 'SUPER_ADMIN' ? (
-                      <Link href="/admin" onClick={() => setProfileOpen(false)} className="block px-3 py-2 rounded-lg text-sm text-yellow-400 hover:bg-yellow-400/10 transition-all font-rajdhani font-semibold">⚙️ Admin Panel</Link>
+                      <Link href="/admin" onClick={() => setProfileOpen(false)} className="flex items-center gap-2.5 px-3 py-2 rounded-lg text-sm text-yellow-400 hover:bg-yellow-400/10 transition-all font-rajdhani font-semibold">
+                        <PremiumIcon name="gear" size={14} />
+                        Admin Panel
+                      </Link>
                     ) : null}
                     <div className="border-t border-border mt-1 pt-1">
                       <button onClick={() => { logout(); setProfileOpen(false) }}
-                        className="w-full text-left px-3 py-2 rounded-lg text-sm text-red-400 hover:bg-red-400/10 transition-all font-rajdhani font-semibold">
-                        🚪 Sign Out
+                        className="w-full flex items-center gap-2.5 text-left px-3 py-2 rounded-lg text-sm text-red-400 hover:bg-red-400/10 transition-all font-rajdhani font-semibold">
+                        <PremiumIcon name="logout" size={14} />
+                        Sign Out
                       </button>
                     </div>
                   </div>

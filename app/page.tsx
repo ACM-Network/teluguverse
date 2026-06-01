@@ -24,8 +24,8 @@ export default function HomePage() {
       {/* Stats bar — immediate, no gap */}
       <StatsBar />
 
-      {/* Content sections — tightened top padding from py-12 to pt-8 */}
-      <div className="container-tv pt-8 pb-20 space-y-14 relative z-10">
+      {/* Content sections — upgraded spacing rhythm */}
+      <div className="container-tv pt-10 pb-24 space-y-20 relative z-10">
         <Suspense fallback={null}>
           <div className="grid grid-cols-1 xl:grid-cols-[1fr_320px] gap-10">
             <PopularSection />
@@ -33,14 +33,28 @@ export default function HomePage() {
           </div>
         </Suspense>
 
+        <div className="section-divider" />
+
         <CategoriesGrid />
 
         <div className="section-divider" />
 
         <AnimeSection />
+
+        <div className="section-divider" />
+
         <KDramaSection />
+
+        <div className="section-divider" />
+
         <UniverseExplorer />
+
+        <div className="section-divider" />
+
         <UpcomingSection />
+
+        <div className="section-divider" />
+
         <OttSection />
       </div>
     </div>

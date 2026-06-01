@@ -18,6 +18,7 @@ export async function GET(req: NextRequest) {
       page: sp.get('page') ? Number(sp.get('page')) : 1,
       limit: sp.get('limit') ? Number(sp.get('limit')) : 20,
       sort: sp.get('sort') as any || 'trending',
+      universe: sp.get('universe') || undefined,
     })
     return ok(results)
   } catch (e) { return handleError(e) }
