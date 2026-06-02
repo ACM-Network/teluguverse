@@ -2,8 +2,10 @@ import type { Metadata, Viewport } from 'next'
 import { Cinzel, Rajdhani, Noto_Sans_Telugu } from 'next/font/google'
 import './globals.css'
 import Navbar from '@/components/layout/Navbar'
+import BottomNav from '@/components/layout/BottomNav'
 import Footer from '@/components/layout/Footer'
 import SearchModal from '@/components/search/SearchModal'
+import PageTransition from '@/components/ui/PageTransition'
 import { Toaster } from 'react-hot-toast'
 
 const cinzel = Cinzel({ subsets: ['latin'], variable: '--font-cinzel', weight: ['400','600','700','900'] })
@@ -37,10 +39,13 @@ export const viewport: Viewport = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="te" suppressHydrationWarning>
-      <body className={`${cinzel.variable} ${rajdhani.variable} ${notoTelugu.variable} bg-dark text-white antialiased font-rajdhani`}>
+      <body className={`${cinzel.variable} ${rajdhani.variable} ${notoTelugu.variable} bg-dark text-white antialiased font-rajdhani min-h-screen flex flex-col`}>
         <Navbar />
+        <BottomNav />
         <SearchModal />
-        <main>{children}</main>
+        <main className="flex-1 flex flex-col">
+          <PageTransition>{children}</PageTransition>
+        </main>
         <Footer />
         <Toaster
           position="bottom-right"

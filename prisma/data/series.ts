@@ -92,7 +92,7 @@ export const series = [
     studio: 'HBO Entertainment',
     language: 'English',
     country: 'United States',
-    ottPlatforms: ["JIO_HOTSTAR",{platform:"SONY_LIV",url:"https://www.sonyliv.com"}],
+    ottPlatforms: ["JIO_HOTSTAR"],
     teluguDubAvail: true,
     teluguSubAvail: true,
     hindiDubAvail: true,

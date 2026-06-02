@@ -24,8 +24,7 @@ export const movies = [
     language: 'Telugu',
     country: 'India',
     ottPlatforms: [
-      { platform: 'ZEE5', url: 'https://www.zee5.com/movies/details/rrr/0-0-1z511732' },
-      { platform: 'NETFLIX', url: 'https://www.netflix.com/title/81476453' }
+      { platform: 'ZEE5', url: 'https://www.zee5.com/movies/details/rrr/0-0-1z511732' }
     ],
     teluguDubAvail: true,
     teluguSubAvail: true,
@@ -60,8 +59,7 @@ export const movies = [
     language: 'Telugu',
     country: 'India',
     ottPlatforms: [
-      { platform: 'AMAZON_PRIME', url: 'https://www.primevideo.com/detail/Kalki-2898-AD-Telugu/0NQGN7T4KSHGLT6EAWW5Q87G4Y' },
-      { platform: 'NETFLIX', url: 'https://www.netflix.com/title/81778939' }
+      { platform: 'AMAZON_PRIME', url: 'https://www.primevideo.com/detail/Kalki-2898-AD-Telugu/0NQGN7T4KSHGLT6EAWW5Q87G4Y' }
     ],
     teluguDubAvail: true,
     teluguSubAvail: true,
@@ -165,7 +163,9 @@ export const movies = [
     studio: 'Arka Media Works',
     language: 'Telugu',
     country: 'India',
-    ottPlatforms: ['AMAZON_PRIME', 'NETFLIX'],
+    ottPlatforms: [
+      { platform: 'JIO_HOTSTAR', url: 'https://www.hotstar.com/movies/baahubali-the-beginning/1000085885' }
+    ],
     teluguDubAvail: true,
     teluguSubAvail: true,
     hindiDubAvail: true,
@@ -204,8 +204,7 @@ export const movies = [
     language: 'Telugu',
     country: 'India',
     ottPlatforms: [
-      { platform: 'AMAZON_PRIME', url: 'https://www.primevideo.com/detail/Baahubali-2-The-Conclusion-Telugu/0OEG7NQWOB5C4P47GZJ8E0Y4GQ' },
-      { platform: 'NETFLIX', url: 'https://www.netflix.com/title/80178471' }
+      { platform: 'JIO_HOTSTAR', url: 'https://www.hotstar.com/movies/baahubali-2-the-conclusion/1770016335' }
     ],
     teluguDubAvail: true,
     teluguSubAvail: true,

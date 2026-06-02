@@ -30,8 +30,8 @@ const OTT_TABS = [
     )
   },
   { 
-    key: 'JIO_HOTSTAR', 
-    label: 'Hotstar', 
+    key: 'HOTSTAR', 
+    label: 'Disney+ Hotstar', 
     color: '#00D2FF', 
     icon: (
       <svg className="w-3.5 h-3.5 mr-2 flex-none" viewBox="0 0 24 24" fill="currentColor">
@@ -57,6 +57,17 @@ const OTT_TABS = [
     icon: (
       <svg className="w-3.5 h-3.5 mr-2 flex-none" viewBox="0 0 24 24" fill="currentColor">
         <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm5.5-5c0 3.04-2.46 5.5-5.5 5.5S4.5 15.04 4.5 12 6.96 6.5 10 6.5s5.5 2.46 5.5 5.5z" />
+      </svg>
+    )
+  },
+  { 
+    key: 'TV', 
+    label: 'TV Channels', 
+    color: '#A855F7', 
+    icon: (
+      <svg className="w-3.5 h-3.5 mr-2 flex-none" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+        <rect x="2" y="7" width="20" height="15" rx="2" ry="2" />
+        <polyline points="17 2 12 7 7 2" />
       </svg>
     )
   }
@@ -93,12 +104,12 @@ export default function OttSection() {
   }
 
   return (
-    <div>
+    <div className="relative">
       <SectionHeader 
-        title="OTT New Arrivals" 
-        titleTe="OTT కొత్త విడుదలలు" 
-        icon="ott"
-        description="Filter recent digital premieres by your favorite streaming networks"
+        title="Where To Watch" 
+        titleTe="ఎక్కడ చూడాలి" 
+        icon="📺"
+        description="Find movies, anime, and series based on your streaming subscription or television network availability"
       />
       
       {/* Premium segmented control row with icons */}
@@ -125,7 +136,7 @@ export default function OttSection() {
         ) : items.length === 0 ? (
           <div className="w-full py-16 flex flex-col items-center justify-center border border-white/5 rounded-2xl bg-surface/20 backdrop-blur-md">
             <PremiumIcon name="movies" size={32} className="opacity-30 mb-2.5" />
-            <p className="text-gray-500 text-sm font-rajdhani font-bold tracking-wide">No new arrivals found for this network</p>
+            <p className="text-gray-500 text-sm font-rajdhani font-bold tracking-wide">No content found for this provider</p>
           </div>
         ) : (
           items.map((item, i) => <ContentCard key={item.id} content={item} index={i} />)

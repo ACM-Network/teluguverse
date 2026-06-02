@@ -29,7 +29,7 @@ export const animes = [
       { platform: 'CRUNCHYROLL', url: 'https://www.crunchyroll.com/series/GR751KGZY/attack-on-titan' },
       { platform: 'NETFLIX', url: 'https://www.netflix.com/title/70299043' }
     ],
-    teluguDubAvail: true,
+    teluguDubAvail: false,
     teluguSubAvail: true,
     hindiDubAvail: true,
     isTrending: true,
@@ -188,7 +188,7 @@ export const animes = [
       { platform: 'CRUNCHYROLL', url: 'https://www.crunchyroll.com/series/GYZEXDKNY/naruto-shippuden' },
       { platform: 'NETFLIX', url: 'https://www.netflix.com/title/80000000' }
     ],
-    teluguDubAvail: true,
+    teluguDubAvail: false,
     teluguSubAvail: true,
     hindiDubAvail: true,
     isTrending: true,
@@ -230,7 +230,7 @@ export const animes = [
       { platform: 'CRUNCHYROLL', url: 'https://www.crunchyroll.com/series/GRMG8ZQZR/one-piece' },
       { platform: 'NETFLIX', url: 'https://www.netflix.com/title/80186945' }
     ],
-    teluguDubAvail: true,
+    teluguDubAvail: false,
     teluguSubAvail: true,
     hindiDubAvail: true,
     isTrending: true,
@@ -271,7 +271,7 @@ export const animes = [
     ottPlatforms: [
       { platform: 'CRUNCHYROLL', url: 'https://www.crunchyroll.com/series/G9VHN91RE/chainsaw-man' }
     ],
-    teluguDubAvail: true,
+    teluguDubAvail: false,
     teluguSubAvail: true,
     hindiDubAvail: true,
     isTrending: true,
@@ -344,7 +344,7 @@ export const animes = [
       { platform: 'CRUNCHYROLL', url: 'https://www.crunchyroll.com/series/G8DHV7178/blue-lock' },
       { platform: 'NETFLIX', url: 'https://www.netflix.com/title/81617062' }
     ],
-    teluguDubAvail: true,
+    teluguDubAvail: false,
     teluguSubAvail: true,
     hindiDubAvail: true,
     isTrending: true,
@@ -381,7 +381,7 @@ export const animes = [
       { platform: 'CRUNCHYROLL', url: 'https://www.crunchyroll.com/series/G6WEMFVE6/spy-x-family' },
       { platform: 'NETFLIX', url: 'https://www.netflix.com/title/81517407' }
     ],
-    teluguDubAvail: true,
+    teluguDubAvail: false,
     teluguSubAvail: true,
     hindiDubAvail: true,
     isTrending: true,
@@ -622,7 +622,7 @@ export const animes = [
     ottPlatforms: [
       { platform: 'HUNGAMA_TV', url: null }
     ],
-    teluguDubAvail: true,
+    teluguDubAvail: false,
     teluguSubAvail: false,
     hindiDubAvail: true,
     isTrending: false,
@@ -652,7 +652,7 @@ export const animes = [
     ottPlatforms: [
       { platform: 'CARTOON_NETWORK', url: null }
     ],
-    teluguDubAvail: true,
+    teluguDubAvail: false,
     teluguSubAvail: false,
     hindiDubAvail: true,
     isTrending: false,
@@ -712,7 +712,7 @@ export const animes = [
     ottPlatforms: [
       { platform: 'CARTOON_NETWORK', url: null }
     ],
-    teluguDubAvail: true,
+    teluguDubAvail: false,
     teluguSubAvail: false,
     hindiDubAvail: true,
     isTrending: false,

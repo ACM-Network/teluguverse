@@ -1,6 +1,7 @@
 'use client'
 import { useState, useEffect, useRef } from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 import { motion, AnimatePresence } from 'framer-motion'
 import { ContentItem } from '@/types'
 import { useStore } from '@/store/useStore'
@@ -10,6 +11,7 @@ import RatingStars from '@/components/ui/RatingStars'
 import ContentCard from '@/components/ui/ContentCard'
 import SectionHeader from '@/components/ui/SectionHeader'
 import PremiumIcon from '@/components/ui/PremiumIcon'
+import toast from 'react-hot-toast'
 
 const TYPE_LABELS: Record<string, string> = {
   MOVIE: 'Movie',
@@ -100,6 +102,38 @@ function getYouTubeEmbedUrl(url: string | null | undefined): string | null {
   return url
 }
 
+const getUniverseFullName = (id: string): string => {
+  const map: Record<string, string> = {
+    mcu: 'Marvel Cinematic Universe',
+    dc: 'DC Universe',
+    lcu: 'Lokesh Cinematic Universe (LCU)',
+    baahubali: 'Baahubali Universe',
+    monsterverse: 'MonsterVerse',
+    onepiece: 'One Piece Storyline'
+  }
+  return map[id] || 'Cinematic Universe'
+}
+
+const getAmbientBg = (slug: string, universeId?: string) => {
+  const s = slug.toLowerCase()
+  if (s.includes('kalki')) {
+    return 'radial-gradient(circle at 50% 15%, rgba(212,175,55,0.06) 0%, rgba(7,8,16,0) 65%)'
+  }
+  if (s.includes('loki')) {
+    return 'radial-gradient(circle at 50% 15%, rgba(50,205,50,0.05) 0%, rgba(7,8,16,0) 65%)'
+  }
+  if (s.includes('one-piece') || s.includes('onepiece')) {
+    return 'radial-gradient(circle at 50% 15%, rgba(30,144,255,0.06) 0%, rgba(7,8,16,0) 65%)'
+  }
+  if (s.includes('baahubali')) {
+    return 'radial-gradient(circle at 50% 15%, rgba(255,215,0,0.06) 0%, rgba(7,8,16,0) 65%)'
+  }
+  if (universeId === 'mcu' || s.includes('avengers') || s.includes('iron-man') || s.includes('thor') || s.includes('captain-america')) {
+    return 'radial-gradient(circle at 45% 15%, rgba(229,9,20,0.035) 0%, transparent 45%), radial-gradient(circle at 55% 15%, rgba(59,130,246,0.035) 0%, transparent 45%)'
+  }
+  return 'radial-gradient(circle at 50% 15%, rgba(255,215,0,0.02) 0%, rgba(7,8,16,0) 60%)'
+}
+
 export default function ContentDetailPage({ content, similar = [] }: Props) {
   const [activeTab, setActiveTab] = useState('Overview')
   const [userRating, setUserRating] = useState<number | null>(null)
@@ -107,6 +141,14 @@ export default function ContentDetailPage({ content, similar = [] }: Props) {
   const [watchedEps, setWatchedEps] = useState<Set<number>>(new Set())
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null)
   const carouselRef = useRef<HTMLDivElement>(null)
+  const castCarouselRef = useRef<HTMLDivElement>(null)
+
+  const handleShare = () => {
+    if (typeof window !== 'undefined') {
+      navigator.clipboard.writeText(window.location.href)
+      toast.success('Link copied to clipboard!')
+    }
+  }
 
   const scrollCarousel = (direction: 'left' | 'right') => {
     if (carouselRef.current) {
@@ -161,8 +203,56 @@ export default function ContentDetailPage({ content, similar = [] }: Props) {
   const inWatchlist = watchlist.includes(content.id)
   const isFav = favorites.includes(content.id)
 
+  const universeConnection = content.universe?.[0]
+  let prevItem: any = null
+  let nextItem: any = null
+
+  if (universeConnection) {
+    const universeItems = universeConnection.universe.contents
+    const currentIndex = universeItems.findIndex((item: any) => item.contentId === content.id)
+    
+    if (currentIndex !== -1) {
+      if (currentIndex > 0) {
+        prevItem = universeItems[currentIndex - 1].content
+      }
+      if (currentIndex < universeItems.length - 1) {
+        nextItem = universeItems[currentIndex + 1].content
+      }
+    }
+  }
+
+  // Pre-calculate sets for similar content recommendation reasons
+  const currentUniverseContentIds = new Set(
+    universeConnection?.universe?.contents?.map((c: any) => c.contentId) || []
+  )
+  const currentDirectorIds = new Set(content.directors?.map(d => d.id) || [])
+  const currentGenreIds = new Set(content.genres?.map(g => g.genre.id) || [])
+
+  const getRecommendationReason = (similarItem: any) => {
+    if (currentUniverseContentIds.has(similarItem.id)) {
+      return 'Same Universe'
+    }
+    if (similarItem.directors?.some((d: any) => currentDirectorIds.has(d.id))) {
+      return 'Same Director'
+    }
+    const sharedGenre = similarItem.genres?.find((g: any) => currentGenreIds.has(g.genre?.id))
+    if (sharedGenre) {
+      return sharedGenre.genre.name || 'Similar Genre'
+    }
+    return 'Related Story'
+  }
+
   return (
     <div className="min-h-screen bg-dark relative overflow-x-hidden">
+      
+      {/* Dynamic Content-based Ambient Background Glow */}
+      <div 
+        className="absolute inset-0 pointer-events-none z-0 transition-all duration-1000"
+        style={{
+          background: getAmbientBg(content.slug, universeConnection?.universeId),
+          height: '1000px',
+        }}
+      />
       
       {/* HERO BANNER - CINEMATIC & PREMIUM BG BLENDING */}
       <div className="relative h-[45vh] md:h-[60vh] min-h-[350px] overflow-hidden">
@@ -246,12 +336,12 @@ export default function ContentDetailPage({ content, similar = [] }: Props) {
       </div>
 
       {/* MAIN CONTENT CONTAINER */}
-      <div className="max-w-screen-xl mx-auto px-4 md:px-6 -mt-36 md:-mt-52 relative z-10 pb-20">
+      <div className="max-w-screen-xl mx-auto px-4 md:px-6 -mt-36 md:-mt-52 relative z-10 pb-36 xl:pb-20">
         
         {/* OPTIMIZED GRID: Left poster 220px to give details more space */}
         <div className="grid grid-cols-1 lg:grid-cols-[220px_1fr] gap-8 md:gap-10 items-start">
           
-          {/* LEFT COLUMN: Poster Card (Desktop only) */}
+          {/* LEFT COLUMN: Poster Card & Glass Sidebar Metadata Panel (Desktop only) */}
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
@@ -260,7 +350,7 @@ export default function ContentDetailPage({ content, similar = [] }: Props) {
           >
             {posterSrc && (
               <div
-                className="relative w-[220px] h-[330px] rounded-2xl overflow-hidden border border-white/10 shadow-[0_20px_50px_rgba(0,0,0,0.8)] group cursor-pointer hover:border-yellow-400/40 transition-all duration-300"
+                className="relative w-[220px] h-[330px] rounded-2xl overflow-hidden border border-white/10 shadow-[0_20px_50px_rgba(0,0,0,0.8)] group cursor-pointer hover:border-yellow-400/40 transition-all duration-300 mb-5"
                 style={{
                   boxShadow: `0 20px 50px rgba(0,0,0,0.85), 0 0 25px ${color}12`,
                 }}
@@ -278,35 +368,66 @@ export default function ContentDetailPage({ content, similar = [] }: Props) {
               </div>
             )}
 
-            {/* Genres list on Desktop Column */}
-            {content.genres && content.genres.length > 0 && (
-              <div className="mt-5">
-                <p className="text-gray-500 text-[10px] font-bold font-rajdhani tracking-widest uppercase mb-2">
-                  Genres
+            {/* Glass Metadata Panel */}
+            <div className="bg-surface/20 border border-white/5 rounded-2xl p-4.5 backdrop-blur-md shadow-2xl space-y-4">
+              {/* Genres list */}
+              {content.genres && content.genres.length > 0 && (
+                <div>
+                  <p className="text-gray-500 text-[10px] font-bold font-rajdhani tracking-widest uppercase mb-1.5">
+                    Genres
+                  </p>
+                  <div className="flex flex-wrap gap-1">
+                    {content.genres.map((g: any, i: number) => (
+                      <span
+                        key={i}
+                        className="px-2 py-0.5 rounded border border-purple-500/20 bg-purple-500/5 text-purple-300 text-[10px] font-semibold font-rajdhani uppercase"
+                      >
+                        {g.genre?.name || g.name}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {/* Telugu availability */}
+              <div>
+                <p className="text-gray-500 text-[10px] font-bold font-rajdhani tracking-widest uppercase mb-1">
+                  Audio Availability
                 </p>
-                <div className="flex flex-wrap gap-1.5">
-                  {content.genres.map((g: any, i: number) => (
-                    <span
-                      key={i}
-                      className="px-2.5 py-1 rounded-lg border border-purple-500/20 bg-purple-500/5 text-purple-300 text-[11px] font-semibold tracking-wide font-rajdhani"
-                    >
-                      {g.genre?.name || g.name}
+                <div className="text-xs font-semibold">
+                  {content.teluguDubAvail ? (
+                    <span className="text-emerald-400 flex items-center gap-1.5">
+                      <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 shadow-[0_0_8px_#34d399]" />
+                      Telugu Dub confirmed
                     </span>
-                  ))}
+                  ) : (
+                    <span className="text-red-400 flex items-center gap-1.5">
+                      <span className="w-1.5 h-1.5 rounded-full bg-red-400" />
+                      Telugu Dub unavailable
+                    </span>
+                  )}
                 </div>
               </div>
-            )}
 
-            {/* Lang Details on Desktop Column */}
-            <div className="mt-5">
-              <p className="text-gray-500 text-[10px] font-bold font-rajdhani tracking-widest uppercase mb-2">
-                Telugu Availability
-              </p>
-              <div className="text-xs font-semibold py-1.5 border-b border-white/5">
-                {content.teluguDubAvail ? (
-                  <span className="text-yellow-400">✓ Telugu Dub Available</span>
-                ) : (
-                  <span className="text-red-400">✗ Telugu Dub Not Available</span>
+              {/* Other metadata attributes */}
+              <div className="space-y-2 border-t border-white/5 pt-3">
+                {content.language && (
+                  <div className="flex justify-between text-xs font-rajdhani">
+                    <span className="text-gray-500 font-bold uppercase">Language</span>
+                    <span className="text-gray-300 font-semibold">{content.language}</span>
+                  </div>
+                )}
+                {content.country && (
+                  <div className="flex justify-between text-xs font-rajdhani">
+                    <span className="text-gray-500 font-bold uppercase">Country</span>
+                    <span className="text-gray-300 font-semibold">{content.country}</span>
+                  </div>
+                )}
+                {content.studio && (
+                  <div className="flex flex-col text-xs font-rajdhani gap-0.5">
+                    <span className="text-gray-500 font-bold uppercase">Studio</span>
+                    <span className="text-gray-300 font-semibold truncate">{content.studio}</span>
+                  </div>
                 )}
               </div>
             </div>
@@ -319,224 +440,128 @@ export default function ContentDetailPage({ content, similar = [] }: Props) {
             transition={{ delay: 0.15 }}
             className="flex-1 min-w-0"
           >
-            {/* MOBILE ONLY TITLE HEADER */}
-            <div className="flex lg:hidden gap-4 items-start mb-5">
-              {posterSrc && (
-                <div
-                  className="relative w-24 h-36 rounded-xl overflow-hidden border border-white/10 flex-none shadow-xl"
-                  style={{ boxShadow: `0 10px 25px rgba(0,0,0,0.5), 0 0 15px ${color}08` }}
-                >
-                  <Image
-                    src={posterSrc}
-                    alt={content.titleEnglish}
-                    fill
-                    className="object-cover"
-                    sizes="96px"
-                    unoptimized
-                    onError={() => setPosterSrc(PLACEHOLDER_POSTER)}
-                  />
-                </div>
-              )}
-              <div className="flex-1 min-w-0">
-                <div className="flex gap-1.5 flex-wrap mb-1.5">
-                  <span
-                    className="px-2 py-0.5 rounded text-[9px] font-bold font-rajdhani tracking-wider"
-                    style={{ background: `${color}20`, color, border: `1px solid ${color}35` }}
-                  >
-                    {TYPE_LABELS[content.type]}
-                  </span>
-                  <span
-                    className={`px-2 py-0.5 rounded text-[9px] font-bold font-rajdhani tracking-wider ${
-                      content.status === 'COMPLETED'
-                        ? 'bg-green-500/10 text-green-400 border border-green-500/20'
-                        : content.status === 'ONGOING'
-                        ? 'bg-blue-500/10 text-blue-400 border border-blue-500/20'
-                        : 'bg-orange-500/10 text-orange-400 border border-orange-500/20'
-                    }`}
-                  >
-                    {content.status}
-                  </span>
-                </div>
-
-                <h1 className="font-cinzel text-xl md:text-2xl font-black text-white leading-tight mb-1">
-                  {content.titleEnglish}
-                </h1>
-                {content.titleTelugu && (
-                  <p className="font-telugu text-sm text-yellow-400/80 font-bold mb-2">
-                    {content.titleTelugu}
-                  </p>
-                )}
-
-                <div className="flex flex-wrap items-center gap-x-3.5 gap-y-1.5 text-gray-400 font-rajdhani text-xs font-bold uppercase tracking-wider">
-                  {content.year && (
-                    <span className="flex items-center gap-1">
-                      <PremiumIcon name="upcoming" size={13} className="text-yellow-500/80" /> {content.year}
-                    </span>
-                  )}
-                  {content.imdbRating && (
-                    <span className="text-yellow-400 font-black flex items-center gap-0.5">
-                      <PremiumIcon name="rating" size={13} className="text-yellow-400" /> {content.imdbRating.toFixed(1)}
-                    </span>
-                  )}
-                  {content.runtime && (
-                    <span className="flex items-center gap-1">
-                      <PremiumIcon name="clock" size={13} className="text-cyan-500/80" /> {formatRuntime(content.runtime)}
-                    </span>
-                  )}
-                </div>
-              </div>
-            </div>
-
-            {/* DESKTOP ONLY TITLE HEADER */}
-            <div className="hidden lg:block mb-4">
-              <div className="flex gap-2 flex-wrap mb-2.5">
+            {/* UNIFIED TITLE HEADER (Responsive) */}
+            <div className="mb-4">
+              <div className="flex gap-2 flex-wrap mb-2">
                 <span
-                  className="px-3 py-1 rounded-lg text-xs font-bold font-rajdhani tracking-wider"
+                  className="px-2.5 py-0.5 rounded text-[10px] font-bold font-rajdhani tracking-wider uppercase"
                   style={{ background: `${color}15`, color, border: `1px solid ${color}25` }}
                 >
                   {TYPE_LABELS[content.type]}
                 </span>
                 <span
-                  className={`px-3 py-1 rounded-lg text-xs font-bold font-rajdhani tracking-wider ${
+                  className={`px-2.5 py-0.5 rounded text-[10px] font-bold font-rajdhani tracking-wider uppercase ${
                     content.status === 'COMPLETED'
-                      ? 'bg-green-500/15 text-green-400 border border-green-500/25'
+                      ? 'bg-green-500/10 text-green-400 border border-green-500/25'
                       : content.status === 'ONGOING'
-                      ? 'bg-blue-500/15 text-blue-400 border border-blue-500/25'
-                      : 'bg-orange-500/15 text-orange-400 border border-orange-500/25'
+                      ? 'bg-blue-500/10 text-blue-400 border border-blue-500/25'
+                      : 'bg-orange-500/10 text-orange-400 border border-orange-500/25'
                   }`}
                 >
                   {content.status}
                 </span>
                 {content.ageRating && (
-                  <span className="px-3 py-1 rounded-lg text-xs font-bold bg-white/5 text-gray-400 border border-white/10 font-rajdhani">
+                  <span className="px-2.5 py-0.5 rounded text-[10px] font-bold bg-white/5 text-gray-400 border border-white/10 font-rajdhani uppercase">
                     {content.ageRating}
                   </span>
                 )}
               </div>
 
-              <h1 className="font-cinzel text-4xl lg:text-5xl font-black text-white leading-none tracking-wide mb-1" style={{ textShadow: '0 2px 25px rgba(0,0,0,0.8)' }}>
+              <h1 className="font-cinzel text-3xl md:text-5xl font-black text-white leading-tight mb-1" style={{ textShadow: '0 2px 25px rgba(0,0,0,0.8)' }}>
                 {content.titleEnglish}
               </h1>
               {content.titleTelugu && (
-                <p className="font-telugu text-xl text-yellow-400/90 font-semibold mb-2">{content.titleTelugu}</p>
+                <p className="font-telugu text-lg md:text-2xl text-yellow-400/90 font-semibold mb-2">{content.titleTelugu}</p>
               )}
               {content.titleOriginal && content.titleOriginal !== content.titleEnglish && (
                 <p className="text-gray-500 text-xs font-rajdhani mb-3 italic tracking-wide">{content.titleOriginal}</p>
               )}
             </div>
 
-            {/* PREMIUM METADATA ROW & IMDB RATING BADGE (Desktop Layout) */}
-            <div className="hidden lg:flex items-center justify-between border-b border-white/5 pb-4 mb-4 gap-6">
-              
-              {/* IMDb Premium Rating badge */}
+            {/* PREMIUM QUICK FACTS ROW */}
+            <div className="flex flex-wrap items-center gap-2 md:gap-3 py-3 border-y border-white/5 mb-6 text-sm font-rajdhani font-semibold text-gray-300">
               {content.imdbRating && (
-                <div className="flex items-center gap-3 bg-surface/20 border border-yellow-400/10 rounded-2xl px-5 py-2.5 backdrop-blur-md shadow-md">
-                  <svg className="w-8 h-8 text-yellow-400 flex-none" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                  </svg>
-                  <div>
-                    <div className="flex items-baseline gap-0.5">
-                      <span className="font-cinzel text-3xl font-black text-white leading-none">
-                        {content.imdbRating.toFixed(1)}
-                      </span>
-                      <span className="text-gray-500 text-xs font-bold font-rajdhani">/10</span>
-                    </div>
-                    <p className="text-gray-400 text-[9px] font-rajdhani uppercase tracking-widest font-bold mt-0.5">
-                      IMDb Rating
-                    </p>
-                  </div>
-                </div>
+                <span className="flex items-center gap-1 bg-yellow-400/10 border border-yellow-400/20 px-2.5 py-1 rounded-xl text-yellow-400 font-bold">
+                  ⭐ {content.imdbRating.toFixed(1)}
+                </span>
               )}
-
-              {/* Meta information tags */}
-              <div className="flex flex-wrap gap-x-4 gap-y-2 text-gray-400 font-rajdhani text-sm font-semibold tracking-wide justify-end">
-                {content.year && <span className="flex items-center gap-1.5"><PremiumIcon name="upcoming" size={14} className="text-yellow-500/80" /> {content.year}</span>}
-                {content.runtime && <span className="flex items-center gap-1.5"><PremiumIcon name="clock" size={14} className="text-cyan-500/80" /> {formatRuntime(content.runtime)}</span>}
-                {content.totalEpisodes && <span className="flex items-center gap-1.5"><PremiumIcon name="ott" size={14} className="text-blue-500/80" /> {content.totalEpisodes} Episodes</span>}
-                {content.totalSeasons && <span className="flex items-center gap-1.5"><PremiumIcon name="watchlist" size={14} className="text-yellow-500/80" /> {content.totalSeasons} Seasons</span>}
-                {content.language && <span className="flex items-center gap-1.5"><PremiumIcon name="globe" size={14} className="text-emerald-500/80" /> {content.language}</span>}
-                {content.studio && <span className="flex items-center gap-1.5"><PremiumIcon name="movies" size={14} className="text-red-500/80" /> {content.studio}</span>}
-                {content.country && <span className="flex items-center gap-1.5"><PremiumIcon name="universe" size={14} className="text-cyan-500/80" /> {content.country}</span>}
-              </div>
+              {content.year && (
+                <span className="flex items-center gap-1.5 bg-white/5 border border-white/10 px-2.5 py-1 rounded-xl">
+                  📅 {content.year}
+                </span>
+              )}
+              {content.runtime && (
+                <span className="flex items-center gap-1.5 bg-white/5 border border-white/10 px-2.5 py-1 rounded-xl">
+                  ⏱ {formatRuntime(content.runtime)}
+                </span>
+              )}
+              {content.genres && content.genres.length > 0 && (
+                <span className="flex items-center gap-1.5 bg-white/5 border border-white/10 px-2.5 py-1 rounded-xl">
+                  🎭 {content.genres.map((g: any) => g.genre?.name || g.name).slice(0, 2).join(', ')}
+                </span>
+              )}
+              {content.teluguDubAvail && (
+                <span className="bg-emerald-500/10 border border-emerald-500/25 px-2.5 py-1 rounded-xl text-emerald-400 font-bold text-xs uppercase tracking-wider">
+                  తెలుగు Dub
+                </span>
+              )}
             </div>
 
-            {/* ACTION BUTTONS ROW */}
-            <div className="flex gap-2.5 flex-wrap mb-5">
-              <button
-                onClick={() => setShowTrailer(true)}
-                className="flex items-center gap-2 px-5 py-3 rounded-xl text-xs md:text-sm font-bold font-rajdhani tracking-wider text-white transition-all duration-300 hover:opacity-95 hover:scale-[1.02] shadow-[0_4px_20px_rgba(229,9,20,0.25)] hover:shadow-[0_4px_25px_rgba(229,9,20,0.4)]"
-                style={{
-                  background: 'linear-gradient(135deg, #E50914 0%, #B00710 100%)',
-                }}
-              >
-                ▶ WATCH TRAILER
-              </button>
+            {/* ACTION BUTTONS ROW (Desktop & Mobile) */}
+            <div className="flex gap-2.5 flex-wrap mb-6">
+              {content.trailer && (
+                <button
+                  onClick={() => setShowTrailer(true)}
+                  className="flex items-center gap-2 px-5 py-3 rounded-xl text-xs md:text-sm font-bold font-rajdhani tracking-wider text-white transition-all duration-300 hover:opacity-95 hover:scale-[1.02] shadow-[0_4px_20px_rgba(229,9,20,0.25)] hover:shadow-[0_4px_25px_rgba(229,9,20,0.4)]"
+                  style={{
+                    background: 'linear-gradient(135deg, #E50914 0%, #B00710 100%)',
+                  }}
+                >
+                  ▶ WATCH TRAILER
+                </button>
+              )}
 
               <button
                 onClick={() => toggleWatchlist(content.id)}
                 className={`flex items-center gap-2 px-4 py-3 rounded-xl text-xs md:text-sm font-bold font-rajdhani tracking-wider border transition-all duration-300 hover:scale-[1.02] ${
                   inWatchlist
                     ? 'bg-yellow-500/10 border-yellow-500/40 text-yellow-400'
-                    : 'bg-white/5 border-white/10 text-gray-300 hover:border-yellow-400/30 hover:text-yellow-400'
+                    : 'bg-white/5 border-white/10 text-gray-300 hover:border-yellow-400/35 hover:text-yellow-400'
                 }`}
               >
                 {inWatchlist ? '✓ IN WATCHLIST' : '+ WATCHLIST'}
               </button>
+
               <button
                 onClick={() => toggleFavorite(content.id)}
                 className={`flex items-center gap-2 px-4 py-3 rounded-xl text-xs md:text-sm font-bold font-rajdhani tracking-wider border transition-all duration-300 hover:scale-[1.02] ${
                   isFav
                     ? 'bg-red-500/10 border-red-500/40 text-red-400'
-                    : 'bg-white/5 border-white/10 text-gray-300 hover:border-red-400/30 hover:text-red-400'
+                    : 'bg-white/5 border-white/10 text-gray-300 hover:border-red-400/35 hover:text-red-400'
                 }`}
               >
                 {isFav ? '♥ FAVORITED' : '♡ FAVORITE'}
               </button>
-            </div>
 
-            {/* Mobile-only Genres and Dubbed details wrapper */}
-            <div className="flex lg:hidden flex-col gap-3 mb-5 p-4 bg-surface/20 border border-white/5 rounded-xl">
-              <div>
-                <p className="text-gray-500 text-[9px] font-bold font-rajdhani tracking-widest uppercase mb-1">
-                  Genres
-                </p>
-                <div className="flex flex-wrap gap-1.5">
-                  {content.genres?.map((g: any, i: number) => (
-                    <span
-                      key={i}
-                      className="px-2 py-0.5 rounded-md border border-purple-500/20 bg-purple-500/5 text-purple-300 text-xs"
-                    >
-                      {g.genre?.name || g.name}
-                    </span>
-                  ))}
-                </div>
-              </div>
-              <div>
-                <p className="text-gray-500 text-[9px] font-bold font-rajdhani tracking-widest uppercase mb-1">
-                  Telugu Availability
-                </p>
-                <div className="flex flex-wrap gap-1.5 mt-1">
-                  {content.teluguDubAvail ? (
-                    <span className="px-2.5 py-1 rounded-md border border-yellow-500/20 bg-yellow-500/5 text-yellow-400 text-xs font-semibold">
-                      Telugu Dub Available
-                    </span>
-                  ) : (
-                    <span className="px-2.5 py-1 rounded-md border border-red-500/20 bg-red-500/5 text-red-400 text-xs font-semibold">
-                      Telugu Dub Not Available
-                    </span>
-                  )}
-                </div>
-              </div>
+              {/* Share button */}
+              <button
+                onClick={handleShare}
+                className="flex items-center gap-2 px-4 py-3 rounded-xl text-xs md:text-sm font-bold font-rajdhani tracking-wider border border-white/10 bg-white/5 text-gray-300 hover:border-blue-400/45 hover:text-blue-400 hover:scale-[1.02] transition-all duration-300"
+              >
+                🔗 SHARE
+              </button>
             </div>
 
             {/* OTT / TV AVAILABILITY SECTION - w-fit to shrinkwrap content and remove large empty space */}
             {content.streamingLinks && content.streamingLinks.length > 0 && (() => {
               const allAvailable = content.streamingLinks.filter((link) => link.isAvailable);
-              const tvChannels = ['DISNEY_CHANNEL', 'HUNGAMA_TV', 'CARTOON_NETWORK', 'POGO', 'SONIC', 'NICK', 'SONY_YAY', 'ETV_BAL_BHARAT'];
+              const tvChannels = ['DISNEY_CHANNEL', 'HUNGAMA_TV', 'CARTOON_NETWORK', 'POGO', 'SONIC', 'NICK', 'SONY_YAY', 'ETV_BAL_BHARAT', 'TV', 'AVAILABLE_ON_TV'];
               const ottLinks = allAvailable.filter(link => !tvChannels.includes(link.platform.toUpperCase()));
               const tvLinks = allAvailable.filter(link => tvChannels.includes(link.platform.toUpperCase()));
 
               if (allAvailable.length === 0) return null;
+
+              const showTvOnly = ottLinks.length === 0 && tvLinks.length > 0;
 
               return (
                 <div className="mb-5 p-4 bg-surface/25 border border-white/5 rounded-2xl backdrop-blur-md shadow-lg w-fit max-w-full flex flex-col gap-4">
@@ -569,17 +594,29 @@ export default function ContentDetailPage({ content, similar = [] }: Props) {
                         Airs On TV / టీవీ ప్రసారాలు
                       </p>
                       <div className="flex flex-wrap gap-2">
-                        {tvLinks.map((link) => (
-                          <div key={link.id} className="flex-none">
+                        {showTvOnly ? (
+                          <div className="flex-none">
                             <OttBadge
-                              platform={link.platform}
-                              isTeluguDub={link.isTeluguDub || content.teluguDubAvail}
+                              platform="TV"
+                              isTeluguDub={content.teluguDubAvail}
                               isTeluguSub={content.teluguSubAvail}
-                              url={link.url}
-                              isPremium={link.isPremium}
+                              url={null}
+                              isPremium={false}
                             />
                           </div>
-                        ))}
+                        ) : (
+                          tvLinks.map((link) => (
+                            <div key={link.id} className="flex-none">
+                              <OttBadge
+                                platform={link.platform}
+                                isTeluguDub={link.isTeluguDub || content.teluguDubAvail}
+                                isTeluguSub={content.teluguSubAvail}
+                                url={link.url}
+                                isPremium={link.isPremium}
+                              />
+                            </div>
+                          ))
+                        )}
                       </div>
                     </div>
                   )}
@@ -641,6 +678,148 @@ export default function ContentDetailPage({ content, similar = [] }: Props) {
                           </div>
                         )}
 
+                        {/* Universe Connections Tracker */}
+                        {universeConnection && (() => {
+                          const uId = universeConnection.universeId;
+                          let theme = {
+                            border: 'border-purple-500/30',
+                            accent: 'text-purple-400',
+                            glow: 'shadow-[0_0_20px_rgba(168,85,247,0.15)] border-purple-500',
+                            badgeBg: 'bg-purple-500/10 text-purple-400 border border-purple-500/20',
+                            title: 'Cinematic Universe Timeline',
+                            icon: 'universe'
+                          };
+
+                          if (uId === 'mcu') {
+                            theme = {
+                              border: 'border-red-500/30',
+                              accent: 'text-red-400',
+                              glow: 'shadow-[0_0_25px_rgba(239,68,68,0.25)] border-red-500 bg-red-950/20',
+                              badgeBg: 'bg-red-500/15 text-red-400 border border-red-500/20',
+                              title: 'Marvel Cinematic Universe (MCU)',
+                              icon: 'universe'
+                            };
+                          } else if (uId === 'lcu') {
+                            theme = {
+                              border: 'border-amber-600/30',
+                              accent: 'text-amber-500',
+                              glow: 'shadow-[0_0_25px_rgba(217,119,6,0.25)] border-amber-500 bg-amber-950/20',
+                              badgeBg: 'bg-amber-500/15 text-amber-400 border border-amber-500/20',
+                              title: 'Lokesh Cinematic Universe (LCU)',
+                              icon: 'universe'
+                            };
+                          } else if (uId === 'baahubali') {
+                            theme = {
+                              border: 'border-yellow-500/30',
+                              accent: 'text-yellow-400',
+                              glow: 'shadow-[0_0_25px_rgba(234,179,8,0.3)] border-yellow-400 bg-yellow-950/20',
+                              badgeBg: 'bg-yellow-500/15 text-yellow-400 border border-yellow-500/20',
+                              title: 'Baahubali Universe',
+                              icon: 'universe'
+                            };
+                          } else if (uId === 'monsterverse') {
+                            theme = {
+                              border: 'border-teal-500/30',
+                              accent: 'text-teal-400',
+                              glow: 'shadow-[0_0_25px_rgba(20,184,166,0.25)] border-teal-500 bg-teal-950/20',
+                              badgeBg: 'bg-teal-500/15 text-teal-400 border border-teal-500/20',
+                              title: 'MonsterVerse',
+                              icon: 'universe'
+                            };
+                          } else if (uId === 'onepiece') {
+                            theme = {
+                              border: 'border-sky-500/30',
+                              accent: 'text-sky-400',
+                              glow: 'shadow-[0_0_25px_rgba(14,165,233,0.25)] border-sky-400 bg-sky-950/20',
+                              badgeBg: 'bg-sky-500/15 text-sky-400 border border-sky-500/20',
+                              title: 'One Piece Saga',
+                              icon: 'universe'
+                            };
+                          }
+
+                          return (
+                            <div className="bg-surface/30 border border-white/5 rounded-2xl p-5 backdrop-blur-md shadow-md">
+                              <h3 className="font-cinzel text-xs font-bold text-yellow-400 mb-5 flex items-center gap-2.5 uppercase tracking-wider">
+                                <PremiumIcon name={theme.icon} size={16} /> {theme.title} Timeline Navigation
+                              </h3>
+
+                              <div className="flex flex-col md:flex-row items-center justify-between gap-4 relative">
+                                
+                                {/* Previous Entry Card */}
+                                <div className="w-full md:w-[30%]">
+                                  {prevItem ? (
+                                    <Link href={`/content/${prevItem.slug}`} className={`flex items-center gap-3 p-3 rounded-xl bg-black/40 border ${theme.border} hover:border-yellow-400/40 hover:bg-surface-2 transition-all group text-left h-20`}>
+                                      <div className="w-10 h-14 rounded-lg overflow-hidden flex-none border border-white/10 relative aspect-[2/3]">
+                                        <img src={prevItem.poster || PLACEHOLDER_POSTER} alt={prevItem.titleEnglish} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+                                      </div>
+                                      <div className="min-w-0">
+                                        <p className="text-[8px] text-gray-500 font-extrabold uppercase tracking-wider">← Previous</p>
+                                        <p className="text-white text-xs font-bold font-rajdhani truncate group-hover:text-yellow-400 transition-colors">{prevItem.titleEnglish}</p>
+                                        <p className="text-gray-500 text-[10px] font-rajdhani font-semibold">{prevItem.year}</p>
+                                      </div>
+                                    </Link>
+                                  ) : (
+                                    <div className="flex flex-col items-center justify-center p-3 rounded-xl bg-black/20 border border-white/5 border-dashed text-gray-600 text-xs font-rajdhani font-bold text-center h-20 uppercase tracking-widest">
+                                      Timeline Start
+                                    </div>
+                                  )}
+                                </div>
+
+                                {/* Desktop Horizontal Connection Line / Arrow */}
+                                <div className="hidden md:flex flex-1 items-center justify-center">
+                                  <div className="h-[2px] flex-1 bg-gradient-to-r from-white/10 to-white/20 relative">
+                                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white/25 text-[10px]">➔</div>
+                                  </div>
+                                </div>
+
+                                {/* Current Entry Card (Highlighted) */}
+                                <div className="w-full md:w-[36%] z-10">
+                                  <div className={`flex items-center gap-3 p-3 rounded-xl bg-black/60 border ${theme.glow} transition-all h-24 transform scale-[1.03]`}>
+                                    <div className="w-12 h-18 rounded-lg overflow-hidden flex-none border border-white/20 relative aspect-[2/3]">
+                                      <img src={content.poster || PLACEHOLDER_POSTER} alt={content.titleEnglish} className="w-full h-full object-cover" />
+                                    </div>
+                                    <div className="min-w-0 flex-1">
+                                      <span className={`inline-block px-1.5 py-0.5 rounded text-[8px] font-extrabold uppercase tracking-wider mb-1 ${theme.badgeBg}`}>
+                                        Currently Viewing
+                                      </span>
+                                      <p className="text-white text-sm font-black font-rajdhani truncate">{content.titleEnglish}</p>
+                                      <p className="text-gray-400 text-[10px] font-rajdhani font-semibold">{content.year}</p>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                {/* Desktop Horizontal Connection Line / Arrow */}
+                                <div className="hidden md:flex flex-1 items-center justify-center">
+                                  <div className="h-[2px] flex-1 bg-gradient-to-r from-white/20 to-white/10 relative">
+                                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white/25 text-[10px]">➔</div>
+                                  </div>
+                                </div>
+
+                                {/* Next Entry Card */}
+                                <div className="w-full md:w-[30%]">
+                                  {nextItem ? (
+                                    <Link href={`/content/${nextItem.slug}`} className={`flex items-center gap-3 p-3 rounded-xl bg-black/40 border ${theme.border} hover:border-yellow-400/40 hover:bg-surface-2 transition-all group text-left h-20`}>
+                                      <div className="w-10 h-14 rounded-lg overflow-hidden flex-none border border-white/10 relative aspect-[2/3]">
+                                        <img src={nextItem.poster || PLACEHOLDER_POSTER} alt={nextItem.titleEnglish} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+                                      </div>
+                                      <div className="min-w-0">
+                                        <p className="text-[8px] text-gray-500 font-extrabold uppercase tracking-wider">Next →</p>
+                                        <p className="text-white text-xs font-bold font-rajdhani truncate group-hover:text-yellow-400 transition-colors">{nextItem.titleEnglish}</p>
+                                        <p className="text-gray-500 text-[10px] font-rajdhani font-semibold">{nextItem.year}</p>
+                                      </div>
+                                    </Link>
+                                  ) : (
+                                    <div className="flex flex-col items-center justify-center p-3 rounded-xl bg-black/20 border border-white/5 border-dashed text-gray-600 text-xs font-rajdhani font-bold text-center h-20 uppercase tracking-widest">
+                                      Timeline End
+                                    </div>
+                                  )}
+                                </div>
+
+                              </div>
+                            </div>
+                          );
+                        })()}
+
                         {/* Collapsible: Story Explanation */}
                         {content.storyExplanation && (
                           <CollapsibleSection title="Story Explained" titleTe="కథ వివరణ">
@@ -689,77 +868,105 @@ export default function ContentDetailPage({ content, similar = [] }: Props) {
                         {((content.characters && content.characters.length > 0) ||
                           (content.cast && content.cast.length > 0)) && (
                           <div className="bg-surface/20 border border-white/5 rounded-2xl p-5 backdrop-blur-md shadow-md">
-                            <SectionHeader title="Cast & Characters" titleTe="పాత్రలు & నటీనటులు" icon="cast" />
-                            <div className="flex gap-3.5 overflow-x-auto pb-3.5 scrollbar-thin scrollbar-none snap-x snap-mandatory">
+                            <div className="flex items-center justify-between mb-4">
+                              <SectionHeader title="Cast & Characters" titleTe="పాత్రలు & నటీనటులు" icon="cast" />
+                              {/* Scroll buttons for Cast */}
+                              <div className="flex gap-2">
+                                <button 
+                                  onClick={() => {
+                                    if (castCarouselRef.current) {
+                                      castCarouselRef.current.scrollBy({ left: -200, behavior: 'smooth' })
+                                    }
+                                  }}
+                                  className="w-8 h-8 rounded-full bg-black/60 border border-white/10 hover:border-yellow-400/40 text-white flex items-center justify-center transition-all hover:scale-105 active:scale-95 text-xs font-semibold"
+                                >
+                                  ‹
+                                </button>
+                                <button 
+                                  onClick={() => {
+                                    if (castCarouselRef.current) {
+                                      castCarouselRef.current.scrollBy({ left: 200, behavior: 'smooth' })
+                                    }
+                                  }}
+                                  className="w-8 h-8 rounded-full bg-black/60 border border-white/10 hover:border-yellow-400/40 text-white flex items-center justify-center transition-all hover:scale-105 active:scale-95 text-xs font-semibold"
+                                >
+                                  ›
+                                </button>
+                              </div>
+                            </div>
+
+                            <div 
+                              ref={castCarouselRef}
+                              className="flex gap-4 overflow-x-auto pb-2.5 scrollbar-none snap-x snap-mandatory scroll-smooth"
+                            >
                               {content.type === 'ANIME' && content.characters && content.characters.length > 0
-                                ? content.characters.slice(0, 10).map((char) => (
-                                    <div
+                                ? content.characters.map((char) => (
+                                    <motion.div
                                       key={char.id}
-                                      className="w-32 flex-none snap-start bg-surface/50 border border-white/5 rounded-xl overflow-hidden hover:border-yellow-400/30 transition-all duration-300 group"
+                                      whileHover={{ y: -3 }}
+                                      className="w-28 flex-none snap-start bg-black/35 border border-white/5 rounded-2xl overflow-hidden hover:border-yellow-400/25 transition-all duration-300 shadow-md group"
                                     >
-                                      <div className="relative aspect-[4/5] w-full bg-dark-3 flex items-center justify-center text-4xl overflow-hidden">
+                                      <div className="relative aspect-square w-full bg-dark-3 overflow-hidden">
                                         {char.photo ? (
                                           <Image
                                             src={char.photo}
                                             alt={char.name}
                                             fill
                                             className="object-cover group-hover:scale-105 transition-transform duration-300"
-                                            sizes="128px"
+                                            sizes="112px"
                                             unoptimized
                                           />
                                         ) : (
-                                          <PremiumIcon name="user" size={32} className="opacity-30" />
+                                          <div className="absolute inset-0 flex items-center justify-center bg-white/5">
+                                            <PremiumIcon name="user" size={24} className="opacity-25" />
+                                          </div>
                                         )}
                                         {char.isMain && (
-                                          <span className="absolute top-1.5 right-1.5 bg-yellow-400 text-black text-[8px] font-bold px-1 py-0.5 rounded tracking-wider shadow">
+                                          <span className="absolute top-1.5 right-1.5 bg-yellow-400 text-black text-[8px] font-bold px-1.5 py-0.5 rounded tracking-wider shadow">
                                             MAIN
                                           </span>
                                         )}
                                       </div>
-                                      <div className="p-2.5">
-                                        <p className="text-white text-xs font-bold font-rajdhani truncate">{char.name}</p>
-                                        {char.nameTe && (
-                                          <p className="font-telugu text-gray-500 text-[10px] truncate leading-tight mt-0.5">
-                                            {char.nameTe}
-                                          </p>
-                                        )}
-                                        {char.voiceActor && (
-                                          <p className="text-yellow-400/80 text-[10px] mt-1 font-rajdhani truncate flex items-center" title={char.voiceActor}>
-                                            <span className="inline-block mr-1 text-[8px] px-1.5 py-0.5 rounded bg-yellow-400/10 text-yellow-400 font-bold border border-yellow-400/15 leading-none">VOICE</span> {char.voiceActor}
-                                          </p>
-                                        )}
+                                      <div className="p-2.5 min-w-0">
+                                        <p className="text-white text-[11px] font-bold font-rajdhani truncate group-hover:text-yellow-400 transition-colors">{char.name}</p>
+                                        <p className="text-gray-500 text-[9px] font-rajdhani truncate leading-none mt-0.5" title={char.voiceActor || ''}>
+                                          {char.voiceActor || 'Voice Actor'}
+                                        </p>
                                       </div>
-                                    </div>
+                                    </motion.div>
                                   ))
                                 : content.cast && content.cast.length > 0
-                                ? content.cast.slice(0, 10).map((member) => (
-                                    <div
+                                ? content.cast.map((member) => (
+                                    <motion.div
                                       key={member.id}
-                                      className="w-32 flex-none snap-start bg-surface/50 border border-white/5 rounded-xl overflow-hidden hover:border-yellow-400/30 transition-all duration-300 group"
+                                      whileHover={{ y: -3 }}
+                                      className="w-28 flex-none snap-start bg-black/35 border border-white/5 rounded-2xl overflow-hidden hover:border-yellow-400/25 transition-all duration-300 shadow-md group"
                                     >
-                                      <div className="relative aspect-[4/5] w-full bg-dark-3 flex items-center justify-center text-4xl overflow-hidden">
+                                      <div className="relative aspect-square w-full bg-dark-3 overflow-hidden">
                                         {member.photo ? (
                                           <Image
                                             src={member.photo}
                                             alt={member.name}
                                             fill
                                             className="object-cover group-hover:scale-105 transition-transform duration-300"
-                                            sizes="128px"
+                                            sizes="112px"
                                             unoptimized
                                           />
                                         ) : (
-                                          <PremiumIcon name="cast" size={32} className="opacity-30" />
+                                          <div className="absolute inset-0 flex items-center justify-center bg-white/5">
+                                            <PremiumIcon name="cast" size={24} className="opacity-25" />
+                                          </div>
                                         )}
                                       </div>
-                                      <div className="p-2.5">
-                                        <p className="text-white text-xs font-bold font-rajdhani truncate">{member.name}</p>
+                                      <div className="p-2.5 min-w-0">
+                                        <p className="text-white text-[11px] font-bold font-rajdhani truncate group-hover:text-yellow-400 transition-colors">{member.name}</p>
                                         {member.character && (
-                                          <p className="text-gray-400 text-[10px] mt-0.5 font-rajdhani truncate leading-none">
+                                          <p className="text-gray-500 text-[9px] font-rajdhani truncate leading-none mt-0.5">
                                             as {member.character}
                                           </p>
                                         )}
                                       </div>
-                                    </div>
+                                    </motion.div>
                                   ))
                                 : null}
                             </div>
@@ -1106,7 +1313,7 @@ export default function ContentDetailPage({ content, similar = [] }: Props) {
                           style={{ gridTemplateColumns: 'repeat(auto-fill, minmax(160px, 1fr))' }}
                         >
                           {similar.map((item, i) => (
-                            <ContentCard key={item.id} content={item} index={i} />
+                            <ContentCard key={item.id} content={item} index={i} reason={getRecommendationReason(item)} />
                           ))}
                         </div>
                       ) : (
@@ -1163,7 +1370,7 @@ export default function ContentDetailPage({ content, similar = [] }: Props) {
                   >
                     {similar.map((item, i) => (
                       <div key={item.id} className="snap-start flex-none transition-transform duration-300 hover:scale-[1.04] hover:-translate-y-1 hover:z-20">
-                        <ContentCard content={item} index={i} size="lg" />
+                        <ContentCard content={item} index={i} size="lg" reason={getRecommendationReason(item)} />
                       </div>
                     ))}
                   </div>
@@ -1297,6 +1504,44 @@ export default function ContentDetailPage({ content, similar = [] }: Props) {
           </motion.div>
         )}
       </AnimatePresence>
+      {/* MOBILE BOTTOM STICKY ACTION BAR */}
+      <div className="xl:hidden fixed bottom-[72px] left-0 right-0 z-[80] h-[64px] bg-dark-3/95 backdrop-blur-md border-t border-white/5 px-4 flex items-center gap-2 shadow-[0_-8px_24px_rgba(0,0,0,0.6)]">
+        {content.trailer && (
+          <button
+            onClick={() => setShowTrailer(true)}
+            className="flex-1 flex items-center justify-center gap-1.5 h-11 rounded-xl text-[10px] font-black font-rajdhani tracking-wider text-white bg-red-600 active:scale-95 transition-all shadow-[0_4px_12px_rgba(220,38,38,0.2)]"
+          >
+            ▶ TRAILER
+          </button>
+        )}
+        <button
+          onClick={() => toggleWatchlist(content.id)}
+          className={`flex-1 flex items-center justify-center gap-1.5 h-11 rounded-xl text-[10px] font-black font-rajdhani tracking-wider border active:scale-95 transition-all ${
+            inWatchlist
+              ? 'bg-yellow-500/10 border-yellow-500/30 text-yellow-400'
+              : 'bg-white/5 border-white/10 text-gray-300'
+          }`}
+        >
+          {inWatchlist ? '✓ SAVED' : '+ WATCH'}
+        </button>
+        <button
+          onClick={() => toggleFavorite(content.id)}
+          className={`flex-1 flex items-center justify-center gap-1.5 h-11 rounded-xl text-[10px] font-black font-rajdhani tracking-wider border active:scale-95 transition-all ${
+            isFav
+              ? 'bg-red-500/10 border-red-500/30 text-red-400'
+              : 'bg-white/5 border-white/10 text-gray-300'
+          }`}
+        >
+          {isFav ? '♥ FAV' : '♡ FAV'}
+        </button>
+        <button
+          onClick={handleShare}
+          className="flex-none w-11 h-11 rounded-xl bg-white/5 border border-white/10 text-gray-300 flex items-center justify-center active:scale-95 transition-all"
+          title="Share"
+        >
+          🔗
+        </button>
+      </div>
     </div>
   )
 }

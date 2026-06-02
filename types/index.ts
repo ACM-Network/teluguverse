@@ -45,6 +45,7 @@ export interface ContentItem {
   seasons?: Season[]
   reviews?: Review[]
   _count?: { reviews: number; ratings: number; watchlist: number; favorites: number }
+  universe?: any
 }
 
 export interface StreamingLink {

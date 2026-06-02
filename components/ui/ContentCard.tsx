@@ -44,9 +44,10 @@ interface Props {
   size?: 'sm' | 'md' | 'lg'
   showRank?: boolean
   rank?: number
+  reason?: string
 }
 
-export default function ContentCard({ content, index = 0, size = 'md', showRank, rank }: Props) {
+export default function ContentCard({ content, index = 0, size = 'md', showRank, rank, reason }: Props) {
   const { toggleWatchlist, toggleFavorite, watchlist, favorites, language } = useStore()
   const [imgSrc, setImgSrc] = useState(content.poster || PLACEHOLDER_POSTER)
 
@@ -145,12 +146,19 @@ export default function ContentCard({ content, index = 0, size = 'md', showRank,
 
           {/* Bottom Card Details */}
           <div className="absolute bottom-0 left-0 right-0 p-3.5 z-20 space-y-1">
-            {/* Rating pill */}
-            <div className="flex items-center gap-1.5">
-              <span className="text-yellow-400 text-xs">★</span>
-              <span className="text-yellow-400 text-xs font-bold font-rajdhani tracking-wider">
-                {content.imdbRating ? content.imdbRating.toFixed(1) : 'N/A'}
-              </span>
+            {/* Rating pill & optional recommendation reason */}
+            <div className="flex items-center justify-between gap-1.5 flex-wrap">
+              <div className="flex items-center gap-1">
+                <span className="text-yellow-400 text-xs">★</span>
+                <span className="text-yellow-400 text-xs font-bold font-rajdhani tracking-wider">
+                  {content.imdbRating ? content.imdbRating.toFixed(1) : 'N/A'}
+                </span>
+              </div>
+              {reason && (
+                <span className="px-1.5 py-0.5 rounded bg-white/10 text-white/95 border border-white/10 text-[9px] font-bold font-rajdhani uppercase tracking-wider scale-90 origin-right">
+                  {reason}
+                </span>
+              )}
             </div>
             
             {/* Title Eng / Tel */}

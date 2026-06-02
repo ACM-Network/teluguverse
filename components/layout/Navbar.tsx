@@ -214,40 +214,8 @@ export default function Navbar() {
               </Link>
             )}
 
-            {/* Mobile menu */}
-            <button 
-              onClick={() => setMobileOpen(p => !p)} 
-              className="
-                lg:hidden
-                p-2.5
-                rounded-xl
-                border border-white/10
-              bg-white/5
-              text-gray-300
-              hover:text-yellow-400
-              hover:border-yellow-400/30
-                transition-all
-               "
-              >
-              {mobileOpen ? '✕' : '☰'}
-            </button>
           </div>
         </div>
-
-        {/* Mobile menu */}
-        {mobileOpen && (
-          <motion.div initial={{ opacity: 0, height: 0 }} animate={{ opacity: 1, height: 'auto' }} exit={{ opacity: 0, height: 0 }}
-            className="lg:hidden border-t border-border bg-dark-2 px-6 py-4">
-            <div className="grid grid-cols-2 gap-1">
-              {NAV_LINKS.map(({ labelEn, labelTe, href }) => (
-                <Link key={isTelugu ? labelTe : labelEn} href={href} onClick={() => setMobileOpen(false)}
-                  className="px-4 py-3 rounded-lg text-gray-300 hover:text-yellow-400 hover:bg-yellow-400/8 transition-all text-sm font-semibold font-rajdhani">
-                  {isTelugu ? labelTe : labelEn}
-                </Link>
-              ))}
-            </div>
-          </motion.div>
-        )}
       </nav>
     </>
   )

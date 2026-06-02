@@ -5,12 +5,12 @@ import ContentCard from '@/components/ui/ContentCard'
 import SkeletonCard from '@/components/ui/SkeletonCard'
 import { ContentItem } from '@/types'
 
-export default function AnimeSection() {
+export default function SeriesSection() {
   const [items, setItems] = useState<ContentItem[]>([])
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    fetch('/api/content?type=ANIME&sort=popular&limit=24')
+    fetch('/api/content?type=SERIES&sort=popular&limit=24')
       .then(r => r.json())
       .then(d => { setItems(d.items || []); setLoading(false) })
       .catch(() => setLoading(false))
@@ -18,7 +18,7 @@ export default function AnimeSection() {
 
   return (
     <div>
-      <SectionHeader title="Popular Anime" titleTe="పాపులర్ అనిమే" href="/search?type=ANIME" icon="anime" />
+      <SectionHeader title="Popular Series" titleTe="పాపులర్ సిరీస్" href="/search?type=SERIES" icon="kdrama" />
       <div className="cards-scroll">
         {loading ? <SkeletonCard count={8} /> : items.map((item, i) => <ContentCard key={item.id} content={item} index={i} />)}
       </div>

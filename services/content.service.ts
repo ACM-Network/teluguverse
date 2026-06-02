@@ -58,7 +58,15 @@ export const ContentService = {
       ...(language && { language: { equals: language, mode: 'insensitive' } }),
       ...(dubAvail !== undefined && { teluguDubAvail: dubAvail }),
       ...(genre && { genres: { some: { genre: { slug: genre } } } }),
-      ...(ott && { streamingLinks: { some: { platform: ott as any } } }),
+      ...(ott && {
+        streamingLinks: {
+          some: {
+            platform: (ott === 'TV' || ott === 'AVAILABLE_ON_TV')
+              ? { in: ['DISNEY_CHANNEL', 'HUNGAMA_TV', 'CARTOON_NETWORK', 'POGO', 'SONIC', 'NICK', 'SONY_YAY', 'ETV_BAL_BHARAT', 'TV', 'AVAILABLE_ON_TV'] }
+              : (ott as any)
+          }
+        }
+      }),
       ...(rating && { imdbRating: { gte: rating } }),
       ...(universe && {
         universe: {
@@ -135,6 +143,30 @@ export const ContentService = {
           include: { user: { select: { id: true, username: true, displayName: true, avatar: true } } },
           orderBy: { likes: 'desc' },
           take: 10,
+        },
+        universe: {
+          include: {
+            universe: {
+              include: {
+                contents: {
+                  include: {
+                    content: {
+                      select: {
+                        id: true,
+                        slug: true,
+                        titleEnglish: true,
+                        titleTelugu: true,
+                        poster: true,
+                        type: true,
+                        year: true
+                      }
+                    }
+                  },
+                  orderBy: { order: 'asc' }
+                }
+              }
+            }
+          }
         },
         _count: { select: { reviews: true, ratings: true, watchlist: true, favorites: true } }
       }

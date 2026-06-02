@@ -31,7 +31,9 @@ const OTT_CONFIG: Record<string, { color: string; bg: string; label: string; pre
   SONIC: { color: '#E11D48', bg: 'rgba(225,29,72,0.12)', label: 'Sonic', prefix: 'Airs On' },
   NICK: { color: '#FF7F00', bg: 'rgba(255,127,0,0.12)', label: 'Nick', prefix: 'Available On TV' },
   SONY_YAY: { color: '#84CC16', bg: 'rgba(132,204,22,0.12)', label: 'Sony YAY!', prefix: 'Airs On' },
-  ETV_BAL_BHARAT: { color: '#EAB308', bg: 'rgba(234,179,8,0.12)', label: 'ETV Bal Bharat', prefix: 'Airs On' }
+  ETV_BAL_BHARAT: { color: '#EAB308', bg: 'rgba(234,179,8,0.12)', label: 'ETV Bal Bharat', prefix: 'Airs On' },
+  TV: { color: '#A855F7', bg: 'rgba(168,85,247,0.12)', label: 'Available on TV', prefix: '' },
+  AVAILABLE_ON_TV: { color: '#A855F7', bg: 'rgba(168,85,247,0.12)', label: 'Available on TV', prefix: '' }
 }
 
 // Brand SVG Icon Selector for Premium OTT and TV Channel styling
@@ -136,6 +138,14 @@ function getPlatformIcon(platform: string, color: string) {
     return (
       <svg className="w-4 h-4 flex-none" style={{ color }} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
         <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+      </svg>
+    )
+  }
+  if (p === 'TV' || p === 'AVAILABLE_ON_TV') {
+    return (
+      <svg className="w-4 h-4 flex-none" style={{ color }} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+        <rect x="2" y="7" width="20" height="15" rx="2" ry="2" />
+        <polyline points="17 2 12 7 7 2" />
       </svg>
     )
   }

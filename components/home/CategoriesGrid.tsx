@@ -1,83 +1,126 @@
 'use client'
+import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
-import CategoryIcon from '@/components/ui/CategoryIcon'
 import SectionHeader from '@/components/ui/SectionHeader'
 
-const CATEGORIES = [
-  { name: 'Movies', nameTe: 'సినిమాలు', count: '12,450+', href: '/search?type=MOVIE', color: '#E50914' },
-  { name: 'Anime', nameTe: 'అనిమే', count: '8,200+', href: '/search?type=ANIME', color: '#A855F7' },
-  { name: 'K-Dramas', nameTe: 'కొరియన్ డ్రామా', count: '3,100+', href: '/search?type=KDRAMA', color: '#EC4899' },
-  { name: 'Web Series', nameTe: 'వెబ్ సిరీస్', count: '5,600+', href: '/search?type=SERIES', color: '#3B82F6' },
-  { name: 'Cartoons', nameTe: 'కార్టూన్లు', count: '4,300+', href: '/search?type=CARTOON', color: '#22C55E' },
-  { name: 'Hollywood', nameTe: 'హాలీవుడ్', count: '9,800+', href: '/search?type=HOLLYWOOD', color: '#F59E0B' },
-  { name: 'OTT Originals', nameTe: 'OTT ఒరిజినల్స్', count: '2,100+', href: '/search?sort=popular', color: '#06B6D4' },
-  { name: 'Award Winners', nameTe: 'అవార్డ్ విజేతలు', count: '1,200+', href: '/search?sort=rating', color: '#FFD700' },
+interface Genre {
+  id: string
+  name: string
+  nameTe: string
+  slug: string
+  color: string | null
+  icon: string | null
+}
+
+const FEATURED_SLUGS = [
+  'action',
+  'adventure',
+  'fantasy',
+  'sci-fi',
+  'mythology',
+  'super-hero',
+  'thriller',
+  'romance',
+  'comedy',
+  'drama'
+]
+
+const STATIC_FALLBACK: Genre[] = [
+  { id: 'action', name: 'Action', nameTe: 'యాక్షన్', slug: 'action', color: '#E50914', icon: '⚔️' },
+  { id: 'adventure', name: 'Adventure', nameTe: 'అడ్వెంచర్', slug: 'adventure', color: '#10B981', icon: '🗺️' },
+  { id: 'fantasy', name: 'Fantasy', nameTe: 'ఫాంటసీ', slug: 'fantasy', color: '#8B5CF6', icon: '🔮' },
+  { id: 'sci-fi', name: 'Sci-Fi', nameTe: 'సైన్స్ ఫిక్షన్', slug: 'sci-fi', color: '#06B6D4', icon: '🚀' },
+  { id: 'mythology', name: 'Mythology', nameTe: 'పౌరాణిక', slug: 'mythology', color: '#FFD700', icon: '🕉️' },
+  { id: 'super-hero', name: 'Superhero', nameTe: 'సూపర్ హీరో', slug: 'super-hero', color: '#EF4444', icon: '🦸' },
+  { id: 'thriller', name: 'Thriller', nameTe: 'థ్రిల్లర్', slug: 'thriller', color: '#F59E0B', icon: '🎭' },
+  { id: 'romance', name: 'Romance', nameTe: 'రొమాన్స్', slug: 'romance', color: '#EC4899', icon: '❤️' },
+  { id: 'comedy', name: 'Comedy', nameTe: 'కామెడీ', slug: 'comedy', color: '#22C55E', icon: '😂' },
+  { id: 'drama', name: 'Drama', nameTe: 'డ్రామా', slug: 'drama', color: '#3B82F6', icon: '🎬' },
 ]
 
 export default function CategoriesGrid() {
+  const [genres, setGenres] = useState<Genre[]>(STATIC_FALLBACK)
+
+  useEffect(() => {
+    fetch('/api/genres')
+      .then(r => r.json())
+      .then(data => {
+        if (Array.isArray(data)) {
+          // Keep exactly the 10 featured genres in the correct order
+          const filtered = FEATURED_SLUGS.map(slug => {
+            const found = data.find(g => g.slug === slug)
+            return found || STATIC_FALLBACK.find(s => s.slug === slug)
+          }).filter(Boolean) as Genre[]
+          setGenres(filtered)
+        }
+      })
+      .catch(() => {})
+  }, [])
+
   return (
     <div className="relative">
       <SectionHeader 
-        title="Browse by Category" 
-        titleTe="వర్గం వారీగా చూడండి" 
-        description="Explore curated collections across diverse entertainment universes and genres"
+        title="Discover By Genre" 
+        titleTe="శైలి వారీగా చూడండి" 
+        description="Filter and find content based on your favorite genre and mood"
+        icon="genres"
       />
       
-      <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-4 mt-6">
-        {CATEGORIES.map((cat, i) => (
-          <motion.div
-            key={cat.name}
-            initial={{ opacity: 0, y: 15 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: i * 0.04, duration: 0.4 }}
-          >
-            <Link
-              href={cat.href}
-              className="flex flex-col items-center gap-3 p-5 rounded-2xl bg-surface border border-white/5 hover:border-yellow-400/35 hover:bg-surface-2 transition-all duration-300 group text-center select-none cursor-pointer relative overflow-hidden"
-              style={{
-                boxShadow: '0 4px 20px rgba(0, 0, 0, 0.25)',
-              }}
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 mt-6">
+        {genres.map((genre, i) => {
+          const color = genre.color || '#FFD700'
+          return (
+            <motion.div
+              key={genre.slug}
+              initial={{ opacity: 0, y: 15 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: Math.min(i * 0.03, 0.3), duration: 0.4 }}
             >
-              {/* Category Icon with hover animation container */}
-              <div 
-                className="w-14 h-14 rounded-full flex items-center justify-center bg-white/5 border border-white/5 group-hover:bg-yellow-400/10 group-hover:border-yellow-400/20 group-hover:scale-110 transition-all duration-300"
+              <Link
+                href={`/search?genre=${genre.slug}`}
+                className="relative flex flex-col items-center justify-center p-4 rounded-2xl bg-surface/30 border border-white/5 hover:bg-surface/50 transition-all duration-500 group text-center cursor-pointer overflow-hidden h-[120px]"
                 style={{
-                  boxShadow: 'inset 0 0 10px rgba(255,255,255,0.02)',
+                  boxShadow: '0 4px 20px rgba(0, 0, 0, 0.25)',
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.borderColor = `${color}40`
+                  e.currentTarget.style.boxShadow = `0 0 25px ${color}15`
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.05)'
+                  e.currentTarget.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.25)'
                 }}
               >
-                <CategoryIcon name={cat.name} size={30} />
-              </div>
+                {/* Icon or emoji */}
+                <div 
+                  className="w-10 h-10 rounded-full flex items-center justify-center bg-white/5 border border-white/5 group-hover:bg-white/10 group-hover:border-white/10 group-hover:scale-110 transition-all duration-500 text-xl z-10"
+                >
+                  {genre.icon || '🎬'}
+                </div>
 
-              <div className="flex flex-col gap-0.5 mt-1">
-                <span className="text-white text-sm font-bold font-rajdhani tracking-wide group-hover:text-yellow-400 transition-colors">
-                  {cat.name}
-                </span>
-                <span className="font-telugu text-gray-500 text-[10px] tracking-normal leading-normal">
-                  {cat.nameTe}
-                </span>
-              </div>
+                <div className="flex flex-col gap-0.5 mt-2 z-10">
+                  <span className="text-white text-sm font-bold font-rajdhani tracking-wide group-hover:text-yellow-400 transition-colors">
+                    {genre.name}
+                  </span>
+                  <span className="font-telugu text-gray-500 text-[10px]">
+                    {genre.nameTe}
+                  </span>
+                </div>
 
-              <span 
-                className="font-bold text-[11px] font-rajdhani mt-2 px-2.5 py-0.5 rounded-full bg-white/5 group-hover:bg-white/10 transition-colors"
-                style={{ color: cat.color }}
-              >
-                {cat.count}
-              </span>
-
-              {/* Ambient Glow Effect matching the category color */}
-              <div 
-                className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none z-0"
-                style={{
-                  background: `radial-gradient(circle 50px at 50% 50%, ${cat.color}15, transparent 100%)`,
-                }}
-              />
-            </Link>
-          </motion.div>
-        ))}
+                {/* Accent glow matching the genre color */}
+                <div 
+                  className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none z-0"
+                  style={{
+                    background: `radial-gradient(circle 60px at 50% 50%, ${color}15, transparent 100%)`,
+                  }}
+                />
+              </Link>
+            </motion.div>
+          )
+        })}
       </div>
     </div>
   )
 }
-

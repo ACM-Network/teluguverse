@@ -10,15 +10,15 @@ export default function PopularSection() {
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    fetch('/api/content/trending?limit=24')
+    fetch('/api/content?type=MOVIE&sort=popular&limit=24')
       .then(r => r.json())
-      .then(d => { setItems(Array.isArray(d) ? d : []); setLoading(false) })
+      .then(d => { setItems(d.items || []); setLoading(false) })
       .catch(() => setLoading(false))
   }, [])
 
   return (
     <div>
-      <SectionHeader title="Popular This Week" titleTe="ఈ వారం ప్రాచుర్యం" href="/search?sort=trending" icon="popular" />
+      <SectionHeader title="Popular Movies" titleTe="పాపులర్ సినిమాలు" href="/search?type=MOVIE" icon="popular" />
       <div className="cards-scroll">
         {loading ? <SkeletonCard count={8} /> : items.map((item, i) => <ContentCard key={item.id} content={item} index={i} />)}
       </div>

@@ -59,4 +59,12 @@ export const UserService = {
       orderBy: { createdAt: 'desc' },
     })
   },
+
+  async getFavorites(userId: string) {
+    return prisma.favorite.findMany({
+      where: { userId },
+      include: { content: { select: { id: true, slug: true, titleEnglish: true, titleTelugu: true, poster: true, type: true, imdbRating: true, year: true, directors: true, genres: { include: { genre: true } }, universe: true } } },
+      orderBy: { createdAt: 'desc' },
+    })
+  },
 }

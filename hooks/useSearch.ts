@@ -10,7 +10,7 @@ export interface SearchSuggestion {
 export const useSearch = () => {
   const [query, setQuery] = useState('')
   const [debouncedQuery] = useDebounce(query, 300)
-  const [suggestions, setSuggestions] = useState<{ content: SearchSuggestion[]; queries: string[] }>({ content: [], queries: [] })
+  const [suggestions, setSuggestions] = useState<{ content: SearchSuggestion[]; queries: string[]; universes: any[] }>({ content: [], queries: [], universes: [] })
   const [trendingSearches, setTrendingSearches] = useState<{ query: string; count: number }[]>([])
   const [recentSearches, setRecentSearches] = useState<string[]>([])
   const [isLoading, setIsLoading] = useState(false)
@@ -27,7 +27,7 @@ export const useSearch = () => {
 
   useEffect(() => {
     if (!debouncedQuery || debouncedQuery.length < 2) {
-      setSuggestions({ content: [], queries: [] })
+      setSuggestions({ content: [], queries: [], universes: [] })
       return
     }
     abortRef.current?.abort()
