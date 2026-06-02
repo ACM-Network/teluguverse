@@ -109,47 +109,6 @@ export default function Navbar() {
 
           {/* Right side */}
           <div className="ml-auto flex items-center gap-2 xl:gap-3 flex-none">
-            {/* Language toggle */}
-            <div
-  className="hidden sm:flex items-center rounded-xl overflow-hidden border border-yellow-500/20"
-  style={{
-    background: 'rgba(255,215,0,0.06)',
-    backdropFilter: 'blur(10px)',
-  }}
->
-  <button
-    onClick={toggleLanguage}
-    className={`
-      px-3.5 py-2
-      text-xs font-bold font-rajdhani
-      transition-all
-      ${
-        language === 'en'
-          ? 'bg-yellow-500 text-black'
-          : 'text-gray-300 hover:text-yellow-400'
-      }
-    `}
-  >
-    EN
-  </button>
-
-  <button
-    onClick={toggleLanguage}
-    className={`
-      px-3.5 py-2
-      text-xs font-bold font-telugu
-      transition-all
-      ${
-        language === 'te'
-          ? 'bg-yellow-500 text-black'
-          : 'text-gray-300 hover:text-yellow-400'
-      }
-    `}
-  >
-    తె
-  </button>
-</div>
-
             {/* Search */}
 <button
   onClick={openSearch}

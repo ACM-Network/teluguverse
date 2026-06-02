@@ -23,7 +23,10 @@ export const movies = [
     studio: 'DVV Entertainment',
     language: 'Telugu',
     country: 'India',
-    ottPlatforms: ['ZEE5', 'NETFLIX'],
+    ottPlatforms: [
+      { platform: 'ZEE5', url: 'https://www.zee5.com/movies/details/rrr/0-0-1z511732' },
+      { platform: 'NETFLIX', url: 'https://www.netflix.com/title/81476453' }
+    ],
     teluguDubAvail: true,
     teluguSubAvail: true,
     hindiDubAvail: true,
@@ -32,12 +35,7 @@ export const movies = [
     trendingScore: 92.0,
     popularityScore: 98.0,
     similarSlugs: ['baahubali-2-the-conclusion', 'baahubali-the-beginning', 'magadheera'],
-    directors: ['S.S. Rajamouli'],
-    universeInfo: {
-      universeId: 'rajamouli',
-      order: 5,
-      phase: 'Modern Era'
-    }
+    directors: ['S.S. Rajamouli']
   },
   {
     slug: 'kalki-2898-ad',
@@ -61,7 +59,10 @@ export const movies = [
     studio: 'Vyjayanthi Movies',
     language: 'Telugu',
     country: 'India',
-    ottPlatforms: ['AMAZON_PRIME', 'NETFLIX'],
+    ottPlatforms: [
+      { platform: 'AMAZON_PRIME', url: 'https://www.primevideo.com/detail/Kalki-2898-AD-Telugu/0NQGN7T4KSHGLT6EAWW5Q87G4Y' },
+      { platform: 'NETFLIX', url: 'https://www.netflix.com/title/81778939' }
+    ],
     teluguDubAvail: true,
     teluguSubAvail: true,
     hindiDubAvail: true,
@@ -71,12 +72,7 @@ export const movies = [
     trendingScore: 95.5,
     popularityScore: 98.2,
     similarSlugs: ['rrr', 'salaar-part-1-ceasefire'],
-    directors: ['Nag Ashwin'],
-    universeInfo: {
-      universeId: 'telugu',
-      order: 1,
-      phase: 'Kalki Cinematic Universe'
-    }
+    directors: ['Nag Ashwin']
   },
   {
     slug: 'pushpa-the-rule',
@@ -100,7 +96,9 @@ export const movies = [
     studio: 'Mythri Movie Makers',
     language: 'Telugu',
     country: 'India',
-    ottPlatforms: ['NETFLIX'],
+    ottPlatforms: [
+      { platform: 'NETFLIX', url: 'https://www.netflix.com/title/81611090' }
+    ],
     teluguDubAvail: true,
     teluguSubAvail: true,
     hindiDubAvail: true,
@@ -110,12 +108,7 @@ export const movies = [
     trendingScore: 97.0,
     popularityScore: 99.0,
     similarSlugs: ['pushpa-the-rise', 'rangasthalam'],
-    directors: ['Sukumar'],
-    universeInfo: {
-      universeId: 'telugu',
-      order: 3,
-      phase: 'Pushpa Trilogy'
-    }
+    directors: ['Sukumar']
   },
   {
     slug: 'pushpa-the-rise',
@@ -148,12 +141,7 @@ export const movies = [
     trendingScore: 80.0,
     popularityScore: 94.0,
     similarSlugs: ['pushpa-the-rule', 'rangasthalam'],
-    directors: ['Sukumar'],
-    universeInfo: {
-      universeId: 'telugu',
-      order: 2,
-      phase: 'Pushpa Trilogy'
-    }
+    directors: ['Sukumar']
   },
   {
     slug: 'baahubali-the-beginning',
@@ -188,8 +176,8 @@ export const movies = [
     similarSlugs: ['baahubali-2-the-conclusion', 'rrr', 'magadheera'],
     directors: ['S.S. Rajamouli'],
     universeInfo: {
-      universeId: 'rajamouli',
-      order: 2,
+      universeId: 'baahubali',
+      order: 1,
       phase: 'Baahubali Saga'
     }
   },
@@ -215,7 +203,10 @@ export const movies = [
     studio: 'Arka Media Works',
     language: 'Telugu',
     country: 'India',
-    ottPlatforms: ['AMAZON_PRIME', 'NETFLIX'],
+    ottPlatforms: [
+      { platform: 'AMAZON_PRIME', url: 'https://www.primevideo.com/detail/Baahubali-2-The-Conclusion-Telugu/0OEG7NQWOB5C4P47GZJ8E0Y4GQ' },
+      { platform: 'NETFLIX', url: 'https://www.netflix.com/title/80178471' }
+    ],
     teluguDubAvail: true,
     teluguSubAvail: true,
     hindiDubAvail: true,
@@ -226,8 +217,8 @@ export const movies = [
     similarSlugs: ['baahubali-the-beginning', 'rrr', 'magadheera'],
     directors: ['S.S. Rajamouli'],
     universeInfo: {
-      universeId: 'rajamouli',
-      order: 3,
+      universeId: 'baahubali',
+      order: 2,
       phase: 'Baahubali Saga'
     }
   },
@@ -262,12 +253,7 @@ export const movies = [
     trendingScore: 78.0,
     popularityScore: 92.0,
     similarSlugs: ['magadheera', 'baahubali-the-beginning'],
-    directors: ['S.S. Rajamouli'],
-    universeInfo: {
-      universeId: 'rajamouli',
-      order: 4,
-      phase: 'Fantasy Era'
-    }
+    directors: ['S.S. Rajamouli']
   },
   {
     slug: 'magadheera',
@@ -300,12 +286,7 @@ export const movies = [
     trendingScore: 74.0,
     popularityScore: 91.0,
     similarSlugs: ['baahubali-the-beginning', 'eega'],
-    directors: ['S.S. Rajamouli'],
-    universeInfo: {
-      universeId: 'rajamouli',
-      order: 1,
-      phase: 'Fantasy Era'
-    }
+    directors: ['S.S. Rajamouli']
   },
   {
     slug: 'chatrapathi',
@@ -503,12 +484,7 @@ export const movies = [
     trendingScore: 93.0,
     popularityScore: 96.0,
     similarSlugs: ['kalki-2898-ad', 'eega'],
-    directors: ['Prasanth Varma'],
-    universeInfo: {
-      universeId: 'telugu',
-      order: 4,
-      phase: 'Prasanth Varma Cinematic Universe'
-    }
+    directors: ['Prasanth Varma']
   },
   {
     slug: 'salaar-part-1-ceasefire',
@@ -542,5 +518,474 @@ export const movies = [
     popularityScore: 94.0,
     similarSlugs: ['kalki-2898-ad', 'rrr'],
     directors: ['Prashanth Neel']
+  },
+  {
+    slug: 'kalki-2898-ad-part-2',
+    type: ContentType.MOVIE,
+    status: ContentStatus.UPCOMING,
+    poster: 'https://image.tmdb.org/t/p/w500/rstcAnBeCkxNQjNp3YXrF6IP1tW.jpg',
+    banner: 'https://image.tmdb.org/t/p/original/o8XSR1SONnjcsv84NRu6Mwsl5io.jpg',
+    trailer: 'https://www.youtube.com/embed/NgBoMJy386M',
+    title: {
+      en: 'Kalki 2898 AD Part 2',
+      te: 'కల్కి 2898 పార్ట్ 2',
+    },
+    description: {
+      en: 'Kalki will return more powerful to fight against the dark forces in this epic continuation.',
+      te: 'కల్కి అవతారం మరింత శక్తివంతంగా తిరిగి వస్తాడు. చీకటి శక్తులు తయారవుతున్నాయి.',
+    },
+    genres: ['Sci-Fi', 'Fantasy', 'Action'],
+    year: 2027,
+    releaseDate: new Date('2027-06-18'),
+    runtime: 180,
+    imdbRating: 8.5,
+    studio: 'Vyjayanthi Movies',
+    language: 'Telugu',
+    country: 'India',
+    ottPlatforms: [],
+    teluguDubAvail: true,
+    teluguSubAvail: true,
+    isTrending: false,
+    isTopRated: false,
+    directors: ['Nag Ashwin']
+  },
+  {
+    slug: 'ramayana-part-1',
+    type: ContentType.MOVIE,
+    status: ContentStatus.UPCOMING,
+    poster: 'https://image.tmdb.org/t/p/w500/f3yZZw7zIsWo6m9xJStfjDauIZX.jpg',
+    banner: 'https://image.tmdb.org/t/p/original/yHVZncPRZr63mezRX20IyKLrSkv.jpg',
+    trailer: 'https://www.youtube.com/embed/NgBoMJy386M',
+    title: {
+      en: 'Ramayana',
+      te: 'రామాయణం',
+    },
+    description: {
+      en: 'An epic cinematic adaptation of the ancient Indian epic Ramayana.',
+      te: 'మహాకావ్యం రామాయణం తెలుగు వెండితెరపై అద్భుతంగా రానుంది.',
+    },
+    genres: ['Mythology', 'Action', 'Drama'],
+    year: 2026,
+    releaseDate: new Date('2026-12-25'),
+    runtime: 160,
+    imdbRating: 8.0,
+    studio: 'DNEG',
+    language: 'Hindi',
+    country: 'India',
+    ottPlatforms: [],
+    teluguDubAvail: true,
+    teluguSubAvail: true,
+    isTrending: false,
+    isTopRated: false,
+    directors: ['Nitesh Tiwari']
+  },
+  {
+    slug: 'coolie',
+    type: ContentType.MOVIE,
+    status: ContentStatus.UPCOMING,
+    poster: 'https://image.tmdb.org/t/p/w500/kr36awqmziEI5mfUElsHB0pj9zP.jpg',
+    banner: 'https://image.tmdb.org/t/p/original/bLn0CPzrrqFLicjNTgrzaIyE0gZ.jpg',
+    trailer: 'https://www.youtube.com/embed/NgBoMJy386M',
+    title: {
+      en: 'Coolie',
+      te: 'కూలీ',
+    },
+    description: {
+      en: 'A high-octane action thriller starring Superstar Rajinikanth in a powerful avatar.',
+      te: 'రజినీకాంత్ అభినయించే ఈ యాక్షన్ చిత్రం అందరినీ మెప్పించనుంది.',
+    },
+    genres: ['Action', 'Thriller'],
+    year: 2026,
+    releaseDate: new Date('2026-08-15'),
+    runtime: 165,
+    imdbRating: 7.8,
+    studio: 'Sun Pictures',
+    language: 'Tamil',
+    country: 'India',
+    ottPlatforms: [],
+    teluguDubAvail: true,
+    teluguSubAvail: true,
+    isTrending: false,
+    isTopRated: false,
+    directors: ['Lokesh Kanagaraj']
+  },
+  {
+    slug: 'the-raja-saab',
+    type: ContentType.MOVIE,
+    status: ContentStatus.UPCOMING,
+    poster: 'https://image.tmdb.org/t/p/w500/nRy56JePNbXgaZc76gqZkB6FFne.jpg',
+    banner: 'https://image.tmdb.org/t/p/original/gTIobmaZTeXDMD2LcIvhnL9rsu8.jpg',
+    trailer: 'https://www.youtube.com/embed/NgBoMJy386M',
+    title: {
+      en: 'The Raja Saab',
+      te: 'ది రాజా సాబ్',
+    },
+    description: {
+      en: 'A horror comedy movie starring Prabhas, directed by Maruthi.',
+      te: 'ప్రభాస్ సరికొత్త హారర్ కామెడీ వినోదభరిత చిత్రం.',
+    },
+    genres: ['Comedy', 'Horror', 'Romance'],
+    year: 2026,
+    releaseDate: new Date('2026-10-10'),
+    runtime: 155,
+    imdbRating: 7.2,
+    studio: 'People Media Factory',
+    language: 'Telugu',
+    country: 'India',
+    ottPlatforms: [],
+    teluguDubAvail: true,
+    teluguSubAvail: true,
+    isTrending: false,
+    isTopRated: false,
+    directors: ['Maruthi']
+  },
+  {
+    slug: 'spirit',
+    type: ContentType.MOVIE,
+    status: ContentStatus.UPCOMING,
+    poster: 'https://image.tmdb.org/t/p/w500/5N3e8nCYZdOyEyh1IuQDdkKF9sQ.jpg',
+    banner: 'https://image.tmdb.org/t/p/original/yzu6Gb2fbC8GPxSKIn9BAHt9hFw.jpg',
+    trailer: 'https://www.youtube.com/embed/NgBoMJy386M',
+    title: {
+      en: 'Spirit',
+      te: 'స్పిరిట్',
+    },
+    description: {
+      en: 'Prabhas plays an intense cop in this Sandeep Reddy Vanga action thriller.',
+      te: 'సందీప్ వంగా మరియు ప్రభాస్ కాంబినేషన్ లో భారీ కాప్ డ్రామా.',
+    },
+    genres: ['Action', 'Crime', 'Thriller'],
+    year: 2027,
+    releaseDate: new Date('2027-04-10'),
+    runtime: 180,
+    imdbRating: 8.2,
+    studio: 'T-Series',
+    language: 'Telugu',
+    country: 'India',
+    ottPlatforms: [],
+    teluguDubAvail: true,
+    teluguSubAvail: true,
+    isTrending: false,
+    isTopRated: false,
+    directors: ['Sandeep Reddy Vanga']
+  },
+  {
+    slug: 'hari-hara-veera-mallu',
+    type: ContentType.MOVIE,
+    status: ContentStatus.UPCOMING,
+    poster: 'https://image.tmdb.org/t/p/w500/mKM3yC7kepjfs8A723dqd9hOky8.jpg',
+    banner: 'https://image.tmdb.org/t/p/original/vg0n59EwKomMNJwlbt1CqlgFDI2.jpg',
+    trailer: 'https://www.youtube.com/embed/NgBoMJy386M',
+    title: {
+      en: 'Hari Hara Veera Mallu',
+      te: 'హరి హర వీర మల్లు',
+    },
+    description: {
+      en: 'A historic action drama about a legendary outlaw starring Pawan Kalyan.',
+      te: 'పవన్ కళ్యాణ్ ప్రధాన పాత్రలో వస్తున్న చారిత్రాత్మక యాక్షన్ చిత్రం.',
+    },
+    genres: ['Action', 'Historical', 'Drama'],
+    year: 2026,
+    releaseDate: new Date('2026-07-30'),
+    runtime: 160,
+    imdbRating: 7.5,
+    studio: 'Mega Surya Production',
+    language: 'Telugu',
+    country: 'India',
+    ottPlatforms: [],
+    teluguDubAvail: true,
+    teluguSubAvail: true,
+    isTrending: false,
+    isTopRated: false,
+    directors: ['Krish Jagarlamudi']
+  },
+  {
+    slug: 'vishwambhara',
+    type: ContentType.MOVIE,
+    status: ContentStatus.UPCOMING,
+    poster: 'https://image.tmdb.org/t/p/w500/ygmxv156YvURmnFN6eG3i2dIg4U.jpg',
+    banner: 'https://image.tmdb.org/t/p/original/lGcndSIRbY3CDZiekSWiAahIju.jpg',
+    trailer: 'https://www.youtube.com/embed/NgBoMJy386M',
+    title: {
+      en: 'Vishwambhara',
+      te: 'విశ్వంభర',
+    },
+    description: {
+      en: 'A high-concept socio-fantasy adventure movie starring Megastar Chiranjeevi.',
+      te: 'చిరంజీవి అద్భుతమైన సోషియో-ఫాంటసీ సినిమా.',
+    },
+    genres: ['Fantasy', 'Action', 'Drama'],
+    year: 2026,
+    releaseDate: new Date('2026-09-15'),
+    runtime: 155,
+    imdbRating: 7.6,
+    studio: 'UV Creations',
+    language: 'Telugu',
+    country: 'India',
+    ottPlatforms: [],
+    teluguDubAvail: true,
+    teluguSubAvail: true,
+    isTrending: false,
+    isTopRated: false,
+    directors: ['Vasshishtha']
+  },
+  {
+    slug: 'they-call-him-og',
+    type: ContentType.MOVIE,
+    status: ContentStatus.UPCOMING,
+    poster: 'https://image.tmdb.org/t/p/w500/yHyvS4OMq8oij11Co9CbeMqLUo2.jpg',
+    banner: 'https://image.tmdb.org/t/p/original/lBJR69jrQ8I84irRexFfO70v0EA.jpg',
+    trailer: 'https://www.youtube.com/embed/NgBoMJy386M',
+    title: {
+      en: 'They Call Him OG',
+      te: 'ఓజీ',
+    },
+    description: {
+      en: 'A stylized gangland action thriller starring Pawan Kalyan as a ruthless protector.',
+      te: 'గ్యాంగ్‌స్టర్ నేపథ్యంలో పవన్ కళ్యాణ్ నటిస్తున్న మోస్ట్ స్టైలిష్ యాక్షన్ చిత్రం.',
+    },
+    genres: ['Action', 'Crime', 'Thriller'],
+    year: 2026,
+    releaseDate: new Date('2026-10-31'),
+    runtime: 150,
+    imdbRating: 8.0,
+    studio: 'DVV Entertainments',
+    language: 'Telugu',
+    country: 'India',
+    ottPlatforms: [],
+    teluguDubAvail: true,
+    teluguSubAvail: true,
+    isTrending: false,
+    isTopRated: false,
+    directors: ['Sujeeth']
+  },
+  {
+    slug: 'kaithi',
+    type: ContentType.MOVIE,
+    status: ContentStatus.COMPLETED,
+    poster: 'https://image.tmdb.org/t/p/w500/mxvOvom5zKRp4WPURKrhjoatt4P.jpg',
+    banner: 'https://image.tmdb.org/t/p/original/seTFDq1iKyJ6YHr7HePbC20DMsy.jpg',
+    trailer: 'https://www.youtube.com/embed/gkxCg-GgDG8',
+    title: {
+      en: 'Kaithi',
+      te: 'ఖైదీ'
+    },
+    description: {
+      en: 'A recently released prisoner struggles to see his daughter, but his attempts are interrupted by a drug raid inspector.',
+      te: 'ఒక రాత్రి ఒక మాజీ ఖైదీ తన కుమార్తెను మొదటిసారి కలుసుకోవడానికి వెళ్తుండగా, డ్రగ్స్ కేసులో అపస్మారక స్థితిలో పడిపోయిన వందలాది మంది పోలీసులను కాపాడే బాధ్యత అతనిపై పడుతుంది.'
+    },
+    genres: ['Action', 'Thriller', 'Crime'],
+    year: 2019,
+    runtime: 147,
+    imdbRating: 8.4,
+    studio: 'Dream Warrior Pictures',
+    language: 'Tamil',
+    country: 'India',
+    ottPlatforms: [{ platform: 'JIO_HOTSTAR', url: 'https://www.hotstar.com' }],
+    teluguDubAvail: true,
+    teluguSubAvail: true,
+    hindiDubAvail: true,
+    universeInfo: {
+      universeId: 'lcu',
+      order: 1,
+      phase: 'Lokesh Cinematic Universe'
+    },
+    directors: ['Lokesh Kanagaraj'],
+    similarSlugs: ['vikram', 'leo']
+  },
+  {
+    slug: 'vikram',
+    type: ContentType.MOVIE,
+    status: ContentStatus.COMPLETED,
+    poster: 'https://image.tmdb.org/t/p/w500/774UV1aCURb4s4JfEFg3IEMu5Zj.jpg',
+    banner: 'https://image.tmdb.org/t/p/original/dkIX4dSMuVqjfrPGunBJUR7K3LQ.jpg',
+    trailer: 'https://www.youtube.com/embed/OKBMCL-FRis',
+    title: {
+      en: 'Vikram',
+      te: 'విక్రమ్'
+    },
+    description: {
+      en: 'A special agent investigates a murder committed by a masked group of serial killers, only to find a conspiracy link to a drug kingpin.',
+      te: 'మాస్క్డ్ కిల్లర్స్ గ్రూప్ చేసిన వరస హత్యలను దర్యాప్తు చేయడానికి వచ్చిన ఒక స్పెషల్ ఆఫీసర్, ఆ వెనుక ఉన్న డ్రగ్స్ సామ్రాజ్యం మరియు ముసుగు వీరుడు అమర్ ప్రయాణం తెలుసుకుంటాడు.'
+    },
+    genres: ['Action', 'Thriller', 'Crime'],
+    year: 2022,
+    runtime: 175,
+    imdbRating: 8.3,
+    studio: 'Raaj Kamal Films International',
+    language: 'Tamil',
+    country: 'India',
+    ottPlatforms: [{ platform: 'JIO_HOTSTAR', url: 'https://www.hotstar.com' }],
+    teluguDubAvail: true,
+    teluguSubAvail: true,
+    hindiDubAvail: true,
+    universeInfo: {
+      universeId: 'lcu',
+      order: 2,
+      phase: 'Lokesh Cinematic Universe'
+    },
+    directors: ['Lokesh Kanagaraj'],
+    similarSlugs: ['kaithi', 'leo']
+  },
+  {
+    slug: 'leo',
+    type: ContentType.MOVIE,
+    status: ContentStatus.COMPLETED,
+    poster: 'https://image.tmdb.org/t/p/w500/t1oAdt8JjUs4sHEBvE8fKtjV7er.jpg',
+    banner: 'https://image.tmdb.org/t/p/original/MSNYxWe4u4en9vQ3oZIKQWKYHu.jpg',
+    trailer: 'https://www.youtube.com/embed/g2g-1uP-rxs',
+    title: {
+      en: 'Leo',
+      te: 'లియో'
+    },
+    description: {
+      en: 'A gentle cafe owner becomes a local hero, but old enemies resurface, claiming he is a former ruthless gang leader.',
+      te: 'హిమాచల్ ప్రదేశ్ లో కేఫ్ నడుపుకునే పార్థిబన్ అనే ఒక సాధువైన వ్యక్తి ఒక సింహం మరియు గూండాల నుండి తన కుటుంబాన్ని కాపాడి హీరో అవుతాడు. కానీ అతను గతంలో లియో దాస్ అనే పెద్ద గ్యాంగ్‌స్టర్ అని కొందరు వెంబడిస్తారు.'
+    },
+    genres: ['Action', 'Thriller', 'Crime'],
+    year: 2023,
+    runtime: 164,
+    imdbRating: 7.2,
+    studio: 'Seven Screen Studio',
+    language: 'Tamil',
+    country: 'India',
+    ottPlatforms: [{ platform: 'NETFLIX', url: 'https://www.netflix.com' }],
+    teluguDubAvail: true,
+    teluguSubAvail: true,
+    hindiDubAvail: true,
+    universeInfo: {
+      universeId: 'lcu',
+      order: 3,
+      phase: 'Lokesh Cinematic Universe'
+    },
+    directors: ['Lokesh Kanagaraj'],
+    similarSlugs: ['kaithi', 'vikram']
+  },
+  {
+    slug: 'kaithi-2',
+    type: ContentType.MOVIE,
+    status: ContentStatus.UPCOMING,
+    poster: 'https://image.tmdb.org/t/p/w500/cq8sALwkbUcMJKWGxtUtPkCbbDi.jpg',
+    banner: 'https://image.tmdb.org/t/p/original/seTFDq1iKyJ6YHr7HePbC20DMsy.jpg',
+    trailer: 'https://www.youtube.com/embed/NgBoMJy386M',
+    title: {
+      en: 'Kaithi 2',
+      te: 'ఖైదీ 2'
+    },
+    description: {
+      en: 'The highly anticipated sequel to the blockbuster Kaithi, continuing the journey of Dilli in the LCU.',
+      te: 'బ్లాక్‌బస్టర్ ఖైదీ చిత్రానికి సీక్వెల్, ఇందులో ఢిల్లీ ప్రయాణం మరియు లోకేష్ సినిమాటిక్ యూనివర్స్ లో అతని పాత్ర కొనసాగుతుంది.'
+    },
+    genres: ['Action', 'Thriller', 'Crime'],
+    year: 2027,
+    studio: 'Dream Warrior Pictures',
+    language: 'Tamil',
+    country: 'India',
+    ottPlatforms: [],
+    teluguDubAvail: true,
+    teluguSubAvail: true,
+    hindiDubAvail: true,
+    universeInfo: {
+      universeId: 'lcu',
+      order: 4,
+      phase: 'Lokesh Cinematic Universe'
+    },
+    directors: ['Lokesh Kanagaraj'],
+    similarSlugs: ['kaithi', 'vikram', 'leo']
+  },
+  {
+    slug: 'rolex',
+    type: ContentType.MOVIE,
+    status: ContentStatus.UPCOMING,
+    poster: 'https://image.tmdb.org/t/p/w500/dnwiaRZxvC5Y0W6tS6GqsBPmy6a.jpg',
+    banner: 'https://image.tmdb.org/t/p/original/dkIX4dSMuVqjfrPGunBJUR7K3LQ.jpg',
+    trailer: 'https://www.youtube.com/embed/NgBoMJy386M',
+    title: {
+      en: 'Rolex',
+      te: 'రోలెక్స్'
+    },
+    description: {
+      en: 'A standalone spin-off film centering around the ruthless LCU drug kingpin Rolex, starring Suriya.',
+      te: 'లోకేష్ కనగరాజ్ యూనివర్స్ లో అత్యంత క్రూరమైన విలన్ రోలెక్స్ పాత్ర చుట్టూ తిరిగే సోలో చిత్రం, సూర్య కథానాయకుడిగా నటిస్తున్నారు.'
+    },
+    genres: ['Action', 'Thriller', 'Crime'],
+    year: 2028,
+    studio: 'Raaj Kamal Films International',
+    language: 'Tamil',
+    country: 'India',
+    ottPlatforms: [],
+    teluguDubAvail: true,
+    teluguSubAvail: true,
+    hindiDubAvail: true,
+    universeInfo: {
+      universeId: 'lcu',
+      order: 5,
+      phase: 'Lokesh Cinematic Universe'
+    },
+    directors: ['Lokesh Kanagaraj'],
+    similarSlugs: ['vikram', 'kaithi', 'leo']
+  },
+  {
+    slug: 'vikram-2',
+    type: ContentType.MOVIE,
+    status: ContentStatus.UPCOMING,
+    poster: 'https://image.tmdb.org/t/p/w500/5c8v2Fev36SRdV0gml44BlHvAwz.jpg',
+    banner: 'https://image.tmdb.org/t/p/original/dkIX4dSMuVqjfrPGunBJUR7K3LQ.jpg',
+    trailer: 'https://www.youtube.com/embed/NgBoMJy386M',
+    title: {
+      en: 'Vikram 2',
+      te: 'విక్రమ్ 2'
+    },
+    description: {
+      en: 'The epic conclusion and clash between Vikram and Rolex in the LCU, starring Kamal Haasan.',
+      te: 'విక్రమ్ చిత్రానికి సీక్వెల్, లోకేష్ కనగరాజ్ విశ్వంలో విక్రమ్ మరియు రోలెక్స్ మధ్య జరిగే మహా సంగ్రామం.'
+    },
+    genres: ['Action', 'Thriller', 'Crime'],
+    year: 2028,
+    studio: 'Raaj Kamal Films International',
+    language: 'Tamil',
+    country: 'India',
+    ottPlatforms: [],
+    teluguDubAvail: true,
+    teluguSubAvail: true,
+    hindiDubAvail: true,
+    universeInfo: {
+      universeId: 'lcu',
+      order: 6,
+      phase: 'Lokesh Cinematic Universe'
+    },
+    directors: ['Lokesh Kanagaraj'],
+    similarSlugs: ['vikram', 'rolex']
+  },
+  {
+    slug: 'baahubali-the-eternal-war',
+    type: ContentType.MOVIE,
+    status: ContentStatus.UPCOMING,
+    poster: 'https://image.tmdb.org/t/p/w500/n1KLxyMDfktpfFxv3X35OiA9IzF.jpg',
+    banner: 'https://image.tmdb.org/t/p/original/m8bM4y7hMKq3AOeaGtQiY2UHLe6.jpg',
+    trailer: 'https://www.youtube.com/embed/NgBoMJy386M',
+    title: {
+      en: 'Baahubali: The Eternal War',
+      te: 'బాహుబలి: ది ఎటర్నల్ వార్'
+    },
+    description: {
+      en: 'An upcoming epic CG-animated feature film expanding the lore of the Baahubali universe, voiced by Prabhas.',
+      te: 'బాహుబలి విశ్వం నుండి రాబోయే తదుపరి అద్భుతమైన యానిమేటెడ్ చిత్రం. మహేష్మతి సామ్రాజ్యానికి సంబంధించిన సరికొత్త కథాంశంతో రూపొందుతోంది.'
+    },
+    genres: ['Action', 'Fantasy', 'Adventure'],
+    year: 2027,
+    studio: 'Arka Media Works',
+    language: 'Telugu',
+    country: 'India',
+    ottPlatforms: [],
+    teluguDubAvail: true,
+    teluguSubAvail: true,
+    universeInfo: {
+      universeId: 'baahubali',
+      order: 3,
+      phase: 'Baahubali Saga'
+    },
+    directors: ['S.S. Rajamouli'],
+    similarSlugs: ['baahubali-the-beginning', 'baahubali-2-the-conclusion']
   }
 ]

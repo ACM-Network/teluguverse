@@ -61,10 +61,10 @@ const UNIVERSES = [
     )
   },
   {
-    key: 'rajamouli',
-    name: 'Rajamouli Universe',
-    nameTe: 'రాజమౌళి యూనివర్స్',
-    count: '8 FILMS',
+    key: 'baahubali',
+    name: 'Baahubali Universe',
+    nameTe: 'బాహుబలి విశ్వం',
+    count: '3 FILMS',
     grad: 'linear-gradient(135deg, rgba(245, 158, 11, 0.28) 0%, rgba(15, 10, 5, 0.95) 100%)',
     border: 'rgba(245, 158, 11, 0.45)',
     color: '#F59E0B',
@@ -144,10 +144,10 @@ const UNIVERSES = [
     )
   },
   {
-    key: 'telugu',
-    name: 'Telugu Cinematic Universe',
-    nameTe: 'తెలుగు సినిమా',
-    count: '12+ FILMS',
+    key: 'lcu',
+    name: 'Lokesh Cinematic Universe',
+    nameTe: 'లోకేష్ కనగరాజ్ సినిమాటిక్ యూనివర్స్',
+    count: '6 FILMS',
     grad: 'linear-gradient(135deg, rgba(6, 182, 212, 0.28) 0%, rgba(5, 10, 15, 0.95) 100%)',
     border: 'rgba(6, 182, 212, 0.45)',
     color: '#06B6D4',
@@ -190,7 +190,7 @@ export default function UniverseExplorer() {
             transition={{ delay: i * 0.04, duration: 0.4 }}
           >
             <Link
-              href={`/search?universe=${u.key}`}
+              href={`/universe/${u.key}`}
               className="block relative rounded-2xl overflow-hidden aspect-[4/3] sm:aspect-[16/10] cursor-pointer group border transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_15px_35px_rgba(0,0,0,0.6)]"
               style={{ background: u.grad, borderColor: 'rgba(255,255,255,0.06)' }}
             >

@@ -25,37 +25,45 @@ export default function HomePage() {
       <StatsBar />
 
       {/* Content sections — upgraded spacing rhythm */}
-      <div className="container-tv pt-10 pb-24 space-y-20 relative z-10">
+      <div className="container-tv pt-10 pb-24 space-y-14 relative z-10">
         <Suspense fallback={null}>
-          <div className="grid grid-cols-1 xl:grid-cols-[1fr_320px] gap-10">
-            <PopularSection />
-            <TrendingSection />
+          <div>
+            <div className="grid grid-cols-1 xl:grid-cols-[1fr_320px] gap-10">
+              <PopularSection />
+              <TrendingSection />
+            </div>
+            <div className="section-divider mt-14" />
           </div>
         </Suspense>
 
-        <div className="section-divider" />
+        <div>
+          <CategoriesGrid />
+          <div className="section-divider mt-14" />
+        </div>
 
-        <CategoriesGrid />
+        <div>
+          <AnimeSection />
+          <div className="section-divider mt-14" />
+        </div>
 
-        <div className="section-divider" />
+        <div>
+          <KDramaSection />
+          <div className="section-divider mt-14" />
+        </div>
 
-        <AnimeSection />
+        <div>
+          <UniverseExplorer />
+          <div className="section-divider mt-14" />
+        </div>
 
-        <div className="section-divider" />
+        <div>
+          <UpcomingSection />
+          <div className="section-divider mt-14" />
+        </div>
 
-        <KDramaSection />
-
-        <div className="section-divider" />
-
-        <UniverseExplorer />
-
-        <div className="section-divider" />
-
-        <UpcomingSection />
-
-        <div className="section-divider" />
-
-        <OttSection />
+        <div>
+          <OttSection />
+        </div>
       </div>
     </div>
   )

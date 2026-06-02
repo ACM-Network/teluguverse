@@ -33,7 +33,7 @@ export const useStore = create<AppState>()(
 
       setUser: (user) => set({ user }),
       setToken: (token) => set({ token }),
-      toggleLanguage: () => set((s) => ({ language: s.language === 'en' ? 'te' : 'en' })),
+      toggleLanguage: () => {},
       openSearch: () => set({ isSearchOpen: true }),
       closeSearch: () => set({ isSearchOpen: false }),
       toggleWatchlist: (id) => set((s) => ({
@@ -44,6 +44,6 @@ export const useStore = create<AppState>()(
       })),
       logout: () => set({ user: null, token: null }),
     }),
-    { name: 'teluguverse-store', partialize: (s) => ({ token: s.token, language: s.language, watchlist: s.watchlist, favorites: s.favorites }) }
+    { name: 'teluguverse-store', partialize: (s) => ({ token: s.token, watchlist: s.watchlist, favorites: s.favorites }) }
   )
 )

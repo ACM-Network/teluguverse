@@ -8,7 +8,8 @@ const files = [
   'prisma/data/movies.ts',
   'prisma/data/series.ts',
   'prisma/data/kdramas.ts',
-  'prisma/data/hollywood.ts'
+  'prisma/data/hollywood.ts',
+  'prisma/data/cartoons.ts'
 ];
 
 const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
@@ -45,7 +46,7 @@ function splitCamelCase(str) {
 }
 
 async function searchTMDB(title, type, year) {
-  const isTV = ['ANIME', 'SERIES', 'KDRAMA'].includes(type);
+  const isTV = ['ANIME', 'SERIES', 'KDRAMA', 'CARTOON'].includes(type);
   const searchType = isTV ? 'tv' : 'movie';
   
   let queries = [];
@@ -133,7 +134,6 @@ async function run() {
       const titleMatch = block.match(/en:\s*['"]([^'"]+)['"]/);
       const typeMatch = block.match(/type:\s*ContentType\.([A-Z_]+)/);
       const yearMatch = block.match(/year:\s*(\d+)/);
-      const posterMatch = block.match(/poster:\s*['"](https?:\/\/[^'"]+)['"]/);
       
       if (!titleMatch || !typeMatch) {
         continue;
@@ -142,6 +142,7 @@ async function run() {
       const title = titleMatch[1];
       const type = typeMatch[1];
       const year = yearMatch ? parseInt(yearMatch[1], 10) : null;
+      const posterMatch = block.match(/poster:\s*['"]([^'"]*)['"]/);
       const currentPoster = posterMatch ? posterMatch[1] : '';
       
       const isPlaceholder = currentPoster.includes('78909Y') || 
@@ -172,8 +173,8 @@ async function run() {
           console.log(`    Banner: ${newBanner}`);
           
           let updatedBlock = block;
-          updatedBlock = updatedBlock.replace(/(poster:\s*['"])(https?:\/\/[^'"]+)(['"])/, `$1${newPoster}$3`);
-          updatedBlock = updatedBlock.replace(/(banner:\s*['"])(https?:\/\/[^'"]+)(['"])/, `$1${newBanner}$3`);
+          updatedBlock = updatedBlock.replace(/(poster:\s*['"])([^'"]*)(['"])/, `$1${newPoster}$3`);
+          updatedBlock = updatedBlock.replace(/(banner:\s*['"])([^'"]*)(['"])/, `$1${newBanner}$3`);
           
           content = content.substring(0, current.index) + updatedBlock + content.substring(current.index + block.length);
         } else {

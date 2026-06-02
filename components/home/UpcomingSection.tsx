@@ -5,30 +5,50 @@ import { motion } from 'framer-motion'
 import SectionHeader from '@/components/ui/SectionHeader'
 import PremiumIcon from '@/components/ui/PremiumIcon'
 
-const MOCK_UPCOMING = [
-  { id: '1', title: 'Ramayana', titleTe: 'రామాయణం', days: 45, genre: 'Mythological', year: 2025, color: '#F59E0B', status: 'POST-PRODUCTION', logo: (color: string) => <span className="text-5xl filter drop-shadow-[0_4px_12px_rgba(245,158,11,0.25)] select-none">🏹</span> },
-  { id: '2', title: 'Coolie', titleTe: 'కూలీ', days: 23, genre: 'Action Thriller', year: 2025, color: '#DC2626', status: 'FILMING', logo: (color: string) => <span className="text-5xl filter drop-shadow-[0_4px_12px_rgba(220,38,38,0.25)] select-none">🕶️</span> },
-  { id: '3', title: 'Dragon Ball: DAIMA S2', titleTe: 'డ్రాగన్ బాల్ DAIMA', days: 180, genre: 'Anime', year: 2025, color: '#FF8C00', status: 'TEASER OUT', logo: (color: string) => <span className="text-5xl filter drop-shadow-[0_4px_12px_rgba(255,140,0,0.25)] select-none">🐉</span> },
-  { id: '4', title: 'House of the Dragon S3', titleTe: 'హౌస్ ఆఫ్ ది డ్రాగన్', days: 280, genre: 'Fantasy', year: 2026, color: '#3B82F6', status: 'PRE-PRODUCTION', logo: (color: string) => <span className="text-5xl filter drop-shadow-[0_4px_12px_rgba(59,130,246,0.25)] select-none">🏰</span> },
-  { id: '5', title: 'Hari Hara Veera Mallu', titleTe: 'హరి హర వీర మల్లు', days: 60, genre: 'Historical', year: 2025, color: '#F59E0B', status: 'FILMING', logo: (color: string) => <span className="text-5xl filter drop-shadow-[0_4px_12px_rgba(245,158,11,0.25)] select-none">⚔️</span> },
-  { id: '6', title: 'Kalki 2898 Part 2', titleTe: 'కల్కి 2898 పార్ట్ 2', days: 480, genre: 'Sci-Fi Epic', year: 2026, color: '#8B5CF6', status: 'ANNOUNCED', logo: (color: string) => <span className="text-5xl filter drop-shadow-[0_4px_12px_rgba(139,92,246,0.25)] select-none">🕉️</span> },
-  { id: '7', title: 'The Raja Saab', titleTe: 'ది రాజా సాబ్', days: 75, genre: 'Horror Comedy', year: 2025, color: '#8B5CF6', status: 'TEASER OUT', logo: (color: string) => <span className="text-5xl filter drop-shadow-[0_4px_12px_rgba(139,92,246,0.25)] select-none">🔮</span> },
-  { id: '8', title: 'Vishwambhara', titleTe: 'విశ్వంభర', days: 90, genre: 'Fantasy', year: 2025, color: '#06B6D4', status: 'POST-PRODUCTION', logo: (color: string) => <span className="text-5xl filter drop-shadow-[0_4px_12px_rgba(6,182,212,0.25)] select-none">☄️</span> },
-  { id: '9', title: 'They Call Him OG', titleTe: 'ఓజీ', days: 120, genre: 'Action', year: 2025, color: '#EF4444', status: 'FILMING', logo: (color: string) => <span className="text-5xl filter drop-shadow-[0_4px_12px_rgba(239,68,68,0.25)] select-none">🔫</span> },
-  { id: '10', title: 'Spirit', titleTe: 'స్పిరిట్', days: 380, genre: 'Crime Action', year: 2026, color: '#3B82F6', status: 'ANNOUNCED', logo: (color: string) => <span className="text-5xl filter drop-shadow-[0_4px_12px_rgba(59,130,246,0.25)] select-none">👮</span> },
-  { id: '11', title: 'Superman', titleTe: 'సూపర్‌మ్యాన్', days: 110, genre: 'Superhero', year: 2025, color: '#10B981', status: 'POST-PRODUCTION', logo: (color: string) => <span className="text-5xl filter drop-shadow-[0_4px_12px_rgba(16,185,129,0.25)] select-none">🦸</span> },
-  { id: '12', title: 'The Fantastic Four', titleTe: 'ఫెంటాస్టిక్ ఫోర్', days: 190, genre: 'Superhero', year: 2025, color: '#3B82F6', status: 'POST-PRODUCTION', logo: (color: string) => <span className="text-5xl filter drop-shadow-[0_4px_12px_rgba(59,130,246,0.25)] select-none">🚀</span> },
-  { id: '13', title: 'Avengers: Doomsday', days: 600, genre: 'Superhero', year: 2026, color: '#EF4444', status: 'ANNOUNCED', logo: (color: string) => <span className="text-5xl filter drop-shadow-[0_4px_12px_rgba(239,68,68,0.25)] select-none">💥</span> },
-  { id: '14', title: 'The Batman Part II', days: 640, genre: 'Crime Thriller', year: 2026, color: '#374151', status: 'PRE-PRODUCTION', logo: (color: string) => <span className="text-5xl filter drop-shadow-[0_4px_12px_rgba(55,65,81,0.25)] select-none">🦇</span> },
-  { id: '15', title: 'Avatar: Fire and Ash', days: 200, genre: 'Sci-Fi', year: 2025, color: '#F59E0B', status: 'FILMING', logo: (color: string) => <span className="text-5xl filter drop-shadow-[0_4px_12px_rgba(245,158,11,0.25)] select-none">🌋</span> },
-  { id: '16', title: 'Minecraft Movie', days: 85, genre: 'Adventure', year: 2025, color: '#22C55E', status: 'POST-PRODUCTION', logo: (color: string) => <span className="text-5xl filter drop-shadow-[0_4px_12px_rgba(34,197,94,0.25)] select-none">🧱</span> },
-  { id: '17', title: 'Squid Game S3', days: 220, genre: 'Thriller', year: 2025, color: '#EF4444', status: 'POST-PRODUCTION', logo: (color: string) => <span className="text-5xl filter drop-shadow-[0_4px_12px_rgba(239,68,68,0.25)] select-none">🦑</span> },
-  { id: '18', title: 'All of Us Are Dead S2', days: 260, genre: 'Horror', year: 2025, color: '#8B5CF6', status: 'FILMING', logo: (color: string) => <span className="text-5xl filter drop-shadow-[0_4px_12px_rgba(139,92,246,0.25)] select-none">🧟</span> },
-  { id: '19', title: 'Solo Leveling S2', days: 15, genre: 'Anime', year: 2025, color: '#06B6D4', status: 'TEASER OUT', logo: (color: string) => <span className="text-5xl filter drop-shadow-[0_4px_12px_rgba(6,182,212,0.25)] select-none">⚡</span> },
-  { id: '20', title: 'One Punch Man S3', days: 140, genre: 'Anime', year: 2025, color: '#FF8C00', status: 'FILMING', logo: (color: string) => <span className="text-5xl filter drop-shadow-[0_4px_12px_rgba(255,140,0,0.25)] select-none">👊</span> },
-  { id: '21', title: 'Stranger Things S5', days: 300, genre: 'Sci-Fi', year: 2025, color: '#EF4444', status: 'POST-PRODUCTION', logo: (color: string) => <span className="text-5xl filter drop-shadow-[0_4px_12px_rgba(239,68,68,0.25)] select-none">🕯️</span> },
-  { id: '22', title: 'Wednesday S2', days: 240, genre: 'Supernatural', year: 2025, color: '#374151', status: 'FILMING', logo: (color: string) => <span className="text-5xl filter drop-shadow-[0_4px_12px_rgba(55,65,81,0.25)] select-none">🕸️</span> }
-]
+const TYPE_COLORS: Record<string, string> = {
+  MOVIE: '#E50914',
+  ANIME: '#A855F7',
+  SERIES: '#3B82F6',
+  KDRAMA: '#EC4899',
+  CARTOON: '#22C55E',
+  HOLLYWOOD: '#F59E0B',
+  DOCUMENTARY: '#06B6D4',
+}
+
+function getUpcomingEmoji(title: string, genres: string[]): string {
+  const t = title.toLowerCase()
+  const g = genres.map(x => x.toLowerCase())
+  if (t.includes('ramayana') || t.includes('rama')) return '🏹'
+  if (t.includes('coolie') || t.includes('rajini')) return '🕶️'
+  if (t.includes('dragon ball') || t.includes('dbz') || t.includes('goku') || g.includes('anime')) return '🐉'
+  if (t.includes('house of the dragon') || t.includes('dragon')) return '🏰'
+  if (t.includes('mallu') || t.includes('veera')) return '⚔️'
+  if (t.includes('kalki')) return '🕉️'
+  if (t.includes('raja saab') || g.includes('horror')) return '🔮'
+  if (t.includes('vishwambhara') || g.includes('fantasy')) return '☄️'
+  if (t.includes('og') || g.includes('action')) return '🔫'
+  if (t.includes('spirit') || t.includes('police') || t.includes('cop')) return '👮'
+  if (
+    t.includes('superman') ||
+    t.includes('batman') ||
+    t.includes('avengers') ||
+    t.includes('marvel') ||
+    t.includes('spider') ||
+    g.includes('super-hero') ||
+    g.includes('superhero')
+  ) return '🦸'
+  if (t.includes('fantastic four') || t.includes('space')) return '🚀'
+  if (t.includes('doomsday') || t.includes('secret wars')) return '💥'
+  if (t.includes('avatar')) return '🌋'
+  if (t.includes('minecraft')) return '🧱'
+  if (t.includes('squid game')) return '🦑'
+  if (t.includes('dead') || t.includes('zombie')) return '🧟'
+  if (t.includes('solo leveling') || t.includes('leveling')) return '⚡'
+  if (t.includes('punch')) return '👊'
+  if (t.includes('stranger')) return '🕯️'
+  if (t.includes('wednesday')) return '🕸️'
+  return '🎬'
+}
 
 function CountdownUnit({ value, label, color }: { value: number; label: string; color: string }) {
   return (
@@ -45,7 +65,19 @@ function CountdownUnit({ value, label, color }: { value: number; label: string; 
 }
 
 export default function UpcomingSection() {
+  const [items, setItems] = useState<any[]>([])
+  const [loading, setLoading] = useState(true)
   const [time, setTime] = useState({ h: 12, m: 30, s: 0 })
+
+  useEffect(() => {
+    fetch('/api/content/upcoming?limit=12')
+      .then(r => r.json())
+      .then(d => {
+        setItems(Array.isArray(d) ? d : [])
+        setLoading(false)
+      })
+      .catch(() => setLoading(false))
+  }, [])
 
   useEffect(() => {
     const t = setInterval(() => {
@@ -58,6 +90,29 @@ export default function UpcomingSection() {
     return () => clearInterval(t)
   }, [])
 
+  if (loading) {
+    return (
+      <div className="relative">
+        <SectionHeader
+          title="Upcoming Releases"
+          titleTe="రాబోయే విడుదలలు"
+          href="/upcoming"
+          icon="upcoming"
+          description="Get real-time countdown clocks for the most anticipated movies and series"
+        />
+        <div className="cards-scroll gap-6">
+          {Array.from({ length: 4 }).map((_, i) => (
+            <div key={i} className="flex-none w-64 h-80 rounded-2xl bg-surface border border-white/5 shimmer" />
+          ))}
+        </div>
+      </div>
+    )
+  }
+
+  if (items.length === 0) {
+    return null
+  }
+
   return (
     <div className="relative">
       <SectionHeader
@@ -68,76 +123,88 @@ export default function UpcomingSection() {
         description="Get real-time countdown clocks for the most anticipated movies and series"
       />
       <div className="cards-scroll">
-        {MOCK_UPCOMING.map((item, i) => (
-          <motion.div
-            key={item.id}
-            initial={{ opacity: 0, y: 15 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: i * 0.05, duration: 0.4 }}
-            className="flex-none w-64 rounded-2xl overflow-hidden bg-surface border border-white/5 hover:border-yellow-400/30 hover:-translate-y-1.5 transition-all duration-300 cursor-pointer group shadow-[0_8px_30px_rgba(0,0,0,0.4)] flex flex-col"
-          >
-            {/* Upper Card Art Block */}
-            <div
-              className="h-44 flex items-center justify-center relative overflow-hidden flex-none"
-              style={{ background: `linear-gradient(135deg, ${item.color}20 0%, ${item.color}02 100%)` }}
+        {items.map((item, i) => {
+          const color = TYPE_COLORS[item.type] || '#FFD700'
+          const releaseDateVal = item.releaseDate ? new Date(item.releaseDate) : new Date()
+          const diffMs = releaseDateVal.getTime() - new Date().getTime()
+          const daysLeft = Math.max(0, Math.ceil(diffMs / (1000 * 60 * 60 * 24)))
+          const genreSlugs = item.genres?.map((g: any) => g.genre?.slug || '') || []
+          const primaryGenre = item.genres?.[0]?.genre?.name || 'Entertainment'
+          const emoji = getUpcomingEmoji(item.titleEnglish, genreSlugs)
+
+          return (
+            <motion.div
+              key={item.id}
+              initial={{ opacity: 0, y: 15 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: i * 0.05, duration: 0.4 }}
+              className="flex-none w-64 rounded-2xl overflow-hidden bg-surface border border-white/5 hover:border-yellow-400/30 hover:-translate-y-1.5 transition-all duration-300 cursor-pointer group shadow-[0_8px_30px_rgba(0,0,0,0.4)] flex flex-col"
             >
-              {/* Star grid overlay pattern */}
-              <div className="absolute inset-0 opacity-10 bg-[radial-gradient(rgba(255,255,255,0.15)_1px,transparent_1px)] [background-size:16px_16px] pointer-events-none" />
+              {/* Upper Card Art Block */}
+              <div
+                className="h-44 flex items-center justify-center relative overflow-hidden flex-none"
+                style={{ background: `linear-gradient(135deg, ${color}20 0%, ${color}02 100%)` }}
+              >
+                {/* Star grid overlay pattern */}
+                <div className="absolute inset-0 opacity-10 bg-[radial-gradient(rgba(255,255,255,0.15)_1px,transparent_1px)] [background-size:16px_16px] pointer-events-none" />
 
-              {/* Glowing aura behind vector logo */}
-              <div 
-                className="absolute w-24 h-24 rounded-full blur-2xl opacity-20 pointer-events-none transition-transform duration-500 group-hover:scale-125"
-                style={{ background: item.color }}
-              />
+                {/* Glowing aura behind vector logo */}
+                <div 
+                  className="absolute w-24 h-24 rounded-full blur-2xl opacity-20 pointer-events-none transition-transform duration-500 group-hover:scale-125"
+                  style={{ background: color }}
+                />
 
-              {/* Floating artwork */}
-              <div className="z-10 relative">{item.logo(item.color)}</div>
+                {/* Floating artwork */}
+                <div className="z-10 relative text-5xl filter drop-shadow-[0_4px_12px_rgba(255,255,255,0.15)] select-none">
+                  {emoji}
+                </div>
 
-              {/* Status Pill (absolute top-3 left-3) */}
-              <div className="absolute top-3 left-3 z-20">
-                <span 
-                  className="bg-black/80 border border-white/10 px-2.5 py-0.5 rounded-lg text-[8px] font-black font-rajdhani tracking-widest uppercase flex items-center gap-1.5"
-                  style={{ color: item.color }}
-                >
-                  <span className="w-1.5 h-1.5 rounded-full bg-current animate-pulse" />
-                  {item.status}
-                </span>
+                {/* Status Pill (absolute top-3 left-3) */}
+                <div className="absolute top-3 left-3 z-20">
+                  <span 
+                    className="bg-black/80 border border-white/10 px-2.5 py-0.5 rounded-lg text-[8px] font-black font-rajdhani tracking-widest uppercase flex items-center gap-1.5"
+                    style={{ color }}
+                  >
+                    <span className="w-1.5 h-1.5 rounded-full bg-current animate-pulse" />
+                    {item.status}
+                  </span>
+                </div>
+
+                {/* Glassmorphism Countdown Timer Panel */}
+                <div className="absolute bottom-3 left-3 right-3 bg-black/70 backdrop-blur-md border border-white/10 rounded-2xl py-2.5 px-3 flex justify-between gap-1 z-20 shadow-lg">
+                  <CountdownUnit value={daysLeft} label="Days" color={color} />
+                  <div className="w-px h-6 bg-white/10 self-center" />
+                  <CountdownUnit value={time.h} label="Hrs" color={color} />
+                  <div className="w-px h-6 bg-white/10 self-center" />
+                  <CountdownUnit value={time.m} label="Min" color={color} />
+                  <div className="w-px h-6 bg-white/10 self-center" />
+                  <CountdownUnit value={time.s} label="Sec" color={color} />
+                </div>
               </div>
 
-              {/* Glassmorphism Countdown Timer Panel */}
-              <div className="absolute bottom-3 left-3 right-3 bg-black/70 backdrop-blur-md border border-white/10 rounded-2xl py-2.5 px-3 flex justify-between gap-1 z-20 shadow-lg">
-                <CountdownUnit value={item.days} label="Days" color={item.color} />
-                <div className="w-px h-6 bg-white/10 self-center" />
-                <CountdownUnit value={time.h} label="Hrs" color={item.color} />
-                <div className="w-px h-6 bg-white/10 self-center" />
-                <CountdownUnit value={time.m} label="Min" color={item.color} />
-                <div className="w-px h-6 bg-white/10 self-center" />
-                <CountdownUnit value={time.s} label="Sec" color={item.color} />
+              {/* Lower Details Block */}
+              <div className="p-5 flex-1 flex flex-col justify-between space-y-3">
+                <div className="space-y-1">
+                  <p className="text-white text-base font-bold font-rajdhani tracking-wide truncate group-hover:text-yellow-400 transition-colors duration-300">
+                    {item.titleEnglish}
+                  </p>
+                  <p className="font-telugu text-gray-500 text-xs truncate leading-none">
+                    {item.titleTelugu || ''}
+                  </p>
+                </div>
+                <div className="flex items-center justify-between pt-3 border-t border-white/5 mt-auto">
+                  <span className="text-[10px] font-bold text-gray-400 font-rajdhani uppercase tracking-wider">
+                    {primaryGenre} • {item.year}
+                  </span>
+                  <span className="text-[9px] font-black font-rajdhani text-yellow-400/80 uppercase tracking-widest flex items-center gap-1 hover:text-yellow-400 transition-colors">
+                    NOTIFY ME <PremiumIcon name="arrow-right" size={10} className="stroke-[2.5]" />
+                  </span>
+                </div>
               </div>
-            </div>
-
-            {/* Lower Details Block */}
-            <div className="p-5 flex-1 flex flex-col justify-between space-y-3">
-              <div className="space-y-1">
-                <p className="text-white text-base font-bold font-rajdhani tracking-wide truncate group-hover:text-yellow-400 transition-colors duration-300">
-                  {item.title}
-                </p>
-                <p className="font-telugu text-gray-500 text-xs truncate leading-none">
-                  {item.titleTe}
-                </p>
-              </div>
-              <div className="flex items-center justify-between pt-3 border-t border-white/5 mt-auto">
-                <span className="text-[10px] font-bold text-gray-400 font-rajdhani uppercase tracking-wider">
-                  {item.genre} • {item.year}
-                </span>
-                <span className="text-[9px] font-black font-rajdhani text-yellow-400/80 uppercase tracking-widest flex items-center gap-1 hover:text-yellow-400 transition-colors">
-                  NOTIFY ME <PremiumIcon name="arrow-right" size={10} className="stroke-[2.5]" />
-                </span>
-              </div>
-            </div>
-          </motion.div>
-        ))}
+            </motion.div>
+          );
+        })}
       </div>
     </div>
   )

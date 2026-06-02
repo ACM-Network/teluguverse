@@ -1,6 +1,8 @@
 'use client'
 import { movies } from '@/prisma/data/movies'
 import { animes } from '@/prisma/data/animes'
+import { series } from '@/prisma/data/series'
+import { hollywood } from '@/prisma/data/hollywood'
 import { useState, useEffect, useRef, useCallback } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import Link from 'next/link'
@@ -10,14 +12,57 @@ import { PLACEHOLDER_BACKDROP } from '@/lib/utils'
 const OTT_COLORS: Record<string, string> = {
   Netflix: '#E50914',
   Hotstar: '#1B74E4',
-  'Amazon Prime': '#00A8E0',
+  'Prime Video': '#00A8E0',
   Crunchyroll: '#F47521',
   Viki: '#1DA462',
   ZEE5: '#7B2FBE',
+  SonyLIV: '#F97316',
+  aha: '#FF5000',
+  'Sun NXT': '#EF4444',
+  'ETV Win': '#EAB308',
+}
+
+const OTT_DISPLAY_NAMES: Record<string, string> = {
+  NETFLIX: 'Netflix',
+  AMAZON_PRIME: 'Prime Video',
+  PRIME_VIDEO: 'Prime Video',
+  JIO_HOTSTAR: 'JioHotstar',
+  HOTSTAR: 'Hotstar',
+  ZEE5: 'ZEE5',
+  SONY_LIV: 'SonyLIV',
+  CRUNCHYROLL: 'Crunchyroll',
+  AHA: 'aha',
+  SUN_NXT: 'Sun NXT',
+  ETV_WIN: 'ETV Win',
+}
+
+function getHeroBadge(item: any) {
+  const isTrendingBacked = (item.popularityScore && item.popularityScore >= 95) || (item.trendingScore && item.trendingScore >= 95)
+  if (isTrendingBacked) {
+    return { en: 'Trending', te: 'ట్రెండింగ్' }
+  }
+  if (item.isFeatured) {
+    return { en: 'Featured', te: 'ఫీచర్డ్' }
+  }
+  if (item.imdbRating && item.imdbRating >= 8.2) {
+    return { en: "Editor's Pick", te: "ఎడిటర్స్ ఛాయిస్" }
+  }
+  return { en: 'Recommended', te: 'సిఫార్సు చేయబడింది' }
 }
 
 /* ─── Main component ─────────────────────────────────────────────── */
-const CONTENT = [...movies, ...animes]
+const ALL_CONTENT = [...movies, ...animes, ...series, ...hollywood]
+const FLAGSHIP_SLUGS = [
+  'rrr',
+  'baahubali-2-the-conclusion',
+  'kalki-2898-ad',
+  'pushpa-the-rule',
+  'avengers-endgame',
+  'spider-man-no-way-home',
+  'loki',
+  'one-piece'
+]
+const CONTENT = FLAGSHIP_SLUGS.map(slug => ALL_CONTENT.find(item => item.slug === slug)).filter(Boolean) as any[]
 
 const SLIDES = CONTENT.map((item, index) => ({
   id: String(index + 1),
@@ -58,15 +103,14 @@ const SLIDES = CONTENT.map((item, index) => ({
         : 'సినిమా',
   },
 
-  badge: {
-    en: item.isTrending ? 'Trending' : 'Featured',
+  badge: getHeroBadge(item),
 
-    te: item.isTrending
-      ? 'ట్రెండింగ్'
-      : 'ఫీచర్డ్',
-  },
-
-  ott: ['Netflix'],
+  ott: item.ottPlatforms 
+    ? item.ottPlatforms.map((o: any) => {
+        const plat = typeof o === 'string' ? o : o.platform
+        return OTT_DISPLAY_NAMES[plat] || plat
+      })
+    : ['Netflix'],
 
   dubAvail: item.teluguDubAvail ?? false,
 
@@ -85,6 +129,8 @@ const SLIDES = CONTENT.map((item, index) => ({
 
     bgPosition: 'center center',
   },
+
+  rawPoster: item.poster,
 }))
 
 const SLIDE_DURATION = 7000
@@ -101,12 +147,19 @@ export default function HeroSection() {
 
   useEffect(() => {
     if (typeof window === 'undefined') return
-    const img = new window.Image()
-    img.src = slide.visual.poster
-    img.onerror = () => {
-      setFailedBgs(prev => ({ ...prev, [slide.id]: true }))
+    // Desktop preloader
+    const imgDesk = new window.Image()
+    imgDesk.src = slide.visual.poster
+    imgDesk.onerror = () => {
+      setFailedBgs(prev => ({ ...prev, [slide.id + '-desk']: true }))
     }
-  }, [slide.id, slide.visual.poster])
+    // Mobile preloader
+    const imgMob = new window.Image()
+    imgMob.src = slide.rawPoster || slide.visual.poster
+    imgMob.onerror = () => {
+      setFailedBgs(prev => ({ ...prev, [slide.id + '-mob']: true }))
+    }
+  }, [slide.id, slide.visual.poster, slide.rawPoster])
 
   const isTelugu = language === 'te'
 
@@ -180,17 +233,38 @@ export default function HeroSection() {
       {/* ══════════════════════════════════════════════
           LAYER 1 — Full-bleed cinematic background
       ══════════════════════════════════════════════ */}
+      {/* Mobile background (portrait poster) - hidden on md and up */}
       <AnimatePresence mode="sync" custom={direction}>
         <motion.div
-          key={`bg-${slide.id}`}
+          key={`bg-mobile-${slide.id}`}
           custom={direction}
           variants={bgVariants}
           initial="enter"
           animate="center"
           exit="exit"
-          className="absolute inset-0"
+          className="absolute inset-0 md:hidden"
           style={{
-            backgroundImage: `url(${failedBgs[slide.id] ? PLACEHOLDER_BACKDROP : slide.visual.poster})`,
+            backgroundImage: `url(${failedBgs[slide.id + '-mob'] ? PLACEHOLDER_BACKDROP : (slide.rawPoster || slide.visual.poster)})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'top center',
+            backgroundRepeat: 'no-repeat',
+            willChange: 'transform, opacity',
+          }}
+        />
+      </AnimatePresence>
+
+      {/* Desktop background (wide banner) - hidden below md */}
+      <AnimatePresence mode="sync" custom={direction}>
+        <motion.div
+          key={`bg-desktop-${slide.id}`}
+          custom={direction}
+          variants={bgVariants}
+          initial="enter"
+          animate="center"
+          exit="exit"
+          className="absolute inset-0 hidden md:block"
+          style={{
+            backgroundImage: `url(${failedBgs[slide.id + '-desk'] ? PLACEHOLDER_BACKDROP : slide.visual.poster})`,
             backgroundSize: 'cover',
             backgroundPosition: slide.visual.bgPosition,
             backgroundRepeat: 'no-repeat',
@@ -401,7 +475,7 @@ export default function HeroSection() {
                   transition={{ delay: 0.32 }}
                   className="flex items-center gap-2 mb-5 flex-wrap"
                 >
-                  {slide.genres.map((g, i) => (
+                  {slide.genres.map((g: string, i: number) => (
                     <span
                       key={g}
                       className="px-3 py-1 rounded-full text-[11px] font-bold font-rajdhani tracking-wide border"
@@ -440,7 +514,7 @@ export default function HeroSection() {
                   <span className="text-gray-600 text-[11px] font-semibold font-rajdhani uppercase tracking-widest">
                     {isTelugu ? 'ఓటీటీలో' : 'Watch on'}
                   </span>
-                  {slide.ott.map(platform => (
+                  {slide.ott.map((platform: string) => (
                     <span
                       key={platform}
                       className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-[11px] font-bold font-rajdhani border"
@@ -475,10 +549,11 @@ export default function HeroSection() {
                       boxShadow: '0 8px 32px rgba(229,9,20,0.45), 0 2px 8px rgba(0,0,0,0.6)',
                     }}
                   >
+                    {/* Watch Trailer */}
                     <svg className="w-4 h-4 fill-white flex-none" viewBox="0 0 24 24">
-                      <path d="M8 5v14l11-7z" />
+                      <polygon points="10 8 16 12 10 16" fill="currentColor" />
                     </svg>
-                    {isTelugu ? 'ఇప్పుడే చూడండి' : 'Watch Now'}
+                    {isTelugu ? 'ట్రైలర్ చూడండి' : 'Watch Trailer'}
                     <div
                       className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
                       style={{

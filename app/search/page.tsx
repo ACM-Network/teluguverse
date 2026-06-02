@@ -12,9 +12,28 @@ import PremiumIcon from '@/components/ui/PremiumIcon'
 const TYPES = ['','MOVIE','ANIME','SERIES','KDRAMA','CARTOON','HOLLYWOOD','DOCUMENTARY']
 const SORTS = [{ v:'trending',l:'Trending' },{ v:'rating',l:'Top Rated' },{ v:'newest',l:'Newest' },{ v:'popular',l:'Most Popular' },{ v:'az',l:'A-Z' }]
 const YEARS = ['',2024,2023,2022,2021,2020,2019,2018,2017,2016,2015,2010,2005,2000]
-const LANGS = ['','Telugu','Hindi','Tamil','Japanese','Korean','English']
-const OTTS = ['','NETFLIX','AMAZON_PRIME','HOTSTAR','ZEE5','SONY_LIV','CRUNCHYROLL','VIKI']
+const OTTS = ['', 'NETFLIX', 'AMAZON_PRIME', 'HOTSTAR', 'ZEE5', 'SONY_LIV', 'CRUNCHYROLL', 'VIKI', 'YOUTUBE', 'DISNEY_CHANNEL', 'HUNGAMA_TV', 'CARTOON_NETWORK', 'POGO', 'SONIC', 'NICK', 'SONY_YAY', 'ETV_BAL_BHARAT']
 const RATINGS = ['','9','8','7','6']
+
+const PLATFORM_LABELS: Record<string, string> = {
+  '': 'Any Platform',
+  'NETFLIX': 'Netflix',
+  'AMAZON_PRIME': 'Prime Video',
+  'HOTSTAR': 'Hotstar',
+  'ZEE5': 'ZEE5',
+  'SONY_LIV': 'SonyLIV',
+  'CRUNCHYROLL': 'Crunchyroll',
+  'VIKI': 'Viki',
+  'YOUTUBE': 'YouTube',
+  'DISNEY_CHANNEL': 'Disney Channel',
+  'HUNGAMA_TV': 'Hungama TV',
+  'CARTOON_NETWORK': 'Cartoon Network',
+  'POGO': 'Pogo',
+  'SONIC': 'Sonic',
+  'NICK': 'Nick',
+  'SONY_YAY': 'Sony YAY!',
+  'ETV_BAL_BHARAT': 'ETV Bal Bharat'
+}
 
 export default function SearchPage() {
   const searchParams = useSearchParams()
@@ -24,7 +43,6 @@ export default function SearchPage() {
   const [type, setType] = useState(searchParams.get('type') || '')
   const [sort, setSort] = useState(searchParams.get('sort') || 'trending')
   const [year, setYear] = useState(searchParams.get('year') || '')
-  const [language, setLanguage] = useState(searchParams.get('language') || '')
   const [ott, setOtt] = useState(searchParams.get('ott') || '')
   const [rating, setRating] = useState(searchParams.get('rating') || '')
   const [dubOnly, setDubOnly] = useState(searchParams.get('dubAvail') === 'true')
@@ -44,7 +62,6 @@ export default function SearchPage() {
     if (type) p.set('type', type)
     if (sort) p.set('sort', sort)
     if (year) p.set('year', year)
-    if (language) p.set('language', language)
     if (ott) p.set('ott', ott)
     if (rating) p.set('rating', rating)
     if (dubOnly) p.set('dubAvail', 'true')
@@ -52,12 +69,12 @@ export default function SearchPage() {
     p.set('page', String(page))
     p.set('limit', '24')
     return p.toString()
-  }, [debouncedQuery, type, sort, year, language, ott, rating, dubOnly, universe, page])
+  }, [debouncedQuery, type, sort, year, ott, rating, dubOnly, universe, page])
 
   useEffect(() => {
     setLoading(true)
     setPage(1)
-  }, [debouncedQuery, type, sort, year, language, ott, rating, dubOnly, universe])
+  }, [debouncedQuery, type, sort, year, ott, rating, dubOnly, universe])
 
   useEffect(() => {
     const qs = buildQuery()
@@ -68,10 +85,14 @@ export default function SearchPage() {
       .catch(() => setLoading(false))
   }, [buildQuery])
 
-  const FilterSelect = ({ label, value, onChange, options }: any) => (
+  const FilterSelect = ({ label, value, onChange, options, displayMap }: any) => (
     <select value={value} onChange={e => onChange(e.target.value)}
       className="bg-surface border border-border rounded-lg px-3 py-2 text-sm font-rajdhani font-semibold text-gray-300 focus:border-yellow-400/50 outline-none transition-all hover:border-yellow-400/30">
-      {options.map((o: any) => <option key={String(o)} value={String(o)}>{o || label}</option>)}
+      {options.map((o: any) => (
+        <option key={String(o)} value={String(o)}>
+          {displayMap ? displayMap[String(o)] || o || label : o || label}
+        </option>
+      ))}
     </select>
   )
 
@@ -103,8 +124,7 @@ export default function SearchPage() {
             <FilterSelect label="All Types" value={type} onChange={setType} options={TYPES.map(t => t || 'All Types')} />
             <FilterSelect label="Sort By" value={sort} onChange={setSort} options={SORTS.map(s => s.l)} />
             <FilterSelect label="Year" value={year} onChange={setYear} options={YEARS.map(y => y || 'Any Year')} />
-            <FilterSelect label="Language" value={language} onChange={setLanguage} options={LANGS.map(l => l || 'Any Language')} />
-            <FilterSelect label="OTT Platform" value={ott} onChange={setOtt} options={OTTS.map(o => o || 'Any OTT')} />
+            <FilterSelect label="Availability" value={ott} onChange={setOtt} options={OTTS} displayMap={PLATFORM_LABELS} />
             <FilterSelect label="Min Rating" value={rating} onChange={setRating} options={RATINGS.map(r => r ? `${r}+ ★` : 'Any Rating')} />
           </div>
           <label className="flex items-center gap-2 cursor-pointer select-none ml-auto">
@@ -164,7 +184,7 @@ export default function SearchPage() {
               <PremiumIcon name="search" size={56} className="mb-4 text-yellow-500/50" />
               <p className="text-white font-cinzel text-xl font-bold mb-2">No results found</p>
               <p className="font-telugu text-gray-500">ఫలితాలు కనుగొనబడలేదు</p>
-              <button onClick={() => { setQuery(''); setType(''); setYear(''); setLanguage(''); setOtt(''); setRating(''); setDubOnly(false); setUniverse(''); }}
+              <button onClick={() => { setQuery(''); setType(''); setYear(''); setOtt(''); setRating(''); setDubOnly(false); setUniverse(''); }}
                 className="mt-6 px-6 py-3 rounded-xl bg-yellow-500/15 border border-yellow-500/30 text-yellow-400 font-bold font-rajdhani text-sm hover:bg-yellow-500/25 transition-all">
                 Clear All Filters
               </button>

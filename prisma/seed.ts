@@ -6,6 +6,7 @@ import { animes } from './data/animes'
 import { series } from './data/series'
 import { kdramas } from './data/kdramas'
 import { hollywood } from './data/hollywood'
+import { cartoons } from './data/cartoons'
 
 const prisma = new PrismaClient()
 
@@ -62,10 +63,10 @@ async function main() {
       color: '#00A8E0',
     },
     {
-      id: 'rajamouli',
-      name: 'Rajamouli Universe',
-      nameTe: 'రాజమౌళి యూనివర్స్',
-      description: 'Cinematic masterpieces from the visionary director S.S. Rajamouli.',
+      id: 'baahubali',
+      name: 'Baahubali Universe',
+      nameTe: 'బాహుబలి విశ్వం',
+      description: 'The grand and legendary kingdom of Mahishmati and its epic stories.',
       color: '#F59E0B',
     },
     {
@@ -90,10 +91,10 @@ async function main() {
       color: '#FF8C00',
     },
     {
-      id: 'telugu',
-      name: 'Telugu Cinematic Universe',
-      nameTe: 'తెలుగు సినిమా',
-      description: 'The vibrant and larger-than-life world of Telugu cinema.',
+      id: 'lcu',
+      name: 'Lokesh Cinematic Universe (LCU)',
+      nameTe: 'లోకేష్ కనగరాజ్ సినిమాటిక్ యూనివర్స్',
+      description: 'The gritty and high-octane drug cartel action universe created by Lokesh Kanagaraj.',
       color: '#06B6D4',
     }
   ]
@@ -121,6 +122,7 @@ async function main() {
     ...series,
     ...kdramas,
     ...hollywood,
+    ...cartoons,
   ]
 
   console.log(`⏳ Seeding ${contents.length} content items...`)
@@ -200,7 +202,10 @@ async function main() {
 
     // Dynamic Seeding: OTT platforms / streaming links
     if (content.ottPlatforms) {
-      for (const platform of content.ottPlatforms) {
+      for (const platformItem of content.ottPlatforms) {
+        const platform = typeof platformItem === 'string' ? platformItem : platformItem.platform
+        const url = typeof platformItem === 'string' ? null : platformItem.url
+
         await prisma.streamingLink.upsert({
           where: {
             contentId_platform: {
@@ -211,6 +216,7 @@ async function main() {
           update: {
             isTeluguDub: content.teluguDubAvail || false,
             isAvailable: true,
+            url: url || null,
           },
           create: {
             contentId: dbContent.id,
@@ -218,6 +224,7 @@ async function main() {
             isAvailable: true,
             isTeluguDub: content.teluguDubAvail || false,
             isPremium: true,
+            url: url || null,
           },
         })
       }

@@ -114,8 +114,8 @@ async function run() {
           console.log(`    Banner: ${newBanner}`);
           
           let updatedBlock = block;
-          updatedBlock = updatedBlock.replace(/(poster:\s*['"])(https?:\/\/[^'"]+)(['"])/, `$1${newPoster}$3`);
-          updatedBlock = updatedBlock.replace(/(banner:\s*['"])(https?:\/\/[^'"]+)(['"])/, `$1${newBanner}$3`);
+          updatedBlock = updatedBlock.replace(/(poster:\s*['"])([^'"]*)(['"])/, `$1${newPoster}$3`);
+          updatedBlock = updatedBlock.replace(/(banner:\s*['"])([^'"]*)(['"])/, `$1${newBanner}$3`);
           
           content = content.substring(0, current.index) + updatedBlock + content.substring(current.index + block.length);
         } else {

@@ -166,18 +166,39 @@ export default function ContentDetailPage({ content, similar = [] }: Props) {
       
       {/* HERO BANNER - CINEMATIC & PREMIUM BG BLENDING */}
       <div className="relative h-[45vh] md:h-[60vh] min-h-[350px] overflow-hidden">
-        {backdropSrc ? (
-          <Image
-            src={backdropSrc}
-            alt={content.titleEnglish}
-            fill
-            priority
-            className="object-cover scale-105"
-            sizes="100vw"
-            unoptimized
-            onError={() => setBackdropSrc(PLACEHOLDER_BACKDROP)}
-          />
-        ) : (
+        {/* Desktop Banner: hidden below md */}
+        {backdropSrc && (
+          <div className="hidden md:block absolute inset-0 w-full h-full">
+            <Image
+              src={backdropSrc}
+              alt={content.titleEnglish}
+              fill
+              priority
+              className="object-cover scale-105"
+              sizes="100vw"
+              unoptimized
+              onError={() => setBackdropSrc(PLACEHOLDER_BACKDROP)}
+            />
+          </div>
+        )}
+        
+        {/* Mobile Banner: hidden on md and up */}
+        {posterSrc && (
+          <div className="block md:hidden absolute inset-0 w-full h-full">
+            <Image
+              src={posterSrc}
+              alt={content.titleEnglish}
+              fill
+              priority
+              className="object-cover scale-105 object-top"
+              sizes="100vw"
+              unoptimized
+              onError={() => setPosterSrc(PLACEHOLDER_POSTER)}
+            />
+          </div>
+        )}
+
+        {!backdropSrc && !posterSrc && (
           <div
             className="absolute inset-0 flex items-center justify-center"
             style={{ background: `radial-gradient(ellipse at center, ${color}15 0%, #070810 80%)` }}
@@ -279,24 +300,13 @@ export default function ContentDetailPage({ content, similar = [] }: Props) {
             {/* Lang Details on Desktop Column */}
             <div className="mt-5">
               <p className="text-gray-500 text-[10px] font-bold font-rajdhani tracking-widest uppercase mb-2">
-                Availability
+                Telugu Availability
               </p>
-              <div className="flex flex-col gap-1.5">
-                <div className="flex justify-between text-xs py-1.5 border-b border-white/5">
-                  <span className="text-gray-400">Language</span>
-                  <span className="text-white font-semibold">{content.language}</span>
-                </div>
-                {content.teluguDubAvail && (
-                  <div className="flex justify-between text-xs py-1.5 border-b border-white/5 text-yellow-400 font-medium">
-                    <span>Telugu Dub</span>
-                    <span>✓ Yes</span>
-                  </div>
-                )}
-                {content.teluguSubAvail && (
-                  <div className="flex justify-between text-xs py-1.5 border-b border-white/5 text-cyan-400 font-medium">
-                    <span>Telugu Subs</span>
-                    <span>✓ Yes</span>
-                  </div>
+              <div className="text-xs font-semibold py-1.5 border-b border-white/5">
+                {content.teluguDubAvail ? (
+                  <span className="text-yellow-400">✓ Telugu Dub Available</span>
+                ) : (
+                  <span className="text-red-400">✗ Telugu Dub Not Available</span>
                 )}
               </div>
             </div>
@@ -503,50 +513,79 @@ export default function ContentDetailPage({ content, similar = [] }: Props) {
               </div>
               <div>
                 <p className="text-gray-500 text-[9px] font-bold font-rajdhani tracking-widest uppercase mb-1">
-                  Languages Available
+                  Telugu Availability
                 </p>
-                <div className="flex flex-wrap gap-1.5">
-                  <span className="px-2 py-0.5 rounded-md border border-pink-500/20 bg-pink-500/5 text-pink-300 text-xs font-semibold flex items-center gap-1.5">
-                    <PremiumIcon name="globe" size={11} /> {content.language}
-                  </span>
-                  {content.teluguDubAvail && (
-                    <span className="px-2 py-0.5 rounded-md border border-yellow-500/20 bg-yellow-500/5 text-yellow-400 text-xs font-semibold font-telugu">
-                      Telugu Dub
+                <div className="flex flex-wrap gap-1.5 mt-1">
+                  {content.teluguDubAvail ? (
+                    <span className="px-2.5 py-1 rounded-md border border-yellow-500/20 bg-yellow-500/5 text-yellow-400 text-xs font-semibold">
+                      Telugu Dub Available
                     </span>
-                  )}
-                  {content.teluguSubAvail && (
-                    <span className="px-2 py-0.5 rounded-md border border-cyan-500/20 bg-cyan-500/5 text-cyan-400 text-xs font-semibold font-telugu">
-                      Telugu Subs
+                  ) : (
+                    <span className="px-2.5 py-1 rounded-md border border-red-500/20 bg-red-500/5 text-red-400 text-xs font-semibold">
+                      Telugu Dub Not Available
                     </span>
                   )}
                 </div>
               </div>
             </div>
 
-            {/* OTT AVAILABILITY SECTION - w-fit to shrinkwrap content and remove large empty space */}
-            {content.streamingLinks && content.streamingLinks.length > 0 && (
-              <div className="mb-5 p-3.5 bg-surface/25 border border-white/5 rounded-2xl backdrop-blur-md shadow-lg w-fit max-w-full">
-                <p className="text-gray-400 text-[9px] font-bold font-rajdhani tracking-widest uppercase mb-2 flex items-center gap-1.5">
-                  <span className="w-1.5 h-2.5 bg-yellow-400 rounded-full" />
-                  Where to Watch / స్ట్రీమింగ్
-                </p>
-                <div className="flex flex-wrap gap-2">
-                  {content.streamingLinks
-                    .filter((link) => link.isAvailable)
-                    .map((link) => (
-                      <div key={link.id} className="flex-none">
-                        <OttBadge
-                          platform={link.platform}
-                          isTeluguDub={link.isTeluguDub || content.teluguDubAvail}
-                          isTeluguSub={content.teluguSubAvail}
-                          url={link.url}
-                          isPremium={link.isPremium}
-                        />
+            {/* OTT / TV AVAILABILITY SECTION - w-fit to shrinkwrap content and remove large empty space */}
+            {content.streamingLinks && content.streamingLinks.length > 0 && (() => {
+              const allAvailable = content.streamingLinks.filter((link) => link.isAvailable);
+              const tvChannels = ['DISNEY_CHANNEL', 'HUNGAMA_TV', 'CARTOON_NETWORK', 'POGO', 'SONIC', 'NICK', 'SONY_YAY', 'ETV_BAL_BHARAT'];
+              const ottLinks = allAvailable.filter(link => !tvChannels.includes(link.platform.toUpperCase()));
+              const tvLinks = allAvailable.filter(link => tvChannels.includes(link.platform.toUpperCase()));
+
+              if (allAvailable.length === 0) return null;
+
+              return (
+                <div className="mb-5 p-4 bg-surface/25 border border-white/5 rounded-2xl backdrop-blur-md shadow-lg w-fit max-w-full flex flex-col gap-4">
+                  {ottLinks.length > 0 && (
+                    <div>
+                      <p className="text-gray-400 text-[10px] font-bold font-rajdhani tracking-widest uppercase mb-2 flex items-center gap-1.5">
+                        <span className="w-1.5 h-2.5 bg-yellow-400 rounded-full" />
+                        Available On / స్ట్రీమింగ్
+                      </p>
+                      <div className="flex flex-wrap gap-2">
+                        {ottLinks.map((link) => (
+                          <div key={link.id} className="flex-none">
+                            <OttBadge
+                              platform={link.platform}
+                              isTeluguDub={link.isTeluguDub || content.teluguDubAvail}
+                              isTeluguSub={content.teluguSubAvail}
+                              url={link.url}
+                              isPremium={link.isPremium}
+                            />
+                          </div>
+                        ))}
                       </div>
-                    ))}
+                    </div>
+                  )}
+
+                  {tvLinks.length > 0 && (
+                    <div>
+                      <p className="text-gray-400 text-[10px] font-bold font-rajdhani tracking-widest uppercase mb-2 flex items-center gap-1.5">
+                        <span className="w-1.5 h-2.5 bg-purple-500 rounded-full animate-pulse" />
+                        Airs On TV / టీవీ ప్రసారాలు
+                      </p>
+                      <div className="flex flex-wrap gap-2">
+                        {tvLinks.map((link) => (
+                          <div key={link.id} className="flex-none">
+                            <OttBadge
+                              platform={link.platform}
+                              isTeluguDub={link.isTeluguDub || content.teluguDubAvail}
+                              isTeluguSub={content.teluguSubAvail}
+                              url={link.url}
+                              isPremium={link.isPremium}
+                            />
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
                 </div>
-              </div>
-            )}
+              );
+            })()}
 
             {/* REDESIGNED PREMIUM CAPSULE NAVIGATION TABS */}
             <div className="bg-dark-3/40 border border-white/5 rounded-2xl p-1.5 flex gap-1 overflow-x-auto scrollbar-none relative select-none mb-6 shadow-2xl backdrop-blur-md">
