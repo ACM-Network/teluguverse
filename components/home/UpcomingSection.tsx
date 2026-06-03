@@ -15,39 +15,14 @@ const TYPE_COLORS: Record<string, string> = {
   DOCUMENTARY: '#06B6D4',
 }
 
-function getUpcomingEmoji(title: string, genres: string[]): string {
-  const t = title.toLowerCase()
-  const g = genres.map(x => x.toLowerCase())
-  if (t.includes('ramayana') || t.includes('rama')) return '🏹'
-  if (t.includes('coolie') || t.includes('rajini')) return '🕶️'
-  if (t.includes('dragon ball') || t.includes('dbz') || t.includes('goku') || g.includes('anime')) return '🐉'
-  if (t.includes('house of the dragon') || t.includes('dragon')) return '🏰'
-  if (t.includes('mallu') || t.includes('veera')) return '⚔️'
-  if (t.includes('kalki')) return '🕉️'
-  if (t.includes('raja saab') || g.includes('horror')) return '🔮'
-  if (t.includes('vishwambhara') || g.includes('fantasy')) return '☄️'
-  if (t.includes('og') || g.includes('action')) return '🔫'
-  if (t.includes('spirit') || t.includes('police') || t.includes('cop')) return '👮'
-  if (
-    t.includes('superman') ||
-    t.includes('batman') ||
-    t.includes('avengers') ||
-    t.includes('marvel') ||
-    t.includes('spider') ||
-    g.includes('super-hero') ||
-    g.includes('superhero')
-  ) return '🦸'
-  if (t.includes('fantastic four') || t.includes('space')) return '🚀'
-  if (t.includes('doomsday') || t.includes('secret wars')) return '💥'
-  if (t.includes('avatar')) return '🌋'
-  if (t.includes('minecraft')) return '🧱'
-  if (t.includes('squid game')) return '🦑'
-  if (t.includes('dead') || t.includes('zombie')) return '🧟'
-  if (t.includes('solo leveling') || t.includes('leveling')) return '⚡'
-  if (t.includes('punch')) return '👊'
-  if (t.includes('stranger')) return '🕯️'
-  if (t.includes('wednesday')) return '🕸️'
-  return '🎬'
+// Map content type to icon name for upcoming artwork
+function getUpcomingIcon(type: string): string {
+  const map: Record<string, string> = {
+    MOVIE: 'movies', ANIME: 'anime', SERIES: 'series',
+    KDRAMA: 'kdrama', CARTOON: 'cartoon', HOLLYWOOD: 'hollywood',
+    DOCUMENTARY: 'documentary'
+  }
+  return map[type] || 'movies'
 }
 
 function CountdownUnit({ value, label, color }: { value: number; label: string; color: string }) {
@@ -130,7 +105,7 @@ export default function UpcomingSection() {
           const daysLeft = Math.max(0, Math.ceil(diffMs / (1000 * 60 * 60 * 24)))
           const genreSlugs = item.genres?.map((g: any) => g.genre?.slug || '') || []
           const primaryGenre = item.genres?.[0]?.genre?.name || 'Entertainment'
-          const emoji = getUpcomingEmoji(item.titleEnglish, genreSlugs)
+          const iconName = getUpcomingIcon(item.type)
 
           return (
             <motion.div
@@ -139,7 +114,7 @@ export default function UpcomingSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.05, duration: 0.4 }}
-              className="flex-none w-64 rounded-2xl overflow-hidden bg-surface border border-white/5 hover:border-yellow-400/30 hover:-translate-y-1.5 transition-all duration-300 cursor-pointer group shadow-[0_8px_30px_rgba(0,0,0,0.4)] flex flex-col"
+              className="flex-none w-64 rounded-2xl overflow-hidden bg-surface border border-white/5 hover:border-white/20 hover:-translate-y-1.5 transition-all duration-300 cursor-pointer group shadow-[0_8px_30px_rgba(0,0,0,0.4)] flex flex-col"
             >
               {/* Upper Card Art Block */}
               <div
@@ -156,8 +131,8 @@ export default function UpcomingSection() {
                 />
 
                 {/* Floating artwork */}
-                <div className="z-10 relative text-5xl filter drop-shadow-[0_4px_12px_rgba(255,255,255,0.15)] select-none">
-                  {emoji}
+                <div className="z-10 relative filter drop-shadow-[0_4px_12px_rgba(255,255,255,0.15)] select-none">
+                  <PremiumIcon name={iconName} size={48} />
                 </div>
 
                 {/* Status Pill (absolute top-3 left-3) */}
@@ -186,7 +161,7 @@ export default function UpcomingSection() {
               {/* Lower Details Block */}
               <div className="p-5 flex-1 flex flex-col justify-between space-y-3">
                 <div className="space-y-1">
-                  <p className="text-white text-base font-bold font-rajdhani tracking-wide truncate group-hover:text-yellow-400 transition-colors duration-300">
+                  <p className="text-white text-base font-bold font-rajdhani tracking-wide truncate transition-colors duration-300">
                     {item.titleEnglish}
                   </p>
                   <p className="font-telugu text-gray-500 text-xs truncate leading-none">

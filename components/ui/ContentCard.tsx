@@ -83,7 +83,7 @@ export default function ContentCard({ content, index = 0, size = 'md', showRank,
         >
           {/* Card Border glow */}
           <div 
-            className="absolute inset-0 rounded-2xl border border-white/5 group-hover:border-yellow-400/25 transition-all duration-500 z-30" 
+            className="absolute inset-0 rounded-2xl border border-white/5 group-hover:border-white/20 transition-all duration-500 z-30" 
             style={{
               boxShadow: 'inset 0 0 15px rgba(255,255,255,0.01)',
             }}
@@ -162,7 +162,7 @@ export default function ContentCard({ content, index = 0, size = 'md', showRank,
             </div>
             
             {/* Title Eng / Tel */}
-            <p className="text-white text-xs sm:text-sm font-bold font-rajdhani tracking-wide leading-snug line-clamp-1 group-hover:text-yellow-400 transition-colors duration-300">
+            <p className="text-white text-xs sm:text-sm font-bold font-rajdhani tracking-wide leading-snug line-clamp-1 transition-colors duration-300">
               {content.titleEnglish}
             </p>
             {content.titleTelugu && (

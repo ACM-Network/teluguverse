@@ -108,7 +108,7 @@ export default function OttSection() {
       <SectionHeader 
         title="Where To Watch" 
         titleTe="ఎక్కడ చూడాలి" 
-        icon="📺"
+        icon="tv"
         description="Find movies, anime, and series based on your streaming subscription or television network availability"
       />
       

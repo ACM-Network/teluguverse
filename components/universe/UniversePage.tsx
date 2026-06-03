@@ -377,7 +377,7 @@ export default function UniversePage({ universe, recommendations }: UniversePage
                 {lcuConn && (
                   <div className="mt-3 p-3.5 bg-black/45 border border-amber-950/20 rounded-xl space-y-1">
                     <p className="text-[10px] font-black uppercase tracking-wider text-amber-500 flex items-center gap-1.5">
-                      🕵️ LCU Connections & Cameos
+                      <span className="w-1.5 h-1.5 rounded-full bg-amber-500 inline-block" /> LCU Connections & Cameos
                     </p>
                     <p className="text-xs text-gray-300 font-rajdhani leading-relaxed"><span className="text-amber-500/80 font-bold">Characters:</span> {lcuConn.character}</p>
                     <p className="text-xs text-gray-400 font-rajdhani leading-relaxed mt-1"><span className="text-amber-500/80 font-bold">Story Link:</span> {lcuConn.connection}</p>
@@ -454,7 +454,7 @@ export default function UniversePage({ universe, recommendations }: UniversePage
                 {baahubaliMeta && (
                   <div className="mt-3 p-3.5 bg-gradient-to-r from-yellow-950/15 to-black/45 border border-yellow-950/20 rounded-xl space-y-1">
                     <p className="text-[10px] font-black uppercase tracking-wider text-yellow-500 flex items-center gap-1.5">
-                      👑 Royal Saga Info
+                      <span className="w-1.5 h-1.5 rounded-full bg-yellow-500 inline-block" /> Royal Saga Info
                     </p>
                     <p className="text-xs text-gray-300 font-rajdhani leading-relaxed"><span className="text-yellow-500/80 font-bold">Era:</span> {baahubaliMeta.era}</p>
                     <p className="text-xs text-gray-400 font-rajdhani leading-relaxed mt-1"><span className="text-yellow-500/80 font-bold">Chronology:</span> {baahubaliMeta.description}</p>
@@ -533,11 +533,11 @@ export default function UniversePage({ universe, recommendations }: UniversePage
                   {titanMeta && (
                     <div className="grid grid-cols-2 gap-4 mt-3 p-3.5 bg-black/45 border border-teal-950/20 rounded-xl">
                       <div>
-                        <p className="text-[9px] font-black uppercase tracking-wider text-teal-400">🦖 Dominant Titans</p>
+                        <p className="text-[9px] font-black uppercase tracking-wider text-teal-400"><span className="w-1 h-1 rounded-full bg-teal-400 inline-block" /> Dominant Titans</p>
                         <p className="text-xs text-gray-300 font-bold font-rajdhani mt-0.5">{titanMeta.titan}</p>
                       </div>
                       <div>
-                        <p className="text-[9px] font-black uppercase tracking-wider text-red-400">⚠️ Primary Threat</p>
+                        <p className="text-[9px] font-black uppercase tracking-wider text-red-400"><span className="w-1 h-1 rounded-full bg-red-400 inline-block" /> Primary Threat</p>
                         <p className="text-xs text-gray-300 font-bold font-rajdhani mt-0.5">{titanMeta.threat}</p>
                       </div>
                     </div>
@@ -583,7 +583,7 @@ export default function UniversePage({ universe, recommendations }: UniversePage
         </span>
 
         {/* Main content row card */}
-        <div className="bg-surface border border-white/5 rounded-2xl overflow-hidden hover:border-yellow-400/30 hover:shadow-[0_8px_30px_rgba(0,0,0,0.4)] transition-all duration-300 flex flex-col md:flex-row gap-5 p-5 md:p-6 w-full">
+        <div className="bg-surface border border-white/5 rounded-2xl overflow-hidden hover:border-white/20 hover:shadow-[0_8px_30px_rgba(0,0,0,0.4)] transition-all duration-300 flex flex-col md:flex-row gap-5 p-5 md:p-6 w-full">
           {/* Poster */}
           <Link href={`/content/${content.slug}`} className="w-full md:w-36 aspect-[2/3] rounded-xl overflow-hidden bg-black/40 border border-white/5 flex-none group-hover:scale-[1.02] transition-all duration-500 relative">
             <img
@@ -978,31 +978,34 @@ export default function UniversePage({ universe, recommendations }: UniversePage
               <>
                 <button
                   onClick={() => setActiveTab('release')}
-                  className={`px-5 py-2.5 rounded-xl text-xs font-bold font-rajdhani tracking-wider uppercase transition-all border ${
-                    activeTab === 'release'
-                      ? 'bg-red-500/15 border-red-500/40 text-red-400 shadow-[0_4px_20px_rgba(239,68,68,0.1)]'
-                      : 'bg-white/[0.02] border-white/5 text-gray-400 hover:border-red-500/30 hover:text-red-400'
-                  }`}
+                  className="px-5 py-2.5 rounded-xl text-xs font-bold font-rajdhani tracking-wider uppercase transition-all border outline-none focus:outline-none"
+                  style={{
+                    backgroundColor: activeTab === 'release' ? `${themeColor}20` : 'rgba(255,255,255,0.02)',
+                    borderColor: activeTab === 'release' ? `${themeColor}40` : 'rgba(255,255,255,0.05)',
+                    color: activeTab === 'release' ? themeColor : '#9CA3AF',
+                  }}
                 >
                   Release Order
                 </button>
                 <button
                   onClick={() => setActiveTab('watch')}
-                  className={`px-5 py-2.5 rounded-xl text-xs font-bold font-rajdhani tracking-wider uppercase transition-all border ${
-                    activeTab === 'watch'
-                      ? 'bg-red-500/15 border-red-500/40 text-red-400 shadow-[0_4px_20px_rgba(239,68,68,0.1)]'
-                      : 'bg-white/[0.02] border-white/5 text-gray-400 hover:border-red-500/30 hover:text-red-400'
-                  }`}
+                  className="px-5 py-2.5 rounded-xl text-xs font-bold font-rajdhani tracking-wider uppercase transition-all border outline-none focus:outline-none"
+                  style={{
+                    backgroundColor: activeTab === 'watch' ? `${themeColor}20` : 'rgba(255,255,255,0.02)',
+                    borderColor: activeTab === 'watch' ? `${themeColor}40` : 'rgba(255,255,255,0.05)',
+                    color: activeTab === 'watch' ? themeColor : '#9CA3AF',
+                  }}
                 >
                   Watch Order (Phases)
                 </button>
                 <button
                   onClick={() => setActiveTab('timeline')}
-                  className={`px-5 py-2.5 rounded-xl text-xs font-bold font-rajdhani tracking-wider uppercase transition-all border ${
-                    activeTab === 'timeline'
-                      ? 'bg-red-500/15 border-red-500/40 text-red-400 shadow-[0_4px_20px_rgba(239,68,68,0.1)]'
-                      : 'bg-white/[0.02] border-white/5 text-gray-400 hover:border-red-500/30 hover:text-red-400'
-                  }`}
+                  className="px-5 py-2.5 rounded-xl text-xs font-bold font-rajdhani tracking-wider uppercase transition-all border outline-none focus:outline-none"
+                  style={{
+                    backgroundColor: activeTab === 'timeline' ? `${themeColor}20` : 'rgba(255,255,255,0.02)',
+                    borderColor: activeTab === 'timeline' ? `${themeColor}40` : 'rgba(255,255,255,0.05)',
+                    color: activeTab === 'timeline' ? themeColor : '#9CA3AF',
+                  }}
                 >
                   Timeline Order
                 </button>
@@ -1011,21 +1014,23 @@ export default function UniversePage({ universe, recommendations }: UniversePage
               <>
                 <button
                   onClick={() => setActiveTab('release')}
-                  className={`px-5 py-2.5 rounded-xl text-xs font-bold font-rajdhani tracking-wider uppercase transition-all border ${
-                    activeTab === 'release'
-                      ? 'bg-yellow-500/15 border-yellow-500/40 text-yellow-400 shadow-[0_4px_20px_rgba(255,215,0,0.1)]'
-                      : 'bg-white/[0.02] border-white/5 text-gray-400 hover:border-yellow-400/30 hover:text-yellow-400'
-                  }`}
+                  className="px-5 py-2.5 rounded-xl text-xs font-bold font-rajdhani tracking-wider uppercase transition-all border outline-none focus:outline-none"
+                  style={{
+                    backgroundColor: activeTab === 'release' ? `${themeColor}20` : 'rgba(255,255,255,0.02)',
+                    borderColor: activeTab === 'release' ? `${themeColor}40` : 'rgba(255,255,255,0.05)',
+                    color: activeTab === 'release' ? themeColor : '#9CA3AF',
+                  }}
                 >
                   Release Order
                 </button>
                 <button
                   onClick={() => setActiveTab('timeline')}
-                  className={`px-5 py-2.5 rounded-xl text-xs font-bold font-rajdhani tracking-wider uppercase transition-all border ${
-                    activeTab === 'timeline'
-                      ? 'bg-yellow-500/15 border-yellow-500/40 text-yellow-400 shadow-[0_4px_20px_rgba(255,215,0,0.1)]'
-                      : 'bg-white/[0.02] border-white/5 text-gray-400 hover:border-yellow-400/30 hover:text-yellow-400'
-                  }`}
+                  className="px-5 py-2.5 rounded-xl text-xs font-bold font-rajdhani tracking-wider uppercase transition-all border outline-none focus:outline-none"
+                  style={{
+                    backgroundColor: activeTab === 'timeline' ? `${themeColor}20` : 'rgba(255,255,255,0.02)',
+                    borderColor: activeTab === 'timeline' ? `${themeColor}40` : 'rgba(255,255,255,0.05)',
+                    color: activeTab === 'timeline' ? themeColor : '#9CA3AF',
+                  }}
                 >
                   Chronological Order
                 </button>
@@ -1045,8 +1050,8 @@ export default function UniversePage({ universe, recommendations }: UniversePage
               if (!phaseItems || phaseItems.length === 0) return null
               return (
                 <div key={phaseName} className="space-y-6">
-                  <h2 className="text-xl sm:text-2xl font-black font-cinzel text-yellow-500 tracking-wider flex items-center gap-3 bg-white/[0.02] border border-white/5 rounded-xl px-5 py-3 w-fit">
-                    <span className="w-2.5 h-2.5 rounded-full bg-yellow-500" />
+                  <h2 className="text-xl sm:text-2xl font-black font-cinzel tracking-wider flex items-center gap-3 bg-white/[0.02] border border-white/5 rounded-xl px-5 py-3 w-fit" style={{ color: themeColor }}>
+                    <span className="w-2.5 h-2.5 rounded-full" style={{ backgroundColor: themeColor }} />
                     {phaseName}
                   </h2>
                   <div className="relative pl-6 sm:pl-10 space-y-8 before:absolute before:left-[11px] before:sm:left-[19px] before:top-4 before:bottom-4 before:w-0.5 before:bg-white/10">

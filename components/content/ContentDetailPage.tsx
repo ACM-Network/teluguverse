@@ -56,20 +56,21 @@ function CollapsibleSection({
     <div className="bg-surface/20 border border-white/5 rounded-2xl overflow-hidden backdrop-blur-md transition-all duration-300 hover:border-white/10 shadow-lg">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="w-full flex items-center justify-between p-5 font-cinzel text-sm md:text-base font-bold text-yellow-400 hover:bg-white/5 transition-colors text-left"
+        className="w-full flex items-center justify-between p-5 font-cinzel text-sm md:text-base font-bold text-white hover:bg-white/5 transition-colors text-left"
       >
         <div className="flex items-center gap-2">
-          <span className="text-yellow-400/70 text-xs">✦</span>
+          <span className="w-1 h-1 rounded-full bg-white/40" />
           <span>{title}</span>
           {titleTe && <span className="font-telugu text-xs text-gray-400 block sm:inline sm:ml-3 font-normal">{titleTe}</span>}
         </div>
-        <span
-          className={`text-xs text-yellow-400/50 transition-transform duration-300 ml-4 flex-none ${
+        <svg
+          className={`w-3 h-3 text-gray-500 transition-transform duration-300 ml-4 flex-none ${
             isOpen ? 'rotate-180' : ''
           }`}
+          fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}
         >
-          ▼
-        </span>
+          <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+        </svg>
       </button>
       <AnimatePresence initial={false}>
         {isOpen && (
@@ -350,7 +351,7 @@ export default function ContentDetailPage({ content, similar = [] }: Props) {
           >
             {posterSrc && (
               <div
-                className="relative w-[220px] h-[330px] rounded-2xl overflow-hidden border border-white/10 shadow-[0_20px_50px_rgba(0,0,0,0.8)] group cursor-pointer hover:border-yellow-400/40 transition-all duration-300 mb-5"
+                className="relative w-[220px] h-[330px] rounded-2xl overflow-hidden border border-white/10 shadow-[0_20px_50px_rgba(0,0,0,0.8)] group cursor-pointer hover:border-white/25 transition-all duration-300 mb-5"
                 style={{
                   boxShadow: `0 20px 50px rgba(0,0,0,0.85), 0 0 25px ${color}12`,
                 }}
@@ -482,22 +483,23 @@ export default function ContentDetailPage({ content, similar = [] }: Props) {
             <div className="flex flex-wrap items-center gap-2 md:gap-3 py-3 border-y border-white/5 mb-6 text-sm font-rajdhani font-semibold text-gray-300">
               {content.imdbRating && (
                 <span className="flex items-center gap-1 bg-yellow-400/10 border border-yellow-400/20 px-2.5 py-1 rounded-xl text-yellow-400 font-bold">
-                  ⭐ {content.imdbRating.toFixed(1)}
+                  <svg className="w-3 h-3 fill-yellow-400" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  {content.imdbRating.toFixed(1)}
                 </span>
               )}
               {content.year && (
                 <span className="flex items-center gap-1.5 bg-white/5 border border-white/10 px-2.5 py-1 rounded-xl">
-                  📅 {content.year}
+                  <PremiumIcon name="calendar" size={11} /> {content.year}
                 </span>
               )}
               {content.runtime && (
                 <span className="flex items-center gap-1.5 bg-white/5 border border-white/10 px-2.5 py-1 rounded-xl">
-                  ⏱ {formatRuntime(content.runtime)}
+                  <PremiumIcon name="clock" size={11} /> {formatRuntime(content.runtime)}
                 </span>
               )}
               {content.genres && content.genres.length > 0 && (
                 <span className="flex items-center gap-1.5 bg-white/5 border border-white/10 px-2.5 py-1 rounded-xl">
-                  🎭 {content.genres.map((g: any) => g.genre?.name || g.name).slice(0, 2).join(', ')}
+                  <PremiumIcon name="genres" size={11} /> {content.genres.map((g: any) => g.genre?.name || g.name).slice(0, 2).join(', ')}
                 </span>
               )}
               {content.teluguDubAvail && (
@@ -517,7 +519,7 @@ export default function ContentDetailPage({ content, similar = [] }: Props) {
                     background: 'linear-gradient(135deg, #E50914 0%, #B00710 100%)',
                   }}
                 >
-                  ▶ WATCH TRAILER
+                  <svg className="w-4 h-4 fill-white" viewBox="0 0 24 24"><polygon points="8 5 19 12 8 19"/></svg> WATCH TRAILER
                 </button>
               )}
 
@@ -529,7 +531,7 @@ export default function ContentDetailPage({ content, similar = [] }: Props) {
                     : 'bg-white/5 border-white/10 text-gray-300 hover:border-yellow-400/35 hover:text-yellow-400'
                 }`}
               >
-                {inWatchlist ? '✓ IN WATCHLIST' : '+ WATCHLIST'}
+                <PremiumIcon name={inWatchlist ? 'watchlist' : 'list'} size={13} /> {inWatchlist ? 'IN WATCHLIST' : 'WATCHLIST'}
               </button>
 
               <button
@@ -540,7 +542,7 @@ export default function ContentDetailPage({ content, similar = [] }: Props) {
                     : 'bg-white/5 border-white/10 text-gray-300 hover:border-red-400/35 hover:text-red-400'
                 }`}
               >
-                {isFav ? '♥ FAVORITED' : '♡ FAVORITE'}
+                <PremiumIcon name="favorite" size={13} /> {isFav ? 'FAVORITED' : 'FAVORITE'}
               </button>
 
               {/* Share button */}
@@ -548,7 +550,7 @@ export default function ContentDetailPage({ content, similar = [] }: Props) {
                 onClick={handleShare}
                 className="flex items-center gap-2 px-4 py-3 rounded-xl text-xs md:text-sm font-bold font-rajdhani tracking-wider border border-white/10 bg-white/5 text-gray-300 hover:border-blue-400/45 hover:text-blue-400 hover:scale-[1.02] transition-all duration-300"
               >
-                🔗 SHARE
+                <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"/></svg> SHARE
               </button>
             </div>
 
@@ -634,7 +636,7 @@ export default function ContentDetailPage({ content, similar = [] }: Props) {
                     onClick={() => setActiveTab(tab)}
                     className={`relative px-6 py-3 text-xs md:text-sm font-black font-rajdhani tracking-widest whitespace-nowrap transition-all duration-300 uppercase rounded-xl ${
                       isActive 
-                        ? 'text-yellow-400 text-glow scale-[1.02]' 
+                        ? 'text-white scale-[1.02]' 
                         : 'text-gray-400 hover:text-white hover:bg-white/5'
                     }`}
                   >
@@ -642,7 +644,8 @@ export default function ContentDetailPage({ content, similar = [] }: Props) {
                     {isActive && (
                       <motion.div
                         layoutId="activeTabUnderline"
-                        className="absolute bottom-0.5 left-2 right-2 h-[3px] bg-gradient-to-r from-yellow-400 via-amber-400 to-amber-500 rounded-full shadow-[0_0_15px_rgba(255,215,0,0.8)] z-10"
+                        className="absolute bottom-0.5 left-2 right-2 h-[3px] rounded-full z-10"
+                        style={{ background: color, boxShadow: `0 0 12px ${color}80` }}
                         transition={{ type: 'spring', stiffness: 350, damping: 26 }}
                       />
                     )}
@@ -904,7 +907,7 @@ export default function ContentDetailPage({ content, similar = [] }: Props) {
                                     <motion.div
                                       key={char.id}
                                       whileHover={{ y: -3 }}
-                                      className="w-28 flex-none snap-start bg-black/35 border border-white/5 rounded-2xl overflow-hidden hover:border-yellow-400/25 transition-all duration-300 shadow-md group"
+                                      className="w-28 flex-none snap-start bg-black/35 border border-white/5 rounded-2xl overflow-hidden hover:border-white/20 transition-all duration-300 shadow-md group"
                                     >
                                       <div className="relative aspect-square w-full bg-dark-3 overflow-hidden">
                                         {char.photo ? (
@@ -928,7 +931,7 @@ export default function ContentDetailPage({ content, similar = [] }: Props) {
                                         )}
                                       </div>
                                       <div className="p-2.5 min-w-0">
-                                        <p className="text-white text-[11px] font-bold font-rajdhani truncate group-hover:text-yellow-400 transition-colors">{char.name}</p>
+                                        <p className="text-white text-[11px] font-bold font-rajdhani truncate group-hover:text-white transition-colors">{char.name}</p>
                                         <p className="text-gray-500 text-[9px] font-rajdhani truncate leading-none mt-0.5" title={char.voiceActor || ''}>
                                           {char.voiceActor || 'Voice Actor'}
                                         </p>
@@ -959,7 +962,7 @@ export default function ContentDetailPage({ content, similar = [] }: Props) {
                                         )}
                                       </div>
                                       <div className="p-2.5 min-w-0">
-                                        <p className="text-white text-[11px] font-bold font-rajdhani truncate group-hover:text-yellow-400 transition-colors">{member.name}</p>
+                                        <p className="text-white text-[11px] font-bold font-rajdhani truncate group-hover:text-white transition-colors">{member.name}</p>
                                         {member.character && (
                                           <p className="text-gray-500 text-[9px] font-rajdhani truncate leading-none mt-0.5">
                                             as {member.character}
@@ -982,7 +985,7 @@ export default function ContentDetailPage({ content, similar = [] }: Props) {
                                 <div
                                   key={idx}
                                   onClick={() => setLightboxIndex(idx)}
-                                  className="relative w-64 h-36 flex-none snap-start rounded-xl overflow-hidden bg-dark-3 border border-white/10 hover:border-yellow-400/40 transition-all cursor-zoom-in group shadow-lg"
+                                  className="relative w-64 h-36 flex-none snap-start rounded-xl overflow-hidden bg-dark-3 border border-white/10 hover:border-white/25 transition-all cursor-zoom-in group shadow-lg"
                                 >
                                   <Image
                                     src={ss}
@@ -1536,10 +1539,13 @@ export default function ContentDetailPage({ content, similar = [] }: Props) {
         </button>
         <button
           onClick={handleShare}
-          className="flex-none w-11 h-11 rounded-xl bg-white/5 border border-white/10 text-gray-300 flex items-center justify-center active:scale-95 transition-all"
+          className="flex-none w-11 h-11 rounded-xl bg-white/5 border border-white/10 text-gray-300 flex items-center justify-center hover:bg-white/10 hover:border-white/20 active:scale-95 transition-all"
           title="Share"
         >
-          🔗
+          <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+            <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+          </svg>
         </button>
       </div>
     </div>

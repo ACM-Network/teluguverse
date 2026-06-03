@@ -41,7 +41,7 @@ export default function TrendingSection() {
               />
             </div>
             <div className="flex-1 min-w-0">
-              <p className="text-white text-sm font-bold font-rajdhani truncate group-hover:text-yellow-400 transition-colors">{item.titleEnglish}</p>
+              <p className="text-white text-sm font-bold font-rajdhani truncate transition-colors">{item.titleEnglish}</p>
               {item.titleTelugu && <p className="font-telugu text-gray-500 text-xs truncate">{item.titleTelugu}</p>}
               <div className="flex items-center gap-2 mt-1">
                 <span className="text-[9px] font-bold px-1.5 py-0.5 rounded font-rajdhani" style={{background:`${TYPE_COLORS[item.type]}18`,color:TYPE_COLORS[item.type]}}>{item.type}</span>

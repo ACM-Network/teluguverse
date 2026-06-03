@@ -39,7 +39,7 @@ export default function AdminDashboard() {
               { icon: '📊', label: 'Dashboard', view: 'dashboard' },
               { icon: '🎬', label: 'Content', view: 'content' },
               { icon: '👥', label: 'Users', view: 'users' },
-              { icon: '➕', label: 'Add Content', view: 'add' },
+              { icon: '+', label: 'Add Content', view: 'add' },
             ].map(item => (
               <button key={item.view} onClick={() => setActiveView(item.view as any)}
                 className={`w-full flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-semibold font-rajdhani mb-1 transition-all text-left ${activeView === item.view ? 'bg-yellow-500/15 text-yellow-400 border border-yellow-400/20' : 'text-gray-400 hover:bg-white/5 hover:text-white'}`}>
@@ -129,7 +129,7 @@ export default function AdminDashboard() {
                 <h3 className="font-cinzel text-base font-bold text-white mb-5">Quick Actions</h3>
                 <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3">
                   {[
-                    { label: 'Add Content', icon: '➕', action: () => setActiveView('add') },
+                    { label: 'Add Content', icon: '+', action: () => setActiveView('add') },
                     { label: 'Manage Users', icon: '👥', action: () => setActiveView('users') },
                     { label: 'Moderate Reviews', icon: '💬', action: () => {} },
                     { label: 'Feature Content', icon: '⭐', action: () => {} },
@@ -232,7 +232,7 @@ function AddContentForm() {
         <button type="submit" disabled={saving}
           className="w-full py-4 rounded-xl font-cinzel font-bold text-black text-sm tracking-wide transition-all hover:opacity-90 disabled:opacity-50"
           style={{ background: 'linear-gradient(135deg, #FFD700, #FFA500)', boxShadow: '0 0 30px rgba(255,215,0,0.3)' }}>
-          {saving ? 'Saving...' : saved ? '✓ Saved Successfully' : '➕ Add Content'}
+          {saving ? 'Saving...' : saved ? '✓ Saved Successfully' : '+ Add Content'}
         </button>
       </form>
     </div>

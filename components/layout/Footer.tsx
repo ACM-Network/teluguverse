@@ -19,10 +19,10 @@ export default function Footer() {
 
         {/* Minimal Text Links */}
         <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-[11px] font-bold uppercase tracking-wider font-rajdhani text-gray-400">
-          <Link href="/about" className="hover:text-yellow-400 transition-colors">About</Link>
-          <Link href="/contact" className="hover:text-yellow-400 transition-colors">Contact</Link>
-          <Link href="/privacy" className="hover:text-yellow-400 transition-colors">Privacy Policy</Link>
-          <Link href="/terms" className="hover:text-yellow-400 transition-colors">Terms of Service</Link>
+          <Link href="/about" className="hover:text-white transition-colors">About</Link>
+          <Link href="/contact" className="hover:text-white transition-colors">Contact</Link>
+          <Link href="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
+          <Link href="/terms" className="hover:text-white transition-colors">Terms of Service</Link>
         </div>
 
       </div>

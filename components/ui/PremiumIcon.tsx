@@ -49,6 +49,7 @@ const ICON_COLORS: Record<string, string> = {
   hollywood: '#F59E0B',
   series: '#3B82F6',
   documentary: '#06B6D4',
+  genres: '#8B5CF6',
   clock: '#06B6D4',
   duration: '#06B6D4',
   user: '#3B82F6',
@@ -286,6 +287,12 @@ export default function PremiumIcon({ name, size = 20, className = '' }: Premium
           <rect x="2" y="6" width="12" height="12" rx="2" />
           <path d="M14 9l6-4v14l-6-4" strokeLinejoin="round" />
           <circle cx="6" cy="12" r="1.5" />
+        </svg>
+      )
+    case 'genres':
+      return (
+        <svg {...props}>
+          <path d="M4 4h6v6H4zM14 4h6v6h-6zM4 14h6v6H4zM14 14h6v6h-6z" rx="1" />
         </svg>
       )
     case 'clock':
