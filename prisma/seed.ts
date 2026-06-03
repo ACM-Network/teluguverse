@@ -7,6 +7,7 @@ import { series } from './data/series'
 import { kdramas } from './data/kdramas'
 import { hollywood } from './data/hollywood'
 import { cartoons } from './data/cartoons'
+import { expandedContent } from './data/expanded_data'
 
 const prisma = new PrismaClient()
 
@@ -116,16 +117,26 @@ async function main() {
   console.log(`✅ ${seededUniverses.length} universes ready`)
 
   // 3. Merge & Seed Content items
-  const contents: any[] = [
+  const rawContents: any[] = [
     ...movies,
     ...animes,
     ...series,
     ...kdramas,
     ...hollywood,
     ...cartoons,
+    ...expandedContent,
   ]
 
-  console.log(`⏳ Seeding ${contents.length} content items...`)
+  const contents: any[] = []
+  const seenSlugs = new Set<string>()
+  for (const c of rawContents) {
+    if (!seenSlugs.has(c.slug)) {
+      seenSlugs.add(c.slug)
+      contents.push(c)
+    }
+  }
+
+  console.log(`⏳ Seeding ${contents.length} unique content items...`)
   for (const content of contents) {
     // Upsert base content item
     const dbContent = await prisma.content.upsert({

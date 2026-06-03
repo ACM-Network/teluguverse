@@ -3,9 +3,9 @@ import { prisma } from '@/lib/prisma'
 import UniversePage from '@/components/universe/UniversePage'
 import { Metadata } from 'next'
 
-async function getUniverseData(id: string) {
+async function getUniverseData(slug: string) {
   const universe = await prisma.universe.findUnique({
-    where: { id },
+    where: { id: slug },
     include: {
       contents: {
         include: {
@@ -28,7 +28,7 @@ async function getUniverseData(id: string) {
     where: {
       NOT: {
         universe: {
-          some: { universeId: id }
+          some: { universeId: slug }
         }
       },
       teluguDubAvail: true
@@ -43,9 +43,9 @@ async function getUniverseData(id: string) {
 export async function generateMetadata({
   params,
 }: {
-  params: { id: string }
+  params: { slug: string }
 }): Promise<Metadata> {
-  const data = await getUniverseData(params.id)
+  const data = await getUniverseData(params.slug)
   if (!data) return { title: 'Universe Not Found' }
 
   return {
@@ -57,9 +57,9 @@ export async function generateMetadata({
 export default async function Page({
   params,
 }: {
-  params: { id: string }
+  params: { slug: string }
 }) {
-  const data = await getUniverseData(params.id)
+  const data = await getUniverseData(params.slug)
   if (!data) notFound()
 
   // Safely serialize for the client component

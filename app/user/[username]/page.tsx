@@ -2,6 +2,7 @@
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
+import Image from 'next/image'
 
 interface Profile {
   id: string; username: string; displayName: string; avatar?: string | null
@@ -62,7 +63,7 @@ export default function UserProfilePage({ params }: { params: { username: string
           <motion.div initial={{scale:0.8,opacity:0}} animate={{scale:1,opacity:1}}
             className="w-28 h-28 rounded-2xl flex items-center justify-center font-black text-3xl text-black shadow-2xl flex-none border-4 border-dark"
             style={{background:'linear-gradient(135deg,#FFD700,#FFA500)',boxShadow:'0 0 40px rgba(255,215,0,0.3)'}}>
-            {profile.avatar ? <img src={profile.avatar} alt={profile.displayName} className="w-full h-full object-cover rounded-2xl" /> : initials}
+            {profile.avatar ? <Image src={profile.avatar} alt={profile.displayName} width={112} height={112} className="w-full h-full object-cover rounded-2xl" /> : initials}
           </motion.div>
           <div className="flex-1">
             <div className="flex items-center gap-3 flex-wrap">

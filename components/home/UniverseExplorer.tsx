@@ -1,8 +1,9 @@
 'use client'
 
-import React from 'react'
+import React, { useState } from 'react'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
+import Image from 'next/image'
 import SectionHeader from '@/components/ui/SectionHeader'
 
 const UNIVERSES = [
@@ -70,35 +71,132 @@ const UNIVERSES = [
 
 const UNIVERSE_POSTERS: Record<string, string[]> = {
   mcu: [
-    'https://image.tmdb.org/t/p/w185/78lPtwv72eTNqFW9COBYI0dWDJa.jpg', // Iron Man
-    'https://image.tmdb.org/t/p/w185/or06450m4efRLGaOIXOUferXPv1.jpg', // Avengers Endgame
-    'https://image.tmdb.org/t/p/w185/7WsyChQLEftFiDOVTGkv3hFpyyt.jpg', // Avengers Infinity War
+    'https://image.tmdb.org/t/p/w342/78lPtwv72eTNqFW9COBYI0dWDJa.jpg', // Iron Man
+    'https://image.tmdb.org/t/p/w342/ulzhLuWrPK07P1YkdWQLZnQh1JL.jpg', // Endgame
+    'https://image.tmdb.org/t/p/w342/7WsyChQLEftFiDOVTGkv3hFpyyt.jpg', // Infinity War
   ],
   dc: [
-    'https://image.tmdb.org/t/p/w185/qJ2tW6WMUDux911r6m7haRef0WH.jpg', // The Dark Knight
-    'https://image.tmdb.org/t/p/w185/74xTEgt7R36Fpooo50r9T25onhq.jpg', // The Batman
-    'https://image.tmdb.org/t/p/w185/yQvGrMoipbRoddT0ZR8tPoR7NfX.jpg', // Placeholder / generic
+    'https://image.tmdb.org/t/p/w342/qJ2tW6WMUDux911r6m7haRef0WH.jpg', // Dark Knight
+    'https://image.tmdb.org/t/p/w342/74xTEgt7R36Fpooo50r9T25onhq.jpg', // The Batman
+    'https://image.tmdb.org/t/p/w342/udDcl707h26086H87Izk7cz4NWJ.jpg', // Joker
   ],
   baahubali: [
-    'https://image.tmdb.org/t/p/w185/96gAy2mIY75m91R9233667ZsUIu.jpg', // Baahubali Beginning
-    'https://image.tmdb.org/t/p/w185/4D7wV02423M3UjPzQL8gV2z874z.jpg', // Baahubali 2 Conclusion
-    'https://image.tmdb.org/t/p/w185/96gAy2mIY75m91R9233667ZsUIu.jpg', // Baahubali 1
+    'https://image.tmdb.org/t/p/w342/9BAjt8nSSms62uOVYn1t3C3dVto.jpg', // Baahubali 1
+    'https://image.tmdb.org/t/p/w342/21sC2assImQIYCEDA84Qh9d1RsK.jpg', // Baahubali 2
+    'https://image.tmdb.org/t/p/w342/n1KLxyMDfktpfFxv3X35OiA9IzF.jpg', // Baahubali: The Eternal War
   ],
   onepiece: [
-    'https://image.tmdb.org/t/p/w185/hTP1DtLGFamjfu8WqjnuQdP1n4i.jpg', // One Piece
-    'https://image.tmdb.org/t/p/w185/xUfRZu2mi8jH6SzQEJGP6tjBuYj.jpg', // One Piece Movie
-    'https://image.tmdb.org/t/p/w185/fHpKWq9ayzSk8nSwqRuaAUemRKh.jpg', // One Piece Stampede
+    'https://image.tmdb.org/t/p/w342/dB4EDhre2dsC2kxYDavyKWqLQwi.jpg', // One Piece
+    'https://image.tmdb.org/t/p/w342/m80kHd6r7nS7RFTn4d14QL592tz.jpg', // Film Red
+    'https://image.tmdb.org/t/p/w342/ihGubKpe3b35u2Sux572a1GmtS1.jpg', // Stampede
   ],
   monsterverse: [
-    'https://image.tmdb.org/t/p/w185/pgqQM014nFOx251z279a4uR20rZ.jpg', // Godzilla vs Kong
-    'https://image.tmdb.org/t/p/w185/fRy9t9ZqE7V7qF6400a40V14.jpg', // Godzilla King of Monsters
-    'https://image.tmdb.org/t/p/w185/r25ZicnUzAk03t734Jkcl97g.jpg', // Kong Skull Island
+    'https://image.tmdb.org/t/p/w342/pgqgaUx1cJb5oZQQ5v0tNARCeBp.jpg', // Godzilla vs Kong
+    'https://image.tmdb.org/t/p/w342/mzOHg7Q5q9yUmY0b9Esu8Qe6Nnm.jpg', // Godzilla King of Monsters
+    'https://image.tmdb.org/t/p/w342/tphkjmQq8WebuVwNXelmjLUXuPJ.jpg', // Godzilla 2014
   ],
   lcu: [
-    'https://image.tmdb.org/t/p/w185/bCBAw165o5O6V0J1tVtx7Xn9UxN.jpg', // Kaithi
-    'https://image.tmdb.org/t/p/w185/1icwY5GgLw5F275o1L7y0bW.jpg', // Vikram / Leo
-    'https://image.tmdb.org/t/p/w185/bCBAw165o5O6V0J1tVtx7Xn9UxN.jpg', // Kaithi secondary
+    'https://image.tmdb.org/t/p/w342/mxvOvom5zKRp4WPURKrhjoatt4P.jpg', // Kaithi
+    'https://image.tmdb.org/t/p/w342/774UV1aCURb4s4JfEFg3IEMu5Zj.jpg', // Vikram
+    'https://image.tmdb.org/t/p/w342/t1oAdt8JjUs4sHEBvE8fKtjV7er.jpg', // Leo
   ],
+}
+
+interface UniverseCardProps {
+  u: typeof UNIVERSES[0]
+}
+
+function UniverseCard({ u }: UniverseCardProps) {
+  const [imgSrc1, setImgSrc1] = useState(UNIVERSE_POSTERS[u.key]?.[0] || '/placeholder-poster.svg')
+  const [imgSrc2, setImgSrc2] = useState(UNIVERSE_POSTERS[u.key]?.[1] || '/placeholder-poster.svg')
+  const [imgSrc3, setImgSrc3] = useState(UNIVERSE_POSTERS[u.key]?.[2] || '/placeholder-poster.svg')
+
+  return (
+    <Link
+      href={`/universe/${u.key}`}
+      className="block relative rounded-2xl overflow-hidden aspect-[4/3] sm:aspect-[16/10] cursor-pointer group border transition-all duration-500 md:hover:-translate-y-2 md:hover:shadow-[0_18px_40px_rgba(0,0,0,0.6)]"
+      style={{ background: u.gradient, borderColor: 'rgba(255,255,255,0.05)' }}
+    >
+      {/* Hover border glow (desktop only) */}
+      <div
+        className="absolute inset-0 rounded-2xl border border-transparent md:group-hover:border-current opacity-0 md:group-hover:opacity-100 transition-all duration-500 pointer-events-none z-30"
+        style={{ color: u.border }}
+      />
+
+      {/* Franchise collage artwork — clearly visible opacity */}
+      <div className="absolute inset-0 flex justify-center items-center gap-1.5 opacity-[0.45] md:group-hover:opacity-[0.65] transition-opacity duration-500 scale-[0.8] md:group-hover:scale-[0.9] transition-transform duration-500 select-none pointer-events-none z-0 pb-10">
+        {/* Left poster */}
+        <div className="w-12 aspect-[2/3] relative rounded-lg shadow-md -rotate-12 translate-x-2.5 translate-y-2 border border-white/5 overflow-hidden">
+          <Image
+            src={imgSrc1}
+            alt=""
+            fill
+            sizes="48px"
+            className="object-cover"
+            onError={() => setImgSrc1('/placeholder-poster.svg')}
+            loading="lazy"
+          />
+        </div>
+        {/* Center poster */}
+        <div className="w-14 aspect-[2/3] relative rounded-lg shadow-xl z-10 border border-white/10 overflow-hidden">
+          <Image
+            src={imgSrc2}
+            alt=""
+            fill
+            sizes="56px"
+            className="object-cover"
+            onError={() => setImgSrc2('/placeholder-poster.svg')}
+            loading="lazy"
+          />
+        </div>
+        {/* Right poster */}
+        <div className="w-12 aspect-[2/3] relative rounded-lg shadow-md rotate-12 -translate-x-2.5 translate-y-2 border border-white/5 overflow-hidden">
+          <Image
+            src={imgSrc3}
+            alt=""
+            fill
+            sizes="48px"
+            className="object-cover"
+            onError={() => setImgSrc3('/placeholder-poster.svg')}
+            loading="lazy"
+          />
+        </div>
+      </div>
+
+      {/* Gradient bottom plate — seam bug resolved by replacing transparent with rgba */}
+      <div
+        className="absolute bottom-0 left-0 right-0 p-4 z-20"
+        style={{
+          background: 'linear-gradient(to top, rgba(7,8,16,0.95) 0%, rgba(7,8,16,0.5) 60%, rgba(7,8,16,0) 100%)',
+        }}
+      >
+        <p className="font-cinzel text-[11px] font-black text-white leading-tight tracking-wider group-hover:text-yellow-400 transition-colors duration-300 truncate">
+          {u.name}
+        </p>
+
+        <div className="flex items-center justify-between gap-1.5 mt-1.5 border-t border-white/5 pt-1.5">
+          <span className="font-telugu text-gray-400 text-[9px] truncate leading-none">
+            {u.nameTe}
+          </span>
+        </div>
+        <div className="flex items-center gap-1 mt-1">
+          <span className="text-[8px] font-bold font-rajdhani uppercase tracking-wider leading-none" style={{ color: u.color }}>
+            {u.movies} {u.movies === 1 && u.key === 'onepiece' ? 'Anime' : 'Movies'}
+          </span>
+          <span className="text-white/15 text-[8px]">•</span>
+          <span className="text-[8px] font-bold font-rajdhani uppercase tracking-wider leading-none" style={{ color: u.color }}>
+            {u.series} Series
+          </span>
+        </div>
+      </div>
+
+      {/* Hover backglow (desktop only) */}
+      <div
+        className="absolute inset-0 opacity-0 md:group-hover:opacity-100 transition-opacity duration-500 pointer-events-none z-0 hidden md:block"
+        style={{ background: `radial-gradient(circle at 50% 40%, ${u.color}15, transparent 65%)` }}
+      />
+    </Link>
+  )
 }
 
 export default function UniverseExplorer() {
@@ -119,70 +217,7 @@ export default function UniverseExplorer() {
             viewport={{ once: true }}
             transition={{ delay: i * 0.05, duration: 0.45 }}
           >
-            <Link
-              href={`/universe/${u.key}`}
-              className="block relative rounded-2xl overflow-hidden aspect-[4/3] sm:aspect-[16/10] cursor-pointer group border transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_18px_40px_rgba(0,0,0,0.6)]"
-              style={{ background: u.gradient, borderColor: 'rgba(255,255,255,0.05)' }}
-            >
-              {/* Hover border glow */}
-              <div
-                className="absolute inset-0 rounded-2xl border border-transparent group-hover:border-current opacity-0 group-hover:opacity-100 transition-all duration-500 pointer-events-none z-30"
-                style={{ color: u.border }}
-              />
-
-              {/* Franchise collage artwork */}
-              <div className="absolute inset-0 flex justify-center items-center gap-1.5 opacity-[0.25] group-hover:opacity-[0.45] transition-opacity duration-500 scale-[0.8] group-hover:scale-[0.9] transition-transform duration-500 select-none pointer-events-none z-0 pb-10">
-                {/* Left poster */}
-                <img
-                  src={UNIVERSE_POSTERS[u.key]?.[0]}
-                  alt=""
-                  className="w-12 aspect-[2/3] object-cover rounded-lg shadow-md -rotate-12 translate-x-2.5 translate-y-2 border border-white/5"
-                />
-                {/* Center poster */}
-                <img
-                  src={UNIVERSE_POSTERS[u.key]?.[1]}
-                  alt=""
-                  className="w-14 aspect-[2/3] object-cover rounded-lg shadow-xl z-10 border border-white/10"
-                />
-                {/* Right poster */}
-                <img
-                  src={UNIVERSE_POSTERS[u.key]?.[2]}
-                  alt=""
-                  className="w-12 aspect-[2/3] object-cover rounded-lg shadow-md rotate-12 -translate-x-2.5 translate-y-2 border border-white/5"
-                />
-              </div>
-
-              {/* Gradient bottom plate */}
-              <div
-                className="absolute bottom-0 left-0 right-0 p-4 z-20"
-                style={{ background: 'linear-gradient(to top, rgba(7,8,16,0.98) 0%, rgba(7,8,16,0.75) 60%, transparent 100%)' }}
-              >
-                <p className="font-cinzel text-[11px] font-black text-white leading-tight tracking-wider group-hover:text-yellow-400 transition-colors duration-300 truncate">
-                  {u.name}
-                </p>
-
-                <div className="flex items-center justify-between gap-1.5 mt-1.5 border-t border-white/5 pt-1.5">
-                  <span className="font-telugu text-gray-400 text-[9px] truncate leading-none">
-                    {u.nameTe}
-                  </span>
-                </div>
-                <div className="flex items-center gap-1 mt-1">
-                  <span className="text-[8px] font-bold font-rajdhani uppercase tracking-wider leading-none" style={{ color: u.color }}>
-                    {u.movies} {u.movies === 1 && u.key === 'onepiece' ? 'Anime' : 'Movies'}
-                  </span>
-                  <span className="text-white/15 text-[8px]">•</span>
-                  <span className="text-[8px] font-bold font-rajdhani uppercase tracking-wider leading-none" style={{ color: u.color }}>
-                    {u.series} Series
-                  </span>
-                </div>
-              </div>
-
-              {/* Hover backglow */}
-              <div
-                className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none z-0"
-                style={{ background: `radial-gradient(circle at 50% 40%, ${u.color}15, transparent 65%)` }}
-              />
-            </Link>
+            <UniverseCard u={u} />
           </motion.div>
         ))}
       </div>

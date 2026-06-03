@@ -2,6 +2,7 @@
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
+import Image from 'next/image'
 import SectionHeader from '@/components/ui/SectionHeader'
 
 interface Genre {
@@ -33,54 +34,54 @@ const STATIC_FALLBACK: Genre[] = [
 
 const GENRE_POSTERS: Record<string, string[]> = {
   action: [
-    'https://image.tmdb.org/t/p/w185/w46Vw53641Rx49642I7mi4Qn1ve.jpg',
-    'https://image.tmdb.org/t/p/w185/or06450m4efRLGaOIXOUferXPv1.jpg',
-    'https://image.tmdb.org/t/p/w185/78lPtwv72eTNqFW9COBYI0dWDJa.jpg',
+    'https://image.tmdb.org/t/p/w185/vZ466h515Tj54tJ222yZYt5sbzn.jpg', // John Wick
+    'https://image.tmdb.org/t/p/w185/or06450m4efRLGaOIXOUferXPv1.jpg', // Avengers: Endgame
+    'https://image.tmdb.org/t/p/w185/w46Vw53641Rx49642I7mi4Qn1ve.jpg', // Gladiator
   ],
   adventure: [
-    'https://image.tmdb.org/t/p/w185/yQvGrMoipbRoddT0ZR8tPoR7NfX.jpg',
-    'https://image.tmdb.org/t/p/w185/gDzOcq0pfeCeqMBwKIJlSmQpjkZ.jpg',
-    'https://image.tmdb.org/t/p/w185/vSNxAJTlD0r02V9sPYpOjqDZXUK.jpg',
+    'https://image.tmdb.org/t/p/w185/yQvGrMoipbRoddT0ZR8tPoR7NfX.jpg', // Interstellar
+    'https://image.tmdb.org/t/p/w185/gDzOcq0pfeCeqMBwKIJlSmQpjkZ.jpg', // Lord of the Rings
+    'https://image.tmdb.org/t/p/w185/vSNxAJTlD0r02V9sPYpOjqDZXUK.jpg', // Avatar: Way of Water
   ],
   fantasy: [
-    'https://image.tmdb.org/t/p/w185/4D7wV02423M3UjPzQL8gV2z874z.jpg',
-    'https://image.tmdb.org/t/p/w185/96gAy2mIY75m91R9233667ZsUIu.jpg',
-    'https://image.tmdb.org/t/p/w185/xf8PbyQcR5ucXErmZNzdKR0s8ya.jpg',
+    'https://image.tmdb.org/t/p/w185/4D7wV02423M3UjPzQL8gV2z874z.jpg', // Harry Potter
+    'https://image.tmdb.org/t/p/w185/96gAy2mIY75m91R9233667ZsUIu.jpg', // Baahubali 1
+    'https://image.tmdb.org/t/p/w185/xf8PbyQcR5ucXErmZNzdKR0s8ya.jpg', // Avatar
   ],
   'sci-fi': [
-    'https://image.tmdb.org/t/p/w185/yQvGrMoipbRoddT0ZR8tPoR7NfX.jpg',
-    'https://image.tmdb.org/t/p/w185/gDzOcq0pfeCeqMBwKIJlSmQpjkZ.jpg',
-    'https://image.tmdb.org/t/p/w185/78lPtwv72eTNqFW9COBYI0dWDJa.jpg',
+    'https://image.tmdb.org/t/p/w185/lh4aG01seRxrScrJ6NZr64lEB4L.jpg', // Matrix
+    'https://image.tmdb.org/t/p/w185/yQvGrMoipbRoddT0ZR8tPoR7NfX.jpg', // Interstellar
+    'https://image.tmdb.org/t/p/w185/tVFRpFw3xTedgPGqxW0AOI8Qhh0.jpg', // Inception
   ],
   mythology: [
-    'https://image.tmdb.org/t/p/w185/96gAy2mIY75m91R9233667ZsUIu.jpg',
-    'https://image.tmdb.org/t/p/w185/4D7wV02423M3UjPzQL8gV2z874z.jpg',
-    'https://image.tmdb.org/t/p/w185/w46Vw53641Rx49642I7mi4Qn1ve.jpg',
+    'https://image.tmdb.org/t/p/w185/cTLLcl8g5vYyZ4P9Wd92W414e8J.jpg', // Kantara
+    'https://image.tmdb.org/t/p/w185/rstcAnBeCkxNQjNp3YXrF6IP1tW.jpg', // HanuMan
+    'https://image.tmdb.org/t/p/w185/7WsyChQLEftFiDOVTGkv3hFpyyt.jpg', // Adipurush
   ],
   'super-hero': [
-    'https://image.tmdb.org/t/p/w185/or06450m4efRLGaOIXOUferXPv1.jpg',
-    'https://image.tmdb.org/t/p/w185/78lPtwv72eTNqFW9COBYI0dWDJa.jpg',
-    'https://image.tmdb.org/t/p/w185/qJ2tW6WMUDux911r6m7haRef0WH.jpg',
+    'https://image.tmdb.org/t/p/w185/or06450m4efRLGaOIXOUferXPv1.jpg', // Endgame
+    'https://image.tmdb.org/t/p/w185/78lPtwv72eTNqFW9COBYI0dWDJa.jpg', // Iron Man
+    'https://image.tmdb.org/t/p/w185/qJ2tW6WMUDux911r6m7haRef0WH.jpg', // The Dark Knight
   ],
   thriller: [
-    'https://image.tmdb.org/t/p/w185/qJ2tW6WMUDux911r6m7haRef0WH.jpg',
-    'https://image.tmdb.org/t/p/w185/74xTEgt7R36Fpooo50r9T25onhq.jpg',
-    'https://image.tmdb.org/t/p/w185/tVFRpFw3xTedgPGqxW0AOI8Qhh0.jpg',
+    'https://image.tmdb.org/t/p/w185/qJ2tW6WMUDux911r6m7haRef0WH.jpg', // The Dark Knight
+    'https://image.tmdb.org/t/p/w185/74xTEgt7R36Fpooo50r9T25onhq.jpg', // The Batman
+    'https://image.tmdb.org/t/p/w185/tVFRpFw3xTedgPGqxW0AOI8Qhh0.jpg', // Inception
   ],
   romance: [
-    'https://image.tmdb.org/t/p/w185/dB4EDhre2dsC2kxYDavyKWqLQwi.jpg',
-    'https://image.tmdb.org/t/p/w185/yVtx7Xn9UxNJqvG2BkvhCcmed9S.jpg',
-    'https://image.tmdb.org/t/p/w185/xUfRZu2mi8jH6SzQEJGP6tjBuYj.jpg',
+    'https://image.tmdb.org/t/p/w185/dB4EDhre2dsC2kxYDavyKWqLQwi.jpg', // Your Name
+    'https://image.tmdb.org/t/p/w185/yVtx7Xn9UxNJqvG2BkvhCcmed9S.jpg', // Titanic
+    'https://image.tmdb.org/t/p/w185/xUfRZu2mi8jH6SzQEJGP6tjBuYj.jpg', // La La Land
   ],
   comedy: [
-    'https://image.tmdb.org/t/p/w185/fcKH1NQzoTXiYO1OrhaFFwTKhBp.jpg',
-    'https://image.tmdb.org/t/p/w185/zg19Paur3lVVSh8J4LJVO1wgBIg.jpg',
-    'https://image.tmdb.org/t/p/w185/3UoNmOT7E7o7FcGmzTMmcw1WGGU.jpg',
+    'https://image.tmdb.org/t/p/w185/fcKH1NQzoTXiYO1OrhaFFwTKhBp.jpg', // 3 Idiots
+    'https://image.tmdb.org/t/p/w185/zg19Paur3lVVSh8J4LJVO1wgBIg.jpg', // The Hangover
+    'https://image.tmdb.org/t/p/w185/3UoNmOT7E7o7FcGmzTMmcw1WGGU.jpg', // Jathi Ratnalu
   ],
   drama: [
-    'https://image.tmdb.org/t/p/w185/yQvGrMoipbRoddT0ZR8tPoR7NfX.jpg',
-    'https://image.tmdb.org/t/p/w185/qJ2tW6WMUDux911r6m7haRef0WH.jpg',
-    'https://image.tmdb.org/t/p/w185/74xTEgt7R36Fpooo50r9T25onhq.jpg',
+    'https://image.tmdb.org/t/p/w185/arw2tEZmZ5q27wVvSy2tcB6Jzfs.jpg', // Forrest Gump
+    'https://image.tmdb.org/t/p/w185/9cqN0z4U7K65RDP5gZ74VBja2b3.jpg', // Shawshank Redemption
+    'https://image.tmdb.org/t/p/w185/3bhkrj68VMMlBzR2dqsSy4gfdAS.jpg', // The Godfather
   ],
 }
 
@@ -218,29 +219,38 @@ export default function CategoriesGrid() {
                 href={`/search?genre=${genre.slug}`}
                 className="relative flex flex-col items-center justify-end rounded-2xl overflow-hidden group cursor-pointer h-[180px] border border-white/[0.04] hover:border-transparent transition-all duration-500"
                 style={{
-                  background: `linear-gradient(145deg, ${color}15 0%, rgba(7,8,16,0.98) 75%)`,
+                  background: `linear-gradient(145deg, ${color}28 0%, rgba(7,8,16,0.65) 100%)`,
                 }}
               >
                 {/* Poster Collage Background */}
                 {posters.length > 0 && (
-                  <div className="absolute inset-0 flex justify-center items-center gap-1.5 opacity-[0.16] group-hover:opacity-[0.32] transition-opacity duration-500 scale-[0.85] group-hover:scale-95 transition-transform duration-500 select-none pointer-events-none z-0 pb-8">
+                  <div className="absolute inset-0 flex justify-center items-center gap-1.5 opacity-[0.60] group-hover:opacity-[0.80] transition-opacity duration-500 scale-[0.85] group-hover:scale-95 transition-transform duration-500 select-none pointer-events-none z-0 pb-8">
                     {/* Left poster */}
-                    <img
+                    <Image
                       src={posters[0]}
                       alt=""
-                      className="w-12 aspect-[2/3] object-cover rounded-lg shadow-md -rotate-12 translate-x-2.5 translate-y-2 border border-white/5"
+                      width={48}
+                      height={72}
+                      className="w-12 h-18 object-cover rounded-lg shadow-md -rotate-12 translate-x-2.5 translate-y-2 border border-white/5"
+                      unoptimized
                     />
                     {/* Center poster */}
-                    <img
+                    <Image
                       src={posters[1]}
                       alt=""
-                      className="w-14 aspect-[2/3] object-cover rounded-lg shadow-xl z-10 border border-white/10"
+                      width={56}
+                      height={84}
+                      className="w-14 h-21 object-cover rounded-lg shadow-xl z-10 border border-white/10"
+                      unoptimized
                     />
                     {/* Right poster */}
-                    <img
+                    <Image
                       src={posters[2]}
                       alt=""
-                      className="w-12 aspect-[2/3] object-cover rounded-lg shadow-md rotate-12 -translate-x-2.5 translate-y-2 border border-white/5"
+                      width={48}
+                      height={72}
+                      className="w-12 h-18 object-cover rounded-lg shadow-md rotate-12 -translate-x-2.5 translate-y-2 border border-white/5"
+                      unoptimized
                     />
                   </div>
                 )}
@@ -258,9 +268,9 @@ export default function CategoriesGrid() {
 
                 {/* Gradient bottom plate to shield title text */}
                 <div
-                  className="absolute bottom-0 left-0 right-0 h-2/3 z-20"
+                  className="absolute bottom-0 left-0 right-0 h-1/2 z-20"
                   style={{
-                    background: `linear-gradient(to top, rgba(7,8,16,1) 0%, rgba(7,8,16,0.85) 50%, transparent 100%)`,
+                    background: `linear-gradient(to top, rgba(7,8,16,0.9) 0%, rgba(7,8,16,0.3) 60%, rgba(7,8,16,0) 100%)`,
                   }}
                 />
 

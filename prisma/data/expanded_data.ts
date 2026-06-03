@@ -1,0 +1,15915 @@
+import { ContentType, ContentStatus } from '@prisma/client'
+
+export const expandedContent: any[] = [
+  {
+    "slug": "peddi-2026",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/kydPBzuU4TSmDOXCkgAdVFF8sgU.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/oPsRr7AfNLw6XaPuMpvkWK0bIUA.jpg",
+    "title": {
+      "en": "Peddi",
+      "te": "Peddi"
+    },
+    "description": {
+      "en": "In 1980s rural Andhra Pradesh, a spirited villager unites his community through sports to defend their pride against a powerful rival.",
+      "te": "1980వ దశకంలో గ్రామీణ ఆంధ్ర ప్రదేశ్‌లో, ఒక శక్తివంతమైన ప్రత్యర్థిపై తమ అహంకారాన్ని కాపాడుకోవడానికి ఒక ఆత్మీయ గ్రామస్థుడు క్రీడల ద్వారా తన సంఘాన్ని ఏకం చేశాడు."
+    },
+    "genres": [
+      "Action",
+      "Drama",
+      "Adventure"
+    ],
+    "year": 2026,
+    "runtime": 192,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 7,
+    "studio": "Sukumar Writings",
+    "language": "Telugu",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 3,
+    "popularityScore": 7,
+    "universe": null
+  },
+  {
+    "slug": "nawab-cafe-2026",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/mZ3By7MbNzMx2ANQ9MdYnwMYlQ3.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/lC9pnCMf3cWWOwWSPsZGV9sYWzw.jpg",
+    "title": {
+      "en": "Nawab Cafe",
+      "te": "Nawab Cafe"
+    },
+    "description": {
+      "en": "A family grapples with communication barriers as a father and son circle around conversations they desperately need but cannot bring themselves to have.",
+      "te": "ఒక కుటుంబం కమ్యూనికేషన్ అడ్డంకులను ఎదుర్కొంటుంది, తండ్రి మరియు కొడుకులు తమకు చాలా అవసరమైన సంభాషణల చుట్టూ తిరుగుతారు, కానీ తమను తాము కలిగి ఉండలేరు."
+    },
+    "genres": [
+      "Drama"
+    ],
+    "year": 2026,
+    "runtime": 131,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 7,
+    "studio": "",
+    "language": "Telugu",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 2,
+    "popularityScore": 5,
+    "universe": null
+  },
+  {
+    "slug": "dacoit-2026",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/lbrnJY7E0a9xxgj2cotNp6YI4dz.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/q8Qlpmp2my1IZV9EVebzvhhJPmy.jpg",
+    "title": {
+      "en": "Dacoit",
+      "te": "Dacoit"
+    },
+    "description": {
+      "en": "Betrayed by his better half, a man is convicted for a crime he didn't commit. Once free, he hunts her down in pursuit of vengeance, as their stories intertwine with a series of robberies.",
+      "te": "అతని బెటర్ హాఫ్ చేత మోసం చేయబడిన వ్యక్తి, అతను చేయని నేరానికి దోషిగా నిర్ధారించబడ్డాడు. విడిపోయిన తర్వాత, అతను ప్రతీకారం కోసం ఆమెను వేటాడాడు, ఎందుకంటే వారి కథలు వరుస దోపిడీలతో ముడిపడి ఉన్నాయి."
+    },
+    "genres": [
+      "Action",
+      "Romance"
+    ],
+    "year": 2026,
+    "runtime": 150,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 6.25,
+    "studio": "S.S. Creations",
+    "language": "Telugu",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 2,
+    "popularityScore": 4,
+    "universe": null
+  },
+  {
+    "slug": "b-hubali-the-epic-2025",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/z9YIo2qscyaXYgRqIdRJtND3bw8.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/i2GPnSwsdxHtI19e7gZwFVndpqg.jpg",
+    "title": {
+      "en": "Bāhubali: The Epic",
+      "te": "Bāhubali: The Epic"
+    },
+    "description": {
+      "en": "When a mysterious child is found by a tribal couple near a roaring waterfall, they raise him as their own. As he grows, Sivudu is drawn to the world beyond the cliffs, where he discovers the ancient kingdom of Mahishmati, ruled by a cruel tyrant, haunted by rebellion, and bound to his past. What begins as a quest for love soon unravels a legacy of betrayal, sacrifice, and a forgotten prince.",
+      "te": "గర్జించే జలపాతం దగ్గర ఒక గిరిజన దంపతులకు రహస్యమైన పిల్లవాడు కనిపించినప్పుడు, వారు అతనిని తమ బిడ్డగా పెంచుకుంటారు. అతను పెరుగుతున్న కొద్దీ, శివుడు కొండ చరియలు దాటి ప్రపంచానికి ఆకర్షితుడయ్యాడు, అక్కడ అతను మాహిష్మతి యొక్క పురాతన రాజ్యాన్ని కనుగొంటాడు, క్రూరమైన నిరంకుశుడు పాలించాడు, తిరుగుబాటుతో వెంటాడాడు మరియు అతని గతానికి కట్టుబడి ఉన్నాడు. ప్రేమ కోసం అన్వేషణగా ప్రారంభమయ్యేది త్వరలో ద్రోహం, త్యాగం మరియు మరచిపోయిన యువరాజు యొక్క వారసత్వాన్ని విప్పుతుంది."
+    },
+    "genres": [
+      "Action",
+      "Drama"
+    ],
+    "year": 2025,
+    "runtime": 224,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 6.184,
+    "studio": "Arka Media Works",
+    "language": "Telugu",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 2,
+    "popularityScore": 3,
+    "universe": null
+  },
+  {
+    "slug": "ustaad-bhagat-singh-2026",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/8n4ypYQWztEXlR8JxD0fctdKwfC.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/xVUY7fJum48tTUqiqeamousRBUX.jpg",
+    "title": {
+      "en": "Ustaad Bhagat Singh",
+      "te": "Ustaad Bhagat Singh"
+    },
+    "description": {
+      "en": "A tribal boy is shaped by the values of his teacher, who gives him the name 'Bhagat Singh'. He grows up deeply rooted in strong morals, which guide his actions throughout his life.He stands firm against injustice and takes on powerful evil forces, even when facing overwhelming odds.",
+      "te": "ఒక గిరిజన బాలుడు తన గురువు యొక్క విలువలతో రూపుదిద్దుకుంటాడు, అతనికి 'భగత్ సింగ్' అని పేరు పెట్టారు. అతను బలమైన నైతికతతో లోతుగా పాతుకుపోతాడు, ఇది అతని జీవితాంతం అతని చర్యలకు మార్గనిర్దేశం చేస్తుంది. అతను అన్యాయానికి వ్యతిరేకంగా స్థిరంగా ఉంటాడు మరియు అధిక అసమానతలను ఎదుర్కొన్నప్పుడు కూడా శక్తివంతమైన దుష్ట శక్తులను తీసుకుంటాడు."
+    },
+    "genres": [
+      "Action",
+      "Comedy",
+      "Drama"
+    ],
+    "year": 2026,
+    "runtime": 151,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 6.5,
+    "studio": "Mythri Movie Makers",
+    "language": "Telugu",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 2,
+    "popularityScore": 3,
+    "universe": null
+  },
+  {
+    "slug": "sathi-leelavathi-2026",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/7lRCDsm8vTA8VIdfkDXEe4UK70C.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/gFSvLcFwJE0JU3o7q30LKMu7pd0.jpg",
+    "title": {
+      "en": "Sathi Leelavathi",
+      "te": "Sathi Leelavathi"
+    },
+    "description": {
+      "en": "Leelavathi is a successful and spirited film director whose marriage with Ram Sethu begins falling apart. The relationship is strained by ego, changing gender roles, and the husband feeling overshadowed by his wife's success. Things complicate further when Sethu asks for a divorce and admits he has feelings for another woman, Nicola Sebastian. The couple is then forced to confront unresolved feelings and unearth hidden truths about their marriage.",
+      "te": "లీలావతి ఒక విజయవంతమైన మరియు ఉత్సాహవంతమైన చిత్ర దర్శకురాలు, రామ్ సేతుతో అతని వివాహం విడిపోవడం ప్రారంభమవుతుంది. అహం, లింగ పాత్రలు మారడం మరియు భర్త తన భార్య విజయంతో మసకబారడం వల్ల సంబంధం దెబ్బతింటుంది. సేతు విడాకులు కోరినప్పుడు మరియు నికోలా సెబాస్టియన్ అనే మరో మహిళ పట్ల తనకు భావాలు ఉన్నాయని అంగీకరించినప్పుడు విషయాలు మరింత క్లిష్టంగా మారతాయి. ఆ జంట అపరిష్కృత భావాలను ఎదుర్కోవలసి వస్తుంది మరియు వారి వివాహం గురించి దాచిన నిజాలను వెలికితీస్తుంది."
+    },
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Romance"
+    ],
+    "year": 2026,
+    "runtime": 131,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 7,
+    "studio": "Durga Devi Pictures",
+    "language": "Telugu",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 1,
+    "popularityScore": 3,
+    "universe": null
+  },
+  {
+    "slug": "rrr-2022",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/u0XUBNQWlOvrh0Gd97ARGpIkL0.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/i0Y0wP8H6SRgjr6QmuwbtQbS24D.jpg",
+    "title": {
+      "en": "RRR",
+      "te": "RRR"
+    },
+    "description": {
+      "en": "A fictional history of two legendary revolutionaries' journey away from home before they began fighting for their country in the 1920s.",
+      "te": "1920లలో తమ దేశం కోసం పోరాడటం ప్రారంభించడానికి ముందు ఇద్దరు పురాణ విప్లవకారులు ఇంటి నుండి దూరంగా ప్రయాణించిన కల్పిత చరిత్ర."
+    },
+    "genres": [
+      "Action",
+      "Adventure",
+      "Drama"
+    ],
+    "year": 2022,
+    "runtime": 187,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 7.716,
+    "studio": "DVV Entertainment",
+    "language": "Telugu",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 1,
+    "popularityScore": 3,
+    "universe": null
+  },
+  {
+    "slug": "laila-2025",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/aFogllaRGlAhk1nqvVGFpZpl4qU.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/vNUwK5P42m81uG57kKI1WxSZwIQ.jpg",
+    "title": {
+      "en": "Laila",
+      "te": "Laila"
+    },
+    "description": {
+      "en": "Sonu Model, a renowned beautician from the old city, is forced to disguise himself as Laila, leading to a series of comedic, romantic, and action-packed events. Chaos ensues in this hilarious laugh riot",
+      "te": "పాత నగరానికి చెందిన ప్రఖ్యాత బ్యూటీషియన్ అయిన సోను మోడల్, లైలాగా మారువేషం వేయవలసి వచ్చింది, ఇది కామెడీ, రొమాంటిక్ మరియు యాక్షన్-ప్యాక్డ్ ఈవెంట్‌లకు దారితీసింది. ఈ ఉల్లాసమైన నవ్వుల అల్లరిలో గందరగోళం ఏర్పడుతుంది"
+    },
+    "genres": [
+      "Comedy",
+      "Romance"
+    ],
+    "year": 2025,
+    "runtime": 134,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 5.25,
+    "studio": "Shine Screens",
+    "language": "Telugu",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 1,
+    "popularityScore": 2,
+    "universe": null
+  },
+  {
+    "slug": "the-rajasaab-2026",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/nRy56JePNbXgaZc76gqZkB6FFne.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/gTIobmaZTeXDMD2LcIvhnL9rsu8.jpg",
+    "title": {
+      "en": "The Rajasaab",
+      "te": "The Rajasaab"
+    },
+    "description": {
+      "en": "Seeking his lost grandfather, a young man enters a haunted mansion and awakens a family curse powerful enough to upend both his life and reality.",
+      "te": "తప్పిపోయిన తన తాతని వెతుక్కుంటూ, ఒక యువకుడు హాంటెడ్ మాన్షన్‌లోకి ప్రవేశిస్తాడు మరియు అతని జీవితం మరియు వాస్తవికత రెండింటినీ పెంచేంత శక్తివంతమైన కుటుంబ శాపాన్ని మేల్కొల్పాడు."
+    },
+    "genres": [
+      "Comedy",
+      "Horror",
+      "Fantasy",
+      "Action"
+    ],
+    "year": 2026,
+    "runtime": 186,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 5.2,
+    "studio": "People Media Factory",
+    "language": "Telugu",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 1,
+    "popularityScore": 2,
+    "universe": null
+  },
+  {
+    "slug": "pushpa-2-the-rule-2024",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/bhxZj3y59cK7JtGdV285dhDRaMe.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/keC82cQ8q0ZHthrbvzWq04kGnbv.jpg",
+    "title": {
+      "en": "Pushpa 2 - The Rule",
+      "te": "Pushpa 2 - The Rule"
+    },
+    "description": {
+      "en": "As his smuggling empire grows, a brazen Pushpa longs for power and respect on his vengeful journey, while facing old rivals and new.",
+      "te": "అతని స్మగ్లింగ్ సామ్రాజ్యం పెరుగుతున్న కొద్దీ, పాత ప్రత్యర్థులను మరియు కొత్తవారిని ఎదుర్కొంటూనే, తన ప్రతీకార ప్రయాణంలో ఒక ఇత్తడి పుష్ప అధికారం మరియు గౌరవం కోసం ఆశపడుతుంది."
+    },
+    "genres": [
+      "Action",
+      "Drama",
+      "Crime"
+    ],
+    "year": 2024,
+    "runtime": 201,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 6.29,
+    "studio": "Mythri Movie Makers",
+    "language": "Telugu",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 1,
+    "popularityScore": 2,
+    "universe": null
+  },
+  {
+    "slug": "vanaveera-2026",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/oBYExKI8E3bTzQjPkofhpV2EJon.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/lmns2jlRmATs8OGWKcCkgrbHLM4.jpg",
+    "title": {
+      "en": "Vanaveera",
+      "te": "Vanaveera"
+    },
+    "description": {
+      "en": "A descendant of the Vanara clan is pushed into conflict when a modern-day Ravana seizes his only bike for an election rally. What starts as a petty injustice soon erupts into a fierce fight for self-respect and dignity.",
+      "te": "ఆధునిక కాలపు రావణుడు ఎన్నికల ర్యాలీ కోసం అతని ఏకైక బైక్‌ను స్వాధీనం చేసుకున్నప్పుడు వానర వంశానికి చెందిన వారసుడు సంఘర్షణలోకి నెట్టబడ్డాడు. చిన్నపాటి అన్యాయంగా మొదలయ్యేది త్వరలోనే ఆత్మగౌరవం మరియు గౌరవం కోసం భీకర పోరాటంగా చెలరేగుతుంది."
+    },
+    "genres": [
+      "Action",
+      "Drama"
+    ],
+    "year": 2026,
+    "runtime": 120,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 7.5,
+    "studio": "",
+    "language": "Telugu",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 1,
+    "popularityScore": 2,
+    "universe": null
+  },
+  {
+    "slug": "hi-nanna-2023",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/hhMLtq9m1aK0dpY9Wcq26XeDH2z.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/2vxKa3gMHc84O1iHRkslqeHSsxE.jpg",
+    "title": {
+      "en": "Hi Nanna",
+      "te": "Hi Nanna"
+    },
+    "description": {
+      "en": "Six-year-old Mahi, a spirited child with cystic fibrosis, shares a deep yet complex bond with her father, Viraj, a dedicated single parent and successful fashion photographer. Her curiosity about her absent mother leads to a journey of discovery when she runs away with her loyal dog, Pluto. A chance encounter with a kind woman named Yashna sparks unexpected revelations, intertwining their lives in ways they never anticipated. Set against a backdrop of love, sacrifice, and redemption, Mahi’s story is a heartfelt exploration of family, resilience, and the enduring power of connection.",
+      "te": "సిస్టిక్ ఫైబ్రోసిస్‌తో బాధపడుతున్న ఆరేళ్ల మహి, తన తండ్రి విరాజ్‌తో లోతైన ఇంకా సంక్లిష్టమైన బంధాన్ని పంచుకుంటుంది, అంకితమైన సింగిల్ పేరెంట్ మరియు విజయవంతమైన ఫ్యాషన్ ఫోటోగ్రాఫర్. ఆమె లేని తల్లి గురించి ఆమె ఉత్సుకత, ఆమె తన నమ్మకమైన కుక్క ప్లూటోతో పారిపోయినప్పుడు కనుగొనే ప్రయాణానికి దారి తీస్తుంది. యష్నా అనే దయగల స్త్రీతో ఒక అవకాశం ఎదురైనప్పుడు ఊహించని ద్యోతకాలు ఎదురవుతాయి, వారి జీవితాలను వారు ఊహించని విధంగా పెనవేసుకున్నారు. ప్రేమ, త్యాగం మరియు విముక్తి నేపథ్యానికి వ్యతిరేకంగా సెట్ చేయబడిన మహి కథ కుటుంబం, స్థితిస్థాపకత మరియు అనుబంధం యొక్క శాశ్వతమైన శక్తి యొక్క హృదయపూర్వక అన్వేషణ."
+    },
+    "genres": [
+      "Drama",
+      "Family",
+      "Romance"
+    ],
+    "year": 2023,
+    "runtime": 155,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 7.836,
+    "studio": "Vyra Entertainments",
+    "language": "Telugu",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 1,
+    "popularityScore": 2,
+    "universe": null
+  },
+  {
+    "slug": "euphoria-2026",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/9fpTl3fNYmBcMOGocrx59XKDdgO.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/2VnevJhCTE8bwpkn37JAkceSW5i.jpg",
+    "title": {
+      "en": "Euphoria",
+      "te": "Euphoria"
+    },
+    "description": {
+      "en": "A young woman and her family seek justice after she is raped by a group of young men who come from powerful and influential backgrounds.",
+      "te": "శక్తివంతమైన మరియు ప్రభావవంతమైన నేపథ్యాల నుండి వచ్చిన యువకుల బృందం ఆమెపై అత్యాచారం చేసిన తర్వాత ఒక యువతి మరియు ఆమె కుటుంబం న్యాయం కోరింది."
+    },
+    "genres": [
+      "Drama"
+    ],
+    "year": 2026,
+    "runtime": 148,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 7,
+    "studio": "Gunaa Teamworks",
+    "language": "Telugu",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 1,
+    "popularityScore": 2,
+    "universe": null
+  },
+  {
+    "slug": "salaar-part-1-ceasefire-2023",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/nlu9WbcetNFRGXXPWITr30ob7W6.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/xtOCTmGemASooRkAxRorYODig1p.jpg",
+    "title": {
+      "en": "Salaar: Part 1 - Ceasefire",
+      "te": "Salaar: Part 1 - Ceasefire"
+    },
+    "description": {
+      "en": "Set in the fictional dystopian city-state of Khansaar, the film follows the friendship between Deva, a tribesman, and Varadha, the prince of Khansaar. When a coup d'état is planned by his father's ministers and his relatives, Varadha enlists Deva's help to become Khansaar's undisputed ruler.",
+      "te": "కల్పిత డిస్టోపియన్ సిటీ-స్టేట్ ఆఫ్ ఖాన్సార్‌లో సెట్ చేయబడిన ఈ చిత్రం దేవా, గిరిజనుడు మరియు ఖాన్సార్ యువరాజు వరద మధ్య స్నేహాన్ని అనుసరిస్తుంది. అతని తండ్రి మంత్రులు మరియు అతని బంధువులచే తిరుగుబాటు ప్రణాళిక చేయబడినప్పుడు, వరదుడు ఖాన్సార్ యొక్క తిరుగులేని పాలకుడు కావడానికి దేవ సహాయం తీసుకుంటాడు."
+    },
+    "genres": [
+      "Action",
+      "Crime",
+      "Drama"
+    ],
+    "year": 2023,
+    "runtime": 175,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 6.674,
+    "studio": "Hombale Films",
+    "language": "Telugu",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 1,
+    "popularityScore": 1,
+    "universe": null
+  },
+  {
+    "slug": "kalki-2898-ad-2024",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/rstcAnBeCkxNQjNp3YXrF6IP1tW.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/o8XSR1SONnjcsv84NRu6Mwsl5io.jpg",
+    "title": {
+      "en": "Kalki 2898-AD",
+      "te": "Kalki 2898-AD"
+    },
+    "description": {
+      "en": "In the year 2898 AD, around 6000 years after Kurukshetra war, Ashwatthama gears up for his final battle of redemption at the sign of hope in a dystopian world and Bhairava, a wisecracking and self-interested bounty hunter, tired of the perilous life becomes the hurdle in the process.",
+      "te": "క్రీ.శ. 2898లో, కురుక్షేత్ర యుద్ధం తర్వాత దాదాపు 6000 సంవత్సరాల తర్వాత, అశ్వత్థామ ఒక డిస్టోపియన్ ప్రపంచంలో ఆశ యొక్క చిహ్నంగా విమోచనం కోసం తన చివరి యుద్ధానికి సిద్ధమయ్యాడు మరియు ప్రమాదకరమైన జీవితంతో విసిగిపోయిన భైరవ అనే తెలివైన మరియు స్వయం-ఆసక్తిగల ఔదార్య వేటగాడు ఈ ప్రక్రియలో అడ్డంకిగా మారాడు."
+    },
+    "genres": [
+      "Drama",
+      "Action",
+      "Fantasy",
+      "Sci-Fi"
+    ],
+    "year": 2024,
+    "runtime": 176,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 6.389,
+    "studio": "Vyjayanthi Movies",
+    "language": "Telugu",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 1,
+    "popularityScore": 1,
+    "universe": null
+  },
+  {
+    "slug": "akhanda-2-thaandavam-2025",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/jo9efbQSGDZNQ6xMocyD1prFjdF.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/805aMQucnpLkSmQ35Pql35fq3Gw.jpg",
+    "title": {
+      "en": "Akhanda 2: Thaandavam",
+      "te": "Akhanda 2: Thaandavam"
+    },
+    "description": {
+      "en": "When all hope died, Akhanda arrived. He saved his family, protected his people, killed the wrongdoers, and retreated into isolation. But years later, new threats emerge putting the world in danger. And as the world burns, Akhanda returns.",
+      "te": "ఆశలన్నీ చచ్చిపోయాక అఖండ వచ్చేసింది. అతను తన కుటుంబాన్ని రక్షించాడు, తన ప్రజలను రక్షించాడు, తప్పు చేసిన వారిని చంపాడు మరియు ఒంటరిగా వెనక్కి వెళ్ళాడు. కానీ సంవత్సరాల తరువాత, కొత్త బెదిరింపులు ప్రపంచాన్ని ప్రమాదంలో పడేస్తున్నాయి. మరియు ప్రపంచం కాలిపోతున్నప్పుడు, అఖండ తిరిగి వస్తుంది."
+    },
+    "genres": [
+      "Action",
+      "Drama"
+    ],
+    "year": 2025,
+    "runtime": 164,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 5.867,
+    "studio": "14 Reels Entertainment",
+    "language": "Telugu",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 1,
+    "popularityScore": 1,
+    "universe": null
+  },
+  {
+    "slug": "biker-2026",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/cKuFTk3qqrASg2nopJwDdeAroeF.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/yrsWvYxnmA7ntxZtO9K0OInjyRA.jpg",
+    "title": {
+      "en": "Biker",
+      "te": "Biker"
+    },
+    "description": {
+      "en": "A seasoned motocross rider returns to the grueling sport he once abandoned, confronting fierce competition and a father who might push him to the brink.",
+      "te": "అనుభవజ్ఞుడైన మోటోక్రాస్ రైడర్ అతను ఒకసారి వదిలివేసిన భయంకరమైన క్రీడకు తిరిగి వస్తాడు, తీవ్రమైన పోటీని ఎదుర్కొంటాడు మరియు అతనిని అంచుకు నెట్టగల తండ్రి."
+    },
+    "genres": [
+      "Adventure",
+      "Drama",
+      "Family"
+    ],
+    "year": 2026,
+    "runtime": 162,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 6.2,
+    "studio": "UV Creations",
+    "language": "Telugu",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 1,
+    "popularityScore": 1,
+    "universe": null
+  },
+  {
+    "slug": "guntur-kaaram-2024",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/qvBt4YLy274ZmoMAfVlwmHkjVkq.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/pRb9zpNXH1u6Fd4Da9H8PaIDwoY.jpg",
+    "title": {
+      "en": "Guntur Kaaram",
+      "te": "Guntur Kaaram"
+    },
+    "description": {
+      "en": "Years after his mother left him and remarried, Ramana is asked to sign documents denying any relations with his mother, but he refuses and demands answer to why his mother left him.",
+      "te": "అతని తల్లి అతనిని విడిచిపెట్టి, మళ్లీ పెళ్లి చేసుకున్న సంవత్సరాల తర్వాత, రమణ తన తల్లితో ఎలాంటి సంబంధాలను నిరాకరిస్తూ పత్రాలపై సంతకం చేయమని అడిగాడు, కానీ అతను నిరాకరించాడు మరియు అతని తల్లి తనను ఎందుకు విడిచిపెట్టిందో సమాధానం చెప్పాలని డిమాండ్ చేశాడు."
+    },
+    "genres": [
+      "Action",
+      "Drama"
+    ],
+    "year": 2024,
+    "runtime": 156,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 5.5,
+    "studio": "Haarika & Hassine Creations",
+    "language": "Telugu",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 1,
+    "popularityScore": 1,
+    "universe": null
+  },
+  {
+    "slug": "gaayapadda-simham-2026",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/dx40U1uLHwBpdbVxIMC57jyIAaf.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/vNIizspRZthdZjM0RJoMDSCnUA5.jpg",
+    "title": {
+      "en": "Gaayapadda Simham",
+      "te": "Gaayapadda Simham"
+    },
+    "description": {
+      "en": "Follows Indians facing challenges while trying to travel to the USA and the struggles they encounter after reaching there.",
+      "te": "USAకి వెళ్లడానికి ప్రయత్నిస్తున్నప్పుడు ఎదురయ్యే సవాళ్లను మరియు అక్కడికి చేరుకున్న తర్వాత వారు ఎదుర్కొనే పోరాటాలను అనుసరిస్తుంది."
+    },
+    "genres": [
+      "Comedy",
+      "Drama"
+    ],
+    "year": 2026,
+    "runtime": 140,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 7,
+    "studio": "Sapta Aswa Media Work",
+    "language": "Telugu",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 0,
+    "popularityScore": 1,
+    "universe": null
+  },
+  {
+    "slug": "maa-inti-bangaram-2026",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/n7X5JZLzqzUxwdn9Mwx9cegEnBv.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/2pA5fvLPZGYR5OukwiRCeliHvNM.jpg",
+    "title": {
+      "en": "Maa Inti Bangaram",
+      "te": "Maa Inti Bangaram"
+    },
+    "description": {
+      "en": "Through both her moments of fear and bravery, a woman discovers that embracing her vulnerabilities is as vital to her inner strength as facing challenges head-on.",
+      "te": "భయం మరియు ధైర్యం యొక్క రెండు క్షణాల ద్వారా, ఒక స్త్రీ తన బలహీనతలను ఆలింగనం చేసుకోవడం అనేది సవాళ్లను ఎదుర్కొన్నంత మాత్రాన తన అంతర్గత శక్తికి చాలా ముఖ్యమైనదని కనుగొంటుంది."
+    },
+    "genres": [
+      "Action",
+      "Drama"
+    ],
+    "year": 2026,
+    "runtime": 120,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 7,
+    "studio": "Tralala Moving Pictures",
+    "language": "Telugu",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 0,
+    "popularityScore": 1,
+    "universe": null
+  },
+  {
+    "slug": "the-family-star-2024",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/2mLyHeWwU0Ocv9Jvk72IDqZqT7G.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/1EECShloaXfQpXLphUzpDKxSTeA.jpg",
+    "title": {
+      "en": "The Family Star",
+      "te": "The Family Star"
+    },
+    "description": {
+      "en": "Govardhan, a devoted architect from Hyderabad, juggles supporting his extended family while seeking a partner who understands his commitments. When he discovers Indu thesis on his family, he challenges her, leading to unexpected twists as they navigate misunderstandings and eventually find love amidst sacrifice and understanding",
+      "te": "గోవర్ధన్, హైదరాబాద్‌కు చెందిన అంకితభావం కలిగిన వాస్తుశిల్పి, తన కట్టుబాట్లను అర్థం చేసుకునే భాగస్వామిని వెతుకుతున్నప్పుడు తన కుటుంబానికి మద్దతుగా గారడీ చేస్తాడు. అతను తన కుటుంబంపై ఇందు థీసిస్‌ను కనుగొన్నప్పుడు, అతను ఆమెను సవాలు చేస్తాడు, వారు అపార్థాలను నావిగేట్ చేయడం మరియు చివరికి త్యాగం మరియు అవగాహన మధ్య ప్రేమను కనుగొనడం వంటి ఊహించని మలుపులకు దారి తీస్తుంది."
+    },
+    "genres": [
+      "Family",
+      "Romance",
+      "Comedy",
+      "Drama",
+      "Action"
+    ],
+    "year": 2024,
+    "runtime": 155,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 4.833,
+    "studio": "Sri Venkateswara Creations",
+    "language": "Telugu",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 1,
+    "popularityScore": 1,
+    "universe": null
+  },
+  {
+    "slug": "b-hubali-2-the-conclusion-2017",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/21sC2assImQIYCEDA84Qh9d1RsK.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/whNjsTOUVg2lZLCKgGhnACnmV8E.jpg",
+    "title": {
+      "en": "Bāhubali 2: The Conclusion",
+      "te": "Bāhubali 2: The Conclusion"
+    },
+    "description": {
+      "en": "When Mahendra, the son of Bāhubali, learns about his heritage, he begins to look for answers. His story is juxtaposed with past events that unfolded in the Mahishmati Kingdom.",
+      "te": "బాహుబలి కుమారుడైన మహేంద్ర తన వారసత్వం గురించి తెలుసుకున్నప్పుడు, అతను సమాధానాల కోసం వెతకడం ప్రారంభించాడు. అతని కథ మాహిష్మతి రాజ్యంలో జరిగిన గత సంఘటనలతో జతచేయబడింది."
+    },
+    "genres": [
+      "Action",
+      "Adventure",
+      "Fantasy"
+    ],
+    "year": 2017,
+    "runtime": 167,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 7.46,
+    "studio": "Arka Media Works",
+    "language": "Telugu",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 0,
+    "popularityScore": 1,
+    "universe": null
+  },
+  {
+    "slug": "pushpa-the-rise-2021",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/oaRk2HgOirEeNuDCwwScmq7rKvS.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/jQIcn51nsvMrpB9NFwEOb9QHhFt.jpg",
+    "title": {
+      "en": "Pushpa: The Rise",
+      "te": "Pushpa: The Rise"
+    },
+    "description": {
+      "en": "As Pushpa, a labourer, rises in the world of red sandalwood smuggling, he ends up making many enemies. However, violence ensues when the police try to topple his illegal business.",
+      "te": "పుష్ప అనే కార్మికురాలు ఎర్రచందనం స్మగ్లింగ్ ప్రపంచంలో ఎదగడంతో, అతను చాలా మంది శత్రువులను సృష్టిస్తాడు. అయినప్పటికీ, అతని అక్రమ వ్యాపారాన్ని పోలీసులు పడగొట్టడానికి ప్రయత్నించినప్పుడు హింస జరుగుతుంది."
+    },
+    "genres": [
+      "Action",
+      "Drama"
+    ],
+    "year": 2021,
+    "runtime": 179,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 6.757,
+    "studio": "Mythri Movie Makers",
+    "language": "Telugu",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 0,
+    "popularityScore": 1,
+    "universe": null
+  },
+  {
+    "slug": "geetha-govindam-2018",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/sTreb0ajewXqeIqAyZ0IWtafoB5.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/2pJ9xW1mA7zRfrg9On9e8AekrQM.jpg",
+    "title": {
+      "en": "Geetha Govindam",
+      "te": "Geetha Govindam"
+    },
+    "description": {
+      "en": "Vijay Govind, a young college lecturer who dreams of marriage falls for Geetha, a level-headed woman who's wary of strangers and isn't easy to convince. While things seem to go smoothly, Vijay makes a terrible mistake which not only derails any hope for his love story, but also potential repercussions with his family.",
+      "te": "పెళ్లి గురించి కలలు కంటున్న యువ కళాశాల లెక్చరర్ విజయ్ గోవింద్, అపరిచితుల పట్ల జాగ్రత్తగా ఉండే మరియు ఒప్పించడం అంత సులభం కాని స్థాయి మహిళ అయిన గీతపై పడతాడు. విషయాలు సజావుగా సాగుతున్నట్లు కనిపిస్తున్నప్పటికీ, విజయ్ ఒక భయంకరమైన పొరపాటు చేసాడు, అది అతని ప్రేమకథపై ఎలాంటి ఆశను దూరం చేయడమే కాకుండా అతని కుటుంబంతో సంభావ్య పరిణామాలను కూడా కలిగిస్తుంది."
+    },
+    "genres": [
+      "Romance"
+    ],
+    "year": 2018,
+    "runtime": 148,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 7.025,
+    "studio": "GA2 Pictures",
+    "language": "Telugu",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 0,
+    "popularityScore": 1,
+    "universe": null
+  },
+  {
+    "slug": "odela-2-2025",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/xG5SdRKXjWupcwXj2JJLOSX0PiS.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/4D7vkNkdDnAxYkmvpRaSO9diqhq.jpg",
+    "title": {
+      "en": "Odela 2",
+      "te": "Odela 2"
+    },
+    "description": {
+      "en": "A savior, Odela Mallanna Swamy, protects a village from evil forces.",
+      "te": "ఓదెల మల్లన్న స్వామి అనే రక్షకుడు ఒక గ్రామాన్ని దుష్ట శక్తుల నుండి రక్షిస్తాడు."
+    },
+    "genres": [
+      "Adventure",
+      "Crime"
+    ],
+    "year": 2025,
+    "runtime": 120,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 6,
+    "studio": "",
+    "language": "Telugu",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 0,
+    "popularityScore": 1,
+    "universe": null
+  },
+  {
+    "slug": "hit-the-third-case-2025",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/wT9tGyFol4RBwkjESXUWeBdnLJn.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/xzpXvyetmrdR3NSRN9uy0xO3lR1.jpg",
+    "title": {
+      "en": "HIT: The Third Case",
+      "te": "HIT: The Third Case"
+    },
+    "description": {
+      "en": "The Homicide Intervention Team (HIT) sends ruthless police officer Arjun Sarkaar to find a group of killers and stop their grisly murder spree.",
+      "te": "హోమిసైడ్ ఇంటర్వెన్షన్ టీమ్ (HIT) క్రూరమైన పోలీసు అధికారి అర్జున్ సర్కార్‌ను హంతకుల సమూహాన్ని కనుగొని, వారి ఘోరమైన హత్యలను ఆపడానికి పంపుతుంది."
+    },
+    "genres": [
+      "Crime",
+      "Action"
+    ],
+    "year": 2025,
+    "runtime": 157,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 6.798,
+    "studio": "Wall Poster Cinema",
+    "language": "Telugu",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 0,
+    "popularityScore": 1,
+    "universe": null
+  },
+  {
+    "slug": "devara-part-1-2024",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/lQfuaXjANoTsdx5iS0gCXlK9D2L.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/hAQnXxOwCjgYcKRgTdYPRC8neqL.jpg",
+    "title": {
+      "en": "Devara: Part 1",
+      "te": "Devara: Part 1"
+    },
+    "description": {
+      "en": "Devara, a fearless man from a coastal region, embarks on a perilous journey into the treacherous world of the sea to safeguard the lives of his people. Unbeknownst to him, his brother Bhaira is plotting a conspiracy against him. As events unfold, Devara passes on his legacy to his mild-mannered and timid son, Varada.",
+      "te": "తీరప్రాంతానికి చెందిన దేవారా అనే నిర్భయ వ్యక్తి, తన ప్రజల ప్రాణాలను కాపాడేందుకు సముద్రపు ద్రోహ ప్రపంచంలోకి ప్రమాదకరమైన ప్రయాణాన్ని ప్రారంభించాడు. తనకు తెలియకుండా తన సోదరుడు భైరా తనపై కుట్ర పన్నుతున్నాడు. సంఘటనలు జరుగుతున్నప్పుడు, దేవర తన సౌమ్యమైన మరియు పిరికివాడు అయిన కొడుకు వరదకు అతని వారసత్వాన్ని అందజేస్తాడు."
+    },
+    "genres": [
+      "Action",
+      "Drama"
+    ],
+    "year": 2024,
+    "runtime": 175,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 6.922,
+    "studio": "N. T. R. Arts",
+    "language": "Telugu",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 0,
+    "popularityScore": 1,
+    "universe": null
+  },
+  {
+    "slug": "ugly-story-2026",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/wwCQ0aZWbleGswX6hJAjk8CH19q.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/hzsoVwU7k9ebO2CoVSK7OGS0tJY.jpg",
+    "title": {
+      "en": "Ugly Story",
+      "te": "Ugly Story"
+    },
+    "description": {
+      "en": "Follows a man who becomes obsessively attached to a girl in love with someone else, descending into a dark psychological state as he struggles with rejection, leading to dangerous consequences.",
+      "te": "వేరొకరితో ప్రేమలో ఉన్న అమ్మాయితో అబ్సెసివ్‌గా అటాచ్ అయిన వ్యక్తిని అనుసరిస్తాడు, అతను తిరస్కరణతో పోరాడుతున్నప్పుడు చీకటి మానసిక స్థితికి దిగి, ప్రమాదకరమైన పరిణామాలకు దారి తీస్తుంది."
+    },
+    "genres": [
+      "Romance",
+      "Drama"
+    ],
+    "year": 2026,
+    "runtime": 123,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 7,
+    "studio": "Lucky Media",
+    "language": "Telugu",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 0,
+    "popularityScore": 1,
+    "universe": null
+  },
+  {
+    "slug": "b-hubali-the-beginning-2015",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/9BAjt8nSSms62uOVYn1t3C3dVto.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/e9ZEuHGHZ06AToHlfN1L7nejJ7W.jpg",
+    "title": {
+      "en": "Bāhubali: The Beginning",
+      "te": "Bāhubali: The Beginning"
+    },
+    "description": {
+      "en": "The young Shivudu is left as a foundling in a small village by his mother. By the time he’s grown up, it has become apparent that he possesses exceptional gifts. He meets the beautiful warrior princess Avanthika and learns that her queen has been held captive for the last 25 years. Shividu sets off to rescue her, discovering his own origins in the process.",
+      "te": "యువకుడు శివుడు తన తల్లి ద్వారా ఒక చిన్న పల్లెలో దొరికిపోయాడు. అతను పెరిగే సమయానికి, అతను అసాధారణమైన బహుమతులను కలిగి ఉన్నాడని స్పష్టమవుతుంది. అతను అందమైన యోధ యువరాణి అవంతికను కలుస్తాడు మరియు ఆమె రాణి గత 25 సంవత్సరాలుగా బందీగా ఉందని తెలుసుకుంటాడు. శివుడు ఆమెను రక్షించడానికి బయలుదేరాడు, ఈ ప్రక్రియలో తన స్వంత మూలాలను కనుగొంటాడు."
+    },
+    "genres": [
+      "Action",
+      "Drama"
+    ],
+    "year": 2015,
+    "runtime": 159,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 7.533,
+    "studio": "Arka Media Works",
+    "language": "Telugu",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 0,
+    "popularityScore": 1,
+    "universe": null
+  },
+  {
+    "slug": "bhartha-mahasayulaku-wignyapthi-2026",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/3QoTnvsbIAAWVXpfHzQKeEQhUi7.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/oBv9eCzvutDV9Bt1IwRjMFfuS3L.jpg",
+    "title": {
+      "en": "Bhartha Mahasayulaku Wignyapthi",
+      "te": "Bhartha Mahasayulaku Wignyapthi"
+    },
+    "description": {
+      "en": "What begins as a casual fling between a married man, Ram a.k.a Satya and Manasa in the middle of an international business trip, balloons into an out-of-the-blue mess when the latter lands in Hyderabad, disrupting Ram’s otherwise stable marriage with Balamani.",
+      "te": "ఒక వివాహితుడు, రామ్ లేదా సత్య మరియు మానస అంతర్జాతీయ వ్యాపార పర్యటన మధ్యలో ఒక వివాహితుడు, రామ్ అ.కా. సత్య మరియు మానస మధ్య జరిగే సాధారణ విలాసంగా మొదలవుతుంది, తరువాతి వ్యక్తి హైదరాబాద్‌లో దిగినప్పుడు బెలూన్‌లు నీలిరంగులో పడతాయి, బాలామణితో రామ్ స్థిరమైన వివాహానికి అంతరాయం కలిగిస్తుంది."
+    },
+    "genres": [
+      "Family",
+      "Drama",
+      "Comedy"
+    ],
+    "year": 2026,
+    "runtime": 142,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 4.25,
+    "studio": "Sri Lakshmi Venkateswara Cinemas",
+    "language": "Telugu",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 1,
+    "popularityScore": 1,
+    "universe": null
+  },
+  {
+    "slug": "saaho-2019",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/abjWQwUakmBUecf73jiZDx5iex0.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/svYKd14P9i3Ai7F0tRl3WNwjRa1.jpg",
+    "title": {
+      "en": "Saaho",
+      "te": "Saaho"
+    },
+    "description": {
+      "en": "A battle for power ensues as warring gangters thrive to gain possession of a \"black box\" that can make them richer than they already are, and an undercover cop intervenes with the help of his sharp intellect and an instinct to kill.",
+      "te": "పోరాడుతున్న గ్యాంగ్టర్‌లు తమను ఇప్పటికే ఉన్నదానికంటే ధనవంతులుగా మార్చగల \"బ్లాక్ బాక్స్\"ని స్వాధీనం చేసుకోవడానికి వృద్ధి చెందడంతో అధికారం కోసం యుద్ధం జరుగుతుంది మరియు ఒక రహస్య పోలీసు తన పదునైన తెలివి మరియు చంపే ప్రవృత్తి సహాయంతో జోక్యం చేసుకుంటాడు."
+    },
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "year": 2019,
+    "runtime": 171,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 5.7,
+    "studio": "UV Creations",
+    "language": "Telugu",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 0,
+    "popularityScore": 1,
+    "universe": null
+  },
+  {
+    "slug": "raakaasa-2026",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/x7zwiuC1HTw5XGZ5JrOwF9uFqRy.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/hxCJcyDnR964ja5mzExvb8UlHLG.jpg",
+    "title": {
+      "en": "Raakaasa",
+      "te": "Raakaasa"
+    },
+    "description": {
+      "en": "Returning home after a decade, an NRI chasing romance inadvertently awakens an ancient darkness long feared by his village. As the threat intensifies, love turns deadly and life hangs in the balance.",
+      "te": "ఒక దశాబ్దం తర్వాత ఇంటికి తిరిగి వచ్చిన, ఒక NRI ప్రేమను వెంటాడుతూ అనుకోకుండా తన గ్రామంలో చాలా కాలంగా భయపడుతున్న పురాతన చీకటిని మేల్కొల్పాడు. ముప్పు తీవ్రతరం కావడంతో, ప్రేమ ప్రాణాంతకంగా మారుతుంది మరియు జీవితం బ్యాలెన్స్‌లో వేలాడుతూ ఉంటుంది."
+    },
+    "genres": [
+      "Fantasy",
+      "Comedy"
+    ],
+    "year": 2026,
+    "runtime": 130,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 7.2,
+    "studio": "Pink Elephant Pictures",
+    "language": "Telugu",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 0,
+    "popularityScore": 1,
+    "universe": null
+  },
+  {
+    "slug": "lucky-baskhar-2024",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/a47JQFl9L7VDa79tEvnTOJe0rPa.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/q8UyN4XhpmChtneZXdZ8fktQka6.jpg",
+    "title": {
+      "en": "Lucky Baskhar",
+      "te": "Lucky Baskhar"
+    },
+    "description": {
+      "en": "A cash-strapped bank cashier embarks on a risky investment scheme and soon gets drawn into the murky world of money laundering.",
+      "te": "నగదు కొరత ఉన్న బ్యాంక్ క్యాషియర్ ప్రమాదకర పెట్టుబడి పథకాన్ని ప్రారంభించాడు మరియు త్వరలో మనీలాండరింగ్ యొక్క గందరగోళ ప్రపంచంలోకి లాగబడతాడు."
+    },
+    "genres": [
+      "Crime",
+      "Drama"
+    ],
+    "year": 2024,
+    "runtime": 148,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 7.597,
+    "studio": "Sithara Entertainments",
+    "language": "Telugu",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 0,
+    "popularityScore": 1,
+    "universe": null
+  },
+  {
+    "slug": "liger-2022",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/bBZJAdfmcwhyvkwK1XajnHECdoY.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/qgirkEXAOznx1w9pXH143W3Ch5R.jpg",
+    "title": {
+      "en": "Liger",
+      "te": "Liger"
+    },
+    "description": {
+      "en": "The journey of Liger, from Karimnagar to Mumbai, from a nobody to a competitor, in his search for recognition while navigating his weaknesses, relationships, and love life.",
+      "te": "తన బలహీనతలు, సంబంధాలు మరియు ప్రేమ జీవితాన్ని నావిగేట్ చేస్తూ గుర్తింపు కోసం అన్వేషణలో లైగర్, కరీంనగర్ నుండి ముంబై వరకు, ఎవరూ లేని వ్యక్తి నుండి పోటీదారుగా మారిన ప్రయాణం."
+    },
+    "genres": [
+      "Action",
+      "Romance"
+    ],
+    "year": 2022,
+    "runtime": 138,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 4.2,
+    "studio": "Dharma Productions",
+    "language": "Telugu",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 0,
+    "popularityScore": 1,
+    "universe": null
+  },
+  {
+    "slug": "ala-vaikunthapurramuloo-2020",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/2rzORJaegE2bbKNVkQXbZCeV0BP.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/5SDMPORslLXaYPx7S1kRqsBJYI3.jpg",
+    "title": {
+      "en": "Ala Vaikunthapurramuloo",
+      "te": "Ala Vaikunthapurramuloo"
+    },
+    "description": {
+      "en": "After growing up enduring criticism from his father, a young man finds his world shaken upon learning he was switched at birth with a millionaire's son.",
+      "te": "తన తండ్రి నుండి విమర్శలను సహిస్తూ పెరిగిన తర్వాత, ఒక యువకుడు తాను ఒక కోటీశ్వరుని కొడుకుతో పుట్టినప్పుడు మారినట్లు తెలుసుకున్నప్పుడు అతని ప్రపంచం కదిలింది."
+    },
+    "genres": [
+      "Action",
+      "Comedy",
+      "Drama",
+      "Family"
+    ],
+    "year": 2020,
+    "runtime": 165,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 6.588,
+    "studio": "Geetha Arts",
+    "language": "Telugu",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 0,
+    "popularityScore": 1,
+    "universe": null
+  },
+  {
+    "slug": "mrithyunjay-2026",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/ugmlp0nM1CUHlnobFKO93aRbOu0.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/zRRtEqB42EeOhVe4traWDGZwlZQ.jpg",
+    "title": {
+      "en": "Mrithyunjay",
+      "te": "Mrithyunjay"
+    },
+    "description": {
+      "en": "An intense murder investigation unfolds when a man refuses to accept a death casually deemed natural by the police. As he digs deeper, what begins as doubt turns into a relentless pursuit of truth, uncovering layers of deception and danger",
+      "te": "ఒక వ్యక్తి పోలీసులు సహజంగా భావించిన మరణాన్ని అంగీకరించడానికి నిరాకరించినప్పుడు తీవ్రమైన హత్య విచారణ జరుగుతుంది. అతను లోతుగా త్రవ్వినప్పుడు, సందేహంగా ప్రారంభమయ్యేది నిజం కోసం కనికరంలేని అన్వేషణగా మారుతుంది, మోసం మరియు ప్రమాదం యొక్క పొరలను వెలికితీస్తుంది."
+    },
+    "genres": [
+      "Crime",
+      "Action"
+    ],
+    "year": 2026,
+    "runtime": 122,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 6.7,
+    "studio": "Light Box Media",
+    "language": "Telugu",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 0,
+    "popularityScore": 1,
+    "universe": null
+  },
+  {
+    "slug": "arjun-s-o-vyjayanthi-2025",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/3AvCdsmYx6gZ83Bitd9n9ejDLyO.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/dEwf6Dls8QjTSRAbSBNndiEv2gD.jpg",
+    "title": {
+      "en": "Arjun S/O Vyjayanthi",
+      "te": "Arjun S/O Vyjayanthi"
+    },
+    "description": {
+      "en": "Arjun, an IPS aspirant turned kind-hearted gangster, learns that Pathaan, a notorious terrorist, wants to exact revenge on his principled mother Vyjayanthi, an honest IPS officer, and sets out to protect Vyjayanthi and their bond is put to the test.",
+      "te": "గ్యాంగ్‌స్టర్‌గా మారిన IPS ఆశావహులుగా మారిన అర్జున్, కరుడుగట్టిన ఉగ్రవాది అయిన పఠాన్, నిజాయితీపరుడైన IPS అధికారి అయిన తన తల్లి వైజయంతిపై ప్రతీకారం తీర్చుకోవాలనుకుంటున్నాడని తెలుసుకుని, వైజయంతిని రక్షించడానికి బయలుదేరాడు మరియు వారి బంధానికి పరీక్ష పెట్టారు."
+    },
+    "genres": [
+      "Action",
+      "Crime"
+    ],
+    "year": 2025,
+    "runtime": 142,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 7.3,
+    "studio": "N.T.R. Arts",
+    "language": "Telugu",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 0,
+    "popularityScore": 1,
+    "universe": null
+  },
+  {
+    "slug": "godari-gattupaina-2026",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/jVENga0uWeOM3vc7KtLhieBwNRy.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/1KeaFgD2u9kEpsP2xs1kXS9cTPQ.jpg",
+    "title": {
+      "en": "Godari Gattupaina",
+      "te": "Godari Gattupaina"
+    },
+    "description": {
+      "en": "In the picturesque Godavari villages, a kind-hearted auto driver and a spirited college girl fall in love, but their bond is tested by her father's expectations and unforeseen challenges.",
+      "te": "సుందరమైన గోదావరి గ్రామాలలో, దయగల ఆటోడ్రైవర్ మరియు మనోహరమైన కళాశాల అమ్మాయి ప్రేమలో పడతారు, కానీ వారి బంధం ఆమె తండ్రి అంచనాలు మరియు ఊహించని సవాళ్లతో పరీక్షించబడింది."
+    },
+    "genres": [
+      "Drama"
+    ],
+    "year": 2026,
+    "runtime": 148,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 6.4,
+    "studio": "",
+    "language": "Telugu",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 0,
+    "popularityScore": 1,
+    "universe": null
+  },
+  {
+    "slug": "major-2022",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/sJOfJuyQVZPwNQ8g21Qv0lojQhC.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/8tyq1kXM3YQmu3obW6LxWm5TVRO.jpg",
+    "title": {
+      "en": "Major",
+      "te": "Major"
+    },
+    "description": {
+      "en": "This biopic follows the life of Indian Army officer Major Sandeep Unnikrishnan, from his childhood to his heroic actions during the 2008 Mumbai attacks.",
+      "te": "ఈ బయోపిక్ ఇండియన్ ఆర్మీ ఆఫీసర్ మేజర్ సందీప్ ఉన్నికృష్ణన్ జీవితాన్ని, అతని బాల్యం నుండి 2008 ముంబై దాడుల సమయంలో అతని వీరోచిత చర్యల వరకు ఉంటుంది."
+    },
+    "genres": [
+      "Action",
+      "Historical",
+      "Drama"
+    ],
+    "year": 2022,
+    "runtime": 149,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 6.895,
+    "studio": "Sony Pictures Networks Productions",
+    "language": "Telugu",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 0,
+    "popularityScore": 1,
+    "universe": null
+  },
+  {
+    "slug": "sita-ramam-2022",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/t1O94ZBzsQXJihtVkrsStRLyUDR.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/28EqsZDeEAy4VMZfrYbiyJZznKn.jpg",
+    "title": {
+      "en": "Sita Ramam",
+      "te": "Sita Ramam"
+    },
+    "description": {
+      "en": "Afreen, a rebellious Pakistani student sets ablaze the car of an Indian in London. Angered Afreen returns to Pakistan to ask for money from her grandfather that she has to pay in a month's time as damages. However, she gets to know that he is no more and the only thing he has left for her is a letter-delivering task, written by Ram to Sita. As Afreen sets out to find Ram, there begins her journey of discovering the secret behind the 20-year-old letter.",
+      "te": "అఫ్రీన్ అనే తిరుగుబాటు చేసిన పాకిస్థాన్ విద్యార్థిని లండన్‌లో భారతీయుడి కారును తగులబెట్టింది. కోపంతో ఉన్న అఫ్రీన్ తన తాత నుండి డబ్బు అడగడానికి పాకిస్తాన్‌కు తిరిగి వస్తుంది, ఒక నెలలో నష్టపరిహారంగా చెల్లించాలి. అయితే, అతను ఇక లేడని మరియు రాముడు సీతకు వ్రాసిన ఉత్తరం బట్వాడా చేసే పని మాత్రమే అతనికి మిగిలి ఉందని ఆమెకు తెలుస్తుంది. అఫ్రీన్ రామ్‌ని కనుగొనడానికి బయలుదేరినప్పుడు, 20 ఏళ్ల లేఖ వెనుక రహస్యాన్ని కనుగొనే ప్రయాణం ప్రారంభమవుతుంది."
+    },
+    "genres": [
+      "Historical",
+      "Romance",
+      "Drama"
+    ],
+    "year": 2022,
+    "runtime": 158,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 7.8,
+    "studio": "Vyjayanthi Movies",
+    "language": "Telugu",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 0,
+    "popularityScore": 1,
+    "universe": null
+  },
+  {
+    "slug": "mana-shankaravaraprasad-garu-2026",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/sfj6SLSzbzHN2633HcqabHFJz5y.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/x7jZHALUR58sAzEw0Ms9ohfapP8.jpg",
+    "title": {
+      "en": "Mana ShankaraVaraPrasad Garu",
+      "te": "Mana ShankaraVaraPrasad Garu"
+    },
+    "description": {
+      "en": "National security officer Vara Prasad, protecting his estranged wife and kids from a vengeful ex-cop, sees it as a chance to rebuild their relationship after six years apart.",
+      "te": "జాతీయ భద్రతా అధికారి వర ప్రసాద్, తన విడిపోయిన భార్య మరియు పిల్లలను ప్రతీకారం తీర్చుకునే మాజీ పోలీసు నుండి రక్షించడం, ఆరు సంవత్సరాల విరామం తర్వాత వారి సంబంధాన్ని పునర్నిర్మించే అవకాశంగా చూస్తాడు."
+    },
+    "genres": [
+      "Action",
+      "Comedy",
+      "Thriller"
+    ],
+    "year": 2026,
+    "runtime": 162,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 6.1,
+    "studio": "Shine Screens",
+    "language": "Telugu",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 0,
+    "popularityScore": 1,
+    "universe": null
+  },
+  {
+    "slug": "mass-jathara-2025",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/qvSyQdI2Mlpa5X7dRDBmIi30oHT.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/9jiqrAgC9DoWKte8qc5gis0fWem.jpg",
+    "title": {
+      "en": "Mass Jathara",
+      "te": "Mass Jathara"
+    },
+    "description": {
+      "en": "A transport officer battles a violent drug lord and his criminal clan.",
+      "te": "ఒక రవాణా అధికారి హింసాత్మక డ్రగ్ లార్డ్ మరియు అతని నేరస్థుల వంశంతో పోరాడాడు."
+    },
+    "genres": [
+      "Action",
+      "Crime"
+    ],
+    "year": 2025,
+    "runtime": 144,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 4.3,
+    "studio": "Sithara Entertainments",
+    "language": "Telugu",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 0,
+    "popularityScore": 1,
+    "universe": null
+  },
+  {
+    "slug": "kishkindhapuri-2025",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/uRQ31dXsGHbiubJdObhGVzDiH3n.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/5gcP7ybasVUqDy4ZR8xSqOqUIue.jpg",
+    "title": {
+      "en": "Kishkindhapuri",
+      "te": "Kishkindhapuri"
+    },
+    "description": {
+      "en": "A ghost walking tour group visits an abandoned radio station, inadvertently awakening a vengeful spirit.",
+      "te": "ఒక దెయ్యం వాకింగ్ టూర్ గ్రూప్ పాడుబడిన రేడియో స్టేషన్‌ను సందర్శిస్తుంది, అనుకోకుండా ప్రతీకార స్ఫూర్తిని మేల్కొల్పుతుంది."
+    },
+    "genres": [
+      "Horror",
+      "Comedy",
+      "Drama"
+    ],
+    "year": 2025,
+    "runtime": 125,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 5.5,
+    "studio": "Shine Screens",
+    "language": "Telugu",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 0,
+    "popularityScore": 1,
+    "universe": null
+  },
+  {
+    "slug": "sampradayaini-suppini-suddapusaani-2026",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/5NaXPthSsxJHo5Br0IIiLYz0z3w.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/wtK4SmODghx3eXILqChOyHqX3Yr.jpg",
+    "title": {
+      "en": "Sampradayaini Suppini Suddapusaani",
+      "te": "Sampradayaini Suppini Suddapusaani"
+    },
+    "description": {
+      "en": "After the accidental murder of a police sergeant, a man and his family are forced to cover up their tracks to avoid suspicion.",
+      "te": "ఒక పోలీసు సార్జెంట్‌ని ప్రమాదవశాత్తు హత్య చేసిన తర్వాత, ఒక వ్యక్తి మరియు అతని కుటుంబం అనుమానం రాకుండా తమ జాడలను కప్పిపుచ్చుకోవలసి వస్తుంది."
+    },
+    "genres": [
+      "Comedy",
+      "Drama"
+    ],
+    "year": 2026,
+    "runtime": 144,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 7,
+    "studio": "Sivaji Productions",
+    "language": "Telugu",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 0,
+    "popularityScore": 1,
+    "universe": null
+  },
+  {
+    "slug": "-mad--2025",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/cYGNd3oMRYsvM9gW4i0bzAclOUb.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/sWVYLXD69FCfYg443SEnuWeQJD7.jpg",
+    "title": {
+      "en": "(MAD)²",
+      "te": "(MAD)²"
+    },
+    "description": {
+      "en": "After his wedding turns into a disaster, Laddu and his pals — Manoj, Ashok and Damodar — find themselves traveling to Goa for another wild adventure.",
+      "te": "అతని పెళ్లి విపత్తుగా మారిన తర్వాత, లడ్డూ మరియు అతని స్నేహితులు - మనోజ్, అశోక్ మరియు దామోదర్ - మరొక క్రూరమైన సాహసం కోసం గోవాకు వెళ్తున్నారు."
+    },
+    "genres": [
+      "Drama",
+      "Romance",
+      "Comedy"
+    ],
+    "year": 2025,
+    "runtime": 127,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 7,
+    "studio": "Sithara Entertainments",
+    "language": "Telugu",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 0,
+    "popularityScore": 1,
+    "universe": null
+  },
+  {
+    "slug": "couple-friendly-2026",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/kiKGBPQC6exxUbIrOMnDtuU4soC.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/AtSVT5nSjToh2islkFfJOR0vXWn.jpg",
+    "title": {
+      "en": "Couple Friendly",
+      "te": "Couple Friendly"
+    },
+    "description": {
+      "en": "Couple Friendly follows the journey of a Telugu boy and girl who both reside in Chennai. Their paths cross under unique circumstances, and the story deals with the challenges they face in their careers and relationship. Set in a city where they don't speak their mother tongue, the film explores the emotional highs and lows of navigating life and love in an unfamiliar environment.",
+      "te": "కపుల్ ఫ్రెండ్లీ చెన్నైలో నివసిస్తున్న తెలుగు అబ్బాయి మరియు అమ్మాయి ప్రయాణాన్ని అనుసరిస్తుంది. ప్రత్యేకమైన పరిస్థితులలో వారి మార్గాలు దాటుతాయి మరియు కథ వారి కెరీర్ మరియు సంబంధాలలో వారు ఎదుర్కొనే సవాళ్లతో వ్యవహరిస్తుంది. వారి మాతృభాష రాని నగరం నేపథ్యంలో సాగే ఈ చిత్రం తెలియని వాతావరణంలో జీవితం మరియు ప్రేమను నావిగేట్ చేయడంలోని భావోద్వేగ ఎత్తులు మరియు అల్పాలను అన్వేషిస్తుంది."
+    },
+    "genres": [
+      "Romance",
+      "Drama"
+    ],
+    "year": 2026,
+    "runtime": 118,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 7.2,
+    "studio": "",
+    "language": "Telugu",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 0,
+    "popularityScore": 1,
+    "universe": null
+  },
+  {
+    "slug": "saripodhaa-sanivaaram-2024",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/e2yVhbMkpi4JvvdIhvRpS0Muge7.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/yxQACC8pPE5RpRU8nFVU830LL6u.jpg",
+    "title": {
+      "en": "Saripodhaa Sanivaaram",
+      "te": "Saripodhaa Sanivaaram"
+    },
+    "description": {
+      "en": "Set in Sokulapalem, bound by a promise to his mother, Surya, an LIC agent leads a normal life on six days, maintains a careful ledger of everyone made him angry,unleashing his anger only on Saturdays, solely for justifiable reasons. A tragic incident pits him on a collision course with the ruthless and borderline-manic cop Daya.",
+      "te": "సోకులపాలెంలో, తన తల్లికి ఇచ్చిన మాటకు కట్టుబడి, సూర్య, ఎల్‌ఐసి ఏజెంట్ ఆరు రోజులు సాధారణ జీవితాన్ని గడుపుతున్నాడు, ప్రతి ఒక్కరూ జాగ్రత్తగా లెడ్జర్‌ను నిర్వహించడం అతనికి కోపం తెప్పించింది, శనివారాల్లో మాత్రమే తన కోపాన్ని విప్పి, కేవలం న్యాయమైన కారణాల కోసం. ఒక విషాద సంఘటన అతనిని క్రూరమైన మరియు సరిహద్దు-ఉన్మాద పోలీసు దయాతో ఢీకొట్టింది."
+    },
+    "genres": [
+      "Action"
+    ],
+    "year": 2024,
+    "runtime": 172,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 6.6,
+    "studio": "DVV Entertainment",
+    "language": "Telugu",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 0,
+    "popularityScore": 1,
+    "universe": null
+  },
+  {
+    "slug": "game-changer-2025",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/qtOGsZoLW7QceqKmsOy5nSM6Aik.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/aBw406SvghTKV6CTK9t84Bo9Xik.jpg",
+    "title": {
+      "en": "Game Changer",
+      "te": "Game Changer"
+    },
+    "description": {
+      "en": "Ram, a newly appointed district collector, takes charge in a city in Andhra Pradesh and immediately confronts the deeply entrenched corruption and inefficiency plaguing the government. Determined to bring reforms, he initiates sweeping changes, sparking a fierce conflict with a powerful state Minister.",
+      "te": "కొత్తగా నియమితులైన జిల్లా కలెక్టర్ రామ్, ఆంధ్రప్రదేశ్‌లోని ఒక నగరంలో బాధ్యతలు స్వీకరించి, ప్రభుత్వాన్ని పీడిస్తున్న లోతుగా వేళ్లూనుకున్న అవినీతి మరియు అసమర్థతను వెంటనే ఎదుర్కొంటాడు. సంస్కరణలను తీసుకురావాలని నిశ్చయించుకుని, అతను శక్తివంతమైన రాష్ట్ర మంత్రితో తీవ్రమైన వివాదానికి దారితీసిన భారీ మార్పులను ప్రారంభించాడు."
+    },
+    "genres": [
+      "Action",
+      "Drama"
+    ],
+    "year": 2025,
+    "runtime": 164,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 5,
+    "studio": "Sri Venkateswara Creations",
+    "language": "Telugu",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 0,
+    "popularityScore": 1,
+    "universe": null
+  },
+  {
+    "slug": "v-ran-si-2027",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/bBl3z0bMqt9piOmLDzgbKR8RECJ.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/iZbZjYflt859q8hR7bsvApeDLr5.jpg",
+    "title": {
+      "en": "Vāranāsi",
+      "te": "Vāranāsi"
+    },
+    "description": {
+      "en": "Follows Rudhra's perilous adventures as ancient Varanasi stands on the brink of catastrophe from a looming asteroid in 2027 CE, unfolding across multiple timelines and distant continents.",
+      "te": "పురాతన వారణాసి 2027 CEలో దూసుకుపోతున్న గ్రహశకలం నుండి విపత్తు అంచున నిలబడి, బహుళ కాలక్రమాలు మరియు సుదూర ఖండాలలో విప్పుతున్నందున రుద్ర యొక్క ప్రమాదకరమైన సాహసాలను అనుసరిస్తుంది."
+    },
+    "genres": [
+      "Adventure",
+      "Action",
+      "Fantasy"
+    ],
+    "year": 2027,
+    "runtime": 120,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 7,
+    "studio": "Sri Durga Arts",
+    "language": "Telugu",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 0,
+    "popularityScore": 1,
+    "universe": null
+  },
+  {
+    "slug": "sarileru-neekevvaru-2020",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/66MSawKC7nkqjD1BMlQHXl6y3C.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/xPwx3woiX40RN2uaFu9tuXpLaak.jpg",
+    "title": {
+      "en": "Sarileru Neekevvaru",
+      "te": "Sarileru Neekevvaru"
+    },
+    "description": {
+      "en": "A tough army major is deployed to Kurnool on a mission to keep the country safe from external threats.",
+      "te": "బయటి బెదిరింపుల నుండి దేశాన్ని సురక్షితంగా ఉంచే లక్ష్యంతో ఒక కఠినమైన ఆర్మీ మేజర్ కర్నూల్‌కు మోహరించారు."
+    },
+    "genres": [
+      "Action"
+    ],
+    "year": 2020,
+    "runtime": 169,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 6,
+    "studio": "GMB Entertainment",
+    "language": "Telugu",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 0,
+    "popularityScore": 1,
+    "universe": null
+  },
+  {
+    "slug": "jetlee-2026",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/wNqDTEXvDNNFD1aWYNou4uuDoPq.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/pGwst7LaXo0Sp61l7AQ98JNP84H.jpg",
+    "title": {
+      "en": "Jetlee",
+      "te": "Jetlee"
+    },
+    "description": {
+      "en": "An attendant on a flight from Dubai to Kochi gets caught up in a dangerous situation.",
+      "te": "దుబాయ్ నుంచి కొచ్చి వెళ్లే విమానంలో ఓ అటెండర్ ప్రమాదకర పరిస్థితిలో చిక్కుకున్నాడు."
+    },
+    "genres": [
+      "Action",
+      "Comedy"
+    ],
+    "year": 2026,
+    "runtime": 132,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 6,
+    "studio": "Clap Entertainment",
+    "language": "Telugu",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 0,
+    "popularityScore": 1,
+    "universe": null
+  },
+  {
+    "slug": "robinhood-2025",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/zeH5oAM1A3zgXbvQ3L9GiDs3ldQ.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/q1vULesWRw5h0rlsEGqTNh3FT1R.jpg",
+    "title": {
+      "en": "Robinhood",
+      "te": "Robinhood"
+    },
+    "description": {
+      "en": "Ram, a modern-day Robin Hood, is a master thief who unexpectedly finds himself switching sides. When fate forces him to become the personal security officer for Neera, a rollercoaster ride of action, comedy, and unexpected twists follows.",
+      "te": "రామ్, ఆధునిక రాబిన్ హుడ్, ఒక మాస్టర్ దొంగ, అతను ఊహించని విధంగా పక్కకు మారుతున్నట్లు గుర్తించాడు. విధి అతనిని నీరా కోసం వ్యక్తిగత భద్రతా అధికారిగా బలవంతం చేసినప్పుడు, రోలర్ కోస్టర్ రైడ్ యాక్షన్, కామెడీ మరియు ఊహించని మలుపులు అనుసరిస్తాయి."
+    },
+    "genres": [
+      "Action"
+    ],
+    "year": 2025,
+    "runtime": 150,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 5.3,
+    "studio": "Mythri Movie Makers",
+    "language": "Telugu",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 0,
+    "popularityScore": 1,
+    "universe": null
+  },
+  {
+    "slug": "evaru-2019",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/k0E0jJ4yhouFPf9XCBR50C3TOuc.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/oodlsWgLSFStFvu4mODNXy3i0e0.jpg",
+    "title": {
+      "en": "Evaru",
+      "te": "Evaru"
+    },
+    "description": {
+      "en": "When a high-ranking police officer is killed by his alleged rape victim, Sub-inspector Vikram Vasudev is entrusted with investigating what seems like an open-and-shut case. However, as he delves deeper, Vikram finds the case spiralling into a dark tale filled with unexpected surprises.",
+      "te": "ఒక ఉన్నత స్థాయి పోలీసు అధికారి తన అత్యాచార బాధితురాలిచే చంపబడినప్పుడు, సబ్-ఇన్‌స్పెక్టర్ విక్రమ్ వాసుదేవ్‌కు ఓపెన్ అండ్ షట్ కేసు లాగా అనిపించే దానిని దర్యాప్తు చేసే బాధ్యతను అప్పగించారు. అయినప్పటికీ, అతను లోతుగా పరిశోధిస్తున్నప్పుడు, విక్రమ్ కేసు ఊహించని ఆశ్చర్యాలతో నిండిన చీకటి కథగా మారుతున్నట్లు కనుగొన్నాడు."
+    },
+    "genres": [
+      "Crime"
+    ],
+    "year": 2019,
+    "runtime": 118,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 7.071,
+    "studio": "PVP Cinema",
+    "language": "Telugu",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 0,
+    "popularityScore": 1,
+    "universe": null
+  },
+  {
+    "slug": "shambhala-2025",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/toCKv7aKlAzYh0vyrrBZjuWGIMD.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/1zo8aW25goAHkFB9DaWHp0aYb2v.jpg",
+    "title": {
+      "en": "Shambhala",
+      "te": "Shambhala"
+    },
+    "description": {
+      "en": "When a meteor crashes into the highly superstitious village of Shambhala in the 1980s, strange supernatural events unfold, forcing an atheist scientist to face an ancient horror-one that science can't explain or escape.",
+      "te": "1980వ దశకంలో అత్యంత మూఢనమ్మకాలు ఉన్న శంభాల గ్రామంలో ఒక ఉల్కాపాతం ఢీకొన్నప్పుడు, విచిత్రమైన అతీంద్రియ సంఘటనలు ఆవిష్కృతమవుతాయి, ఒక నాస్తిక శాస్త్రవేత్త సైన్స్ వివరించలేని లేదా తప్పించుకోలేని పురాతన భయానకతను ఎదుర్కోవలసి వస్తుంది."
+    },
+    "genres": [
+      "Action",
+      "Horror"
+    ],
+    "year": 2025,
+    "runtime": 143,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 6,
+    "studio": "Shining Pictures",
+    "language": "Telugu",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 0,
+    "popularityScore": 1,
+    "universe": null
+  },
+  {
+    "slug": "dragon-2027",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/qKQEdXj8OFqMjj000RmlU7qQHWR.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/t2hndJt7z8hg2UfUxqy6M1he3x7.jpg",
+    "title": {
+      "en": "Dragon",
+      "te": "Dragon"
+    },
+    "description": {
+      "en": "Set in 1967 around International Opium Trade by Afghan Trading Company and Golden Trading Company",
+      "te": "ఆఫ్ఘన్ ట్రేడింగ్ కంపెనీ మరియు గోల్డెన్ ట్రేడింగ్ కంపెనీచే 1967లో అంతర్జాతీయ నల్లమందు వ్యాపారం చుట్టూ సెట్ చేయబడింది"
+    },
+    "genres": [
+      "Action",
+      "Crime",
+      "Drama"
+    ],
+    "year": 2027,
+    "runtime": 120,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 7,
+    "studio": "Mythri Movie Makers",
+    "language": "Telugu",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 0,
+    "popularityScore": 0,
+    "universe": null
+  },
+  {
+    "slug": "radhe-shyam-2022",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/szAa23SWNIgJHsvSRyQrvyFT8ef.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/gRBToD4AcpWJhHQraA69CeMLNXu.jpg",
+    "title": {
+      "en": "Radhe Shyam",
+      "te": "Radhe Shyam"
+    },
+    "description": {
+      "en": "Vikramaditya, a world-renowned palmist, believes love does not exist in his stars, until he meets Prerana. But when destiny tries to pull them apart, will love prevail?",
+      "te": "ప్రపంచ ప్రఖ్యాత హస్తసాముద్రికుడైన విక్రమాదిత్య, అతను ప్రేరణను కలిసే వరకు తన నక్షత్రాలలో ప్రేమ ఉండదని నమ్ముతాడు. కానీ విధి వారిని వేరు చేయడానికి ప్రయత్నించినప్పుడు, ప్రేమ విజయం సాధిస్తుందా?"
+    },
+    "genres": [
+      "Drama",
+      "Romance"
+    ],
+    "year": 2022,
+    "runtime": 138,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 5,
+    "studio": "UV Creations",
+    "language": "Telugu",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 0,
+    "popularityScore": 0,
+    "universe": null
+  },
+  {
+    "slug": "little-hearts-2025",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/8QcQ0DP76YpY4VS8bsB53H8Fpwj.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/wN0epLoxu8pbvde68M9IZG5T8eD.jpg",
+    "title": {
+      "en": "Little Hearts",
+      "te": "Little Hearts"
+    },
+    "description": {
+      "en": "Akhil, when failed in EAMCET exam, is forced into long-term coaching after heartbreak teaches him the difference between true and shallow love. At the center, he meets Katyayani and falls for her, only to be rejected for a strange reason. Determined not to lose her, his humorous and transformative journey to win her heart becomes the soul of the story.",
+      "te": "అఖిల్, EAMCET పరీక్షలో విఫలమైనప్పుడు, హృదయ విదారకమైన తర్వాత అతనికి నిజమైన మరియు నిస్సారమైన ప్రేమ మధ్య వ్యత్యాసాన్ని బోధించిన తర్వాత దీర్ఘకాల కోచింగ్‌కి బలవంతం చేయబడతాడు. కేంద్రంలో, అతను కాత్యాయనిని కలుసుకున్నాడు మరియు ఆమె కోసం పడిపోతాడు, అతను ఒక విచిత్రమైన కారణంతో తిరస్కరించబడ్డాడు. ఆమెను కోల్పోకూడదని నిశ్చయించుకుని, ఆమె హృదయాన్ని గెలుచుకోవడానికి అతని హాస్యభరితమైన మరియు పరివర్తనాత్మక ప్రయాణం కథకు ఆత్మ అవుతుంది."
+    },
+    "genres": [
+      "Comedy",
+      "Romance",
+      "Drama"
+    ],
+    "year": 2025,
+    "runtime": 128,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 6.667,
+    "studio": "",
+    "language": "Telugu",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 0,
+    "popularityScore": 0,
+    "universe": null
+  },
+  {
+    "slug": "matka-2024",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/1LzHbFk93Lp00ZsqGHPAnAoUJW8.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/kyVcNF6GRthdiT4oZn5XgJtl0F7.jpg",
+    "title": {
+      "en": "Matka",
+      "te": "Matka"
+    },
+    "description": {
+      "en": "Set between the years 1958 and 1982, Matka tells the story of Vasu, who rises from poverty to create a powerful gambling empire in India, ultimately leading the nation into a battle with the government. Based on real events, the tale explores themes of love, moral choices, and the consequences of ambition.",
+      "te": "1958 మరియు 1982 సంవత్సరాల మధ్య సెట్ చేయబడిన మట్కా, భారతదేశంలో శక్తివంతమైన జూద సామ్రాజ్యాన్ని సృష్టించడానికి పేదరికం నుండి లేచి, చివరికి దేశాన్ని ప్రభుత్వంతో యుద్ధానికి దారితీసిన వాసు కథను చెబుతుంది. వాస్తవ సంఘటనల ఆధారంగా, కథ ప్రేమ, నైతిక ఎంపికలు మరియు ఆశయం యొక్క పరిణామాలను విశ్లేషిస్తుంది."
+    },
+    "genres": [
+      "Action",
+      "Crime"
+    ],
+    "year": 2024,
+    "runtime": 159,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 4.9,
+    "studio": "Vyra Entertainments",
+    "language": "Telugu",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 0,
+    "popularityScore": 0,
+    "universe": null
+  },
+  {
+    "slug": "agent-2023",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/ezFe7IZ6xbNdaq4VQglpOIip8qd.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/dUg2WN7CPE5noL3mbFXWcC6IAIU.jpg",
+    "title": {
+      "en": "Agent",
+      "te": "Agent"
+    },
+    "description": {
+      "en": "Ramakrishna aka Ricky's only one goal in life is to be a RAW recruitee and undertake some Planet-saving mission. Mahadev, RAW head, ropes him in for the most important mission ever known and unknown to even the Prime Minister of India. Ricky must tame The God, the megalomaniacal lynchpin of a giant-sized crime syndicate.",
+      "te": "రామకృష్ణ అకా రికీ జీవితంలో ఒకే ఒక లక్ష్యం RAW రిక్రూటీగా ఉండటం మరియు కొన్ని ప్లానెట్ సేవింగ్ మిషన్‌ను చేపట్టడం. మహదేవ్, RAW హెడ్, భారతదేశ ప్రధానమంత్రికి కూడా తెలియని మరియు తెలియని అత్యంత ముఖ్యమైన మిషన్ కోసం అతనిని చేర్చుకున్నాడు. రికీ తప్పనిసరిగా ది గాడ్‌ను లొంగదీసుకోవాలి, పెద్ద-పరిమాణ క్రైమ్ సిండికేట్ యొక్క మెగాలోమానియాకల్ లించ్‌పిన్."
+    },
+    "genres": [
+      "Action"
+    ],
+    "year": 2023,
+    "runtime": 155,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 4,
+    "studio": "AK Entertainments",
+    "language": "Telugu",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 0,
+    "popularityScore": 0,
+    "universe": null
+  },
+  {
+    "slug": "bhola-shankar-2023",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/hgip2gbwu19ITJw1KvzLjKHIInt.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/aIZDssvWpzniJNSWOZfgkikM7Pj.jpg",
+    "title": {
+      "en": "Bhola Shankar",
+      "te": "Bhola Shankar"
+    },
+    "description": {
+      "en": "A reformed gangster now taxi driver unwittingly draws the vengeance of a crime syndicate after aiding the police in busting a smuggling operation. Fueled by a burning desire for justice and to protect his adopted sister, he embarks on a relentless quest to hunt down the mobsters responsible.",
+      "te": "సంస్కరించబడిన గ్యాంగ్‌స్టర్ ఇప్పుడు టాక్సీ డ్రైవర్, స్మగ్లింగ్ ఆపరేషన్‌ను ఛేదించడంలో పోలీసులకు సహాయం చేసిన తర్వాత క్రైమ్ సిండికేట్ యొక్క ప్రతీకారాన్ని తెలియకుండానే తీసుకుంటాడు. న్యాయం కోసం మరియు తన దత్తత తీసుకున్న సోదరిని రక్షించాలనే కోరికతో అతను బాధ్యులను వేటాడేందుకు కనికరంలేని అన్వేషణను ప్రారంభించాడు."
+    },
+    "genres": [
+      "Action",
+      "Crime",
+      "Drama"
+    ],
+    "year": 2023,
+    "runtime": 158,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 4,
+    "studio": "AK Entertainments",
+    "language": "Telugu",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 0,
+    "popularityScore": 0,
+    "universe": null
+  },
+  {
+    "slug": "dhurandhar-the-revenge-2026",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/ov8vrRLZGoXHpYjSY9Vpv1tHJX7.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/gRoZG3Z0zJxgElmTsVHOl2dNYXe.jpg",
+    "title": {
+      "en": "Dhurandhar: The Revenge",
+      "te": "Dhurandhar: The Revenge"
+    },
+    "description": {
+      "en": "As rival gangs, corrupt officials and a ruthless Major Iqbal close in, Hamza's mission for his country spirals into a bloody personal war where the line between patriot and monster disappears in the streets of Lyari.",
+      "te": "ప్రత్యర్థి ముఠాలు, అవినీతి అధికారులు మరియు క్రూరమైన మేజర్ ఇక్బాల్ దగ్గరికి రావడంతో, హమ్జా తన దేశం కోసం చేస్తున్న లక్ష్యం రక్తపాత వ్యక్తిగత యుద్ధంలో మురిపిస్తుంది, ఇక్కడ దేశభక్తుడు మరియు రాక్షసుడి మధ్య రేఖ లియారీ వీధుల్లో అదృశ్యమవుతుంది."
+    },
+    "genres": [
+      "Action",
+      "Crime"
+    ],
+    "year": 2026,
+    "runtime": 229,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 7.3,
+    "studio": "Jio Studios",
+    "language": "Hindi",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 24,
+    "popularityScore": 49,
+    "universe": null
+  },
+  {
+    "slug": "chand-mera-dil-2026",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/9LPkXJustudEBgPZEm9tgDx5KtC.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/kkRpcauZoBFKnH0Qsy7J5qtwBF5.jpg",
+    "title": {
+      "en": "Chand Mera Dil",
+      "te": "Chand Mera Dil"
+    },
+    "description": {
+      "en": "Aarav and Chandni's passionate college romance is struck by adulthood far too soon, forcing the two young lovers to balance their ambitions with responsibility and realize the evolved meaning of love.",
+      "te": "ఆరవ్ మరియు చాందిని యొక్క ఉద్వేగభరితమైన కళాశాల ప్రేమ చాలా త్వరగా యుక్తవయస్సుకు దారితీసింది, ఇద్దరు యువ ప్రేమికులు తమ ఆశయాలను బాధ్యతతో సమతుల్యం చేసుకోవాలని మరియు ప్రేమ యొక్క ఉద్భవించిన అర్థాన్ని గ్రహించాలని బలవంతం చేస్తారు."
+    },
+    "genres": [
+      "Romance",
+      "Drama"
+    ],
+    "year": 2026,
+    "runtime": 142,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 3.833,
+    "studio": "Dharma Productions",
+    "language": "Hindi",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 17,
+    "popularityScore": 34,
+    "universe": null
+  },
+  {
+    "slug": "pati-patni-aur-woh-do-2026",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/x0RUPvba4JlCCkyyEZGlQFIFVuF.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/eNAFLrd1XAAD4hgdTPjewpzYU4W.jpg",
+    "title": {
+      "en": "Pati Patni Aur Woh Do",
+      "te": "Pati Patni Aur Woh Do"
+    },
+    "description": {
+      "en": "A seemingly perfect marriage in Prayagraj takes an unexpected turn when one decision leads to a chain of misunderstandings, suspicion, and comedic chaos.",
+      "te": "ఒక నిర్ణయం అపార్థాలు, అనుమానాలు మరియు హాస్య గందరగోళానికి దారితీసినప్పుడు ప్రయాగ్‌రాజ్‌లో పరిపూర్ణమైన వివాహం ఊహించని మలుపు తీసుకుంటుంది."
+    },
+    "genres": [
+      "Comedy"
+    ],
+    "year": 2026,
+    "runtime": 117,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 7.5,
+    "studio": "T-Series",
+    "language": "Hindi",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 13,
+    "popularityScore": 27,
+    "universe": null
+  },
+  {
+    "slug": "rocky-aur-rani-kii-prem-kahaani-2023",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/vTQIqlxUkOuyf2UKhlM2OUaFGKz.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/61RYedFgX1K07xgVIvdJzukSR4g.jpg",
+    "title": {
+      "en": "Rocky Aur Rani Kii Prem Kahaani",
+      "te": "Rocky Aur Rani Kii Prem Kahaani"
+    },
+    "description": {
+      "en": "Gym-freak brat Rocky falls in love with Rani, who comes from a well-educated Bengali family. Being from polar opposite worlds, the two decide to switch their families to adjust to each other's cultures and backgrounds and to know if their marriage will survive. Rocky and Rani are trapped in a world where they are united by love but divided by families and the ultimate question is will they fit in?",
+      "te": "జిమ్-ఫ్రీక్ బ్రాట్ రాకీ బాగా చదువుకున్న బెంగాలీ కుటుంబం నుండి వచ్చిన రాణితో ప్రేమలో పడతాడు. ధ్రువ వ్యతిరేక ప్రపంచాల నుండి వచ్చినందున, ఇద్దరూ ఒకరికొకరు సంస్కృతులు మరియు నేపథ్యాలకు సర్దుబాటు చేయడానికి మరియు వారి వివాహం మనుగడ సాగిస్తుందో లేదో తెలుసుకోవడానికి వారి కుటుంబాలను మార్చుకోవాలని నిర్ణయించుకున్నారు. రాకీ మరియు రాణి ప్రేమతో ఐక్యమైన కానీ కుటుంబాలచే విభజించబడిన ప్రపంచంలో చిక్కుకున్నారు మరియు అంతిమ ప్రశ్న ఏమిటంటే వారు సరిపోతారా?"
+    },
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Family",
+      "Romance"
+    ],
+    "year": 2023,
+    "runtime": 178,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 6.201,
+    "studio": "Dharma Productions",
+    "language": "Hindi",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 9,
+    "popularityScore": 18,
+    "universe": null
+  },
+  {
+    "slug": "bhooth-bangla-2026",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/79RBp8afL4u4z3nVGR78z6eIvBB.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/A2tzVTVtnTvpji96IZmleN78KKv.jpg",
+    "title": {
+      "en": "Bhooth Bangla",
+      "te": "Bhooth Bangla"
+    },
+    "description": {
+      "en": "A man inherits a palace in rural Mangalpur and plans his sister's wedding there, but strange supernatural events and panicked locals force him to investigate the property's mysterious past.",
+      "te": "ఒక వ్యక్తి గ్రామీణ మంగళ్‌పూర్‌లోని ఒక రాజభవనాన్ని వారసత్వంగా పొందాడు మరియు అక్కడ తన సోదరి వివాహాన్ని ప్లాన్ చేస్తాడు, కానీ విచిత్రమైన అతీంద్రియ సంఘటనలు మరియు భయాందోళనకు గురైన స్థానికులు ఆస్తి యొక్క రహస్యమైన గతాన్ని పరిశోధించమని బలవంతం చేస్తారు."
+    },
+    "genres": [
+      "Horror",
+      "Comedy"
+    ],
+    "year": 2026,
+    "runtime": 163,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 6.5,
+    "studio": "Balaji Motion Pictures",
+    "language": "Hindi",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 9,
+    "popularityScore": 17,
+    "universe": null
+  },
+  {
+    "slug": "dhurandhar-2025",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/8FHOtUpNIk5ZPEay2N2EY5lrxkv.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/4DfxcN4w0FuYZHQ3JAHzpHWia1U.jpg",
+    "title": {
+      "en": "Dhurandhar",
+      "te": "Dhurandhar"
+    },
+    "description": {
+      "en": "A mysterious traveler slips into the heart of Karachi's underbelly and rises through its ranks with lethal precision, only to tear the notorious ISI-Underworld nexus apart from within.",
+      "te": "ఒక రహస్య యాత్రికుడు కరాచీ యొక్క అండర్‌బెల్లీ గుండెలోకి జారిపోయి, ప్రాణాంతకమైన ఖచ్చితత్వంతో దాని ర్యాంక్‌ల ద్వారా పైకి లేచాడు, అపఖ్యాతి పాలైన ISI-అండర్‌వరల్డ్ బంధాన్ని లోపలి నుండి వేరు చేయడానికి మాత్రమే."
+    },
+    "genres": [
+      "Action",
+      "Crime"
+    ],
+    "year": 2025,
+    "runtime": 212,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 7.155,
+    "studio": "B62 Studios",
+    "language": "Hindi",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 9,
+    "popularityScore": 17,
+    "universe": null
+  },
+  {
+    "slug": "system-2026",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/wznZGK0WTgbIJWuZVdWG3oPECL.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/7f9ZaTwyqQOJtNWUS7xZgWQOzSt.jpg",
+    "title": {
+      "en": "System",
+      "te": "System"
+    },
+    "description": {
+      "en": "When Neha Rajvansh, a privileged public prosecutor, meets Sarika Rawat, a courtroom stenographer from a humble background, their lives are thrown into upheaval where power defines truth, blurring the system and raising a question of what justice truly means to them.",
+      "te": "నేహా రాజ్‌వంశ్, ఒక ప్రత్యేక పబ్లిక్ ప్రాసిక్యూటర్, ఒక వినయపూర్వకమైన నేపథ్యం నుండి న్యాయస్థానం స్టెనోగ్రాఫర్ అయిన సరికా రావత్‌ను కలిసినప్పుడు, వారి జీవితాలు తిరుగుబాటులో పడతాయి, అక్కడ అధికారం సత్యాన్ని నిర్వచిస్తుంది, వ్యవస్థను అస్పష్టం చేస్తుంది మరియు వారికి న్యాయం అంటే నిజంగా ఏమిటనే ప్రశ్నను లేవనెత్తుతుంది."
+    },
+    "genres": [
+      "Drama"
+    ],
+    "year": 2026,
+    "runtime": 124,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 7.5,
+    "studio": "Baweja Studios",
+    "language": "Hindi",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 7,
+    "popularityScore": 15,
+    "universe": null
+  },
+  {
+    "slug": "kartavya-2026",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/doTwMyAphlDL5Z8WqE3elWWvj8M.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/mHm73HhpvGWfRkXNErcwc15Czrv.jpg",
+    "title": {
+      "en": "Kartavya",
+      "te": "Kartavya"
+    },
+    "description": {
+      "en": "With his family's safety at stake and menacing threats closing in, a police officer must decide how far he'll go to uphold his duty.",
+      "te": "అతని కుటుంబం యొక్క భద్రత ప్రమాదంలో ఉన్నందున మరియు భయంకరమైన బెదిరింపులు ముగుస్తున్నందున, ఒక పోలీసు అధికారి తన కర్తవ్యాన్ని సమర్థించడానికి ఎంత దూరం వెళ్లాలో నిర్ణయించుకోవాలి."
+    },
+    "genres": [
+      "Crime",
+      "Drama"
+    ],
+    "year": 2026,
+    "runtime": 109,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 6.471,
+    "studio": "Red Chillies Entertainment",
+    "language": "Hindi",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 6,
+    "popularityScore": 11,
+    "universe": null
+  },
+  {
+    "slug": "krishnavataram-part-1-the-heart-hridayam--2026",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/7AxJYvPWLlNiGH52A9eenDxQzu8.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/quMadsmJAFKGd6UpCFwxtlrVxPF.jpg",
+    "title": {
+      "en": "Krishnavataram Part 1: The Heart (Hridayam)",
+      "te": "Krishnavataram Part 1: The Heart (Hridayam)"
+    },
+    "description": {
+      "en": "An epic devotional narrative that reimagines the journey of Lord Krishna, tracing his path from Dwarka to Kurukshetra after parting ways with Radha. As his journey unfolds, it explores his connection with people, his layered personality, and the lessons he imparts about love and life.",
+      "te": "రాధతో విడిపోయిన తర్వాత ద్వారక నుండి కురుక్షేత్రానికి అతని మార్గాన్ని గుర్తించే శ్రీకృష్ణుడి ప్రయాణాన్ని పునర్నిర్మించే పురాణ భక్తి కథనం. అతని ప్రయాణం సాగుతున్నప్పుడు, ఇది వ్యక్తులతో అతని సంబంధాన్ని, అతని లేయర్డ్ వ్యక్తిత్వాన్ని మరియు ప్రేమ మరియు జీవితం గురించి అతను అందించే పాఠాలను అన్వేషిస్తుంది."
+    },
+    "genres": [
+      "Adventure",
+      "Romance",
+      "Drama"
+    ],
+    "year": 2026,
+    "runtime": 149,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 8.8,
+    "studio": "Creativeland",
+    "language": "Hindi",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 3,
+    "popularityScore": 6,
+    "universe": null
+  },
+  {
+    "slug": "aakhri-sawal-2026",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/9CXBZH6sRJpFTMSaY3wj1jx98F4.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/akZ9jTTzvBOx3CeTVCo9WyhxL5q.jpg",
+    "title": {
+      "en": "Aakhri Sawal",
+      "te": "Aakhri Sawal"
+    },
+    "description": {
+      "en": "Vicky, a brilliant but volatile scholar who ignites a national firestorm when he publicly accuses his legendary mentor, Professor Gopal Nadkarni, of institutional bias. What begins as a faculty dispute is quickly hijacked by a sensationalist news anchor and an ambitious political activist, turning a private disagreement into a televised \"intellectual trial\" watched by millions.",
+      "te": "విక్కీ, ఒక తెలివైన కానీ అస్థిరమైన పండితుడు, అతను తన లెజెండరీ మెంటర్ ప్రొఫెసర్ గోపాల్ నాదకర్ణిని సంస్థాగత పక్షపాతంతో బహిరంగంగా ఆరోపించినప్పుడు జాతీయ మంటలను రేకెత్తించాడు. అధ్యాపకుల వివాదంగా ప్రారంభమయ్యేది ఒక సంచలనాత్మక వార్తా యాంకర్ మరియు ప్రతిష్టాత్మక రాజకీయ కార్యకర్త ద్వారా త్వరగా హైజాక్ చేయబడుతుంది, ప్రైవేట్ అసమ్మతిని మిలియన్ల మంది వీక్షించే టెలివిజన్ \"మేధో విచారణ\"గా మార్చారు."
+    },
+    "genres": [
+      "Drama"
+    ],
+    "year": 2026,
+    "runtime": 150,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 1,
+    "studio": "Nikhil Nanda Motion Pictures",
+    "language": "Hindi",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 2,
+    "popularityScore": 5,
+    "universe": null
+  },
+  {
+    "slug": "tu-yaa-main-2026",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/nUPnA0I1MTaZRVCsUQc5DS5JA8W.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/zIOBTZAqGwdKnOb5c6SvzxP7x86.jpg",
+    "title": {
+      "en": "Tu Yaa Main",
+      "te": "Tu Yaa Main"
+    },
+    "description": {
+      "en": "A wannabe rapper from the outskirts of Mumbai and an affluent influencer elope to a coastal town, only to find themselves trapped in the pool of a derelict resort fighting for survival against the wrath of a ferocious crocodile.",
+      "te": "ముంబై శివార్లలోని ఒక వన్నాబే రాపర్ మరియు ఒక సంపన్న ప్రభావశీలుడు తీరప్రాంత పట్టణానికి పారిపోతారు, క్రూరమైన మొసలి ఆగ్రహానికి వ్యతిరేకంగా మనుగడ కోసం పోరాడుతున్న నిర్జనమైన రిసార్ట్ కొలనులో చిక్కుకున్నారు."
+    },
+    "genres": [
+      "Romance"
+    ],
+    "year": 2026,
+    "runtime": 145,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 6.456,
+    "studio": "Colour Yellow Productions",
+    "language": "Hindi",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 2,
+    "popularityScore": 4,
+    "universe": null
+  },
+  {
+    "slug": "dilwale-dulhania-le-jayenge-1995",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/tFbfCkS7q6g96wVoAu8kyr93iPm.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/84beTJf26mfhoasUlKSOiNSutyS.jpg",
+    "title": {
+      "en": "Dilwale Dulhania Le Jayenge",
+      "te": "Dilwale Dulhania Le Jayenge"
+    },
+    "description": {
+      "en": "Raj is a rich, carefree, happy-go-lucky second generation NRI. Simran is the daughter of Chaudhary Baldev Singh, who in spite of being an NRI is very strict about adherence to Indian values. Simran has left for India to be married to her childhood fiancé. Raj leaves for India with a mission at his hands, to claim his lady love under the noses of her whole family. Thus begins a saga.",
+      "te": "రాజ్ ధనవంతుడు, నిర్లక్ష్య, సంతోషకరమైన రెండవ తరం NRI. సిమ్రాన్ చౌదరి బల్దేవ్ సింగ్ కుమార్తె, ఆమె ఎన్నారై అయినప్పటికీ భారతీయ విలువలకు కట్టుబడి ఉండటంలో చాలా కఠినంగా ఉంటుంది. సిమ్రాన్ తన చిన్ననాటి కాబోయే భర్తను వివాహం చేసుకోవడానికి భారతదేశానికి బయలుదేరింది. రాజ్ తన చేతిలో ఒక మిషన్‌తో భారతదేశానికి బయలుదేరాడు, తన లేడీ ప్రేమను ఆమె కుటుంబం మొత్తం ముక్కున వేలేసుకోవడానికి. అలా ఒక సాగా ప్రారంభమవుతుంది."
+    },
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Romance"
+    ],
+    "year": 1995,
+    "runtime": 190,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 8.513,
+    "studio": "Yash Raj Films",
+    "language": "Hindi",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 2,
+    "popularityScore": 4,
+    "universe": null
+  },
+  {
+    "slug": "3-idiots-2009",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/66A9MqXOyVFCssoloscw79z8Tew.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/8gT3UKtglLVpu0YfccwbmXZ5Eis.jpg",
+    "title": {
+      "en": "3 Idiots",
+      "te": "3 Idiots"
+    },
+    "description": {
+      "en": "Rascal. Joker. Dreamer. Genius... You've never met a college student quite like \"Rancho.\" From the moment he arrives at India's most prestigious university, Rancho's outlandish schemes turn the campus upside down—along with the lives of his two newfound best friends. Together, they make life miserable for \"Virus,\" the school’s uptight and heartless dean. But when Rancho catches the eye of the dean's daughter, Virus sets his sights on flunking out the \"3 idiots\" once and for all.",
+      "te": "రాస్కెల్. జోకర్. కలలు కనేవాడు. మేధావి... మీరు \"రాంచో\" లాంటి కళాశాల విద్యార్థిని ఎప్పుడూ కలవలేదు. అతను భారతదేశంలోని అత్యంత ప్రతిష్టాత్మకమైన విశ్వవిద్యాలయానికి వచ్చిన క్షణం నుండి, రాంచో యొక్క విపరీతమైన పథకాలు క్యాంపస్‌ను తలకిందులు చేస్తాయి-అతని ఇద్దరు కొత్త స్నేహితుల జీవితాలతో పాటు. కలిసి, వారు \"వైరస్\" కోసం జీవితాన్ని దుర్భరపరుస్తారు, ఇది పాఠశాల యొక్క బిగుతుగా మరియు హృదయం లేని డీన్. కానీ రాంచో డీన్ కుమార్తె దృష్టిని ఆకర్షించినప్పుడు, వైరస్ తన దృష్టిని \"3 ఇడియట్స్\"ని ఒక్కసారిగా బయటకు పంపుతుంది."
+    },
+    "genres": [
+      "Drama",
+      "Comedy"
+    ],
+    "year": 2009,
+    "runtime": 171,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 8.001,
+    "studio": "Vidhu Vinod Chopra Productions",
+    "language": "Hindi",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 2,
+    "popularityScore": 4,
+    "universe": null
+  },
+  {
+    "slug": "border-2-2026",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/wUcttG71zo9deP4m9sDhYPUcvi5.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/fzo85eKFEjfmJ781gubJQjpQAwF.jpg",
+    "title": {
+      "en": "Border 2",
+      "te": "Border 2"
+    },
+    "description": {
+      "en": "Three idealistic soldiers in the Indian army, navy and air force face grueling combat conditions in this film set during the 1971 Indo-Pak war.",
+      "te": "1971 ఇండో-పాక్ యుద్ధం సమయంలో జరిగిన ఈ చిత్రంలో భారత సైన్యం, నావికాదళం మరియు వైమానిక దళంలోని ముగ్గురు ఆదర్శవంతమైన సైనికులు భయంకరమైన పోరాట పరిస్థితులను ఎదుర్కొన్నారు."
+    },
+    "genres": [
+      "Action",
+      "Drama"
+    ],
+    "year": 2026,
+    "runtime": 201,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 7.154,
+    "studio": "T-Series",
+    "language": "Hindi",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 2,
+    "popularityScore": 4,
+    "universe": null
+  },
+  {
+    "slug": "saiyaara-2025",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/hQBIsi3ZfBYEayMc3GhcEmJVkss.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/mguy0nefEUY7NKruffpLO3Stj3d.jpg",
+    "title": {
+      "en": "Saiyaara",
+      "te": "Saiyaara"
+    },
+    "description": {
+      "en": "Two artistic souls find harmony through music despite their contrasting worlds. As feelings deepen, age and circumstances challenge their undeniable bond.",
+      "te": "ఇద్దరు కళాత్మక ఆత్మలు వారి విభిన్న ప్రపంచాలు ఉన్నప్పటికీ సంగీతం ద్వారా సామరస్యాన్ని పొందుతాయి. భావాలు లోతుగా, వయస్సు మరియు పరిస్థితులు వారి కాదనలేని బంధాన్ని సవాలు చేస్తాయి."
+    },
+    "genres": [
+      "Romance",
+      "Drama"
+    ],
+    "year": 2025,
+    "runtime": 150,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 6.399,
+    "studio": "Yash Raj Films",
+    "language": "Hindi",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 2,
+    "popularityScore": 3,
+    "universe": null
+  },
+  {
+    "slug": "mardaani-3-2026",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/dHxLBtHw4InwsVumnthupZYz6NM.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/pfcyWSaPKGagqdunfBXQYCqZHxx.jpg",
+    "title": {
+      "en": "Mardaani 3",
+      "te": "Mardaani 3"
+    },
+    "description": {
+      "en": "Officer Shivani Shivaji Roy returns to hunt down those behind the disappearance of young girls, risking everything to bring them back alive.",
+      "te": "అధికారి శివానీ శివాజీ రాయ్ యువతుల అదృశ్యం వెనుక ఉన్నవారిని వేటాడేందుకు తిరిగి వస్తాడు, వారిని తిరిగి సజీవంగా తీసుకురావడానికి ప్రతిదాన్ని పణంగా పెట్టాడు."
+    },
+    "genres": [
+      "Action",
+      "Crime"
+    ],
+    "year": 2026,
+    "runtime": 131,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 7.422,
+    "studio": "Yash Raj Films",
+    "language": "Hindi",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 2,
+    "popularityScore": 3,
+    "universe": null
+  },
+  {
+    "slug": "hai-jawani-toh-ishq-hona-hai-2026",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/vmlJvz6qVzYgei2V74GvnmcuQfW.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/l5QgEvlfK6eHPM4YPEk7AArXmh8.jpg",
+    "title": {
+      "en": "Hai Jawani Toh Ishq Hona Hai",
+      "te": "Hai Jawani Toh Ishq Hona Hai"
+    },
+    "description": {
+      "en": "When Jass leaves his marriage over conflicting priorities, a new romance abroad is upended by shocking revelations, forcing him to confront love, loyalty, and the true meaning of commitment.",
+      "te": "వివాదాస్పద ప్రాధాన్యతల కారణంగా జాస్ తన వివాహాన్ని విడిచిపెట్టినప్పుడు, విదేశాలలో కొత్త శృంగారం దిగ్భ్రాంతికరమైన వెల్లడితో ముందుకు సాగుతుంది, ప్రేమ, విధేయత మరియు నిబద్ధత యొక్క నిజమైన అర్థాన్ని ఎదుర్కోవలసి వస్తుంది."
+    },
+    "genres": [
+      "Romance",
+      "Comedy"
+    ],
+    "year": 2026,
+    "runtime": 136,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 7,
+    "studio": "Tips Industries",
+    "language": "Hindi",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 2,
+    "popularityScore": 3,
+    "universe": null
+  },
+  {
+    "slug": "animal-2023",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/hr9rjR3J0xBBKmlJ4n3gHId9ccx.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/lprsAHkwMxk2iC6VZxNmV0H7g1t.jpg",
+    "title": {
+      "en": "Animal",
+      "te": "Animal"
+    },
+    "description": {
+      "en": "The hardened son of a powerful industrialist returns home after years abroad and vows to take bloody revenge on those threatening his father's life.",
+      "te": "ఒక శక్తివంతమైన పారిశ్రామికవేత్త యొక్క గట్టిపడిన కొడుకు విదేశాలలో సంవత్సరాల తర్వాత ఇంటికి తిరిగి వస్తాడు మరియు తన తండ్రి ప్రాణాలకు ముప్పు కలిగించే వారిపై రక్తపాత ప్రతీకారం తీర్చుకుంటానని ప్రతిజ్ఞ చేస్తాడు."
+    },
+    "genres": [
+      "Action",
+      "Crime",
+      "Drama"
+    ],
+    "year": 2023,
+    "runtime": 201,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 6.119,
+    "studio": "T-Series",
+    "language": "Hindi",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 2,
+    "popularityScore": 3,
+    "universe": null
+  },
+  {
+    "slug": "the-kerala-story-2-2026",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/97jAFQcAnspd416cupbAbGMNT9z.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/lalZuTh46pR318FTNpJB5MZFk1m.jpg",
+    "title": {
+      "en": "The Kerala Story 2",
+      "te": "The Kerala Story 2"
+    },
+    "description": {
+      "en": "Three young Indian women across different states choose love over tradition, only to become trapped. Their parallel lives show how romance and rebellion transform into control and silence, turning love into a weapon that destroys freedom.",
+      "te": "వివిధ రాష్ట్రాల్లోని ముగ్గురు భారతీయ యువతులు సంప్రదాయం కంటే ప్రేమను ఎంచుకుంటారు, కేవలం చిక్కుకుపోయారు. వారి సమాంతర జీవితాలు శృంగారం మరియు తిరుగుబాటు నియంత్రణ మరియు నిశ్శబ్దంగా ఎలా రూపాంతరం చెందుతాయో చూపిస్తుంది, ప్రేమను స్వేచ్ఛను నాశనం చేసే ఆయుధంగా మారుస్తుంది."
+    },
+    "genres": [
+      "Crime",
+      "Drama"
+    ],
+    "year": 2026,
+    "runtime": 131,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 7,
+    "studio": "Sunshine Pictures",
+    "language": "Hindi",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 1,
+    "popularityScore": 3,
+    "universe": null
+  },
+  {
+    "slug": "tere-ishk-mein-2025",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/7FsHlW9z7gDhDE4EXAE2WcXUVQj.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/3FgFKX1gW21LzjT0Yniflaqmhpr.jpg",
+    "title": {
+      "en": "Tere Ishk Mein",
+      "te": "Tere Ishk Mein"
+    },
+    "description": {
+      "en": "A psychology student attempts to rehabilitate a volatile young man, before evolving into a doomed romance.",
+      "te": "ఒక మనస్తత్వ శాస్త్ర విద్యార్థి అస్థిరమైన యువకుడికి పునరావాసం కల్పించడానికి ప్రయత్నిస్తాడు, అంతకు ముందు డూమ్డ్ రొమాన్స్‌గా పరిణామం చెందుతుంది."
+    },
+    "genres": [
+      "Romance",
+      "Drama"
+    ],
+    "year": 2025,
+    "runtime": 169,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 5.6,
+    "studio": "Colour Yellow Productions",
+    "language": "Hindi",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 1,
+    "popularityScore": 3,
+    "universe": null
+  },
+  {
+    "slug": "the-sabarmati-report-2024",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/ahOWjoqGkpxpmJVPmEBkSyvLPfi.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/s6WQSGAuZsYZ354VpA7HbQDmesA.jpg",
+    "title": {
+      "en": "The Sabarmati Report",
+      "te": "The Sabarmati Report"
+    },
+    "description": {
+      "en": "A Hindi reporter struggles with a deadly fact when a train full of Karsewaks is set ablaze in Godhra. Years later, he is asked to help expose the Sabarmati Incident backed by a buried report.",
+      "te": "గోద్రాలో కరసేవకులతో కూడిన రైలును తగులబెట్టినప్పుడు ఒక హిందీ రిపోర్టర్ ఘోరమైన వాస్తవంతో పోరాడుతున్నాడు. సంవత్సరాల తర్వాత, సబర్మతి సంఘటనను పాతిపెట్టిన నివేదిక ద్వారా బహిర్గతం చేయడంలో సహాయం చేయవలసిందిగా కోరాడు."
+    },
+    "genres": [
+      "Drama",
+      "Crime"
+    ],
+    "year": 2024,
+    "runtime": 123,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 5.667,
+    "studio": "Balaji Motion Pictures",
+    "language": "Hindi",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 1,
+    "popularityScore": 2,
+    "universe": null
+  },
+  {
+    "slug": "do-deewane-seher-mein-2026",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/pJu9oL6ElIaajAjwgoKyUCM319H.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/tAh0dkZiOSICkRlv9wXOsvcNl4s.jpg",
+    "title": {
+      "en": "Do Deewane Seher Mein",
+      "te": "Do Deewane Seher Mein"
+    },
+    "description": {
+      "en": "Two socially awkward millennials in Mumbai find love while struggling with self-acceptance. As they battle insecurities and societal pressure, their journey takes them from city chaos to mountain serenity.",
+      "te": "ముంబైలో సామాజికంగా ఇబ్బందికరమైన ఇద్దరు మిలీనియల్స్ స్వీయ అంగీకారంతో పోరాడుతున్నప్పుడు ప్రేమను కనుగొంటారు. వారు అభద్రత మరియు సామాజిక ఒత్తిడితో పోరాడుతున్నప్పుడు, వారి ప్రయాణం వారిని నగర గందరగోళం నుండి పర్వత ప్రశాంతత వరకు తీసుకువెళుతుంది."
+    },
+    "genres": [
+      "Romance",
+      "Drama",
+      "Comedy"
+    ],
+    "year": 2026,
+    "runtime": 137,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 6.75,
+    "studio": "Bhansali Productions",
+    "language": "Hindi",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 1,
+    "popularityScore": 2,
+    "universe": null
+  },
+  {
+    "slug": "indian-institute-of-zombies-2026",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/zSiNbahfCoezs5LQYNtJrvczngM.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/qGk24C6fV10LkXCEpAJ4BbzViFC.jpg",
+    "title": {
+      "en": "Indian Institute of Zombies",
+      "te": "Indian Institute of Zombies"
+    },
+    "description": {
+      "en": "At an elite engineering campus, students must survive a sudden zombie outbreak while navigating academic pressures and social hierarchies, blending horror with comedy and biting satire of privilege and competition.",
+      "te": "ఎలైట్ ఇంజనీరింగ్ క్యాంపస్‌లో, విద్యార్థులు అకడమిక్ ఒత్తిళ్లు మరియు సామాజిక సోపానక్రమాలను నావిగేట్ చేస్తున్నప్పుడు ఆకస్మిక జోంబీ వ్యాప్తి నుండి బయటపడాలి, హాస్యంతో భయానకతను మిళితం చేస్తారు మరియు ప్రత్యేక హక్కులు మరియు పోటీ యొక్క వ్యంగ్యాన్ని కొరికేస్తారు."
+    },
+    "genres": [
+      "Comedy",
+      "Horror"
+    ],
+    "year": 2026,
+    "runtime": 137,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 7,
+    "studio": "Low Gravity",
+    "language": "Hindi",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 1,
+    "popularityScore": 2,
+    "universe": null
+  },
+  {
+    "slug": "dangal-2016",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/jLiA1WW3kL1K9lYfYmVj57RD74N.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/l0fNAHLOFReQJsxCOmGWvJDnimn.jpg",
+    "title": {
+      "en": "Dangal",
+      "te": "Dangal"
+    },
+    "description": {
+      "en": "Dangal is an extraordinary true story based on the life of Mahavir Singh and his two daughters, Geeta and Babita Phogat. The film traces the inspirational journey of a father who trains his daughters to become world class wrestlers.",
+      "te": "దంగల్ మహావీర్ సింగ్ మరియు అతని ఇద్దరు కుమార్తెలు, గీత మరియు బబితా ఫోగట్ జీవితం ఆధారంగా ఒక అసాధారణమైన నిజమైన కథ. తన కూతుళ్లను ప్రపంచ స్థాయి రెజ్లర్‌లుగా తీర్చిదిద్దే తండ్రి స్ఫూర్తిదాయకమైన ప్రయాణాన్ని ఈ చిత్రం గుర్తించింది."
+    },
+    "genres": [
+      "Drama",
+      "Family",
+      "Comedy"
+    ],
+    "year": 2016,
+    "runtime": 161,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 7.878,
+    "studio": "Aamir Khan Productions",
+    "language": "Hindi",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 1,
+    "popularityScore": 2,
+    "universe": null
+  },
+  {
+    "slug": "daadi-ki-shaadi-2026",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/hKbQjE5ZcZUpuzApEjyoVCUWwdx.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/4QTWMWtrBkN5PdsL4XX5Pp27VIO.jpg",
+    "title": {
+      "en": "Daadi Ki Shaadi",
+      "te": "Daadi Ki Shaadi"
+    },
+    "description": {
+      "en": "A grandmother’s mishap with a social media post causes consternation amongst her children and threatens the prospect of her granddaughter’s wedding.",
+      "te": "సోషల్ మీడియా పోస్ట్‌తో ఒక అమ్మమ్మకి జరిగిన ఆపద ఆమె పిల్లలలో దిగ్భ్రాంతిని కలిగిస్తుంది మరియు ఆమె మనవరాలి పెళ్లి అవకాశాలను బెదిరిస్తుంది."
+    },
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Family"
+    ],
+    "year": 2026,
+    "runtime": 150,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 7,
+    "studio": "R Take Studios",
+    "language": "Hindi",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 1,
+    "popularityScore": 2,
+    "universe": null
+  },
+  {
+    "slug": "sitaare-zameen-par-2025",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/adYjCJGSNiL7CIaDW3g0Bcg7r2Z.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/pdbML7ol4HvsI1xWX0s9LZpUGfL.jpg",
+    "title": {
+      "en": "Sitaare Zameen Par",
+      "te": "Sitaare Zameen Par"
+    },
+    "description": {
+      "en": "A disgraced basketball coach is given the chance to coach a team of players who are intellectually disabled as part of community services. Gulshan has apprehensions at first and feels out of place but soon realizes they just might have what it takes to make it to the national championships.",
+      "te": "అవమానకరమైన బాస్కెట్‌బాల్ కోచ్‌కు సమాజ సేవల్లో భాగంగా మేధోపరమైన వైకల్యం ఉన్న ఆటగాళ్ల బృందానికి శిక్షణ ఇచ్చే అవకాశం ఇవ్వబడుతుంది. గుల్షన్‌కు మొదట్లో భయాలు ఉన్నాయి మరియు నిష్క్రమించినట్లు భావించాడు, అయితే జాతీయ ఛాంపియన్‌షిప్‌లకు చేరుకోవడానికి తమకు ఏమి అవసరమో త్వరలోనే తెలుసుకుంటాడు."
+    },
+    "genres": [
+      "Comedy",
+      "Drama"
+    ],
+    "year": 2025,
+    "runtime": 155,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 7.067,
+    "studio": "Aamir Khan Productions",
+    "language": "Hindi",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 1,
+    "popularityScore": 2,
+    "universe": null
+  },
+  {
+    "slug": "toaster-2026",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/8bsa86WKaQ9plaYN7rd9oGwmyVV.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/3gI8gS7YIpmEzUehg3cZVQ62phl.jpg",
+    "title": {
+      "en": "Toaster",
+      "te": "Toaster"
+    },
+    "description": {
+      "en": "Murder and chaos erupt when a miser becomes obsessed with a toaster he gave as a wedding gift.",
+      "te": "అతను పెళ్లి కానుకగా ఇచ్చిన టోస్టర్‌పై ఒక లోపభూయిష్టుడు నిమగ్నమైనప్పుడు హత్య మరియు గందరగోళం చెలరేగుతాయి."
+    },
+    "genres": [
+      "Comedy",
+      "Crime",
+      "Action"
+    ],
+    "year": 2026,
+    "runtime": 126,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 5.72,
+    "studio": "Kampa Films",
+    "language": "Hindi",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 1,
+    "popularityScore": 2,
+    "universe": null
+  },
+  {
+    "slug": "o-romeo-2026",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/aTnIGrfVv03FIDsNDuabNsp9yFM.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/7AypNX6eZrqyUPZl77jvwTfHgeV.jpg",
+    "title": {
+      "en": "O'Romeo",
+      "te": "O'Romeo"
+    },
+    "description": {
+      "en": "What fate awaits a stonehearted gangster and bloodthirsty womaniser when true love claims him, helpless and unguarded? A gang war that shakes the entire underworld and crime syndicate to their very roots. A forbidden love; the tale of an unrequited passion.",
+      "te": "నిజమైన ప్రేమ అతనిని నిస్సహాయంగా మరియు కాపలా లేకుండా క్లెయిమ్ చేసినప్పుడు రాతి హృదయం ఉన్న గ్యాంగ్‌స్టర్ మరియు రక్తపిపాసి స్త్రీలైజర్ కోసం ఎలాంటి విధి ఎదురుచూస్తుంది? మొత్తం పాతాళం మరియు క్రైమ్ సిండికేట్‌ను వారి మూలాలను కదిలించే గ్యాంగ్ వార్. నిషేధించబడిన ప్రేమ; కోరుకోని అభిరుచి యొక్క కథ."
+    },
+    "genres": [
+      "Romance",
+      "Action",
+      "Drama"
+    ],
+    "year": 2026,
+    "runtime": 178,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 5.5,
+    "studio": "Nadiadwala Grandson Entertainment",
+    "language": "Hindi",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 1,
+    "popularityScore": 2,
+    "universe": null
+  },
+  {
+    "slug": "cocktail-2-2026",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/vJq0vuEV2ksMVl0sxsdBaU06FQL.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/vwvMQxD3MHHk2cQCuSyEdYktjUL.jpg",
+    "title": {
+      "en": "Cocktail 2",
+      "te": "Cocktail 2"
+    },
+    "description": {
+      "en": "Set against the backdrop of modern-day relationships, this compelling sequel introduces a fresh cast of characters navigating the complexities of love, friendship, and personal growth. As they confront emotional challenges, unexpected twists, and heartfelt decisions, the story revisits timeless themes of romance, trust, heartbreak, and resilience, offering a relatable and engaging exploration of human connections in today's world.",
+      "te": "ఆధునిక సంబంధాల నేపథ్యానికి వ్యతిరేకంగా సెట్ చేయబడిన ఈ ఆకర్షణీయమైన సీక్వెల్ ప్రేమ, స్నేహం మరియు వ్యక్తిగత ఎదుగుదల యొక్క సంక్లిష్టతలను నావిగేట్ చేసే పాత్రల యొక్క తాజా తారాగణాన్ని పరిచయం చేస్తుంది. వారు భావోద్వేగ సవాళ్లు, ఊహించని మలుపులు మరియు హృదయపూర్వక నిర్ణయాలను ఎదుర్కొన్నప్పుడు, కథ శృంగారం, నమ్మకం, హృదయ విదారకత మరియు స్థితిస్థాపకత యొక్క శాశ్వతమైన థీమ్‌లను తిరిగి సందర్శిస్తుంది, నేటి ప్రపంచంలో మానవ సంబంధాల యొక్క సాపేక్ష మరియు ఆకర్షణీయమైన అన్వేషణను అందిస్తుంది."
+    },
+    "genres": [
+      "Romance",
+      "Comedy"
+    ],
+    "year": 2026,
+    "runtime": 120,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 7,
+    "studio": "Maddock Films",
+    "language": "Hindi",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 1,
+    "popularityScore": 2,
+    "universe": null
+  },
+  {
+    "slug": "khejdi-2018",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/e25BBKlSQjRKQFCcLhyIABSD90O.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/nvrN9SlbPP3pIE0uwN6T8gZfLSH.jpg",
+    "title": {
+      "en": "Khejdi",
+      "te": "Khejdi"
+    },
+    "description": {
+      "en": "Born as an intersex person, Khejdi is brought up by her father behind concrete walls and closed doors. To keep her from being seen and slaughtered by the villagers, she is told that if she steps outside she’ll catch a dangerous disease. But how long can one keep a bird caged?",
+      "te": "ఇంటర్‌సెక్స్ వ్యక్తిగా జన్మించిన ఖేజ్దీని ఆమె తండ్రి కాంక్రీట్ గోడలు మరియు మూసిన తలుపుల వెనుక పెంచారు. ఆమెను గ్రామస్థులు చూడకుండా మరియు చంపకుండా ఉండటానికి, ఆమె బయట అడుగుపెడితే ఆమెకు ప్రమాదకరమైన వ్యాధి సోకుతుందని ఆమెకు చెప్పబడింది. అయితే పక్షిని ఎంతకాలం పంజరంలో ఉంచవచ్చు?"
+    },
+    "genres": [
+      "Drama"
+    ],
+    "year": 2018,
+    "runtime": 92,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 7,
+    "studio": "",
+    "language": "Hindi",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 1,
+    "popularityScore": 2,
+    "universe": null
+  },
+  {
+    "slug": "like-stars-on-earth-2007",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/puHRt6Raovm5ujGCdwLWvRv4NHU.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/bPwdy3zaNnMdZ22u0WCcYu0xxgt.jpg",
+    "title": {
+      "en": "Like Stars on Earth",
+      "te": "Like Stars on Earth"
+    },
+    "description": {
+      "en": "Ishaan Awasthi is an eight-year-old whose world is filled with wonders that no one else seems to appreciate. Colours, fish, dogs, and kites don't seem important to the adults, who are much more interested in things like homework, marks, and neatness. Ishaan cannot seem to get anything right in class; he is then sent to boarding school, where his life changes forever.",
+      "te": "ఇషాన్ అవస్తి ఎనిమిదేళ్ల చిన్నారి, అతని ప్రపంచం మరెవరూ మెచ్చుకోని అద్భుతాలతో నిండిపోయింది. పెద్దలకు రంగులు, చేపలు, కుక్కలు మరియు గాలిపటాలు ముఖ్యమైనవిగా కనిపించవు, వారు హోంవర్క్, మార్కులు మరియు నీట్‌నెస్ వంటి వాటిపై ఎక్కువ ఆసక్తిని కలిగి ఉంటారు. ఇషాన్ క్లాస్‌లో ఏదీ సరిగ్గా పొందలేడు; అతను బోర్డింగ్ పాఠశాలకు పంపబడతాడు, అక్కడ అతని జీవితం శాశ్వతంగా మారుతుంది."
+    },
+    "genres": [
+      "Drama"
+    ],
+    "year": 2007,
+    "runtime": 162,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 8,
+    "studio": "Aamir Khan Productions",
+    "language": "Hindi",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 1,
+    "popularityScore": 2,
+    "universe": null
+  },
+  {
+    "slug": "shiddat-2021",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/dEXxQAspQzZsw9VEiuVWRDJnvvy.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/nGlNQ6uiS63g8MTAbPrhvmCIFO3.jpg",
+    "title": {
+      "en": "Shiddat",
+      "te": "Shiddat"
+    },
+    "description": {
+      "en": "Love-struck Jaggi can cross the seven seas for his dream girl, Kartika. Even if it means stopping her wedding as he doesn't want to be friend-zoned.",
+      "te": "ప్రేమలో మునిగిన జగ్గీ తన కలల అమ్మాయి కార్తీక కోసం సప్తసముద్రాలను దాటగలడు. ఫ్రెండ్‌జోన్‌గా ఉండడం ఇష్టంలేక ఆమె పెళ్లిని ఆపేసినా."
+    },
+    "genres": [
+      "Romance",
+      "Drama"
+    ],
+    "year": 2021,
+    "runtime": 146,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 6.681,
+    "studio": "Maddock Films",
+    "language": "Hindi",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 1,
+    "popularityScore": 2,
+    "universe": null
+  },
+  {
+    "slug": "jawan-2023",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/mGiw8zAmHQwKBXDG1n7mQpT5kK1.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/5LtSjMNw6j3LkG29Oa4O0iY5U8.jpg",
+    "title": {
+      "en": "Jawan",
+      "te": "Jawan"
+    },
+    "description": {
+      "en": "An emotional journey of a prison warden, driven by a personal vendetta while keeping up to a promise made years ago, recruits inmates to commit outrageous crimes that shed light on corruption and injustice, in an attempt to get even with his past,  and that leads him to an unexpected reunion.",
+      "te": "జైలు వార్డెన్ యొక్క భావోద్వేగ ప్రయాణం, సంవత్సరాల క్రితం చేసిన వాగ్దానాన్ని నిలబెట్టుకుంటూ వ్యక్తిగత పగతో నడిచేది, అవినీతి మరియు అన్యాయాన్ని వెలుగులోకి తెచ్చే దారుణమైన నేరాలకు ఖైదీలను రిక్రూట్ చేస్తుంది, అతని గతంతో సరిపెట్టుకునే ప్రయత్నంలో, మరియు అది అతనిని ఊహించని పునఃకలయికకు దారి తీస్తుంది."
+    },
+    "genres": [
+      "Action"
+    ],
+    "year": 2023,
+    "runtime": 169,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 7.077,
+    "studio": "Red Chillies Entertainment",
+    "language": "Hindi",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 1,
+    "popularityScore": 2,
+    "universe": null
+  },
+  {
+    "slug": "jaat-2025",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/guTflsCTgLNqTbpHTi9gJANk1Rf.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/A5ajQPdmA4P87vTpOXmFetA14fx.jpg",
+    "title": {
+      "en": "Jaat",
+      "te": "Jaat"
+    },
+    "description": {
+      "en": "A mysterious stranger journeys to a remote town controlled by a callous crime lord, with one violent mission — restoring justice to its people.",
+      "te": "ఒక నిగూఢమైన అపరిచితుడు ఒక క్రైమ్ లార్డ్ చేత నియంత్రించబడే మారుమూల పట్టణానికి ఒక హింసాత్మక మిషన్‌తో ప్రయాణిస్తాడు - దాని ప్రజలకు న్యాయాన్ని పునరుద్ధరించడం."
+    },
+    "genres": [
+      "Crime",
+      "Action"
+    ],
+    "year": 2025,
+    "runtime": 153,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 6.136,
+    "studio": "Mythri Movie Makers",
+    "language": "Hindi",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 1,
+    "popularityScore": 1,
+    "universe": null
+  },
+  {
+    "slug": "sultan-2016",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/oarT8LL2XE0aPU9kXqrD249Z4rM.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/74bUfGDD0kJ53M334vQcbJRzsI8.jpg",
+    "title": {
+      "en": "Sultan",
+      "te": "Sultan"
+    },
+    "description": {
+      "en": "The ageing wrestler Sultan Ali Khan decides to try his luck on the mat again; to do this, he wants to represent his country at the Olympic Games, but first has to overcome personal issues.",
+      "te": "వృద్ధాప్య మల్లయోధుడు సుల్తాన్ అలీ ఖాన్ మళ్లీ చాపపై తన అదృష్టాన్ని పరీక్షించుకోవాలని నిర్ణయించుకున్నాడు; దీన్ని చేయడానికి, అతను ఒలింపిక్ క్రీడలలో తన దేశానికి ప్రాతినిధ్యం వహించాలనుకుంటున్నాడు, అయితే మొదట వ్యక్తిగత సమస్యలను అధిగమించాలి."
+    },
+    "genres": [
+      "Drama",
+      "Action",
+      "Romance"
+    ],
+    "year": 2016,
+    "runtime": 170,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 6.861,
+    "studio": "Yash Raj Films",
+    "language": "Hindi",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 1,
+    "popularityScore": 2,
+    "universe": null
+  },
+  {
+    "slug": "ramaiya-vastavaiya-2013",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/iSVYJE0Hz4g0SEAGKXA84yhcfPT.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/yJA2V29uGOZ2yYhSIGWO7J1HDvX.jpg",
+    "title": {
+      "en": "Ramaiya Vastavaiya",
+      "te": "Ramaiya Vastavaiya"
+    },
+    "description": {
+      "en": "A wealthy NRI falls hard for a country girl during a visit to his homeland.",
+      "te": "ఒక సంపన్న ఎన్నారై తన మాతృభూమి సందర్శన సమయంలో ఒక దేశవాళీ అమ్మాయి కోసం కష్టపడతాడు."
+    },
+    "genres": [
+      "Romance",
+      "Action",
+      "Comedy"
+    ],
+    "year": 2013,
+    "runtime": 148,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 6.186,
+    "studio": "Tips Industries",
+    "language": "Hindi",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 1,
+    "popularityScore": 2,
+    "universe": null
+  },
+  {
+    "slug": "war-2-2025",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/fxxVbjhIOl8ZPS69dH8xeeuxvmh.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/pKIRUTnwY3YYU9urSdsuobdcliP.jpg",
+    "title": {
+      "en": "War 2",
+      "te": "War 2"
+    },
+    "description": {
+      "en": "Years ago Agent Kabir went rogue, became India’s greatest villain ever.  As he descends further into the deepest shadows... India sends its deadliest, most lethal agent after him, Agent Vikram  A Special Units Officer who is more than Kabir’s equal and a relentless Terminator driven by his own demons, determined to put a bullet into Kabir’s skull.",
+      "te": "సంవత్సరాల క్రితం ఏజెంట్ కబీర్ మోసగాడు, భారతదేశం యొక్క గొప్ప విలన్ అయ్యాడు.  అతను మరింత లోతైన నీడల్లోకి దిగుతున్నప్పుడు... భారతదేశం అతని తర్వాత తన ప్రాణాంతకమైన, అత్యంత ప్రాణాంతకమైన ఏజెంట్‌ని పంపుతుంది, ఏజెంట్ విక్రమ్‌ను కబీర్‌కు సమానమైన ప్రత్యేక యూనిట్ అధికారి మరియు కబీర్ పుర్రెలోకి బుల్లెట్ వేయాలని నిశ్చయించుకున్న కబీర్‌తో సమానమైన కనికరంలేని టెర్మినేటర్."
+    },
+    "genres": [
+      "Action"
+    ],
+    "year": 2025,
+    "runtime": 173,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 5.8,
+    "studio": "Yash Raj Films",
+    "language": "Hindi",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 1,
+    "popularityScore": 1,
+    "universe": null
+  },
+  {
+    "slug": "stree-2-2024",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/iwEJp4WBM8b3AjCeNcgvv86FEFr.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/fVV0A67kDjTTQ4CvUn8LoletRmI.jpg",
+    "title": {
+      "en": "Stree 2",
+      "te": "Stree 2"
+    },
+    "description": {
+      "en": "Following the events of 'Stree', the town of Chanderi is being haunted again. This time, women are mysteriously abducted by a terrifying headless entity. Once again, it's up to Vicky and friends to save their town and loved ones.",
+      "te": "'స్త్రీ' సంఘటనల తరువాత, చందేరి పట్టణంలో మళ్లీ దెయ్యం ఉంది. ఈసారి, భయంకరమైన తలలేని సంస్థ ద్వారా మహిళలు రహస్యంగా అపహరించబడ్డారు. మరోసారి, వారి పట్టణాన్ని మరియు ప్రియమైన వారిని రక్షించడం విక్కీ మరియు స్నేహితుల ఇష్టం."
+    },
+    "genres": [
+      "Horror",
+      "Comedy"
+    ],
+    "year": 2024,
+    "runtime": 143,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 6.644,
+    "studio": "Maddock Films",
+    "language": "Hindi",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 1,
+    "popularityScore": 1,
+    "universe": null
+  },
+  {
+    "slug": "the-great-grand-superhero-2026",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/6CYmHknTN2UGGhqQUZh4tqQ6fEr.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/2Lu1jb8kv93ciXYhmUlsj0E2RK1.jpg",
+    "title": {
+      "en": "The Great Grand Superhero",
+      "te": "The Great Grand Superhero"
+    },
+    "description": {
+      "en": "The Great Grand Superhero is a 2026 film.",
+      "te": "The Great Grand Superhero అనేది 2026 లో విడుదలైన చిత్రం."
+    },
+    "genres": [
+      "Comedy",
+      "Family",
+      "Drama"
+    ],
+    "year": 2026,
+    "runtime": 112,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 7,
+    "studio": "Zee Studios",
+    "language": "Hindi",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 1,
+    "popularityScore": 1,
+    "universe": null
+  },
+  {
+    "slug": "12th-fail-2023",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/eebUPRI4Z5e1Z7Hev4JZAwMIFkX.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/6RV2o8PBCEyw9ylOWViV1CtULIF.jpg",
+    "title": {
+      "en": "12th Fail",
+      "te": "12th Fail"
+    },
+    "description": {
+      "en": "Based on the true story of IPS officer Manoj Kumar Sharma, 12th Fail sheds limelight on fearlessly embracing the idea of restarting the academic journey despite the setbacks and challenges and reclaiming one's destiny at a place where millions of students attempt the world's toughest competitive exam: UPSC.",
+      "te": "IPS అధికారి మనోజ్ కుమార్ శర్మ యొక్క నిజమైన కథ ఆధారంగా, 12వ ఫెయిల్ అవరోధాలు మరియు సవాళ్లు ఉన్నప్పటికీ విద్యాప్రయాణాన్ని పునఃప్రారంభించాలనే ఆలోచనను నిర్భయంగా స్వీకరించి, మిలియన్ల మంది విద్యార్థులు ప్రపంచంలోనే అత్యంత కష్టతరమైన పోటీ పరీక్షను ప్రయత్నించే ప్రదేశంలో ఒకరి విధిని తిరిగి పొందడంపై వెలుగునిస్తుంది: UPSC."
+    },
+    "genres": [
+      "Drama"
+    ],
+    "year": 2023,
+    "runtime": 146,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 7.9,
+    "studio": "Vidhu Vinod Chopra Productions",
+    "language": "Hindi",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 1,
+    "popularityScore": 1,
+    "universe": null
+  },
+  {
+    "slug": "kill-2024",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/m2zXTuNPkywdYLyWlVyJZW2QOJH.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/u060S4drIWntmLeMDGe7mD0V6Jh.jpg",
+    "title": {
+      "en": "Kill",
+      "te": "Kill"
+    },
+    "description": {
+      "en": "When an army commando finds out his true love is engaged against her will, he boards a New Dehli-bound train in a daring quest to derail the arranged marriage. But when a gang of knife-wielding thieves begin to terrorize innocent passengers on his train, the commando takes them on, one by one.",
+      "te": "ఒక ఆర్మీ కమాండో తన నిజమైన ప్రేమను ఆమె ఇష్టానికి విరుద్ధంగా నిశ్చితార్థం చేసుకున్నాడని తెలుసుకున్నప్పుడు, అతను ఏర్పాటు చేసుకున్న వివాహాన్ని అడ్డుకునేందుకు సాహసోపేతమైన తపనతో న్యూ ఢిల్లీకి వెళ్లే రైలులో ఎక్కాడు. కానీ కత్తి పట్టుకున్న దొంగల ముఠా తన రైలులో అమాయక ప్రయాణీకులను భయభ్రాంతులకు గురిచేయడం ప్రారంభించినప్పుడు, కమాండో వారిని ఒక్కొక్కరిగా తీసుకుంటాడు."
+    },
+    "genres": [
+      "Action",
+      "Crime",
+      "Drama"
+    ],
+    "year": 2024,
+    "runtime": 105,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 7.1,
+    "studio": "Sikhya Entertainment",
+    "language": "Hindi",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 1,
+    "popularityScore": 1,
+    "universe": null
+  },
+  {
+    "slug": "ikkis-2026",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/8PWu0V10nMqG5SrA13wLRXTD2fH.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/wbhoYwvqgadchfMgUOfOp87QZDS.jpg",
+    "title": {
+      "en": "Ikkis",
+      "te": "Ikkis"
+    },
+    "description": {
+      "en": "Second Lieutenant and India's youngest Param Vir Chakra recipient, Arun Khetarpal, gave his life fighting for his battalion and the country during the 1971 Battle of Basantar. Ikkis also takes a reflective look at the futility of war through the eyes of Khetarpal's father, who visits his ancestral home in Sargodha and Alma Mater for reunion, which now happens to be in post-partition Pakistan, 30 years later.",
+      "te": "సెకండ్ లెఫ్టినెంట్ మరియు భారతదేశపు అతి పిన్న వయస్కుడైన పరమవీర చక్ర గ్రహీత అయిన అరుణ్ ఖేతర్‌పాల్ 1971 బసంతర్ యుద్ధంలో తన బెటాలియన్ మరియు దేశం కోసం పోరాడుతూ తన ప్రాణాలను అర్పించారు. ఇక్కిస్ ఖేతర్‌పాల్ తండ్రి దృష్టిలో యుద్ధం యొక్క నిష్ఫలతను ప్రతిబింబించేలా చూస్తాడు, అతను సర్గోధా మరియు అల్మా మేటర్‌లోని తన పూర్వీకుల ఇంటిని తిరిగి కలవడానికి సందర్శిస్తాడు, ఇది ఇప్పుడు 30 సంవత్సరాల తరువాత విభజన తర్వాత పాకిస్తాన్‌లో ఉంది."
+    },
+    "genres": [
+      "Historical",
+      "Drama"
+    ],
+    "year": 2026,
+    "runtime": 148,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 5.967,
+    "studio": "Maddock Films",
+    "language": "Hindi",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 1,
+    "popularityScore": 1,
+    "universe": null
+  },
+  {
+    "slug": "thamma-2025",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/udkbDwBbysCGEydt0FHnl9dVO2k.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/e5bFtChejaGio218NejT0jXgSux.jpg",
+    "title": {
+      "en": "Thamma",
+      "te": "Thamma"
+    },
+    "description": {
+      "en": "Two destined lovers battle supernatural forces, family ties, and nature itself to defend their forbidden romance in a mystical world where ancient powers and prophecies threaten to keep them apart.",
+      "te": "ఇద్దరు గమ్యస్థాన ప్రేమికులు అతీంద్రియ శక్తులు, కుటుంబ సంబంధాలు మరియు ప్రకృతితో పోరాడారు, పురాతన శక్తులు మరియు ప్రవచనాలు వారిని దూరంగా ఉంచడానికి బెదిరించే ఆధ్యాత్మిక ప్రపంచంలో తమ నిషేధించబడిన ప్రేమను రక్షించుకోవడానికి."
+    },
+    "genres": [
+      "Horror",
+      "Comedy"
+    ],
+    "year": 2025,
+    "runtime": 149,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 6.459,
+    "studio": "Jio Studios",
+    "language": "Hindi",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 1,
+    "popularityScore": 1,
+    "universe": null
+  },
+  {
+    "slug": "veer-zaara-2004",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/j267YqLvKAHeyykTflxzpgVgviQ.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/hr3MP43lWatnNKtmsYutFUYrLQl.jpg",
+    "title": {
+      "en": "Veer-Zaara",
+      "te": "Veer-Zaara"
+    },
+    "description": {
+      "en": "Squadron Leader Veer Pratap Singh, a pilot in the Indian Air Force, rescues the stranded Zaara, a woman from Pakistan, following a bus accident, and their lives are forever bound.",
+      "te": "స్క్వాడ్రన్ లీడర్ వీర్ ప్రతాప్ సింగ్, భారత వైమానిక దళంలో పైలట్, బస్సు ప్రమాదంలో చిక్కుకుపోయిన జారా అనే మహిళను పాకిస్తాన్ నుండి రక్షించాడు మరియు వారి జీవితాలు ఎప్పటికీ కట్టుబడి ఉంటాయి."
+    },
+    "genres": [
+      "Drama",
+      "Romance"
+    ],
+    "year": 2004,
+    "runtime": 192,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 7.452,
+    "studio": "Yash Raj Films",
+    "language": "Hindi",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 1,
+    "popularityScore": 1,
+    "universe": null
+  },
+  {
+    "slug": "jolly-llb-3-2025",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/bwRoU9p5GvjxgPfmIgsfcJ4ydng.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/gC1kJpDPtaogbq7N543si20jC0w.jpg",
+    "title": {
+      "en": "Jolly LLB 3",
+      "te": "Jolly LLB 3"
+    },
+    "description": {
+      "en": "The third part of the Jolly LLB trilogy brings back Jagdish Tyagi and Jagdishwar Mishra for the biggest face-off as penurious widow Janki Devi Solanki awaits justice against business tycoon Haribhai Khaitan in a satire on the judiciary, justice and the gulf between the privileged and the people on the other side of the spectrum.",
+      "te": "జాలీ LLB త్రయం యొక్క మూడవ భాగం జగదీష్ త్యాగి మరియు జగదీశ్వర్ మిశ్రాలను అతిపెద్ద ముఖాముఖికి తీసుకువస్తుంది, ఎందుకంటే పశ్చాత్తాప పడిన భార్య జాంకీ దేవి సోలంకి న్యాయవ్యవస్థ, న్యాయం మరియు ఇతర వ్యక్తుల మధ్య ఉన్న అగాధంపై వ్యంగ్య కథనంలో వ్యాపార దిగ్గజం హరిభాయ్ ఖైతాన్‌కు వ్యతిరేకంగా న్యాయం కోసం ఎదురు చూస్తున్నారు."
+    },
+    "genres": [
+      "Drama",
+      "Comedy"
+    ],
+    "year": 2025,
+    "runtime": 156,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 6.436,
+    "studio": "Star Studios",
+    "language": "Hindi",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 1,
+    "popularityScore": 1,
+    "universe": null
+  },
+  {
+    "slug": "pk-2014",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/z2x2Y4tncefsIU7h82gmUM5vnBJ.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/gxfvtq5eYiClS2X7hxAAPBNrbWA.jpg",
+    "title": {
+      "en": "PK",
+      "te": "PK"
+    },
+    "description": {
+      "en": "A stranger in the city asks questions no one has asked before. Known only by his initials, the man's innocent questions and childlike curiosity take him on a journey of love, laughter and letting go.",
+      "te": "నగరంలో అపరిచితుడు ఇంతకు ముందు ఎవరూ అడగని ప్రశ్నలు అడిగాడు. అతని మొదటి అక్షరాలతో మాత్రమే తెలిసిన, మనిషి యొక్క అమాయకమైన ప్రశ్నలు మరియు పిల్లల వంటి ఉత్సుకత అతన్ని ప్రేమ, నవ్వు మరియు విడదీయడం వంటి ప్రయాణంలో తీసుకువెళతాయి."
+    },
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Sci-Fi"
+    ],
+    "year": 2014,
+    "runtime": 153,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 7.696,
+    "studio": "Rajkumar Hirani Films",
+    "language": "Hindi",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 1,
+    "popularityScore": 1,
+    "universe": null
+  },
+  {
+    "slug": "deva-2025",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/qxtXzAlEPxmjHILU8k8wduvBSdo.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/lqHt4icP1GTaNBeVTxTrwTZdoAW.jpg",
+    "title": {
+      "en": "Deva",
+      "te": "Deva"
+    },
+    "description": {
+      "en": "Dev Ambre, a ruthless cop, loses his memory in an accident just after he has finished solving a murder case and now has to reinvestigate it while keeping his memory loss a secret from everyone except DCP Farhan Khan.",
+      "te": "దేవ్ ఆంబ్రే, క్రూరమైన పోలీసు, అతను ఒక హత్య కేసును ఛేదించిన తర్వాత ఒక ప్రమాదంలో తన జ్ఞాపకశక్తిని కోల్పోతాడు మరియు DCP ఫర్హాన్ ఖాన్ మినహా అందరికీ జ్ఞాపకశక్తి కోల్పోవడాన్ని గోప్యంగా ఉంచుతూ ఇప్పుడు దానిని తిరిగి విచారించవలసి వచ్చింది."
+    },
+    "genres": [
+      "Action",
+      "Thriller",
+      "Crime"
+    ],
+    "year": 2025,
+    "runtime": 155,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 6,
+    "studio": "Zee Studios",
+    "language": "Hindi",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 1,
+    "popularityScore": 1,
+    "universe": null
+  },
+  {
+    "slug": "bhaag-milkha-bhaag-2013",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/bXywc0CEzS1fIshPWWi4V8A58U3.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/eryhpwnyvEWnsDapQ9jwbam8itA.jpg",
+    "title": {
+      "en": "Bhaag Milkha Bhaag",
+      "te": "Bhaag Milkha Bhaag"
+    },
+    "description": {
+      "en": "The true story of the \"Flying Sikh\" world champion runner and Olympian Milkha Singh who overcame the massacre of his family, civil war during the India-Pakistan partition, and homelessness to become one of India's most iconic athletes.",
+      "te": "\"ఫ్లయింగ్ సిక్కు\" ప్రపంచ ఛాంపియన్ రన్నర్ మరియు ఒలింపియన్ మిల్కా సింగ్ తన కుటుంబం యొక్క ఊచకోత, భారతదేశం-పాకిస్తాన్ విభజన సమయంలో అంతర్యుద్ధం మరియు నిరాశ్రయతను అధిగమించి భారతదేశపు అత్యంత ప్రసిద్ధ అథ్లెట్లలో ఒకరిగా మారిన నిజమైన కథ."
+    },
+    "genres": [
+      "Historical",
+      "Drama"
+    ],
+    "year": 2013,
+    "runtime": 186,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 7.5,
+    "studio": "Viacom18 Studios",
+    "language": "Hindi",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 1,
+    "popularityScore": 1,
+    "universe": null
+  },
+  {
+    "slug": "my-name-is-khan-2010",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/5Y36lCiNyyV71mjq6LavgiggbhT.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/zGCnIADWwpjGllYv8DgT8HIuIQl.jpg",
+    "title": {
+      "en": "My Name Is Khan",
+      "te": "My Name Is Khan"
+    },
+    "description": {
+      "en": "Rizwan Khan, a Muslim from the Borivali section of Mumbai, has Asperger's syndrome. He marries a Hindu single mother, Mandira, in San Francisco. After 9/11, Rizwan is detained by authorities at LAX who treat him as a terrorist because of his condition and his race.",
+      "te": "ముంబైలోని బోరివాలి విభాగానికి చెందిన రిజ్వాన్ ఖాన్ అనే ముస్లింకు ఆస్పెర్గర్ సిండ్రోమ్ ఉంది. అతను శాన్ ఫ్రాన్సిస్కోలో హిందూ ఒంటరి తల్లి మందిరను వివాహం చేసుకున్నాడు. 9/11 తర్వాత, రిజ్వాన్‌ను LAX అధికారులు అదుపులోకి తీసుకున్నారు, అతని పరిస్థితి మరియు అతని జాతి కారణంగా అతన్ని తీవ్రవాదిగా పరిగణిస్తారు."
+    },
+    "genres": [
+      "Drama",
+      "Romance"
+    ],
+    "year": 2010,
+    "runtime": 165,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 8.028,
+    "studio": "Dharma Productions",
+    "language": "Hindi",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 1,
+    "popularityScore": 1,
+    "universe": null
+  },
+  {
+    "slug": "aashiqui-2-2013",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/lMblq8xcQIRRIVdaMg1XC283gU0.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/cpMszrx8BFVfmq3ZBrL6RVQvO2V.jpg",
+    "title": {
+      "en": "Aashiqui 2",
+      "te": "Aashiqui 2"
+    },
+    "description": {
+      "en": "A young woman meets a failing musician who launches her singing career, but their relationship is doomed when people assume he's with her for her fame and fortune.",
+      "te": "ఒక యువతి ఒక విఫలమైన సంగీత విద్వాంసుడిని కలుసుకుంది, ఆమె తన గానం వృత్తిని ప్రారంభించింది, కానీ ప్రజలు ఆమె కీర్తి మరియు అదృష్టం కోసం ఆమెతో ఉన్నారని భావించినప్పుడు వారి సంబంధం నాశనం అవుతుంది."
+    },
+    "genres": [
+      "Drama",
+      "Romance"
+    ],
+    "year": 2013,
+    "runtime": 132,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 6.84,
+    "studio": "T-Series",
+    "language": "Hindi",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 1,
+    "popularityScore": 1,
+    "universe": null
+  },
+  {
+    "slug": "kabir-singh-2019",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/g0bIMJRQyibCEaGy8V48VviFVKM.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/yFwn006ETsYVykpI8OKocgY0Bi3.jpg",
+    "title": {
+      "en": "Kabir Singh",
+      "te": "Kabir Singh"
+    },
+    "description": {
+      "en": "Kabir, a genius yet hostile medical student, falls in love with Preeti from his college. When Preeti's father spots the couple kissing, he opposes their relationship and decides to marry her off.",
+      "te": "కబీర్, మేధావి అయినప్పటికీ శత్రుత్వం ఉన్న వైద్య విద్యార్థి, తన కళాశాల నుండి ప్రీతితో ప్రేమలో పడతాడు. ప్రీతి తండ్రి జంట ముద్దులు పెట్టుకోవడం గమనించినప్పుడు, అతను వారి సంబంధాన్ని వ్యతిరేకిస్తాడు మరియు ఆమెను వివాహం చేసుకోవాలని నిర్ణయించుకున్నాడు."
+    },
+    "genres": [
+      "Drama",
+      "Romance"
+    ],
+    "year": 2019,
+    "runtime": 172,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 6.3,
+    "studio": "Cine1 Studios",
+    "language": "Hindi",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 1,
+    "popularityScore": 1,
+    "universe": null
+  },
+  {
+    "slug": "raees-2017",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/zFYFUfnoXWxeA3n7v4acEqgk2iE.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/9Ll7wDWDDCkHCRBYLI0rqjlQu2Y.jpg",
+    "title": {
+      "en": "Raees",
+      "te": "Raees"
+    },
+    "description": {
+      "en": "Set in the early ’80s and ’90s in Gujarat, India, ‘Raees’ is a fictitious story of a crime lord named Raees, who builds an entire empire from scratch, and a police officer who is determined to bring him down.",
+      "te": "భారతదేశంలోని గుజరాత్‌లో 80లు మరియు 90వ దశకం ప్రారంభంలో జరిగిన 'రయీస్' అనేది రయీస్ అనే క్రైమ్ లార్డ్ యొక్క కల్పిత కథ, అతను మొదటి నుండి మొత్తం సామ్రాజ్యాన్ని నిర్మించాడు మరియు అతన్ని దించాలని నిర్ణయించుకున్న ఒక పోలీసు అధికారి."
+    },
+    "genres": [
+      "Action",
+      "Crime"
+    ],
+    "year": 2017,
+    "runtime": 143,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 6.663,
+    "studio": "Red Chillies Entertainment",
+    "language": "Hindi",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 0,
+    "popularityScore": 1,
+    "universe": null
+  },
+  {
+    "slug": "dilwale-2015",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/pYgPu6hhOr61knwbestTx4vSdMb.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/6wnvu7YAHncMhwKs9YDrhKd98zO.jpg",
+    "title": {
+      "en": "Dilwale",
+      "te": "Dilwale"
+    },
+    "description": {
+      "en": "Raj is a Mafia member. One day he meet a girl (Meera) while chasing by his rival gang and falls in love with her. Later he finds out that this girl is the daughter of the leader of his rival gang. Yet their love story continues until he was shot by his girlfriend upon a deep misunderstanding. After that incident these two lovers lives separate until their siblings fallen in love. With this new love story their paths intertwines again.",
+      "te": "రాజ్ మాఫియా సభ్యుడు. ఒక రోజు అతను తన ప్రత్యర్థి ముఠా వెంటపడుతుండగా ఒక అమ్మాయిని (మీరా) కలుస్తాడు మరియు ఆమెతో ప్రేమలో పడతాడు. ఈ అమ్మాయి తన ప్రత్యర్థి ముఠా నాయకుడి కుమార్తె అని తరువాత అతను తెలుసుకుంటాడు. అయినప్పటికీ, లోతైన అపార్థంతో అతని స్నేహితురాలు కాల్చి చంపబడే వరకు వారి ప్రేమ కథ కొనసాగుతుంది. ఆ సంఘటన తర్వాత ఈ ఇద్దరు ప్రేమికులు తమ తోబుట్టువులు ప్రేమించుకునే వరకు విడిగా ఉంటున్నారు. ఈ కొత్త ప్రేమకథతో వారి దారులు మళ్లీ అల్లుకుపోయాయి."
+    },
+    "genres": [
+      "Crime",
+      "Action",
+      "Comedy"
+    ],
+    "year": 2015,
+    "runtime": 158,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 6.6,
+    "studio": "Red Chillies Entertainment",
+    "language": "Hindi",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 1,
+    "popularityScore": 1,
+    "universe": null
+  },
+  {
+    "slug": "drishyam-2-2022",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/wk8Vu0DI0MiNLaXXiVqAwjLRKL5.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/498aYGlnvjvoiqXYhCNHrZERi4l.jpg",
+    "title": {
+      "en": "Drishyam 2",
+      "te": "Drishyam 2"
+    },
+    "description": {
+      "en": "7 years after the case related to Vijay Salgaonkar and his family was closed, a series of unexpected events bring truth to light that threatens to change everything for the Salgaonkars. Can Vijay save his family this time?",
+      "te": "విజయ్ సల్గావ్‌కర్ మరియు అతని కుటుంబానికి సంబంధించిన కేసు మూసివేయబడిన 7 సంవత్సరాల తర్వాత, సల్గావ్‌కర్‌ల కోసం అన్నింటినీ మార్చడానికి బెదిరించే ఊహించని సంఘటనల శ్రేణి నిజం వెలుగులోకి వచ్చింది. ఈసారి విజయ్ తన కుటుంబాన్ని కాపాడుకోగలడా?"
+    },
+    "genres": [
+      "Drama",
+      "Thriller"
+    ],
+    "year": 2022,
+    "runtime": 140,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 8.014,
+    "studio": "Viacom18 Studios",
+    "language": "Hindi",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 0,
+    "popularityScore": 1,
+    "universe": null
+  },
+  {
+    "slug": "chhaava-2025",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/ubRsrzb6NRW8YhVTJ6jG1kpNvCi.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/s37s21YPqS7txyB0x0TRel24vgi.jpg",
+    "title": {
+      "en": "Chhaava",
+      "te": "Chhaava"
+    },
+    "description": {
+      "en": "Shivaji's death sparks the Maratha-Mughal conflict. His son Sambhaji leads resistance against Aurangzeb's forces. Amid battles and intrigue, both sides face challenges in a struggle for power.",
+      "te": "శివాజీ మరణం మరాఠా-మొఘల్ ఘర్షణకు దారితీసింది. అతని కుమారుడు శంభాజీ ఔరంగజేబు దళాలకు వ్యతిరేకంగా ప్రతిఘటనకు నాయకత్వం వహిస్తాడు. యుద్ధాలు మరియు కుట్రల మధ్య, అధికారం కోసం పోరాటంలో ఇరుపక్షాలు సవాళ్లను ఎదుర్కొంటాయి."
+    },
+    "genres": [
+      "Historical",
+      "Action",
+      "Drama"
+    ],
+    "year": 2025,
+    "runtime": 161,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 6.972,
+    "studio": "Maddock Films",
+    "language": "Hindi",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 0,
+    "popularityScore": 1,
+    "universe": null
+  },
+  {
+    "slug": "the-taj-story-2025",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/6oMIAvdPWFbwowAq7Zn8unbREAY.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/2JFY1Y4vtQWtCre9qbdObKj8wyN.jpg",
+    "title": {
+      "en": "The Taj Story",
+      "te": "The Taj Story"
+    },
+    "description": {
+      "en": "Vishnu Das is a local guide who becomes driven by a curiosity to uncover the true history behind the iconic Taj Mahal monument.",
+      "te": "విష్ణు దాస్ ఒక స్థానిక గైడ్, అతను ఐకానిక్ తాజ్ మహల్ స్మారక చిహ్నం వెనుక ఉన్న నిజమైన చరిత్రను వెలికితీసే ఉత్సుకతతో నడపబడతాడు."
+    },
+    "genres": [
+      "Drama"
+    ],
+    "year": 2025,
+    "runtime": 161,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 6.571,
+    "studio": "Swarnim Global Services",
+    "language": "Hindi",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 1,
+    "popularityScore": 1,
+    "universe": null
+  },
+  {
+    "slug": "chennai-express-2013",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/9j7XfhBJKNfidMCa8JsNbqU1waV.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/8u7dfVGGBcGrk1nCu55X5RqImwv.jpg",
+    "title": {
+      "en": "Chennai Express",
+      "te": "Chennai Express"
+    },
+    "description": {
+      "en": "Rahul embarks on a journey to a small town in Tamil Nadu to fulfill the last wish of his grandfather: to have his ashes immersed in the Holy water of Rameshwaram. En route, he meets a woman hailing from a unique family down South. As they find love through this journey in the exuberant lands of South India, an unanticipated drive awaits them.",
+      "te": "తన తాతగారి చితాభస్మాన్ని రామేశ్వరంలోని పవిత్ర జలంలో నిమజ్జనం చేయాలనే ఉద్దేశంతో రాహుల్ తమిళనాడులోని ఒక చిన్న పట్టణానికి బయలుదేరాడు. మార్గంలో, అతను దక్షిణాన ఒక ప్రత్యేకమైన కుటుంబానికి చెందిన ఒక మహిళను కలుస్తాడు. దక్షిణ భారతదేశంలోని విపరీతమైన భూభాగాలలో ఈ ప్రయాణం ద్వారా వారు ప్రేమను కనుగొంటారు, ఊహించని డ్రైవ్ వారికి ఎదురుచూస్తుంది."
+    },
+    "genres": [
+      "Romance",
+      "Comedy",
+      "Action"
+    ],
+    "year": 2013,
+    "runtime": 141,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 6.52,
+    "studio": "Red Chillies Entertainment",
+    "language": "Hindi",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 0,
+    "popularityScore": 1,
+    "universe": null
+  },
+  {
+    "slug": "housefull-5-2025",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/iGvGkVOfsooO0ZBrhN5i6zXYUCy.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/iRKNWkFLG4QmbPlfNPR94fVwwsK.jpg",
+    "title": {
+      "en": "Housefull 5",
+      "te": "Housefull 5"
+    },
+    "description": {
+      "en": "A father writes his will — his son \"Jolly\" is going to get it all. But who is Jolly? The comedy unfolds as different people pose as the \"real\" Jolly on a cruise celebrating the father's birthday — where a murder takes place.",
+      "te": "ఒక తండ్రి తన వీలునామా వ్రాస్తాడు - అతని కొడుకు \"జాలీ\" అన్నింటినీ పొందబోతున్నాడు. అయితే జాలీ ఎవరు? తండ్రి పుట్టినరోజును జరుపుకునే క్రూయిజ్‌లో వేర్వేరు వ్యక్తులు \"నిజమైన\" జాలీగా పోజులిస్తుండగా కామెడీ విప్పుతుంది — అక్కడ ఒక హత్య జరుగుతుంది."
+    },
+    "genres": [
+      "Comedy",
+      "Thriller"
+    ],
+    "year": 2025,
+    "runtime": 163,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 5.233,
+    "studio": "Nadiadwala Grandson Entertainment",
+    "language": "Hindi",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 1,
+    "popularityScore": 1,
+    "universe": null
+  },
+  {
+    "slug": "pathaan-2023",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/arf00BkwvXo0CFKbaD9OpqdE4Nu.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/9wRAIQeOv2qzcgpfvA4dYZKeezl.jpg",
+    "title": {
+      "en": "Pathaan",
+      "te": "Pathaan"
+    },
+    "description": {
+      "en": "A soldier caught by enemies and presumed dead comes back to complete his mission, accompanied by old companions and foes.",
+      "te": "శత్రువుల చేతిలో చిక్కుకుని చనిపోయినట్లు భావించిన సైనికుడు తన మిషన్‌ను పూర్తి చేయడానికి పాత సహచరులు మరియు శత్రువులతో కలిసి తిరిగి వస్తాడు."
+    },
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "year": 2023,
+    "runtime": 146,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 6.413,
+    "studio": "Yash Raj Films",
+    "language": "Hindi",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 1,
+    "popularityScore": 1,
+    "universe": null
+  },
+  {
+    "slug": "subedaar-2026",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/gKn63ZWEVK66OaC1svlI7g6r9ah.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/eZJ3z1aAcHzoYmPSxuJjaYRMgi3.jpg",
+    "title": {
+      "en": "Subedaar",
+      "te": "Subedaar"
+    },
+    "description": {
+      "en": "Haunted by loss and drifting away from his daughter, a retired Subedaar Arjun Maurya’s newly found civilian life is jolted by one reckless act. As old wounds reopen, he must summon the warrior within to face a new kind of war - one that hits too close to his heart.",
+      "te": "నష్టంతో వెంటాడిన మరియు అతని కుమార్తె నుండి దూరంగా కూరుకుపోయి, రిటైర్డ్ అయిన సుబేదార్ అర్జున్ మౌర్య యొక్క కొత్తగా కనుగొన్న పౌర జీవితం ఒక నిర్లక్ష్యపు చర్యతో అతలాకుతలమైంది. పాత గాయాలు మళ్లీ తెరుచుకున్నప్పుడు, అతను కొత్త రకమైన యుద్ధాన్ని ఎదుర్కోవడానికి లోపల ఉన్న యోధుడిని పిలిపించాలి - అది అతని హృదయానికి చాలా దగ్గరగా ఉంటుంది."
+    },
+    "genres": [
+      "Action",
+      "Crime",
+      "Drama"
+    ],
+    "year": 2026,
+    "runtime": 142,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 6.3,
+    "studio": "Abundantia Entertainment",
+    "language": "Hindi",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 0,
+    "popularityScore": 1,
+    "universe": null
+  },
+  {
+    "slug": "kara-2026",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/uIrFdMWlJFdc1jPBP9bxeaISCDj.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/jatqtz0VlQRiugmHktbKQpuf5EV.jpg",
+    "title": {
+      "en": "Kara",
+      "te": "Kara"
+    },
+    "description": {
+      "en": "A thief tries to go straight, but when predatory banks trap his father in debt, he returns to crime — with a determined cop closing in on his trail.",
+      "te": "ఒక దొంగ నేరుగా వెళ్ళడానికి ప్రయత్నిస్తాడు, కానీ దోపిడీ బ్యాంకులు అతని తండ్రిని అప్పుల ఊబిలో బంధించినప్పుడు, అతను నేరానికి తిరిగి వస్తాడు - అతని బాటలో ఒక నిశ్చయమైన పోలీసుతో."
+    },
+    "genres": [
+      "Crime",
+      "Drama"
+    ],
+    "year": 2026,
+    "runtime": 161,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 5.786,
+    "studio": "Vels Film International",
+    "language": "Tamil",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 41,
+    "popularityScore": 82,
+    "universe": null
+  },
+  {
+    "slug": "karuppu-2026",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/4KZXlZ5tTT6ghbW77gS4hSLkCd7.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/1eAuwNBy34kkM3xkl202z4f1NiI.jpg",
+    "title": {
+      "en": "Karuppu",
+      "te": "Karuppu"
+    },
+    "description": {
+      "en": "In a world where justice falters, guardian deity Vettai Karuppu takes the guise of a lawyer to battle a corrupt legal system preying on the powerless.",
+      "te": "న్యాయం కుంటుపడే ప్రపంచంలో, రక్షక దేవత వెట్టై కరుప్పు ఒక న్యాయవాది వేషాన్ని ధరించి, శక్తిహీనులను వేటాడే అవినీతి న్యాయ వ్యవస్థపై పోరాడాడు."
+    },
+    "genres": [
+      "Action",
+      "Fantasy"
+    ],
+    "year": 2026,
+    "runtime": 151,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 7.364,
+    "studio": "Dream Warrior Pictures",
+    "language": "Tamil",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 13,
+    "popularityScore": 27,
+    "universe": null
+  },
+  {
+    "slug": "blast-2026",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/ho824aZtnBzE6FuJRn2znQCq4qQ.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/z18AIGSU0vk4Y7LQP37CPSeKZvF.jpg",
+    "title": {
+      "en": "Blast",
+      "te": "Blast"
+    },
+    "description": {
+      "en": "Follows a family trained to protect the powerless who become the most dangerous obstacle of all.",
+      "te": "అన్నింటికంటే అత్యంత ప్రమాదకరమైన అడ్డంకిగా మారిన శక్తిలేని వారిని రక్షించడానికి శిక్షణ పొందిన కుటుంబాన్ని అనుసరిస్తుంది."
+    },
+    "genres": [
+      "Action",
+      "Drama",
+      "Family"
+    ],
+    "year": 2026,
+    "runtime": 143,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 7,
+    "studio": "AGS Entertainment",
+    "language": "Tamil",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 6,
+    "popularityScore": 12,
+    "universe": null
+  },
+  {
+    "slug": "jana-nayagan-2024",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/jt8pfSIdi47YpFMMWVRr8w5u2S0.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/v3lNH2gCojWYXVuXcT9FZLBxcSq.jpg",
+    "title": {
+      "en": "Jana Nayagan",
+      "te": "Jana Nayagan"
+    },
+    "description": {
+      "en": "A clash of ideologies. One stands for the people, the other feeds on control. Their paths collided once before. Years later, a child’s silent fear ignites the past, drawing a former police officer into a battle far bigger than personal revenge.",
+      "te": "భావజాల ఘర్షణ. ఒకటి ప్రజల కోసం నిలుస్తుంది, మరొకటి నియంత్రణను అందిస్తుంది. అంతకుముందు ఒకసారి వారి దారులు ఢీకొన్నాయి. కొన్ని సంవత్సరాల తరువాత, పిల్లల నిశ్శబ్ద భయం గతాన్ని రగిలిస్తుంది, వ్యక్తిగత ప్రతీకారం కంటే చాలా పెద్ద యుద్ధానికి మాజీ పోలీసు అధికారిని లాగుతుంది."
+    },
+    "genres": [
+      "Action",
+      "Drama",
+      "Sci-Fi"
+    ],
+    "year": 2024,
+    "runtime": 183,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 7,
+    "studio": "KVN Productions",
+    "language": "Tamil",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 3,
+    "popularityScore": 6,
+    "universe": null
+  },
+  {
+    "slug": "deiva-thirumagal-2011",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/ovfLSxsgLFYm2ISjfH1Te0lNyEr.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/ofxq93dSF85goDtNfQoquo8LTWS.jpg",
+    "title": {
+      "en": "Deiva Thirumagal",
+      "te": "Deiva Thirumagal"
+    },
+    "description": {
+      "en": "An intellectually disabled man fights for custody of his 7-year-old daughter, and in the process teaches his opponent lawyer the value of love and family.",
+      "te": "మేధో వైకల్యం ఉన్న వ్యక్తి తన 7 ఏళ్ల కుమార్తె సంరక్షణ కోసం పోరాడుతాడు మరియు ఈ ప్రక్రియలో తన ప్రత్యర్థి న్యాయవాదికి ప్రేమ మరియు కుటుంబం యొక్క విలువను బోధిస్తాడు."
+    },
+    "genres": [
+      "Drama",
+      "Family"
+    ],
+    "year": 2011,
+    "runtime": 162,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 7.3,
+    "studio": "Sree Rajakaliamman Medias",
+    "language": "Tamil",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 2,
+    "popularityScore": 4,
+    "universe": null
+  },
+  {
+    "slug": "love-insurance-kompany-2026",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/1IIUWMKzNVvI6YJX8BKE6EJ9bVd.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/woos7rldBAKG99HmcbNZNpMjwNk.jpg",
+    "title": {
+      "en": "Love Insurance Kompany",
+      "te": "Love Insurance Kompany"
+    },
+    "description": {
+      "en": "In 2040, an app premised on ensuring romance for all is used widely by the population. When the voice behind the app's AI realizes its misconception to true love, he embarks on a quest to prove that love does not come from a screen.",
+      "te": "2040లో, అందరికీ శృంగారభరితంగా ఉండేలా ఒక యాప్‌ని జనాభాలో విస్తృతంగా ఉపయోగిస్తున్నారు. యాప్ యొక్క AI వెనుక ఉన్న వాయిస్ నిజమైన ప్రేమపై దాని అపోహను గుర్తించినప్పుడు, ప్రేమ అనేది స్క్రీన్ నుండి రాదు అని నిరూపించడానికి అతను అన్వేషణను ప్రారంభించాడు."
+    },
+    "genres": [
+      "Romance",
+      "Sci-Fi",
+      "Comedy"
+    ],
+    "year": 2026,
+    "runtime": 157,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 4.75,
+    "studio": "Seven Screen Studios",
+    "language": "Tamil",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 2,
+    "popularityScore": 3,
+    "universe": null
+  },
+  {
+    "slug": "tn-2026-2026",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/mAX1ujOROXtKsOuIg5MbJbotOyD.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/hlTs5C7zQ7TrH7REWOkSXzi67p7.jpg",
+    "title": {
+      "en": "TN 2026",
+      "te": "TN 2026"
+    },
+    "description": {
+      "en": "Set in Pollachi, the story follows a powerful landlord, Sivalingam Mandradiyar, who becomes obsessed with a rising actor, Kukanth Kumar, believing he is the next M.G.R. He pours his wealth into shaping the actor's career and political future. But as ambition and fame grow, so does the risk of downfall. Will it lead to power or ruin?",
+      "te": "పొల్లాచ్చి నేపథ్యంలో సాగే ఈ కథ శక్తివంతమైన భూస్వామి శివలింగం మండ్రాడియార్‌ను అనుసరిస్తుంది, అతను తదుపరి M.G.R అని నమ్ముతూ వర్ధమాన నటుడు కుకాంత్ కుమార్‌తో నిమగ్నమయ్యాడు. నటుడి కెరీర్ మరియు రాజకీయ భవిష్యత్తును రూపొందించడానికి అతను తన సంపదను కురిపించాడు. కానీ ఆశయం మరియు కీర్తి పెరిగేకొద్దీ, పతనమయ్యే ప్రమాదం ఉంది. అది అధికారానికి దారితీస్తుందా లేక నాశనానికి దారితీస్తుందా?"
+    },
+    "genres": [
+      "Comedy",
+      "Drama"
+    ],
+    "year": 2026,
+    "runtime": 138,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 7,
+    "studio": "Kannan Ravi Groups",
+    "language": "Tamil",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 1,
+    "popularityScore": 2,
+    "universe": null
+  },
+  {
+    "slug": "youth-2026",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/rNzk0jlGRPnvZ26On5xhTmLaQhO.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/eaknBFnMg8fPlwlegBaPtQfhyF8.jpg",
+    "title": {
+      "en": "Youth",
+      "te": "Youth"
+    },
+    "description": {
+      "en": "Youth follows Praveen, a 15-year-old boy who enters adolescence determined to find true love before school ends. As he goes through multiple relationships and heartbreaks, he slowly begins to understand what love truly means. Along the way, the experiences shape his growth, maturity, and outlook on life.",
+      "te": "పాఠశాల ముగియకముందే నిజమైన ప్రేమను కనుగొనాలనే సంకల్పంతో యుక్తవయస్సులోకి ప్రవేశించే 15 ఏళ్ల బాలుడు ప్రవీణ్‌ను యువత అనుసరిస్తుంది. అతను అనేక సంబంధాలు మరియు హృదయ విదారకాలను గుండా వెళుతున్నప్పుడు, అతను నెమ్మదిగా ప్రేమ అంటే ఏమిటో అర్థం చేసుకోవడం ప్రారంభిస్తాడు. దారిలో, అనుభవాలు అతని ఎదుగుదల, పరిపక్వత మరియు జీవితంపై దృక్పథాన్ని రూపొందిస్తాయి."
+    },
+    "genres": [
+      "Comedy",
+      "Romance",
+      "Drama"
+    ],
+    "year": 2026,
+    "runtime": 141,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 7.75,
+    "studio": "Paarvathaa entertainment",
+    "language": "Tamil",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 1,
+    "popularityScore": 2,
+    "universe": null
+  },
+  {
+    "slug": "happy-raj-2026",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/8hmB6KNUFFzChYJxngIp063H2YR.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/fug20H3qffP941XVDJCnpY61GVn.jpg",
+    "title": {
+      "en": "Happy Raj",
+      "te": "Happy Raj"
+    },
+    "description": {
+      "en": "A city romance meets a rural family invasion. What follows is chaos, comedy, and heartfelt moments. The story unfolds as a joyful entertainer that explores love, cultural clashes, and the importance of family bonds.",
+      "te": "ఒక నగర శృంగారం గ్రామీణ కుటుంబ దండయాత్రను కలుస్తుంది. తరువాత వచ్చేది గందరగోళం, హాస్యం మరియు హృదయపూర్వక క్షణాలు. ప్రేమ, సాంస్కృతిక ఘర్షణలు మరియు కుటుంబ బంధాల ప్రాముఖ్యతను అన్వేషించే ఆనందకరమైన ఎంటర్‌టైనర్‌గా కథ విప్పుతుంది."
+    },
+    "genres": [
+      "Romance",
+      "Comedy",
+      "Drama"
+    ],
+    "year": 2026,
+    "runtime": 159,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 5,
+    "studio": "Beyond Pictures",
+    "language": "Tamil",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 1,
+    "popularityScore": 1,
+    "universe": null
+  },
+  {
+    "slug": "tamil-rockers-2021",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/hOoMQIANxXhRUPkrtSYHYuZaFSm.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/zBzH8K8T9TGzle7bJHCkxssKkhB.jpg",
+    "title": {
+      "en": "Tamil Rockers",
+      "te": "Tamil Rockers"
+    },
+    "description": {
+      "en": "4 Major characters running for the Money facing more challenges by forgetting the fact that it's not the decision of money to reach human.",
+      "te": "4 మనీ కోసం పరుగెత్తే ప్రధాన పాత్రలు మనిషిని చేరుకోవడం డబ్బు నిర్ణయం కాదనే వాస్తవాన్ని మరచిపోయి మరిన్ని సవాళ్లను ఎదుర్కొంటాయి."
+    },
+    "genres": [
+      "Comedy"
+    ],
+    "year": 2021,
+    "runtime": 98,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 5.333,
+    "studio": "Jaswanth Super Cinemas",
+    "language": "Tamil",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 1,
+    "popularityScore": 1,
+    "universe": null
+  },
+  {
+    "slug": "anaagarigam-2011",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/jIgp8rJNMcISZfXmeIKjn0qf0Nr.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/hGBLhNvq5nDknULwhgsIrFyVeDR.jpg",
+    "title": {
+      "en": "Anaagarigam",
+      "te": "Anaagarigam"
+    },
+    "description": {
+      "en": "Story of a newly married professor who suffers his whole life for having an affair with his student.",
+      "te": "కొత్తగా పెళ్లయిన ఒక ప్రొఫెసర్ తన స్టూడెంట్‌తో ఎఫైర్ పెట్టుకున్నందుకు జీవితాంతం బాధపడే కథ."
+    },
+    "genres": [
+      "Drama",
+      "Romance"
+    ],
+    "year": 2011,
+    "runtime": 115,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 8,
+    "studio": "B Pictures",
+    "language": "Tamil",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 1,
+    "popularityScore": 1,
+    "universe": null
+  },
+  {
+    "slug": "leo-2023",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/2XUHC4lp3tDsgfFLFygNZ2x2Um9.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/MSNYxWe4u4en9vQ3oZIKQWKYHu.jpg",
+    "title": {
+      "en": "Leo",
+      "te": "Leo"
+    },
+    "description": {
+      "en": "Parthiban, a cafe owner, lives with his family in Himachal Pradesh. Things take an absurd turn for him when he gets in the way of a drug cartel.",
+      "te": "పార్థిబన్ అనే కేఫ్ యజమాని హిమాచల్ ప్రదేశ్‌లో తన కుటుంబంతో నివసిస్తున్నాడు. అతను డ్రగ్ కార్టెల్ దారిలోకి వచ్చినప్పుడు విషయాలు అతనికి అసంబద్ధమైన మలుపు తీసుకుంటాయి."
+    },
+    "genres": [
+      "Action",
+      "Crime"
+    ],
+    "year": 2023,
+    "runtime": 163,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 6.9,
+    "studio": "Seven Screen Studios",
+    "language": "Tamil",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 1,
+    "popularityScore": 1,
+    "universe": "lcu"
+  },
+  {
+    "slug": "por-thozhil-2023",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/lZ2BbjGBDRW5Q5Q9jgEknuiEQ0f.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/tZ3yWC0H3HUtIBkxeqyQhaw9EOz.jpg",
+    "title": {
+      "en": "Por Thozhil",
+      "te": "Por Thozhil"
+    },
+    "description": {
+      "en": "Loganathan, a senior cop is asked to mentor Prakash, an academically bright but faint-hearted rookie and this unlikely duo team up to investigate a series of murder cases, and realize all of them are interlinked and that a psychopath serial killer is on the run.",
+      "te": "లోగనాథన్, ఒక సీనియర్ పోలీసు అయిన ప్రకాష్‌ని మెంటార్ చేయమని అడిగారు, విద్యాపరంగా తెలివైన కానీ బలహీనమైన రూకీ మరియు ఈ అసంభవమైన ద్వయం జట్టు వరుస హత్య కేసులను పరిశోధించడానికి, మరియు అవన్నీ ఒకదానితో ఒకటి అనుసంధానించబడి ఉన్నాయని మరియు సైకోపాత్ సీరియల్ కిల్లర్ పరారీలో ఉన్నారని గ్రహించారు."
+    },
+    "genres": [
+      "Crime",
+      "Action"
+    ],
+    "year": 2023,
+    "runtime": 148,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 7.144,
+    "studio": "E4 Entertainments",
+    "language": "Tamil",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 1,
+    "popularityScore": 1,
+    "universe": null
+  },
+  {
+    "slug": "dragon-2025",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/vKNJPuejtE6Xrp6RK6LKsQcbL8L.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/8y8pxJwYEK1WvQAfoZTwC601eD8.jpg",
+    "title": {
+      "en": "Dragon",
+      "te": "Dragon"
+    },
+    "description": {
+      "en": "Raghavan transforms from a school topper into a “bad boy” to score girls in college, but ends up a heartbroken dropout. He then cons his way into a successful finance career, but the lies keep building and maintaining the facade proves tricky.",
+      "te": "రాఘవన్ కాలేజీలో అమ్మాయిలను స్కోర్ చేయడానికి స్కూల్ టాపర్ నుండి \"బ్యాడ్ బాయ్\" గా రూపాంతరం చెందాడు, కానీ హృదయ విదారకంగా డ్రాప్ అవుట్ అవుతాడు. అతను విజయవంతమైన ఫైనాన్స్ కెరీర్‌లోకి ప్రవేశించాడు, కానీ అబద్ధాలు ముఖభాగాన్ని నిర్మించడం మరియు నిర్వహించడం గమ్మత్తైనదిగా రుజువు చేస్తుంది."
+    },
+    "genres": [
+      "Comedy",
+      "Romance",
+      "Drama"
+    ],
+    "year": 2025,
+    "runtime": 157,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 7.6,
+    "studio": "AGS Entertainment",
+    "language": "Tamil",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 1,
+    "popularityScore": 1,
+    "universe": null
+  },
+  {
+    "slug": "varisu-2023",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/iMUIsV6u0pPqfv1j8tGxbJw40sw.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/fjd6RKx4Zh8UKQfjpSSkM53eJw6.jpg",
+    "title": {
+      "en": "Varisu",
+      "te": "Varisu"
+    },
+    "description": {
+      "en": "Vijay, The prodigal son of business tycoon Rajendran agrees to take over the reins of the business, much to the chagrin of his brothers. But can Vijay prove himself to be a worthy varisu and also reunite his now-broken family?",
+      "te": "వ్యాపార దిగ్గజం రాజేంద్రన్ తప్పిపోయిన కొడుకు విజయ్, అతని సోదరులకు చాలా కోపం తెప్పించి వ్యాపార పగ్గాలను చేపట్టడానికి అంగీకరించాడు. కానీ విజయ్ తనను తాను విలువైన వారిగా నిరూపించుకోగలడా మరియు ఇప్పుడు విచ్ఛిన్నమైన తన కుటుంబాన్ని తిరిగి కలపగలడా?"
+    },
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "year": 2023,
+    "runtime": 169,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 5.017,
+    "studio": "Sri Venkateswara Creations",
+    "language": "Tamil",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 0,
+    "popularityScore": 1,
+    "universe": null
+  },
+  {
+    "slug": "vettaiyan-2024",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/1q0dAC3OJZVKQcV2dG5sGvdUGqN.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/b3AeMIsXPm6wvGp9E7mGmRZ6528.jpg",
+    "title": {
+      "en": "Vettaiyan",
+      "te": "Vettaiyan"
+    },
+    "description": {
+      "en": "A sought-after Supercop gets caught in a series of unexpected events when he encounters a suspect who is accused of being involved in a murder case.",
+      "te": "ఒక హత్య కేసులో ప్రమేయం ఉన్నట్లు ఆరోపణలు ఎదుర్కొంటున్న ఒక నిందితుడిని ఎదుర్కొన్నప్పుడు, వెతికిన సూపర్‌కాప్ ఊహించని సంఘటనల శ్రేణిలో చిక్కుకుంటాడు."
+    },
+    "genres": [
+      "Action",
+      "Crime",
+      "Drama"
+    ],
+    "year": 2024,
+    "runtime": 161,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 6.2,
+    "studio": "Lyca Productions",
+    "language": "Tamil",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 1,
+    "popularityScore": 1,
+    "universe": null
+  },
+  {
+    "slug": "kaalidas-2-2026",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/fq2eQegiFy6JxyM2S2ctm9RbB2G.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/sZHwDAtV2auwAjPD2ab4d7wRxkX.jpg",
+    "title": {
+      "en": "Kaalidas 2",
+      "te": "Kaalidas 2"
+    },
+    "description": {
+      "en": "A dedicated Crime Branch officer, Kaalidas, investigates the disappearance of a child in an apartment complex. What begins as a routine missing-person case quickly turns dark when the child and a dog are found murdered. As more mysterious killings occur in the same building, Kaalidas uncovers hidden secrets among the residents and races against time to stop a killer before more live",
+      "te": "అంకితమైన క్రైమ్ బ్రాంచ్ అధికారి కాళీదాస్, అపార్ట్‌మెంట్ కాంప్లెక్స్‌లో చిన్నారి అదృశ్యంపై దర్యాప్తు చేస్తున్నాడు. ఒక సాధారణ మిస్సింగ్ కేసుగా ప్రారంభమయ్యేది పిల్లవాడు మరియు కుక్క హత్యకు గురైనప్పుడు త్వరగా చీకటిగా మారుతుంది. అదే భవనంలో మరిన్ని రహస్య హత్యలు జరుగుతున్నందున, కాళీదాస్ నివాసితులలో దాచిన రహస్యాలను వెలికితీస్తాడు మరియు మరింత ప్రత్యక్ష ప్రసారం చేయడానికి ముందు ఒక కిల్లర్‌ను ఆపడానికి సమయంతో పోటీపడతాడు."
+    },
+    "genres": [
+      "Drama",
+      "Action"
+    ],
+    "year": 2026,
+    "runtime": 137,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 7,
+    "studio": "Five Star Creations",
+    "language": "Tamil",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 0,
+    "popularityScore": 1,
+    "universe": null
+  },
+  {
+    "slug": "theeyavar-kulaigal-nadunga-2025",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/aAQ0I4EZUmg7dEyTwxYZi1dYB8Y.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/uoxkOkRzPP9jcnl59CObzYLn2Mq.jpg",
+    "title": {
+      "en": "Theeyavar Kulaigal Nadunga",
+      "te": "Theeyavar Kulaigal Nadunga"
+    },
+    "description": {
+      "en": "An Investigative Police officer teams up with an autism school teacher to solve the mystery of a cruel murder happened in a school for autistic children.",
+      "te": "ఆటిస్టిక్ పిల్లల కోసం ఒక పాఠశాలలో జరిగిన క్రూరమైన హత్య యొక్క మిస్టరీని ఛేదించడానికి ఒక పరిశోధనాత్మక పోలీసు అధికారి ఆటిజం స్కూల్ టీచర్‌తో జతకట్టారు."
+    },
+    "genres": [
+      "Crime"
+    ],
+    "year": 2025,
+    "runtime": 127,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 7,
+    "studio": "",
+    "language": "Tamil",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 0,
+    "popularityScore": 1,
+    "universe": null
+  },
+  {
+    "slug": "shanthi-appuram-nithya-2011",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/okr8zGwzIuEKmCxWtyNXiirZrho.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/tM9O0jzTcpzeb2Yjj8J0it48XuG.jpg",
+    "title": {
+      "en": "Shanthi Appuram Nithya",
+      "te": "Shanthi Appuram Nithya"
+    },
+    "description": {
+      "en": "An erotic movie that depicts how innocent women fall for bad boys and how those men treat them without any courtesy.",
+      "te": "అమాయక స్త్రీలు బ్యాడ్ బాయ్స్ కోసం ఎలా పడిపోతారు మరియు ఆ పురుషులు వారితో ఎలాంటి మర్యాద లేకుండా ఎలా ప్రవర్తిస్తారో చూపించే ఎరోటిక్ మూవీ."
+    },
+    "genres": [
+      "Drama",
+      "Romance"
+    ],
+    "year": 2011,
+    "runtime": 96,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 4,
+    "studio": "",
+    "language": "Tamil",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 0,
+    "popularityScore": 1,
+    "universe": null
+  },
+  {
+    "slug": "with-love-2026",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/84rCbRiY7cXwDO8lAXp5MIxuok5.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/k9GObZbUUUxOjlRjY172GVroeSJ.jpg",
+    "title": {
+      "en": "With Love",
+      "te": "With Love"
+    },
+    "description": {
+      "en": "Sathya reluctantly agrees to a blind date arranged by his sister and meets Monisha. They discover they attended the same school years ago. Bonding over shared memories and old crushes, they reconnect with their past and grow closer.",
+      "te": "సత్య తన సోదరి ఏర్పాటు చేసిన బ్లైండ్ డేట్‌కి అయిష్టంగానే అంగీకరించి మోనిషాను కలుస్తాడు. వారు సంవత్సరాల క్రితం అదే పాఠశాలలో చదువుకున్నారు. భాగస్వామ్య జ్ఞాపకాలు మరియు పాత క్రష్‌లతో బంధం ఏర్పడి, వారు తమ గతంతో మళ్లీ కనెక్ట్ అవుతారు మరియు సన్నిహితంగా ఉంటారు."
+    },
+    "genres": [
+      "Romance",
+      "Comedy"
+    ],
+    "year": 2026,
+    "runtime": 141,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 6.9,
+    "studio": "MRP Entertainment",
+    "language": "Tamil",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 0,
+    "popularityScore": 1,
+    "universe": null
+  },
+  {
+    "slug": "beast-2022",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/yE8bsjy9hvuSY5JdtFlJGXyaTeH.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/dVViUXK436JNODkj5NwWjMm8NYu.jpg",
+    "title": {
+      "en": "Beast",
+      "te": "Beast"
+    },
+    "description": {
+      "en": "A former RAW officer, who is among the hostages in a mall taken over by terrorists, has to foil their plans and prevent the government from releasing a dreaded terrorist, who he had helped put in prison at great personal cost.",
+      "te": "తీవ్రవాదులు స్వాధీనం చేసుకున్న మాల్‌లో బందీలలో ఉన్న ఒక మాజీ RAW అధికారి, వారి ప్రణాళికలను విఫలం చేసి, వ్యక్తిగత ఖర్చుతో జైలులో పెట్టడానికి సహాయం చేసిన భయంకరమైన ఉగ్రవాదిని విడుదల చేయకుండా ప్రభుత్వం నిరోధించవలసి ఉంటుంది."
+    },
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "year": 2022,
+    "runtime": 155,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 5.223,
+    "studio": "Sun Pictures",
+    "language": "Tamil",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 0,
+    "popularityScore": 1,
+    "universe": null
+  },
+  {
+    "slug": "dude-2025",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/rugcfeI5Z9qYTeYXUCKdKmNmATE.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/kDRkOFPkjYjubhiIcvurBKuLSRI.jpg",
+    "title": {
+      "en": "Dude",
+      "te": "Dude"
+    },
+    "description": {
+      "en": "Childhood friends Agan and Kural are inseparable. When Kural encounters romantic troubles, Agan must balance his hidden feelings for her with his desire to ensure her happiness.",
+      "te": "చిన్ననాటి స్నేహితులు అగన్ మరియు కురల్ విడదీయరానివి. కురల్ శృంగార సమస్యలను ఎదుర్కొన్నప్పుడు, అగన్ ఆమె కోసం దాచిన భావాలను ఆమె ఆనందాన్ని నిర్ధారించాలనే కోరికతో సమతుల్యం చేసుకోవాలి."
+    },
+    "genres": [
+      "Action",
+      "Comedy",
+      "Drama",
+      "Romance"
+    ],
+    "year": 2025,
+    "runtime": 140,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 5.6,
+    "studio": "Mythri Movie Makers",
+    "language": "Tamil",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 0,
+    "popularityScore": 1,
+    "universe": null
+  },
+  {
+    "slug": "thaai-kizhavi-2026",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/21dLAnBhu3dMjQ89UIHGEtkoQ02.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/uXnVsLFzxt8zTTPgzFhqeSkI3ce.jpg",
+    "title": {
+      "en": "Thaai Kizhavi",
+      "te": "Thaai Kizhavi"
+    },
+    "description": {
+      "en": "An elderly and feared moneylender from a village near Madurai falls seriously ill, prompting her estranged sons and extended family to reunite after years of separation. As tensions rise inside the household, hidden motives, family conflicts, and expectations over her wealth turn her uncertain condition into the center of a chaotic family drama.",
+      "te": "మదురై సమీపంలోని ఒక గ్రామానికి చెందిన వృద్ధుడు మరియు భయపడే వడ్డీ వ్యాపారి తీవ్ర అనారోగ్యానికి గురైంది, ఆమె విడిపోయిన కొడుకులు మరియు పెద్ద కుటుంబాన్ని విడిపోయిన సంవత్సరాల తర్వాత తిరిగి కలిసేలా చేసింది. ఇంటి లోపల ఉద్రిక్తతలు పెరిగేకొద్దీ, దాచిన ఉద్దేశాలు, కుటుంబ వివాదాలు మరియు ఆమె సంపదపై అంచనాలు ఆమె అనిశ్చిత పరిస్థితిని అస్తవ్యస్తమైన కుటుంబ నాటకానికి కేంద్రంగా మారుస్తాయి."
+    },
+    "genres": [
+      "Comedy",
+      "Drama"
+    ],
+    "year": 2026,
+    "runtime": 144,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 7,
+    "studio": "Sivakarthikeyan Productions",
+    "language": "Tamil",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 0,
+    "popularityScore": 1,
+    "universe": null
+  },
+  {
+    "slug": "bigil-2019",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/s4Yi1RbMyyN3hH2hElwvluP2rOG.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/cc14e095w0ri6ppoLxSEl7iUqHs.jpg",
+    "title": {
+      "en": "Bigil",
+      "te": "Bigil"
+    },
+    "description": {
+      "en": "A do-gooder don wants his footballer son to uplift the life of his people by becoming a champion, but fate draws the youngster into a life of violence. Will he be able to fulfill his father’s dream when an opportunity comes his way seven years later?",
+      "te": "ఒక మంచి డాన్ తన ఫుట్‌బాల్ ఆటగాడు కొడుకు ఛాంపియన్‌గా మారడం ద్వారా తన ప్రజల జీవితాన్ని ఉద్ధరించాలని కోరుకుంటాడు, అయితే విధి యువకుడిని హింసాత్మక జీవితంలోకి లాగుతుంది. ఏడేళ్ల తర్వాత అవకాశం వస్తే తన తండ్రి కలను నెరవేర్చుకోగలడా?"
+    },
+    "genres": [
+      "Drama",
+      "Action",
+      "Family"
+    ],
+    "year": 2019,
+    "runtime": 177,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 6.263,
+    "studio": "AGS Entertainment",
+    "language": "Tamil",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 0,
+    "popularityScore": 1,
+    "universe": null
+  },
+  {
+    "slug": "kaalidas-2019",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/7cyU95IchhJfv7chnrc8EhMfoBv.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/2G166SwsCFcel9xqgLdqRs9MpMf.jpg",
+    "title": {
+      "en": "Kaalidas",
+      "te": "Kaalidas"
+    },
+    "description": {
+      "en": "A cop, who suffers from family issues, takes up a peculiar suicide case. The plot thickens as similar cases get reported within a span of a few days.",
+      "te": "కుటుంబ సమస్యలతో బాధపడుతున్న ఒక పోలీసు విచిత్రమైన ఆత్మహత్య కేసును తీసుకున్నాడు. కొన్ని రోజుల వ్యవధిలో ఇలాంటి కేసులు నమోదవుతున్నందున ప్లాట్ మందంగా ఉంటుంది."
+    },
+    "genres": [
+      "Action",
+      "Crime"
+    ],
+    "year": 2019,
+    "runtime": 126,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 6,
+    "studio": "Dina Studios",
+    "language": "Tamil",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 0,
+    "popularityScore": 1,
+    "universe": null
+  },
+  {
+    "slug": "coolie-2025",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/kr36awqmziEI5mfUElsHB0pj9zP.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/bLn0CPzrrqFLicjNTgrzaIyE0gZ.jpg",
+    "title": {
+      "en": "Coolie",
+      "te": "Coolie"
+    },
+    "description": {
+      "en": "Deva, once living a quiet life, is shaken when his close friend dies under suspicious circumstances. Determined to uncover the truth, he infiltrates a powerful gang operating in the shadows. As he investigates, Deva becomes entangled in a dangerous web of crime, betrayal, and secrets from his own past, forcing him to confront powerful enemies while protecting the ones he loves.",
+      "te": "ఒకప్పుడు ప్రశాంత జీవితాన్ని గడుపుతున్న దేవా, తన సన్నిహితుడు అనుమానాస్పద పరిస్థితుల్లో చనిపోవడంతో చలించిపోతాడు. నిజాన్ని వెలికి తీయాలని నిశ్చయించుకున్న అతను నీడలో పనిచేస్తున్న శక్తివంతమైన ముఠాలోకి చొరబడ్డాడు. అతను దర్యాప్తు చేస్తున్నప్పుడు, దేవా తన గతం నుండి నేరాలు, ద్రోహం మరియు రహస్యాల యొక్క ప్రమాదకరమైన వెబ్‌లో చిక్కుకుంటాడు, అతను ప్రేమించిన వారిని రక్షించేటప్పుడు శక్తివంతమైన శత్రువులను ఎదుర్కోవలసి వస్తుంది."
+    },
+    "genres": [
+      "Action",
+      "Crime"
+    ],
+    "year": 2025,
+    "runtime": 170,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 6.235,
+    "studio": "Sun Pictures",
+    "language": "Tamil",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 0,
+    "popularityScore": 1,
+    "universe": "lcu"
+  },
+  {
+    "slug": "made-in-korea-2026",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/n6gCKjagOFsU4arFngUq2QqR1jv.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/5MaWBfAxdlbsqDpq8mjCBNVoLM3.jpg",
+    "title": {
+      "en": "Made in Korea",
+      "te": "Made in Korea"
+    },
+    "description": {
+      "en": "A woman from a small town in Tamil Nadu moves to South Korea — a place she always dreamed of — but struggles to find her footing in a foreign land.",
+      "te": "తమిళనాడులోని ఒక చిన్న పట్టణానికి చెందిన ఒక మహిళ దక్షిణ కొరియాకు వెళుతుంది - ఆమె ఎప్పుడూ కలలు కనే ప్రదేశం - కానీ విదేశీ దేశంలో తన పాదాలను కనుగొనడానికి కష్టపడుతోంది."
+    },
+    "genres": [
+      "Drama"
+    ],
+    "year": 2026,
+    "runtime": 113,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 7.235,
+    "studio": "Rise East Entertainments Pvt Ltd",
+    "language": "Tamil",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 0,
+    "popularityScore": 1,
+    "universe": null
+  },
+  {
+    "slug": "stephen-2025",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/yUURUJzeSTc47T2VeNw7nZwZ8VJ.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/7cQjb8cRbRjF5tM5gOCnqsvC0iT.jpg",
+    "title": {
+      "en": "Stephen",
+      "te": "Stephen"
+    },
+    "description": {
+      "en": "A psychiatrist evaluating a self-confessed serial killer unravels a twisted web of trauma, deceit, and psychological manipulation—only to question if the killer is truly guilty or just another victim in a larger, darker game.",
+      "te": "స్వీయ-ఒప్పుకున్న సీరియల్ కిల్లర్‌ని అంచనా వేసే మానసిక వైద్యుడు గాయం, మోసం మరియు మానసిక అవకతవకల యొక్క వక్రీకృత వెబ్‌ను విప్పాడు-కిల్లర్ నిజంగా నేరస్థుడా లేదా పెద్ద, ముదురు గేమ్‌లో మరొక బాధితుడా అని మాత్రమే ప్రశ్నించడానికి."
+    },
+    "genres": [
+      "Thriller"
+    ],
+    "year": 2025,
+    "runtime": 124,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 6.563,
+    "studio": "JM Production House",
+    "language": "Tamil",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 0,
+    "popularityScore": 1,
+    "universe": null
+  },
+  {
+    "slug": "maharaja-2024",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/s0m4TM1XRAftQStgKpw024RvkJo.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/if61bpqSXngkGoGNjMdHZt02wZS.jpg",
+    "title": {
+      "en": "Maharaja",
+      "te": "Maharaja"
+    },
+    "description": {
+      "en": "A barber seeks vengeance after his home is burglarized, cryptically telling police his \"Lakshmi\" has been taken, leaving them uncertain if it's a person or object, jeer at his request until they learn what they're really looking for.",
+      "te": "ఒక మంగలి తన ఇంటిని దొంగిలించిన తర్వాత ప్రతీకారం తీర్చుకుంటాడు, తన \"లక్ష్మి\" తీయబడిందని పోలీసులకు నిగూఢంగా చెబుతాడు, అది ఒక వ్యక్తి లేదా వస్తువు అయితే వారికి అనిశ్చితంగా ఉంటుంది, వారు నిజంగా ఏమి వెతుకుతున్నారో తెలుసుకునే వరకు అతని అభ్యర్థనపై ఎగతాళి చేస్తాడు."
+    },
+    "genres": [
+      "Action",
+      "Thriller"
+    ],
+    "year": 2024,
+    "runtime": 141,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 7.7,
+    "studio": "Passion Studios",
+    "language": "Tamil",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 0,
+    "popularityScore": 1,
+    "universe": null
+  },
+  {
+    "slug": "parasakthi-2026",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/lhmaaR6ZVC3HqXY53RBjoTNPTlo.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/yMgpIzfqHZXbEN8ar9EAHJvdYJj.jpg",
+    "title": {
+      "en": "Parasakthi",
+      "te": "Parasakthi"
+    },
+    "description": {
+      "en": "In a time of civil disobedience in the erstwhile Madras state, a ruthless intelligent officer turns up with a duty to track down rebels. Chezhian and his brother Chinndurai are of different personalities, one a hardworking fireman, the other a rebel. A deadly game of cat and mouse ensues as Chezhian is forced to abandon his peaceful ways to protect his people and takes on the mighty forces, culminating in a fierce battle for justice.",
+      "te": "పూర్వపు మద్రాసు రాష్ట్రంలో శాసనోల్లంఘన సమయంలో, ఒక క్రూరమైన తెలివైన అధికారి తిరుగుబాటుదారులను గుర్తించే బాధ్యతతో వస్తాడు. చెజియాన్ మరియు అతని సోదరుడు చిందురాయ్ విభిన్న వ్యక్తిత్వాలు, ఒకరు కష్టపడి పనిచేసే అగ్నిమాపక సిబ్బంది, మరొకరు తిరుగుబాటుదారుడు. చెజియాన్ తన ప్రజలను రక్షించడానికి తన శాంతియుత మార్గాలను విడిచిపెట్టి బలవంతంగా బలవంతంగా బలవంతంగా బలవంతంగా బలవంతం చేయడంతో పిల్లి మరియు ఎలుకల ఘోరమైన ఆట ఏర్పడుతుంది, ఇది న్యాయం కోసం భీకర యుద్ధంలో ముగుస్తుంది."
+    },
+    "genres": [
+      "Historical",
+      "Drama",
+      "Action",
+      "Romance"
+    ],
+    "year": 2026,
+    "runtime": 163,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 6,
+    "studio": "Dawn Pictures",
+    "language": "Tamil",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 0,
+    "popularityScore": 1,
+    "universe": null
+  },
+  {
+    "slug": "maalai-nera-malipoo-2023",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/5JQPJNIjNVxlHcx9VX5pvKUj3LQ.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/mlaq0055pIRfBeMqp6KmuDM2KvB.jpg",
+    "title": {
+      "en": "Maalai Nera Malipoo",
+      "te": "Maalai Nera Malipoo"
+    },
+    "description": {
+      "en": "The movie is about how the global pandemic forces a prostitute to change her medium of work onto a digital platform and how her relationship with her son is affected",
+      "te": "గ్లోబల్ మహమ్మారి తన పని మాధ్యమాన్ని డిజిటల్ ప్లాట్‌ఫారమ్‌లోకి మార్చడానికి వేశ్యను ఎలా బలవంతం చేస్తుంది మరియు ఆమె కొడుకుతో ఆమె సంబంధం ఎలా ప్రభావితమవుతుంది అనేదే ఈ చిత్రం."
+    },
+    "genres": [
+      "Drama"
+    ],
+    "year": 2023,
+    "runtime": 119,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 6.5,
+    "studio": "Every Frame Matters",
+    "language": "Tamil",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 0,
+    "popularityScore": 1,
+    "universe": null
+  },
+  {
+    "slug": "retro-2025",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/pJPK57REXsaLydpOPgHwWAQMdqz.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/rGcZhLzwOLz3OWWpYrelgP4HUIQ.jpg",
+    "title": {
+      "en": "Retro",
+      "te": "Retro"
+    },
+    "description": {
+      "en": "A man with a violent past seeks a fresh start, but the life he left behind resurfaces, forcing him to face old conflicts and redefine his future.",
+      "te": "హింసాత్మకమైన గతాన్ని కలిగి ఉన్న వ్యక్తి కొత్త ప్రారంభాన్ని కోరుకుంటాడు, కానీ అతను వదిలిపెట్టిన జీవితం మళ్లీ తెరపైకి వస్తుంది, పాత సంఘర్షణలను ఎదుర్కొని తన భవిష్యత్తును పునర్నిర్వచించుకోవలసి వస్తుంది."
+    },
+    "genres": [
+      "Romance",
+      "Action",
+      "Drama",
+      "Crime"
+    ],
+    "year": 2025,
+    "runtime": 162,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 6.442,
+    "studio": "2D Entertainment",
+    "language": "Tamil",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 0,
+    "popularityScore": 1,
+    "universe": null
+  },
+  {
+    "slug": "mersal-2017",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/65Q1wpRPZ5E3UVUv2V5JBbJQCcj.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/7IJE6cNsbXYE2HzZSUQBj0RtUfv.jpg",
+    "title": {
+      "en": "Mersal",
+      "te": "Mersal"
+    },
+    "description": {
+      "en": "A few individuals in the medical profession are murdered or kidnapped, and the cop investigating the case suspects a doctor and arrests him. But is he the one who is behind these crimes? And why are they being committed?",
+      "te": "వైద్య వృత్తిలో ఉన్న కొంతమంది వ్యక్తులు హత్య చేయబడతారు లేదా కిడ్నాప్ చేయబడతారు మరియు కేసును విచారిస్తున్న పోలీసు ఒక వైద్యుడిని అనుమానించి, అతనిని అరెస్టు చేస్తాడు. అయితే ఈ నేరాల వెనుక ఉన్నది అతనేనా? మరియు వారు ఎందుకు కట్టుబడి ఉన్నారు?"
+    },
+    "genres": [
+      "Action",
+      "Crime"
+    ],
+    "year": 2017,
+    "runtime": 161,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 7.272,
+    "studio": "Sri Thenandal Films",
+    "language": "Tamil",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 0,
+    "popularityScore": 1,
+    "universe": null
+  },
+  {
+    "slug": "mr-x-2026",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/rUYbwn4I8k0sa2sIJG9JGYM1UCv.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/pHYVsFUjKnYpHmhvTILd3XqXwRM.jpg",
+    "title": {
+      "en": "Mr. X",
+      "te": "Mr. X"
+    },
+    "description": {
+      "en": "Centers on secret intelligence agency cases involving five major national threats that were thwarted through covert operations.",
+      "te": "రహస్య కార్యకలాపాల ద్వారా నిరోధించబడిన ఐదు ప్రధాన జాతీయ బెదిరింపులతో కూడిన రహస్య గూఢచార సంస్థ కేసులపై కేంద్రాలు."
+    },
+    "genres": [
+      "Action"
+    ],
+    "year": 2026,
+    "runtime": 153,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 7,
+    "studio": "Prince Pictures",
+    "language": "Tamil",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 0,
+    "popularityScore": 1,
+    "universe": null
+  },
+  {
+    "slug": "amaran-2024",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/eCB06m1KUGilEOlIzb40nkQhVY0.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/7cNE2qydew1c8fqnlhWjkE3DHc2.jpg",
+    "title": {
+      "en": "Amaran",
+      "te": "Amaran"
+    },
+    "description": {
+      "en": "A heroic true story of Major Mukund Varadarajan, an Indian Army officer who displayed extraordinary bravery during a counterterrorism mission in Kashmir’s Shopian district. The film captures his courage in protecting his nation and the devotion of his wife Indhu Rebecaa Varghese.",
+      "te": "కాశ్మీర్‌లోని షోపియాన్ జిల్లాలో తీవ్రవాద నిరోధక మిషన్‌లో అసాధారణ ధైర్యాన్ని ప్రదర్శించిన భారత ఆర్మీ అధికారి మేజర్ ముకుంద్ వరదరాజన్ యొక్క వీరోచిత నిజమైన కథ. ఈ చిత్రం తన దేశాన్ని రక్షించడంలో అతని ధైర్యాన్ని మరియు అతని భార్య ఇంధు రెబెకా వర్గీస్ యొక్క భక్తిని సంగ్రహిస్తుంది."
+    },
+    "genres": [
+      "Action",
+      "Drama",
+      "Adventure"
+    ],
+    "year": 2024,
+    "runtime": 169,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 7.35,
+    "studio": "Raajkamal Films International",
+    "language": "Tamil",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 0,
+    "popularityScore": 1,
+    "universe": null
+  },
+  {
+    "slug": "maaran-2022",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/sOFK5KIBJA6JwBt6nijxfYP2F5k.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/6EoqBrVN7LyZU7Mr2axjmtcbmkv.jpg",
+    "title": {
+      "en": "Maaran",
+      "te": "Maaran"
+    },
+    "description": {
+      "en": "An investigative journalist gets into trouble when he publishes an article that exposes bitter truths about a corrupt politician.",
+      "te": "ఒక అవినీతిపరుడైన రాజకీయ నాయకుడి గురించి చేదు నిజాలను బట్టబయలు చేసే కథనాన్ని ప్రచురించినప్పుడు ఒక పరిశోధనాత్మక జర్నలిస్ట్ చిక్కుల్లో పడ్డాడు."
+    },
+    "genres": [
+      "Action"
+    ],
+    "year": 2022,
+    "runtime": 130,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 4.8,
+    "studio": "Sathya Jyothi Films",
+    "language": "Tamil",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 0,
+    "popularityScore": 1,
+    "universe": null
+  },
+  {
+    "slug": "idli-kadai-2025",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/9ViF6UTWMh14gx77RvFALe5R6AL.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/mXRzeWQXDdfPuT9KckNjSdiWo6Z.jpg",
+    "title": {
+      "en": "Idli Kadai",
+      "te": "Idli Kadai"
+    },
+    "description": {
+      "en": "A simple man's search for success leads him to rediscover his roots.",
+      "te": "విజయం కోసం ఒక సాధారణ వ్యక్తి యొక్క శోధన అతని మూలాలను తిరిగి కనుగొనేలా చేస్తుంది."
+    },
+    "genres": [
+      "Action",
+      "Drama",
+      "Comedy"
+    ],
+    "year": 2025,
+    "runtime": 147,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 6.738,
+    "studio": "Dawn Pictures",
+    "language": "Tamil",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 0,
+    "popularityScore": 1,
+    "universe": null
+  },
+  {
+    "slug": "madharaasi-2025",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/dw3Dllz1gV7186m7clqNDnI9R28.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/nmPzYjRPAd3iVOgrLXlvh6HuvRN.jpg",
+    "title": {
+      "en": "Madharaasi",
+      "te": "Madharaasi"
+    },
+    "description": {
+      "en": "A man with a psychological disorder overcomes trauma and confronts his nemesis in a fast-paced action film with romance and unique elements, exploring themes of resilience and redemption.",
+      "te": "మానసిక రుగ్మతతో బాధపడుతున్న వ్యక్తి గాయాన్ని అధిగమించి, శృంగారం మరియు విశిష్ట అంశాలతో కూడిన వేగవంతమైన యాక్షన్ ఫిల్మ్‌లో తన శత్రుత్వాన్ని ఎదుర్కొంటాడు, స్థితిస్థాపకత మరియు విముక్తి యొక్క ఇతివృత్తాలను అన్వేషిస్తాడు."
+    },
+    "genres": [
+      "Action",
+      "Romance"
+    ],
+    "year": 2025,
+    "runtime": 168,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 6.786,
+    "studio": "Sri Lakshmi Movies",
+    "language": "Tamil",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 0,
+    "popularityScore": 1,
+    "universe": null
+  },
+  {
+    "slug": "sarkar-2018",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/plaMZ1r11u7D9JTd4vkmhQJlYfa.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/dhifkRV8UMaZgE4lS6yIT82n3xt.jpg",
+    "title": {
+      "en": "Sarkar",
+      "te": "Sarkar"
+    },
+    "description": {
+      "en": "NRI corporate Sundar Ramasamy comes to India to vote, only to learn that his vote has already been cast. While he reclaims his right legally, it also sets in motion a chain of events that eventually lead to him entering the political fray, trying to change the system.",
+      "te": "ఎన్నారై కార్పొరేట్ సుందర్ రామసామి ఓటు వేయడానికి భారతదేశానికి వస్తాడు, తన ఓటు ఇప్పటికే వేయబడిందని తెలుసుకోవడానికి మాత్రమే. అతను చట్టబద్ధంగా తన హక్కును తిరిగి పొందుతున్నప్పుడు, అది చివరికి అతను రాజకీయ రంగంలోకి ప్రవేశించడానికి దారితీసే సంఘటనల గొలుసును కూడా సెట్ చేస్తుంది, వ్యవస్థను మార్చడానికి ప్రయత్నిస్తుంది."
+    },
+    "genres": [
+      "Action",
+      "Drama"
+    ],
+    "year": 2018,
+    "runtime": 164,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 5.7,
+    "studio": "Sun Pictures",
+    "language": "Tamil",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 0,
+    "popularityScore": 1,
+    "universe": null
+  },
+  {
+    "slug": "vikram-2022",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/774UV1aCURb4s4JfEFg3IEMu5Zj.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/dkIX4dSMuVqjfrPGunBJUR7K3LQ.jpg",
+    "title": {
+      "en": "Vikram",
+      "te": "Vikram"
+    },
+    "description": {
+      "en": "Amar is assigned to investigate a case of serial killings. When Amar investigates the case, he realizes it is not what it seems to be and following down this path will lead to nothing but war between everyone involved.",
+      "te": "అమర్ వరుస హత్యల కేసును పరిశోధించడానికి కేటాయించబడ్డాడు. అమర్ కేసును పరిశోధించినప్పుడు, అది కనిపించేది కాదని మరియు ఈ మార్గాన్ని అనుసరించడం వల్ల ప్రమేయం ఉన్న ప్రతి ఒక్కరి మధ్య యుద్ధానికి దారితీయదని అతను గ్రహించాడు."
+    },
+    "genres": [
+      "Action",
+      "Crime"
+    ],
+    "year": 2022,
+    "runtime": 174,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 7.565,
+    "studio": "Raajkamal Films International",
+    "language": "Tamil",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 0,
+    "popularityScore": 1,
+    "universe": "lcu"
+  },
+  {
+    "slug": "nanban-2012",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/dmhPnvYQVtx4xS1dkA9trCpQXvY.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/gTK2lEyMSFxKsA52uEYLQlmpAWu.jpg",
+    "title": {
+      "en": "Nanban",
+      "te": "Nanban"
+    },
+    "description": {
+      "en": "The plot of the film illustrates the embankment of two friends on a quest for a lost buddy, who was once an optimistic and successful student. On their journey, they recount their college life and special moments that the three shared up until their lost friend secretly parted ways after convocation. During their quest, the two encounter a rival classmate who once made a long forgotten bet with them, a funeral that goes impossibly out of control, and a wedding they must crash.",
+      "te": "ఒకప్పుడు ఆశావాద మరియు విజయవంతమైన విద్యార్థి అయిన కోల్పోయిన స్నేహితుని కోసం అన్వేషణలో ఇద్దరు స్నేహితుల గట్టును చిత్రం యొక్క కథాంశం వివరిస్తుంది. వారి ప్రయాణంలో, వారు తమ కళాశాల జీవితాన్ని మరియు వారి కోల్పోయిన స్నేహితుడు కాన్వకేషన్ తర్వాత రహస్యంగా విడిపోయే వరకు ముగ్గురు పంచుకున్న ప్రత్యేక క్షణాలను వివరిస్తారు. వారి అన్వేషణలో, ఇద్దరూ ఒక ప్రత్యర్థి క్లాస్‌మేట్‌ను ఎదుర్కొంటారు, అతను ఒకప్పుడు వారితో చాలా కాలంగా మరిచిపోయిన పందెం, ఒక అంత్యక్రియలు అసాధ్యమైన నియంత్రణలో లేవు మరియు వారు క్రాష్ చేయవలసిన వివాహాన్ని ఎదుర్కొంటారు."
+    },
+    "genres": [
+      "Comedy",
+      "Drama"
+    ],
+    "year": 2012,
+    "runtime": 181,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 7.131,
+    "studio": "Gemini Film Circuit",
+    "language": "Tamil",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 0,
+    "popularityScore": 1,
+    "universe": null
+  },
+  {
+    "slug": "the-greatest-of-all-time-2024",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/kk9SmNt6QcP5thvSYELWvO0NWuC.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/wuHD3SiccbQvHUT1LE9o8j9dJlU.jpg",
+    "title": {
+      "en": "The Greatest of All Time",
+      "te": "The Greatest of All Time"
+    },
+    "description": {
+      "en": "A once decorated member of the Special Anti-Terrorism Squad (SATS) is called back into action by his former colleagues for an important mission, setting him on a dangerous collision course with his own past.",
+      "te": "స్పెషల్ యాంటీ-టెర్రరిజం స్క్వాడ్ (SATS)లో ఒకప్పుడు అలంకరించబడిన సభ్యుడిని అతని మాజీ సహచరులు ఒక ముఖ్యమైన మిషన్ కోసం తిరిగి చర్య తీసుకుంటారు, అతని స్వంత గతంతో ప్రమాదకరమైన ఢీకొనే కోర్సులో అతనిని సెట్ చేస్తారు."
+    },
+    "genres": [
+      "Action",
+      "Drama"
+    ],
+    "year": 2024,
+    "runtime": 183,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 4.7,
+    "studio": "AGS Entertainment",
+    "language": "Tamil",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 0,
+    "popularityScore": 1,
+    "universe": null
+  },
+  {
+    "slug": "jailer-2023",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/pTmMxAHqX4vsIDE6HPPxOR0Q6TN.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/ownDZBS9ecoPbWjW5V5L8jknGF.jpg",
+    "title": {
+      "en": "Jailer",
+      "te": "Jailer"
+    },
+    "description": {
+      "en": "Muthuvel Pandian, a retired, stern yet compassionate jailer lives a peaceful life with his family, but trouble knocks his door when his cop son’s tryst with an antique mafia gang goes awry and forces Muthu to step back into a dark world he had voluntarily took a break from.",
+      "te": "ముత్తువేల్ పాండియన్, పదవీ విరమణ పొందిన, దృఢమైన మరియు దయగల జైలర్ తన కుటుంబంతో ప్రశాంతమైన జీవితాన్ని గడుపుతాడు, అయితే అతని పోలీసు కొడుకు పురాతన మాఫియా ముఠాతో చేసిన ప్రయత్నం వికటించి ముత్తును తాను స్వచ్ఛందంగా విడిచిపెట్టిన చీకటి ప్రపంచంలోకి తిరిగి అడుగు పెట్టమని బలవంతం చేయడంతో ఇబ్బందులు అతని తలుపు తట్టాయి."
+    },
+    "genres": [
+      "Action",
+      "Crime",
+      "Comedy",
+      "Adventure"
+    ],
+    "year": 2023,
+    "runtime": 165,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 6.608,
+    "studio": "Sun Pictures",
+    "language": "Tamil",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 0,
+    "popularityScore": 1,
+    "universe": null
+  },
+  {
+    "slug": "leader-2026",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/eitNeP5lMT67piVVA8h31lb5keN.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/jdfgdFeg7pIu9hV7VG6k9gHgaUh.jpg",
+    "title": {
+      "en": "Leader",
+      "te": "Leader"
+    },
+    "description": {
+      "en": "An ordinary man becomes trapped between warring criminal factions and law enforcement, forcing him to use his wits to survive while shielding his loved ones from the deadly crossfire that threatens to consume them all.",
+      "te": "ఒక సాధారణ వ్యక్తి పోరాడుతున్న క్రిమినల్ వర్గాలు మరియు చట్టాన్ని అమలు చేసే వారి మధ్య చిక్కుకుపోతాడు, అతను తన ప్రియమైన వారిని ప్రాణాంతకమైన ఎదురుకాల్పుల నుండి రక్షించేటప్పుడు మనుగడ కోసం తన తెలివిని ఉపయోగించమని బలవంతం చేస్తాడు."
+    },
+    "genres": [
+      "Action",
+      "Drama"
+    ],
+    "year": 2026,
+    "runtime": 136,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 7,
+    "studio": "The Legend Saravana Stores Creations",
+    "language": "Tamil",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 0,
+    "popularityScore": 1,
+    "universe": null
+  },
+  {
+    "slug": "meiyazhagan-2024",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/ngDEH7YqVaMCAD4LpNxRl6ScJnw.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/9v5Q5OOR9e83KBlK6SPQEcbm6Iw.jpg",
+    "title": {
+      "en": "Meiyazhagan",
+      "te": "Meiyazhagan"
+    },
+    "description": {
+      "en": "Twenty-two years after losing his home, Arulmozhi Varman returns to his native Thanjavur to attend his cousin's wedding. Amidst the celebrations, Arul is reintroduced to an upbeat man whom he cannot recall. With the help of the unknown man, Arul reconnects with his past.",
+      "te": "తన ఇంటిని కోల్పోయిన ఇరవై రెండు సంవత్సరాల తర్వాత, అరుల్మొళి వర్మన్ తన బంధువు వివాహానికి హాజరయ్యేందుకు తన స్వస్థలమైన తంజావూరుకు తిరిగి వస్తాడు. వేడుకల మధ్య, అరుల్ తనకు గుర్తుపట్టలేని ఒక ఉల్లాసవంతమైన వ్యక్తికి తిరిగి పరిచయం చేయబడ్డాడు. తెలియని వ్యక్తి సహాయంతో అరుల్ తన గతంతో తిరిగి కనెక్ట్ అవుతాడు."
+    },
+    "genres": [
+      "Family",
+      "Drama"
+    ],
+    "year": 2024,
+    "runtime": 177,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 8.02,
+    "studio": "2D Entertainment",
+    "language": "Tamil",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 0,
+    "popularityScore": 1,
+    "universe": null
+  },
+  {
+    "slug": "kadhalar-dhinam-1999",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/uGSrQnlrC90sfOnZ7SM3B0yiu3b.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/Q3g0SvhKvXEhXKCqEiYQkyuic.jpg",
+    "title": {
+      "en": "Kadhalar Dhinam",
+      "te": "Kadhalar Dhinam"
+    },
+    "description": {
+      "en": "Two college students, the slum child Raja and the dean's daughter Roja, chat with each other over the Internet and fall in love. However, Roja is engaged and Raja cannot bear to disrespect her father, to whom he owes his livelihood.",
+      "te": "ఇద్దరు కళాశాల విద్యార్థులు, స్లమ్ చైల్డ్ రాజా మరియు డీన్ కుమార్తె రోజా, ఇంటర్నెట్‌లో ఒకరితో ఒకరు చాట్ చేసి ప్రేమలో పడతారు. అయితే, రోజా నిశ్చితార్థం జరిగింది మరియు తన జీవనోపాధికి రుణపడి ఉన్న ఆమె తండ్రిని అగౌరవపరచడాన్ని రాజా భరించలేడు."
+    },
+    "genres": [
+      "Drama",
+      "Romance"
+    ],
+    "year": 1999,
+    "runtime": 132,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 7.9,
+    "studio": "Sri Surya Movies",
+    "language": "Tamil",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 0,
+    "popularityScore": 0,
+    "universe": null
+  },
+  {
+    "slug": "dada-2023",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/x7C2u4oXoMFQBaSJqqcyU3qpwKy.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/8SLW8lr2mQaHNJtw2PwGwUCcw3h.jpg",
+    "title": {
+      "en": "Dada",
+      "te": "Dada"
+    },
+    "description": {
+      "en": "Manikandan and Sindhu, final year college students, become parents accidentally. Situations separate them, forcing Manikandan to raise his child, Adhithya, as a single parent. What follows is a beautiful tale of a father and son and their journey against all odds.",
+      "te": "కాలేజీ చివరి సంవత్సరం చదువుతున్న మణికందన్, సింధు అనుకోకుండా తల్లిదండ్రులు అవుతారు. పరిస్థితులు వారిని వేరు చేస్తాయి, మణికందన్ తన బిడ్డ ఆదిత్యను సింగిల్ పేరెంట్‌గా పెంచవలసి వచ్చింది. తండ్రీ కొడుకుల యొక్క అందమైన కథ మరియు అన్ని అసమానతలకు వ్యతిరేకంగా వారి ప్రయాణం క్రిందిది."
+    },
+    "genres": [
+      "Drama",
+      "Comedy",
+      "Romance"
+    ],
+    "year": 2023,
+    "runtime": 135,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 7.2,
+    "studio": "Olympia Movies",
+    "language": "Tamil",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 0,
+    "popularityScore": 1,
+    "universe": null
+  },
+  {
+    "slug": "yavarum-nalam-2009",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/3rt6upSI2RHV3IAFg1fW4DUNuuk.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/3KbpHrp6d0mOd7F0AbwDnwEhefT.jpg",
+    "title": {
+      "en": "Yavarum Nalam",
+      "te": "Yavarum Nalam"
+    },
+    "description": {
+      "en": "Manohar and his family move into a new apartment on the 13th floor. However, their peace is disturbed by a spirit that uses the television set as a medium to communicate with them.",
+      "te": "మనోహర్ మరియు అతని కుటుంబం 13వ అంతస్తులోని కొత్త అపార్ట్‌మెంట్‌లోకి మారారు. అయినప్పటికీ, వారితో కమ్యూనికేట్ చేయడానికి టెలివిజన్ సెట్‌ను మాధ్యమంగా ఉపయోగించే ఆత్మ వల్ల వారి శాంతికి భంగం కలుగుతుంది."
+    },
+    "genres": [
+      "Thriller",
+      "Horror"
+    ],
+    "year": 2009,
+    "runtime": 137,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 6.278,
+    "studio": "Reliance Entertainment",
+    "language": "Tamil",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 0,
+    "popularityScore": 0,
+    "universe": null
+  },
+  {
+    "slug": "good-bad-ugly-2025",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/8DbYYluzdiGDAZzsaP7DWGbwfLd.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/5CtvMLmCdksbYqqQd812WYML2wJ.jpg",
+    "title": {
+      "en": "Good Bad Ugly",
+      "te": "Good Bad Ugly"
+    },
+    "description": {
+      "en": "AK, a powerful gangster, surrenders to the police, in hopes that his wife and son will live a peaceful life. When he is released 17 years later, he learns that his son is falsely accused of serious crimes. To protect him, he is forced to go back to his old ways, facing enemies, both old and new.",
+      "te": "AK, శక్తివంతమైన గ్యాంగ్‌స్టర్, తన భార్య మరియు కొడుకు ప్రశాంతమైన జీవితాన్ని గడపాలని ఆశతో పోలీసులకు లొంగిపోయాడు. అతను 17 సంవత్సరాల తర్వాత విడుదలైనప్పుడు, తన కొడుకు తీవ్రమైన నేరాలకు పాల్పడ్డాడని అతనికి తెలుసు. అతన్ని రక్షించడానికి, అతను తన పాత మార్గాల్లోకి వెళ్ళవలసి వస్తుంది, పాత మరియు కొత్త శత్రువులను ఎదుర్కొంటుంది."
+    },
+    "genres": [
+      "Action",
+      "Crime",
+      "Comedy"
+    ],
+    "year": 2025,
+    "runtime": 139,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 5.944,
+    "studio": "Mythri Movie Makers",
+    "language": "Tamil",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 0,
+    "popularityScore": 0,
+    "universe": null
+  },
+  {
+    "slug": "house-mates-2025",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/1HeWmcvzXKyBrUxCFdbvEni4spb.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/en6q9MmuuG6SBTEtlYmoGQPcYWh.jpg",
+    "title": {
+      "en": "House Mates",
+      "te": "House Mates"
+    },
+    "description": {
+      "en": "Karthick and Anu fall in love, get married and buy an old flat for their own. Many strange incidents happening in that house. They found out the reason and hand over the flat to the first owner Ramesh.",
+      "te": "కార్తీక్ మరియు అను ప్రేమలో పడతారు, పెళ్లి చేసుకున్నారు మరియు వారి స్వంత కోసం పాత ఫ్లాట్ కొంటారు. ఆ ఇంట్లో ఎన్నో వింత సంఘటనలు జరుగుతున్నాయి. కారణం తెలుసుకుని ఫ్లాట్‌ను మొదటి యజమాని రమేష్‌కు అప్పగించారు."
+    },
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Fantasy",
+      "Horror"
+    ],
+    "year": 2025,
+    "runtime": 129,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 7,
+    "studio": "Sivakarthikeyan Productions",
+    "language": "Tamil",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 0,
+    "popularityScore": 1,
+    "universe": null
+  },
+  {
+    "slug": "bison-kaalamaadan-2025",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/5IPFJ2XFbYjdIw4912ZufCMolX.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/6xEk8ZbqCgmicmeICyYGospXU7R.jpg",
+    "title": {
+      "en": "Bison Kaalamaadan",
+      "te": "Bison Kaalamaadan"
+    },
+    "description": {
+      "en": "A young man fights to overcome violence plaguing his village and succeed as a professional kabaddi player.",
+      "te": "ఒక యువకుడు తన గ్రామాన్ని పట్టి పీడిస్తున్న హింసను అధిగమించి ప్రొఫెషనల్ కబడ్డీ ప్లేయర్‌గా విజయం సాధించడానికి పోరాడాడు."
+    },
+    "genres": [
+      "Drama",
+      "Action"
+    ],
+    "year": 2025,
+    "runtime": 169,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 7.3,
+    "studio": "Neelam Productions",
+    "language": "Tamil",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 0,
+    "popularityScore": 1,
+    "universe": null
+  },
+  {
+    "slug": "vaa-vaathiyaar-2026",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/hb1YWskm1H2YwNj2KF2BGWgLA58.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/qPNIwdR3y965KMsiweyuXdjDRXR.jpg",
+    "title": {
+      "en": "Vaa Vaathiyaar",
+      "te": "Vaa Vaathiyaar"
+    },
+    "description": {
+      "en": "After being raised as the reincarnation of a famous actor, a man finds himself clashing with his grandfather's expectations of him.",
+      "te": "ఒక ప్రముఖ నటుడి పునర్జన్మగా ఎదిగిన తర్వాత, ఒక వ్యక్తి తన తాత తనపై ఉన్న అంచనాలతో విభేదిస్తున్నాడు."
+    },
+    "genres": [
+      "Comedy",
+      "Action"
+    ],
+    "year": 2026,
+    "runtime": 129,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 4.7,
+    "studio": "Studio Green",
+    "language": "Tamil",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 0,
+    "popularityScore": 0,
+    "universe": null
+  },
+  {
+    "slug": "drogam-nadanthathu-enna--2010",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/r4p11mJuBtZApzlPnJxQMchn7Lh.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/vQPyEZCoELGFTswNGlLqRpAAw4C.jpg",
+    "title": {
+      "en": "Drogam: Nadanthathu Enna?",
+      "te": "Drogam: Nadanthathu Enna?"
+    },
+    "description": {
+      "en": "Drogam Nadanthathu Enna film is based on a real incident which happened in Mumbai. The electric power goes at the time when a young police officer makes love to his wife. So the inspector goes to light a candle. At that time a stranger embraces the inspector's wife who is not able to recognize the person. She thinks that it is her husband. The stranger records this incident in his cell phone. The stranger blackmails the lady showing this clipping and asks her to make love with him. Whether she agrees or not is the rest of the story.",
+      "te": "డ్రోగం నదంతతు ఎన్నా చిత్రం ముంబైలో జరిగిన యదార్థ సంఘటన ఆధారంగా తెరకెక్కుతోంది. ఒక యువ పోలీసు అధికారి తన భార్యను ప్రేమిస్తున్న సమయంలో విద్యుత్ శక్తి వెళుతుంది. కాబట్టి ఇన్స్పెక్టర్ కొవ్వొత్తి వెలిగించడానికి వెళ్తాడు. ఆ సమయంలో ఆ వ్యక్తిని గుర్తించలేని ఇన్‌స్పెక్టర్ భార్యను ఓ అపరిచితుడు కౌగిలించుకున్నాడు. అది తన భర్త అని ఆమె అనుకుంటుంది. ఈ ఘటనను అపరిచితుడు తన సెల్‌ఫోన్‌లో రికార్డ్ చేశాడు. అపరిచితుడు ఈ క్లిప్పింగ్‌ను చూపిస్తూ ఆ మహిళను బ్లాక్‌మెయిల్ చేసి తనతో ప్రేమలో పడమని అడుగుతాడు. ఆమె ఒప్పుకుందా లేదా అన్నది మిగతా కథ."
+    },
+    "genres": [
+      "Drama",
+      "Romance"
+    ],
+    "year": 2010,
+    "runtime": 102,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 6,
+    "studio": "B Pictures",
+    "language": "Tamil",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 0,
+    "popularityScore": 0,
+    "universe": null
+  },
+  {
+    "slug": "varuthapadatha-valibar-sangam-2013",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/mWXvOXdvS9j8Va9XFIE993yIGEA.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/gLmtl78GANjceMGclJ6RR6GXniT.jpg",
+    "title": {
+      "en": "Varuthapadatha Valibar Sangam",
+      "te": "Varuthapadatha Valibar Sangam"
+    },
+    "description": {
+      "en": "Set in a village in Tamil Nadu called Silukkuvarpatti, VVS talks about the love between Bose Pandi  and Latha Pandi. While Bose is a carefree but spirited young man who doubles up as the leader of a local ‘Sangam’, Latha is the daughter of the village’s head honcho, Sivanandi. Sivanandi and Bose don’t exactly see eye to eye and added to this, Sivanandi is dead against his three daughters falling in love as he sees it as an insult to his status and standing in the village. A superhit hilarious comedy entertainer.",
+      "te": "తమిళనాడులోని సిలుక్కువార్‌పట్టి అనే గ్రామంలో వివిఎస్ బోస్ పాండి మరియు లతా పాండి మధ్య ప్రేమ గురించి మాట్లాడాడు. బోస్ స్థానిక 'సంగం' నాయకుడిగా రెట్టింపు అయిన నిర్లక్ష్యమైన కానీ ఆత్మీయ యువకుడు అయితే, లత గ్రామ ప్రధాన హోంచో, శివనంది కుమార్తె. శివనంది మరియు బోస్‌లు సరిగ్గా కళ్లను చూడరు మరియు దీనికి జోడించారు, శివనంది తన ముగ్గురు కుమార్తెలు ప్రేమలో పడటం తన స్థితికి అవమానంగా భావించి గ్రామంలో నిలబడటానికి వ్యతిరేకంగా చనిపోయాడు. ఒక సూపర్‌హిట్ హిలేరియస్ కామెడీ ఎంటర్‌టైనర్."
+    },
+    "genres": [
+      "Comedy"
+    ],
+    "year": 2013,
+    "runtime": 158,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 6.3,
+    "studio": "Escape Artists Motion Pictures",
+    "language": "Tamil",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 0,
+    "popularityScore": 0,
+    "universe": null
+  },
+  {
+    "slug": "nilavuku-en-mel-ennadi-kobam-2025",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/j5krlz9U40ZWaspQXa5CtQUikXl.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/o5pSgHibKD0vPtXiGztSTZTWiHs.jpg",
+    "title": {
+      "en": "Nilavuku En Mel Ennadi Kobam",
+      "te": "Nilavuku En Mel Ennadi Kobam"
+    },
+    "description": {
+      "en": "Prabhu, a young chef, is ready to move forward with an arranged marriage when his past love, Nila, unexpectedly reenters his life, challenging his plans and emotions.",
+      "te": "ప్రభు, యువ చెఫ్, అతని గత ప్రేమ, నీలా, అతని ప్రణాళికలు మరియు భావోద్వేగాలను సవాలు చేస్తూ, ఊహించని విధంగా అతని జీవితంలో తిరిగి ప్రవేశించినప్పుడు, ఒక కుదిరిన వివాహంతో ముందుకు సాగడానికి సిద్ధంగా ఉన్నాడు."
+    },
+    "genres": [
+      "Romance",
+      "Comedy",
+      "Drama"
+    ],
+    "year": 2025,
+    "runtime": 131,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 6.4,
+    "studio": "Wunderbar Films",
+    "language": "Tamil",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 0,
+    "popularityScore": 0,
+    "universe": null
+  },
+  {
+    "slug": "theri-2016",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/gyw2ybu40F7xeoIDLtmz3ABa6fu.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/yzoyr6nuB3ChA38MSHjYKlMpU6W.jpg",
+    "title": {
+      "en": "Theri",
+      "te": "Theri"
+    },
+    "description": {
+      "en": "When an honest cop, Vijay Kumar's family is ruthlessly slaughtered by a politician and his aides, he decides to change his identity and commits his life to bring his daughter up in a serene atmosphere. But some freak events end up compromising his identity and what he does to save his daughter and avenge the death of his family unfurls as Theri.",
+      "te": "నిజాయితీ గల పోలీసు, విజయ్ కుమార్ కుటుంబాన్ని ఒక రాజకీయ నాయకుడు మరియు అతని సహాయకులు నిర్దాక్షిణ్యంగా చంపినప్పుడు, అతను తన గుర్తింపును మార్చుకోవాలని నిర్ణయించుకున్నాడు మరియు తన కుమార్తెను ప్రశాంత వాతావరణంలో పెంచడానికి తన జీవితాన్ని అంకితం చేస్తాడు. కానీ కొన్ని విచిత్రమైన సంఘటనలు అతని గుర్తింపును రాజీ పరుస్తాయి మరియు అతను తన కుమార్తెను రక్షించడానికి మరియు అతని కుటుంబం యొక్క మరణానికి ప్రతీకారం తీర్చుకోవడానికి ఏమి చేసాడు అనేది తేరిగా విప్పుతుంది."
+    },
+    "genres": [
+      "Action",
+      "Crime"
+    ],
+    "year": 2016,
+    "runtime": 157,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 6.8,
+    "studio": "V Creations",
+    "language": "Tamil",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 0,
+    "popularityScore": 0,
+    "universe": null
+  },
+  {
+    "slug": "apoorva-raagangal-1975",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/6Ru9hgGdtV4ZJbV9usxwgMdNXUx.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/h5z0sWgoGASfn9xDmLFjpMmW6qG.jpg",
+    "title": {
+      "en": "Apoorva Raagangal",
+      "te": "Apoorva Raagangal"
+    },
+    "description": {
+      "en": "A young man and an older woman fall in love and decide to marry. However, their lives become more complicated when he learns that his father is in love with the same woman's daughter.",
+      "te": "ఒక యువకుడు మరియు ఒక పెద్ద మహిళ ప్రేమలో పడ్డారు మరియు వివాహం చేసుకోవాలని నిర్ణయించుకున్నారు. అయితే, తన తండ్రి అదే మహిళ కుమార్తెతో ప్రేమలో ఉన్నాడని తెలుసుకున్నప్పుడు వారి జీవితాలు మరింత క్లిష్టంగా మారతాయి."
+    },
+    "genres": [
+      "Drama",
+      "Romance"
+    ],
+    "year": 1975,
+    "runtime": 144,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 7.857,
+    "studio": "Kalakendra Movies",
+    "language": "Tamil",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 0,
+    "popularityScore": 0,
+    "universe": null
+  },
+  {
+    "slug": "soorarai-pottru-2020",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/5uimlxPCgAei8JfQUDFEUQLoyyh.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/tZDdwUFL9OLhx2AhSMjKsg4abNb.jpg",
+    "title": {
+      "en": "Soorarai Pottru",
+      "te": "Soorarai Pottru"
+    },
+    "description": {
+      "en": "Nedumaaran Rajangam \"Maara\" sets out to make the common man fly and in the process takes on the world's most capital intensive industry and several enemies who stand in his way.",
+      "te": "నెడుమారన్ రాజాంగం \"మారా\" సామాన్యుడిని ఎగరడానికి బయలుదేరింది మరియు ఈ ప్రక్రియలో ప్రపంచంలోని అత్యంత పెట్టుబడిదారీ పరిశ్రమను మరియు అతని మార్గంలో నిలబడే అనేక మంది శత్రువులను తీసుకుంటుంది."
+    },
+    "genres": [
+      "Drama",
+      "Action"
+    ],
+    "year": 2020,
+    "runtime": 149,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 7.806,
+    "studio": "2D Entertainment",
+    "language": "Tamil",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 0,
+    "popularityScore": 0,
+    "universe": null
+  },
+  {
+    "slug": "quotation-gang-part-1-2024",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/rPKCt1gX8Yk33AuD9d95pmgbjvd.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/jK4h2zQPtZvSaNGiGVaXX6tPSNg.jpg",
+    "title": {
+      "en": "Quotation Gang Part 1",
+      "te": "Quotation Gang Part 1"
+    },
+    "description": {
+      "en": "In the forests of Mumbai, Mustafa leads a ruthless contract killing gang with strict principles. His wife Padma is calm and silent, while Shakunthala, a brave gang member, saves a teenager named Iraa from drug peddlers. Shakunthala’s adopted sister Seerat returns from Kashmir with her lover Rubina after avenging a molestation. As Mustafa’s gang members are mysteriously killed, he invites all contract killers for a feast, leading to a bloody attack. The story unfolds with a shocking twist revealing the mastermind behind the gang attack, inspired by true events.",
+      "te": "ముంబై అడవులలో, ముస్తఫా కఠినమైన సూత్రాలతో క్రూరమైన కాంట్రాక్ట్ హత్యల ముఠాకు నాయకత్వం వహిస్తాడు. అతని భార్య పద్మ ప్రశాంతంగా మరియు మౌనంగా ఉంటుంది, అయితే శకుంతల, ధైర్యమైన ముఠా సభ్యుడు, ఇరా అనే యువకుడిని డ్రగ్ పెడ్లర్ల నుండి కాపాడుతుంది. శకుంతల పెంపుడు సోదరి సీరత్ వేధింపులకు ప్రతీకారం తీర్చుకుని తన ప్రేమికుడు రుబీనాతో కలిసి కాశ్మీర్ నుండి తిరిగి వస్తుంది. ముస్తఫా ముఠా సభ్యులు రహస్యంగా చంపబడినందున, అతను కాంట్రాక్ట్ కిల్లర్‌లందరినీ విందుకు ఆహ్వానిస్తాడు, ఇది రక్తపాత దాడికి దారితీసింది. నిజమైన సంఘటనల నుండి ప్రేరణ పొందిన ముఠా దాడి వెనుక ఉన్న సూత్రధారిని బహిర్గతం చేసే షాకింగ్ ట్విస్ట్‌తో కథ సాగుతుంది."
+    },
+    "genres": [
+      "Crime",
+      "Thriller",
+      "Action"
+    ],
+    "year": 2024,
+    "runtime": 118,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 7,
+    "studio": "Filminati Entertainment",
+    "language": "Tamil",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 0,
+    "popularityScore": 0,
+    "universe": null
+  },
+  {
+    "slug": "vishwanath-sons-2026",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/pjhMuXD5LzjaCmOeKe31S4cYd1O.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/gwjl5ZaW15ZcXPowkYoiDZXGZtH.jpg",
+    "title": {
+      "en": "Vishwanath & Sons",
+      "te": "Vishwanath & Sons"
+    },
+    "description": {
+      "en": "Sanjay Vishwanath is an acclaimed professional handgunner in his 40s with a major stake in fame and wealth. When he comes across a woman named Maddy in her 20s, their dynamic poses many issues that they must come to terms with.",
+      "te": "సంజయ్ విశ్వనాథ్ తన 40 ఏళ్లలో కీర్తి మరియు సంపదలో ప్రధాన వాటాతో ప్రశంసలు పొందిన ప్రొఫెషనల్ హ్యాండ్‌గన్నర్. అతను తన 20 ఏళ్ళలో మ్యాడీ అనే స్త్రీని చూసినప్పుడు, వారి డైనమిక్ అనేక సమస్యలను ఎదుర్కుంటుంది, వాటిని తప్పనిసరిగా పరిష్కరించుకోవాలి."
+    },
+    "genres": [
+      "Family",
+      "Drama",
+      "Romance"
+    ],
+    "year": 2026,
+    "runtime": 120,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 7,
+    "studio": "Sithara Entertainments",
+    "language": "Tamil",
+    "country": "IN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 0,
+    "popularityScore": 0,
+    "universe": null
+  },
+  {
+    "slug": "obsession-2026",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/6X4qFYBsG3bpWDG2XIKqr04kFJa.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/rZfmzpixLKLR3Hg2u0WgC7XLFl8.jpg",
+    "title": {
+      "en": "Obsession",
+      "te": "Obsession"
+    },
+    "description": {
+      "en": "After breaking the mysterious \"One Wish Willow\" to win his crush's heart, a hopeless romantic finds himself getting exactly what he asked for but soon discovers that some desires come at a dark, sinister price.",
+      "te": "తన క్రష్ హృదయాన్ని గెలుచుకోవడానికి రహస్యమైన \"వన్ విష్ విల్లో\"ని బద్దలు కొట్టిన తర్వాత, నిస్సహాయుడైన శృంగారభరితుడు తాను కోరినది సరిగ్గా పొందుతున్నట్లు కనుగొంటాడు, అయితే కొన్ని కోరికలు చీకటి, చెడు ధరకు వస్తాయని త్వరలోనే తెలుసుకుంటాడు."
+    },
+    "genres": [
+      "Horror"
+    ],
+    "year": 2026,
+    "runtime": 108,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 7.917,
+    "studio": "Tea Shop Productions",
+    "language": "English",
+    "country": "US",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 59,
+    "popularityScore": 119,
+    "universe": null
+  },
+  {
+    "slug": "lee-cronin-s-the-mummy-2026",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/1q308iixueCU4pFtSYugNOevtNx.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/xugEpZk9YQ0DIz1aFvH5HGkqpZK.jpg",
+    "title": {
+      "en": "Lee Cronin's The Mummy",
+      "te": "Lee Cronin's The Mummy"
+    },
+    "description": {
+      "en": "The young daughter of a journalist disappears into the desert without a trace—eight years later, the broken family is shocked when she is returned to them, as what should be a joyful reunion turns into a living nightmare.",
+      "te": "ఒక జర్నలిస్ట్ యొక్క చిన్న కుమార్తె ఒక జాడ లేకుండా ఎడారిలో అదృశ్యమవుతుంది-ఎనిమిదేళ్ల తర్వాత, విరిగిన కుటుంబం ఆమె తిరిగి వచ్చినప్పుడు షాక్ అయ్యింది, సంతోషకరమైన పునఃకలయిక సజీవమైన పీడకలగా మారుతుంది."
+    },
+    "genres": [
+      "Horror",
+      "Thriller"
+    ],
+    "year": 2026,
+    "runtime": 133,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 8.058,
+    "studio": "Atomic Monster",
+    "language": "English",
+    "country": "IE",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 49,
+    "popularityScore": 99,
+    "universe": null
+  },
+  {
+    "slug": "tom-clancy-s-jack-ryan-ghost-war-2026",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/8ehYxUh5MWE41AeE9gkHE8DKzvB.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/dd31qJxOarrHyGZwYsCzOjobQzP.jpg",
+    "title": {
+      "en": "Tom Clancy's Jack Ryan: Ghost War",
+      "te": "Tom Clancy's Jack Ryan: Ghost War"
+    },
+    "description": {
+      "en": "Jack Ryan is reluctantly pulled back into espionage when an international covert mission unravels a deadly conspiracy. Racing against time, he joins CIA allies Mike November & James Greer and sharp MI6 officer Emma Marlowe to battle a rogue black-ops unit in a high-stakes, deeply personal fight.",
+      "te": "ఒక అంతర్జాతీయ రహస్య మిషన్ ఒక ఘోరమైన కుట్రను విప్పినప్పుడు జాక్ ర్యాన్ అయిష్టంగానే గూఢచర్యంలోకి లాగబడతాడు. సమయానికి వ్యతిరేకంగా పరుగెత్తుతూ, అతను CIA మిత్రులైన మైక్ నవంబర్ & జేమ్స్ గ్రీర్ మరియు పదునైన MI6 అధికారి ఎమ్మా మార్లోతో కలిసి ఒక రోగ్ బ్లాక్-ఆప్స్ యూనిట్‌తో అధిక-పనులు, లోతైన వ్యక్తిగత పోరాటంలో పోరాడాడు."
+    },
+    "genres": [
+      "Action"
+    ],
+    "year": 2026,
+    "runtime": 107,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 7.134,
+    "studio": "Sunday Night Productions",
+    "language": "English",
+    "country": "US",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 30,
+    "popularityScore": 60,
+    "universe": null
+  },
+  {
+    "slug": "backrooms-2026",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/rhGx6E3qRNMgj3i5su2oukNHwIQ.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/mCpwRayjXMFzKHbjbzc5JRKfq1O.jpg",
+    "title": {
+      "en": "Backrooms",
+      "te": "Backrooms"
+    },
+    "description": {
+      "en": "A strange doorway appears in the basement of a furniture showroom.",
+      "te": "ఫర్నిచర్ షోరూమ్ యొక్క నేలమాళిగలో ఒక వింత తలుపు కనిపిస్తుంది."
+    },
+    "genres": [
+      "Horror",
+      "Thriller",
+      "Sci-Fi"
+    ],
+    "year": 2026,
+    "runtime": 111,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 6.687,
+    "studio": "Atomic Monster",
+    "language": "English",
+    "country": "US",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 30,
+    "popularityScore": 60,
+    "universe": null
+  },
+  {
+    "slug": "the-punisher-one-last-kill-2026",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/qQclTgLMDvGBuUBFGHRipxkEwWR.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/qO55CD8tgVL1T4WKn6zYFFiD6lL.jpg",
+    "title": {
+      "en": "The Punisher: One Last Kill",
+      "te": "The Punisher: One Last Kill"
+    },
+    "description": {
+      "en": "As Frank Castle searches for meaning beyond revenge, an unexpected force pulls him back into the fight.",
+      "te": "ఫ్రాంక్ కాజిల్ ప్రతీకారానికి మించిన అర్థం కోసం వెతుకుతున్నప్పుడు, ఊహించని శక్తి అతన్ని తిరిగి పోరాటంలోకి లాగుతుంది."
+    },
+    "genres": [
+      "Action",
+      "Drama",
+      "Crime"
+    ],
+    "year": 2026,
+    "runtime": 51,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 8.364,
+    "studio": "Marvel Studios",
+    "language": "English",
+    "country": "US",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 28,
+    "popularityScore": 55,
+    "universe": null
+  },
+  {
+    "slug": "project-hail-mary-2026",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/yihdXomYb5kTeSivtFndMy5iDmf.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/2I1OFQJ0L9T0dpU6FobKFWV2PxX.jpg",
+    "title": {
+      "en": "Project Hail Mary",
+      "te": "Project Hail Mary"
+    },
+    "description": {
+      "en": "Science teacher Ryland Grace wakes up on a spaceship light years from home with no recollection of who he is or how he got there. As his memory returns, he begins to uncover his mission: solve the riddle of the mysterious substance causing the sun to die out. He must call on his scientific knowledge and unorthodox ideas to save everything on Earth from extinction.",
+      "te": "సైన్స్ టీచర్ రైలాండ్ గ్రేస్ ఇంటి నుండి ఒక స్పేస్‌షిప్ కాంతి సంవత్సరాలలో మేల్కొంటాడు, అతను ఎవరో లేదా అతను ఎలా వచ్చాడో గుర్తుకు రాలేదు. అతని జ్ఞాపకశక్తి తిరిగి వచ్చినప్పుడు, అతను తన మిషన్‌ను వెలికి తీయడం ప్రారంభిస్తాడు: సూర్యుడు చనిపోయేలా చేసే మర్మమైన పదార్ధం యొక్క చిక్కును పరిష్కరించడం. భూమిపై ఉన్న ప్రతిదీ అంతరించిపోకుండా కాపాడటానికి అతను తన శాస్త్రీయ జ్ఞానం మరియు అసాధారణమైన ఆలోచనలను తప్పనిసరిగా పిలవాలి."
+    },
+    "genres": [
+      "Sci-Fi",
+      "Adventure"
+    ],
+    "year": 2026,
+    "runtime": 157,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 8.65,
+    "studio": "Lord Miller",
+    "language": "English",
+    "country": "US",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 26,
+    "popularityScore": 53,
+    "universe": null
+  },
+  {
+    "slug": "the-super-mario-galaxy-movie-2026",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/eJGWx219ZcEMVQJhAgMiqo8tYY.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/9Z2uDYXqJrlmePznQQJhL6d92Rq.jpg",
+    "title": {
+      "en": "The Super Mario Galaxy Movie",
+      "te": "The Super Mario Galaxy Movie"
+    },
+    "description": {
+      "en": "Having thwarted Bowser's previous plot to marry Princess Peach, Mario and Luigi now face a fresh threat in Bowser Jr., who is determined to liberate his father from captivity and restore the family legacy. Alongside companions new and old, the brothers travel across the stars to stop the young heir's crusade.",
+      "te": "ప్రిన్సెస్ పీచ్‌ని వివాహం చేసుకోవడానికి బౌసర్ యొక్క మునుపటి పన్నాగాన్ని అడ్డుకోవడంతో, మారియో మరియు లుయిగి ఇప్పుడు బౌసర్ జూనియర్‌లో తాజా ముప్పును ఎదుర్కొంటున్నారు, అతను తన తండ్రిని చెర నుండి విడిపించి కుటుంబ వారసత్వాన్ని పునరుద్ధరించాలని నిశ్చయించుకున్నాడు. కొత్త మరియు పాత సహచరులతో పాటు, యువ వారసుడి క్రూసేడ్‌ను ఆపడానికి సోదరులు నక్షత్రాల మీదుగా ప్రయాణిస్తారు."
+    },
+    "genres": [
+      "Family",
+      "Comedy",
+      "Adventure",
+      "Fantasy"
+    ],
+    "year": 2026,
+    "runtime": 98,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 8.106,
+    "studio": "Illumination",
+    "language": "English",
+    "country": "US",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 25,
+    "popularityScore": 49,
+    "universe": null
+  },
+  {
+    "slug": "swapped-2026",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/tHhxWxge06goXU6ZQH1hj7vK8Hd.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/zMwhWailP1WY7sb6AoE6b8ugoy.jpg",
+    "title": {
+      "en": "Swapped",
+      "te": "Swapped"
+    },
+    "description": {
+      "en": "A small woodland creature and a majestic bird, two natural sworn enemies of the Valley, magically trade places and set off on an adventure of a lifetime to switch back. Their journey soon uncovers a greater threat—one that could endanger not only their species, but the entire valley they call home.",
+      "te": "ఒక చిన్న అటవీప్రాంత జీవి మరియు గంభీరమైన పక్షి, లోయ యొక్క రెండు సహజ ప్రమాణ శత్రువులు, అద్భుతంగా స్థలాలను వర్తకం చేస్తారు మరియు తిరిగి మారడానికి జీవితకాల సాహస యాత్రకు బయలుదేరారు. వారి ప్రయాణం త్వరలో ఒక గొప్ప ముప్పును వెలికితీస్తుంది-ఇది వారి జాతికి మాత్రమే కాకుండా, వారు ఇంటికి పిలిచే మొత్తం లోయకు కూడా ప్రమాదం కలిగిస్తుంది."
+    },
+    "genres": [
+      "Adventure",
+      "Family",
+      "Fantasy"
+    ],
+    "year": 2026,
+    "runtime": 102,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 8.974,
+    "studio": "Skydance Animation",
+    "language": "English",
+    "country": "US",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 23,
+    "popularityScore": 46,
+    "universe": null
+  },
+  {
+    "slug": "the-matrix-1999",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/aOIuZAjPaRIE6CMzbazvcHuHXDc.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/tlm8UkiQsitc8rSuIAscQDCnP8d.jpg",
+    "title": {
+      "en": "The Matrix",
+      "te": "The Matrix"
+    },
+    "description": {
+      "en": "Set in the 22nd century, The Matrix tells the story of a computer hacker who joins a group of underground insurgents fighting the vast and powerful computers who now rule the earth.",
+      "te": "22వ శతాబ్దానికి సంబంధించి, ది మ్యాట్రిక్స్ ఇప్పుడు భూమిని పరిపాలిస్తున్న విస్తారమైన మరియు శక్తివంతమైన కంప్యూటర్‌లతో పోరాడుతున్న భూగర్భ తిరుగుబాటుదారుల సమూహంలో చేరిన కంప్యూటర్ హ్యాకర్ కథను చెబుతుంది."
+    },
+    "genres": [
+      "Action",
+      "Sci-Fi"
+    ],
+    "year": 1999,
+    "runtime": 136,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 8.247,
+    "studio": "Village Roadshow Pictures",
+    "language": "English",
+    "country": "US",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 20,
+    "popularityScore": 41,
+    "universe": null
+  },
+  {
+    "slug": "iron-lung-2026",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/sIwakdbMGS1krtgendTWpxTY9Hw.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/gqGQ0zADV5FIcgMWtWX8FcGQjFp.jpg",
+    "title": {
+      "en": "Iron Lung",
+      "te": "Iron Lung"
+    },
+    "description": {
+      "en": "In a post-apocalyptic future where an event known as \"The Quiet Rapture\" caused all known stars and habitable planets in the universe to disappear, a convict is sent to search an ocean of blood discovered on a desolate moon, using a small submarine nicknamed the \"Iron Lung\".",
+      "te": "\"ది క్వైట్ ర్యాప్చర్\" అని పిలవబడే ఒక సంఘటన విశ్వంలోని అన్ని తెలిసిన నక్షత్రాలు మరియు నివాసయోగ్యమైన గ్రహాలు అదృశ్యం కావడానికి కారణమైన అపోకలిప్టిక్ అనంతర భవిష్యత్తులో, \"ఐరన్ లంగ్\" అనే మారుపేరుతో చిన్న జలాంతర్గామిని ఉపయోగించి నిర్జనమైన చంద్రునిపై కనుగొనబడిన రక్త సముద్రాన్ని వెతకడానికి ఒక దోషి పంపబడతాడు."
+    },
+    "genres": [
+      "Horror",
+      "Thriller",
+      "Sci-Fi"
+    ],
+    "year": 2026,
+    "runtime": 125,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 7.164,
+    "studio": "Markiplier Studios",
+    "language": "English",
+    "country": "US",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 15,
+    "popularityScore": 30,
+    "universe": null
+  },
+  {
+    "slug": "graphic-desires-2023",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/3BjLdTWRiHc1ISIZMFvToOmghOM.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/rHnANzYUmV3WZw3n0yWOLiR3pen.jpg",
+    "title": {
+      "en": "Graphic Desires",
+      "te": "Graphic Desires"
+    },
+    "description": {
+      "en": "When reclusive Franklin cheats on his partner with a mysterious girl he meets on a dating app, it becomes the start of a deadly obsession.",
+      "te": "ఏకాంత ఫ్రాంక్లిన్ డేటింగ్ యాప్‌లో కలుసుకున్న ఒక రహస్యమైన అమ్మాయితో తన భాగస్వామిని మోసం చేసినప్పుడు, అది ఘోరమైన వ్యామోహానికి నాంది అవుతుంది."
+    },
+    "genres": [
+      "Crime"
+    ],
+    "year": 2023,
+    "runtime": 90,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 6.951,
+    "studio": "Paranoid Android Films",
+    "language": "English",
+    "country": "GB",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 15,
+    "popularityScore": 29,
+    "universe": null
+  },
+  {
+    "slug": "avatar-fire-and-ash-2025",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/aabwWZWx6z1aYP4PX2ADvbDKktd.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/iN41Ccw4DctL8npfmYg1j5Tr1eb.jpg",
+    "title": {
+      "en": "Avatar: Fire and Ash",
+      "te": "Avatar: Fire and Ash"
+    },
+    "description": {
+      "en": "In the wake of the devastating war against the RDA and the loss of their eldest son, Jake Sully and Neytiri face a new threat on Pandora: the Ash People, a violent and power-hungry Na'vi tribe led by the ruthless Varang. Jake's family must fight for their survival and the future of Pandora in a conflict that pushes them to their emotional and physical limits.",
+      "te": "RDAకి వ్యతిరేకంగా జరిగిన వినాశకరమైన యుద్ధం మరియు వారి పెద్ద కొడుకును కోల్పోయిన నేపథ్యంలో, జేక్ సుల్లీ మరియు నెయిటిరి పండోరపై కొత్త ముప్పును ఎదుర్కొన్నారు: యాష్ పీపుల్, క్రూరమైన వరంగ్ నేతృత్వంలోని హింసాత్మక మరియు అధికార-ఆకలితో ఉన్న నావి తెగ. జేక్ కుటుంబం వారి మనుగడ కోసం మరియు పండోర భవిష్యత్తు కోసం పోరాడాలి, అది వారిని వారి మానసిక మరియు శారీరక పరిమితులకు నెట్టివేస్తుంది."
+    },
+    "genres": [
+      "Sci-Fi",
+      "Adventure",
+      "Fantasy"
+    ],
+    "year": 2025,
+    "runtime": 198,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 7.544,
+    "studio": "20th Century Studios",
+    "language": "English",
+    "country": "US",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 15,
+    "popularityScore": 29,
+    "universe": null
+  },
+  {
+    "slug": "the-mandalorian-and-grogu-2026",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/5Vi8dSauVwH1HOsiZceDMbRr1Ca.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/6zg7A9ICOthNR2TSXlT51KvXrsA.jpg",
+    "title": {
+      "en": "The Mandalorian and Grogu",
+      "te": "The Mandalorian and Grogu"
+    },
+    "description": {
+      "en": "The evil Empire has fallen, and Imperial warlords remain scattered throughout the galaxy. As the fledgling New Republic works to protect everything the Rebellion fought for, they have enlisted the help of legendary Mandalorian bounty hunter Din Djarin and his young apprentice Grogu.",
+      "te": "దుష్ట సామ్రాజ్యం పడిపోయింది మరియు ఇంపీరియల్ యుద్దవీరులు గెలాక్సీ అంతటా చెల్లాచెదురుగా ఉన్నారు. తిరుగుబాటు కోసం పోరాడిన ప్రతిదానిని రక్షించడానికి కొత్త రిపబ్లిక్ పని చేస్తున్నప్పుడు, వారు దిగ్గజ మాండలోరియన్ బౌంటీ హంటర్ దిన్ జారిన్ మరియు అతని యువ అప్రెంటిస్ గ్రోగుల సహాయాన్ని పొందారు."
+    },
+    "genres": [
+      "Action",
+      "Adventure",
+      "Sci-Fi"
+    ],
+    "year": 2026,
+    "runtime": 132,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 6.843,
+    "studio": "Lucasfilm Ltd.",
+    "language": "English",
+    "country": "US",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 14,
+    "popularityScore": 29,
+    "universe": null
+  },
+  {
+    "slug": "nymphomaniac-vol-ii-2014",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/iLUNqgNKuWn667kXCKztSxYbT3k.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/5n417Ff5GXOGCOKj3ZLMRAxEP0o.jpg",
+    "title": {
+      "en": "Nymphomaniac: Vol. II",
+      "te": "Nymphomaniac: Vol. II"
+    },
+    "description": {
+      "en": "The continuation of Joe's sexually dictated life delves into the darker aspects of her adult life and what led to her being in Seligman's care.",
+      "te": "జో యొక్క లైంగిక నిర్దేశిత జీవితం యొక్క కొనసాగింపు ఆమె వయోజన జీవితంలోని చీకటి కోణాలను పరిశీలిస్తుంది మరియు ఆమె సెలిగ్మాన్ సంరక్షణలో ఉండటానికి దారితీసింది."
+    },
+    "genres": [
+      "Drama",
+      "Thriller"
+    ],
+    "year": 2014,
+    "runtime": 124,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 6.712,
+    "studio": "Zentropa Entertainments",
+    "language": "English",
+    "country": "DK",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 14,
+    "popularityScore": 28,
+    "universe": null
+  },
+  {
+    "slug": "mortal-kombat-ii-2026",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/lIsMeDbwntNXSUVHmWMMRXEZOVc.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/4EAAwpylq313qrDqpCxulUrXBNF.jpg",
+    "title": {
+      "en": "Mortal Kombat II",
+      "te": "Mortal Kombat II"
+    },
+    "description": {
+      "en": "The fan favorite champions—now joined by Johnny Cage himself—are pitted against one another in the ultimate, no-holds barred, gory battle to defeat the dark rule of Shao Kahn that threatens the very existence of the Earthrealm and its defenders.",
+      "te": "అభిమానుల అభిమాన ఛాంపియన్‌లు-ఇప్పుడు జానీ కేజ్ స్వయంగా చేరారు-ఎర్త్‌రీల్మ్ మరియు దాని రక్షకుల ఉనికికి ముప్పు కలిగించే షావో కాన్ యొక్క చీకటి పాలనను ఓడించడానికి అంతిమ, ఎటువంటి నిషేధం లేని, ఘోరమైన యుద్ధంలో ఒకరితో ఒకరు పోటీపడ్డారు."
+    },
+    "genres": [
+      "Action",
+      "Fantasy",
+      "Adventure"
+    ],
+    "year": 2026,
+    "runtime": 116,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 6.732,
+    "studio": "New Line Cinema",
+    "language": "English",
+    "country": "US",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 14,
+    "popularityScore": 27,
+    "universe": null
+  },
+  {
+    "slug": "the-devil-wears-prada-2006",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/8912AsVuS7Sj915apArUFbv6F9L.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/gkh6Nt8DtY1XT4gQsyFq9XAVJlJ.jpg",
+    "title": {
+      "en": "The Devil Wears Prada",
+      "te": "The Devil Wears Prada"
+    },
+    "description": {
+      "en": "A young woman from the Midwest gets more than she bargained for when she moves to New York to become a writer and ends up as the assistant to the tyrannical, larger-than-life editor-in-chief of a major fashion magazine.",
+      "te": "మిడ్‌వెస్ట్‌కు చెందిన ఒక యువతి రచయితగా మారడానికి న్యూయార్క్‌కు వెళ్లి, ఒక ప్రధాన ఫ్యాషన్ మ్యాగజైన్ యొక్క నిరంకుశ, పెద్ద-జీవితం ఎడిటర్-ఇన్-చీఫ్‌కి అసిస్టెంట్‌గా ఉన్నప్పుడు ఆమె బేరం కంటే ఎక్కువ పొందుతుంది."
+    },
+    "genres": [
+      "Drama",
+      "Comedy"
+    ],
+    "year": 2006,
+    "runtime": 109,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 7.427,
+    "studio": "Fox 2000 Pictures",
+    "language": "English",
+    "country": "US",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 13,
+    "popularityScore": 26,
+    "universe": null
+  },
+  {
+    "slug": "over-your-dead-body-2026",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/6yPvopLmtoyxzJt6Cr0BRyFxtrd.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/sb76azrAXr9U13uEQxNP5e3fujY.jpg",
+    "title": {
+      "en": "Over Your Dead Body",
+      "te": "Over Your Dead Body"
+    },
+    "description": {
+      "en": "A dysfunctional couple head to a remote cabin to \"reconnect\", but each has secret intentions to kill the other.",
+      "te": "పనిచేయని జంట \"మళ్లీ కనెక్ట్\" చేయడానికి రిమోట్ క్యాబిన్‌కు వెళతారు, కానీ ప్రతి ఒక్కరికి ఒకరినొకరు చంపాలనే రహస్య ఉద్దేశాలు ఉంటాయి."
+    },
+    "genres": [
+      "Action",
+      "Comedy"
+    ],
+    "year": 2026,
+    "runtime": 106,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 6.8,
+    "studio": "87North Productions",
+    "language": "English",
+    "country": "US",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 13,
+    "popularityScore": 25,
+    "universe": null
+  },
+  {
+    "slug": "mortal-kombat-2021",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/ybrX94xQm8lXYpZAPRmwD9iIbWP.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/6ELCZlTA5lGUops70hKdB83WJxH.jpg",
+    "title": {
+      "en": "Mortal Kombat",
+      "te": "Mortal Kombat"
+    },
+    "description": {
+      "en": "Washed-up MMA fighter Cole Young, unaware of his heritage, and hunted by Emperor Shang Tsung's best warrior, Sub-Zero, seeks out and trains with Earth's greatest champions as he prepares to stand against the enemies of Outworld in a high stakes battle for the universe.",
+      "te": "కొట్టుకుపోయిన MMA ఫైటర్ కోల్ యంగ్, అతని వారసత్వం గురించి తెలియక, మరియు చక్రవర్తి షాంగ్ త్సంగ్ యొక్క ఉత్తమ యోధుడు, సబ్-జీరోచే వేటాడబడ్డాడు, అతను విశ్వం కోసం అధిక వాటాల యుద్ధంలో అవుట్‌వరల్డ్ శత్రువులకు వ్యతిరేకంగా నిలబడటానికి సిద్ధమవుతున్నప్పుడు భూమి యొక్క గొప్ప ఛాంపియన్‌లను వెతుకుతాడు మరియు శిక్షణ ఇస్తాడు."
+    },
+    "genres": [
+      "Action",
+      "Fantasy",
+      "Adventure"
+    ],
+    "year": 2021,
+    "runtime": 110,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 7.037,
+    "studio": "Atomic Monster",
+    "language": "English",
+    "country": "AU",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 13,
+    "popularityScore": 25,
+    "universe": null
+  },
+  {
+    "slug": "hoppers-2026",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/xjtWQ2CL1mpmMNwuU5HeS4Iuwuu.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/u53UYu5XG2hNgWGvs3xGhAVzypl.jpg",
+    "title": {
+      "en": "Hoppers",
+      "te": "Hoppers"
+    },
+    "description": {
+      "en": "Scientists have discovered how to 'hop' human consciousness into lifelike robotic animals, allowing people to communicate with animals as animals. Animal lover Mabel seizes an opportunity to use the technology, uncovering mysteries within the animal world beyond anything she could have imagined.",
+      "te": "మానవ స్పృహను జీవసంబంధమైన రోబోటిక్ జంతువులలోకి ఎలా 'హాప్' చేయాలో శాస్త్రవేత్తలు కనుగొన్నారు, జంతువులతో జంతువులతో కమ్యూనికేట్ చేయడానికి ప్రజలను అనుమతిస్తుంది. జంతు ప్రేమికుడు మాబెల్ సాంకేతిక పరిజ్ఞానాన్ని ఉపయోగించుకునే అవకాశాన్ని చేజిక్కించుకుంది, జంతు ప్రపంచంలోని రహస్యాలను ఆమె ఊహించిన దానికంటే ఎక్కువగా వెలికితీసింది."
+    },
+    "genres": [
+      "Adventure",
+      "Comedy",
+      "Family",
+      "Sci-Fi"
+    ],
+    "year": 2026,
+    "runtime": 104,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 8.2,
+    "studio": "Pixar",
+    "language": "English",
+    "country": "US",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 12,
+    "popularityScore": 24,
+    "universe": null
+  },
+  {
+    "slug": "damage-1992",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/alf3JOPP7EYP0iO24gwe5YfRnqo.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/krhj4Fhb0G3QCmyBtEADxgFFmRX.jpg",
+    "title": {
+      "en": "Damage",
+      "te": "Damage"
+    },
+    "description": {
+      "en": "The life of a respected British politician at the height of his career crumbles when he becomes obsessed with his son's lover.",
+      "te": "తన కెరీర్‌లో ఉచ్ఛస్థితిలో ఉన్న గౌరవనీయమైన బ్రిటీష్ రాజకీయ నాయకుడి జీవితం అతను తన కొడుకు ప్రేమికుడితో నిమగ్నమైనప్పుడు కూలిపోతుంది."
+    },
+    "genres": [
+      "Drama",
+      "Romance"
+    ],
+    "year": 1992,
+    "runtime": 111,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 6.555,
+    "studio": "Skreba Films",
+    "language": "English",
+    "country": "GB",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 12,
+    "popularityScore": 24,
+    "universe": null
+  },
+  {
+    "slug": "infiltrate-2026",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/8Cw8GF9wG63kF8pRRXwOx2kXGt.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/cfDHxkco8RrslL0Vk2XPTwTVFCe.jpg",
+    "title": {
+      "en": "Infiltrate",
+      "te": "Infiltrate"
+    },
+    "description": {
+      "en": "In a city overrun by crime, government Agent Lily Chen is forced to choose between her duty and her family when her husband is kidnapped, and she’s blackmailed into assassinating high-level criminals to save him. As she delves deeper into the criminal underworld, Lily’s relentless pursuit of justice unravels a web of corruption, leading to a final, life-altering decision that will change her world forever.",
+      "te": "నేరాలతో నిండిన నగరంలో, ప్రభుత్వ ఏజెంట్ లిల్లీ చెన్ తన భర్త కిడ్నాప్ చేయబడినప్పుడు తన డ్యూటీ మరియు ఆమె కుటుంబానికి మధ్య ఎంచుకోవలసి వస్తుంది మరియు అతన్ని రక్షించడానికి ఉన్నత స్థాయి నేరస్థులను హత్య చేసేలా బ్లాక్ మెయిల్ చేయబడింది. ఆమె క్రిమినల్ అండర్‌వరల్డ్‌లో లోతుగా పరిశోధిస్తున్నప్పుడు, లిల్లీ యొక్క కనికరంలేని న్యాయం యొక్క వెంబడించడం అవినీతి యొక్క వెబ్‌ను విప్పుతుంది, ఇది ఆమె ప్రపంచాన్ని శాశ్వతంగా మార్చే తుది, జీవితాన్ని మార్చే నిర్ణయానికి దారి తీస్తుంది."
+    },
+    "genres": [
+      "Action"
+    ],
+    "year": 2026,
+    "runtime": 93,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 5.2,
+    "studio": "Kemodo Entertainment",
+    "language": "English",
+    "country": "CA",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 11,
+    "popularityScore": 21,
+    "universe": null
+  },
+  {
+    "slug": "apex-2026",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/eTp7gSPkSF3Aw79mNx1NkBP1PZT.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/oTE4lNs4PSG5iIWjqaTdCIFJ4Bs.jpg",
+    "title": {
+      "en": "Apex",
+      "te": "Apex"
+    },
+    "description": {
+      "en": "A grieving woman pushing her limits on a solo adventure in the Australian wild is ensnared in a twisted game with a cunning killer who thinks she's prey.",
+      "te": "ఆస్ట్రేలియన్ అడవిలో ఒంటరి సాహసయాత్రలో తన పరిమితులను పెంచుకుంటూ దుఃఖంతో ఉన్న స్త్రీ, ఆమె వేటగా భావించే ఒక మోసపూరిత కిల్లర్‌తో ఒక వక్రీకృత గేమ్‌లో చిక్కుకుంది."
+    },
+    "genres": [
+      "Action"
+    ],
+    "year": 2026,
+    "runtime": 96,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 6.736,
+    "studio": "Chernin Entertainment",
+    "language": "English",
+    "country": "US",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 10,
+    "popularityScore": 21,
+    "universe": null
+  },
+  {
+    "slug": "goat-2026",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/wfuqMlaExcoYiUEvKfVpUTt1v4u.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/tq3h43fZy0H80vzf47MAY7R9Mxo.jpg",
+    "title": {
+      "en": "GOAT",
+      "te": "GOAT"
+    },
+    "description": {
+      "en": "A small goat with big dreams gets a once-in-a-lifetime shot to join the pros and play roarball, a high-intensity, co-ed, full-contact sport dominated by the fastest, fiercest animals in the world.",
+      "te": "ప్రపంచంలోని అత్యంత వేగవంతమైన, భయంకరమైన జంతువులు ఆధిపత్యం చెలాయించే అధిక-తీవ్రత, సహ-సంప్రదింపు, పూర్తి-సంపర్క క్రీడ, గొప్ప కలలు కనే ఒక చిన్న మేకకు జీవితంలో ఒక్కసారైనా, ప్రోస్‌లో చేరి రోర్‌బాల్ ఆడవచ్చు."
+    },
+    "genres": [
+      "Comedy",
+      "Family"
+    ],
+    "year": 2026,
+    "runtime": 100,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 8.12,
+    "studio": "Sony Pictures Animation",
+    "language": "English",
+    "country": "US",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 10,
+    "popularityScore": 21,
+    "universe": null
+  },
+  {
+    "slug": "michael-2026",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/3Qud19bBUrrJAzy0Ilm8gRJlJXP.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/xBT0oNq6rsTFv4SxG5uGRIEOrq6.jpg",
+    "title": {
+      "en": "Michael",
+      "te": "Michael"
+    },
+    "description": {
+      "en": "The story of Michael Jackson, one of the most influential artists the world has ever known, and his life beyond the music. His journey from the discovery of his extraordinary talent as the lead of the Jackson Five, to the visionary artist whose creative ambition fueled a relentless pursuit to become the biggest entertainer in the world, highlighting both his life off-stage and some of the most iconic performances from his early solo career.",
+      "te": "ప్రపంచంలోని అత్యంత ప్రభావవంతమైన కళాకారులలో ఒకరైన మైఖేల్ జాక్సన్ మరియు అతని జీవితం సంగీతానికి మించిన కథ. జాక్సన్ ఫైవ్‌కి నాయకుడిగా అతని అసాధారణ ప్రతిభను కనుగొనడం నుండి అతని ప్రయాణం, అతని సృజనాత్మక ఆశయం ప్రపంచంలోనే అతిపెద్ద ఎంటర్‌టైనర్‌గా ఎదగడానికి కనికరంలేని అన్వేషణకు ఆజ్యం పోసింది, అతని జీవితం వేదిక వెలుపల మరియు అతని ప్రారంభ సోలో కెరీర్‌లోని అత్యంత ప్రసిద్ధ ప్రదర్శనలు రెండింటినీ హైలైట్ చేసింది."
+    },
+    "genres": [
+      "Drama"
+    ],
+    "year": 2026,
+    "runtime": 128,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 7.57,
+    "studio": "Lionsgate",
+    "language": "English",
+    "country": "US",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 10,
+    "popularityScore": 20,
+    "universe": null
+  },
+  {
+    "slug": "beast-2026",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/7NrvUI3vnW8H3rD7ExKcTL7KRcQ.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/hlZGaey4lR9hc4rGxZRAmIEsZOc.jpg",
+    "title": {
+      "en": "Beast",
+      "te": "Beast"
+    },
+    "description": {
+      "en": "MMA legend Patton James, now a commercial fisherman, is pulled back into the cage when his brother is in danger. Reuniting with his old coach Sammy, he commits to one final fight in one championship against the brutal champion Xavier Grau.",
+      "te": "MMA లెజెండ్ ప్యాటన్ జేమ్స్, ఇప్పుడు ఒక వాణిజ్య మత్స్యకారుడు, అతని సోదరుడు ప్రమాదంలో ఉన్నప్పుడు తిరిగి బోనులోకి లాగబడ్డాడు. తన పాత కోచ్ సామీతో తిరిగి కలిసి, అతను క్రూరమైన ఛాంపియన్ జేవియర్ గ్రాతో ఒక ఛాంపియన్‌షిప్‌లో ఒక ఫైనల్ పోరుకు పాల్పడ్డాడు."
+    },
+    "genres": [
+      "Action",
+      "Drama"
+    ],
+    "year": 2026,
+    "runtime": 114,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 6.228,
+    "studio": "Broken Open Pictures",
+    "language": "English",
+    "country": "AU",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 8,
+    "popularityScore": 16,
+    "universe": null
+  },
+  {
+    "slug": "zootopia-2-2025",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/oJ7g2CifqpStmoYQyaLQgEU32qO.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/lgotja3xMoJZbynwHfcQcJAEMWH.jpg",
+    "title": {
+      "en": "Zootopia 2",
+      "te": "Zootopia 2"
+    },
+    "description": {
+      "en": "After cracking the biggest case in Zootopia's history, rookie cops Judy Hopps and Nick Wilde find themselves on the twisting trail of a great mystery when Gary De'Snake arrives and turns the animal metropolis upside down. To crack the case, Judy and Nick must go undercover to unexpected new parts of town, where their growing partnership is tested like never before.",
+      "te": "జూటోపియా చరిత్రలో అతిపెద్ద కేసును ఛేదించిన తర్వాత, రూకీ పోలీసులు జూడీ హాప్స్ మరియు నిక్ వైల్డ్ గ్యారీ డి'స్నేక్ వచ్చి జంతు మహానగరాన్ని తలకిందులు చేసినప్పుడు ఒక గొప్ప రహస్యం యొక్క మెలితిప్పిన బాటలో తమను తాము కనుగొంటారు. కేసును ఛేదించడానికి, జూడీ మరియు నిక్ పట్టణంలోని ఊహించని కొత్త ప్రాంతాలకు రహస్యంగా వెళ్లాలి, అక్కడ వారి పెరుగుతున్న భాగస్వామ్యం మునుపెన్నడూ లేని విధంగా పరీక్షించబడుతుంది."
+    },
+    "genres": [
+      "Adventure",
+      "Comedy",
+      "Family",
+      "Thriller"
+    ],
+    "year": 2025,
+    "runtime": 108,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 7.648,
+    "studio": "Walt Disney Animation Studios",
+    "language": "English",
+    "country": "US",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 8,
+    "popularityScore": 16,
+    "universe": null
+  },
+  {
+    "slug": "mortal-game-2025",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/iCvucorbs3hFqWshDbLe0fHzB71.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/hdLsZ3dCjKt5A6xDpoo3UFgcTSm.jpg",
+    "title": {
+      "en": "Mortal Game",
+      "te": "Mortal Game"
+    },
+    "description": {
+      "en": "A group of hunters travel to a mysterious island to track down a legendary forest creature. They soon realize their guide has set them up as bait, forcing them to confront a highly intelligent predator that terrorizes them one by one.",
+      "te": "ఒక పురాణ అటవీ జీవిని వెతకడానికి వేటగాళ్ల బృందం ఒక రహస్య ద్వీపానికి వెళుతుంది. తమ గైడ్ తమను ఎరగా ఏర్పాటు చేశాడని, వారిని ఒక్కొక్కటిగా భయభ్రాంతులకు గురిచేసే అత్యంత తెలివైన ప్రెడేటర్‌ను ఎదుర్కోవలసి వచ్చిందని వారు త్వరలోనే గ్రహిస్తారు."
+    },
+    "genres": [
+      "Horror",
+      "Action"
+    ],
+    "year": 2025,
+    "runtime": 85,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 4.917,
+    "studio": "Scary Pictures",
+    "language": "English",
+    "country": "CA",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 7,
+    "popularityScore": 15,
+    "universe": null
+  },
+  {
+    "slug": "real-steel-2011",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/4GIeI5K5YdDUkR3mNQBoScpSFEf.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/pjlxrd646cBYznHoPBWTzz6FujX.jpg",
+    "title": {
+      "en": "Real Steel",
+      "te": "Real Steel"
+    },
+    "description": {
+      "en": "Charlie Kenton is a washed-up fighter who retired from the ring when robots took over the sport. After his robot is trashed, he reluctantly teams up with his estranged son to rebuild and train an unlikely contender.",
+      "te": "చార్లీ కెంటన్ రోబోలు క్రీడను స్వాధీనం చేసుకున్నప్పుడు రింగ్ నుండి రిటైర్ అయిన వాష్-అప్ ఫైటర్. అతని రోబోట్ ట్రాష్ చేయబడిన తర్వాత, అతను ఇష్టపడని పోటీదారుని పునర్నిర్మించడానికి మరియు శిక్షణ ఇవ్వడానికి అయిష్టంగానే తన విడిపోయిన కొడుకుతో జట్టుకట్టాడు."
+    },
+    "genres": [
+      "Action",
+      "Sci-Fi",
+      "Drama"
+    ],
+    "year": 2011,
+    "runtime": 127,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 7.094,
+    "studio": "DreamWorks Pictures",
+    "language": "English",
+    "country": "US",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 8,
+    "popularityScore": 16,
+    "universe": null
+  },
+  {
+    "slug": "the-shawshank-redemption-1994",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/9cqNxx0GxF0bflZmeSMuL5tnGzr.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/zfbjgQE1uSd9wiPTX4VzsLi0rGG.jpg",
+    "title": {
+      "en": "The Shawshank Redemption",
+      "te": "The Shawshank Redemption"
+    },
+    "description": {
+      "en": "Imprisoned in the 1940s for the double murder of his wife and her lover, upstanding banker Andy Dufresne begins a new life at the Shawshank prison, where he puts his accounting skills to work for an amoral warden. During his long stretch in prison, Dufresne comes to be admired by the other inmates -- including an older prisoner named Red -- for his integrity and unquenchable sense of hope.",
+      "te": "తన భార్య మరియు ఆమె ప్రేమికుడిని డబుల్ హత్య చేసినందుకు 1940లలో ఖైదు చేయబడ్డాడు, ఉన్నతమైన బ్యాంకర్ ఆండీ డుఫ్రెస్నే షావ్‌శాంక్ జైలులో కొత్త జీవితాన్ని ప్రారంభించాడు, అక్కడ అతను తన అకౌంటింగ్ నైపుణ్యాలను అమోరల్ వార్డెన్‌కి పనిలో పెట్టాడు. అతని సుదీర్ఘకాలం జైలులో, డుఫ్రెస్నే ఇతర ఖైదీలచే మెచ్చుకోబడతాడు -- రెడ్ అనే పాత ఖైదీతో సహా -- అతని చిత్తశుద్ధి మరియు అణచివేయలేని ఆశ."
+    },
+    "genres": [
+      "Drama",
+      "Crime"
+    ],
+    "year": 1994,
+    "runtime": 142,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 8.722,
+    "studio": "Castle Rock Entertainment",
+    "language": "English",
+    "country": "US",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 8,
+    "popularityScore": 15,
+    "universe": null
+  },
+  {
+    "slug": "after-we-fell-2021",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/dU4HfnTEJDf9KvxGS9hgO7BVeju.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/mxdiaM2tsx8M6W3zLgiPwAkhQfq.jpg",
+    "title": {
+      "en": "After We Fell",
+      "te": "After We Fell"
+    },
+    "description": {
+      "en": "Just as Tessa's life begins to become unglued, nothing is what she thought it would be. Not her friends nor her family. The only person that she should be able to rely on is Hardin, who is furious when he discovers the massive secret that she's been keeping. Before Tessa makes the biggest decision of her life, everything changes because of revelations about her family.",
+      "te": "టెస్సా జీవితం అతుక్కోవడం ప్రారంభించినట్లే, ఆమె అనుకున్నది ఏమీ లేదు. ఆమె స్నేహితులు లేదా ఆమె కుటుంబం కాదు. హార్డిన్‌పై ఆమె ఆధారపడగలిగే ఏకైక వ్యక్తి, ఆమె దాచిపెట్టిన భారీ రహస్యాన్ని తెలుసుకున్నప్పుడు కోపంతో ఉంటాడు. టెస్సా తన జీవితంలో అతి పెద్ద నిర్ణయం తీసుకునే ముందు, ఆమె కుటుంబం గురించి వెల్లడించిన కారణంగా ప్రతిదీ మారుతుంది."
+    },
+    "genres": [
+      "Drama",
+      "Romance"
+    ],
+    "year": 2021,
+    "runtime": 99,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 7.004,
+    "studio": "Voltage Pictures",
+    "language": "English",
+    "country": "US",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 8,
+    "popularityScore": 16,
+    "universe": null
+  },
+  {
+    "slug": "addicted-2014",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/fAERrD6vvmznDoL99wlgjhSfPcH.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/aqqoDJs8vYp2EZ74aQ1UMY0sjM7.jpg",
+    "title": {
+      "en": "Addicted",
+      "te": "Addicted"
+    },
+    "description": {
+      "en": "A gallerist risks her family and flourishing career when she enters into an affair with a talented painter and slowly loses control of her life.",
+      "te": "ఒక గ్యాలరిస్ట్ ప్రతిభావంతులైన చిత్రకారుడితో ఎఫైర్‌లోకి ప్రవేశించినప్పుడు మరియు నెమ్మదిగా తన జీవితంపై నియంత్రణ కోల్పోయినప్పుడు ఆమె కుటుంబాన్ని మరియు అభివృద్ధి చెందుతున్న వృత్తిని పణంగా పెడుతుంది."
+    },
+    "genres": [
+      "Drama"
+    ],
+    "year": 2014,
+    "runtime": 105,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 5.918,
+    "studio": "Lionsgate",
+    "language": "English",
+    "country": "US",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 8,
+    "popularityScore": 16,
+    "universe": null
+  },
+  {
+    "slug": "interstellar-2014",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/yQvGrMoipbRoddT0ZR8tPoR7NfX.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/2ssWTSVklAEc98frZUQhgtGHx7s.jpg",
+    "title": {
+      "en": "Interstellar",
+      "te": "Interstellar"
+    },
+    "description": {
+      "en": "The adventures of a group of explorers who make use of a newly discovered wormhole to surpass the limitations on human space travel and conquer the vast distances involved in an interstellar voyage.",
+      "te": "మానవ అంతరిక్ష ప్రయాణంలో పరిమితులను అధిగమించడానికి మరియు నక్షత్రాల మధ్య సముద్రయానంలో ఉన్న విస్తారమైన దూరాలను జయించటానికి కొత్తగా కనుగొన్న వార్మ్‌హోల్‌ను ఉపయోగించే అన్వేషకుల బృందం యొక్క సాహసాలు."
+    },
+    "genres": [
+      "Adventure",
+      "Drama",
+      "Sci-Fi"
+    ],
+    "year": 2014,
+    "runtime": 169,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 8.5,
+    "studio": "Legendary Pictures",
+    "language": "English",
+    "country": "US",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 7,
+    "popularityScore": 15,
+    "universe": null
+  },
+  {
+    "slug": "in-the-grey-2026",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/dQgIcW6Th08kMRf2HBoYWoFE6OD.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/bIy0555ukSqweSqG9MtRnoyisQI.jpg",
+    "title": {
+      "en": "In the Grey",
+      "te": "In the Grey"
+    },
+    "description": {
+      "en": "A covert team of elite operatives are living in the shadows. When a ruthless despot steals a billion-dollar fortune, they're sent to take it back—an impossible heist that erupts into a deadly game of strategy, deception and survival.",
+      "te": "ఎలైట్ ఆపరేటివ్‌ల రహస్య బృందం నీడలో నివసిస్తోంది. క్రూరమైన నిరంకుశుడు బిలియన్-డాలర్ల సంపదను దొంగిలించినప్పుడు, దానిని తిరిగి తీసుకోవడానికి వారు పంపబడతారు-అసాధ్యమైన దోపిడీ వ్యూహం, మోసం మరియు మనుగడ యొక్క ఘోరమైన గేమ్‌గా విస్ఫోటనం చెందుతుంది."
+    },
+    "genres": [
+      "Action"
+    ],
+    "year": 2026,
+    "runtime": 98,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 6.6,
+    "studio": "C2 Motion Picture Group",
+    "language": "English",
+    "country": "US",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 7,
+    "popularityScore": 15,
+    "universe": null
+  },
+  {
+    "slug": "ladies-first-2026",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/kjR56Yv17pbjTVBTMjqepvcus4f.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/bOy625BjpCskOWnx3tD09MsKVCb.jpg",
+    "title": {
+      "en": "Ladies First",
+      "te": "Ladies First"
+    },
+    "description": {
+      "en": "An arrogant but charismatic ladies' man finds his life of money, power and casual flings upended when he wakes up in a parallel world dominated by women.",
+      "te": "ఒక అహంకారి కానీ ఆకర్షణీయమైన లేడీస్ పురుషుడు స్త్రీల ఆధిపత్యం ఉన్న సమాంతర ప్రపంచంలో మేల్కొన్నప్పుడు తన డబ్బు, అధికారం మరియు సాధారణం అల్లకల్లోలంగా ఉంటాడు."
+    },
+    "genres": [
+      "Comedy",
+      "Fantasy"
+    ],
+    "year": 2026,
+    "runtime": 94,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 6.021,
+    "studio": "3dot Productions",
+    "language": "English",
+    "country": "US",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 6,
+    "popularityScore": 13,
+    "universe": null
+  },
+  {
+    "slug": "avatar-aang-the-last-airbender-2026",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/29Jdsak3SrwGds5k1t43kH6Khed.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/sS3zGYFPcfM5pArVNWl6qLyaSmU.jpg",
+    "title": {
+      "en": "Avatar Aang: The Last Airbender",
+      "te": "Avatar Aang: The Last Airbender"
+    },
+    "description": {
+      "en": "Avatar Aang, the world's last Airbender, learns of an ancient power that could save his culture from extinction. With the help of his friends, he embarks on a global quest to find it before it falls into the wrong hands and threatens to upend the peace they sacrificed everything to achieve.",
+      "te": "అవతార్ ఆంగ్, ప్రపంచంలోని చివరి ఎయిర్‌బెండర్, తన సంస్కృతిని అంతరించిపోకుండా కాపాడగల పురాతన శక్తి గురించి తెలుసుకుంటాడు. తన స్నేహితుల సహాయంతో, అది తప్పుడు చేతుల్లోకి రాకముందే దానిని కనుగొనడానికి ప్రపంచ అన్వేషణను ప్రారంభించాడు మరియు వారు సాధించడానికి అన్నింటినీ త్యాగం చేసిన శాంతిని ఉల్లంఘిస్తానని బెదిరించాడు."
+    },
+    "genres": [
+      "Action",
+      "Adventure",
+      "Fantasy"
+    ],
+    "year": 2026,
+    "runtime": 99,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 7,
+    "studio": "Nickelodeon Movies",
+    "language": "English",
+    "country": "US",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 7,
+    "popularityScore": 14,
+    "universe": null
+  },
+  {
+    "slug": "the-housemaid-2025",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/cWsBscZzwu5brg9YjNkGewRUvJX.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/zTnAnYIn0Iv3cn0ZHlzLhou3ybm.jpg",
+    "title": {
+      "en": "The Housemaid",
+      "te": "The Housemaid"
+    },
+    "description": {
+      "en": "Trying to escape her past, Millie Calloway accepts a job as a live-in housemaid for the wealthy Nina and Andrew Winchester. But what begins as a dream job quickly unravels into something far more dangerous—a sexy, seductive game of secrets, scandal, and power.",
+      "te": "తన గతాన్ని తప్పించుకోవడానికి ప్రయత్నిస్తూ, మిల్లీ కాల్లోవే సంపన్నులైన నినా మరియు ఆండ్రూ వించెస్టర్‌ల కోసం లైవ్-ఇన్ హౌస్‌మెయిడ్‌గా ఉద్యోగాన్ని అంగీకరిస్తుంది. కానీ డ్రీమ్ జాబ్‌గా ప్రారంభమయ్యేది చాలా ప్రమాదకరమైన దానిలోకి త్వరగా విప్పుతుంది-రహస్యాలు, కుంభకోణం మరియు శక్తితో కూడిన సెక్సీ, సెడక్టివ్ గేమ్."
+    },
+    "genres": [
+      "Thriller"
+    ],
+    "year": 2025,
+    "runtime": 131,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 7.25,
+    "studio": "Lionsgate",
+    "language": "English",
+    "country": "US",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 7,
+    "popularityScore": 13,
+    "universe": null
+  },
+  {
+    "slug": "masters-of-the-universe-2026",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/3YMd9Ogae4rDKLWuAZFuse9xhc5.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/eQySd26OW7UmCuaeBOL7qy6foMn.jpg",
+    "title": {
+      "en": "Masters of the Universe",
+      "te": "Masters of the Universe"
+    },
+    "description": {
+      "en": "After being separated for 15 years, the Sword of Power leads Prince Adam back to Eternia, where he discovers his home shattered under the fiendish rule of Skeletor. To save his family and his world, Adam must join forces with his closest allies, Teela and Duncan/Man-At-Arms, and embrace his true destiny as He-Man — the most powerful man in the universe.",
+      "te": "15 సంవత్సరాలు విడిపోయిన తర్వాత, స్వోర్డ్ ఆఫ్ పవర్ ప్రిన్స్ ఆడమ్‌ని ఎటర్నియాకు తిరిగి తీసుకువెళుతుంది, అక్కడ అతను అస్థిపంజరం యొక్క క్రూరమైన పాలనలో తన ఇల్లు పగిలిపోయిందని కనుగొన్నాడు. తన కుటుంబాన్ని మరియు అతని ప్రపంచాన్ని కాపాడుకోవడానికి, ఆడమ్ తన సన్నిహిత మిత్రులైన టీలా మరియు డంకన్/మ్యాన్-ఎట్-ఆర్మ్స్‌తో కలిసి బలవంతంగా చేరాలి మరియు విశ్వంలో అత్యంత శక్తివంతమైన వ్యక్తి అయిన హి-మ్యాన్‌గా అతని నిజమైన విధిని స్వీకరించాలి."
+    },
+    "genres": [
+      "Action",
+      "Fantasy",
+      "Sci-Fi"
+    ],
+    "year": 2026,
+    "runtime": 141,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 7.889,
+    "studio": "Escape Artists",
+    "language": "English",
+    "country": "US",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 7,
+    "popularityScore": 14,
+    "universe": null
+  },
+  {
+    "slug": "from-straight-a-s-to-xxx-2017",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/kvcdaGcres9pGDwZfPN9jOKfZh.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/8gBOpyW6iTDGZJR93YuF3L7dDuI.jpg",
+    "title": {
+      "en": "From Straight A's to XXX",
+      "te": "From Straight A's to XXX"
+    },
+    "description": {
+      "en": "When a change of circumstances leaves Miriam unable to pay her college tuition, she makes a surprising decision: to start performing in adult films, using the pseudonym Belle Knox. Miriam lies to her family and her friends at school, keeping her double life a secret. But soon rumours spread and Miriam becomes the subject of vicious online attacks and unwanted attention. Miriam fights back: she talks to the media, saying her new line of work empowers her as a feminist. But her confident stand has unintended consequences. Miriam is shunned by her conservative family and her colleagues in the adult film world. One impulsive decision has quickly spiralled out of control - and Miriam's problems are just beginning.",
+      "te": "పరిస్థితులలో మార్పు వల్ల మిరియం తన కాలేజీ ట్యూషన్‌ను చెల్లించలేక పోయినప్పుడు, ఆమె ఒక ఆశ్చర్యకరమైన నిర్ణయం తీసుకుంటుంది: బెల్లె నాక్స్ అనే మారుపేరును ఉపయోగించి పెద్దల చిత్రాలలో నటించడం ప్రారంభించడం. మిరియం తన కుటుంబ సభ్యులకు మరియు పాఠశాలలో తన స్నేహితులకు అబద్ధం చెబుతుంది, తన డబుల్ లైఫ్‌ను రహస్యంగా ఉంచుతుంది. కానీ త్వరలో పుకార్లు వ్యాపించాయి మరియు మిరియం దుర్మార్గపు ఆన్‌లైన్ దాడులు మరియు అవాంఛిత దృష్టికి సంబంధించిన అంశంగా మారింది. మిరియం తిరిగి పోరాడుతుంది: ఆమె మీడియాతో మాట్లాడుతుంది, ఆమె కొత్త పని విధానం తనకు స్త్రీవాదిగా అధికారం ఇస్తుందని చెప్పింది. కానీ ఆమె నమ్మకమైన వైఖరి ఊహించని పరిణామాలను కలిగి ఉంది. మిరియం ఆమె సంప్రదాయవాద కుటుంబం మరియు వయోజన చలనచిత్ర ప్రపంచంలోని ఆమె సహచరులచే దూరంగా ఉంది. ఒక హఠాత్తు నిర్ణయం త్వరగా నియంత్రణలో లేకుండా పోయింది - మరియు మిరియం సమస్యలు ఇప్పుడే ప్రారంభమవుతున్నాయి."
+    },
+    "genres": [
+      "Drama"
+    ],
+    "year": 2017,
+    "runtime": 87,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 5.843,
+    "studio": "Sepia Films",
+    "language": "English",
+    "country": "US",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 6,
+    "popularityScore": 13,
+    "universe": null
+  },
+  {
+    "slug": "fuze-2026",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/oMFdQE5hMJ9JjhNORegwTo0GKmh.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/8wIaBCeGv3UhIn5CJOWQGHT1Cif.jpg",
+    "title": {
+      "en": "Fuze",
+      "te": "Fuze"
+    },
+    "description": {
+      "en": "An unexploded WWII bomb is discovered on a busy construction site in the centre of London. Chaos ensues as the military and police begin a mass evacuation against a ticking clock.",
+      "te": "లండన్ మధ్యలో ఒక బిజీ నిర్మాణ ప్రదేశంలో పేలని WWII బాంబు కనుగొనబడింది. మిలిటరీ మరియు పోలీసులు టిక్కింగ్ గడియారానికి వ్యతిరేకంగా భారీ తరలింపును ప్రారంభించడంతో గందరగోళం ఏర్పడుతుంది."
+    },
+    "genres": [
+      "Action",
+      "Crime",
+      "Drama"
+    ],
+    "year": 2026,
+    "runtime": 96,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 6.415,
+    "studio": "Anton",
+    "language": "English",
+    "country": "GB",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 6,
+    "popularityScore": 12,
+    "universe": null
+  },
+  {
+    "slug": "remarkably-bright-creatures-2026",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/9HcEqn3D4J6b2Z0jK54id9nA0fr.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/bVGHSe47W6oCQL1Q88pvRAet51A.jpg",
+    "title": {
+      "en": "Remarkably Bright Creatures",
+      "te": "Remarkably Bright Creatures"
+    },
+    "description": {
+      "en": "Through unlikely bonds formed during night shifts at a local aquarium, Tova, an elderly widow, learns of a life-changing discovery that may bring her joy and wonder once again.",
+      "te": "స్థానిక ఆక్వేరియం వద్ద రాత్రి షిఫ్టుల సమయంలో ఏర్పడే అసంభవ బంధాల ద్వారా, వృద్ధ వితంతువు అయిన తోవా, తన జీవితాన్ని మార్చే ఆవిష్కరణ గురించి తెలుసుకుంది, అది ఆమెకు మరోసారి ఆనందాన్ని మరియు ఆశ్చర్యాన్ని కలిగిస్తుంది."
+    },
+    "genres": [
+      "Drama",
+      "Thriller"
+    ],
+    "year": 2026,
+    "runtime": 114,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 8.555,
+    "studio": "Anonymous Content",
+    "language": "English",
+    "country": "US",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 6,
+    "popularityScore": 12,
+    "universe": null
+  },
+  {
+    "slug": "predator-badlands-2025",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/pHpq9yNUIo6aDoCXEBzjSolywgz.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/gaKFXcB5J1gz0QqYj8bWIfrPc04.jpg",
+    "title": {
+      "en": "Predator: Badlands",
+      "te": "Predator: Badlands"
+    },
+    "description": {
+      "en": "Cast out from his clan, a young Predator finds an unlikely ally in a damaged android and embarks on a treacherous journey in search of the ultimate adversary.",
+      "te": "తన వంశం నుండి బయటకు పంపబడిన, ఒక యువ ప్రిడేటర్ దెబ్బతిన్న ఆండ్రాయిడ్‌లో అవకాశం లేని మిత్రుడిని కనుగొంటాడు మరియు అంతిమ ప్రత్యర్థిని వెతకడానికి ఒక ప్రమాదకరమైన ప్రయాణాన్ని ప్రారంభించాడు."
+    },
+    "genres": [
+      "Action",
+      "Sci-Fi",
+      "Adventure"
+    ],
+    "year": 2025,
+    "runtime": 107,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 7.759,
+    "studio": "20th Century Studios",
+    "language": "English",
+    "country": "US",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 6,
+    "popularityScore": 12,
+    "universe": null
+  },
+  {
+    "slug": "greenland-2-migration-2026",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/z2tqCJLsw6uEJ8nJV8BsQXGa3dr.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/wns4x1GyxCudgOZRyhXKjXVJf3T.jpg",
+    "title": {
+      "en": "Greenland 2: Migration",
+      "te": "Greenland 2: Migration"
+    },
+    "description": {
+      "en": "Having found the safety of the Greenland bunker after the comet Clarke decimated the Earth, the Garrity family must now risk everything to embark on a perilous journey across the wasteland of Europe to find a new home.",
+      "te": "కామెట్ క్లార్క్ భూమిని నాశనం చేసిన తర్వాత గ్రీన్‌ల్యాండ్ బంకర్ యొక్క భద్రతను కనుగొన్న తర్వాత, గారిటీ కుటుంబం ఇప్పుడు కొత్త ఇంటిని కనుగొనడానికి యూరప్‌లోని బంజరు భూమి మీదుగా ప్రమాదకరమైన ప్రయాణాన్ని ప్రారంభించడానికి ప్రతిదాన్ని రిస్క్ చేయాలి."
+    },
+    "genres": [
+      "Adventure",
+      "Sci-Fi"
+    ],
+    "year": 2026,
+    "runtime": 98,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 6.438,
+    "studio": "STXfilms",
+    "language": "English",
+    "country": "US",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 6,
+    "popularityScore": 12,
+    "universe": null
+  },
+  {
+    "slug": "the-sheep-detectives-2026",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/hTirV44jiLh6NqdiB6jtxPsDIoG.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/t6O6XWelu27BD0OmIDCCufZZT6d.jpg",
+    "title": {
+      "en": "The Sheep Detectives",
+      "te": "The Sheep Detectives"
+    },
+    "description": {
+      "en": "George Hardy is a shepherd who reads detective novels to his beloved sheep every night, assuming they can't possibly understand. But when a mysterious incident disrupts life on the farm, the sheep realize they must become the detectives. As they follow the clues and investigate human suspects, they prove that even sheep can be brilliant crime-solvers.",
+      "te": "జార్జ్ హార్డీ ఒక గొర్రెల కాపరి, అతను ప్రతి రాత్రి తన ప్రియమైన గొర్రెలకు డిటెక్టివ్ నవలలు చదివేవాడు, అవి అర్థం చేసుకోలేవని ఊహిస్తూ. కానీ ఒక రహస్యమైన సంఘటన పొలంలో జీవితానికి అంతరాయం కలిగించినప్పుడు, గొర్రెలు తాము డిటెక్టివ్‌లుగా మారాలని గ్రహిస్తాయి. వారు ఆధారాలను అనుసరించి, మానవ అనుమానితులను పరిశోధిస్తున్నప్పుడు, గొర్రెలు కూడా తెలివైన నేరాలను పరిష్కరించగలవని వారు రుజువు చేస్తారు."
+    },
+    "genres": [
+      "Comedy",
+      "Family",
+      "Thriller"
+    ],
+    "year": 2026,
+    "runtime": 109,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 7.7,
+    "studio": "Working Title Films",
+    "language": "English",
+    "country": "GB",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 6,
+    "popularityScore": 12,
+    "universe": null
+  },
+  {
+    "slug": "disclosure-day-2026",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/3o5YPjDGDTcTDL5ftDA9NwN9dLd.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/5p6BsJtnPbglYN15MuiUEppPl0f.jpg",
+    "title": {
+      "en": "Disclosure Day",
+      "te": "Disclosure Day"
+    },
+    "description": {
+      "en": "If you found out we weren’t alone, if someone showed you, proved it to you, would that frighten you?",
+      "te": "మేము ఒంటరిగా లేమని మీరు కనుగొంటే, ఎవరైనా మీకు చూపిస్తే, మీకు నిరూపించినట్లయితే, అది మిమ్మల్ని భయపెడుతుందా?"
+    },
+    "genres": [
+      "Thriller",
+      "Sci-Fi"
+    ],
+    "year": 2026,
+    "runtime": 145,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 7,
+    "studio": "Universal Pictures",
+    "language": "English",
+    "country": "US",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 6,
+    "popularityScore": 12,
+    "universe": null
+  },
+  {
+    "slug": "scary-movie-2026",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/2OHkZEqQL4OjYXIqWopJu0BijTD.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/lj6AaDqDUbzm2XJltFNHeAm2uXN.jpg",
+    "title": {
+      "en": "Scary Movie",
+      "te": "Scary Movie"
+    },
+    "description": {
+      "en": "Twenty-six years after outrunning a suspiciously familiar masked killer, the Core Four are back in the killer's crosshairs and no horror movie IP is safe.",
+      "te": "అనుమానాస్పదంగా తెలిసిన మాస్క్‌డ్ కిల్లర్‌ను అధిగమించిన ఇరవై-ఆరు సంవత్సరాల తర్వాత, కోర్ ఫోర్ కిల్లర్ క్రాస్‌షైర్‌లలోకి తిరిగి వచ్చారు మరియు ఏ భయానక చిత్రం IP సురక్షితం కాదు."
+    },
+    "genres": [
+      "Comedy",
+      "Horror"
+    ],
+    "year": 2026,
+    "runtime": 96,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 5.429,
+    "studio": "Miramax",
+    "language": "English",
+    "country": "US",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 6,
+    "popularityScore": 11,
+    "universe": null
+  },
+  {
+    "slug": "war-of-the-worlds-2025",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/yvirUYrva23IudARHn3mMGVxWqM.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/iZLqwEwUViJdSkGVjePGhxYzbDb.jpg",
+    "title": {
+      "en": "War of the Worlds",
+      "te": "War of the Worlds"
+    },
+    "description": {
+      "en": "Will Radford is a top analyst for Homeland Security who tracks potential threats through a mass surveillance program, until one day an attack by an unknown entity leads him to question whether the government is hiding something from him... and from the rest of the world.",
+      "te": "విల్ రాడ్‌ఫోర్డ్ హోమ్‌ల్యాండ్ సెక్యూరిటీకి అగ్రశ్రేణి విశ్లేషకుడు, అతను భారీ నిఘా కార్యక్రమం ద్వారా సంభావ్య బెదిరింపులను ట్రాక్ చేస్తాడు, ఒక రోజు తెలియని సంస్థ చేసిన దాడి అతని నుండి ప్రభుత్వం ఏదైనా దాస్తోందా అని ప్రశ్నించడానికి దారితీసే వరకు... మరియు ప్రపంచంలోని ఇతర ప్రాంతాల నుండి."
+    },
+    "genres": [
+      "Sci-Fi"
+    ],
+    "year": 2025,
+    "runtime": 91,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 4.105,
+    "studio": "Universal Pictures",
+    "language": "English",
+    "country": "US",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 6,
+    "popularityScore": 11,
+    "universe": null
+  },
+  {
+    "slug": "toy-story-5-2026",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/7BuN6lQCAq1tLz2l3g6sHVSFGib.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/wENlYOyR10DZzkICmrGUQQX4Ih5.jpg",
+    "title": {
+      "en": "Toy Story 5",
+      "te": "Toy Story 5"
+    },
+    "description": {
+      "en": "When Bonnie receives a Lilypad tablet as a gift and becomes obsessed, Buzz, Woody, Jessie and the rest of the gang's jobs become exponentially harder when they have to go head to head with the all-new threat to playtime.",
+      "te": "బోనీ లిలీప్యాడ్ టాబ్లెట్‌ను బహుమతిగా స్వీకరించినప్పుడు మరియు నిమగ్నమైనప్పుడు, బజ్, వుడీ, జెస్సీ మరియు మిగిలిన ముఠా ఉద్యోగాలు ఆట సమయానికి సరికొత్త ముప్పుతో తలదూర్చవలసి వచ్చినప్పుడు విపరీతంగా కష్టతరం అవుతుంది."
+    },
+    "genres": [
+      "Family",
+      "Comedy",
+      "Adventure"
+    ],
+    "year": 2026,
+    "runtime": 120,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 7,
+    "studio": "Pixar",
+    "language": "English",
+    "country": "US",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 6,
+    "popularityScore": 11,
+    "universe": null
+  },
+  {
+    "slug": "michael-jackson-the-life-of-an-icon-2011",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/tOCYV9JCXXFtb7YehKXJBMKI4aD.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/wz1eLrNxK77xAY7JYi4iYrtiMEd.jpg",
+    "title": {
+      "en": "Michael Jackson: The Life of an Icon",
+      "te": "Michael Jackson: The Life of an Icon"
+    },
+    "description": {
+      "en": "See Michael Jackson, one of the most recognizable and popular entertainers of all time, like never before in the feature-length tribute Michael Jackson: The Life of an Icon. Known to millions of fans worldwide for his record-breaking albums, groundbreaking music videos, mesmerizing dance moves and humanitarian efforts, his true story has never really been told...until now. This unprecedented look into the King of Pop's fascinating life includes all-new interviews with his mother Katherine Jackson as well as siblings Tito and Rebbie Jackson,  his nephew  Jaafar Jackson and niece Tahkyah brings plenty Jackson and Friends ends and music legends such as Smokey Robinson, Dionne Warwick and  his 3 children and many more.",
+      "te": "మైఖేల్ జాక్సన్ ఫీచర్-నిడివి ట్రిబ్యూట్ మైఖేల్ జాక్సన్: ది లైఫ్ ఆఫ్ యాన్ ఐకాన్‌లో మునుపెన్నడూ లేని విధంగా, ఎప్పటికప్పుడు గుర్తించదగిన మరియు ప్రజాదరణ పొందిన వినోదకారులలో ఒకరైన మైఖేల్ జాక్సన్‌ను చూడండి. అతని రికార్డ్-బ్రేకింగ్ ఆల్బమ్‌లు, సంచలనాత్మక మ్యూజిక్ వీడియోలు, మంత్రముగ్ధులను చేసే నృత్య కదలికలు మరియు మానవతావాద ప్రయత్నాల కోసం ప్రపంచవ్యాప్తంగా మిలియన్ల మంది అభిమానులకు సుపరిచితుడు, అతని నిజమైన కథ నిజంగా చెప్పబడలేదు ... ఇప్పటి వరకు. కింగ్ ఆఫ్ పాప్ యొక్క మనోహరమైన జీవితంలోకి ఈ అపూర్వమైన లుక్‌లో అతని తల్లి కేథరీన్ జాక్సన్‌తో పాటు తోబుట్టువులు టిటో మరియు రెబ్బీ జాక్సన్, అతని మేనల్లుడు జాఫర్ జాక్సన్ మరియు మేనకోడలు తహ్క్యాతో సరికొత్త ఇంటర్వ్యూలు ఉన్నాయి."
+    },
+    "genres": [
+      "Drama"
+    ],
+    "year": 2011,
+    "runtime": 149,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 8.137,
+    "studio": "David Gest Productions",
+    "language": "English",
+    "country": "US",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 6,
+    "popularityScore": 11,
+    "universe": null
+  },
+  {
+    "slug": "worldbreaker-2026",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/ahj1JU8r0uJv7QII5Uj7tKzbEsC.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/gMItMzDOyrfQGZsMWRM9tdxq5cV.jpg",
+    "title": {
+      "en": "Worldbreaker",
+      "te": "Worldbreaker"
+    },
+    "description": {
+      "en": "Five years ago, a tear in the fabric of reality brought creatures to our world from an alternate dimension bent on our destruction. A father hides his daughter on an island to keep her safe while he prepares her for survival and the battles to come. But when the world is about to break, no place is safe.",
+      "te": "ఐదు సంవత్సరాల క్రితం, రియాలిటీ యొక్క ఫాబ్రిక్‌లో ఒక కన్నీరు మన విధ్వంసంపై వంగి ఉన్న ప్రత్యామ్నాయ కోణం నుండి జీవులను మన ప్రపంచానికి తీసుకువచ్చింది. ఒక తండ్రి తన కూతురిని ఒక ద్వీపంలో దాచి ఉంచాడు, అయితే అతను ఆమెను మనుగడ కోసం మరియు రాబోయే యుద్ధాలకు సిద్ధం చేస్తాడు. కానీ ప్రపంచం విచ్ఛిన్నం కాబోతున్నప్పుడు, ఏ ప్రదేశం సురక్షితం కాదు."
+    },
+    "genres": [
+      "Sci-Fi",
+      "Action",
+      "Horror"
+    ],
+    "year": 2026,
+    "runtime": 95,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 6.028,
+    "studio": "23ten",
+    "language": "English",
+    "country": "US",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 5,
+    "popularityScore": 11,
+    "universe": null
+  },
+  {
+    "slug": "the-drama-2026",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/89Dw1ujPlIPRLddhzNuJM4F401D.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/b8H1a89qmNxF8rqFGrG93Q9qn52.jpg",
+    "title": {
+      "en": "The Drama",
+      "te": "The Drama"
+    },
+    "description": {
+      "en": "A happily engaged couple is put to the test when an unexpected turn sends their wedding week off the rails.",
+      "te": "సంతోషంగా నిశ్చితార్థం చేసుకున్న జంట ఊహించని మలుపు వారి వివాహ వారాన్ని పట్టాల నుండి పంపినప్పుడు పరీక్షకు గురవుతారు."
+    },
+    "genres": [
+      "Romance",
+      "Comedy",
+      "Drama"
+    ],
+    "year": 2026,
+    "runtime": 105,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 6.945,
+    "studio": "A24",
+    "language": "English",
+    "country": "US",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 5,
+    "popularityScore": 11,
+    "universe": null
+  },
+  {
+    "slug": "ready-or-not-here-i-come-2026",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/13ZcJzSGEqVgDSqsS9U5EkQwPkV.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/qYNJm1GOB4nULxIoTO0zfqjSAkC.jpg",
+    "title": {
+      "en": "Ready or Not: Here I Come",
+      "te": "Ready or Not: Here I Come"
+    },
+    "description": {
+      "en": "Moments after surviving an all-out attack from the Le Domas family, Grace discovers she’s reached the next level of the nightmarish game — and this time with her estranged sister Faith at her side. Grace has one chance to survive, keep her sister alive, and claim the High Seat of the Council that controls the world. Four rival families are hunting her for the throne, and whoever wins rules it all.",
+      "te": "లే డోమాస్ కుటుంబం నుండి పూర్తి దాడి నుండి బయటపడిన కొన్ని క్షణాల తర్వాత, గ్రేస్ పీడకలల గేమ్‌లో తదుపరి స్థాయికి చేరుకున్నట్లు తెలుసుకుంటాడు - మరియు ఈసారి ఆమె విడిపోయిన సోదరి ఫెయిత్‌తో కలిసి ఆమె పక్కన ఉంది. గ్రేస్ జీవించి ఉండటానికి, తన సోదరిని సజీవంగా ఉంచడానికి మరియు ప్రపంచాన్ని నియంత్రించే కౌన్సిల్ యొక్క ఉన్నత స్థానాన్ని పొందేందుకు ఒక అవకాశం ఉంది. నాలుగు ప్రత్యర్థి కుటుంబాలు ఆమెను సింహాసనం కోసం వేటాడుతున్నాయి మరియు ఎవరు గెలిచినా అన్నింటినీ పాలిస్తారు."
+    },
+    "genres": [
+      "Horror",
+      "Comedy"
+    ],
+    "year": 2026,
+    "runtime": 108,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 7.698,
+    "studio": "Searchlight Pictures",
+    "language": "English",
+    "country": "US",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 5,
+    "popularityScore": 11,
+    "universe": null
+  },
+  {
+    "slug": "send-help-2026",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/zbJWVHOtj3ljBzWgL1P8pxP03Up.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/hO2jx1H3XafR7Y8QbFgVH1sHTY9.jpg",
+    "title": {
+      "en": "Send Help",
+      "te": "Send Help"
+    },
+    "description": {
+      "en": "Two colleagues become stranded on a deserted island, the only survivors of a plane crash. On the island, they must overcome past grievances and work together to survive, but ultimately, it's a battle of wills and wits to make it out alive.",
+      "te": "ఇద్దరు సహోద్యోగులు ఎడారి ద్వీపంలో చిక్కుకుపోయారు, విమాన ప్రమాదంలో మాత్రమే ప్రాణాలతో బయటపడారు. ద్వీపంలో, వారు గత మనోవేదనలను అధిగమించాలి మరియు మనుగడ కోసం కలిసి పని చేయాలి, కానీ చివరికి, అది సజీవంగా ఉండటానికి సంకల్పం మరియు తెలివి యొక్క యుద్ధం."
+    },
+    "genres": [
+      "Horror",
+      "Comedy"
+    ],
+    "year": 2026,
+    "runtime": 113,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 7.043,
+    "studio": "Raimi Productions",
+    "language": "English",
+    "country": "US",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 5,
+    "popularityScore": 10,
+    "universe": null
+  },
+  {
+    "slug": "avengers-infinity-war-2018",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/7WsyChQLEftFiDOVTGkv3hFpyyt.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/mDfJG3LC3Dqb67AZ52x3Z0jU0uB.jpg",
+    "title": {
+      "en": "Avengers: Infinity War",
+      "te": "Avengers: Infinity War"
+    },
+    "description": {
+      "en": "As the Avengers and their allies have continued to protect the world from threats too large for any one hero to handle, a new danger has emerged from the cosmic shadows: Thanos. A despot of intergalactic infamy, his goal is to collect all six Infinity Stones, artifacts of unimaginable power, and use them to inflict his twisted will on all of reality. Everything the Avengers have fought for has led up to this moment - the fate of Earth and existence itself has never been more uncertain.",
+      "te": "ఎవెంజర్స్ మరియు వారి మిత్రదేశాలు ఏ ఒక్క హీరోని నిర్వహించలేనంత పెద్ద బెదిరింపుల నుండి ప్రపంచాన్ని రక్షించడం కొనసాగించినందున, విశ్వ నీడల నుండి కొత్త ప్రమాదం ఉద్భవించింది: థానోస్. నక్షత్రమండలాల మద్యవున్న అపఖ్యాతి యొక్క నిరంకుశుడు, అతని లక్ష్యం మొత్తం ఆరు ఇన్ఫినిటీ స్టోన్స్, అనూహ్యమైన శక్తి యొక్క కళాఖండాలను సేకరించి, వాస్తవికతపై అతని వక్రీకృత సంకల్పాన్ని కలిగించడానికి వాటిని ఉపయోగించడం. ఎవెంజర్స్ పోరాడిన ప్రతిదానికీ ఈ క్షణం వరకు దారితీసింది - భూమి మరియు ఉనికి యొక్క విధి ఎన్నడూ అనిశ్చితంగా లేదు."
+    },
+    "genres": [
+      "Adventure",
+      "Action",
+      "Sci-Fi"
+    ],
+    "year": 2018,
+    "runtime": 149,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 8.236,
+    "studio": "Marvel Studios",
+    "language": "English",
+    "country": "US",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 5,
+    "popularityScore": 10,
+    "universe": "mcu"
+  },
+  {
+    "slug": "the-avengers-2012",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/RYMX2wcKCBAr24UyPD7xwmjaTn.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/9BBTo63ANSmhC4e6r62OJFuK2GL.jpg",
+    "title": {
+      "en": "The Avengers",
+      "te": "The Avengers"
+    },
+    "description": {
+      "en": "When an unexpected enemy emerges and threatens global safety and security, Nick Fury, director of the international peacekeeping agency known as S.H.I.E.L.D., finds himself in need of a team to pull the world back from the brink of disaster. Spanning the globe, a daring recruitment effort begins!",
+      "te": "ఊహించని శత్రువు ఉద్భవించి, ప్రపంచ భద్రత మరియు భద్రతను బెదిరించినప్పుడు, S.H.I.E.L.D. అని పిలువబడే అంతర్జాతీయ శాంతి పరిరక్షక సంస్థ డైరెక్టర్ నిక్ ఫ్యూరీ, ప్రపంచాన్ని విపత్తు అంచు నుండి వెనక్కి తీసుకురావడానికి ఒక బృందం అవసరమని కనుగొన్నాడు. ప్రపంచవ్యాప్తంగా విస్తరించి, సాహసోపేతమైన రిక్రూట్‌మెంట్ ప్రయత్నం ప్రారంభమవుతుంది!"
+    },
+    "genres": [
+      "Sci-Fi",
+      "Action",
+      "Adventure"
+    ],
+    "year": 2012,
+    "runtime": 143,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 8.035,
+    "studio": "Marvel Studios",
+    "language": "English",
+    "country": "US",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 5,
+    "popularityScore": 10,
+    "universe": "mcu"
+  },
+  {
+    "slug": "avatar-2009",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/gKY6q7SjCkAU6FqvqWybDYgUKIF.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/vL5LR6WdxWPjLPFRLe133jXWsh5.jpg",
+    "title": {
+      "en": "Avatar",
+      "te": "Avatar"
+    },
+    "description": {
+      "en": "In the 22nd century, a paraplegic Marine is dispatched to the moon Pandora on a unique mission, but becomes torn between following orders and protecting an alien civilization.",
+      "te": "22వ శతాబ్దంలో, ఒక పారాప్లెజిక్ మెరైన్‌ను చంద్రుడు పండోరకు ఒక ప్రత్యేకమైన మిషన్‌లో పంపారు, కానీ ఆదేశాలను అనుసరించడం మరియు గ్రహాంతర నాగరికతను రక్షించడం మధ్య నలిగిపోతుంది."
+    },
+    "genres": [
+      "Sci-Fi",
+      "Action",
+      "Adventure"
+    ],
+    "year": 2009,
+    "runtime": 162,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 7.605,
+    "studio": "Dune Entertainment",
+    "language": "English",
+    "country": "US",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 5,
+    "popularityScore": 10,
+    "universe": null
+  },
+  {
+    "slug": "bosco-d-amore-1981",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/jNV46xSIONTEvIAWon6NnveH7eG.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/fjcX01h7VNUhhNjhFBthH7sTp2z.jpg",
+    "title": {
+      "en": "Bosco d'amore",
+      "te": "Bosco d'amore"
+    },
+    "description": {
+      "en": "The time is the mid-14th century --- the Pope is now residing at Avignon, the Black Death is killing millions across Europe, and civil wars are adding to the turmoil and chaos. In this story adapted from Giovanni Boccaccio's Decameron, a young teenage couple is sent to live in a nearby town by the man's uncle, in an attempt to keep them safe from harm. She is from the lower classes, and he comes from a noble family -- a family that opposes his choice of a future bride. While en route to the town, the couple's horses are stolen and they are forced to continue through the forest on foot -- at a pace that introduces them to a kaleidoscope of Boccaccio's characters, from masters of mysticism, to soldiers of the warring Papal armies. Somehow, the couple manage to get through this gauntlet of sorts, and they do marry. Just as they are ready to go back to Rome, they hear that there is an insurrection in the offing, and suddenly, their brief spate of stability is threatened again.",
+      "te": "సమయం 14వ శతాబ్దం మధ్యకాలం --- పోప్ ఇప్పుడు అవిగ్నాన్‌లో నివసిస్తున్నాడు, బ్లాక్ డెత్ ఐరోపా అంతటా మిలియన్ల మందిని చంపుతోంది మరియు అంతర్యుద్ధాలు గందరగోళం మరియు గందరగోళాన్ని పెంచుతున్నాయి. గియోవన్నీ బొకాసియో యొక్క డెకామెరోన్ నుండి స్వీకరించబడిన ఈ కథలో, ఒక యువ యుక్తవయస్కుడైన జంటను సమీపంలోని పట్టణంలో నివసించడానికి ఆ వ్యక్తి యొక్క మేనమామ పంపాడు, వారిని హాని నుండి సురక్షితంగా ఉంచే ప్రయత్నంలో. ఆమె అట్టడుగు వర్గాలకు చెందినది, మరియు అతను గొప్ప కుటుంబం నుండి వచ్చాడు -- కాబోయే వధువు ఎంపికను వ్యతిరేకించే కుటుంబం. పట్టణానికి వెళ్లే మార్గంలో, ఈ జంట గుర్రాలు దొంగిలించబడతాయి మరియు వారు కాలినడకన అడవి గుండా వెళ్ళవలసి వస్తుంది -- బోకాసియో పాత్రల కాలిడోస్కోప్‌తో, ఆధ్యాత్మికతలో మాస్టర్స్ నుండి, పోరాడుతున్న పాపల్ సైన్యాల సైనికుల వరకు వారిని పరిచయం చేస్తుంది. ఏదో ఒకవిధంగా, ఈ జంట ఈ రకమైన గాంట్‌లెట్‌ను అధిగమించగలుగుతారు మరియు వారు వివాహం చేసుకుంటారు. వారు తిరిగి రోమ్‌కు వెళ్లడానికి సిద్ధంగా ఉన్నప్పుడే, అక్కడ తిరుగుబాటు జరుగుతోందని వారు విన్నారు మరియు అకస్మాత్తుగా, వారి స్వల్పకాలిక స్థిరత్వం మళ్లీ బెదిరించబడుతుంది."
+    },
+    "genres": [
+      "Drama",
+      "Romance"
+    ],
+    "year": 1981,
+    "runtime": 113,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 4.667,
+    "studio": "RAI",
+    "language": "English",
+    "country": "US",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 5,
+    "popularityScore": 10,
+    "universe": null
+  },
+  {
+    "slug": "the-devil-wears-prada-2-2026",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/xTI42pmsP5EDnvsNJPEDubwWBQO.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/y3fQa7pytlysovXzovpXc1OQlTW.jpg",
+    "title": {
+      "en": "The Devil Wears Prada 2",
+      "te": "The Devil Wears Prada 2"
+    },
+    "description": {
+      "en": "Andy Sachs returns to Runway as Miranda Priestly navigates a new media landscape and Runway's position within. The duo reconnect with former assistant Emily Charlton, now the head of a luxury brand that possesses funding which could ensure Runway's survival.",
+      "te": "మిరాండా ప్రీస్ట్లీ కొత్త మీడియా ల్యాండ్‌స్కేప్ మరియు లోపల రన్‌వే స్థానాన్ని నావిగేట్ చేయడంతో ఆండీ సాచ్స్ రన్‌వేకి తిరిగి వస్తాడు. వీరిద్దరూ మాజీ అసిస్టెంట్ ఎమిలీ చార్ల్టన్‌తో మళ్లీ కనెక్ట్ అయ్యారు, ఇప్పుడు రన్‌వే మనుగడకు భరోసానిచ్చే నిధులను కలిగి ఉన్న ఒక లగ్జరీ బ్రాండ్ అధిపతి."
+    },
+    "genres": [
+      "Comedy",
+      "Drama"
+    ],
+    "year": 2026,
+    "runtime": 119,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 6.619,
+    "studio": "20th Century Studios",
+    "language": "English",
+    "country": "US",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 5,
+    "popularityScore": 10,
+    "universe": null
+  },
+  {
+    "slug": "fifty-shades-freed-2018",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/jjPJ4s3DWZZvI4vw8Xfi4Vqa1Q8.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/9ywA15OAiwjSTvg3cBs9B7kOCBF.jpg",
+    "title": {
+      "en": "Fifty Shades Freed",
+      "te": "Fifty Shades Freed"
+    },
+    "description": {
+      "en": "Believing they have left behind shadowy figures from their past, newlyweds Christian and Ana fully embrace an inextricable connection and shared life of luxury. But just as she steps into her role as Mrs. Grey and he relaxes into an unfamiliar stability, new threats could jeopardize their happy ending before it even begins.",
+      "te": "వారు తమ గతం నుండి నీడలేని బొమ్మలను విడిచిపెట్టారని నమ్ముతూ, నూతన వధూవరులు క్రిస్టియన్ మరియు అనా విడదీయరాని అనుబంధాన్ని పూర్తిగా స్వీకరించారు మరియు విలాసవంతమైన జీవితాన్ని పంచుకున్నారు. కానీ ఆమె శ్రీమతి గ్రే పాత్రలో అడుగుపెట్టినట్లే మరియు అతను తెలియని స్థిరత్వంతో విశ్రాంతి తీసుకున్నప్పుడు, కొత్త బెదిరింపులు అది ప్రారంభం కాకముందే వారి సంతోషకరమైన ముగింపును ప్రమాదంలో పడేస్తాయి."
+    },
+    "genres": [
+      "Drama",
+      "Romance"
+    ],
+    "year": 2018,
+    "runtime": 105,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 6.675,
+    "studio": "Universal Pictures",
+    "language": "English",
+    "country": "US",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 5,
+    "popularityScore": 10,
+    "universe": null
+  },
+  {
+    "slug": "propeller-one-way-night-coach-2026",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/joal4OSVC4T1yFb3kph91tkNNFf.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/ldUVeDfA5ID2vchHGejrEltoBSN.jpg",
+    "title": {
+      "en": "Propeller One-Way Night Coach",
+      "te": "Propeller One-Way Night Coach"
+    },
+    "description": {
+      "en": "During the golden age of aviation, a young airplane enthusiast and his mother embark on a cross-country journey to Hollywood—and their simple flight transforms into the trip of a lifetime.",
+      "te": "విమానయానం యొక్క స్వర్ణయుగంలో, ఒక యువ విమాన ఔత్సాహికుడు మరియు అతని తల్లి హాలీవుడ్‌కు క్రాస్ కంట్రీ జర్నీని ప్రారంభించారు-మరియు వారి సాధారణ విమాన ప్రయాణం జీవితకాల యాత్రగా మారుతుంది."
+    },
+    "genres": [
+      "Adventure",
+      "Drama",
+      "Family"
+    ],
+    "year": 2026,
+    "runtime": 60,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 6.421,
+    "studio": "JTP Films",
+    "language": "English",
+    "country": "US",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 5,
+    "popularityScore": 9,
+    "universe": null
+  },
+  {
+    "slug": "f1-2025",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/vqBmyAj0Xm9LnS1xe1MSlMAJyHq.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/rZWkXnIyTLzUJpHSUpOb7vgB0BL.jpg",
+    "title": {
+      "en": "F1",
+      "te": "F1"
+    },
+    "description": {
+      "en": "Racing legend Sonny Hayes is coaxed out of retirement to lead a struggling Formula 1 team—and mentor a young hotshot driver—while chasing one more chance at glory.",
+      "te": "రేసింగ్ లెజెండ్ సోనీ హేస్ కష్టాల్లో ఉన్న ఫార్ములా 1 టీమ్‌కు నాయకత్వం వహించడానికి రిటైర్మెంట్ నుండి బయటపడ్డాడు-మరియు ఒక యువ హాట్‌షాట్ డ్రైవర్‌కు మార్గదర్శిగా నిలిచాడు, అదే సమయంలో కీర్తి కోసం మరొక అవకాశాన్ని వెంబడించాడు."
+    },
+    "genres": [
+      "Action",
+      "Drama"
+    ],
+    "year": 2025,
+    "runtime": 156,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 7.787,
+    "studio": "Plan B Entertainment",
+    "language": "English",
+    "country": "US",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 5,
+    "popularityScore": 9,
+    "universe": null
+  },
+  {
+    "slug": "war-machine-2026",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/ril8yx5SOmj0KjNlftsdfIp00fr.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/6yeVcxFR0j08vlv2OlL6zbewm4D.jpg",
+    "title": {
+      "en": "War Machine",
+      "te": "War Machine"
+    },
+    "description": {
+      "en": "On one last grueling mission during Army Ranger training, a combat engineer must lead his unit in a fight against a giant otherworldly killing machine.",
+      "te": "ఆర్మీ రేంజర్ శిక్షణ సమయంలో ఒక చివరి భయంకరమైన మిషన్‌లో, ఒక పోరాట ఇంజనీర్ తన విభాగాన్ని ఒక పెద్ద మరోప్రపంచపు కిల్లింగ్ మెషీన్‌కు వ్యతిరేకంగా పోరాటంలో నడిపించాలి."
+    },
+    "genres": [
+      "Action",
+      "Sci-Fi"
+    ],
+    "year": 2026,
+    "runtime": 110,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 7.349,
+    "studio": "Lionsgate",
+    "language": "English",
+    "country": "AU",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 5,
+    "popularityScore": 9,
+    "universe": null
+  },
+  {
+    "slug": "the-dark-knight-2008",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/qJ2tW6WMUDux911r6m7haRef0WH.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/cfT29Im5VDvjE0RpyKOSdCKZal7.jpg",
+    "title": {
+      "en": "The Dark Knight",
+      "te": "The Dark Knight"
+    },
+    "description": {
+      "en": "Batman raises the stakes in his war on crime. With the help of Lt. Jim Gordon and District Attorney Harvey Dent, Batman sets out to dismantle the remaining criminal organizations that plague the streets. The partnership proves to be effective, but they soon find themselves prey to a reign of chaos unleashed by a rising criminal mastermind known to the terrified citizens of Gotham as the Joker.",
+      "te": "బాట్‌మాన్ నేరంపై తన యుద్ధంలో వాటాను పెంచుతాడు. లెఫ్టినెంట్ జిమ్ గోర్డాన్ మరియు డిస్ట్రిక్ట్ అటార్నీ హార్వే డెంట్ సహాయంతో, బాట్‌మాన్ వీధులను పీడిస్తున్న మిగిలిన క్రిమినల్ సంస్థలను కూల్చివేయడానికి బయలుదేరాడు. భాగస్వామ్యం ప్రభావవంతంగా ఉందని రుజువు చేస్తుంది, అయితే వారు త్వరలో తమను తాము జోకర్‌గా భయభ్రాంతులకు గురిచేసే గోథమ్ పౌరులకు తెలిసిన పెరుగుతున్న నేర సూత్రధారి ద్వారా విప్పబడిన గందరగోళ పాలనకు బలైపోతారు."
+    },
+    "genres": [
+      "Action",
+      "Crime"
+    ],
+    "year": 2008,
+    "runtime": 152,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 8.531,
+    "studio": "Warner Bros. Pictures",
+    "language": "English",
+    "country": "US",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 5,
+    "popularityScore": 9,
+    "universe": null
+  },
+  {
+    "slug": "the-godfather-1972",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/3bhkrj58Vtu7enYsRolD1fZdja1.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/tSPT36ZKlP2WVHJLM4cQPLSzv3b.jpg",
+    "title": {
+      "en": "The Godfather",
+      "te": "The Godfather"
+    },
+    "description": {
+      "en": "Spanning the years 1945 to 1955, a chronicle of the fictional Italian-American Corleone crime family. When organized crime family patriarch, Vito Corleone barely survives an attempt on his life, his youngest son, Michael steps in to take care of the would-be killers, launching a campaign of bloody revenge.",
+      "te": "1945 నుండి 1955 సంవత్సరాల వరకు విస్తరించి ఉంది, ఇది కల్పిత ఇటాలియన్-అమెరికన్ కార్లియోన్ క్రైమ్ ఫ్యామిలీ యొక్క చరిత్ర. వ్యవస్థీకృత క్రైమ్ ఫ్యామిలీ పితృస్వామ్యుడైనప్పుడు, వీటో కోర్లియోన్ తన జీవితంపై చేసిన ప్రయత్నం నుండి బయటపడలేదు, అతని చిన్న కుమారుడు, మైఖేల్ హంతకుల సంరక్షణ కోసం అడుగులు వేస్తాడు, రక్తపాత ప్రతీకార ప్రచారాన్ని ప్రారంభించాడు."
+    },
+    "genres": [
+      "Drama",
+      "Crime"
+    ],
+    "year": 1972,
+    "runtime": 175,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 8.687,
+    "studio": "Paramount Pictures",
+    "language": "English",
+    "country": "US",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 4,
+    "popularityScore": 9,
+    "universe": null
+  },
+  {
+    "slug": "they-will-kill-you-2026",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/6oI4oQKTWMVUlr8Ivqydp28Ruu6.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/qnTdOizsXBzYu3uIbfhHSfE29TE.jpg",
+    "title": {
+      "en": "They Will Kill You",
+      "te": "They Will Kill You"
+    },
+    "description": {
+      "en": "A woman answers a help wanted ad to be a housekeeper in a mysterious New York City high-rise, unaware that she is entering a community that has seen a number of disappearances over the years and may be under the grip of a Satanic cult.",
+      "te": "నిగూఢమైన న్యూయార్క్ నగరంలోని హై-రెజ్‌లో హౌస్‌కీపర్‌గా ఉండటానికి సహాయం కోరుకునే ప్రకటనకు ఒక మహిళ సమాధానం ఇచ్చింది, ఆమె సంవత్సరాలుగా అనేక అదృశ్యాలను చూసిన మరియు సాతాను ఆరాధన యొక్క పట్టులో ఉన్న సంఘంలోకి ప్రవేశిస్తున్నట్లు తెలియదు."
+    },
+    "genres": [
+      "Action",
+      "Comedy",
+      "Horror"
+    ],
+    "year": 2026,
+    "runtime": 94,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 7.001,
+    "studio": "Nocturna",
+    "language": "English",
+    "country": "US",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 4,
+    "popularityScore": 9,
+    "universe": null
+  },
+  {
+    "slug": "apocalypto-2006",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/cRY25Q32kDNPFDkFkxAs6bgCq3L.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/nnmbJvYyDS1VkMOCbxSpdBi3WbJ.jpg",
+    "title": {
+      "en": "Apocalypto",
+      "te": "Apocalypto"
+    },
+    "description": {
+      "en": "Set in the Mayan civilization, when a man's idyllic presence is brutally disrupted by a violent invading force, he is taken on a perilous journey to a world ruled by fear and oppression where a harrowing end awaits him. Through a twist of fate and spurred by the power of his love for his woman and his family he will make a desperate break to return home and to ultimately save his way of life.",
+      "te": "మాయన్ నాగరికత నేపథ్యంలో, హింసాత్మక ఆక్రమణ శక్తి ద్వారా ఒక వ్యక్తి యొక్క ఇడిలిక్ ఉనికిని క్రూరంగా భంగపరిచినప్పుడు, అతను భయం మరియు అణచివేతతో పాలించే ప్రపంచానికి ప్రమాదకరమైన ప్రయాణంలో తీసుకువెళతాడు, అక్కడ అతనికి భయంకరమైన ముగింపు ఎదురుచూస్తుంది. విధి యొక్క మలుపు ద్వారా మరియు అతని స్త్రీ మరియు అతని కుటుంబం పట్ల అతని ప్రేమ యొక్క శక్తి ద్వారా అతను ఇంటికి తిరిగి రావడానికి మరియు చివరికి తన జీవన విధానాన్ని కాపాడుకోవడానికి తీరని విరామం చేస్తాడు."
+    },
+    "genres": [
+      "Action",
+      "Drama",
+      "Historical"
+    ],
+    "year": 2006,
+    "runtime": 138,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 7.629,
+    "studio": "Icon Entertainment International",
+    "language": "English",
+    "country": "US",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 4,
+    "popularityScore": 9,
+    "universe": null
+  },
+  {
+    "slug": "crime-101-2026",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/tVvpFIoteRHNnoZMhdnwIVwJpCA.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/52AkwEfQiJl2HuTPMZ2yC5Bdr9I.jpg",
+    "title": {
+      "en": "Crime 101",
+      "te": "Crime 101"
+    },
+    "description": {
+      "en": "When an elusive thief whose high-stakes heists unfold along the iconic 101 freeway in Los Angeles eyes the score of a lifetime, with hopes of this being his final job, his path collides with a disillusioned insurance broker who is facing her own crossroads. Determined to crack the case, a relentless detective closes in on the operation, raising the stakes even higher.",
+      "te": "లాస్ ఏంజిల్స్‌లోని ఐకానిక్ 101 ఫ్రీవేలో అత్యధికంగా దోపిడీలు చేసే ఒక అంతుచిక్కని దొంగ తన జీవితకాలపు స్కోర్‌ను చూసినప్పుడు, ఇది అతని చివరి ఉద్యోగం అనే ఆశతో, అతని మార్గం ఆమె స్వంత కూడలిని ఎదుర్కొంటున్న భ్రమపడిన బీమా బ్రోకర్‌తో ఢీకొంటుంది. కేసును ఛేదించాలని నిశ్చయించుకుని, కనికరంలేని డిటెక్టివ్ ఆపరేషన్‌ను ముగించి, వాటాను మరింత పెంచాడు."
+    },
+    "genres": [
+      "Crime"
+    ],
+    "year": 2026,
+    "runtime": 141,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 7,
+    "studio": "Working Title Films",
+    "language": "English",
+    "country": "GB",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 4,
+    "popularityScore": 9,
+    "universe": null
+  },
+  {
+    "slug": "1000-men-and-me-the-bonnie-blue-story-2025",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/5dcgoyf8nt6Xt4VSR6Nrn6nwhuz.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/62a8bMDftwD9aU0dkXr4eN6Q5q2.jpg",
+    "title": {
+      "en": "1000 Men and Me: The Bonnie Blue Story",
+      "te": "1000 Men and Me: The Bonnie Blue Story"
+    },
+    "description": {
+      "en": "Adult content creator Bonnie Blue announced that she’d slept with 1057 men in 12 hours. Exploring the polarising debate around Bonnie and the pornification of our society, the film follows her over the most eye-opening six months of her life.",
+      "te": "అడల్ట్ కంటెంట్ సృష్టికర్త బోనీ బ్లూ తాను 12 గంటల్లో 1057 మంది పురుషులతో పడుకున్నట్లు ప్రకటించింది. బోనీ చుట్టూ జరిగిన పోలరైజింగ్ డిబేట్‌ను మరియు మన సమాజం యొక్క అశ్లీలతను అన్వేషిస్తూ, ఈ చిత్రం ఆమె జీవితంలో అత్యంత కళ్లు తెరిచిన ఆరు నెలల పాటు ఆమెను అనుసరిస్తుంది."
+    },
+    "genres": [
+      "Drama"
+    ],
+    "year": 2025,
+    "runtime": 60,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 5.735,
+    "studio": "Magnificent Pictures",
+    "language": "English",
+    "country": "GB",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 4,
+    "popularityScore": 9,
+    "universe": null
+  },
+  {
+    "slug": "the-lord-of-the-rings-the-return-of-the-king-2003",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/rCzpDGLbOoPwLjy3OAm5NUPOTrC.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/ctiw6FZK4N36LmkjSklWEbuvlq9.jpg",
+    "title": {
+      "en": "The Lord of the Rings: The Return of the King",
+      "te": "The Lord of the Rings: The Return of the King"
+    },
+    "description": {
+      "en": "As armies mass for a final battle that will decide the fate of the world--and powerful, ancient forces of Light and Dark compete to determine the outcome--one member of the Fellowship of the Ring is revealed as the noble heir to the throne of the Kings of Men. Yet, the sole hope for triumph over evil lies with a brave hobbit, Frodo, who, accompanied by his loyal friend Sam and the hideous, wretched Gollum, ventures deep into the very dark heart of Mordor on his seemingly impossible quest to destroy the Ring of Power.​",
+      "te": "ప్రపంచం యొక్క విధిని నిర్ణయించే ఆఖరి యుద్ధానికి సైన్యాల సమూహంగా--మరియు శక్తివంతమైన, పురాతన శక్తులైన లైట్ అండ్ డార్క్ ఫలితాన్ని నిర్ణయించడానికి పోటీపడుతుంది--ఫెలోషిప్ ఆఫ్ ది రింగ్‌లోని ఒక సభ్యుడు కింగ్స్ ఆఫ్ మెన్ సింహాసనానికి గొప్ప వారసుడిగా వెల్లడయ్యాడు. అయినప్పటికీ, చెడుపై విజయం సాధించాలనే ఏకైక ఆశ ధైర్యమైన హాబిట్ ఫ్రోడోపై ఉంది, అతను తన నమ్మకమైన స్నేహితుడు సామ్ మరియు వికారమైన, దౌర్భాగ్యమైన గొల్లమ్‌తో కలిసి, రింగ్ ఆఫ్ పవర్‌ను నాశనం చేయాలనే అసాధ్యమైన అన్వేషణలో మోర్డోర్ యొక్క చీకటి హృదయంలోకి లోతుగా అడుగుపెట్టాడు."
+    },
+    "genres": [
+      "Adventure",
+      "Fantasy",
+      "Action"
+    ],
+    "year": 2003,
+    "runtime": 201,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 8.5,
+    "studio": "New Line Cinema",
+    "language": "English",
+    "country": "US",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 4,
+    "popularityScore": 9,
+    "universe": null
+  },
+  {
+    "slug": "spider-man-no-way-home-2021",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/zD5v1E4joAzFvmAEytt7fM3ivyT.jpg",
+    "title": {
+      "en": "Spider-Man: No Way Home",
+      "te": "Spider-Man: No Way Home"
+    },
+    "description": {
+      "en": "Peter Parker is unmasked and no longer able to separate his normal life from the high-stakes of being a super-hero. When he asks for help from Doctor Strange the stakes become even more dangerous, forcing him to discover what it truly means to be Spider-Man.",
+      "te": "పీటర్ పార్కర్ ముసుగు వేయబడలేదు మరియు ఇకపై అతని సాధారణ జీవితాన్ని సూపర్-హీరో అనే ఉన్నత స్థాయి నుండి వేరు చేయలేరు. అతను డాక్టర్ స్ట్రేంజ్ నుండి సహాయం కోసం అడిగినప్పుడు వాటాలు మరింత ప్రమాదకరంగా మారాయి, స్పైడర్ మ్యాన్ అంటే నిజంగా అర్థం ఏమిటో కనుగొనవలసి వస్తుంది."
+    },
+    "genres": [
+      "Action",
+      "Adventure",
+      "Sci-Fi"
+    ],
+    "year": 2021,
+    "runtime": 148,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 7.934,
+    "studio": "Marvel Studios",
+    "language": "English",
+    "country": "US",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 4,
+    "popularityScore": 9,
+    "universe": "mcu"
+  },
+  {
+    "slug": "the-furious-2026",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/zP19YO60jwEsfKd5Qf1UvA5uJu8.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/ew3EqF9VLTxmK64OsHT7p7lr4wT.jpg",
+    "title": {
+      "en": "The Furious",
+      "te": "The Furious"
+    },
+    "description": {
+      "en": "After Wang Wei's daughter is kidnapped by a criminal network and he receives no help from the corrupt police, Wei sets out to find her himself. His only ally is Navin, a relentless journalist whose wife has mysteriously disappeared. Fueled by a furious vengeance, the unlikely duo ruthlessly battle the kidnappers in this explosive martial arts showdown.",
+      "te": "వాంగ్ వీ కుమార్తెను క్రిమినల్ నెట్‌వర్క్ కిడ్నాప్ చేసిన తర్వాత మరియు అవినీతిపరుడైన పోలీసుల నుండి అతనికి ఎటువంటి సహాయం లభించన తర్వాత, వీ ఆమెను స్వయంగా కనుగొనడానికి బయలుదేరాడు. అతని ఏకైక మిత్రుడు నవీన్, కనికరంలేని పాత్రికేయుడు, అతని భార్య రహస్యంగా అదృశ్యమైంది. కోపంతో కూడిన ప్రతీకారానికి ఆజ్యం పోసి, ఈ పేలుడు మార్షల్ ఆర్ట్స్ షోడౌన్‌లో కిడ్నాపర్‌లతో అసంభవమైన ద్వయం నిర్దాక్షిణ్యంగా పోరాడుతుంది."
+    },
+    "genres": [
+      "Action",
+      "Crime"
+    ],
+    "year": 2026,
+    "runtime": 113,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 7,
+    "studio": "Edko Films",
+    "language": "English",
+    "country": "CN",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 4,
+    "popularityScore": 8,
+    "universe": null
+  },
+  {
+    "slug": "scream-7-2026",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/jjyuk0edLiW8vOSnlfwWCCLpbh5.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/t9J2HXaDuJR7bvIG9XF7mttn4VY.jpg",
+    "title": {
+      "en": "Scream 7",
+      "te": "Scream 7"
+    },
+    "description": {
+      "en": "When a new Ghostface killer emerges in the quiet town where Sidney Prescott has built a new life, her darkest fears are realized as her daughter becomes the next target. Determined to protect her family, Sidney must face the horrors of her past to put an end to the bloodshed once and for all.",
+      "te": "సిడ్నీ ప్రెస్కాట్ కొత్త జీవితాన్ని నిర్మించుకున్న నిశ్శబ్ద పట్టణంలో కొత్త ఘోస్ట్‌ఫేస్ కిల్లర్ ఉద్భవించినప్పుడు, ఆమె కుమార్తె తదుపరి లక్ష్యం కావడంతో ఆమె భయంకరమైన భయాలు గ్రహించబడతాయి. తన కుటుంబాన్ని రక్షించుకోవాలని నిశ్చయించుకున్న సిడ్నీ, రక్తపాతాన్ని ఒక్కసారిగా అంతం చేయడానికి ఆమె గతంలోని భయానక పరిస్థితులను ఎదుర్కోవాలి."
+    },
+    "genres": [
+      "Horror",
+      "Thriller",
+      "Crime"
+    ],
+    "year": 2026,
+    "runtime": 114,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 6.141,
+    "studio": "Paramount Pictures",
+    "language": "English",
+    "country": "US",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 4,
+    "popularityScore": 8,
+    "universe": null
+  },
+  {
+    "slug": "the-lord-of-the-rings-the-fellowship-of-the-ring-2001",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/6oom5QYQ2yQTMJIbnvbkBL9cHo6.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/oiwc338EoBgS4sEI2ixAny4KQKg.jpg",
+    "title": {
+      "en": "The Lord of the Rings: The Fellowship of the Ring",
+      "te": "The Lord of the Rings: The Fellowship of the Ring"
+    },
+    "description": {
+      "en": "Young hobbit Frodo Baggins, after inheriting a mysterious ring from his uncle Bilbo, must leave his home in order to keep it from falling into the hands of its evil creator. Along the way, a fellowship is formed to protect the ringbearer and make sure that the ring arrives at its final destination: Mt. Doom, the only place where it can be destroyed.",
+      "te": "యువ హాబిట్ ఫ్రోడో బాగ్గిన్స్, తన మామ బిల్బో నుండి రహస్యమైన ఉంగరాన్ని వారసత్వంగా పొందిన తర్వాత, దాని దుష్ట సృష్టికర్త చేతిలో పడకుండా ఉండటానికి తన ఇంటిని విడిచిపెట్టాలి. అలాగే, రింగ్ బేరర్‌ను రక్షించడానికి మరియు రింగ్ దాని చివరి గమ్యస్థానానికి చేరుకునేలా ఒక ఫెలోషిప్ ఏర్పడింది: మౌంట్ డూమ్, దానిని నాశనం చేయగల ఏకైక ప్రదేశం."
+    },
+    "genres": [
+      "Adventure",
+      "Fantasy",
+      "Action"
+    ],
+    "year": 2001,
+    "runtime": 179,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 8.4,
+    "studio": "New Line Cinema",
+    "language": "English",
+    "country": "US",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 4,
+    "popularityScore": 8,
+    "universe": null
+  },
+  {
+    "slug": "deadpool-wolverine-2024",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/8cdWjvZQUExUUTzyp4t6EDMubfO.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/ufpeVEM64uZHPpzzeiDNIAdaeOD.jpg",
+    "title": {
+      "en": "Deadpool & Wolverine",
+      "te": "Deadpool & Wolverine"
+    },
+    "description": {
+      "en": "A listless Wade Wilson toils away in civilian life with his days as the morally flexible mercenary, Deadpool, behind him. But when his homeworld faces an existential threat, Wade must reluctantly suit-up again with an even more reluctant Wolverine.",
+      "te": "నీతిలేని వాడే విల్సన్ తన వెనుక నైతికంగా అనువైన కిరాయి సైనికుడు డెడ్‌పూల్‌గా పౌర జీవితంలో కష్టపడుతున్నాడు. కానీ అతని స్వస్థలం అస్తిత్వ ముప్పును ఎదుర్కొన్నప్పుడు, వాడే అయిష్టంగానే మరింత అయిష్టంగా ఉన్న వుల్వరైన్‌తో మళ్లీ సూట్ అప్ చేయాలి."
+    },
+    "genres": [
+      "Action",
+      "Comedy",
+      "Sci-Fi"
+    ],
+    "year": 2024,
+    "runtime": 128,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 7.571,
+    "studio": "Marvel Studios",
+    "language": "English",
+    "country": "US",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 4,
+    "popularityScore": 8,
+    "universe": null
+  },
+  {
+    "slug": "memento-2001",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/fKTPH2WvH8nHTXeBYBVhawtRqtR.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/7Wev9JMo6R5XAfz2KDvXb7oPMmy.jpg",
+    "title": {
+      "en": "Memento",
+      "te": "Memento"
+    },
+    "description": {
+      "en": "Leonard Shelby is tracking down the man who raped and murdered his wife. The difficulty of locating his wife's killer, however, is compounded by the fact that he suffers from a rare, untreatable form of short-term memory loss. Although he can recall details of life before his accident, Leonard cannot remember what happened fifteen minutes ago, where he's going, or why.",
+      "te": "లియోనార్డ్ షెల్బీ తన భార్యపై అత్యాచారం చేసి హత్య చేసిన వ్యక్తిని ఆరా తీస్తున్నాడు. అయితే, అతని భార్య హంతకుడిని గుర్తించడం కష్టంగా ఉంది, అతను అరుదైన, చికిత్స చేయలేని రూపంలో స్వల్పకాలిక జ్ఞాపకశక్తి కోల్పోవడంతో బాధపడుతున్నాడు. అతను తన ప్రమాదానికి ముందు జీవిత వివరాలను గుర్తుకు తెచ్చుకోగలిగినప్పటికీ, లియోనార్డ్ పదిహేను నిమిషాల క్రితం ఏమి జరిగిందో, అతను ఎక్కడికి వెళ్తున్నాడో లేదా ఎందుకు వెళ్తున్నాడో గుర్తుంచుకోలేడు."
+    },
+    "genres": [
+      "Thriller"
+    ],
+    "year": 2001,
+    "runtime": 113,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 8.177,
+    "studio": "Newmarket Films",
+    "language": "English",
+    "country": "US",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 4,
+    "popularityScore": 8,
+    "universe": null
+  },
+  {
+    "slug": "spider-man-brand-new-day-2026",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/yyB2VJEW3an2xCdcYCPQhn9QERR.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/vjMvFSmGUxEtqVdaZgvFee9XkZl.jpg",
+    "title": {
+      "en": "Spider-Man: Brand New Day",
+      "te": "Spider-Man: Brand New Day"
+    },
+    "description": {
+      "en": "Four years have passed since the events of No Way Home, and Peter is now an adult living entirely alone, having voluntarily erased himself from the lives and memories of those he loves. Crime-fighting in a New York that no longer knows his name, he's devoted himself entirely to protecting his city — a full-time Spider-Man — but as the demands on him intensify, the pressure sparks a surprising physical evolution that threatens his existence, even as a strange new pattern of crimes gives rise to one of the most powerful threats he has ever faced.",
+      "te": "నో వే హోమ్ సంఘటనలు జరిగి నాలుగు సంవత్సరాలు గడిచాయి మరియు పీటర్ ఇప్పుడు పూర్తిగా ఒంటరిగా జీవిస్తున్న పెద్దవాడు, అతను ప్రేమించిన వారి జీవితాలు మరియు జ్ఞాపకాల నుండి స్వచ్ఛందంగా తనను తాను తొలగించుకున్నాడు. తన పేరు తెలియని న్యూయార్క్‌లో నేర-పోరాటం, అతను తన నగరాన్ని రక్షించడానికి పూర్తిగా అంకితమయ్యాడు - పూర్తి సమయం స్పైడర్ మాన్ - కానీ అతనిపై డిమాండ్లు తీవ్రతరం కావడంతో, ఒత్తిడి అతని ఉనికికి ముప్పు కలిగించే ఆశ్చర్యకరమైన భౌతిక పరిణామానికి దారి తీస్తుంది."
+    },
+    "genres": [
+      "Sci-Fi",
+      "Action",
+      "Adventure"
+    ],
+    "year": 2026,
+    "runtime": 120,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 7,
+    "studio": "Marvel Studios",
+    "language": "English",
+    "country": "US",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 4,
+    "popularityScore": 8,
+    "universe": "mcu"
+  },
+  {
+    "slug": "the-conjuring-last-rites-2025",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/byWgphT74ClOVa8EOGzYDkl8DVL.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/i8MupUe4xgmYXoRNAQMYvuoexSU.jpg",
+    "title": {
+      "en": "The Conjuring: Last Rites",
+      "te": "The Conjuring: Last Rites"
+    },
+    "description": {
+      "en": "Paranormal investigators Ed and Lorraine Warren take on one last terrifying case involving mysterious entities they must confront.",
+      "te": "పారానార్మల్ ఇన్వెస్టిగేటర్‌లు ఎడ్ మరియు లోరైన్ వారెన్‌లు వారు ఎదుర్కోవాల్సిన మర్మమైన సంస్థలకు సంబంధించిన చివరి భయంకరమైన కేసును తీసుకున్నారు."
+    },
+    "genres": [
+      "Horror"
+    ],
+    "year": 2025,
+    "runtime": 136,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 6.915,
+    "studio": "New Line Cinema",
+    "language": "English",
+    "country": "US",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 4,
+    "popularityScore": 8,
+    "universe": null
+  },
+  {
+    "slug": "kpop-demon-hunters-2025",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/zT7Lhw3BhJbMkRqm9Zlx2YGMsY0.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/w3Bi0wygeFQctn6AqFTwhGNXRwL.jpg",
+    "title": {
+      "en": "KPop Demon Hunters",
+      "te": "KPop Demon Hunters"
+    },
+    "description": {
+      "en": "When K-pop superstars Rumi, Mira and Zoey aren't selling out stadiums, they're using their secret powers to protect their fans from supernatural threats.",
+      "te": "K-పాప్ సూపర్‌స్టార్లు రూమి, మీరా మరియు జోయ్ స్టేడియాలను విక్రయించనప్పుడు, వారు తమ అభిమానులను అతీంద్రియ బెదిరింపుల నుండి రక్షించడానికి తమ రహస్య శక్తులను ఉపయోగిస్తున్నారు."
+    },
+    "genres": [
+      "Fantasy",
+      "Comedy"
+    ],
+    "year": 2025,
+    "runtime": 96,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 8.026,
+    "studio": "Sony Pictures Animation",
+    "language": "English",
+    "country": "US",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 4,
+    "popularityScore": 8,
+    "universe": null
+  },
+  {
+    "slug": "pulp-fiction-1994",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/vQWk5YBFWF4bZaofAbv0tShwBvQ.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/suaEOtk1N1sgg2MTM7oZd2cfVp3.jpg",
+    "title": {
+      "en": "Pulp Fiction",
+      "te": "Pulp Fiction"
+    },
+    "description": {
+      "en": "A burger-loving hit man, his philosophical partner, a drug-addled gangster's moll and a washed-up boxer converge in this sprawling, comedic crime caper. Their adventures unfurl in three stories that ingeniously trip back and forth in time.",
+      "te": "ఒక బర్గర్‌ను ఇష్టపడే హిట్ మ్యాన్, అతని తాత్విక భాగస్వామి, డ్రగ్స్‌తో కూడిన గ్యాంగ్‌స్టర్‌ల మోల్ మరియు ఉతికిన బాక్సర్ ఈ విశాలమైన, హాస్య నేర కేపర్‌లో కలుస్తారు. వారి సాహసాలు మూడు కథలలో వికసిస్తాయి, అవి తెలివిగా సమయానికి ముందుకు వెనుకకు తిరుగుతాయి."
+    },
+    "genres": [
+      "Crime",
+      "Comedy"
+    ],
+    "year": 1994,
+    "runtime": 154,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 8.484,
+    "studio": "Miramax",
+    "language": "English",
+    "country": "US",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 4,
+    "popularityScore": 8,
+    "universe": null
+  },
+  {
+    "slug": "protector-2026",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/icOZpnGuH9YrEaW3wrw5GJaXGih.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/vpuPY4UziUCxv7gYYoaZQ3LX7to.jpg",
+    "title": {
+      "en": "Protector",
+      "te": "Protector"
+    },
+    "description": {
+      "en": "Nikki's life is shattered when her daughter is kidnapped. Thrust into the criminal underworld while hunted by cops and military, she must fight to rescue her child.",
+      "te": "కూతురు కిడ్నాప్‌కు గురై నిక్కీ జీవితం ఛిన్నాభిన్నమైంది. పోలీసులు మరియు మిలిటరీచే వేటాడబడుతున్నప్పుడు క్రిమినల్ అండర్ వరల్డ్‌లోకి నెట్టబడింది, ఆమె తన బిడ్డను రక్షించడానికి పోరాడాలి."
+    },
+    "genres": [
+      "Action"
+    ],
+    "year": 2026,
+    "runtime": 90,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 7.583,
+    "studio": "Aanaxion Studio",
+    "language": "English",
+    "country": "US",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 4,
+    "popularityScore": 7,
+    "universe": null
+  },
+  {
+    "slug": "9-songs-2006",
+    "type": "MOVIE",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/91O7z0vo7MiNWd5xD2BoivwbQsb.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/qU7tNIMpRqkizIObXfkJY3haTqh.jpg",
+    "title": {
+      "en": "9 Songs",
+      "te": "9 Songs"
+    },
+    "description": {
+      "en": "Matt, a young glaciologist, soars across the vast, silent, icebound immensities of the South Pole as he recalls his love affair with Lisa. They meet at a mobbed rock concert in a vast music hall - London's Brixton Academy. They are in bed at night's end. Together, over a period of several months, they pursue a mutual sexual passion whose inevitable stages unfold in counterpoint to nine live-concert songs.",
+      "te": "మాట్, ఒక యువ గ్లేషియాలజిస్ట్, అతను లిసాతో తన ప్రేమ వ్యవహారాన్ని గుర్తుచేసుకుంటూ దక్షిణ ధ్రువంలోని విస్తారమైన, నిశ్శబ్దమైన, మంచుతో నిండిన విశాల ప్రాంతాలలో ఎగురుతున్నాడు. లండన్‌లోని బ్రిక్స్‌టన్ అకాడమీ - విశాలమైన మ్యూజిక్ హాల్‌లోని మోబ్డ్ రాక్ కచేరీలో వారు కలుస్తారు. వారు రాత్రి చివరిలో మంచం మీద ఉన్నారు. కలిసి, చాలా నెలల వ్యవధిలో, వారు పరస్పర లైంగిక అభిరుచిని అనుసరిస్తారు, దీని అనివార్య దశలు తొమ్మిది ప్రత్యక్ష-కచేరీ పాటలకు ప్రతిరూపంగా విశదపరుస్తాయి."
+    },
+    "genres": [
+      "Drama",
+      "Romance"
+    ],
+    "year": 2006,
+    "runtime": 70,
+    "totalEpisodes": null,
+    "totalSeasons": null,
+    "imdbRating": 5.546,
+    "studio": "Revolution Films",
+    "language": "English",
+    "country": "US",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 4,
+    "popularityScore": 7,
+    "universe": null
+  },
+  {
+    "slug": "jujutsu-kaisen-2020",
+    "type": "ANIME",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/fHpKWq9ayzSk8nSwqRuaAUemRKh.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/lthkKBLe1rX6iThgVFg22O02sJw.jpg",
+    "title": {
+      "en": "JUJUTSU KAISEN",
+      "te": "JUJUTSU KAISEN"
+    },
+    "description": {
+      "en": "Yuji Itadori is a boy with tremendous physical strength, though he lives a completely ordinary high school life. One day, to save a classmate who has been attacked by curses, he eats the finger of Ryomen Sukuna, taking the curse into his own soul. From then on, he shares one body with Ryomen Sukuna. Guided by the most powerful of sorcerers, Satoru Gojo, Itadori is admitted to Tokyo Jujutsu High School, an organization that fights the curses... and thus begins the heroic tale of a boy who became a curse to exorcise a curse, a life from which he could never turn back.",
+      "te": "యుజి ఇటాడోరి విపరీతమైన శారీరక బలం కలిగిన బాలుడు, అయినప్పటికీ అతను పూర్తిగా సాధారణ ఉన్నత పాఠశాల జీవితాన్ని గడుపుతున్నాడు. ఒకరోజు, శాపాలతో దాడి చేయబడిన సహవిద్యార్థిని రక్షించడానికి, అతను శాపాన్ని తన ఆత్మలోకి తీసుకొని రియోమెన్ సుకునా వేలును తింటాడు. అప్పటి నుండి, అతను రియోమెన్ సుకునాతో ఒక శరీరాన్ని పంచుకుంటాడు. అత్యంత శక్తివంతమైన మాంత్రికులైన సతోరు గోజోచే మార్గనిర్దేశం చేయబడిన ఇటాడోరి శాపాలకు వ్యతిరేకంగా పోరాడే సంస్థ అయిన టోక్యో జుజుట్సు హైస్కూల్‌లో చేరాడు... తద్వారా శాపాన్ని భూతవైద్యం చేయడానికి శాపంగా మారిన ఒక బాలుడి వీరోచిత కథ ప్రారంభమవుతుంది, అతను ఎప్పటికీ వెనక్కి తిరిగిరాని జీవితం."
+    },
+    "genres": [
+      "Action",
+      "Sci-Fi"
+    ],
+    "year": 2020,
+    "runtime": null,
+    "totalEpisodes": 59,
+    "totalSeasons": 1,
+    "imdbRating": 8.568,
+    "studio": "MAPPA",
+    "language": "Japanese",
+    "country": "JP",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 14,
+    "popularityScore": 28,
+    "universe": null
+  },
+  {
+    "slug": "overflow-2020",
+    "type": "ANIME",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/8RtwL5gxUvh9YViqjhNlVRvJpum.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/4NRBKA8qVzCvuD3WeLieiLGmIjm.jpg",
+    "title": {
+      "en": "Overflow",
+      "te": "Overflow"
+    },
+    "description": {
+      "en": "Kazushi Sudou is a university student who is visited by his two childhood friends, the sisters Ayane and Kotone Shirakawa. When Ayane discovers that Kazushi not only forgot to buy her pudding but is also using her special lotion in the bath, she decides to take revenge and join Kazushi in his bath along with Kotone. Will the perverted Kazushi be able to remain indifferent to them both?",
+      "te": "కజుషి సుడౌ ఒక విశ్వవిద్యాలయ విద్యార్థి, అతని ఇద్దరు చిన్ననాటి స్నేహితులు, సోదరీమణులు అయానే మరియు కోటోన్ షిరకావా సందర్శించారు. కజుషి తన పుడ్డింగ్‌ను కొనడం మర్చిపోవడమే కాకుండా స్నానంలో తన ప్రత్యేకమైన లోషన్‌ను కూడా ఉపయోగిస్తోందని అయానే తెలుసుకున్నప్పుడు, ఆమె ప్రతీకారం తీర్చుకోవాలని నిర్ణయించుకుంది మరియు కోటోన్‌తో పాటు కజుషితో కలిసి అతని స్నానంలో చేరింది. వక్రబుద్ధిగల కజుషి వారిద్దరి పట్ల ఉదాసీనంగా ఉండగలడా?"
+    },
+    "genres": [
+      "Drama"
+    ],
+    "year": 2020,
+    "runtime": null,
+    "totalEpisodes": 8,
+    "totalSeasons": 1,
+    "imdbRating": 7.33,
+    "studio": "studio HōKIBOSHI",
+    "language": "Japanese",
+    "country": "JP",
+    "teluguDubAvail": false,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 13,
+    "popularityScore": 26,
+    "universe": null
+  },
+  {
+    "slug": "doraemon-2005",
+    "type": "ANIME",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/9ZN1P32SHviL3SV51qLivxycvcx.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/c2oiRa7V3bQzof4wVGzLXtWJ5QU.jpg",
+    "title": {
+      "en": "Doraemon",
+      "te": "Doraemon"
+    },
+    "description": {
+      "en": "Robotic cat Doraemon is sent back in time from the 22nd century to protect 10-year-old Noby, a lazy and uncoordinated boy who is destined to have a tragic future. Doraemon can create secret gadgets from a pocket on his stomach, but they usually cause more bad than good because of Noby's propensity to misuse them.",
+      "te": "రోబోటిక్ క్యాట్ డోరేమాన్ 22వ శతాబ్దానికి చెందిన 10 ఏళ్ల నోబీని రక్షించడానికి తిరిగి పంపబడింది, అతను విషాదకరమైన భవిష్యత్తును కలిగి ఉన్న సోమరి మరియు సమన్వయం లేని బాలుడు. డోరేమాన్ తన పొట్టపై ఉన్న జేబులో నుండి రహస్య గాడ్జెట్‌లను సృష్టించగలడు, కానీ నోబీ వాటిని దుర్వినియోగం చేసే ప్రవృత్తి కారణంగా అవి సాధారణంగా మంచి కంటే చెడ్డవే ఎక్కువ చేస్తాయి."
+    },
+    "genres": [
+      "Action",
+      "Comedy",
+      "Sci-Fi",
+      "Family"
+    ],
+    "year": 2005,
+    "runtime": null,
+    "totalEpisodes": 1464,
+    "totalSeasons": 1,
+    "imdbRating": 8.037,
+    "studio": "Pierrot",
+    "language": "Japanese",
+    "country": "JP",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 12,
+    "popularityScore": 24,
+    "universe": null
+  },
+  {
+    "slug": "re-zero-starting-life-in-another-world--2016",
+    "type": "ANIME",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/5MrRCj7z92YLWMXHeWKp19eJPYv.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/x6y59dJBE1o0r4YRsWVQXE2nnlB.jpg",
+    "title": {
+      "en": "Re:ZERO -Starting Life in Another World-",
+      "te": "Re:ZERO -Starting Life in Another World-"
+    },
+    "description": {
+      "en": "Natsuki Subaru, an ordinary high school  student, is on his way home from the convenience store when he finds  himself transported to another world. As he's lost and confused in a new  world where he doesn't even know left from right, the only person to  reach out to him was a beautiful girl with silver hair. Determined to  repay her somehow for saving him from his own despair, Subaru agrees to  help the girl find something she's looking for.",
+      "te": "నట్సుకి సుబారు, ఒక సాధారణ హైస్కూల్ విద్యార్థి, అతను ఇతర ప్రపంచానికి రవాణా చేయబడినట్లు కనుగొన్నప్పుడు, దుకాణం నుండి ఇంటికి వెళ్తున్నాడు. ఎడమ నుండి కుడికి కూడా తెలియని కొత్త ప్రపంచంలో అతను ఓడిపోయి, గందరగోళంలో ఉన్నందున, అతనిని సంప్రదించిన ఏకైక వ్యక్తి వెండి జుట్టుతో ఉన్న అందమైన అమ్మాయి. తన స్వంత నిరాశ నుండి అతనిని రక్షించినందుకు ఎలాగైనా ఆమెకు తిరిగి చెల్లించాలని నిశ్చయించుకున్న సుబారు, అమ్మాయి వెతుకుతున్న దానిని కనుగొనడంలో సహాయం చేయడానికి అంగీకరిస్తాడు."
+    },
+    "genres": [
+      "Action",
+      "Sci-Fi",
+      "Drama",
+      "Thriller"
+    ],
+    "year": 2016,
+    "runtime": null,
+    "totalEpisodes": 85,
+    "totalSeasons": 1,
+    "imdbRating": 7.9,
+    "studio": "White Fox",
+    "language": "Japanese",
+    "country": "JP",
+    "teluguDubAvail": false,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 10,
+    "popularityScore": 19,
+    "universe": null
+  },
+  {
+    "slug": "bleach-2004",
+    "type": "ANIME",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/5iVUUnE2tgBPypACYNobCKHagfV.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/o0NsbcIvsllg6CJX0FBFY8wWbsn.jpg",
+    "title": {
+      "en": "Bleach",
+      "te": "Bleach"
+    },
+    "description": {
+      "en": "For as long as he can remember, Ichigo Kurosaki has been able to see ghosts. But when he meets Rukia, a Soul Reaper who battles evil spirits known as Hollows, he finds his life is changed forever. Now, with a newfound wealth of spiritual energy, Ichigo discovers his true calling: to protect the living and the dead from evil.",
+      "te": "అతనికి గుర్తున్నంత కాలం, ఇచిగో కురోసాకి దెయ్యాలను చూడగలిగాడు. కానీ అతను హాలోస్ అని పిలువబడే దుష్టశక్తులతో పోరాడే సోల్ రీపర్ అయిన రుకియాను కలుసుకున్నప్పుడు, అతను తన జీవితం శాశ్వతంగా మారినట్లు కనుగొన్నాడు. ఇప్పుడు, ఆధ్యాత్మిక శక్తి యొక్క కొత్త సంపదతో, ఇచిగో తన నిజమైన పిలుపును కనుగొన్నాడు: జీవించి ఉన్నవారిని మరియు చనిపోయినవారిని చెడు నుండి రక్షించడానికి."
+    },
+    "genres": [
+      "Action",
+      "Sci-Fi"
+    ],
+    "year": 2004,
+    "runtime": null,
+    "totalEpisodes": 407,
+    "totalSeasons": 2,
+    "imdbRating": 8.4,
+    "studio": "Pierrot",
+    "language": "Japanese",
+    "country": "JP",
+    "teluguDubAvail": false,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 10,
+    "popularityScore": 19,
+    "universe": null
+  },
+  {
+    "slug": "the-apothecary-diaries-2023",
+    "type": "ANIME",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/e3ojpANrFnmJCyeBNTinYwyBCIN.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/gffVOVZ2Y9cmVIZ26Gt9ByMGCYH.jpg",
+    "title": {
+      "en": "The Apothecary Diaries",
+      "te": "The Apothecary Diaries"
+    },
+    "description": {
+      "en": "Maomao lived a peaceful life with her apothecary father. Until one day, she's sold as a lowly servant to the emperor's palace. But she wasn't meant for a compliant life among royalty. So when imperial heirs fall ill, she decides to step in and find a cure! This catches the eye of Jinshi, a handsome palace official who promotes her. Now, she's making a name for herself solving medical mysteries!",
+      "te": "మామావో తన అపోథెకరీ తండ్రితో ప్రశాంతమైన జీవితాన్ని గడిపాడు. ఒక రోజు వరకు, ఆమె చక్రవర్తి రాజభవనానికి తక్కువ సేవకురాలిగా విక్రయించబడింది. కానీ ఆమె రాయల్టీలో కంప్లైంట్ జీవితం కోసం ఉద్దేశించబడలేదు. కాబట్టి సామ్రాజ్య వారసులు అనారోగ్యం పాలైనప్పుడు, ఆమె అడుగుపెట్టి నివారణను కనుగొనాలని నిర్ణయించుకుంది! ఇది ఆమెను ప్రమోట్ చేసే అందమైన ప్యాలెస్ అధికారి జిన్షి దృష్టిని ఆకర్షించింది. ఇప్పుడు, ఆమె వైద్య రహస్యాలను ఛేదించడంలో తనకంటూ ఒక పేరు తెచ్చుకుంటోంది!"
+    },
+    "genres": [
+      "Drama",
+      "Thriller"
+    ],
+    "year": 2023,
+    "runtime": null,
+    "totalEpisodes": 48,
+    "totalSeasons": 1,
+    "imdbRating": 8.587,
+    "studio": "OLM",
+    "language": "Japanese",
+    "country": "JP",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 8,
+    "popularityScore": 16,
+    "universe": null
+  },
+  {
+    "slug": "frieren-beyond-journey-s-end-2023",
+    "type": "ANIME",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/dqZENchTd7lp5zht7BdlqM7RBhD.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/rBOnrVlck7BIlGeWVlzYiZeg4l2.jpg",
+    "title": {
+      "en": "Frieren: Beyond Journey's End",
+      "te": "Frieren: Beyond Journey's End"
+    },
+    "description": {
+      "en": "After the party of heroes defeated the Demon King, they restored peace to the land and returned to lives of solitude.  Generations pass, and the elven mage Frieren comes face to face with humanity’s mortality. She takes on a new apprentice and promises to fulfill old friends’ dying wishes. Can an elven mind make peace with the nature of life and death? Frieren embarks on her quest to find out.",
+      "te": "హీరోల పార్టీ రాక్షస రాజును ఓడించిన తరువాత, వారు భూమికి శాంతిని పునరుద్ధరించారు మరియు ఏకాంత జీవితానికి తిరిగి వచ్చారు.  తరాలు గడిచిపోతున్నాయి మరియు ఎల్వెన్ మాంత్రికుడు ఫ్రైరెన్ మానవాళి మరణాలతో ముఖాముఖిగా వస్తాడు. ఆమె కొత్త అప్రెంటిస్‌ని తీసుకుంటుంది మరియు పాత స్నేహితుల మరణిస్తున్న కోరికలను నెరవేరుస్తానని హామీ ఇచ్చింది. ఎల్వెన్ మనస్సు జీవితం మరియు మరణం యొక్క స్వభావంతో శాంతిని పొందగలదా? Frieren తెలుసుకోవడానికి తన అన్వేషణను ప్రారంభించింది."
+    },
+    "genres": [
+      "Action",
+      "Drama",
+      "Sci-Fi"
+    ],
+    "year": 2023,
+    "runtime": null,
+    "totalEpisodes": 38,
+    "totalSeasons": 1,
+    "imdbRating": 8.801,
+    "studio": "Madhouse",
+    "language": "Japanese",
+    "country": "JP",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 8,
+    "popularityScore": 16,
+    "universe": null
+  },
+  {
+    "slug": "jojo-s-bizarre-adventure-2012",
+    "type": "ANIME",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/ogAWwbh3frWtiTyyXrZaVFtqCgp.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/mLKN1dsimKPiXCZ48KED0X8a02t.jpg",
+    "title": {
+      "en": "JoJo's Bizarre Adventure",
+      "te": "JoJo's Bizarre Adventure"
+    },
+    "description": {
+      "en": "Follow the intergenerational feud between the Joestar Family and various forces of evil, the most prominent of which is Dio Brando and his followers.",
+      "te": "జోస్టార్ కుటుంబం మరియు వివిధ దుష్ట శక్తుల మధ్య తరాల మధ్య వైరం అనుసరించండి, అందులో ప్రముఖమైనది డియో బ్రాండో మరియు అతని అనుచరులు."
+    },
+    "genres": [
+      "Action",
+      "Sci-Fi"
+    ],
+    "year": 2012,
+    "runtime": null,
+    "totalEpisodes": 192,
+    "totalSeasons": 6,
+    "imdbRating": 8.555,
+    "studio": "David Production",
+    "language": "Japanese",
+    "country": "JP",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 8,
+    "popularityScore": 15,
+    "universe": null
+  },
+  {
+    "slug": "my-wife-has-no-emotion-2024",
+    "type": "ANIME",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/ttaknfJP0qjg7kMKwH0w29fcE6d.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/cQGq1oRSORK1xHnAvli4qXOBOTJ.jpg",
+    "title": {
+      "en": "My Wife Has No Emotion",
+      "te": "My Wife Has No Emotion"
+    },
+    "description": {
+      "en": "Takuma isn’t the most exciting guy. He’s awkward, single, and does nothing but go to work and come home. Tired of doing chores, he decides to buy a housekeeping robot named Mina. She can cook and clean perfectly, and the two get to know each other better over time. Soon, Takuma starts to fall for Mina! But could a robot ever love him back?",
+      "te": "తకుమా అత్యంత ఉత్తేజకరమైన వ్యక్తి కాదు. అతను ఇబ్బందికరంగా, ఒంటరిగా ఉన్నాడు మరియు పనికి వెళ్లి ఇంటికి రావడం తప్ప ఏమీ చేయడు. చాకిరీ చేస్తూ విసిగిపోయి మినా అనే హౌస్ కీపింగ్ రోబోని కొనాలని నిర్ణయించుకున్నాడు. ఆమె ఖచ్చితంగా ఉడికించి శుభ్రం చేయగలదు మరియు ఇద్దరూ కాలక్రమేణా ఒకరినొకరు బాగా తెలుసుకుంటారు. త్వరలో, టకుమా మినా కోసం పడటం ప్రారంభమవుతుంది! కానీ రోబోట్ అతనిని తిరిగి ప్రేమించగలదా?"
+    },
+    "genres": [
+      "Sci-Fi",
+      "Drama",
+      "Comedy"
+    ],
+    "year": 2024,
+    "runtime": null,
+    "totalEpisodes": 12,
+    "totalSeasons": 1,
+    "imdbRating": 6.5,
+    "studio": "Tezuka Productions",
+    "language": "Japanese",
+    "country": "JP",
+    "teluguDubAvail": false,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 9,
+    "popularityScore": 17,
+    "universe": null
+  },
+  {
+    "slug": "secret-mission-undercover-agents-never-back-down--2023",
+    "type": "ANIME",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/xZV8e1iKi85PFZlbQBdznvtpAVJ.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/5IBSPGPAEFEkEJo4leqvpq0RcKf.jpg",
+    "title": {
+      "en": "Secret Mission - Undercover Agents Never Back Down!",
+      "te": "Secret Mission - Undercover Agents Never Back Down!"
+    },
+    "description": {
+      "en": "Narcotics Enforcement Agent Riko Ikazuchi is undercover with her junior colleague Noma in an apartment that serves as the hideout for a criminal organization. Despite Riko and Noma posing as a newlywed couple, the criminals begin to suspect them after not hearing any marital intimacy during the night. To convince them that they are a loving couple, Noma starts touching Riko's body...",
+      "te": "నార్కోటిక్స్ ఎన్‌ఫోర్స్‌మెంట్ ఏజెంట్ రికో ఇకాజుచి తన జూనియర్ సహోద్యోగి నోమాతో ఒక క్రిమినల్ సంస్థకు రహస్య స్థావరంలో ఉన్న అపార్ట్‌మెంట్‌లో రహస్యంగా ఉన్నారు. రికో మరియు నోమా నూతన వధూవరులుగా నటిస్తున్నప్పటికీ, రాత్రి సమయంలో ఎలాంటి వివాహ సాన్నిహిత్యాన్ని వినకపోవడంతో నేరస్థులు వారిని అనుమానించడం ప్రారంభిస్తారు. వారు ప్రేమ జంట అని వారిని ఒప్పించేందుకు, నోమా రికో శరీరాన్ని తాకడం ప్రారంభిస్తుంది..."
+    },
+    "genres": [
+      "Drama"
+    ],
+    "year": 2023,
+    "runtime": null,
+    "totalEpisodes": 8,
+    "totalSeasons": 1,
+    "imdbRating": 6.1,
+    "studio": "Rabbit Gate",
+    "language": "Japanese",
+    "country": "JP",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 9,
+    "popularityScore": 18,
+    "universe": null
+  },
+  {
+    "slug": "pok-mon-1997",
+    "type": "ANIME",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/lP4zwr0F7hWTbAFltfoFTc2AxRG.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/yYpQV25I7XB6S0POJOScPjxYWV5.jpg",
+    "title": {
+      "en": "Pokémon",
+      "te": "Pokémon"
+    },
+    "description": {
+      "en": "Join Ash accompanied by his partner Pikachu, as he travels through many regions, meets new friends and faces new challenges on his quest to become a Pokémon Master.",
+      "te": "తన భాగస్వామి పికాచుతో కలిసి యాష్‌లో చేరండి, అతను అనేక ప్రాంతాలలో ప్రయాణిస్తున్నప్పుడు, కొత్త స్నేహితులను కలుసుకున్నాడు మరియు పోకీమాన్ మాస్టర్ కావాలనే అతని తపనతో కొత్త సవాళ్లను ఎదుర్కొంటాడు."
+    },
+    "genres": [
+      "Action",
+      "Sci-Fi"
+    ],
+    "year": 1997,
+    "runtime": null,
+    "totalEpisodes": 1235,
+    "totalSeasons": 25,
+    "imdbRating": 7.982,
+    "studio": "Shogakukan Production",
+    "language": "Japanese",
+    "country": "JP",
+    "teluguDubAvail": false,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 8,
+    "popularityScore": 16,
+    "universe": null
+  },
+  {
+    "slug": "mushoku-tensei-jobless-reincarnation-2021",
+    "type": "ANIME",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/gLKOYIMyKlUHW0SVdskhgf9C0yy.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/j9fRIimor0AMFJR9kjZubXcABzZ.jpg",
+    "title": {
+      "en": "Mushoku Tensei: Jobless Reincarnation",
+      "te": "Mushoku Tensei: Jobless Reincarnation"
+    },
+    "description": {
+      "en": "When a 34-year-old underachiever gets run over by a truck, his story doesn't end there. Reincarnated in a new world as an infant, Rudy will seize every opportunity to live the life he's always wanted. Armed with new friends, some freshly acquired magical abilities, and the courage to do the things he's always dreamed of, he's embarking on an epic adventure—with all of his past experience intact!",
+      "te": "34 ఏళ్ల అండర్ అచీవర్‌ని ట్రక్కు ఢీకొట్టినప్పుడు, అతని కథ అక్కడితో ముగియదు. శిశువుగా కొత్త ప్రపంచంలో పునర్జన్మ పొందిన రూడీ, అతను ఎల్లప్పుడూ కోరుకునే జీవితాన్ని గడపడానికి ప్రతి అవకాశాన్ని ఉపయోగించుకుంటాడు. కొత్త స్నేహితులు, తాజాగా సంపాదించిన కొన్ని మాంత్రిక సామర్థ్యాలు మరియు అతను ఎప్పుడూ కలలుగన్న పనులను చేయగల ధైర్యంతో, అతను తన గత అనుభవాలన్నింటినీ చెక్కుచెదరకుండా ఒక పురాణ సాహసయాత్రను ప్రారంభించాడు!"
+    },
+    "genres": [
+      "Action",
+      "Sci-Fi"
+    ],
+    "year": 2021,
+    "runtime": null,
+    "totalEpisodes": 48,
+    "totalSeasons": 3,
+    "imdbRating": 8.557,
+    "studio": "Studio Bind",
+    "language": "Japanese",
+    "country": "JP",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 7,
+    "popularityScore": 13,
+    "universe": null
+  },
+  {
+    "slug": "naruto-2002",
+    "type": "ANIME",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/xppeysfvDKVx775MFuH8Z9BlpMk.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/mpsYIytXhDXjI9yYC1Fp1S3PxsS.jpg",
+    "title": {
+      "en": "Naruto",
+      "te": "Naruto"
+    },
+    "description": {
+      "en": "Naruto Uzumaki, a mischievous adolescent ninja, struggles as he searches for recognition and dreams of becoming the Hokage, the village's leader and strongest ninja.",
+      "te": "నరుటో ఉజుమకి, ఒక కొంటె యుక్తవయస్సు నింజా, అతను గుర్తింపు కోసం వెతుకుతున్నప్పుడు కష్టపడుతున్నాడు మరియు గ్రామ నాయకుడు మరియు బలమైన నింజా అయిన హోకేజ్ కావాలని కలలు కంటున్నాడు."
+    },
+    "genres": [
+      "Action",
+      "Sci-Fi"
+    ],
+    "year": 2002,
+    "runtime": null,
+    "totalEpisodes": 220,
+    "totalSeasons": 4,
+    "imdbRating": 8.364,
+    "studio": "Pierrot",
+    "language": "Japanese",
+    "country": "JP",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 8,
+    "popularityScore": 17,
+    "universe": "naruto"
+  },
+  {
+    "slug": "naruto-shipp-den-2007",
+    "type": "ANIME",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/kV27j3Nz4d5z8u6mN3EJw9RiLg2.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/z0YhJvomqedHF85bplUJEotkN5l.jpg",
+    "title": {
+      "en": "Naruto Shippūden",
+      "te": "Naruto Shippūden"
+    },
+    "description": {
+      "en": "After 2 and a half years Naruto finally returns to his village of Konoha, and sets about putting his ambitions to work. It will not be easy though as he has amassed a few more dangerous enemies, in the likes of the shinobi organization; Akatsuki.",
+      "te": "2న్నర సంవత్సరాల తర్వాత నరుటో చివరకు కొనోహా అనే తన గ్రామానికి తిరిగి వస్తాడు మరియు తన ఆశయాలను పనిలో పెట్టుకోవడం గురించి ప్రారంభించాడు. అతను షినోబి సంస్థ వంటి వాటిలో మరికొంత మంది ప్రమాదకరమైన శత్రువులను కూడబెట్టుకున్నప్పటికీ అది అంత సులభం కాదు; అకాట్సుకి."
+    },
+    "genres": [
+      "Action",
+      "Sci-Fi"
+    ],
+    "year": 2007,
+    "runtime": null,
+    "totalEpisodes": 500,
+    "totalSeasons": 20,
+    "imdbRating": 8.535,
+    "studio": "TV Tokyo",
+    "language": "Japanese",
+    "country": "JP",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 7,
+    "popularityScore": 14,
+    "universe": "naruto"
+  },
+  {
+    "slug": "rurouni-kenshin-2023",
+    "type": "ANIME",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/zT77Y6iQGmYGBqbhQi0ySD60o9i.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/xV0Xro8G20SgxYfGrXun26k7eVp.jpg",
+    "title": {
+      "en": "Rurouni Kenshin",
+      "te": "Rurouni Kenshin"
+    },
+    "description": {
+      "en": "Ten years have passed since the end of Bakumatsu, an era of war that saw the uprising of citizens against the Tokugawa shogunate. The revolutionaries wanted to create a time of peace, and a thriving country free from oppression. The new age of Meiji has come, but peace has not yet been achieved. Swords are banned but people are still murdered in the streets. Orphans of war veterans are left with nowhere to go, while the government seems content to just line their pockets with money.",
+      "te": "తోకుగావా షోగునేట్‌కు వ్యతిరేకంగా పౌరుల తిరుగుబాటును చూసిన యుద్ధ యుగం అయిన బకుమాట్సు ముగిసినప్పటి నుండి పది సంవత్సరాలు గడిచాయి. విప్లవకారులు శాంతి కాలాన్ని సృష్టించాలని మరియు అణచివేత లేని అభివృద్ధి చెందుతున్న దేశాన్ని సృష్టించాలని కోరుకున్నారు. మీజీ యొక్క కొత్త యుగం వచ్చింది, కానీ శాంతి ఇంకా సాధించబడలేదు. కత్తులు నిషేధించబడ్డాయి, కాని ప్రజలు ఇప్పటికీ వీధుల్లో హత్య చేయబడుతున్నారు. యుద్ధ అనుభవజ్ఞుల అనాథలు ఎక్కడికీ వెళ్లలేని స్థితిలో ఉన్నారు, అయితే ప్రభుత్వం వారి జేబులకు డబ్బుతో సంతృప్తి చెందుతుంది."
+    },
+    "genres": [
+      "Action"
+    ],
+    "year": 2023,
+    "runtime": null,
+    "totalEpisodes": 47,
+    "totalSeasons": 1,
+    "imdbRating": 8.342,
+    "studio": "LIDENFILMS",
+    "language": "Japanese",
+    "country": "JP",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 5,
+    "popularityScore": 10,
+    "universe": null
+  },
+  {
+    "slug": "spy-x-family-2022",
+    "type": "ANIME",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/7NAvPYPAu7MeHwP8E9sn81PqsRh.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/lysUnU6V0VfcthDbviuVlIqgHOR.jpg",
+    "title": {
+      "en": "SPY x FAMILY",
+      "te": "SPY x FAMILY"
+    },
+    "description": {
+      "en": "A spy, an assassin and a telepath come together to pose as a family, each for their own reasons, while hiding their true identities from each other.",
+      "te": "ఒక గూఢచారి, ఒక హంతకుడు మరియు ఒక టెలిపాత్ ఒక కుటుంబం వలె కలిసి వస్తారు, ప్రతి ఒక్కరు వారి స్వంత కారణాల కోసం, వారి నిజమైన గుర్తింపులను ఒకరికొకరు దాచుకుంటారు."
+    },
+    "genres": [
+      "Action",
+      "Comedy"
+    ],
+    "year": 2022,
+    "runtime": null,
+    "totalEpisodes": 50,
+    "totalSeasons": 3,
+    "imdbRating": 8.506,
+    "studio": "WIT STUDIO",
+    "language": "Japanese",
+    "country": "JP",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 9,
+    "popularityScore": 18,
+    "universe": null
+  },
+  {
+    "slug": "adam-s-sweet-agony-2024",
+    "type": "ANIME",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/1n1ZP0KHXUSvVxZG63x7aOzmO4M.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/bM4nCynOSA5oCNqLsqb1Fo56sZQ.jpg",
+    "title": {
+      "en": "Adam's Sweet Agony",
+      "te": "Adam's Sweet Agony"
+    },
+    "description": {
+      "en": "This is the story of a boy, who became the lone Adam among four billion Eves. In a world where a pandemic has rendered all men impotent, high school student Itsuki is the exception who escaped it. In order to protect this secret, he transfers to a very special high school, which turns out to be composed of 90% girls! There, he encounters an upbeat and friendly senior, a sexually frustrated female teacher, a tomboyish school 'prince,' and an heiress from a wealthy family. For Itsuki, who has his pick of any woman in the world, the question remains: which one will he choose?",
+      "te": "నాలుగు బిలియన్ల ఈవ్‌లలో ఒంటరి ఆడమ్‌గా మారిన బాలుడి కథ ఇది. ఒక మహమ్మారి పురుషులందరినీ నపుంసకులుగా మార్చిన ప్రపంచంలో, హైస్కూల్ విద్యార్థి ఇట్సుకి దాని నుండి తప్పించుకున్న మినహాయింపు. ఈ రహస్యాన్ని రక్షించడానికి, అతను చాలా ప్రత్యేకమైన ఉన్నత పాఠశాలకు బదిలీ చేస్తాడు, అది 90% బాలికలతో కూడి ఉంటుంది! అక్కడ, అతను ఒక ఉల్లాసమైన మరియు స్నేహపూర్వకమైన సీనియర్, లైంగికంగా విసుగు చెందిన మహిళా ఉపాధ్యాయురాలు, టాంబోయిష్ స్కూల్ 'ప్రిన్స్' మరియు సంపన్న కుటుంబానికి చెందిన వారసురాలిని ఎదుర్కొంటాడు. ప్రపంచంలోని ఏ స్త్రీనైనా ఎంపిక చేసుకున్న ఇట్సుకికి, ప్రశ్న మిగిలి ఉంది: అతను ఎవరిని ఎంచుకుంటాడు?"
+    },
+    "genres": [
+      "Drama"
+    ],
+    "year": 2024,
+    "runtime": null,
+    "totalEpisodes": 8,
+    "totalSeasons": 1,
+    "imdbRating": 6.786,
+    "studio": "studio HōKIBOSHI",
+    "language": "Japanese",
+    "country": "JP",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 7,
+    "popularityScore": 14,
+    "universe": null
+  },
+  {
+    "slug": "dragon-ball-z-1989",
+    "type": "ANIME",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/yfyToia25GnvjY7FPAGaCm3lKRc.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/ydf1CeiBLfdxiyNTpskM0802TKl.jpg",
+    "title": {
+      "en": "Dragon Ball Z",
+      "te": "Dragon Ball Z"
+    },
+    "description": {
+      "en": "Now happily married and with a son, martial arts champion Goku must defend Earth from a series of extraterrestrial invaders bent on destruction.",
+      "te": "ఇప్పుడు సంతోషంగా వివాహం చేసుకున్నాడు మరియు ఒక కొడుకుతో, మార్షల్ ఆర్ట్స్ ఛాంపియన్ గోకు భూమిని విధ్వంసం కోసం వంగిన గ్రహాంతర ఆక్రమణదారుల నుండి రక్షించాలి."
+    },
+    "genres": [
+      "Sci-Fi",
+      "Action"
+    ],
+    "year": 1989,
+    "runtime": null,
+    "totalEpisodes": 291,
+    "totalSeasons": 9,
+    "imdbRating": 8.4,
+    "studio": "Fuji Television Network",
+    "language": "Japanese",
+    "country": "JP",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 7,
+    "popularityScore": 14,
+    "universe": null
+  },
+  {
+    "slug": "chihayafuru-2011",
+    "type": "ANIME",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/x1yYnCaK8gLnLgQSnd9IGoapHbx.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/e1R4kNrWvSfb8AVViMp0okVJfuk.jpg",
+    "title": {
+      "en": "Chihayafuru",
+      "te": "Chihayafuru"
+    },
+    "description": {
+      "en": "Chihaya Ayase has spent most of her life supporting her sister’s model career. When she meets a boy named Arata Wataya, he thinks Chihaya has potential to become a great karuta player. As Chihaya dreams of becoming Japan's best karuta player, she is soon separated from her karuta playing friends. Now in high school, Chihaya still plays karuta in the hope that she will one day meet her friends again.",
+      "te": "చిహాయా అయాసే తన జీవితంలో ఎక్కువ భాగం తన సోదరి మోడల్ కెరీర్‌కు మద్దతుగా గడిపింది. ఆమె అరటా వటయా అనే అబ్బాయిని కలిసినప్పుడు, అతను చిహయకు గొప్ప కరుత ప్లేయర్‌గా మారే అవకాశం ఉందని భావిస్తాడు. చిహాయా జపాన్ యొక్క ఉత్తమ కరుటా ప్లేయర్ కావాలని కలలుకంటున్నందున, ఆమె త్వరలో తన కరుటా వాయించే స్నేహితుల నుండి విడిపోయింది. ఇప్పుడు హైస్కూల్‌లో, చిహాయ తన స్నేహితులను మళ్లీ కలుస్తాననే ఆశతో ఇప్పటికీ కరుత ఆడుతోంది."
+    },
+    "genres": [
+      "Drama"
+    ],
+    "year": 2011,
+    "runtime": null,
+    "totalEpisodes": 74,
+    "totalSeasons": 3,
+    "imdbRating": 7.591,
+    "studio": "Madhouse",
+    "language": "Japanese",
+    "country": "JP",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 5,
+    "popularityScore": 11,
+    "universe": null
+  },
+  {
+    "slug": "solo-leveling-2024",
+    "type": "ANIME",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/geCRueV3ElhRTr0xtJuEWJt6dJ1.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/xMNH87maNLt9n2bMDYeI6db5VFm.jpg",
+    "title": {
+      "en": "Solo Leveling",
+      "te": "Solo Leveling"
+    },
+    "description": {
+      "en": "They say whatever doesn’t kill you makes you stronger, but that’s not the case for the world’s weakest hunter Sung Jinwoo. After being brutally slaughtered by monsters in a high-ranking dungeon, Jinwoo came back with the System, a program only he could see, that’s leveling him up in every way. Now, he’s inspired to discover the secrets behind his powers and the dungeon that spawned them.",
+      "te": "మిమ్మల్ని చంపనిది మిమ్మల్ని బలపరుస్తుందని వారు అంటున్నారు, కానీ ప్రపంచంలోని అత్యంత బలహీనమైన వేటగాడు సంగ్ జిన్‌వూ విషయంలో అలా కాదు. ఉన్నత స్థాయి చెరసాలలో రాక్షసులచే దారుణంగా వధించబడిన తర్వాత, జిన్వూ సిస్టమ్‌తో తిరిగి వచ్చాడు, అతను మాత్రమే చూడగలిగే ప్రోగ్రామ్, అది అతనిని అన్ని విధాలుగా సమం చేస్తుంది. ఇప్పుడు, అతను తన శక్తుల వెనుక ఉన్న రహస్యాలు మరియు వాటిని సృష్టించిన చెరసాల గురించి తెలుసుకోవడానికి ప్రేరణ పొందాడు."
+    },
+    "genres": [
+      "Action",
+      "Sci-Fi"
+    ],
+    "year": 2024,
+    "runtime": null,
+    "totalEpisodes": 25,
+    "totalSeasons": 1,
+    "imdbRating": 8.647,
+    "studio": "A-1 Pictures",
+    "language": "Japanese",
+    "country": "JP",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 6,
+    "popularityScore": 12,
+    "universe": null
+  },
+  {
+    "slug": "monster-2004",
+    "type": "ANIME",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/n5XNKXnoXpoXyfiCtXHOf8q8PFM.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/6T19aRp9zLMghZo1dTEwoNyreNZ.jpg",
+    "title": {
+      "en": "Monster",
+      "te": "Monster"
+    },
+    "description": {
+      "en": "Kenzou Tenma, a Japanese brain surgeon in Germany, finds his life in utter turmoil after getting involved with a psychopath that was once a former patient.",
+      "te": "కెంజో టెన్మా, జర్మనీలో ఒక జపనీస్ బ్రెయిన్ సర్జన్, ఒకప్పుడు మాజీ రోగి అయిన మానసిక రోగితో సంబంధం పెట్టుకున్న తర్వాత అతని జీవితం పూర్తిగా గందరగోళంలో ఉంది."
+    },
+    "genres": [
+      "Drama",
+      "Thriller",
+      "Crime"
+    ],
+    "year": 2004,
+    "runtime": null,
+    "totalEpisodes": 74,
+    "totalSeasons": 1,
+    "imdbRating": 8.524,
+    "studio": "Shogakukan Production",
+    "language": "Japanese",
+    "country": "JP",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 6,
+    "popularityScore": 13,
+    "universe": null
+  },
+  {
+    "slug": "the-ancient-magus-bride-2017",
+    "type": "ANIME",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/xXGAFMGiG55oS8uzuVz7V5JxFb2.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/KI2sFvqJHzc95WM7dcX9kM8tY1.jpg",
+    "title": {
+      "en": "The Ancient Magus' Bride",
+      "te": "The Ancient Magus' Bride"
+    },
+    "description": {
+      "en": "Hatori Chise has lived a life full of neglect and abuse, devoid of anything resembling love. Far from the warmth of family, she has had her share of troubles and pitfalls. Just when all hope seems lost, a fateful encounter awaits her. When a man with the head of a beast, wielding strange powers, obtains her through a slave auction, Chise's life will never be the same again. The man is a \"magus,\"a sorcerer of great power, who decides to free Chise from the bonds of captivity. The magus then makes a bold statement: Chise will become his apprentice--and his bride!",
+      "te": "హటోరి చిసే ప్రేమను పోలిన ఏదీ లేకుండా నిర్లక్ష్యం మరియు దుర్వినియోగంతో నిండిన జీవితాన్ని గడిపారు. కుటుంబం యొక్క వెచ్చదనానికి దూరంగా, ఆమె కష్టాలు మరియు ఆపదలను కలిగి ఉంది. అన్ని ఆశలు కోల్పోయినట్లుగా అనిపించినప్పుడు, విధిలేని ఎన్‌కౌంటర్ ఆమెకు ఎదురుచూస్తుంది. ఒక మృగం యొక్క తలతో, వింత శక్తులను కలిగి ఉన్న వ్యక్తి, బానిస వేలం ద్వారా ఆమెను పొందినప్పుడు, చీస్ జీవితం మళ్లీ అదే విధంగా ఉండదు. మనిషి ఒక \"మాగస్,\" గొప్ప శక్తి యొక్క మాంత్రికుడు, అతను బందిఖానాల బంధాల నుండి చీస్‌ను విడిపించడానికి నిర్ణయించుకుంటాడు. మాగస్ అప్పుడు ధైర్యంగా ఒక ప్రకటన చేస్తాడు: చీస్ అతని అప్రెంటిస్ - మరియు అతని వధువు అవుతుంది!"
+    },
+    "genres": [
+      "Drama",
+      "Sci-Fi"
+    ],
+    "year": 2017,
+    "runtime": null,
+    "totalEpisodes": 48,
+    "totalSeasons": 2,
+    "imdbRating": 8.4,
+    "studio": "WIT STUDIO",
+    "language": "Japanese",
+    "country": "JP",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 5,
+    "popularityScore": 11,
+    "universe": null
+  },
+  {
+    "slug": "hunter-x-hunter-2011",
+    "type": "ANIME",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/i2EEr2uBvRlAwJ8d8zTG2Y19mIa.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/bFKKyCI89Xq98Gul8cGox8K3sZa.jpg",
+    "title": {
+      "en": "Hunter x Hunter",
+      "te": "Hunter x Hunter"
+    },
+    "description": {
+      "en": "Gon, a young boy who lives on Whale Island, dreams of becoming a Hunter like his father, who left when Gon was still young.",
+      "te": "వేల్ ద్వీపంలో నివసించే గోన్ అనే యువకుడు, గోన్ ఇంకా చిన్నతనంలోనే విడిచిపెట్టిన తన తండ్రిలా హంటర్ కావాలని కలలు కంటాడు."
+    },
+    "genres": [
+      "Action",
+      "Sci-Fi"
+    ],
+    "year": 2011,
+    "runtime": null,
+    "totalEpisodes": 148,
+    "totalSeasons": 3,
+    "imdbRating": 8.665,
+    "studio": "Madhouse",
+    "language": "Japanese",
+    "country": "JP",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 8,
+    "popularityScore": 15,
+    "universe": null
+  },
+  {
+    "slug": "march-comes-in-like-a-lion-2016",
+    "type": "ANIME",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/sokReNdjEwG2TkdUzJcVnD6sChT.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/mLzJpP9YRexGbvgiqunirAM5HAA.jpg",
+    "title": {
+      "en": "March Comes In Like a Lion",
+      "te": "March Comes In Like a Lion"
+    },
+    "description": {
+      "en": "This is a gentle tale about people trying to regain something. And it is a tale of battle. Rei Kiriyama had lost his family in an accident when he was young. Now he is a 17-year-old pro shogi player who is burdened with deep loneliness. Rei lives alone in an old town in Tokyo, but after becoming acquainted with three sisters, Akari, Hinata and Momo, he begins to change little by little...",
+      "te": "ఏదైనా తిరిగి పొందాలని ప్రయత్నిస్తున్న వ్యక్తుల గురించి ఇది సున్నితమైన కథ. మరియు ఇది యుద్ధ కథ. రేయి కిరియామా తన చిన్నతనంలో ఒక ప్రమాదంలో తన కుటుంబాన్ని కోల్పోయాడు. ఇప్పుడు అతను లోతైన ఒంటరితనంతో బాధపడుతున్న 17 ఏళ్ల ప్రో షోగి ఆటగాడు. రేయ్ టోక్యోలోని పాత పట్టణంలో ఒంటరిగా నివసిస్తున్నాడు, కానీ అకారి, హినాటా మరియు మోమో అనే ముగ్గురు సోదరీమణులతో పరిచయం ఏర్పడిన తర్వాత, అతను కొద్దిగా మారడం ప్రారంభించాడు..."
+    },
+    "genres": [
+      "Drama"
+    ],
+    "year": 2016,
+    "runtime": null,
+    "totalEpisodes": 44,
+    "totalSeasons": 2,
+    "imdbRating": 8,
+    "studio": "SHAFT",
+    "language": "Japanese",
+    "country": "JP",
+    "teluguDubAvail": false,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 5,
+    "popularityScore": 10,
+    "universe": null
+  },
+  {
+    "slug": "pok-mon-horizons-2023",
+    "type": "ANIME",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/amemXW39lMbNBJFRMJ5W7q9mLP2.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/d0axpGojOqDag5lDa0eNSEtw11l.jpg",
+    "title": {
+      "en": "Pokémon Horizons",
+      "te": "Pokémon Horizons"
+    },
+    "description": {
+      "en": "Follow Liko and Roy as they unravel the mysteries that surround them and encounter Friede, Captain Pikachu, Amethio, and others during their exciting adventures!",
+      "te": "లికో మరియు రాయ్‌లు తమ చుట్టూ ఉన్న రహస్యాలను ఛేదిస్తున్నప్పుడు వారిని అనుసరించండి మరియు వారి ఉత్తేజకరమైన సాహసాల సమయంలో ఫ్రైడ్, కెప్టెన్ పికాచు, అమెథియో మరియు ఇతరులను ఎదుర్కొంటారు!"
+    },
+    "genres": [
+      "Action",
+      "Sci-Fi"
+    ],
+    "year": 2023,
+    "runtime": null,
+    "totalEpisodes": 141,
+    "totalSeasons": 1,
+    "imdbRating": 8.6,
+    "studio": "OLM",
+    "language": "Japanese",
+    "country": "JP",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 6,
+    "popularityScore": 11,
+    "universe": null
+  },
+  {
+    "slug": "tokyo-ghoul-2014",
+    "type": "ANIME",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/1m4RlC9BTCbyY549TOdVQ5NRPcR.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/jnwRlthXIgJB75Mt9GEl93Dczki.jpg",
+    "title": {
+      "en": "Tokyo Ghoul",
+      "te": "Tokyo Ghoul"
+    },
+    "description": {
+      "en": "Ken Kaneki, a bookworm college student, meets Rize, a girl his own age with whom he shares many interests.",
+      "te": "కెన్ కనేకి, పుస్తకాల పురుగుల కళాశాల విద్యార్థి, రైజ్ అనే అమ్మాయిని కలుస్తాడు, అతనితో చాలా ఆసక్తులు పంచుకుంటాడు."
+    },
+    "genres": [
+      "Drama",
+      "Sci-Fi"
+    ],
+    "year": 2014,
+    "runtime": null,
+    "totalEpisodes": 48,
+    "totalSeasons": 4,
+    "imdbRating": 8.3,
+    "studio": "Pierrot",
+    "language": "Japanese",
+    "country": "JP",
+    "teluguDubAvail": false,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 5,
+    "popularityScore": 11,
+    "universe": null
+  },
+  {
+    "slug": "ace-of-the-diamond-2013",
+    "type": "ANIME",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/wh9dA4w0iUMVpY7htFSiLDhLTYJ.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/wq5ZykCAFrboIpz36O8pbrJG2dF.jpg",
+    "title": {
+      "en": "Ace of the Diamond",
+      "te": "Ace of the Diamond"
+    },
+    "description": {
+      "en": "Scouted for his potential, brash left-handed pitcher Eijun Sawamura joins baseball powerhouse Seido High to become the undisputed ace of the team.",
+      "te": "అతని సామర్థ్యం కోసం స్కౌట్ చేయబడిన, ధైర్యమైన ఎడమ చేతి పిచ్చర్ ఐజున్ సావమురా బేస్ బాల్ పవర్‌హౌస్ సీడో హైలో చేరి జట్టు యొక్క తిరుగులేని ఏస్‌గా మారాడు."
+    },
+    "genres": [
+      "Drama"
+    ],
+    "year": 2013,
+    "runtime": null,
+    "totalEpisodes": 185,
+    "totalSeasons": 4,
+    "imdbRating": 7.945,
+    "studio": "Production I.G",
+    "language": "Japanese",
+    "country": "JP",
+    "teluguDubAvail": false,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 6,
+    "popularityScore": 11,
+    "universe": null
+  },
+  {
+    "slug": "monogatari-2009",
+    "type": "ANIME",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/zCEjjb1NH3LLsWeZx47wOeqkezf.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/cHII6sQ91q8H5EMONKCwCQMauCP.jpg",
+    "title": {
+      "en": "Monogatari",
+      "te": "Monogatari"
+    },
+    "description": {
+      "en": "Koyomi Araragi, a high school student, finds himself constantly encountering girls afflicted by supernatural \"oddities.\" He dedicates himself to helping them, often with the aid of the eccentric specialist Meme Oshino. Each arc talks about a different girl's unique struggle and the mysterious cause of their affliction. The series explores themes of adolescence, personal growth, and the complexities of human relationships. It's known for its witty dialogue, stylistic animation, and unique narrative structure.",
+      "te": "కొయోమి అరరాగి, ఒక హైస్కూల్ విద్యార్థి, అతీంద్రియ \"విచిత్రాల\"తో బాధపడుతున్న అమ్మాయిలను నిరంతరం ఎదుర్కొంటాడు. అతను తరచుగా అసాధారణ స్పెషలిస్ట్ మెమె ఓషినో సహాయంతో వారికి సహాయం చేయడానికి తనను తాను అంకితం చేసుకుంటాడు. ప్రతి ఆర్క్ వేరే అమ్మాయి యొక్క ఏకైక పోరాటం మరియు వారి బాధకు రహస్యమైన కారణం గురించి మాట్లాడుతుంది. ఈ ధారావాహిక యుక్తవయస్సు, వ్యక్తిగత ఎదుగుదల మరియు మానవ సంబంధాల యొక్క సంక్లిష్టతలను అన్వేషిస్తుంది. ఇది చమత్కారమైన డైలాగ్, స్టైలిస్టిక్ యానిమేషన్ మరియు ప్రత్యేకమైన కథన నిర్మాణానికి ప్రసిద్ధి చెందింది."
+    },
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Thriller"
+    ],
+    "year": 2009,
+    "runtime": null,
+    "totalEpisodes": 72,
+    "totalSeasons": 5,
+    "imdbRating": 8.1,
+    "studio": "SHAFT",
+    "language": "Japanese",
+    "country": "JP",
+    "teluguDubAvail": false,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 5,
+    "popularityScore": 11,
+    "universe": null
+  },
+  {
+    "slug": "ranma--1989",
+    "type": "ANIME",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/qb1R5iLZcjIgdDIfXFQXmJadQPI.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/dI2O0d5Dkk8tpuTvCkUKQw3LNMv.jpg",
+    "title": {
+      "en": "Ranma ½",
+      "te": "Ranma ½"
+    },
+    "description": {
+      "en": "Ranma Saotome, a teenage martial artist, and his father Genma travel to the 'cursed training ground' of Jusenkyo in China. There, despite the warnings of the Chinese guard, they fall into the cursed springs. From now on, whenever Ranma is doused in cold water, he turns into a girl and a cute, well-built redhead at that. Hot water changes him back into a man again, but only until the next time. To make matters worse, his father engages him to Akane Tendo, a girl who hates boys.",
+      "te": "టీనేజ్ మార్షల్ ఆర్టిస్ట్ అయిన రన్మా సాటోమ్ మరియు అతని తండ్రి జెన్మా చైనాలోని జుసెంకియోలోని 'శాపగ్రస్త శిక్షణా మైదానం'కి వెళతారు. అక్కడ, చైనీస్ గార్డు యొక్క హెచ్చరికలు ఉన్నప్పటికీ, వారు శపించబడిన స్ప్రింగ్లలో పడతారు. ఇప్పటి నుండి, రణ్మను చల్లటి నీళ్లలో ముంచినప్పుడల్లా, అతను ఒక అమ్మాయిగా మరియు అందమైన, బాగా కట్టబడిన ఎర్రగా మారతాడు. వేడి నీరు అతన్ని మళ్లీ మనిషిగా మారుస్తుంది, కానీ తదుపరి సమయం వరకు మాత్రమే. విషయాలను మరింత దిగజార్చడానికి, అతని తండ్రి అబ్బాయిలను ద్వేషించే అమ్మాయి అకానె టెండోతో నిశ్చితార్థం చేస్తాడు."
+    },
+    "genres": [
+      "Comedy",
+      "Action",
+      "Sci-Fi"
+    ],
+    "year": 1989,
+    "runtime": null,
+    "totalEpisodes": 161,
+    "totalSeasons": 1,
+    "imdbRating": 8.616,
+    "studio": "Studio Deen",
+    "language": "Japanese",
+    "country": "JP",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 6,
+    "popularityScore": 11,
+    "universe": null
+  },
+  {
+    "slug": "natsume-s-book-of-friends-2008",
+    "type": "ANIME",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/6iIoK9LEM92hBEZD3aVQVCWeaRC.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/xHjRfQIRlxug491JrKiEYl9vHM1.jpg",
+    "title": {
+      "en": "Natsume's Book of Friends",
+      "te": "Natsume's Book of Friends"
+    },
+    "description": {
+      "en": "Natsume Takashi has the ability to see spirits, which he has long kept secret. However, once he inherits a strange book that belonged to his deceased grandmother, Reiko, he discovers the reason why spirits surround him.",
+      "te": "నట్సుమే తకాషికి ఆత్మలను చూడగల సామర్థ్యం ఉంది, దానిని అతను చాలా కాలంగా రహస్యంగా ఉంచాడు. అయినప్పటికీ, అతను మరణించిన తన అమ్మమ్మ రెయికోకి చెందిన ఒక వింత పుస్తకాన్ని వారసత్వంగా పొందిన తర్వాత, ఆత్మలు తనను చుట్టుముట్టడానికి గల కారణాన్ని అతను కనుగొన్నాడు."
+    },
+    "genres": [
+      "Sci-Fi"
+    ],
+    "year": 2008,
+    "runtime": null,
+    "totalEpisodes": 86,
+    "totalSeasons": 7,
+    "imdbRating": 8.2,
+    "studio": "Brain's Base",
+    "language": "Japanese",
+    "country": "JP",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 5,
+    "popularityScore": 11,
+    "universe": null
+  },
+  {
+    "slug": "mob-psycho-100-2016",
+    "type": "ANIME",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/vR7hwaGQ0ySRoq1WobiNRaPs4WO.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/kP5duNJEbTfXpBs6CITsaZ88pQi.jpg",
+    "title": {
+      "en": "Mob Psycho 100",
+      "te": "Mob Psycho 100"
+    },
+    "description": {
+      "en": "Shigeo Kageyama, a.k.a. \"Mob,\" is a boy who has trouble expressing himself, but who happens to be a powerful esper. Mob is determined to live a normal life and keeps his ESP suppressed, but when his emotions surge to a level of 100%, something terrible happens to him! As he's surrounded by false espers, evil spirits, and mysterious organizations, what will Mob think? What choices will he make?",
+      "te": "షిజియో కగేయామా, అ.కా. \"మాబ్,\" తన భావాలను వ్యక్తీకరించడంలో ఇబ్బంది పడే బాలుడు, కానీ అతను శక్తివంతమైన ఎస్పర్. మాబ్ సాధారణ జీవితాన్ని గడపాలని నిశ్చయించుకున్నాడు మరియు అతని ESPని అణచివేసాడు, కానీ అతని భావోద్వేగాలు 100% స్థాయికి చేరుకున్నప్పుడు, అతనికి భయంకరమైనది జరుగుతుంది! అతని చుట్టూ తప్పుడు శక్తులు, దుష్టశక్తులు మరియు మర్మమైన సంస్థలు ఉన్నందున, మాబ్ ఏమనుకుంటాడు? అతను ఏ ఎంపికలు చేస్తాడు?"
+    },
+    "genres": [
+      "Action",
+      "Comedy",
+      "Sci-Fi"
+    ],
+    "year": 2016,
+    "runtime": null,
+    "totalEpisodes": 37,
+    "totalSeasons": 3,
+    "imdbRating": 8.5,
+    "studio": "BONES",
+    "language": "Japanese",
+    "country": "JP",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 5,
+    "popularityScore": 11,
+    "universe": null
+  },
+  {
+    "slug": "haikyu--2014",
+    "type": "ANIME",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/8WEr48swcqe89Zsy5sdrGCASlIg.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/zr1MDQCPVB5uJEHxiO6Tukn4OjH.jpg",
+    "title": {
+      "en": "Haikyu!!",
+      "te": "Haikyu!!"
+    },
+    "description": {
+      "en": "Inspired by a small-statured pro volleyball player, Hinata creates a volleyball team in his last year of middle school. Unfortunately the team is matched up against the \"King of the Court\" Tobio Kageyama’s team in their first tournament and inevitably lose. After the crushing defeat, Hinata vows to surpass Kageyama After entering high school, Hinata joins the volleyball team only to find that Tobio has also joined.",
+      "te": "చిన్న-స్థాయి ప్రో వాలీబాల్ ఆటగాడి నుండి ప్రేరణ పొందిన హినాటా తన మిడిల్ స్కూల్ చివరి సంవత్సరంలో వాలీబాల్ జట్టును సృష్టించాడు. దురదృష్టవశాత్తూ జట్టు వారి మొదటి టోర్నమెంట్‌లో \"కింగ్ ఆఫ్ ది కోర్ట్\" టోబియో కగేయామా జట్టుతో సరిపెట్టుకుంది మరియు అనివార్యంగా ఓడిపోయింది. ఘోర పరాజయం తర్వాత, హైస్కూల్‌లో ప్రవేశించిన తర్వాత, హినాటా వాలీబాల్ జట్టులో చేరి, టోబియో కూడా చేరినట్లు కగేయామాను అధిగమించింది."
+    },
+    "genres": [
+      "Comedy",
+      "Drama"
+    ],
+    "year": 2014,
+    "runtime": null,
+    "totalEpisodes": 85,
+    "totalSeasons": 4,
+    "imdbRating": 8.615,
+    "studio": "Production I.G",
+    "language": "Japanese",
+    "country": "JP",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 5,
+    "popularityScore": 9,
+    "universe": null
+  },
+  {
+    "slug": "lupin-the-3rd-1971",
+    "type": "ANIME",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/khfsxY7EyQsdEHzlnkn42CIjZI.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/961SQWKlq6EQKN5lvXLR04YxSkw.jpg",
+    "title": {
+      "en": "Lupin the 3rd",
+      "te": "Lupin the 3rd"
+    },
+    "description": {
+      "en": "Follow the exciting adventures of Arsene Lupin III, the grandson of the world's greatest thief, Arsene Lupin. Together with Daisuke Jigen, Goemon Ishikawa and his love interest Fujiko Mine, he carries out the greatest robberies of all time, all the while evading the control of Inspector Koichi Zenigata.",
+      "te": "ప్రపంచంలోని గొప్ప దొంగ ఆర్సేన్ లుపిన్ మనవడు ఆర్సేన్ లుపిన్ III యొక్క అద్భుతమైన సాహసాలను అనుసరించండి. డైసుకే జిగెన్, గోమోన్ ఇషికావా మరియు అతని ప్రేమికుడు ఫుజికో మైన్‌తో కలిసి, అతను ఇన్‌స్పెక్టర్ కోయిచి జెనిగాటా నియంత్రణను తప్పించుకుంటూ ఎప్పటికప్పుడు గొప్ప దోపిడీలు చేస్తాడు."
+    },
+    "genres": [
+      "Action",
+      "Sci-Fi"
+    ],
+    "year": 1971,
+    "runtime": null,
+    "totalEpisodes": 300,
+    "totalSeasons": 6,
+    "imdbRating": 8,
+    "studio": "TMS Entertainment",
+    "language": "Japanese",
+    "country": "JP",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 5,
+    "popularityScore": 10,
+    "universe": null
+  },
+  {
+    "slug": "one-piece-1999",
+    "type": "ANIME",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/dB4EDhre2dsC2kxYDavyKWqLQwi.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/4Mt7WHox67uJ1yErwTBFcV8KWgG.jpg",
+    "title": {
+      "en": "One Piece",
+      "te": "One Piece"
+    },
+    "description": {
+      "en": "Years ago, the fearsome Pirate King, Gol D. Roger was executed leaving a huge pile of treasure and the famous \"One Piece\" behind. Whoever claims the \"One Piece\" will be named the new King of the Pirates.\n\nMonkey D. Luffy, a boy who consumed a \"Devil Fruit,\" decides to follow in the footsteps of his idol, the pirate Shanks, and find the One Piece. It helps, of course, that his body has the properties of rubber and that he's surrounded by a bevy of skilled fighters and thieves to help him along the way.\n\nLuffy will do anything to get the One Piece and become King of the Pirates!",
+      "te": "సంవత్సరాల క్రితం, భయంకరమైన పైరేట్ కింగ్, గోల్ డి. రోజర్‌కు ఉరిశిక్ష విధించబడింది, భారీ నిధిని మరియు ప్రసిద్ధ \"వన్ పీస్\"ని వదిలివేసారు. ఎవరైతే \"వన్ పీస్\"ని క్లెయిమ్ చేస్తారో వారు కొత్త పైరేట్స్ రాజుగా పేర్కొనబడతారు.\n\nమంకీ డి. లఫ్ఫీ, \"డెవిల్ ఫ్రూట్\" తిన్న బాలుడు, తన విగ్రహం, పైరేట్ షాంక్స్ అడుగుజాడల్లో నడవాలని మరియు వన్ పీస్‌ని కనుగొనాలని నిర్ణయించుకున్నాడు. ఇది అతని శరీరం రబ్బరు లక్షణాలను కలిగి ఉందని మరియు అతని చుట్టూ నైపుణ్యం కలిగిన యోధులు మరియు దొంగలు అతనికి సహాయం చేయడానికి సహాయం చేస్తుంది.\n\nలఫ్ఫీ వన్ పీస్ పొందడానికి మరియు పైరేట్స్ రాజుగా మారడానికి ఏదైనా చేస్తుంది!"
+    },
+    "genres": [
+      "Action",
+      "Comedy"
+    ],
+    "year": 1999,
+    "runtime": null,
+    "totalEpisodes": 1181,
+    "totalSeasons": 23,
+    "imdbRating": 8.736,
+    "studio": "Toei Animation",
+    "language": "Japanese",
+    "country": "JP",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 6,
+    "popularityScore": 11,
+    "universe": "onepiece"
+  },
+  {
+    "slug": "sweet-punishment-i-m-the-guard-s-personal-pet-2018",
+    "type": "ANIME",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/rbETzzJLGIB2Bg6NwNekWTKfM6d.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/5Akyn19AM9flDDUN7pMUdzA9dWD.jpg",
+    "title": {
+      "en": "Sweet Punishment: I'm the Guard's Personal Pet",
+      "te": "Sweet Punishment: I'm the Guard's Personal Pet"
+    },
+    "description": {
+      "en": "The story is set in a prison in the near future. It revolves around Hina Saotome, imprisoned despite her innocence, and the elegant yet sadistic guard Aki Myoujin. Hina's heart and body are at the mercy of Myoujin's \"heartless yet sweet domination\" from physical examinations to lovers' prison visits.",
+      "te": "సమీప భవిష్యత్తులో జైలు నేపథ్యంలో కథ సాగుతుంది. ఇది హినా సాటోమ్ చుట్టూ తిరుగుతుంది, ఆమె అమాయకత్వం ఉన్నప్పటికీ ఖైదు చేయబడింది మరియు సొగసైన ఇంకా శాడిస్ట్ గార్డ్ అకి మయోజిన్. హినా హృదయం మరియు శరీరం భౌతిక పరీక్షల నుండి ప్రేమికుల జైలు సందర్శనల వరకు మయోజిన్ యొక్క \"హృదయరహితమైన ఇంకా మధురమైన ఆధిపత్యం\" యొక్క దయతో ఉన్నాయి."
+    },
+    "genres": [
+      "Drama"
+    ],
+    "year": 2018,
+    "runtime": null,
+    "totalEpisodes": 13,
+    "totalSeasons": 1,
+    "imdbRating": 7.077,
+    "studio": "Magic Bus",
+    "language": "Japanese",
+    "country": "JP",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 6,
+    "popularityScore": 11,
+    "universe": null
+  },
+  {
+    "slug": "kingdom-2012",
+    "type": "ANIME",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/dehuJJkKo50nYvCYppigrWejqLe.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/5CGM0vQpq0QBcslUXqoo0unlGPZ.jpg",
+    "title": {
+      "en": "Kingdom",
+      "te": "Kingdom"
+    },
+    "description": {
+      "en": "In the Warring States period, young orphan Xin vows to aid King Zheng of Qin in his quest to unify China by becoming a general himself.",
+      "te": "వారింగ్ స్టేట్స్ కాలంలో, యువ అనాథ జిన్ కింగ్ జెంగ్ ఆఫ్ క్విన్‌కు తాను జనరల్‌గా మారడం ద్వారా చైనాను ఏకం చేయాలనే తపనతో సహాయం చేస్తానని ప్రతిజ్ఞ చేశాడు."
+    },
+    "genres": [
+      "Action",
+      "Drama"
+    ],
+    "year": 2012,
+    "runtime": null,
+    "totalEpisodes": 155,
+    "totalSeasons": 6,
+    "imdbRating": 7.7,
+    "studio": "Pierrot",
+    "language": "Japanese",
+    "country": "JP",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 4,
+    "popularityScore": 8,
+    "universe": null
+  },
+  {
+    "slug": "detective-conan-1996",
+    "type": "ANIME",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/rRIEFvHRy01OYzmXQBbGeW0Qilc.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/5546GF3zT3yA25ydCz0KlujjRA3.jpg",
+    "title": {
+      "en": "Detective Conan",
+      "te": "Detective Conan"
+    },
+    "description": {
+      "en": "The son of a world famous mystery writer, Jimmy Kudo, has achieved his own notoriety by assisting the local police as a student detective. He has always been able to solve the most difficult of criminal cases using his wits and power of reason.",
+      "te": "ప్రపంచ ప్రఖ్యాత మిస్టరీ రచయిత జిమ్మీ కుడో కుమారుడు విద్యార్థి డిటెక్టివ్‌గా స్థానిక పోలీసులకు సహాయం చేయడం ద్వారా తనకంటూ గుర్తింపు తెచ్చుకున్నాడు. అతను ఎల్లప్పుడూ తన తెలివి మరియు హేతు శక్తిని ఉపయోగించి అత్యంత క్లిష్టమైన క్రిమినల్ కేసులను పరిష్కరించగలిగాడు."
+    },
+    "genres": [
+      "Crime",
+      "Thriller",
+      "Comedy"
+    ],
+    "year": 1996,
+    "runtime": null,
+    "totalEpisodes": 1265,
+    "totalSeasons": 1,
+    "imdbRating": 8,
+    "studio": "TMS Entertainment",
+    "language": "Japanese",
+    "country": "JP",
+    "teluguDubAvail": false,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 5,
+    "popularityScore": 10,
+    "universe": null
+  },
+  {
+    "slug": "attack-on-titan-2013",
+    "type": "ANIME",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/hTP1DtLGFamjfu8WqjnuQdP1n4i.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/rqbCbjB19amtOtFQbb3K2lgm2zv.jpg",
+    "title": {
+      "en": "Attack on Titan",
+      "te": "Attack on Titan"
+    },
+    "description": {
+      "en": "100 years ago, the last remnants of humanity were forced to retreat behind the towering walls of a fortified city to escape the massive, man-eating Titans that roamed the land outside their fortress. Only the members of the Scouting Legion dared to stray beyond the safety of the walls – but even those brave warriors seldom returned alive. Those within the city clung to the illusion of a peaceful existence until the day that dream was shattered, and their slim chance at survival was reduced to one horrifying choice: kill – or be devoured!",
+      "te": "100 సంవత్సరాల క్రితం, మానవాళి యొక్క చివరి అవశేషాలు తమ కోట వెలుపల భూమిలో సంచరించే భారీ, నరమాంస భక్షక టైటాన్‌ల నుండి తప్పించుకోవడానికి బలవర్థకమైన నగరం యొక్క ఎత్తైన గోడల వెనుక వెనక్కి వెళ్ళవలసి వచ్చింది. స్కౌటింగ్ లెజియన్ సభ్యులు మాత్రమే గోడల భద్రతను దాటి వెళ్ళడానికి ధైర్యం చేశారు - కానీ ఆ ధైర్య యోధులు కూడా చాలా అరుదుగా సజీవంగా తిరిగి వచ్చారు. ఆ కల చెదిరిపోయే రోజు వరకు నగరంలో ఉన్నవారు శాంతియుత అస్తిత్వం అనే భ్రమలో అతుక్కుపోయారు మరియు మనుగడకు వారి స్వల్ప అవకాశం ఒక భయంకరమైన ఎంపికగా తగ్గించబడింది: చంపండి - లేదా మ్రింగివేయబడండి!"
+    },
+    "genres": [
+      "Sci-Fi",
+      "Action"
+    ],
+    "year": 2013,
+    "runtime": null,
+    "totalEpisodes": 87,
+    "totalSeasons": 4,
+    "imdbRating": 8.679,
+    "studio": "Production I.G",
+    "language": "Japanese",
+    "country": "JP",
+    "teluguDubAvail": false,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 5,
+    "popularityScore": 9,
+    "universe": null
+  },
+  {
+    "slug": "mobile-suit-gundam-seed-2002",
+    "type": "ANIME",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/rWgdDIq4JeaI36KdmLPkYcQjBQ3.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/otE9DjFrKMOv0Mkz1o7HfJGCvNF.jpg",
+    "title": {
+      "en": "Mobile Suit Gundam SEED",
+      "te": "Mobile Suit Gundam SEED"
+    },
+    "description": {
+      "en": "Cosmic Era 71. Mankind has developed into two subspecies: Naturals, who reside on Earth, and Coordinators, genetically enhanced humans capable of withstanding the rigors of space who inhabit orbital colonies known as PLANTs. The story revolves around a young Coordinator named Kira Yamato, who becomes involved in the war between the two races after a neutral space colony secretly developing mobile suits for the Earth Alliance is attacked by the PLANTs' military force, ZAFT.",
+      "te": "కాస్మిక్ ఎరా 71. మానవజాతి రెండు ఉపజాతులుగా అభివృద్ధి చెందింది: భూమిపై నివసించే నేచురల్, మరియు కోఆర్డినేటర్లు, PLANTs అని పిలవబడే కక్ష్య కాలనీలలో నివసించే అంతరిక్షం యొక్క కఠినతను తట్టుకోగల జన్యుపరంగా మెరుగుపరచబడిన మానవులు. ఈ కథ కిరా యమటో అనే యువ సమన్వయకర్త చుట్టూ తిరుగుతుంది, అతను తటస్థ స్పేస్ కాలనీ రహస్యంగా ఎర్త్ అలయన్స్ కోసం మొబైల్ సూట్‌లను అభివృద్ధి చేయడంతో ప్లాంట్‌ల సైనిక దళం ZAFT దాడి చేసిన తర్వాత రెండు జాతుల మధ్య యుద్ధంలో పాల్గొంటాడు."
+    },
+    "genres": [
+      "Action",
+      "Sci-Fi"
+    ],
+    "year": 2002,
+    "runtime": null,
+    "totalEpisodes": 100,
+    "totalSeasons": 2,
+    "imdbRating": 7.5,
+    "studio": "SUNRISE",
+    "language": "Japanese",
+    "country": "JP",
+    "teluguDubAvail": false,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 5,
+    "popularityScore": 10,
+    "universe": null
+  },
+  {
+    "slug": "fullmetal-alchemist-brotherhood-2009",
+    "type": "ANIME",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/5ZFUEOULaVml7pQuXxhpR2SmVUw.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/A6tMQAo6t6eRFCPhsrShmxZLqFB.jpg",
+    "title": {
+      "en": "Fullmetal Alchemist: Brotherhood",
+      "te": "Fullmetal Alchemist: Brotherhood"
+    },
+    "description": {
+      "en": "Disregard for alchemy’s laws ripped half of Edward Elric’s limbs from his body and left his brother Alphonse’s soul clinging to a suit of armor. To restore what was lost, the brothers seek the Philosopher’s Stone. Enemies and allies – the corrupt military, the Homunculi, and foreign alchemists – will alter the Elric brothers course, but their purpose will remain unchanged and their bond unbreakable.",
+      "te": "రసవాద నియమాలను నిర్లక్ష్యం చేయడం వల్ల ఎడ్వర్డ్ ఎల్రిక్ యొక్క సగం అవయవాలు అతని శరీరం నుండి చించబడ్డాయి మరియు అతని సోదరుడు ఆల్ఫోన్స్ ఆత్మ కవచానికి అతుక్కుపోయింది. కోల్పోయిన వాటిని పునరుద్ధరించడానికి, సోదరులు ఫిలాసఫర్స్ స్టోన్‌ను వెతుకుతారు. శత్రువులు మరియు మిత్రులు - అవినీతి మిలిటరీ, హోమున్‌కులీ మరియు విదేశీ రసవాదులు - ఎల్రిక్ సోదరుల మార్గాన్ని మారుస్తారు, కానీ వారి ఉద్దేశ్యం మారదు మరియు వారి బంధం విడదీయబడదు."
+    },
+    "genres": [
+      "Action",
+      "Sci-Fi",
+      "Drama"
+    ],
+    "year": 2009,
+    "runtime": null,
+    "totalEpisodes": 64,
+    "totalSeasons": 1,
+    "imdbRating": 8.7,
+    "studio": "BONES",
+    "language": "Japanese",
+    "country": "JP",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 7,
+    "popularityScore": 13,
+    "universe": null
+  },
+  {
+    "slug": "aoashi-2022",
+    "type": "ANIME",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/erwRgEPtUtyv3Vkmxt0MhjKi5kA.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/4ixh7PNNWd1VaohzKD7pcP33SiN.jpg",
+    "title": {
+      "en": "Aoashi",
+      "te": "Aoashi"
+    },
+    "description": {
+      "en": "Ashito Aoi is a young, aspiring soccer player from a backwater town in Japan. His hopes of getting into a high school with a good soccer club are dashed when he causes an incident during a critical match for his team, which results in their loss and elimination from the tournament. Nevertheless, he catches the eye of someone important who happened to be visiting from Tokyo. How will things turn out for Ashito?",
+      "te": "అషిటో అయోయ్ జపాన్‌లోని బ్యాక్‌వాటర్ పట్టణానికి చెందిన యువ, ఔత్సాహిక సాకర్ ప్లేయర్. ఒక మంచి సాకర్ క్లబ్‌తో ఉన్నత పాఠశాలలో చేరాలనే అతని ఆశలు అతను తన జట్టు కోసం ఒక క్లిష్టమైన మ్యాచ్‌లో ఒక సంఘటనకు కారణమైనప్పుడు ఆవిరైపోతాయి, దాని ఫలితంగా వారు టోర్నమెంట్ నుండి ఓడిపోయి ఎలిమినేట్ అవుతారు. అయినప్పటికీ, అతను టోక్యో నుండి సందర్శిస్తున్న ఒక ముఖ్యమైన వ్యక్తి దృష్టిని ఆకర్షించాడు. అషిటో పరిస్థితి ఎలా మారుతుంది?"
+    },
+    "genres": [
+      "Drama"
+    ],
+    "year": 2022,
+    "runtime": null,
+    "totalEpisodes": 25,
+    "totalSeasons": 2,
+    "imdbRating": 7.6,
+    "studio": "Production I.G",
+    "language": "Japanese",
+    "country": "JP",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 5,
+    "popularityScore": 10,
+    "universe": null
+  },
+  {
+    "slug": "atashin-chi-2002",
+    "type": "ANIME",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/bQCZvbyTJFWt3majCn37ykJBpIf.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/j6jHIjnyCT5YwxEKu7c8e7DS57V.jpg",
+    "title": {
+      "en": "Atashin'chi",
+      "te": "Atashin'chi"
+    },
+    "description": {
+      "en": "A light hearted comedy based on the about the daily life of a \"normal\" Japanese family. The Tachibana family consists of a housewife mom, a salary-man dad, and teenager Mikan and Yuzuhiko.",
+      "te": "\"సాధారణ\" జపనీస్ కుటుంబం యొక్క దైనందిన జీవితంపై ఆధారపడిన తేలికపాటి హాస్యం. తాచిబానా కుటుంబంలో గృహిణి తల్లి, జీతం తీసుకునే తండ్రి మరియు యువకుడు మికాన్ మరియు యుజుహికో ఉన్నారు."
+    },
+    "genres": [
+      "Comedy"
+    ],
+    "year": 2002,
+    "runtime": null,
+    "totalEpisodes": 699,
+    "totalSeasons": 3,
+    "imdbRating": 8.4,
+    "studio": "Shin-Ei Animation",
+    "language": "Japanese",
+    "country": "JP",
+    "teluguDubAvail": false,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 5,
+    "popularityScore": 10,
+    "universe": null
+  },
+  {
+    "slug": "hell-s-paradise-2023",
+    "type": "ANIME",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/1V9I7SvZbYoMbSvdtnlkkq9SB1k.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/vjiIuR3XGpoGSumQ7DziPAmxIYR.jpg",
+    "title": {
+      "en": "Hell's Paradise",
+      "te": "Hell's Paradise"
+    },
+    "description": {
+      "en": "For a chance at a pardon, a ninja assassin joins other condemned criminals on a journey to a mysterious island to retrieve an elixir of immortality.",
+      "te": "క్షమాపణ పొందే అవకాశం కోసం, ఒక నింజా హంతకుడు అమరత్వం యొక్క అమృతాన్ని తిరిగి పొందేందుకు ఒక రహస్యమైన ద్వీపానికి ప్రయాణంలో ఖండించబడిన ఇతర నేరస్థులతో చేరాడు."
+    },
+    "genres": [
+      "Action",
+      "Sci-Fi"
+    ],
+    "year": 2023,
+    "runtime": null,
+    "totalEpisodes": 25,
+    "totalSeasons": 1,
+    "imdbRating": 8.1,
+    "studio": "MAPPA",
+    "language": "Japanese",
+    "country": "JP",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 5,
+    "popularityScore": 9,
+    "universe": null
+  },
+  {
+    "slug": "death-note-2006",
+    "type": "ANIME",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/tCZFfYTIwrR7n94J6G14Y4hAFU6.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/koBa94NxTaGe2FoDzlXMuJptsv0.jpg",
+    "title": {
+      "en": "Death Note",
+      "te": "Death Note"
+    },
+    "description": {
+      "en": "Light Yagami is an ace student with great prospects—and he’s bored out of his mind. But all that changes when he finds the Death Note, a notebook dropped by a rogue Shinigami death god. Any human whose name is written in the notebook dies, and Light has vowed to use the power of the Death Note to rid the world of evil. But will Light succeed in his noble goal, or will the Death Note turn him into the very thing he fights against?",
+      "te": "లైట్ యాగామి గొప్ప అవకాశాలు ఉన్న ఏస్ విద్యార్థి-మరియు అతను తన మనస్సు నుండి విసుగు చెందాడు. కానీ అతనికి డెత్ నోట్ దొరికినప్పుడు అదంతా మారిపోతుంది, ఒక పోకిరీ షినిగామి డెత్ గాడ్ జారవిడిచిన నోట్‌బుక్. నోట్‌బుక్‌లో పేరు వ్రాయబడిన ఏ మానవుడైనా మరణిస్తాడు మరియు ప్రపంచాన్ని చెడు నుండి విముక్తి చేయడానికి డెత్ నోట్ యొక్క శక్తిని ఉపయోగిస్తానని లైట్ ప్రతిజ్ఞ చేసింది. కానీ లైట్ తన గొప్ప లక్ష్యంలో విజయం సాధిస్తుందా లేదా డెత్ నోట్ అతనితో పోరాడే వస్తువుగా మారుస్తుందా?"
+    },
+    "genres": [
+      "Thriller",
+      "Sci-Fi"
+    ],
+    "year": 2006,
+    "runtime": null,
+    "totalEpisodes": 37,
+    "totalSeasons": 1,
+    "imdbRating": 8.6,
+    "studio": "Madhouse",
+    "language": "Japanese",
+    "country": "JP",
+    "teluguDubAvail": false,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 5,
+    "popularityScore": 9,
+    "universe": null
+  },
+  {
+    "slug": "rent-a-girlfriend-2020",
+    "type": "ANIME",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/6ZpDPUNtVw6UdJoStvVlRZ62yAi.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/yozfbzwLhGe81YKTDoNDRdJrIuC.jpg",
+    "title": {
+      "en": "Rent-a-Girlfriend",
+      "te": "Rent-a-Girlfriend"
+    },
+    "description": {
+      "en": "Kinoshita Kazuya is a 20-year-old failure of a college student. He managed to kiss his girlfriend once, but was dumped after a month. Completely spiteful, Kazuya uses a certain method to date a girl. He goes to their meeting place and a beautiful girl brushing her long, black hair behind her ear was there, smiling at him. Her name was Mizuhara Chizuru. Something real is born after just a single rental! A reckless rom-com filled with love and excitement is about to begin!",
+      "te": "కినోషితా కజుయా 20 ఏళ్ల కాలేజీ విద్యార్థి వైఫల్యం. అతను తన స్నేహితురాలిని ఒకసారి ముద్దు పెట్టుకోగలిగాడు, కానీ ఒక నెల తర్వాత డంప్ చేయబడ్డాడు. పూర్తిగా ద్వేషపూరితంగా, కజుయా ఒక అమ్మాయితో డేటింగ్ చేయడానికి ఒక నిర్దిష్ట పద్ధతిని ఉపయోగిస్తుంది. అతను వారి సమావేశ స్థలానికి వెళ్తాడు మరియు ఒక అందమైన అమ్మాయి తన పొడవాటి, నల్లటి జుట్టును తన చెవి వెనుక దువ్వుకుంటూ, అతనిని చూసి నవ్వుతూ ఉంది. ఆమె పేరు మిజుహరా చిజురు. ఒకే ఒక్క అద్దె తర్వాత నిజమైన ఏదో పుడుతుంది! ప్రేమ మరియు ఉత్సాహంతో కూడిన నిర్లక్ష్యపు రోమ్-కామ్ ప్రారంభం కానుంది!"
+    },
+    "genres": [
+      "Comedy"
+    ],
+    "year": 2020,
+    "runtime": null,
+    "totalEpisodes": 60,
+    "totalSeasons": 1,
+    "imdbRating": 8.324,
+    "studio": "TMS Entertainment",
+    "language": "Japanese",
+    "country": "JP",
+    "teluguDubAvail": false,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 5,
+    "popularityScore": 9,
+    "universe": null
+  },
+  {
+    "slug": "konosuba-god-s-blessing-on-this-wonderful-world--2016",
+    "type": "ANIME",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/oRaOeQlwktbGSd2T31FYAcgHZlh.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/rvZJxD36tKoglL8fXoMMWKGQfM.jpg",
+    "title": {
+      "en": "KONOSUBA - God's blessing on this wonderful world!",
+      "te": "KONOSUBA - God's blessing on this wonderful world!"
+    },
+    "description": {
+      "en": "After a traffic accident, Kazuma Sato’s  disappointingly brief life was supposed to be over, but he wakes up to  see a beautiful girl before him. She claims to be a goddess, Aqua, and  asks if he would like to go to another world and bring only one thing  with him. Kazuma decides to bring the goddess herself, and they are  transported to a fantasy world filled with adventure, ruled by a demon  king. Now Kazuma only wants to live in peace, but Aqua wants to solve  many of this world’s problems, and the demon king will only turn a blind  eye for so long…",
+      "te": "ఒక ట్రాఫిక్ ప్రమాదం తర్వాత, కజుమా సాటో యొక్క నిరుత్సాహకరమైన క్లుప్త జీవితం ముగియవలసి ఉంది, కానీ అతను తన ముందు ఒక అందమైన అమ్మాయిని చూసేందుకు మేల్కొన్నాడు. ఆమె తాను దేవత, ఆక్వా అని చెప్పుకుంటుంది మరియు అతను వేరే ప్రపంచానికి వెళ్లి తనతో ఒక వస్తువు మాత్రమే తీసుకురావాలా అని అడుగుతుంది. కజుమా దేవతను స్వయంగా తీసుకురావాలని నిర్ణయించుకుంటుంది మరియు వారు ఒక రాక్షస రాజుచే పాలించబడే సాహసంతో నిండిన ఫాంటసీ ప్రపంచానికి రవాణా చేయబడతారు. ఇప్పుడు కజుమా శాంతితో జీవించాలని కోరుకుంటాడు, కానీ ఆక్వా ఈ ప్రపంచంలోని అనేక సమస్యలను పరిష్కరించాలని కోరుకుంటుంది, మరియు రాక్షస రాజు చాలా కాలం పాటు కళ్ళు మూసుకుంటాడు…"
+    },
+    "genres": [
+      "Action",
+      "Comedy",
+      "Sci-Fi"
+    ],
+    "year": 2016,
+    "runtime": null,
+    "totalEpisodes": 31,
+    "totalSeasons": 3,
+    "imdbRating": 8.553,
+    "studio": "Studio Deen",
+    "language": "Japanese",
+    "country": "JP",
+    "teluguDubAvail": false,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 4,
+    "popularityScore": 9,
+    "universe": null
+  },
+  {
+    "slug": "joshiochi-2-kai-kara-onnanoko-ga-futtekita--2018",
+    "type": "ANIME",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/7x8x6dl4leOSw6KGUcOrQew7Eua.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/AgTy5IsOv1FAx02gunir8ZSiUxG.jpg",
+    "title": {
+      "en": "Joshiochi! 2-kai kara Onnanoko ga... Futtekita!?",
+      "te": "Joshiochi! 2-kai kara Onnanoko ga... Futtekita!?"
+    },
+    "description": {
+      "en": "Sousuke Aikawa is a part-time worker who lives in a rundown apartment building where his only consolation is that the landlord is a beautiful woman and the girl who lives above him is cute.\n\nOne day though, the ceiling above him creaks and... Bang! In from the second floor, directly above him, the cute girl comes crashing down on him…!?\n\nIn an erotic encounter that can only be classified as a miracle, hearts and bodies are connected by chance. Then for some reason, he starts to live with both of these beautiful women!? Under this one roof, just what exactly will become of this crowded love triangle...!?",
+      "te": "సౌసుకే ఐకావా ఒక పార్ట్‌టైమ్ వర్కర్, అతను పాతాళ అపార్ట్‌మెంట్ భవనంలో నివసిస్తున్నాడు, అక్కడ అతని ఏకైక ఓదార్పు ఏమిటంటే భూస్వామి అందమైన మహిళ మరియు అతని పైన నివసించే అమ్మాయి అందమైనది.\n\nఒక రోజు అయితే, అతని పైన సీలింగ్ క్రీక్ చేస్తుంది మరియు... చప్పుడు! రెండవ అంతస్తు నుండి, నేరుగా అతని పైన, అందమైన అమ్మాయి అతనిపైకి దూసుకు వస్తుంది…!?\n\nఒక శృంగార ఎన్‌కౌంటర్‌లో ఒక అద్భుతంగా మాత్రమే వర్గీకరించబడుతుంది, హృదయాలు మరియు శరీరాలు యాదృచ్ఛికంగా అనుసంధానించబడి ఉంటాయి. అప్పుడు కొన్ని కారణాల వల్ల, అతను ఈ అందమైన మహిళలతో కలిసి జీవించడం ప్రారంభిస్తాడు!? ఈ ఒక్క చూరు కింద, ఈ రద్దీ త్రిభుజం ప్రేమ అసలు ఏమి అవుతుంది...!?"
+    },
+    "genres": [
+      "Drama"
+    ],
+    "year": 2018,
+    "runtime": null,
+    "totalEpisodes": 9,
+    "totalSeasons": 1,
+    "imdbRating": 7.3,
+    "studio": "Suiseisha",
+    "language": "Japanese",
+    "country": "JP",
+    "teluguDubAvail": false,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 4,
+    "popularityScore": 9,
+    "universe": null
+  },
+  {
+    "slug": "jimihen-jimiko-o-kae-chau-jun-isei-kouyuu-2021",
+    "type": "ANIME",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/to5FshluwPdO9d3Ucs7fagJL7OU.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/kPO4rsDkSwmGMRDejvLAel8FafA.jpg",
+    "title": {
+      "en": "Jimihen!! Jimiko o Kae Chau Jun Isei Kouyuu",
+      "te": "Jimihen!! Jimiko o Kae Chau Jun Isei Kouyuu"
+    },
+    "description": {
+      "en": "The story follows Rena Yukuhasahi, a reserved office lady and Ryouhei Hachiya, a businessman and fellow colleague. Yukuhasahi appears to be the most reserved girl in the company, but becomes a super beautiful woman when she dresses up. Flustered in the presence of her transformed self, Hachiya insists on taking her out, only to find themselves in front of a love hotel.",
+      "te": "రిజర్వ్‌డ్ ఆఫీస్ లేడీ అయిన రెనా యుకుహాసాహి మరియు వ్యాపారవేత్త మరియు తోటి సహోద్యోగి అయిన రియోహీ ​​హచియాను కథ అనుసరిస్తుంది. యుకుహాసాహి కంపెనీలో అత్యంత రిజర్వ్డ్ అమ్మాయిగా కనిపిస్తుంది, కానీ ఆమె దుస్తులు ధరించినప్పుడు చాలా అందమైన మహిళ అవుతుంది. ఆమె రూపాంతరం చెందిన స్వీయ సమక్షంలో అల్లకల్లోలంగా, హచియా ఆమెను బయటకు తీసుకెళ్లాలని పట్టుబట్టింది, కేవలం ఒక ప్రేమ హోటల్ ముందు తమను తాము కనుగొనడానికి మాత్రమే."
+    },
+    "genres": [
+      "Comedy"
+    ],
+    "year": 2021,
+    "runtime": null,
+    "totalEpisodes": 8,
+    "totalSeasons": 1,
+    "imdbRating": 6.4,
+    "studio": "studio HōKIBOSHI",
+    "language": "Japanese",
+    "country": "JP",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 4,
+    "popularityScore": 9,
+    "universe": null
+  },
+  {
+    "slug": "bungo-stray-dogs-2016",
+    "type": "ANIME",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/6AQmGhkYwAqW2OevjXbsh7tZnNO.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/79lc4Rocfnn9RIv1YlHC0jeBsqf.jpg",
+    "title": {
+      "en": "Bungo Stray Dogs",
+      "te": "Bungo Stray Dogs"
+    },
+    "description": {
+      "en": "Stalked by a beastly white tiger, Atsushi Nakajima has no idea that the menace lives inside him—a power that catches the attention of the Armed Detective Agency. Using inhuman abilities to combat crime, this team takes Atsushi under the wing of their most eccentric member, Dazai. Together, they tear through mafia-muddled mysteries while enemies keep an eye on the tiger’s lofty bounty.",
+      "te": "క్రూరమైన తెల్లటి పులిచే వెంబడించిన అట్సుషి నకాజిమాకు ఆ ముప్పు అతనిలో నివసిస్తుందని తెలియదు-సాయుధ డిటెక్టివ్ ఏజెన్సీ దృష్టిని ఆకర్షించే శక్తి. నేరాలను ఎదుర్కోవడానికి అమానవీయ సామర్థ్యాలను ఉపయోగించి, ఈ బృందం అట్సుషిని వారి అత్యంత అసాధారణ సభ్యుడైన దజాయ్ కిందకు తీసుకువెళుతుంది. కలిసి, వారు మాఫియా-గజిబిజి రహస్యాలను చీల్చివేస్తారు, అయితే శత్రువులు పులి యొక్క గంభీరమైన అనుగ్రహాన్ని గమనిస్తారు."
+    },
+    "genres": [
+      "Action",
+      "Thriller",
+      "Sci-Fi",
+      "Crime"
+    ],
+    "year": 2016,
+    "runtime": null,
+    "totalEpisodes": 60,
+    "totalSeasons": 1,
+    "imdbRating": 8.271,
+    "studio": "BONES",
+    "language": "Japanese",
+    "country": "JP",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 4,
+    "popularityScore": 9,
+    "universe": null
+  },
+  {
+    "slug": "fighting-spirit-2000",
+    "type": "ANIME",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/1LApB9C9kEkh2ZU2vzAhurNDipl.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/bHSgCHRYko757BdmntddESfEEgt.jpg",
+    "title": {
+      "en": "Fighting Spirit",
+      "te": "Fighting Spirit"
+    },
+    "description": {
+      "en": "Makunouchi Ippo is an ordinary high school student in Japan. Since he spends most of his time away from school helping his mother run the family business, he doesn't get to enjoy his younger years like most teenagers. Always a target for bullying at school (the family fishing business grants him a distinct odor), Ippo's life is one of hardship. One of these after-school bullying sessions turns Ippo's life around for the better, as he is saved by a boxer named Takamura. He decides to follow in Takamura's footsteps and train to become a boxer, giving his life direction and purpose. Ippo's path to perfecting his pugilistic prowess is just beginning...",
+      "te": "మకునౌచి ఇప్పో జపాన్‌లోని ఒక సాధారణ ఉన్నత పాఠశాల విద్యార్థి. అతను తన తల్లికి కుటుంబ వ్యాపారాన్ని నిర్వహించడంలో సహాయం చేస్తూ పాఠశాలకు దూరంగా ఎక్కువ సమయం గడుపుతున్నాడు కాబట్టి, అతను చాలా మంది యువకుల్లాగా తన చిన్న సంవత్సరాలను ఆస్వాదించలేడు. పాఠశాలలో బెదిరింపులకు ఎల్లప్పుడూ లక్ష్యంగా ఉంటుంది (కుటుంబం ఫిషింగ్ వ్యాపారం అతనికి ప్రత్యేకమైన వాసనను ఇస్తుంది), ఇప్పో జీవితం కష్టాలతో కూడుకున్నది. పాఠశాల తర్వాత జరిగే ఈ బెదిరింపు సెషన్‌లలో ఒకటి, తకమురా అనే బాక్సర్‌చే రక్షించబడినందున, ఇప్పో జీవితాన్ని మంచిగా మార్చింది. అతను తకమురా అడుగుజాడలను అనుసరించాలని నిర్ణయించుకున్నాడు మరియు బాక్సర్‌గా మారడానికి శిక్షణ పొంది, అతని జీవితానికి దిశానిర్దేశం చేస్తాడు. అతని పగటి పరాక్రమాన్ని పరిపూర్ణం చేసుకునేందుకు ఇప్పో మార్గం ఇప్పుడే ప్రారంభమైంది..."
+    },
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Action"
+    ],
+    "year": 2000,
+    "runtime": null,
+    "totalEpisodes": 126,
+    "totalSeasons": 3,
+    "imdbRating": 8.648,
+    "studio": "Madhouse",
+    "language": "Japanese",
+    "country": "JP",
+    "teluguDubAvail": false,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 4,
+    "popularityScore": 8,
+    "universe": null
+  },
+  {
+    "slug": "ninja-boy-rantaro-1993",
+    "type": "ANIME",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/fzNiSp0HhCthOTYu9IYWlPPa7fU.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/4fVwc77cov2q9i0szzYhlkAaqza.jpg",
+    "title": {
+      "en": "Ninja Boy Rantaro",
+      "te": "Ninja Boy Rantaro"
+    },
+    "description": {
+      "en": "Rantarō, Shinbei and Kirimaru are ninja  apprentices in the Ninja Gakuen, where first grade ones are called  \"Nintamas\". They must learn  everything a ninja must know, but as for our heroes, money, food or  playing are more interesting. The series show the everyday adventures of  our heroes.",
+      "te": "రాంటారో, షిన్‌బీ మరియు కిరిమారు నింజా గాకుయెన్‌లో నింజా అప్రెంటిస్‌లు, ఇక్కడ మొదటి తరగతి వారిని \"నింటామాస్\" అంటారు. నింజా తప్పనిసరిగా తెలుసుకోవలసిన ప్రతిదాన్ని వారు తప్పక నేర్చుకోవాలి, కానీ మన హీరోల విషయానికొస్తే, డబ్బు, ఆహారం లేదా ఆడటం మరింత ఆసక్తికరంగా ఉంటాయి. సిరీస్ మన హీరోల రోజువారీ సాహసాలను చూపుతుంది."
+    },
+    "genres": [
+      "Comedy",
+      "Action",
+      "Family"
+    ],
+    "year": 1993,
+    "runtime": null,
+    "totalEpisodes": 1988,
+    "totalSeasons": 27,
+    "imdbRating": 6.705,
+    "studio": "",
+    "language": "Japanese",
+    "country": "JP",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 4,
+    "popularityScore": 8,
+    "universe": null
+  },
+  {
+    "slug": "urusei-yatsura-2022",
+    "type": "ANIME",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/zK82mkrePHoixlYzsr9mUPchBxX.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/9C8klg2GszX2tXKw5xEzJwrL4Do.jpg",
+    "title": {
+      "en": "Urusei Yatsura",
+      "te": "Urusei Yatsura"
+    },
+    "description": {
+      "en": "Tokyo, Tomobiki Town. Lum, the gorgeous princess of the invading alien race of Oni is smitten with high school student Ataru Moroboshi. A dedicated womanizer, Ataru is unfazed by Lum’s fierce electric shock attacks and continues his daily hunt for pretty girls. With a host of other unique characters, including girl-next-door Shinobu, elegant shrine maiden Sakura, Lum’s best friends Oyuki, Benten, and Ran, Buddhist Monk Cherry, Ten, the little brat, heir to a wealthy family Shutaro Mendo and the masculine beauty Ryunosuke…it's a classic slapstick love comedy where anything goes!",
+      "te": "టోక్యో, టోమోబికి టౌన్. లం, ఓని యొక్క ఆక్రమణ గ్రహాంతర జాతికి చెందిన అందమైన యువరాణి హైస్కూల్ విద్యార్థి అటారు మోరోబోషితో ముచ్చటించింది. అంకితభావం గల స్త్రీవాద, అటారు లం యొక్క తీవ్రమైన విద్యుత్ షాక్ దాడులతో విస్మయం చెందాడు మరియు అందమైన అమ్మాయిల కోసం తన రోజువారీ వేటను కొనసాగిస్తాడు. పక్కింటి అమ్మాయి షినోబు, సొగసైన పుణ్యక్షేత్రం సకురా, లమ్‌కి మంచి స్నేహితులు ఓయుకి, బెంటెన్ మరియు రాన్, బౌద్ధ సన్యాసి చెర్రీ, పది, చిన్న బ్రాట్, సంపన్న కుటుంబానికి వారసుడు షుటారో మెండో మరియు మగ అందం ర్యునోసుకే వంటి అనేక ఇతర ప్రత్యేక పాత్రలతో పాటుగా ఏదైనా ఒక ప్రేమ కలగవచ్చు!"
+    },
+    "genres": [
+      "Comedy",
+      "Action",
+      "Sci-Fi"
+    ],
+    "year": 2022,
+    "runtime": null,
+    "totalEpisodes": 46,
+    "totalSeasons": 1,
+    "imdbRating": 6.9,
+    "studio": "David Production",
+    "language": "Japanese",
+    "country": "JP",
+    "teluguDubAvail": false,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 4,
+    "popularityScore": 8,
+    "universe": null
+  },
+  {
+    "slug": "chainsaw-man-2022",
+    "type": "ANIME",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/yVtx7Xn9UxNJqvG2BkvhCcmed9S.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/5DUMPBSnHOZsbBv81GFXZXvDpo6.jpg",
+    "title": {
+      "en": "Chainsaw Man",
+      "te": "Chainsaw Man"
+    },
+    "description": {
+      "en": "Denji has a simple dream—to live a happy and peaceful life, spending time with a girl he likes. This is a far cry from reality, however, as Denji is forced by the yakuza into killing devils in order to pay off his crushing debts. Using his pet devil Pochita as a weapon, he is ready to do anything for a bit of cash.",
+      "te": "డెంజీకి ఒక సాధారణ కల ఉంది-ఆనందంగా మరియు ప్రశాంతంగా జీవించడం, తనకు నచ్చిన అమ్మాయితో సమయం గడపడం. ఇది వాస్తవానికి చాలా దూరంగా ఉంది, అయినప్పటికీ, డెంజీ తన అణిచివేత అప్పులను తీర్చడానికి డెవిల్స్‌ను చంపడానికి యాకూజా చేత బలవంతం చేయబడతాడు. తన పెంపుడు దెయ్యం పోచితాన్ని ఆయుధంగా మలచుకుని కాస్త నగదు కోసం ఏం చేయడానికైనా సిద్ధమయ్యాడు."
+    },
+    "genres": [
+      "Action",
+      "Sci-Fi",
+      "Comedy"
+    ],
+    "year": 2022,
+    "runtime": null,
+    "totalEpisodes": 12,
+    "totalSeasons": 1,
+    "imdbRating": 8.502,
+    "studio": "MAPPA",
+    "language": "Japanese",
+    "country": "JP",
+    "teluguDubAvail": false,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 4,
+    "popularityScore": 8,
+    "universe": null
+  },
+  {
+    "slug": "my-dress-up-darling-2022",
+    "type": "ANIME",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/A6mxBwvvv63JXZm3xXKv4SugE0L.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/gWPK2RIVJ6i3myf7Xdw8DqlznT8.jpg",
+    "title": {
+      "en": "My Dress-Up Darling",
+      "te": "My Dress-Up Darling"
+    },
+    "description": {
+      "en": "High schooler Wakana Gojo wants to become a kashirashi—a master craftsman who makes traditional Japanese Hina dolls. Though he's gung-ho about the craft, he knows nothing about the latest trends, and has a hard time fitting in with his class. The popular kids—especially one girl, Marin Kitagawa—seem like they live in a completely different world. That all changes one day, when she shares an unexpected secret with him, and their completely different worlds collide.",
+      "te": "ఉన్నత పాఠశాల విద్యార్థి వకానా గోజో సాంప్రదాయ జపనీస్ హీనా బొమ్మలను తయారుచేసే కాశీరాశిగా మారాలనుకుంటున్నారు. అతను క్రాఫ్ట్ గురించి చాలా ఆసక్తిగా ఉన్నప్పటికీ, అతనికి లేటెస్ట్ ట్రెండ్‌ల గురించి ఏమీ తెలియదు మరియు అతని క్లాస్‌తో సరిపోవడం చాలా కష్టం. జనాదరణ పొందిన పిల్లలు-ముఖ్యంగా ఒక అమ్మాయి, మారిన్ కిటగావా-వారు పూర్తిగా భిన్నమైన ప్రపంచంలో జీవిస్తున్నట్లు అనిపిస్తుంది. ఆమె అతనితో ఊహించని రహస్యాన్ని పంచుకున్నప్పుడు మరియు వారి పూర్తిగా భిన్నమైన ప్రపంచాలు ఢీకొన్నప్పుడు అది ఒక రోజు మారుతుంది."
+    },
+    "genres": [
+      "Comedy",
+      "Drama"
+    ],
+    "year": 2022,
+    "runtime": null,
+    "totalEpisodes": 24,
+    "totalSeasons": 1,
+    "imdbRating": 8.439,
+    "studio": "CloverWorks",
+    "language": "Japanese",
+    "country": "JP",
+    "teluguDubAvail": false,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 4,
+    "popularityScore": 8,
+    "universe": null
+  },
+  {
+    "slug": "initial-d-1998",
+    "type": "ANIME",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/CMG53GMx0OFFmF4dzhlFuebarq.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/zBIIyH8yfdlfvvpEiG9PLwoVXc6.jpg",
+    "title": {
+      "en": "Initial D",
+      "te": "Initial D"
+    },
+    "description": {
+      "en": "Takumi’s job as a tofu delivery boy has turned him into one of the most formidable drivers around. Behind the wheel of his Eight-Six, he’s one with the road—and his life shifts into high gear when the underground street racing world takes notice. Drivers from across the region are lining up for a shot at the new guy. Takumi’s not just focused on winning—he’s out to prove he’s the best.",
+      "te": "టోఫు డెలివరీ బాయ్‌గా టకుమీ యొక్క ఉద్యోగం అతని చుట్టూ ఉన్న అత్యంత బలీయమైన డ్రైవర్‌లలో ఒకరిగా మారింది. అతని ఎనిమిది-ఆరు చక్రం వెనుక, అతను రహదారితో ఒకడు-మరియు భూగర్భ స్ట్రీట్ రేసింగ్ ప్రపంచం గమనించినప్పుడు అతని జీవితం హై గేర్‌లోకి మారుతుంది. ప్రాంతం అంతటా ఉన్న డ్రైవర్లు కొత్త వ్యక్తిపై షాట్ కోసం బారులు తీరుతున్నారు. తకుమీ గెలవడంపైనే దృష్టి పెట్టలేదు-అతను అత్యుత్తమమని నిరూపించుకోవడానికి సిద్ధంగా ఉన్నాడు."
+    },
+    "genres": [
+      "Action",
+      "Drama"
+    ],
+    "year": 1998,
+    "runtime": null,
+    "totalEpisodes": 81,
+    "totalSeasons": 5,
+    "imdbRating": 8,
+    "studio": "OB Planning",
+    "language": "Japanese",
+    "country": "JP",
+    "teluguDubAvail": false,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 4,
+    "popularityScore": 8,
+    "universe": null
+  },
+  {
+    "slug": "kaguya-sama-love-is-war-2019",
+    "type": "ANIME",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/5khbC6AuNgnvnoDbjIMKCOhEtIc.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/dJ8yrSokdTMnhKJw06MllSfCegb.jpg",
+    "title": {
+      "en": "Kaguya-sama: Love Is War",
+      "te": "Kaguya-sama: Love Is War"
+    },
+    "description": {
+      "en": "Considered a genius due to having the highest grades in the country, Miyuki Shirogane leads the prestigious Shuchiin Academy's student council as its president, working alongside the beautiful and wealthy vice president Kaguya Shinomiya. The two are often regarded as the perfect couple by students despite them not being in any sort of romantic relationship.",
+      "te": "దేశంలో అత్యున్నత గ్రేడ్‌లను కలిగి ఉండటం వల్ల మేధావిగా పరిగణించబడుతున్న మియుకి శిరోగనే ప్రతిష్టాత్మకమైన షుచిన్ అకాడమీ యొక్క విద్యార్థి మండలికి దాని అధ్యక్షుడిగా నాయకత్వం వహిస్తున్నారు, అందమైన మరియు సంపన్న వైస్ ప్రెసిడెంట్ కగుయా షినోమియాతో కలిసి పని చేస్తున్నారు. ఏ విధమైన శృంగార సంబంధంలో లేనప్పటికీ విద్యార్థులచే ఇద్దరు తరచుగా పరిపూర్ణ జంటగా పరిగణించబడతారు."
+    },
+    "genres": [
+      "Comedy"
+    ],
+    "year": 2019,
+    "runtime": null,
+    "totalEpisodes": 37,
+    "totalSeasons": 3,
+    "imdbRating": 8.5,
+    "studio": "A-1 Pictures",
+    "language": "Japanese",
+    "country": "JP",
+    "teluguDubAvail": false,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 4,
+    "popularityScore": 8,
+    "universe": null
+  },
+  {
+    "slug": "blue-exorcist-2011",
+    "type": "ANIME",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/kpNoqNmElzGUEcEoZyfFwvYXMsR.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/wJzHFl5mq6JFbD6equTleJuzlnk.jpg",
+    "title": {
+      "en": "Blue Exorcist",
+      "te": "Blue Exorcist"
+    },
+    "description": {
+      "en": "Humans live in the world of Assiah, demons in Gehenna. The two dimensions are not meant to interfere with each other, but demons still possess creatures in Assiah in spite of this. The humans who can fight these demons are known as exorcists. Rin Okumura is a boy who bears the curse of being Satan's illegitimate son. His foster father sacrificed himself to save him from demons. To avenge his foster father's death as well as to prove himself, Rin decides to follow the path of an exorcist and defeat his own father, Satan. To hone his raw skills, Rin enters True Cross Academy to train with other exorcist candidates.",
+      "te": "మానవులు అస్సియా ప్రపంచంలో నివసిస్తున్నారు, రాక్షసులు గెహెన్నాలో ఉన్నారు. రెండు కోణాలు ఒకదానికొకటి జోక్యం చేసుకోవడానికి ఉద్దేశించినవి కావు, అయితే ఇది ఉన్నప్పటికీ రాక్షసులు అస్సియాలో ఇప్పటికీ జీవులను కలిగి ఉన్నారు. ఈ రాక్షసులతో పోరాడగల మానవులను భూతవైద్యులు అంటారు. రిన్ ఒకుమురా సాతాను చట్టవిరుద్ధమైన కొడుకు అనే శాపాన్ని భరించే బాలుడు. అతన్ని రాక్షసుల నుండి రక్షించడానికి అతని పెంపుడు తండ్రి తనను తాను త్యాగం చేశాడు. తన పెంపుడు తండ్రి మరణానికి ప్రతీకారం తీర్చుకోవడానికి అలాగే తనను తాను నిరూపించుకోవడానికి, రిన్ భూతవైద్యుని మార్గాన్ని అనుసరించి తన సొంత తండ్రి సాతానును ఓడించాలని నిర్ణయించుకున్నాడు. తన అసలైన నైపుణ్యాలను మెరుగుపరుచుకోవడానికి, ఇతర భూతవైద్యుల అభ్యర్థులతో శిక్షణ పొందేందుకు రిన్ ట్రూ క్రాస్ అకాడమీలో ప్రవేశించాడు."
+    },
+    "genres": [
+      "Sci-Fi",
+      "Thriller",
+      "Action"
+    ],
+    "year": 2011,
+    "runtime": null,
+    "totalEpisodes": 73,
+    "totalSeasons": 5,
+    "imdbRating": 7.862,
+    "studio": "A-1 Pictures",
+    "language": "Japanese",
+    "country": "JP",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 4,
+    "popularityScore": 8,
+    "universe": null
+  },
+  {
+    "slug": "the-eminence-in-shadow-2022",
+    "type": "ANIME",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/7JKYmtLydAwo9ZsEmAknZiO4U8g.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/htD5SJpPOvkmAowU80KrWnN59WO.jpg",
+    "title": {
+      "en": "The Eminence in Shadow",
+      "te": "The Eminence in Shadow"
+    },
+    "description": {
+      "en": "Shadowbrokers are those who go unnoticed, posing as unremarkable people, when in truth, they control everything from behind the scenes. Sid wants to be someone just like that more than anything, and something as insignificant as boring reality isn’t going to get in his way! He trains in secret every single night, preparing for his eventual rise to power—only to be denied his destiny by a run-of-the-mill (yet deadly) traffic accident. But when he wakes up in a another world and suddenly finds himself at the head of an actual secret organization doing battle with evil in the shadows, he’ll finally get a chance to act out all of his delusional fantasies!",
+      "te": "షాడో బ్రోకర్లు అంటే గుర్తించబడని వ్యక్తులు, గుర్తుపట్టలేని వ్యక్తులుగా నటిస్తారు, వాస్తవానికి, వారు తెరవెనుక నుండి ప్రతిదీ నియంత్రిస్తారు. సిద్ అన్నింటికంటే ఎక్కువగా అలాంటి వ్యక్తిగా ఉండాలని కోరుకుంటాడు మరియు బోరింగ్ రియాలిటీ వంటి అతి ముఖ్యమైనది అతని దారిలోకి రాబోదు! అతను ప్రతి ఒక్క రాత్రి రహస్యంగా శిక్షణ పొందుతాడు, చివరికి అధికారంలోకి రావడానికి సిద్ధమవుతున్నాడు-ఒక రన్-ఆఫ్-ది-మిల్ (ఇంకా ఘోరమైన) ట్రాఫిక్ ప్రమాదం ద్వారా అతని విధిని తిరస్కరించాడు. కానీ అతను మరొక ప్రపంచంలో మేల్కొన్నప్పుడు మరియు అకస్మాత్తుగా నీడలో చెడుతో యుద్ధం చేస్తున్న అసలు రహస్య సంస్థ యొక్క అధిపతిగా తనను తాను కనుగొన్నప్పుడు, అతను చివరకు తన భ్రమ కలిగించే కల్పనలన్నింటినీ ప్రదర్శించే అవకాశాన్ని పొందుతాడు!"
+    },
+    "genres": [
+      "Comedy",
+      "Sci-Fi",
+      "Action"
+    ],
+    "year": 2022,
+    "runtime": null,
+    "totalEpisodes": 32,
+    "totalSeasons": 2,
+    "imdbRating": 8.002,
+    "studio": "Nexus",
+    "language": "Japanese",
+    "country": "JP",
+    "teluguDubAvail": false,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 4,
+    "popularityScore": 8,
+    "universe": null
+  },
+  {
+    "slug": "the-misfit-of-demon-king-academy-2020",
+    "type": "ANIME",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/xBNR7V4s5b0qQfRCiyEvIC5PS6v.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/fxISKAY8c2xYXt2CFLjUU2bEx8n.jpg",
+    "title": {
+      "en": "The Misfit of Demon King Academy",
+      "te": "The Misfit of Demon King Academy"
+    },
+    "description": {
+      "en": "Anos Voldigord was a tyrannical Demon King that eradicated humans, spirits, and even the gods, but became bored of eternal warfare and reincarnated with dreams of a peaceful world. However, what awaited him in reincarnation after 2000 years were descendants who became too weak after being accustomed to peace, and all sorts of magic that deteriorated to the extreme. Anos enters Demon King Academy that gathers and educates those who are viewed as the reincarnation of the Demon King, but the academy could not see through his true powers and ends up branding him as a misfit.",
+      "te": "అనోస్ వోల్డిగోర్డ్ ఒక నిరంకుశ రాక్షస రాజు, అతను మానవులను, ఆత్మలను మరియు దేవతలను కూడా నిర్మూలించాడు, కానీ శాశ్వతమైన యుద్ధంతో విసుగు చెందాడు మరియు శాంతియుత ప్రపంచం యొక్క కలలతో పునర్జన్మ పొందాడు. ఏదేమైనా, 2000 సంవత్సరాల తర్వాత పునర్జన్మలో అతనికి ఎదురుచూసింది శాంతికి అలవాటుపడిన తర్వాత చాలా బలహీనంగా మారిన వారసులు మరియు అన్ని రకాల మాయాజాలం విపరీతంగా క్షీణించాయి. అనోస్ డెమోన్ కింగ్ అకాడమీలోకి ప్రవేశించాడు, అది డెమోన్ కింగ్ యొక్క పునర్జన్మగా పరిగణించబడే వారిని సేకరించి, విద్యావంతులను చేస్తుంది, అయితే అకాడమీ అతని నిజమైన శక్తులను చూడలేకపోయింది మరియు అతనిని తప్పుగా ముద్ర వేస్తుంది."
+    },
+    "genres": [
+      "Action",
+      "Sci-Fi"
+    ],
+    "year": 2020,
+    "runtime": null,
+    "totalEpisodes": 37,
+    "totalSeasons": 2,
+    "imdbRating": 8.4,
+    "studio": "SILVER LINK.",
+    "language": "Japanese",
+    "country": "JP",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 4,
+    "popularityScore": 7,
+    "universe": null
+  },
+  {
+    "slug": "that-time-i-got-reincarnated-as-a-slime-2018",
+    "type": "ANIME",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/pzujcdPAoH361NObVrtbA7zACE7.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/eJOy7YWAHgOS3V477sdTsq4v9jp.jpg",
+    "title": {
+      "en": "That Time I Got Reincarnated as a Slime",
+      "te": "That Time I Got Reincarnated as a Slime"
+    },
+    "description": {
+      "en": "Corporate worker Mikami Satoru is stabbed by a random killer, and is reborn to an alternate world. But he turns out to be reborn a slime! Thrown into this new world with the name Rimuru, he begins his quest to create a world that’s welcoming to all races.",
+      "te": "కార్పొరేట్ వర్కర్ మికామి సటోరు యాదృచ్ఛిక కిల్లర్‌చే కత్తిపోటుకు గురయ్యాడు మరియు ప్రత్యామ్నాయ ప్రపంచానికి పునర్జన్మ పొందాడు. కానీ అతను ఒక బురదగా పునర్జన్మ పొందాడు! రిమురు అనే పేరుతో ఈ కొత్త ప్రపంచంలోకి విసిరివేయబడ్డాడు, అతను అన్ని జాతులను స్వాగతించే ప్రపంచాన్ని సృష్టించడానికి తన అన్వేషణను ప్రారంభించాడు."
+    },
+    "genres": [
+      "Action",
+      "Sci-Fi",
+      "Comedy"
+    ],
+    "year": 2018,
+    "runtime": null,
+    "totalEpisodes": 96,
+    "totalSeasons": 4,
+    "imdbRating": 8.412,
+    "studio": "8bit",
+    "language": "Japanese",
+    "country": "JP",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 4,
+    "popularityScore": 8,
+    "universe": null
+  },
+  {
+    "slug": "running-man-2010",
+    "type": "KDRAMA",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/2Wmmu1MkqxJ48J7aySET9EKEjXz.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/wsHj4oHQJoe7DMYaqNFwVoyLiAh.jpg",
+    "title": {
+      "en": "Running Man",
+      "te": "Running Man"
+    },
+    "description": {
+      "en": "These days, as variety shows are gradually disappearing, this is one of Korea’s representative variety shows that has been responsible for Sunday evenings for over 10 years. This program features numerous stars and members going around various places, playing games, and completing missions. In particular, among the many fun elements of variety shows, this one focuses solely on laughter.\n\nOpen your eyes! Big fun is coming in!\n\nOpen your mouth! Big laughter is coming in!\n\nOpen your heart! Useful lessons are coming in!",
+      "te": "ఈ రోజుల్లో, వెరైటీ షోలు క్రమంగా కనుమరుగవుతున్నందున, ఇది 10 సంవత్సరాలకు పైగా ఆదివారం సాయంత్రాలకు బాధ్యత వహించే కొరియా యొక్క ప్రతినిధి విభిన్న ప్రదర్శనలలో ఒకటి. ఈ ప్రోగ్రామ్‌లో అనేక మంది స్టార్‌లు మరియు సభ్యులు వివిధ ప్రదేశాలలో తిరుగుతూ, గేమ్‌లు ఆడుతున్నారు మరియు మిషన్‌లను పూర్తి చేస్తారు. ప్రత్యేకించి, వెరైటీ షోలలోని అనేక సరదా అంశాలలో, ఇది కేవలం నవ్వుపై మాత్రమే దృష్టి పెడుతుంది.\n\nకళ్ళు తెరవండి! పెద్ద వినోదం వస్తోంది!\n\nనోరు తెరవండి! పెద్ద నవ్వు వస్తోంది!\n\nమీ హృదయాన్ని తెరవండి! ఉపయోగకరమైన పాఠాలు వస్తున్నాయి!"
+    },
+    "genres": [
+      "Comedy"
+    ],
+    "year": 2010,
+    "runtime": null,
+    "totalEpisodes": 807,
+    "totalSeasons": 1,
+    "imdbRating": 8.257,
+    "studio": "Urban Works",
+    "language": "Korean",
+    "country": "KR",
+    "teluguDubAvail": false,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 19,
+    "popularityScore": 37,
+    "universe": null
+  },
+  {
+    "slug": "the-wonderfools-2026",
+    "type": "KDRAMA",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/jj7AYkz2OLRDL1wfJmjTXyWQ5I4.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/y2u7d8evmnTivi3LaVql01Sfea4.jpg",
+    "title": {
+      "en": "The WONDERfools",
+      "te": "The WONDERfools"
+    },
+    "description": {
+      "en": "A goofy group of townies stumbles into superpowers and fights rising evil as doomsday panic grows in this wild, turn-of-the-century action comedy.",
+      "te": "శతాబ్దపు మలుపు తిరిగిన ఈ యాక్షన్ కామెడీలో డూమ్స్‌డే భయాందోళనలు పెరిగేకొద్దీ పట్టణవాసుల యొక్క తెలివితక్కువ సమూహం అగ్రరాజ్యాలుగా దూసుకుపోతుంది మరియు పెరుగుతున్న చెడుతో పోరాడుతుంది."
+    },
+    "genres": [
+      "Action",
+      "Comedy",
+      "Sci-Fi",
+      "Drama"
+    ],
+    "year": 2026,
+    "runtime": null,
+    "totalEpisodes": 8,
+    "totalSeasons": 1,
+    "imdbRating": 9.197,
+    "studio": "Kakao Entertainment",
+    "language": "Korean",
+    "country": "KR",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 8,
+    "popularityScore": 16,
+    "universe": null
+  },
+  {
+    "slug": "men-on-a-mission-2015",
+    "type": "KDRAMA",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/2jIi55JtYKJTL1km8qHMuUilOWo.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/a8a8z4aJr40zYgRMfmSESppX2eO.jpg",
+    "title": {
+      "en": "Men on a Mission",
+      "te": "Men on a Mission"
+    },
+    "description": {
+      "en": "Male celebs play make-believe as high schoolers, welcoming star transfer students every week and engaging in battles of witty humor and slapstick.",
+      "te": "మగ సెలబ్‌లు హైస్కూలర్‌గా మేక్-బిలీవ్ ఆడతారు, ప్రతి వారం స్టార్ ట్రాన్స్‌ఫర్ విద్యార్థులను స్వాగతించారు మరియు చమత్కారమైన హాస్యం మరియు స్లాప్‌స్టిక్‌ల యుద్ధాల్లో పాల్గొంటారు."
+    },
+    "genres": [
+      "Comedy"
+    ],
+    "year": 2015,
+    "runtime": null,
+    "totalEpisodes": 530,
+    "totalSeasons": 1,
+    "imdbRating": 7.5,
+    "studio": "JTBC",
+    "language": "Korean",
+    "country": "KR",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 7,
+    "popularityScore": 13,
+    "universe": null
+  },
+  {
+    "slug": "weak-hero-2022",
+    "type": "KDRAMA",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/dbqNBeLvAWFqpAvdBc0cecaqytT.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/hj2YSkoqHB2FPHeoALfdd4eufue.jpg",
+    "title": {
+      "en": "Weak Hero",
+      "te": "Weak Hero"
+    },
+    "description": {
+      "en": "With the aid of unexpected friends, a gifted but introverted student confronts bullies and violent foes — unaware of how dangerous his world will become.",
+      "te": "ఊహించని స్నేహితుల సహాయంతో, ప్రతిభావంతుడైన కానీ అంతర్ముఖుడైన విద్యార్థి బెదిరింపులు మరియు హింసాత్మక శత్రువులను ఎదుర్కొంటాడు - తన ప్రపంచం ఎంత ప్రమాదకరంగా మారుతుందో తెలియదు."
+    },
+    "genres": [
+      "Action",
+      "Drama"
+    ],
+    "year": 2022,
+    "runtime": null,
+    "totalEpisodes": 16,
+    "totalSeasons": 2,
+    "imdbRating": 8.666,
+    "studio": "Playlist Studio",
+    "language": "Korean",
+    "country": "KR",
+    "teluguDubAvail": false,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 8,
+    "popularityScore": 15,
+    "universe": null
+  },
+  {
+    "slug": "bloodhounds-2023",
+    "type": "KDRAMA",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/uSQzD7TXsL96J5ggDrJFdUs8uXU.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/zhsEnDNCQX5dlI2wbKzV90pV0B9.jpg",
+    "title": {
+      "en": "Bloodhounds",
+      "te": "Bloodhounds"
+    },
+    "description": {
+      "en": "Faced with ruthless foes with a violent thirst, two young boxers band together — risking life and limb to bring justice and protect their loved ones.",
+      "te": "హింసాత్మక దాహంతో క్రూరమైన శత్రువులను ఎదుర్కొంటారు, ఇద్దరు యువ బాక్సర్లు కలిసి - న్యాయం చేయడానికి మరియు వారి ప్రియమైన వారిని రక్షించడానికి జీవితాన్ని మరియు అవయవాలను పణంగా పెట్టారు."
+    },
+    "genres": [
+      "Drama",
+      "Action",
+      "Crime"
+    ],
+    "year": 2023,
+    "runtime": null,
+    "totalEpisodes": 15,
+    "totalSeasons": 2,
+    "imdbRating": 8.461,
+    "studio": "Studio N",
+    "language": "Korean",
+    "country": "KR",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 7,
+    "popularityScore": 15,
+    "universe": null
+  },
+  {
+    "slug": "squid-game-2021",
+    "type": "KDRAMA",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/1QdXdRYfktUSONkl1oD5gc6Be0s.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/2meX1nMdScFOoV4370rqHWKmXhY.jpg",
+    "title": {
+      "en": "Squid Game",
+      "te": "Squid Game"
+    },
+    "description": {
+      "en": "Hundreds of cash-strapped players accept a strange invitation to compete in children's games. Inside, a tempting prize awaits — with deadly high stakes.",
+      "te": "వందలాది మంది నగదు కొరత ఉన్న ఆటగాళ్ళు పిల్లల ఆటలలో పాల్గొనడానికి ఒక వింత ఆహ్వానాన్ని అంగీకరిస్తారు. లోపల, ఆకర్షణీయమైన బహుమతి వేచి ఉంది - ఘోరమైన అధిక వాటాలతో."
+    },
+    "genres": [
+      "Action",
+      "Thriller",
+      "Drama"
+    ],
+    "year": 2021,
+    "runtime": null,
+    "totalEpisodes": 22,
+    "totalSeasons": 3,
+    "imdbRating": 7.856,
+    "studio": "Siren Pictures",
+    "language": "Korean",
+    "country": "KR",
+    "teluguDubAvail": false,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 6,
+    "popularityScore": 13,
+    "universe": null
+  },
+  {
+    "slug": "you-hee-yeol-s-sketchbook-2009",
+    "type": "KDRAMA",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/5zsoaVX483aJG90rJhlAup1VAXI.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/gWTJDV0iRWkkiwlL5uXHQvRPbkk.jpg",
+    "title": {
+      "en": "You Hee-yeol's Sketchbook",
+      "te": "You Hee-yeol's Sketchbook"
+    },
+    "description": {
+      "en": "You Hee-yeol's Sketchbook is a Korean pop music program that is both a talk show and live music show. The host of this program is You Hee-yeol, also known as Toy, a one-man project band. This program has aired since April 24, 2009.",
+      "te": "యు హీ-యోల్ యొక్క స్కెచ్‌బుక్ అనేది కొరియన్ పాప్ మ్యూజిక్ ప్రోగ్రామ్, ఇది టాక్ షో మరియు లైవ్ మ్యూజిక్ షో. ఈ ప్రోగ్రామ్ యొక్క హోస్ట్ యు హీ-యోల్, దీనిని టాయ్ అని కూడా పిలుస్తారు, ఇది ఒక వ్యక్తి ప్రాజెక్ట్ బ్యాండ్. ఈ కార్యక్రమం ఏప్రిల్ 24, 2009 నుండి ప్రసారం చేయబడింది."
+    },
+    "genres": [
+      "Drama"
+    ],
+    "year": 2009,
+    "runtime": null,
+    "totalEpisodes": 600,
+    "totalSeasons": 1,
+    "imdbRating": 6.3,
+    "studio": "KBS",
+    "language": "Korean",
+    "country": "KR",
+    "teluguDubAvail": false,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 6,
+    "popularityScore": 11,
+    "universe": null
+  },
+  {
+    "slug": "amazing-saturday-2018",
+    "type": "KDRAMA",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/nEwybsfZBSPjcZamPpKDTaTI5g.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/pNdUVPm6RwvG9Ycd2cuYpLbM7lk.jpg",
+    "title": {
+      "en": "Amazing Saturday",
+      "te": "Amazing Saturday"
+    },
+    "description": {
+      "en": "A group of hungry celebrities listen to poppin’ tunes, from recent hits to all-time-favorites, to correctly dictate a part of the lyrics.\n\nThe songs may sound familiar, but the part they must dictate are unclear to the naked ear, as the lyrics are slurred, muffled by strong beats, etc.\n\nIf they get the lyrics right, they get to share exquisite regional dishes. But if they get them wrong, a professional eater gobbles it up instead.",
+      "te": "ఆకలితో ఉన్న ప్రముఖుల సమూహం ఇటీవలి హిట్‌ల నుండి ఆల్-టైమ్-ఇష్టమైన వాటి వరకు పాపిన్ ట్యూన్‌లను వింటుంది, సాహిత్యంలో కొంత భాగాన్ని సరిగ్గా నిర్దేశిస్తుంది.\n\nపాటలు సుపరిచితమైనవిగా అనిపించవచ్చు, కానీ అవి నిర్దేశించాల్సిన భాగం నగ్నమైన చెవికి అస్పష్టంగా ఉంటుంది, ఎందుకంటే సాహిత్యం అస్పష్టంగా ఉంది, బలమైన బీట్‌లతో మఫిల్ చేయబడింది.\n\nవారు సరైన సాహిత్యాన్ని పొందినట్లయితే, వారు సున్నితమైన ప్రాంతీయ వంటకాలను పంచుకుంటారు. కానీ వారు వాటిని తప్పుగా అర్థం చేసుకుంటే, ఒక ప్రొఫెషనల్ తినేవాడు బదులుగా దాన్ని గగ్గోలు చేస్తాడు."
+    },
+    "genres": [
+      "Comedy"
+    ],
+    "year": 2018,
+    "runtime": null,
+    "totalEpisodes": 420,
+    "totalSeasons": 1,
+    "imdbRating": 7.6,
+    "studio": "CJ ENM",
+    "language": "Korean",
+    "country": "KR",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 5,
+    "popularityScore": 10,
+    "universe": null
+  },
+  {
+    "slug": "infinite-challenge-2005",
+    "type": "KDRAMA",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/3ZIPTvMnzI5ThmdGeEYQFxJV5Sg.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/s2qJb1FLwp1Mse9lY08JqgMp0kw.jpg",
+    "title": {
+      "en": "Infinite Challenge",
+      "te": "Infinite Challenge"
+    },
+    "description": {
+      "en": "Infinite Challenge has been reported as the first \"Real-Variety\" show in Korean television history. The program is largely unscripted, and follows a similar format of challenge-based Reality Television programs, familiar to the audiences in the West, but the challenges are often silly, absurd, or impossible to achieve, so the program takes on the aspect of a satirical comedy variety show, rather than a more standard reality or contest program. In order to achieve its comedic purposes its 6 hosts and staff continuously proclaim, the elements of this show are the 3-Ds, Dirty, Dangerous, and Difficult.",
+      "te": "కొరియన్ టెలివిజన్ చరిత్రలో ఇన్ఫినిట్ ఛాలెంజ్ మొదటి \"రియల్-వెరైటీ\" షోగా నివేదించబడింది. ప్రోగ్రామ్ ఎక్కువగా స్క్రిప్ట్ చేయబడలేదు మరియు పాశ్చాత్య ప్రేక్షకులకు సుపరిచితమైన ఛాలెంజ్-ఆధారిత రియాలిటీ టెలివిజన్ ప్రోగ్రామ్‌ల యొక్క సారూప్య ఆకృతిని అనుసరిస్తుంది, కానీ సవాళ్లు తరచుగా వెర్రి, అసంబద్ధం లేదా సాధించడం అసాధ్యం, కాబట్టి ప్రోగ్రామ్ మరింత ప్రామాణికమైన రియాలిటీ లేదా పోటీ కార్యక్రమం కంటే వ్యంగ్య కామెడీ వైవిధ్యమైన ప్రదర్శనను తీసుకుంటుంది. దాని హాస్య ప్రయోజనాలను సాధించడానికి దాని 6 హోస్ట్‌లు మరియు సిబ్బంది నిరంతరం ప్రకటిస్తున్నారు, ఈ ప్రదర్శన యొక్క అంశాలు 3-Dలు, డర్టీ, డేంజరస్ మరియు డిఫికల్ట్."
+    },
+    "genres": [
+      "Comedy"
+    ],
+    "year": 2005,
+    "runtime": null,
+    "totalEpisodes": 616,
+    "totalSeasons": 3,
+    "imdbRating": 7.7,
+    "studio": "MBC",
+    "language": "Korean",
+    "country": "KR",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 5,
+    "popularityScore": 11,
+    "universe": null
+  },
+  {
+    "slug": "home-alone-2013",
+    "type": "KDRAMA",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/1hqGagr94soBq70Lq7tPHvNmmxy.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/sztoil0XfQ0cSHy4PXmYW6uAdfQ.jpg",
+    "title": {
+      "en": "Home Alone",
+      "te": "Home Alone"
+    },
+    "description": {
+      "en": "It can be a badge of honor to be “single.” “I Live Alone” is a documentary-style South Korean reality series that follows the members of a self-formed club called Rainbow, which is comprised of  celebrities who are single and live alone.",
+      "te": "\"సింగిల్\"గా ఉండటం గౌరవ బ్యాడ్జ్ కావచ్చు. \"ఐ లివ్ ఎలోన్\" అనేది డాక్యుమెంటరీ-శైలి సౌత్ కొరియన్ రియాలిటీ సిరీస్, ఇది రెయిన్‌బో అని పిలువబడే స్వీయ-ఏర్పాటు చేసిన క్లబ్ సభ్యులను అనుసరిస్తుంది, ఇది ఒంటరిగా మరియు ఒంటరిగా జీవించే ప్రముఖులతో కూడి ఉంటుంది."
+    },
+    "genres": [
+      "Drama"
+    ],
+    "year": 2013,
+    "runtime": null,
+    "totalEpisodes": 646,
+    "totalSeasons": 1,
+    "imdbRating": 7.5,
+    "studio": "MBC",
+    "language": "Korean",
+    "country": "KR",
+    "teluguDubAvail": false,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 5,
+    "popularityScore": 10,
+    "universe": null
+  },
+  {
+    "slug": "law-of-the-jungle-2011",
+    "type": "KDRAMA",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/zgMOq3H27nYikqjykeXCIIFRbjK.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/sgE2evtpaP5b9tavrgYCy2nKYLT.jpg",
+    "title": {
+      "en": "Law of the Jungle",
+      "te": "Law of the Jungle"
+    },
+    "description": {
+      "en": "Law of the Jungle is a hybrid reality show combining elements of drama and documentary. The show is hosted by comedian Kim Byung Man, and each episode invites various celebrities from the various field. So far, many of idol stars and famous actors have appeared on the show. The show introduces viewers to exotic locations around the world where celebrities must work together in order to complete missions and survive. The cast celebrities travel to less habituated, natural places to survive on their own and experience life with local tribes and people. In each location, the guests are tasked to hunt and prepare their meals and also create shelter for the tribe. They sometimes confronted by many difficult challenges. Where will the tribe visit? And how will they survive on their own? Stay tuned to check out!",
+      "te": "లా ఆఫ్ ది జంగిల్ అనేది డ్రామా మరియు డాక్యుమెంటరీ అంశాలతో కూడిన హైబ్రిడ్ రియాలిటీ షో. ఈ కార్యక్రమాన్ని హాస్యనటుడు కిమ్ బైంగ్ మాన్ హోస్ట్ చేస్తున్నారు మరియు ప్రతి ఎపిసోడ్‌కు వివిధ రంగాలకు చెందిన వివిధ ప్రముఖులను ఆహ్వానిస్తారు. ఇప్పటివరకు, చాలా మంది విగ్రహ తారలు మరియు ప్రసిద్ధ నటులు ఈ కార్యక్రమంలో కనిపించారు. ఈ ప్రదర్శన ప్రపంచవ్యాప్తంగా ఉన్న అన్యదేశ ప్రదేశాలకు వీక్షకులను పరిచయం చేస్తుంది, ఇక్కడ సెలబ్రిటీలు మిషన్‌లను పూర్తి చేయడానికి మరియు మనుగడ సాగించడానికి కలిసి పని చేయాలి. తారాగణం ప్రముఖులు తమ స్వంతంగా జీవించడానికి మరియు స్థానిక తెగలు మరియు ప్రజలతో జీవితాన్ని అనుభవించడానికి తక్కువ అలవాటు లేని, సహజమైన ప్రదేశాలకు ప్రయాణిస్తారు. ప్రతి ప్రదేశంలో, అతిథులు వేటాడేందుకు మరియు వారి భోజనాన్ని సిద్ధం చేయడానికి మరియు తెగకు ఆశ్రయం కల్పించడానికి బాధ్యత వహిస్తారు. వారు కొన్నిసార్లు అనేక క్లిష్టమైన సవాళ్లను ఎదుర్కొన్నారు. తెగ ఎక్కడ సందర్శిస్తుంది? మరియు వారు తమంతట తాము ఎలా బతుకుతారు? తనిఖీ చేయడానికి వేచి ఉండండి!"
+    },
+    "genres": [
+      "Drama"
+    ],
+    "year": 2011,
+    "runtime": null,
+    "totalEpisodes": 893,
+    "totalSeasons": 57,
+    "imdbRating": 6,
+    "studio": "",
+    "language": "Korean",
+    "country": "KR",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 5,
+    "popularityScore": 9,
+    "universe": null
+  },
+  {
+    "slug": "my-little-old-boy-2016",
+    "type": "KDRAMA",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/fgeWRIiigNHLxy3qEzM0HqNcFHT.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/vrLDuQ5L45f7vFWpMT17WopdWx0.jpg",
+    "title": {
+      "en": "My Little Old Boy",
+      "te": "My Little Old Boy"
+    },
+    "description": {
+      "en": "How much do you know about your grown up son? In Mom’s Diary, the daily lives of the grown up celebrity sons are closely observed by their mothers. Do you know why your son drinks so much these days? How much do you know about your son’s philosophy in his life style? Heart-warming moments of observational communication between a mother and a son can be seen on Mom’s Diary.",
+      "te": "మీ ఎదిగిన కొడుకు గురించి మీకు ఎంత తెలుసు? మామ్ డైరీలో, ఎదిగిన సెలబ్రిటీ కొడుకుల రోజువారీ జీవితాలను వారి తల్లులు నిశితంగా గమనిస్తారు. ఈ రోజుల్లో మీ అబ్బాయి ఎందుకు ఎక్కువగా తాగుతున్నాడో తెలుసా? మీ కొడుకు జీవిత శైలిలో అతని తత్వశాస్త్రం గురించి మీకు ఎంత తెలుసు? తల్లి మరియు కొడుకు మధ్య పరిశీలనాత్మక సంభాషణ యొక్క హృదయాన్ని కదిలించే క్షణాలు అమ్మ డైరీలో చూడవచ్చు."
+    },
+    "genres": [
+      "Drama"
+    ],
+    "year": 2016,
+    "runtime": null,
+    "totalEpisodes": 494,
+    "totalSeasons": 1,
+    "imdbRating": 7,
+    "studio": "Prism Studios",
+    "language": "Korean",
+    "country": "KR",
+    "teluguDubAvail": false,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 5,
+    "popularityScore": 10,
+    "universe": null
+  },
+  {
+    "slug": "how-do-you-play--2019",
+    "type": "KDRAMA",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/dJd8LFodX9831AeRD3CzWklYcS5.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/dgutaqpLcLMoJInkbglyG8cLuji.jpg",
+    "title": {
+      "en": "How Do You Play?",
+      "te": "How Do You Play?"
+    },
+    "description": {
+      "en": "Yoo Jae-suk reunites the producing team of Infinite Challenge and presents you How Do You Play? The Indefinitely expanding YOONIVERSE, based on Yoo's blood, sweat, and tears, will entertain viewers at home. Let's follow Yoo and his friends' new projects every week.",
+      "te": "యు జే-సుక్ ఇన్ఫినిట్ ఛాలెంజ్ యొక్క నిర్మాత బృందాన్ని తిరిగి కలిపారు మరియు మీరు ఎలా ఆడతారు? యూ రక్తం, చెమట మరియు కన్నీళ్ల ఆధారంగా నిరవధికంగా విస్తరిస్తున్న YOONIVERSE, ఇంట్లో వీక్షకులను అలరిస్తుంది. ప్రతి వారం యో మరియు అతని స్నేహితుల కొత్త ప్రాజెక్ట్‌లను అనుసరిస్తాము."
+    },
+    "genres": [
+      "Comedy"
+    ],
+    "year": 2019,
+    "runtime": null,
+    "totalEpisodes": 325,
+    "totalSeasons": 1,
+    "imdbRating": 7.4,
+    "studio": "MBC",
+    "language": "Korean",
+    "country": "KR",
+    "teluguDubAvail": false,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 5,
+    "popularityScore": 9,
+    "universe": null
+  },
+  {
+    "slug": "2-days-and-1-night-2007",
+    "type": "KDRAMA",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/qezeCEkIKHQM5iwyVeYBuXmYA2h.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/32iRX9xqNH3ErJN6FowxdtgYmiY.jpg",
+    "title": {
+      "en": "2 Days and 1 Night",
+      "te": "2 Days and 1 Night"
+    },
+    "description": {
+      "en": "2 Days & 1 Night is a South Korean reality-variety show with the motto \"real wild road variety.\" Its main concept is to recommend various places of interest that viewers can visit in South Korea.",
+      "te": "2 డేస్ & 1 నైట్ అనేది \"నిజమైన వైల్డ్ రోడ్ వెరైటీ\" అనే నినాదంతో దక్షిణ కొరియా రియాలిటీ-వెరైటీ షో. దక్షిణ కొరియాలో వీక్షకులు సందర్శించగల వివిధ ప్రదేశాలను సిఫార్సు చేయడం దీని ప్రధాన భావన."
+    },
+    "genres": [
+      "Comedy"
+    ],
+    "year": 2007,
+    "runtime": null,
+    "totalEpisodes": 938,
+    "totalSeasons": 4,
+    "imdbRating": 7.1,
+    "studio": "Koen Media Corporation",
+    "language": "Korean",
+    "country": "KR",
+    "teluguDubAvail": false,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 5,
+    "popularityScore": 9,
+    "universe": null
+  },
+  {
+    "slug": "kbs-drama-special-2010",
+    "type": "KDRAMA",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/9nRwFvAs5toFtkLEzffqu39Fw7m.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/gmNtsz7MJ3IQoCFt8ymGNDfipfm.jpg",
+    "title": {
+      "en": "KBS Drama Special",
+      "te": "KBS Drama Special"
+    },
+    "description": {
+      "en": "Forget the existing one-act dramas! Short but impactive! KBS Drama Special presents high quality single episode dramas. Dramas are the broadcast content with the widest public appeal. KBS Drama Special will produce short dramas of far-reaching impact involving at times a serious social message, unique emotions or perspectives. It will stay abreast of modern viewership.",
+      "te": "ఇప్పటికే ఉన్న ఏకపాత్రాభినయ నాటకాలను మర్చిపో! చిన్నది కానీ ప్రభావవంతమైనది! KBS డ్రామా స్పెషల్ హై క్వాలిటీ సింగిల్ ఎపిసోడ్ డ్రామాలను అందిస్తుంది. నాటకాలు విస్తృత ప్రజా ఆకర్షణతో ప్రసార కంటెంట్. KBS డ్రామా స్పెషల్ కొన్నిసార్లు తీవ్రమైన సామాజిక సందేశం, ప్రత్యేకమైన భావోద్వేగాలు లేదా దృక్కోణాలను కలిగి ఉండే సుదూర ప్రభావంతో కూడిన చిన్న డ్రామాలను రూపొందిస్తుంది. ఇది ఆధునిక వీక్షకులకు దూరంగా ఉంటుంది."
+    },
+    "genres": [
+      "Drama"
+    ],
+    "year": 2010,
+    "runtime": null,
+    "totalEpisodes": 220,
+    "totalSeasons": 15,
+    "imdbRating": 7.4,
+    "studio": "KBS",
+    "language": "Korean",
+    "country": "KR",
+    "teluguDubAvail": false,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 4,
+    "popularityScore": 9,
+    "universe": null
+  },
+  {
+    "slug": "radio-star-2007",
+    "type": "KDRAMA",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/uRUZDsvUfIP3JUEgOC8ReBlQQUU.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/kCd0rmnNwCd3sgupO9DqSi9aHa0.jpg",
+    "title": {
+      "en": "Radio Star",
+      "te": "Radio Star"
+    },
+    "description": {
+      "en": "“Radio Star” is a South Korean music talk show where the guests and hosts talk openly and intimately about their lives, their pasts and their work. It is part of Munhwa Broadcasting Corporation's \"Golden Fishery\" programming block.",
+      "te": "\"రేడియో స్టార్\" అనేది దక్షిణ కొరియా సంగీత టాక్ షో, ఇక్కడ అతిథులు మరియు హోస్ట్‌లు వారి జీవితాలు, వారి గతాలు మరియు వారి పని గురించి బహిరంగంగా మరియు సన్నిహితంగా మాట్లాడుకుంటారు. ఇది మున్వా బ్రాడ్‌కాస్టింగ్ కార్పొరేషన్ యొక్క \"గోల్డెన్ ఫిషరీ\" ప్రోగ్రామింగ్ బ్లాక్‌లో భాగం."
+    },
+    "genres": [
+      "Drama"
+    ],
+    "year": 2007,
+    "runtime": null,
+    "totalEpisodes": 957,
+    "totalSeasons": 2,
+    "imdbRating": 5.75,
+    "studio": "",
+    "language": "Korean",
+    "country": "KR",
+    "teluguDubAvail": false,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 4,
+    "popularityScore": 9,
+    "universe": null
+  },
+  {
+    "slug": "you-quiz-on-the-block-2018",
+    "type": "KDRAMA",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/4zAQgKWGP2bJk11OKvwY1GCJjQR.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/fDSZ9s6QJfgDvqceTBLUFpNB71j.jpg",
+    "title": {
+      "en": "You Quiz on the Block",
+      "te": "You Quiz on the Block"
+    },
+    "description": {
+      "en": "Yoo Jae-suk and Jo Se-ho who enter ordinary people's everyday lives, chat with them, and give them surprise quizzes! The talk and quiz show program will spotlight these people's lives and aims to gift them a refreshing, different kind of day. Recently they're also inviting celebrities & professionals to the show.",
+      "te": "యూ జే-సుక్ మరియు జో సె-హో సాధారణ ప్రజల దైనందిన జీవితంలోకి ప్రవేశిస్తారు, వారితో చాట్ చేస్తారు మరియు వారికి ఆశ్చర్యకరమైన క్విజ్‌లు ఇస్తారు! టాక్ మరియు క్విజ్ షో ప్రోగ్రామ్ ఈ వ్యక్తుల జీవితాలను వెలుగులోకి తెస్తుంది మరియు వారికి రిఫ్రెష్, విభిన్నమైన రోజును బహుమతిగా అందించడం లక్ష్యంగా పెట్టుకుంది. ఇటీవల వారు ప్రదర్శనకు ప్రముఖులు & నిపుణులను కూడా ఆహ్వానిస్తున్నారు."
+    },
+    "genres": [
+      "Comedy"
+    ],
+    "year": 2018,
+    "runtime": null,
+    "totalEpisodes": 345,
+    "totalSeasons": 3,
+    "imdbRating": 8.3,
+    "studio": "CJ ENM",
+    "language": "Korean",
+    "country": "KR",
+    "teluguDubAvail": false,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 4,
+    "popularityScore": 7,
+    "universe": null
+  },
+  {
+    "slug": "perfect-crown-2026",
+    "type": "KDRAMA",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/nNYwETsj4XxZ4tnouiYCPBQNO2L.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/6ekykPwvAywJRjFEnUoCFWTO9O3.jpg",
+    "title": {
+      "en": "Perfect Crown",
+      "te": "Perfect Crown"
+    },
+    "description": {
+      "en": "In 21st-century Korea under a constitutional monarchy, a chaebol heiress with everything but status tries to take control of her future after crossing paths with a lonely prince with nothing but his title. Together, bound by a contract marriage, they begin a class-defying romance to rewrite destiny.",
+      "te": "21వ శతాబ్దపు కొరియాలో రాజ్యాంగబద్ధమైన రాచరికం కింద, హోదా తప్ప మిగతావన్నీ ఉన్న ఒక చెబోల్ వారసురాలు, అతని బిరుదు తప్ప మరేమీ లేకుండా ఒంటరిగా ఉన్న యువరాజుతో మార్గాన్ని దాటిన తర్వాత తన భవిష్యత్తును నియంత్రించడానికి ప్రయత్నిస్తుంది. కలిసి, ఒప్పంద వివాహంతో కట్టుబడి, వారు విధిని తిరిగి వ్రాయడానికి తరగతి-ధిక్కరించే శృంగారాన్ని ప్రారంభిస్తారు."
+    },
+    "genres": [
+      "Comedy",
+      "Drama"
+    ],
+    "year": 2026,
+    "runtime": null,
+    "totalEpisodes": 12,
+    "totalSeasons": 1,
+    "imdbRating": 8.7,
+    "studio": "MBC",
+    "language": "Korean",
+    "country": "KR",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 5,
+    "popularityScore": 9,
+    "universe": null
+  },
+  {
+    "slug": "mystery-music-show-king-of-mask-singer-2015",
+    "type": "KDRAMA",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/vlnAfmirzYx1TSxXuaPhHjkPPmK.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/xDXaptzkHFHGyQ2QGZ3aGnEE1dK.jpg",
+    "title": {
+      "en": "Mystery Music Show: King of Mask Singer",
+      "te": "Mystery Music Show: King of Mask Singer"
+    },
+    "description": {
+      "en": "Competitors are given elaborate masks to wear in order to conceal their identity, thus removing factors such as popularity, career and age that could lead to prejudiced voting. In the first round, a pair of competitors sing the same song, while in the second and third rounds they each sing a solo song. After the First Generation, the winner of the Third Round goes on to challenge the Mask King, and is either eliminated or replaces the previous Mask King through live voting. The identities of the singers are not revealed unless they have been eliminated.",
+      "te": "పోటీదారులు తమ గుర్తింపును దాచిపెట్టడానికి ధరించడానికి విస్తృతమైన ముసుగులు ఇస్తారు, తద్వారా పక్షపాత ఓటింగ్‌కు దారితీసే ప్రజాదరణ, వృత్తి మరియు వయస్సు వంటి అంశాలను తొలగిస్తారు. మొదటి రౌండ్‌లో, ఒక జత పోటీదారులు ఒకే పాటను పాడతారు, రెండవ మరియు మూడవ రౌండ్‌లలో వారు ఒక్కొక్కరు సోలో పాటను పాడతారు. మొదటి తరం తర్వాత, మూడవ రౌండ్ విజేత మాస్క్ కింగ్‌ను సవాలు చేస్తాడు మరియు ప్రత్యక్ష ఓటింగ్ ద్వారా తొలగించబడతాడు లేదా మునుపటి మాస్క్ కింగ్‌ని భర్తీ చేస్తాడు. గాయకులను ఎలిమినేట్ చేసినంత మాత్రాన గాయకుల గుర్తింపు లేదు."
+    },
+    "genres": [
+      "Drama"
+    ],
+    "year": 2015,
+    "runtime": null,
+    "totalEpisodes": 525,
+    "totalSeasons": 1,
+    "imdbRating": 5.6,
+    "studio": "MBC",
+    "language": "Korean",
+    "country": "KR",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 3,
+    "popularityScore": 7,
+    "universe": null
+  },
+  {
+    "slug": "alchemy-of-souls-2022",
+    "type": "KDRAMA",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/gvOZN1NlAoL8iz9ghpES1zWA3w3.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/nBZyWSGAUEzCH7Mna0zUNTpBQlQ.jpg",
+    "title": {
+      "en": "Alchemy of Souls",
+      "te": "Alchemy of Souls"
+    },
+    "description": {
+      "en": "A powerful sorceress in a blind woman's body encounters a man from a prestigious family, who wants her help to change his destiny.",
+      "te": "ఒక అంధ మహిళ శరీరంలో ఒక శక్తివంతమైన మంత్రగత్తె ప్రతిష్టాత్మక కుటుంబానికి చెందిన వ్యక్తిని ఎదుర్కొంటుంది, అతను తన విధిని మార్చడానికి ఆమె సహాయం కోరుతున్నాడు."
+    },
+    "genres": [
+      "Drama",
+      "Sci-Fi",
+      "Action",
+      "Thriller"
+    ],
+    "year": 2022,
+    "runtime": null,
+    "totalEpisodes": 30,
+    "totalSeasons": 2,
+    "imdbRating": 8.558,
+    "studio": "Studio Dragon",
+    "language": "Korean",
+    "country": "KR",
+    "teluguDubAvail": false,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 4,
+    "popularityScore": 8,
+    "universe": null
+  },
+  {
+    "slug": "nonstop-2000",
+    "type": "KDRAMA",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/elXJzhz1dM0lO7fK2BfO2pVtC7l.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/6HBi1vfb70PfeTx78BKv2md42mm.jpg",
+    "title": {
+      "en": "Nonstop",
+      "te": "Nonstop"
+    },
+    "description": {
+      "en": "Nonstop is a South Korean slice-of-life sitcom that broadcast its first season in 2000 on MBC. It continued with 5 more seasons. The series was popular for its cast of teen idols, many who debuted through the show..",
+      "te": "నాన్‌స్టాప్ అనేది దక్షిణ కొరియా స్లైస్-ఆఫ్-లైఫ్ సిట్‌కామ్, ఇది MBCలో 2000లో మొదటి సీజన్‌ను ప్రసారం చేసింది. ఇది మరో 5 సీజన్‌లతో కొనసాగింది. ఈ ధారావాహిక యుక్తవయస్కుల విగ్రహాల తారాగణానికి ప్రసిద్ధి చెందింది, చాలా మంది ప్రదర్శన ద్వారా ప్రవేశించారు.."
+    },
+    "genres": [
+      "Drama",
+      "Comedy"
+    ],
+    "year": 2000,
+    "runtime": null,
+    "totalEpisodes": 1320,
+    "totalSeasons": 6,
+    "imdbRating": 5.333,
+    "studio": "MBC",
+    "language": "Korean",
+    "country": "KR",
+    "teluguDubAvail": false,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 4,
+    "popularityScore": 7,
+    "universe": null
+  },
+  {
+    "slug": "my-royal-nemesis-2026",
+    "type": "KDRAMA",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/rYLQbyIvbEd0lF84iXrx7CbPcBB.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/p1ntnKJwn1URGv1xpU6NN33Y11O.jpg",
+    "title": {
+      "en": "My Royal Nemesis",
+      "te": "My Royal Nemesis"
+    },
+    "description": {
+      "en": "A legendary Joseon villainess reincarnated in a modern actress’s body clashes with a cold-blooded chaebol heir, sparking a chaotic love-hate romance across centuries.",
+      "te": "ఒక ఆధునిక నటి శరీరంలో పునర్జన్మ పొందిన పురాణ జోసెయోన్ విలన్, కోల్డ్ బ్లడెడ్ చెబోల్ వారసుడితో గొడవపడి, శతాబ్దాలుగా అస్తవ్యస్తమైన ప్రేమ-ద్వేషపూరిత శృంగారానికి దారితీసింది."
+    },
+    "genres": [
+      "Drama",
+      "Comedy",
+      "Sci-Fi"
+    ],
+    "year": 2026,
+    "runtime": null,
+    "totalEpisodes": 14,
+    "totalSeasons": 1,
+    "imdbRating": 9,
+    "studio": "Studio S",
+    "language": "Korean",
+    "country": "KR",
+    "teluguDubAvail": false,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 4,
+    "popularityScore": 7,
+    "universe": null
+  },
+  {
+    "slug": "the-legend-of-kitchen-soldier-2026",
+    "type": "KDRAMA",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/p2pRVGvSeh6VTlJnoV6SJyGDps8.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/9lQZ18CYk5n3YNbOfmSjkiBrfrk.jpg",
+    "title": {
+      "en": "The Legend of Kitchen Soldier",
+      "te": "The Legend of Kitchen Soldier"
+    },
+    "description": {
+      "en": "A plastic-spoon man is on his way to becoming a legendary army cook—uncovering dark secrets within the base through his cooking skills.",
+      "te": "ఒక ప్లాస్టిక్-స్పూన్ మనిషి తన వంట నైపుణ్యాల ద్వారా స్థావరంలోని చీకటి రహస్యాలను వెలికితీస్తూ పురాణ ఆర్మీ కుక్‌గా మారడానికి వెళ్తున్నాడు."
+    },
+    "genres": [
+      "Sci-Fi",
+      "Comedy",
+      "Drama"
+    ],
+    "year": 2026,
+    "runtime": null,
+    "totalEpisodes": 12,
+    "totalSeasons": 1,
+    "imdbRating": 7.6,
+    "studio": "Studio Dragon",
+    "language": "Korean",
+    "country": "KR",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 4,
+    "popularityScore": 7,
+    "universe": null
+  },
+  {
+    "slug": "all-of-us-are-dead-2022",
+    "type": "KDRAMA",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/pTEFqAjLd5YTsMD6NSUxV6Dq7A6.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/8hp2CuGnw1iP5dLBVMAPUv23swx.jpg",
+    "title": {
+      "en": "All of Us Are Dead",
+      "te": "All of Us Are Dead"
+    },
+    "description": {
+      "en": "A high school becomes ground zero for a zombie virus outbreak. Trapped students must fight their way out — or turn into one of the rabid infected.",
+      "te": "జోంబీ వైరస్ వ్యాప్తికి ఉన్నత పాఠశాల గ్రౌండ్ జీరో అవుతుంది. చిక్కుకున్న విద్యార్థులు వారి మార్గంలో పోరాడాలి - లేదా క్రూరమైన సోకిన వారిలో ఒకరిగా మారాలి."
+    },
+    "genres": [
+      "Action",
+      "Drama",
+      "Sci-Fi"
+    ],
+    "year": 2022,
+    "runtime": null,
+    "totalEpisodes": 12,
+    "totalSeasons": 2,
+    "imdbRating": 8.278,
+    "studio": "Film Monster",
+    "language": "Korean",
+    "country": "KR",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 3,
+    "popularityScore": 7,
+    "universe": null
+  },
+  {
+    "slug": "x-man-2003",
+    "type": "KDRAMA",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/lqxp7BHGvTcrwU5WZr4FuDCvNNS.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/23lNmbDMwJtY3kIk2tqr822cfxR.jpg",
+    "title": {
+      "en": "X-Man",
+      "te": "X-Man"
+    },
+    "description": {
+      "en": "Celebrity guests are split into two teams to compete in various contests. One guest, known only to himself, is designated the \"X-Man\", and does his best to cause his team to lose the contests. At the end, all guests try to determine the X-Man's identity.",
+      "te": "వివిధ పోటీలలో పాల్గొనడానికి ప్రముఖ అతిథులు రెండు జట్లుగా విభజించబడ్డారు. ఒక అతిథి, తనకు మాత్రమే తెలిసిన \"X-మ్యాన్\"గా నియమించబడ్డాడు మరియు తన జట్టు పోటీల్లో ఓడిపోయేలా చేయడానికి తన వంతు కృషి చేస్తాడు. ముగింపులో, అతిథులందరూ X-మ్యాన్ యొక్క గుర్తింపును గుర్తించడానికి ప్రయత్నిస్తారు."
+    },
+    "genres": [
+      "Comedy"
+    ],
+    "year": 2003,
+    "runtime": null,
+    "totalEpisodes": 181,
+    "totalSeasons": 2,
+    "imdbRating": 7.2,
+    "studio": "",
+    "language": "Korean",
+    "country": "KR",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 3,
+    "popularityScore": 7,
+    "universe": null
+  },
+  {
+    "slug": "when-life-gives-you-tangerines-2025",
+    "type": "KDRAMA",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/1VC3sEFxYXYDqQUCAnvWfUsYg1s.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/mwczMJeoQrsPERcyP1e900jo3Jv.jpg",
+    "title": {
+      "en": "When Life Gives You Tangerines",
+      "te": "When Life Gives You Tangerines"
+    },
+    "description": {
+      "en": "In Jeju, a spirited girl and a steadfast boy's island story blossoms into a lifelong tale of setbacks and triumphs — proving love endures across time.",
+      "te": "జెజులో, ఉత్సాహభరితమైన అమ్మాయి మరియు దృఢమైన అబ్బాయి యొక్క ద్వీపం కథ జీవితకాల పరాజయాలు మరియు విజయాల కథగా వికసిస్తుంది - ప్రేమ కాలానుగుణంగా కొనసాగుతుందని రుజువు చేస్తుంది."
+    },
+    "genres": [
+      "Drama"
+    ],
+    "year": 2025,
+    "runtime": null,
+    "totalEpisodes": 16,
+    "totalSeasons": 1,
+    "imdbRating": 8.709,
+    "studio": "Pan Entertainment",
+    "language": "Korean",
+    "country": "KR",
+    "teluguDubAvail": false,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 3,
+    "popularityScore": 7,
+    "universe": null
+  },
+  {
+    "slug": "the-uncanny-counter-2020",
+    "type": "KDRAMA",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/bsbuXbQqryQ8aJlwXFkFXbrYko1.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/jNyK0FF7t7oaU4wMpRkEnEIOVlW.jpg",
+    "title": {
+      "en": "The Uncanny Counter",
+      "te": "The Uncanny Counter"
+    },
+    "description": {
+      "en": "A group of supernatural demon hunters known as \"Counters,\" each with unique abilities, disguise themselves as employees of a noodle restaurant, while tracking down evil spirits that terrorize the mortal world.",
+      "te": "\"కౌంటర్స్\" అని పిలవబడే అతీంద్రియ దెయ్యాల వేటగాళ్ల సమూహం, ప్రతి ఒక్కరు ప్రత్యేక సామర్థ్యాలు కలిగి, నూడిల్ రెస్టారెంట్ ఉద్యోగులుగా మారువేషంలో ఉంటారు, అయితే మర్త్య ప్రపంచాన్ని భయాందోళనకు గురిచేసే దుష్టశక్తులను ట్రాక్ చేస్తారు."
+    },
+    "genres": [
+      "Drama",
+      "Thriller",
+      "Action"
+    ],
+    "year": 2020,
+    "runtime": null,
+    "totalEpisodes": 28,
+    "totalSeasons": 2,
+    "imdbRating": 8.326,
+    "studio": "Studio Dragon",
+    "language": "Korean",
+    "country": "KR",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 3,
+    "popularityScore": 6,
+    "universe": null
+  },
+  {
+    "slug": "movie-room-2018",
+    "type": "KDRAMA",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/tiEqntBI49GB0XWY2oCqR1p79Kf.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/bzARjVZSMxxHwQGtuOyypIJPegH.jpg",
+    "title": {
+      "en": "Movie Room",
+      "te": "Movie Room"
+    },
+    "description": {
+      "en": "Movie meets humanities! This talk show/variety show for movie enthusiasts features interesting discussions by a writer and two movie directors where film and humanities intertwine.",
+      "te": "సినిమా మానవీయతలను కలుస్తుంది! సినిమా ఔత్సాహికుల కోసం ఈ టాక్ షో/వెరైటీ షోలో సినిమా మరియు హ్యుమానిటీస్ ఒకదానితో ఒకటి ముడిపడి ఉన్న రచయిత మరియు ఇద్దరు చలనచిత్ర దర్శకుల ఆసక్తికరమైన చర్చలు ఉన్నాయి."
+    },
+    "genres": [
+      "Drama"
+    ],
+    "year": 2018,
+    "runtime": null,
+    "totalEpisodes": 221,
+    "totalSeasons": 4,
+    "imdbRating": 9.2,
+    "studio": "JTBC",
+    "language": "Korean",
+    "country": "KR",
+    "teluguDubAvail": false,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 3,
+    "popularityScore": 6,
+    "universe": null
+  },
+  {
+    "slug": "snl-korea-2011",
+    "type": "KDRAMA",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/1feD9WnGOU19juCw79fACNmG7n4.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/k82HByudvbDHPmu2gMRJ2E3oAJ5.jpg",
+    "title": {
+      "en": "SNL Korea",
+      "te": "SNL Korea"
+    },
+    "description": {
+      "en": "Korea's version of the late-night live television sketch comedy and variety show. The show's comedy sketches, which parody contemporary culture and politics, are performed by a large and varying cast of repertory cast members.",
+      "te": "లేట్-నైట్ లైవ్ టెలివిజన్ స్కెచ్ కామెడీ మరియు వెరైటీ షో యొక్క కొరియా వెర్షన్. సమకాలీన సంస్కృతి మరియు రాజకీయాలను అనుకరించే ప్రదర్శన యొక్క హాస్య స్కెచ్‌లను పెద్ద మరియు విభిన్నమైన తారాగణం సభ్యులు ప్రదర్శించారు."
+    },
+    "genres": [
+      "Comedy"
+    ],
+    "year": 2011,
+    "runtime": null,
+    "totalEpisodes": 207,
+    "totalSeasons": 9,
+    "imdbRating": 8.2,
+    "studio": "Broadway Video",
+    "language": "Korean",
+    "country": "KR",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 3,
+    "popularityScore": 6,
+    "universe": null
+  },
+  {
+    "slug": "taxi-driver-2021",
+    "type": "KDRAMA",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/lghfb8beej1aH9ML8QyeSixniom.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/i1SyUHsi45psSH1xy9sM0in8FKJ.jpg",
+    "title": {
+      "en": "Taxi Driver",
+      "te": "Taxi Driver"
+    },
+    "description": {
+      "en": "A former special forces soldier delivers revenge for victims of injustice while working for a secret organization that fronts as a taxi company.",
+      "te": "ఒక మాజీ స్పెషల్ ఫోర్స్ సైనికుడు టాక్సీ కంపెనీగా ముందున్న రహస్య సంస్థలో పనిచేస్తున్నప్పుడు అన్యాయానికి గురైన బాధితుల కోసం ప్రతీకారం తీర్చుకుంటాడు."
+    },
+    "genres": [
+      "Action",
+      "Crime",
+      "Drama"
+    ],
+    "year": 2021,
+    "runtime": null,
+    "totalEpisodes": 48,
+    "totalSeasons": 3,
+    "imdbRating": 8.136,
+    "studio": "Studio S",
+    "language": "Korean",
+    "country": "KR",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 3,
+    "popularityScore": 6,
+    "universe": null
+  },
+  {
+    "slug": "dr-romantic-2016",
+    "type": "KDRAMA",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/9fbRJgZ2zDTnSUId1bOwsllHNr7.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/cmk8d1e1GxrwTaau0Tj4zm1osm0.jpg",
+    "title": {
+      "en": "Dr. Romantic",
+      "te": "Dr. Romantic"
+    },
+    "description": {
+      "en": "An eccentric, triple board-certified virtuoso surgeon leaves a top job in Seoul and ends up at a provincial hospital, where he mentors young doctors.",
+      "te": "అసాధారణమైన, ట్రిపుల్ బోర్డ్-సర్టిఫైడ్ ఘనాపాటీ సర్జన్ సియోల్‌లో ఉన్నత ఉద్యోగాన్ని విడిచిపెట్టి, ప్రావిన్షియల్ ఆసుపత్రిలో ముగుస్తుంది, అక్కడ అతను యువ వైద్యులకు మార్గదర్శకత్వం వహిస్తాడు."
+    },
+    "genres": [
+      "Drama"
+    ],
+    "year": 2016,
+    "runtime": null,
+    "totalEpisodes": 52,
+    "totalSeasons": 3,
+    "imdbRating": 8.2,
+    "studio": "Samhwa Networks",
+    "language": "Korean",
+    "country": "KR",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 3,
+    "popularityScore": 6,
+    "universe": null
+  },
+  {
+    "slug": "sweet-home-2020",
+    "type": "KDRAMA",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/7rNWciOcHOH97XIeS1KFuMmjyky.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/mceCXNTny6a5F3rQgShLoyARw4l.jpg",
+    "title": {
+      "en": "Sweet Home",
+      "te": "Sweet Home"
+    },
+    "description": {
+      "en": "As humans turn into savage monsters and the world plunges into terror, a handful of survivors fight for their lives — and to hold on to their humanity.",
+      "te": "మానవులు క్రూరమైన రాక్షసులుగా మారినప్పుడు మరియు ప్రపంచం భయాందోళనలకు గురౌతున్నప్పుడు, ప్రాణాలతో బయటపడిన కొంతమంది తమ జీవితాల కోసం పోరాడుతున్నారు - మరియు వారి మానవత్వాన్ని పట్టుకోండి."
+    },
+    "genres": [
+      "Sci-Fi",
+      "Action"
+    ],
+    "year": 2020,
+    "runtime": null,
+    "totalEpisodes": 26,
+    "totalSeasons": 3,
+    "imdbRating": 8.225,
+    "studio": "Studio N",
+    "language": "Korean",
+    "country": "KR",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 3,
+    "popularityScore": 6,
+    "universe": null
+  },
+  {
+    "slug": "absolute-value-of-romance-2026",
+    "type": "KDRAMA",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/wY4rhPE90jJ4bp1JZOFY0MeRJQX.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/sWgf0zfmjKiwXl5ND2b9apkChkV.jpg",
+    "title": {
+      "en": "Absolute Value of Romance",
+      "te": "Absolute Value of Romance"
+    },
+    "description": {
+      "en": "A quiet student by day, a romance novelist by night, Eui-ju is inspired when four gorgeous teachers appear: icy Woo-su, lively Da-ju, gruff Gi-jeon, and gentle Dong-ju. She writes them into her new novel, which blows up overnight! But her secret is discovered by Woo-su, her worst enemy since day one. She accepts his deal to protect her secret, but can she finish this novel unscathed?",
+      "te": "పగటిపూట నిశ్శబ్ద విద్యార్థి, రాత్రిపూట శృంగార నవలా రచయిత, నలుగురు అందమైన ఉపాధ్యాయులు కనిపించినప్పుడు యుయి-జు ప్రేరణ పొందారు: మంచు వూ-సు, లైవ్లీ డా-జు, గ్రుఫ్ గి-జియోన్ మరియు సున్నితమైన డాంగ్-జు. ఆమె వాటిని తన కొత్త నవలలో వ్రాసింది, అది రాత్రిపూట పేల్చివేయబడుతుంది! కానీ ఆమె రహస్యాన్ని మొదటి రోజు నుండి ఆమె చెత్త శత్రువు అయిన వూ-సు కనుగొన్నాడు. ఆమె తన రహస్యాన్ని కాపాడుకోవడానికి అతని ఒప్పందాన్ని అంగీకరిస్తుంది, కానీ ఆమె ఈ నవలను క్షేమంగా ముగించగలదా?"
+    },
+    "genres": [
+      "Drama",
+      "Comedy"
+    ],
+    "year": 2026,
+    "runtime": null,
+    "totalEpisodes": 16,
+    "totalSeasons": 1,
+    "imdbRating": 8.757,
+    "studio": "Borderless Film",
+    "language": "Korean",
+    "country": "KR",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 3,
+    "popularityScore": 6,
+    "universe": null
+  },
+  {
+    "slug": "true-beauty-2020",
+    "type": "KDRAMA",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/iUF647sSCbKeJ5Q6eHVujWTQmtg.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/3E1GroTJCRdIYHa5n62GqjmqxQR.jpg",
+    "title": {
+      "en": "True Beauty",
+      "te": "True Beauty"
+    },
+    "description": {
+      "en": "After being bullied and discriminated because of her ugly looks, a high school girl transforms herself into a gorgeous \"goddess\" and quickly rises to fame after mastering the art of makeup via online tutorial videos.",
+      "te": "తన వికారమైన రూపాల కారణంగా బెదిరింపులు మరియు వివక్షకు గురైన తర్వాత, ఒక ఉన్నత పాఠశాల అమ్మాయి తనను తాను అందమైన \"దేవత\"గా మార్చుకుంటుంది మరియు ఆన్‌లైన్ ట్యుటోరియల్ వీడియోల ద్వారా మేకప్ కళలో ప్రావీణ్యం సంపాదించిన తర్వాత త్వరగా కీర్తిని పొందుతుంది."
+    },
+    "genres": [
+      "Comedy",
+      "Drama"
+    ],
+    "year": 2020,
+    "runtime": null,
+    "totalEpisodes": 16,
+    "totalSeasons": 1,
+    "imdbRating": 8.259,
+    "studio": "Bon Factory",
+    "language": "Korean",
+    "country": "KR",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 3,
+    "popularityScore": 6,
+    "universe": null
+  },
+  {
+    "slug": "hospital-playlist-2020",
+    "type": "KDRAMA",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/8MSjQkH2FrG0t4l84L5HmiSFrS7.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/ji7KaBHhxb6ngHEHxXHcfEzi9bu.jpg",
+    "title": {
+      "en": "Hospital Playlist",
+      "te": "Hospital Playlist"
+    },
+    "description": {
+      "en": "Every day is extraordinary for five doctors and their patients inside a hospital, where birth, death and everything in between coexist.",
+      "te": "ఆసుపత్రి లోపల ఐదుగురు వైద్యులు మరియు వారి రోగులకు ప్రతిరోజూ అసాధారణమైనది, ఇక్కడ జననం, మరణం మరియు మధ్య ఉన్న ప్రతిదీ కలిసి ఉంటుంది."
+    },
+    "genres": [
+      "Drama",
+      "Comedy"
+    ],
+    "year": 2020,
+    "runtime": null,
+    "totalEpisodes": 24,
+    "totalSeasons": 2,
+    "imdbRating": 8.5,
+    "studio": "Egg is Coming",
+    "language": "Korean",
+    "country": "KR",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 3,
+    "popularityScore": 6,
+    "universe": null
+  },
+  {
+    "slug": "idol-radio-2018",
+    "type": "KDRAMA",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/k4lmwjHqJBtLRhSn51wIWNTtEQd.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/qV98q6BLTHWBVjVZQdwUkQhzD9y.jpg",
+    "title": {
+      "en": "Idol Radio",
+      "te": "Idol Radio"
+    },
+    "description": {
+      "en": "A South Korean radio show created by MBC Radio specially for idols.",
+      "te": "విగ్రహాల కోసం ప్రత్యేకంగా MBC రేడియో రూపొందించిన దక్షిణ కొరియా రేడియో కార్యక్రమం."
+    },
+    "genres": [
+      "Drama"
+    ],
+    "year": 2018,
+    "runtime": null,
+    "totalEpisodes": 1063,
+    "totalSeasons": 4,
+    "imdbRating": 7,
+    "studio": "",
+    "language": "Korean",
+    "country": "KR",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 3,
+    "popularityScore": 6,
+    "universe": null
+  },
+  {
+    "slug": "the-seasons-2023",
+    "type": "KDRAMA",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/5WUFnTXfJkadGV5Ho5JzhdZ3sH0.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/cSGIZSkGEKxZD2HWWu1kgFnXXoU.jpg",
+    "title": {
+      "en": "The Seasons",
+      "te": "The Seasons"
+    },
+    "description": {
+      "en": "The Seasons is a 2023 film.",
+      "te": "The Seasons అనేది 2023 లో విడుదలైన చిత్రం."
+    },
+    "genres": [
+      "Drama"
+    ],
+    "year": 2023,
+    "runtime": null,
+    "totalEpisodes": 138,
+    "totalSeasons": 9,
+    "imdbRating": 7.5,
+    "studio": "KBS",
+    "language": "Korean",
+    "country": "KR",
+    "teluguDubAvail": false,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 2,
+    "popularityScore": 5,
+    "universe": null
+  },
+  {
+    "slug": "weekly-idol-2011",
+    "type": "KDRAMA",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/uZP58JwdBzCwPBh9h3ZbGsVKMAQ.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/tb0w5OFohHZAv3h5GkT8ajYnanp.jpg",
+    "title": {
+      "en": "Weekly Idol",
+      "te": "Weekly Idol"
+    },
+    "description": {
+      "en": "Weekly Idol is back with all new hosts. Cho Sae Ho, Hwang Kwang Hee and Nam Chang Hee are sticking together as a new unit group for Weekly Idol, a.k.a CKN Trio, to turn the idol world upside down! Get ready for their hot debut! Cho Sae Ho transforms himself into an idol expert. The hottest entertainer in the show business is marching into the idol world after taking over variety shows and he's more than ready to dominate the show with his amazing look and talents. They say idols understand each other best! As soon as being discharged from military service, Hwang Kwang Hee is reenlisted in Weekly Idol as a senior and a mentor to cheer his fellow idol friends. And lastly, the hidden card of the trio, Nam Chang Hee joins Weekly Idol. With his irresistible charms and talents, Nam Chang Hee becomes the irreplaceable member of Weekly Idol and shows off his amazing chemistry with idols.",
+      "te": "వీక్లీ ఐడల్ అన్ని కొత్త హోస్ట్‌లతో తిరిగి వచ్చింది. విగ్రహ ప్రపంచాన్ని తలకిందులు చేయడానికి చో సే హో, హ్వాంగ్ క్వాంగ్ హీ మరియు నామ్ చాంగ్ హీ వీక్లీ ఐడల్, లేదా CKN త్రయం కోసం కొత్త యూనిట్ గ్రూప్‌గా కలిసి ఉన్నారు! వారి హాట్ అరంగేట్రం కోసం సిద్ధంగా ఉండండి! చో సే హో తనను తాను విగ్రహ నిపుణుడిగా మార్చుకుంటాడు. షో బిజినెస్‌లో హాటెస్ట్ ఎంటర్‌టైనర్ వెరైటీ షోలను స్వాధీనం చేసుకున్న తర్వాత విగ్రహ ప్రపంచంలోకి అడుగుపెట్టాడు మరియు అతను తన అద్భుతమైన లుక్ మరియు ప్రతిభతో షోలో ఆధిపత్యం చెలాయించడానికి సిద్ధంగా ఉన్నాడు. విగ్రహాలు ఒకరినొకరు బాగా అర్థం చేసుకుంటాయని వారు అంటున్నారు! సైనిక సేవ నుండి డిశ్చార్జ్ అయిన వెంటనే, హ్వాంగ్ క్వాంగ్ హీ వీక్లీ ఐడల్‌లో సీనియర్‌గా మరియు తన తోటి ఆరాధ్య స్నేహితులను ఉత్సాహపరిచేందుకు ఒక సలహాదారుగా మళ్లీ చేర్చబడ్డాడు. చివరగా, ముగ్గురి దాచిన కార్డ్, నామ్ చాంగ్ హీ వీక్లీ ఐడల్‌లో చేరాడు. అతని ఎదురులేని అందాలు మరియు ప్రతిభతో, నామ్ చాంగ్ హీ వీక్లీ ఐడల్‌లో భర్తీ చేయలేని సభ్యుడు అయ్యాడు మరియు విగ్రహాలతో తన అద్భుతమైన కెమిస్ట్రీని ప్రదర్శిస్తాడు."
+    },
+    "genres": [
+      "Drama"
+    ],
+    "year": 2011,
+    "runtime": null,
+    "totalEpisodes": 651,
+    "totalSeasons": 5,
+    "imdbRating": 6.8,
+    "studio": "MBC",
+    "language": "Korean",
+    "country": "KR",
+    "teluguDubAvail": false,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 2,
+    "popularityScore": 5,
+    "universe": null
+  },
+  {
+    "slug": "sold-out-on-you-2026",
+    "type": "KDRAMA",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/bcnneY1DWQzmwfvsuhGGnwv9KYD.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/dL5mViE22ZHnhrUU9wlklzIU4Iy.jpg",
+    "title": {
+      "en": "Sold Out on You",
+      "te": "Sold Out on You"
+    },
+    "description": {
+      "en": "A work-obsessed cosmetics CEO and a top home-shopping host struggling with insomnia cross paths, and through an unexpected romance, begin to heal the emptiness in their lives.",
+      "te": "పనిలో నిమగ్నమైన సౌందర్య సాధనాల CEO మరియు ఒక అగ్రశ్రేణి హోమ్-షాపింగ్ హోస్ట్ నిద్రలేమి అడ్డగోలు మార్గాలతో పోరాడుతున్నారు మరియు ఊహించని ప్రేమతో వారి జీవితాల్లోని శూన్యతను నయం చేయడం ప్రారంభిస్తారు."
+    },
+    "genres": [
+      "Comedy",
+      "Drama"
+    ],
+    "year": 2026,
+    "runtime": null,
+    "totalEpisodes": 12,
+    "totalSeasons": 1,
+    "imdbRating": 8.235,
+    "studio": "Studio S",
+    "language": "Korean",
+    "country": "KR",
+    "teluguDubAvail": false,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 3,
+    "popularityScore": 5,
+    "universe": null
+  },
+  {
+    "slug": "snl-korea-2021",
+    "type": "KDRAMA",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/bgFsUd788CupFK1xt2xFVEJRibT.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/zIfssSW8kpQQ8nAo0qyIrRS9Qiu.jpg",
+    "title": {
+      "en": "SNL Korea",
+      "te": "SNL Korea"
+    },
+    "description": {
+      "en": "\"SNL Korea\"! NBC's flagship program SNL, which won the Emmy Award, has returned for the first time in four years through Coupang Play.",
+      "te": "\"SNL కొరియా\"! ఎమ్మీ అవార్డును గెలుచుకున్న NBC యొక్క ఫ్లాగ్‌షిప్ ప్రోగ్రామ్ SNL, కూపాంగ్ ప్లే ద్వారా నాలుగు సంవత్సరాలలో మొదటిసారిగా తిరిగి వచ్చింది."
+    },
+    "genres": [
+      "Comedy"
+    ],
+    "year": 2021,
+    "runtime": null,
+    "totalEpisodes": 90,
+    "totalSeasons": 8,
+    "imdbRating": 7,
+    "studio": "AStory",
+    "language": "Korean",
+    "country": "KR",
+    "teluguDubAvail": false,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 3,
+    "popularityScore": 5,
+    "universe": null
+  },
+  {
+    "slug": "just-an-excuse-2022",
+    "type": "KDRAMA",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/2n8dBK8wyGYN3Wf124ojxHHCkHF.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/7eYJoPknPrVhl3l5WLjijRd6wT3.jpg",
+    "title": {
+      "en": "Just an Excuse",
+      "te": "Just an Excuse"
+    },
+    "description": {
+      "en": "Yoo Jae-suk Welfare Content Pinggyego (Just an Excuse)\n\nIt is a content where Yoo Jae-suk freely chats with his favorite friends for various excuses and provides small stories and laughter.",
+      "te": "యూ జే-సుక్ వెల్ఫేర్ కంటెంట్ పింగ్గేగో (కేవలం ఒక సాకు)\n\nఇది యూ జే-సుక్ తన అభిమాన స్నేహితులతో వివిధ సాకులతో స్వేచ్ఛగా చాట్ చేసే కంటెంట్ మరియు చిన్న చిన్న కథలు మరియు నవ్వును అందిస్తుంది."
+    },
+    "genres": [
+      "Drama"
+    ],
+    "year": 2022,
+    "runtime": null,
+    "totalEpisodes": 133,
+    "totalSeasons": 1,
+    "imdbRating": 9.667,
+    "studio": "Antenna Plus",
+    "language": "Korean",
+    "country": "KR",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 2,
+    "popularityScore": 4,
+    "universe": null
+  },
+  {
+    "slug": "if-wishes-could-kill-2026",
+    "type": "KDRAMA",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/2CfTNVaR8kZQkWtWWE3Cntaiq33.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/zV9WYOfFr4MAnzXXD8PR5J6JnN3.jpg",
+    "title": {
+      "en": "If Wishes Could Kill",
+      "te": "If Wishes Could Kill"
+    },
+    "description": {
+      "en": "A mysterious app promises wishes — then starts a countdown to death. As a group of teens becomes entangled, they must break the deadly chain to survive.",
+      "te": "ఒక రహస్యమైన యాప్ కోరికలను వాగ్దానం చేస్తుంది - ఆపై మరణానికి కౌంట్‌డౌన్ ప్రారంభమవుతుంది. యుక్తవయస్కుల సమూహం చిక్కుకుపోయినప్పుడు, వారు మనుగడ సాగించడానికి ఘోరమైన గొలుసును విచ్ఛిన్నం చేయాలి."
+    },
+    "genres": [
+      "Thriller",
+      "Drama"
+    ],
+    "year": 2026,
+    "runtime": null,
+    "totalEpisodes": 8,
+    "totalSeasons": 1,
+    "imdbRating": 8.18,
+    "studio": "CJ ENM Studios",
+    "language": "Korean",
+    "country": "KR",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 3,
+    "popularityScore": 5,
+    "universe": null
+  },
+  {
+    "slug": "moving-2023",
+    "type": "KDRAMA",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/vf9SNXNAFqzKBGksFwrXhkg9cb7.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/29jWaRhKtey1efp5G7Fu97NAmzz.jpg",
+    "title": {
+      "en": "Moving",
+      "te": "Moving"
+    },
+    "description": {
+      "en": "Children who live in hiding with superpowers, along with their parents who live with painful secrets of the past, face enormous dangers together.",
+      "te": "గతంలోని బాధాకరమైన రహస్యాలతో జీవించే వారి తల్లిదండ్రులతో పాటు అగ్రరాజ్యాలతో దాక్కున్న పిల్లలు కలిసి అపారమైన ప్రమాదాలను ఎదుర్కొంటారు."
+    },
+    "genres": [
+      "Thriller",
+      "Drama",
+      "Action"
+    ],
+    "year": 2023,
+    "runtime": null,
+    "totalEpisodes": 20,
+    "totalSeasons": 2,
+    "imdbRating": 8.5,
+    "studio": "Studio & New",
+    "language": "Korean",
+    "country": "KR",
+    "teluguDubAvail": false,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 3,
+    "popularityScore": 5,
+    "universe": null
+  },
+  {
+    "slug": "the-game-caterers-2021",
+    "type": "KDRAMA",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/wkF2M0ApsqscicSzsMZglxNBL2S.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/q1o1JehssonxPGRSpHCjmfAFMv3.jpg",
+    "title": {
+      "en": "The Game Caterers",
+      "te": "The Game Caterers"
+    },
+    "description": {
+      "en": "A webseries where Na Young Seok, a variety show producer, caters people his iconic games from 'New Journey to the West'.",
+      "te": "వెరైటీ షో ప్రొడ్యూసర్ అయిన నా యంగ్ సియోక్ 'న్యూ జర్నీ టు ది వెస్ట్' నుండి తన ఐకానిక్ గేమ్‌లను ప్రజలకు అందించే వెబ్‌సిరీస్."
+    },
+    "genres": [
+      "Drama"
+    ],
+    "year": 2021,
+    "runtime": null,
+    "totalEpisodes": 123,
+    "totalSeasons": 4,
+    "imdbRating": 8.7,
+    "studio": "CJ ENM",
+    "language": "Korean",
+    "country": "KR",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 2,
+    "popularityScore": 4,
+    "universe": null
+  },
+  {
+    "slug": "the-return-of-superman-2013",
+    "type": "KDRAMA",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/qjBx2RCnyyBPgu9qBV7j3UiXjeo.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/4P2gbaCGdZyP4i95TmmA6nS9HJh.jpg",
+    "title": {
+      "en": "The Return of Superman",
+      "te": "The Return of Superman"
+    },
+    "description": {
+      "en": "An up-close look at celebrity dads who have to take care of their kids for the next 48 hours without any help. Will it be a dad-tastrophe, or can they finish their wives' to-do lists while having fun with their kids?",
+      "te": "తదుపరి 48 గంటలపాటు ఎలాంటి సహాయం లేకుండా తమ పిల్లలను చూసుకోవాల్సిన సెలబ్రిటీ డాడ్‌లను దగ్గరగా చూడండి. ఇది తండ్రి-టాస్ట్రోఫీ అవుతుందా లేదా వారు తమ పిల్లలతో సరదాగా గడిపేటప్పుడు వారి భార్యలు చేయవలసిన పనుల జాబితాలను పూర్తి చేయగలరా?"
+    },
+    "genres": [
+      "Drama"
+    ],
+    "year": 2013,
+    "runtime": null,
+    "totalEpisodes": 602,
+    "totalSeasons": 14,
+    "imdbRating": 7.7,
+    "studio": "Urban Works",
+    "language": "Korean",
+    "country": "KR",
+    "teluguDubAvail": false,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 2,
+    "popularityScore": 5,
+    "universe": "dc"
+  },
+  {
+    "slug": "the-glory-2022",
+    "type": "KDRAMA",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/uUM4LVlPgIrww07OoEKrGWlS1Ej.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/AjwoDj77HLlqcpwEGqsnvMXm5my.jpg",
+    "title": {
+      "en": "The Glory",
+      "te": "The Glory"
+    },
+    "description": {
+      "en": "Years after surviving horrific abuse in high school, a woman puts an elaborate revenge scheme in motion to make the perpetrators pay for their crimes.",
+      "te": "హైస్కూల్‌లో భయంకరమైన దుర్వినియోగం నుండి బయటపడిన సంవత్సరాల తర్వాత, ఒక మహిళ నేరస్థులు వారి నేరాలకు చెల్లించేలా చేయడానికి విస్తృతమైన ప్రతీకార పథకాన్ని అమలులోకి తెచ్చింది."
+    },
+    "genres": [
+      "Drama"
+    ],
+    "year": 2022,
+    "runtime": null,
+    "totalEpisodes": 16,
+    "totalSeasons": 1,
+    "imdbRating": 8.457,
+    "studio": "Hwa&Dam Pictures",
+    "language": "Korean",
+    "country": "KR",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 2,
+    "popularityScore": 5,
+    "universe": null
+  },
+  {
+    "slug": "the-manager-2018",
+    "type": "KDRAMA",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/jASfIetUKhrbqEEKBnjRjjgfuGK.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/o82rmThq339zBdO8Bd3gUyBic0o.jpg",
+    "title": {
+      "en": "The Manager",
+      "te": "The Manager"
+    },
+    "description": {
+      "en": "We will get involved in every little detail of the stars’ lives. The managers who work closely with the stars reveal their mundane lives. Once the information is all revealed, the professional meddlers from various different fields are invited to make comments regarding even the smallest details. Lee Yeong Ja, Jun Hyun Moo, Song Eun I, Kim Saeng Min, Yang Se Hyeong and Yoo Byung Jae participate as the life meddlers along with the professionals.",
+      "te": "మేము తారల జీవితంలోని ప్రతి చిన్న వివరాలలో పాల్గొంటాము. స్టార్స్‌తో సన్నిహితంగా పనిచేసే నిర్వాహకులు వారి లౌకిక జీవితాలను వెల్లడిస్తారు. సమాచారం అంతా వెల్లడైన తర్వాత, వివిధ రంగాలకు చెందిన ప్రొఫెషనల్ మధ్యవర్తులు చిన్న చిన్న వివరాలకు సంబంధించి కూడా వ్యాఖ్యలు చేయడానికి ఆహ్వానించబడతారు. లీ యోంగ్ జా, జున్ హ్యూన్ మూ, సాంగ్ యున్ ఐ, కిమ్ సాంగ్ మిన్, యాంగ్ సే హ్యోంగ్ మరియు యూ బైయుంగ్ జేలు వృత్తి నిపుణులతో పాటు లైఫ్ మెడ్లర్‌లుగా పాల్గొంటారు."
+    },
+    "genres": [
+      "Drama"
+    ],
+    "year": 2018,
+    "runtime": null,
+    "totalEpisodes": 399,
+    "totalSeasons": 1,
+    "imdbRating": 5.5,
+    "studio": "MBC",
+    "language": "Korean",
+    "country": "KR",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 2,
+    "popularityScore": 4,
+    "universe": null
+  },
+  {
+    "slug": "vincenzo-2021",
+    "type": "KDRAMA",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/qbkSS1cTjT4DzIwD44bdhTuYgdT.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/sf7NCqyVUNoyjYuwW5oJke1T1lH.jpg",
+    "title": {
+      "en": "Vincenzo",
+      "te": "Vincenzo"
+    },
+    "description": {
+      "en": "During a visit to his motherland, a Korean-Italian mafia lawyer gives an unrivaled conglomerate a taste of its own medicinewith a side of justice.",
+      "te": "తన మాతృభూమిని సందర్శించినప్పుడు, ఒక కొరియన్-ఇటాలియన్ మాఫియా న్యాయవాది ఒక సాటిలేని సమ్మేళనానికి న్యాయం వైపు దాని స్వంత ఔషధం యొక్క రుచిని అందజేస్తాడు."
+    },
+    "genres": [
+      "Action",
+      "Comedy",
+      "Drama",
+      "Crime"
+    ],
+    "year": 2021,
+    "runtime": null,
+    "totalEpisodes": 20,
+    "totalSeasons": 1,
+    "imdbRating": 8.51,
+    "studio": "Studio Dragon",
+    "language": "Korean",
+    "country": "KR",
+    "teluguDubAvail": false,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 2,
+    "popularityScore": 4,
+    "universe": null
+  },
+  {
+    "slug": "mr-sunshine-2018",
+    "type": "KDRAMA",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/p7ljjykSsiyWstGVAwIkbdfPzRV.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/gQwa6X2nmTHkmDgAifU4wacNqp4.jpg",
+    "title": {
+      "en": "Mr. Sunshine",
+      "te": "Mr. Sunshine"
+    },
+    "description": {
+      "en": "Set in the early 1900s, this drama tells the story of a young man from Korea who grows up in the United States. When he returns to Korea as a US Marine Corps officer, he meets and falls in love with a noblewoman who is fighting for Korean independence. Their romance is complicated by social class and political ideology.",
+      "te": "1900ల ప్రారంభంలో జరిగిన ఈ నాటకం కొరియాకు చెందిన ఒక యువకుడి కథను చెబుతుంది, అతను యునైటెడ్ స్టేట్స్‌లో పెరిగాడు. అతను US మెరైన్ కార్ప్స్ అధికారిగా కొరియాకు తిరిగి వచ్చినప్పుడు, అతను కొరియా స్వాతంత్ర్యం కోసం పోరాడుతున్న ఒక ఉన్నత మహిళను కలుసుకుని ప్రేమలో పడతాడు. వారి ప్రేమ సామాజిక వర్గం మరియు రాజకీయ భావజాలంతో సంక్లిష్టంగా ఉంటుంది."
+    },
+    "genres": [
+      "Drama"
+    ],
+    "year": 2018,
+    "runtime": null,
+    "totalEpisodes": 24,
+    "totalSeasons": 1,
+    "imdbRating": 8.44,
+    "studio": "Hwa&Dam Pictures",
+    "language": "Korean",
+    "country": "KR",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 2,
+    "popularityScore": 4,
+    "universe": null
+  },
+  {
+    "slug": "twinkling-watermelon-2023",
+    "type": "KDRAMA",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/bwTzW1wTgUxUOQruhT8DvinUYgR.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/efaMS00Fevc3fw2dbeP7rh22O6D.jpg",
+    "title": {
+      "en": "Twinkling Watermelon",
+      "te": "Twinkling Watermelon"
+    },
+    "description": {
+      "en": "A CODA (child of deaf adult) student born with a gift for music crash lands at an unfamiliar place after time traveling through a suspicious music shop. There, he forms the band Watermelon Sugar with other mysterious youths.",
+      "te": "సంగీతం కోసం బహుమతితో జన్మించిన CODA (చెవిటి పెద్దవారి పిల్లవాడు) విద్యార్థి అనుమానాస్పద సంగీత దుకాణంలో ప్రయాణించిన తర్వాత తెలియని ప్రదేశంలో పడిపోయాడు. అక్కడ, అతను ఇతర రహస్య యువకులతో కలిసి పుచ్చకాయ షుగర్ బ్యాండ్‌ను ఏర్పాటు చేస్తాడు."
+    },
+    "genres": [
+      "Sci-Fi",
+      "Drama"
+    ],
+    "year": 2023,
+    "runtime": null,
+    "totalEpisodes": 16,
+    "totalSeasons": 1,
+    "imdbRating": 8.8,
+    "studio": "Pan Entertainment",
+    "language": "Korean",
+    "country": "KR",
+    "teluguDubAvail": false,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 2,
+    "popularityScore": 5,
+    "universe": null
+  },
+  {
+    "slug": "study-group-2025",
+    "type": "KDRAMA",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/nZDeIfKCzp0qhu4N3HxrcKWN59J.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/1ucAo7E2fzTdwORGbMhLEUoPhfa.jpg",
+    "title": {
+      "en": "Study Group",
+      "te": "Study Group"
+    },
+    "description": {
+      "en": "A struggling student at Korea's worst high school forms a study group while protecting his classmates with his fighting skills, hoping to overcome academic challenges and secure a spot in college.",
+      "te": "కొరియాలోని చెత్త హైస్కూల్‌లో పోరాడుతున్న ఒక విద్యార్థి తన పోరాట నైపుణ్యాలతో తన క్లాస్‌మేట్‌లను రక్షించుకుంటూ, విద్యాపరమైన సవాళ్లను అధిగమించి కళాశాలలో స్థానం సంపాదించాలనే ఆశతో ఒక అధ్యయన బృందాన్ని ఏర్పాటు చేశాడు."
+    },
+    "genres": [
+      "Action",
+      "Comedy",
+      "Drama"
+    ],
+    "year": 2025,
+    "runtime": null,
+    "totalEpisodes": 11,
+    "totalSeasons": 2,
+    "imdbRating": 8.5,
+    "studio": "YLAB",
+    "language": "Korean",
+    "country": "KR",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 2,
+    "popularityScore": 5,
+    "universe": null
+  },
+  {
+    "slug": "we-got-married-2008",
+    "type": "KDRAMA",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/mRibuyUmOttydFuuiW3rmKhkldz.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/fVvVv6MrtR1yYFmFErgkn0CkqY.jpg",
+    "title": {
+      "en": "We Got Married",
+      "te": "We Got Married"
+    },
+    "description": {
+      "en": "We Got Married is a South Korean reality variety show, one segment of the Sunday Sunday Night program. First broadcast in 2008, the show pairs up Korean celebrities to show what life would be like if they were married. Each week, couples are assigned missions to complete, with candid interviews of the participants to reveal their thoughts and feelings.",
+      "te": "వి గాట్ మ్యారీడ్ అనేది సౌత్ కొరియన్ రియాలిటీ వెరైటీ షో, ఇది సండే సండే నైట్ ప్రోగ్రామ్‌లోని ఒక విభాగం. 2008లో మొదటిసారిగా ప్రసారమైన ఈ షో కొరియన్ సెలబ్రిటీలను పెళ్లంటే జీవితం ఎలా ఉంటుందో చూపించడానికి జత చేసింది. ప్రతి వారం, జంటలు వారి ఆలోచనలు మరియు భావాలను బహిర్గతం చేయడానికి పాల్గొనే వారి యొక్క నిష్కపటమైన ఇంటర్వ్యూలతో పూర్తి చేయడానికి మిషన్‌లను కేటాయించారు."
+    },
+    "genres": [
+      "Drama"
+    ],
+    "year": 2008,
+    "runtime": null,
+    "totalEpisodes": 442,
+    "totalSeasons": 4,
+    "imdbRating": 5.938,
+    "studio": "MBC",
+    "language": "Korean",
+    "country": "KR",
+    "teluguDubAvail": false,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 2,
+    "popularityScore": 4,
+    "universe": null
+  },
+  {
+    "slug": "reply-1988-2015",
+    "type": "KDRAMA",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/i3xQJlQRff4k5IMEY55l4iKaKl3.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/sZH7lGs06skRKkrqp1LRi57VVMb.jpg",
+    "title": {
+      "en": "Reply 1988",
+      "te": "Reply 1988"
+    },
+    "description": {
+      "en": "Take a nostalgic trip back to the late 1980s through the lives of five families and their five teenage kids living in a small neighbourhood in Seoul.",
+      "te": "సియోల్‌లోని ఒక చిన్న పరిసరాల్లో నివసించే ఐదు కుటుంబాలు మరియు వారి ఐదుగురు టీనేజ్ పిల్లల జీవితాల ద్వారా 1980ల చివరినాటికి ఒక వ్యామోహ యాత్ర చేయండి."
+    },
+    "genres": [
+      "Comedy"
+    ],
+    "year": 2015,
+    "runtime": null,
+    "totalEpisodes": 20,
+    "totalSeasons": 1,
+    "imdbRating": 8.785,
+    "studio": "CJ ENM",
+    "language": "Korean",
+    "country": "KR",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 2,
+    "popularityScore": 4,
+    "universe": null
+  },
+  {
+    "slug": "gold-land-2026",
+    "type": "KDRAMA",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/qhbwTTeSnIGctR4CEmHc9RQBwtT.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/kuLhcTkriaiXYYdKGS9yt0AX4F4.jpg",
+    "title": {
+      "en": "Gold Land",
+      "te": "Gold Land"
+    },
+    "description": {
+      "en": "A young woman working as an airport security agent accidentally comes into possession of a smuggling ring’s gold bars. Caught in a chaotic whirlwind of greed and betrayal among various parties vying for the gold, she becomes consumed by the desire to claim it all for herself.",
+      "te": "ఎయిర్‌పోర్ట్ సెక్యూరిటీ ఏజెంట్‌గా పనిచేస్తున్న యువతి అనుకోకుండా స్మగ్లింగ్ రింగ్ యొక్క బంగారు కడ్డీలను స్వాధీనం చేసుకుంది. బంగారం కోసం పోటీ పడుతున్న వివిధ పార్టీల మధ్య దురాశ మరియు ద్రోహం యొక్క అస్తవ్యస్తమైన సుడిగుండంలో చిక్కుకుంది, ఆమె అన్నింటినీ తన కోసం క్లెయిమ్ చేయాలనే కోరికతో మునిగిపోతుంది."
+    },
+    "genres": [
+      "Drama",
+      "Crime",
+      "Thriller"
+    ],
+    "year": 2026,
+    "runtime": null,
+    "totalEpisodes": 10,
+    "totalSeasons": 1,
+    "imdbRating": 8,
+    "studio": "Studio Dragon",
+    "language": "Korean",
+    "country": "KR",
+    "teluguDubAvail": false,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 2,
+    "popularityScore": 5,
+    "universe": null
+  },
+  {
+    "slug": "show-music-core-2005",
+    "type": "KDRAMA",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/AkoQr6axSoFdpTuPt0dY3WekIeY.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/c1FQPgXZjQ1AmX2v0v3W59PjwKT.jpg",
+    "title": {
+      "en": "Show! Music Core",
+      "te": "Show! Music Core"
+    },
+    "description": {
+      "en": "Show! Music Core is a music show that has been aired since 2005. Not like any other music shows, this show doesn't include any charts or awards. There are a few segments such as This Week's Hot 3, Chart Up Core and Core of Rising Stars.",
+      "te": "చూపించు! మ్యూజిక్ కోర్ అనేది 2005 నుండి ప్రసారం చేయబడిన సంగీత కార్యక్రమం. ఇతర సంగీత కార్యక్రమాల మాదిరిగా కాకుండా, ఈ షోలో చార్ట్‌లు లేదా అవార్డులు లేవు. ఈ వారం హాట్ 3, చార్ట్ అప్ కోర్ మరియు కోర్ ఆఫ్ రైజింగ్ స్టార్స్ వంటి కొన్ని విభాగాలు ఉన్నాయి."
+    },
+    "genres": [
+      "Drama"
+    ],
+    "year": 2005,
+    "runtime": null,
+    "totalEpisodes": 896,
+    "totalSeasons": 1,
+    "imdbRating": 7,
+    "studio": "MBC",
+    "language": "Korean",
+    "country": "KR",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 2,
+    "popularityScore": 4,
+    "universe": null
+  },
+  {
+    "slug": "crash-landing-on-you-2019",
+    "type": "KDRAMA",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/fgBNLPr6mC8pxuR79ENAJY4nBmj.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/3yEHM2HT2vrUtO93YzTJNgEfiZG.jpg",
+    "title": {
+      "en": "Crash Landing on You",
+      "te": "Crash Landing on You"
+    },
+    "description": {
+      "en": "A paragliding mishap drops a South Korean heiress in North Korea -- and into the life of an army officer, who decides he will help her hide.",
+      "te": "పారాగ్లైడింగ్ ప్రమాదం ఉత్తర కొరియాలో ఒక దక్షిణ కొరియా వారసురాలుగా పడిపోయింది - మరియు ఒక సైనిక అధికారి జీవితంలోకి, అతను ఆమెను దాచడానికి సహాయం చేస్తానని నిర్ణయించుకున్నాడు."
+    },
+    "genres": [
+      "Drama",
+      "Comedy"
+    ],
+    "year": 2019,
+    "runtime": null,
+    "totalEpisodes": 16,
+    "totalSeasons": 1,
+    "imdbRating": 8.535,
+    "studio": "Studio Dragon",
+    "language": "Korean",
+    "country": "KR",
+    "teluguDubAvail": false,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 2,
+    "popularityScore": 4,
+    "universe": null
+  },
+  {
+    "slug": "we-are-all-trying-here-2026",
+    "type": "KDRAMA",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/c2jswCrMoqDEBEXwSAlrCWtXdfZ.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/4ZXZi107TbfBJFGT4cnqbavQIoc.jpg",
+    "title": {
+      "en": "We Are All Trying Here",
+      "te": "We Are All Trying Here"
+    },
+    "description": {
+      "en": "An aspiring director hits rock bottom after 20 years chasing his debut — until he meets an overwhelmed producer who helps him rediscover his self-worth.",
+      "te": "ఔత్సాహిక దర్శకుడు తన తొలి అరంగేట్రం కోసం 20 సంవత్సరాల తర్వాత రాక్ బాటమ్‌ను తాకాడు - అతను తన స్వీయ-విలువను తిరిగి కనుగొనడంలో సహాయపడే అధిక నిర్మాతను కలిసే వరకు."
+    },
+    "genres": [
+      "Drama"
+    ],
+    "year": 2026,
+    "runtime": null,
+    "totalEpisodes": 12,
+    "totalSeasons": 1,
+    "imdbRating": 8.125,
+    "studio": "SLL",
+    "language": "Korean",
+    "country": "KR",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 2,
+    "popularityScore": 4,
+    "universe": null
+  },
+  {
+    "slug": "love-class-2022",
+    "type": "KDRAMA",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/yoUP5L763UM7iM7CHTzXAuQNXHh.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/q9gZYlYRd33hOksdw0e3g4yDnWs.jpg",
+    "title": {
+      "en": "Love Class",
+      "te": "Love Class"
+    },
+    "description": {
+      "en": "In a college class where students are paired up and sent on dates, a sophomore is partnered with an upperclassman whose gentle kindness steals his heart.",
+      "te": "ఒక కళాశాల తరగతిలో విద్యార్థులను జత చేసి, తేదీలకు పంపుతారు, ఒక ఉన్నత తరగతి విద్యార్థితో రెండవ సంవత్సరం విద్యార్థి భాగస్వామిగా ఉంటాడు, అతని సున్నితమైన దయ అతని హృదయాన్ని దోచుకుంటుంది."
+    },
+    "genres": [
+      "Drama"
+    ],
+    "year": 2022,
+    "runtime": null,
+    "totalEpisodes": 32,
+    "totalSeasons": 3,
+    "imdbRating": 7.1,
+    "studio": "Studio Yanggwibi",
+    "language": "Korean",
+    "country": "KR",
+    "teluguDubAvail": false,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 2,
+    "popularityScore": 5,
+    "universe": null
+  },
+  {
+    "slug": "free-19-2016",
+    "type": "KDRAMA",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/lYE37cDeDyq7kLIJ8oxuEFvIWNH.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/5aSqx5d9EgIxFZ4BYjGXZiL3WGP.jpg",
+    "title": {
+      "en": "Free 19",
+      "te": "Free 19"
+    },
+    "description": {
+      "en": "Free 19 is a 2016 film.",
+      "te": "Free 19 అనేది 2016 లో విడుదలైన చిత్రం."
+    },
+    "genres": [
+      "Drama"
+    ],
+    "year": 2016,
+    "runtime": null,
+    "totalEpisodes": 506,
+    "totalSeasons": 1,
+    "imdbRating": 7,
+    "studio": "tvN",
+    "language": "Korean",
+    "country": "KR",
+    "teluguDubAvail": false,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 2,
+    "popularityScore": 4,
+    "universe": null
+  },
+  {
+    "slug": "inkigayo-1998",
+    "type": "KDRAMA",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/hvY5NH73JRvfJI714MF6Ja4TM3.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/bwqF7htIXSw3v1E3UaI7uAEeTkx.jpg",
+    "title": {
+      "en": "Inkigayo",
+      "te": "Inkigayo"
+    },
+    "description": {
+      "en": "The program is a weekly music show that features and introduces viewers to the most popular artists in Korea. Every week, they ask viewers to vote and select the most popular song of the week.",
+      "te": "ఈ కార్యక్రమం వీక్లీ మ్యూజిక్ షో, ఇది కొరియాలోని అత్యంత ప్రజాదరణ పొందిన కళాకారులను వీక్షకులకు పరిచయం చేస్తుంది. ప్రతి వారం, వారు వీక్షకులను ఓటు వేయమని మరియు వారంలో అత్యంత ప్రజాదరణ పొందిన పాటను ఎంచుకోమని అడుగుతారు."
+    },
+    "genres": [
+      "Family"
+    ],
+    "year": 1998,
+    "runtime": null,
+    "totalEpisodes": 1547,
+    "totalSeasons": 2,
+    "imdbRating": 7.5,
+    "studio": "Seoul Broadcasting System",
+    "language": "Korean",
+    "country": "KR",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 2,
+    "popularityScore": 4,
+    "universe": null
+  },
+  {
+    "slug": "the-simpsons-1989",
+    "type": "CARTOON",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/uWpG7GqfKGQqX4YMAo3nv5OrglV.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/jIArNHIekrCSVgdMbKPAXpPY03Y.jpg",
+    "title": {
+      "en": "The Simpsons",
+      "te": "The Simpsons"
+    },
+    "description": {
+      "en": "Set in Springfield, the average American town, the show focuses on the antics and everyday adventures of the Simpson family; Homer, Marge, Bart, Lisa and Maggie, as well as a virtual cast of thousands. Since the beginning, the series has been a pop culture icon, attracting hundreds of celebrities to guest star. The show has also made name for itself in its fearless satirical take on politics, media and American life in general.",
+      "te": "సగటు అమెరికన్ పట్టణమైన స్ప్రింగ్‌ఫీల్డ్‌లో సెట్ చేయబడిన ఈ ప్రదర్శన సింప్సన్ కుటుంబం యొక్క చేష్టలు మరియు రోజువారీ సాహసాలపై దృష్టి పెడుతుంది; హోమర్, మార్జ్, బార్ట్, లిసా మరియు మాగీ, అలాగే వేల మంది వర్చువల్ తారాగణం. మొదటి నుండి, ఈ ధారావాహిక పాప్ సంస్కృతికి చిహ్నంగా ఉంది, వందలాది మంది ప్రముఖులను అతిథి నటులుగా ఆకర్షిస్తోంది. ఈ కార్యక్రమం రాజకీయాలు, మీడియా మరియు సాధారణంగా అమెరికన్ జీవితంపై నిర్భయమైన వ్యంగ్య టేకింగ్‌లో కూడా పేరు తెచ్చుకుంది."
+    },
+    "genres": [
+      "Family",
+      "Comedy"
+    ],
+    "year": 1989,
+    "runtime": null,
+    "totalEpisodes": 801,
+    "totalSeasons": 37,
+    "imdbRating": 8.018,
+    "studio": "Gracie Films",
+    "language": "English",
+    "country": "US",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 21,
+    "popularityScore": 42,
+    "universe": null
+  },
+  {
+    "slug": "family-guy-1999",
+    "type": "CARTOON",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/3PFsEuAiyLkWsP4GG6dIV37Q6gu.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/l7wShoIdIUwaDIbsHno9pO5MZXT.jpg",
+    "title": {
+      "en": "Family Guy",
+      "te": "Family Guy"
+    },
+    "description": {
+      "en": "Sick, twisted, politically incorrect and Freakin' Sweet animated series featuring the adventures of the dysfunctional Griffin family. Bumbling Peter and long-suffering Lois have three kids. Stewie (a brilliant but sadistic baby bent on killing his mother and taking over the world), Meg (the oldest, and is the most unpopular girl in town) and Chris (the middle kid, he's not very bright but has a passion for movies). The final member of the family is Brian - a talking dog and much more than a pet, he keeps Stewie in check whilst sipping Martinis and sorting through his own life issues.",
+      "te": "సిక్, ట్విస్టెడ్, రాజకీయంగా తప్పు మరియు ఫ్రీకిన్ స్వీట్ యానిమేటెడ్ సిరీస్ పనిచేయని గ్రిఫిన్ కుటుంబం యొక్క సాహసాలను కలిగి ఉంది. బంబ్లింగ్ పీటర్ మరియు దీర్ఘకాలంగా బాధపడుతున్న లోయిస్‌కు ముగ్గురు పిల్లలు ఉన్నారు. స్టీవీ (అతని తల్లిని చంపి ప్రపంచాన్ని ఆక్రమించాలనే ఆలోచనలో ఉన్న ఒక తెలివైన కానీ క్రూరమైన పాప), మెగ్ (అత్యంత పెద్దది మరియు పట్టణంలో అత్యంత ప్రజాదరణ లేని అమ్మాయి) మరియు క్రిస్ (మధ్య పిల్లవాడు, అతను చాలా ప్రకాశవంతమైనవాడు కాదు కానీ సినిమాల పట్ల మక్కువ కలిగి ఉన్నాడు). కుటుంబంలోని చివరి సభ్యుడు బ్రియాన్ - మాట్లాడే కుక్క మరియు పెంపుడు జంతువు కంటే చాలా ఎక్కువ, అతను మార్టినిస్‌ను సిప్ చేస్తూ మరియు తన స్వంత జీవిత సమస్యలను క్రమబద్ధీకరించేటప్పుడు స్టీవీని అదుపులో ఉంచుతాడు."
+    },
+    "genres": [
+      "Comedy"
+    ],
+    "year": 1999,
+    "runtime": null,
+    "totalEpisodes": 456,
+    "totalSeasons": 24,
+    "imdbRating": 7.4,
+    "studio": "20th Century Fox Television",
+    "language": "English",
+    "country": "US",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 19,
+    "popularityScore": 39,
+    "universe": null
+  },
+  {
+    "slug": "rick-and-morty-2013",
+    "type": "CARTOON",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/owhkU6KRqdXoUQpjV8uyZGPtX58.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/9In9QgVJx7PlFOAgVHCKKSbo605.jpg",
+    "title": {
+      "en": "Rick and Morty",
+      "te": "Rick and Morty"
+    },
+    "description": {
+      "en": "Follows a sociopathic genius scientist who drags his inherently timid grandson on adventures across the universe.",
+      "te": "ఒక సామాజిక మేధావి శాస్త్రవేత్తను అనుసరిస్తాడు, అతను అంతర్లీనంగా పిరికి మనవడిని విశ్వం అంతటా సాహసాలకు లాగాడు."
+    },
+    "genres": [
+      "Comedy",
+      "Sci-Fi",
+      "Action"
+    ],
+    "year": 2013,
+    "runtime": null,
+    "totalEpisodes": 91,
+    "totalSeasons": 9,
+    "imdbRating": 8.677,
+    "studio": "Williams Street",
+    "language": "English",
+    "country": "US",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 16,
+    "popularityScore": 33,
+    "universe": null
+  },
+  {
+    "slug": "american-dad--2005",
+    "type": "CARTOON",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/eb9sH2am9IUSQ8GhXTNAVoujk8W.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/iixxhk3ycXmFqBn616pAsC3lu53.jpg",
+    "title": {
+      "en": "American Dad!",
+      "te": "American Dad!"
+    },
+    "description": {
+      "en": "The series focuses on an eccentric motley crew that is the Smith family and their three housemates: Father, husband, and breadwinner Stan Smith; his better half housewife, Francine Smith; their college-aged daughter, Hayley Smith; and their high-school-aged son, Steve Smith. Outside of the Smith family, there are three additional main characters, including Hayley's boyfriend turned husband, Jeff Fischer; the family's man-in-a-goldfish-body pet, Klaus; and most notably the family's zany alien, Roger, who is \"full of masquerades, brazenness, and shocking antics.\"",
+      "te": "ఈ ధారావాహిక స్మిత్ కుటుంబం మరియు వారి ముగ్గురు హౌస్‌మేట్స్ అయిన అసాధారణమైన మోట్లీ సిబ్బందిపై దృష్టి పెడుతుంది: తండ్రి, భర్త మరియు బ్రెడ్ విన్నర్ స్టాన్ స్మిత్; అతని మంచి సగం గృహిణి, ఫ్రాన్సిన్ స్మిత్; వారి కళాశాల-వయస్సు కుమార్తె, హేలీ స్మిత్; మరియు వారి ఉన్నత పాఠశాల-వయస్సు కుమారుడు స్టీవ్ స్మిత్. స్మిత్ కుటుంబం వెలుపల, మూడు అదనపు ప్రధాన పాత్రలు ఉన్నాయి, ఇందులో హేలీ ప్రియుడు భర్తగా మారిన జెఫ్ ఫిషర్; కుటుంబం యొక్క మనిషి-ఇన్-ఎ-గోల్డ్ ఫిష్-బాడీ పెంపుడు, క్లాస్; మరియు ముఖ్యంగా కుటుంబం యొక్క జానీ గ్రహాంతర వాసి, రోజర్, అతను \"మాస్క్వెరేడ్‌లు, ఇత్తడితనం మరియు దిగ్భ్రాంతికరమైన చేష్టలతో నిండి ఉన్నాడు.\""
+    },
+    "genres": [
+      "Comedy"
+    ],
+    "year": 2005,
+    "runtime": null,
+    "totalEpisodes": 399,
+    "totalSeasons": 22,
+    "imdbRating": 7.005,
+    "studio": "20th Century Fox Television",
+    "language": "English",
+    "country": "US",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 14,
+    "popularityScore": 29,
+    "universe": null
+  },
+  {
+    "slug": "regular-show-2010",
+    "type": "CARTOON",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/mS5SLxMYcKfUxA0utBSR5MOAWWr.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/bhF63Jd90gRYyTHd4y5GCGA2vX6.jpg",
+    "title": {
+      "en": "Regular Show",
+      "te": "Regular Show"
+    },
+    "description": {
+      "en": "The surreal misadventures of two best friends - a blue jay and a raccoon - as they seek to liven up their mundane jobs as groundskeepers at the local park.",
+      "te": "ఇద్దరు ప్రాణ స్నేహితుల అధివాస్తవిక దురదృష్టాలు - బ్లూ జే మరియు రక్కూన్ - వారు స్థానిక పార్క్‌లో గ్రౌండ్‌స్కీపర్‌లుగా తమ ప్రాపంచిక ఉద్యోగాలను పెంచుకోవడానికి ప్రయత్నిస్తున్నారు."
+    },
+    "genres": [
+      "Comedy",
+      "Action",
+      "Sci-Fi"
+    ],
+    "year": 2010,
+    "runtime": null,
+    "totalEpisodes": 245,
+    "totalSeasons": 8,
+    "imdbRating": 8.6,
+    "studio": "Cartoon Network Studios",
+    "language": "English",
+    "country": "US",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 9,
+    "popularityScore": 17,
+    "universe": null
+  },
+  {
+    "slug": "invincible-2021",
+    "type": "CARTOON",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/4tblBrslcKSifMVZ3TmtT2ukMor.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/9qrroces8C6R9aKr08hACNPVXdZ.jpg",
+    "title": {
+      "en": "INVINCIBLE",
+      "te": "INVINCIBLE"
+    },
+    "description": {
+      "en": "Mark Grayson is a normal teenager except for the fact that his father is the most powerful superhero on the planet. Shortly after his seventeenth birthday, Mark begins to develop powers of his own and enters into his father's tutelage.",
+      "te": "మార్క్ గ్రేసన్ ఒక సాధారణ యుక్తవయస్కుడు, అతని తండ్రి గ్రహం మీద అత్యంత శక్తివంతమైన సూపర్ హీరో అనే వాస్తవం తప్ప. తన పదిహేడవ పుట్టినరోజు తర్వాత, మార్క్ తన స్వంత శక్తులను పెంపొందించుకోవడం ప్రారంభించాడు మరియు అతని తండ్రి శిక్షణలోకి ప్రవేశిస్తాడు."
+    },
+    "genres": [
+      "Drama",
+      "Sci-Fi",
+      "Action"
+    ],
+    "year": 2021,
+    "runtime": null,
+    "totalEpisodes": 32,
+    "totalSeasons": 5,
+    "imdbRating": 8.634,
+    "studio": "Amazon Studios",
+    "language": "English",
+    "country": "US",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 9,
+    "popularityScore": 17,
+    "universe": null
+  },
+  {
+    "slug": "paw-patrol-2013",
+    "type": "CARTOON",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/8HXkgUBO5OF8ZK9XbY69RM4S5rv.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/7OrV2aAH5Yp7hA9zCCvUloLvZtl.jpg",
+    "title": {
+      "en": "PAW Patrol",
+      "te": "PAW Patrol"
+    },
+    "description": {
+      "en": "Marshall, Rocky, Rubble, Zuma and Skye are doing their best to protect the people of their town. Led by Ryder, a tech-savvy 10-year-old boy, each of them is equipped with special equipment and together they help anyone who finds themselves in trouble. No task is too big for them and no puppy is too small.",
+      "te": "మార్షల్, రాకీ, రూబుల్, జుమా మరియు స్కై తమ పట్టణంలోని ప్రజలను రక్షించడానికి తమ వంతు కృషి చేస్తున్నారు. టెక్-అవగాహన ఉన్న 10 ఏళ్ల బాలుడు రైడర్ నేతృత్వంలో, వారిలో ప్రతి ఒక్కరు ప్రత్యేక సామగ్రిని కలిగి ఉంటారు మరియు తమను తాము ఇబ్బందుల్లో ఉన్న ఎవరికైనా కలిసి సహాయం చేస్తారు. ఏ పనీ వారికి పెద్దది కాదు మరియు ఏ కుక్కపిల్ల కూడా చాలా చిన్నది కాదు."
+    },
+    "genres": [
+      "Drama"
+    ],
+    "year": 2013,
+    "runtime": null,
+    "totalEpisodes": 553,
+    "totalSeasons": 13,
+    "imdbRating": 7,
+    "studio": "Spin Master",
+    "language": "English",
+    "country": "US",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 8,
+    "popularityScore": 16,
+    "universe": null
+  },
+  {
+    "slug": "south-park-1997",
+    "type": "CARTOON",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/1CGwZCFX2qerXaXQJJUB3qUvxq7.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/3UviYOlhn8EgXMBuiT6MnUuo1w9.jpg",
+    "title": {
+      "en": "South Park",
+      "te": "South Park"
+    },
+    "description": {
+      "en": "Follow the misadventures of four irreverent grade-schoolers in the quiet, dysfunctional town of South Park, Colorado.",
+      "te": "కొలరాడోలోని సౌత్ పార్క్‌లోని నిశ్శబ్ద, పనిచేయని పట్టణంలో నలుగురు గౌరవించని గ్రేడ్-స్కూలర్ల దురదృష్టాలను అనుసరించండి."
+    },
+    "genres": [
+      "Comedy"
+    ],
+    "year": 1997,
+    "runtime": null,
+    "totalEpisodes": 337,
+    "totalSeasons": 29,
+    "imdbRating": 8.341,
+    "studio": "South Park Studios",
+    "language": "English",
+    "country": "US",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 7,
+    "popularityScore": 15,
+    "universe": null
+  },
+  {
+    "slug": "bob-s-burgers-2011",
+    "type": "CARTOON",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/iIHsQe3Qjs3NH62HdamyQEPeqTR.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/2AVPwdHJsF044jT39akgLxxv2zx.jpg",
+    "title": {
+      "en": "Bob's Burgers",
+      "te": "Bob's Burgers"
+    },
+    "description": {
+      "en": "Bob's Burgers follows a third-generation restaurateur, Bob, as he runs Bob's Burgers with the help of his wife and their three kids. Bob and his quirky family have big ideas about burgers, but fall short on service and sophistication. Despite the greasy counters, lousy location and a dearth of customers, Bob and his family are determined to make Bob's Burgers \"grand re-re-re-opening\" a success.",
+      "te": "బాబ్స్ బర్గర్స్ తన భార్య మరియు వారి ముగ్గురు పిల్లల సహాయంతో బాబ్స్ బర్గర్స్‌ను నడుపుతున్నప్పుడు బాబ్ యొక్క మూడవ తరం రెస్టారెంట్ బాబ్‌ను అనుసరిస్తాడు. బాబ్ మరియు అతని చమత్కారమైన కుటుంబానికి బర్గర్‌ల గురించి పెద్ద ఆలోచనలు ఉన్నాయి, కానీ సేవ మరియు అధునాతనతలో తక్కువగా ఉంటాయి. జిడ్డుగల కౌంటర్లు, అసహ్యమైన ప్రదేశం మరియు కస్టమర్ల కొరత ఉన్నప్పటికీ, బాబ్ మరియు అతని కుటుంబం బాబ్స్ బర్గర్‌లను \"గ్రాండ్ రీ-రీ-రీ-ఓపెనింగ్\" విజయవంతం చేయాలని నిశ్చయించుకున్నారు."
+    },
+    "genres": [
+      "Comedy"
+    ],
+    "year": 2011,
+    "runtime": null,
+    "totalEpisodes": 313,
+    "totalSeasons": 16,
+    "imdbRating": 7.8,
+    "studio": "20th Century Fox Television",
+    "language": "English",
+    "country": "US",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 7,
+    "popularityScore": 14,
+    "universe": null
+  },
+  {
+    "slug": "king-of-the-hill-1997",
+    "type": "CARTOON",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/e2xyMapmYgv4AuSoSDv9Y4pQlD6.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/4CSdS9p0AhLhxCo1hGuQINiE2Sa.jpg",
+    "title": {
+      "en": "King of the Hill",
+      "te": "King of the Hill"
+    },
+    "description": {
+      "en": "Set in Texas, this animated series follows the life of propane salesman Hank Hill, who lives with his overly confident substitute Spanish teacher wife Peggy, wannabe comedian son Bobby, and naive niece Luanne. Hank has conservative views about God, family, and country, but his values and ethics are often challenged by the situations he, his family, and his beer-drinking neighbors/buddies find themselves in.",
+      "te": "టెక్సాస్‌లో సెట్ చేయబడిన ఈ యానిమేటెడ్ సిరీస్ ప్రొపేన్ సేల్స్‌మ్యాన్ హాంక్ హిల్ జీవితాన్ని అనుసరిస్తుంది, అతను తన మితిమీరిన ఆత్మవిశ్వాసం ప్రత్యామ్నాయ స్పానిష్ టీచర్ భార్య పెగ్గి, వన్నాబే కమెడియన్ కొడుకు బాబీ మరియు అమాయక మేనకోడలు లువాన్‌తో కలిసి జీవించాడు. దేవుడు, కుటుంబం మరియు దేశం గురించి హాంక్ సంప్రదాయవాద అభిప్రాయాలను కలిగి ఉన్నాడు, కానీ అతని విలువలు మరియు నైతికత తరచుగా అతను, అతని కుటుంబం మరియు అతని బీర్ తాగే పొరుగువారు/స్నేహితులు తమను తాము కనుగొన్న పరిస్థితుల ద్వారా సవాలు చేస్తారు."
+    },
+    "genres": [
+      "Comedy",
+      "Family"
+    ],
+    "year": 1997,
+    "runtime": null,
+    "totalEpisodes": 275,
+    "totalSeasons": 15,
+    "imdbRating": 7.396,
+    "studio": "20th Century Fox Television",
+    "language": "English",
+    "country": "US",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 7,
+    "popularityScore": 13,
+    "universe": null
+  },
+  {
+    "slug": "peppa-pig-2004",
+    "type": "CARTOON",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/iwKVo3HlsyVNXCzFEkd0xHz3kGi.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/fnyS6gOv9tTjhHPl4A1aKEDgWEG.jpg",
+    "title": {
+      "en": "Peppa Pig",
+      "te": "Peppa Pig"
+    },
+    "description": {
+      "en": "Peppa Pig is an energetic piggy who lives with Mummy, Daddy, and little brother George. She loves to jump in mud puddles and make loud snorting noises.",
+      "te": "పెప్పా పిగ్ మమ్మీ, డాడీ మరియు చిన్న సోదరుడు జార్జ్‌తో నివసించే శక్తివంతమైన పిగ్గీ. బురద గుంటలలో దూకడం మరియు పెద్దగా గురక శబ్దాలు చేయడం ఆమెకు చాలా ఇష్టం."
+    },
+    "genres": [
+      "Drama"
+    ],
+    "year": 2004,
+    "runtime": null,
+    "totalEpisodes": 492,
+    "totalSeasons": 9,
+    "imdbRating": 6.6,
+    "studio": "Astley Baker Davies",
+    "language": "English",
+    "country": "GB",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 6,
+    "popularityScore": 13,
+    "universe": null
+  },
+  {
+    "slug": "teen-titans-go--2013",
+    "type": "CARTOON",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/kPKAigYUlWRpnfo4Ptiwlz4FWXU.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/bIHCUqaapZdRjd2kzSDiwzYyrpC.jpg",
+    "title": {
+      "en": "Teen Titans Go!",
+      "te": "Teen Titans Go!"
+    },
+    "description": {
+      "en": "Robin, Starfire, Raven, Beast Boy and Cyborg return in all-new, comedic adventures. They may be super heroes who save the world every day ... but somebody still has to do the laundry!",
+      "te": "రాబిన్, స్టార్‌ఫైర్, రావెన్, బీస్ట్ బాయ్ మరియు సైబోర్గ్ సరికొత్త హాస్య సాహసాలలో తిరిగి వచ్చారు. వారు ప్రతిరోజూ ప్రపంచాన్ని రక్షించే సూపర్ హీరోలు కావచ్చు ... కానీ ఎవరైనా ఇప్పటికీ లాండ్రీ చేయవలసి ఉంటుంది!"
+    },
+    "genres": [
+      "Action",
+      "Comedy",
+      "Family",
+      "Sci-Fi"
+    ],
+    "year": 2013,
+    "runtime": null,
+    "totalEpisodes": 453,
+    "totalSeasons": 9,
+    "imdbRating": 6.455,
+    "studio": "Warner Bros. Animation",
+    "language": "English",
+    "country": "US",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 6,
+    "popularityScore": 12,
+    "universe": null
+  },
+  {
+    "slug": "phineas-and-ferb-2007",
+    "type": "CARTOON",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/g6TidT7be954rrzPPBTIXkSmfXj.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/5MWFjQ3NuNtNeOE9FdrVLeNMNPs.jpg",
+    "title": {
+      "en": "Phineas and Ferb",
+      "te": "Phineas and Ferb"
+    },
+    "description": {
+      "en": "Each day, two kindhearted suburban stepbrothers on summer vacation embark on some grand new project, which annoys their controlling sister, Candace, who tries to bust them. Meanwhile, their pet platypus plots against evil Dr. Doofenshmirtz.",
+      "te": "ప్రతి రోజు, వేసవి సెలవుల్లో ఇద్దరు దయగల సబర్బన్ సవతి సోదరులు ఏదో ఒక గొప్ప కొత్త ప్రాజెక్ట్‌ను ప్రారంభిస్తారు, ఇది వారి నియంత్రిస్తున్న సోదరి కాండేస్‌ను చికాకుపెడుతుంది. ఇంతలో, వారి పెంపుడు జంతువు ప్లాటిపస్ దుష్ట డాక్టర్ డూఫెన్‌ష్‌మిర్ట్జ్‌కి వ్యతిరేకంగా పన్నాగం చేస్తుంది."
+    },
+    "genres": [
+      "Comedy",
+      "Family",
+      "Sci-Fi"
+    ],
+    "year": 2007,
+    "runtime": null,
+    "totalEpisodes": 261,
+    "totalSeasons": 5,
+    "imdbRating": 7.891,
+    "studio": "Disney Television Animation",
+    "language": "English",
+    "country": "US",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 6,
+    "popularityScore": 12,
+    "universe": null
+  },
+  {
+    "slug": "star-wars-the-clone-wars-2008",
+    "type": "CARTOON",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/e1nWfnnCVqxS2LeTO3dwGyAsG2V.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/m6eRgkR1KC6Mr6gKx6gKCzSn6vD.jpg",
+    "title": {
+      "en": "Star Wars: The Clone Wars",
+      "te": "Star Wars: The Clone Wars"
+    },
+    "description": {
+      "en": "Yoda, Obi-Wan Kenobi, Anakin Skywalker, Mace Windu and other Jedi Knights lead the Grand Army of the Republic against the droid army of the Separatists.",
+      "te": "యోడా, ఒబి-వాన్ కెనోబి, అనాకిన్ స్కైవాకర్, మేస్ విండు మరియు ఇతర జెడి నైట్‌లు వేర్పాటువాదుల డ్రాయిడ్ సైన్యానికి వ్యతిరేకంగా రిపబ్లిక్ యొక్క గ్రాండ్ ఆర్మీకి నాయకత్వం వహిస్తున్నారు."
+    },
+    "genres": [
+      "Action",
+      "Sci-Fi"
+    ],
+    "year": 2008,
+    "runtime": null,
+    "totalEpisodes": 133,
+    "totalSeasons": 7,
+    "imdbRating": 8.469,
+    "studio": "Lucasfilm Animation",
+    "language": "English",
+    "country": "US",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 6,
+    "popularityScore": 12,
+    "universe": null
+  },
+  {
+    "slug": "adventure-time-2010",
+    "type": "CARTOON",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/qk3eQ8jW4opJ48gFWYUXWaMT4l.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/3uE9SUywNbj1qSAuYCGgbTTYku5.jpg",
+    "title": {
+      "en": "Adventure Time",
+      "te": "Adventure Time"
+    },
+    "description": {
+      "en": "Unlikely heroes Finn and Jake are buddies who traverse the mystical Land of Ooo. The best of friends, our heroes always find themselves in the middle of escapades. Finn and Jake depend on each other through thick and thin.",
+      "te": "అవకాశం లేని హీరోలు ఫిన్ మరియు జేక్ ఓయూ యొక్క ఆధ్యాత్మిక భూమిని ప్రయాణించే స్నేహితులు. మంచి స్నేహితులు, మన హీరోలు ఎప్పుడూ తప్పించుకునే మధ్యలోనే ఉంటారు. ఫిన్ మరియు జేక్ మందపాటి మరియు సన్నని ద్వారా ఒకరిపై ఒకరు ఆధారపడతారు."
+    },
+    "genres": [
+      "Comedy",
+      "Sci-Fi"
+    ],
+    "year": 2010,
+    "runtime": null,
+    "totalEpisodes": 279,
+    "totalSeasons": 10,
+    "imdbRating": 8.5,
+    "studio": "Frederator Studios",
+    "language": "English",
+    "country": "US",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 6,
+    "popularityScore": 11,
+    "universe": null
+  },
+  {
+    "slug": "futurama-1999",
+    "type": "CARTOON",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/6ZS8SOno6kTmWz4eQ8lX8EBXOMv.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/4xKG4S1IyLIglHbCYGJDsptgQNh.jpg",
+    "title": {
+      "en": "Futurama",
+      "te": "Futurama"
+    },
+    "description": {
+      "en": "The adventures of a late-20th-century New York City pizza delivery boy, Philip J. Fry, who, after being unwittingly cryogenically frozen for one thousand years, finds employment at Planet Express, an interplanetary delivery company in the retro-futuristic 31st century.",
+      "te": "20వ శతాబ్దపు చివరి-న్యూయార్క్ సిటీ పిజ్జా డెలివరీ బాయ్, ఫిలిప్ J. ఫ్రై యొక్క సాహసాలు, అతను తెలియకుండానే వెయ్యి సంవత్సరాలు క్రయోజెనిక్‌గా స్తంభింపజేసిన తర్వాత, రెట్రో-ఫ్యూచరిస్టిక్ 31వ శతాబ్దంలో ప్లానెట్ ఎక్స్‌ప్రెస్ అనే ఇంటర్‌ప్లానెటరీ డెలివరీ కంపెనీలో ఉద్యోగం పొందాడు."
+    },
+    "genres": [
+      "Comedy",
+      "Sci-Fi"
+    ],
+    "year": 1999,
+    "runtime": null,
+    "totalEpisodes": 164,
+    "totalSeasons": 11,
+    "imdbRating": 8.367,
+    "studio": "20th Century Fox Television",
+    "language": "English",
+    "country": "US",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 6,
+    "popularityScore": 11,
+    "universe": null
+  },
+  {
+    "slug": "young-justice-2010",
+    "type": "CARTOON",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/zMJw34G4OJhcd9NjKSRjJdDqjbR.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/pOKcw45cAMPu8DN7E3bN5FEvxM3.jpg",
+    "title": {
+      "en": "Young Justice",
+      "te": "Young Justice"
+    },
+    "description": {
+      "en": "Teenage superheroes strive to prove themselves as members of the Justice League.",
+      "te": "టీనేజ్ సూపర్ హీరోలు తమను తాము జస్టిస్ లీగ్ సభ్యులుగా నిరూపించుకోవడానికి ప్రయత్నిస్తారు."
+    },
+    "genres": [
+      "Sci-Fi",
+      "Action"
+    ],
+    "year": 2010,
+    "runtime": null,
+    "totalEpisodes": 98,
+    "totalSeasons": 4,
+    "imdbRating": 8.4,
+    "studio": "Warner Bros. Animation",
+    "language": "English",
+    "country": "US",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 5,
+    "popularityScore": 11,
+    "universe": null
+  },
+  {
+    "slug": "the-legend-of-vox-machina-2022",
+    "type": "CARTOON",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/b5A0qkGrZJTyVv3gT6b8clFEz9R.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/qCGwPCwlSiLdlYinzy9rSQDjQX1.jpg",
+    "title": {
+      "en": "The Legend of Vox Machina",
+      "te": "The Legend of Vox Machina"
+    },
+    "description": {
+      "en": "They're rowdy, they're ragtag, they're misfits turned mercenaries for hire. Vox Machina is more interested in easy money and cheap ale than actually protecting the realm. But when the kingdom is threatened by evil, this boisterous crew realizes that they are the only ones capable of restoring justice.",
+      "te": "వారు రౌడీలు, వారు రాగ్‌టాగ్‌లు, వారు కిరాయికి కిరాయికి మారిన దుర్మార్గులు. వోక్స్ మచినా రాజ్యాన్ని రక్షించడం కంటే సులభంగా డబ్బు మరియు చౌకైన ఆలేపై ఎక్కువ ఆసక్తిని కలిగి ఉంది. కానీ రాజ్యం చెడుచేత బెదిరించబడినప్పుడు, ఈ దౌర్జన్యపూరిత సిబ్బంది న్యాయాన్ని పునరుద్ధరించగల సామర్థ్యం తమకు మాత్రమే ఉందని తెలుసుకుంటాడు."
+    },
+    "genres": [
+      "Sci-Fi"
+    ],
+    "year": 2022,
+    "runtime": null,
+    "totalEpisodes": 48,
+    "totalSeasons": 4,
+    "imdbRating": 8.2,
+    "studio": "Titmouse",
+    "language": "English",
+    "country": "US",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 5,
+    "popularityScore": 10,
+    "universe": null
+  },
+  {
+    "slug": "ninjago-masters-of-spinjitzu-2012",
+    "type": "CARTOON",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/beKgqwruOGmVAvRwRvfuOcXwl2Z.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/ptEtIr3rVuAJpmbwaLJJqND6HVq.jpg",
+    "title": {
+      "en": "Ninjago: Masters of Spinjitzu",
+      "te": "Ninjago: Masters of Spinjitzu"
+    },
+    "description": {
+      "en": "When the fate of their world, Ninjago, is challenged by great threats, it's up to the ninja: Kai, Jay, Cole, Zane, Lloyd and Nya to save the world.",
+      "te": "వారి ప్రపంచం, నింజాగో యొక్క విధి గొప్ప బెదిరింపులతో సవాలు చేయబడినప్పుడు, ప్రపంచాన్ని రక్షించడం నింజా: కై, జే, కోల్, జేన్, లాయిడ్ మరియు న్యా."
+    },
+    "genres": [
+      "Action",
+      "Sci-Fi",
+      "Comedy",
+      "Family"
+    ],
+    "year": 2012,
+    "runtime": null,
+    "totalEpisodes": 210,
+    "totalSeasons": 16,
+    "imdbRating": 8,
+    "studio": "WildBrain Studios",
+    "language": "English",
+    "country": "US",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 5,
+    "popularityScore": 10,
+    "universe": null
+  },
+  {
+    "slug": "rugrats-1991",
+    "type": "CARTOON",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/wmsINbZuEBLNP2Z26Xffx5NHJpW.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/fKpfCR3l0WukHTkI6Z2ySX1if4P.jpg",
+    "title": {
+      "en": "Rugrats",
+      "te": "Rugrats"
+    },
+    "description": {
+      "en": "Focuses on a group of toddlers, most prominently Tommy, Chuckie, Phil, Lil, and Angelica, and their day-to-day lives, usually involving common life experiences that become adventures in the babies' imaginations. Adults in the series are almost always unaware of what the children are up to; however, this only provides more room for the babies to explore and discover their surroundings.",
+      "te": "పసిపిల్లల సమూహంపై దృష్టి సారిస్తుంది, ముఖ్యంగా టామీ, చుకీ, ఫిల్, లిల్ మరియు ఏంజెలికా మరియు వారి రోజువారీ జీవితాలు, సాధారణంగా శిశువుల ఊహలలో సాహసాలుగా మారే సాధారణ జీవిత అనుభవాలు ఉంటాయి. సిరీస్‌లోని పెద్దలకు పిల్లలు ఏమి చేస్తున్నారో దాదాపు ఎల్లప్పుడూ తెలియదు; అయినప్పటికీ, ఇది శిశువులకు వారి పరిసరాలను అన్వేషించడానికి మరియు కనుగొనడానికి మరింత స్థలాన్ని మాత్రమే అందిస్తుంది."
+    },
+    "genres": [
+      "Family",
+      "Comedy"
+    ],
+    "year": 1991,
+    "runtime": null,
+    "totalEpisodes": 322,
+    "totalSeasons": 9,
+    "imdbRating": 7.622,
+    "studio": "Klasky-Csupo",
+    "language": "English",
+    "country": "US",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 5,
+    "popularityScore": 10,
+    "universe": null
+  },
+  {
+    "slug": "my-little-pony-friendship-is-magic-2010",
+    "type": "CARTOON",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/fwW7WgJIjhBsnzk87Gyh6g9187m.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/4zhISjHkEoeNkVGJRHIy9jND2ta.jpg",
+    "title": {
+      "en": "My Little Pony: Friendship Is Magic",
+      "te": "My Little Pony: Friendship Is Magic"
+    },
+    "description": {
+      "en": "Journey to the enchanted land of Equestria, where unicorn Twilight Sparkle and her pals have adventures and learn valuable lessons about friendship.",
+      "te": "యునికార్న్ ట్విలైట్ స్పార్కిల్ మరియు ఆమె స్నేహితులు సాహసాలను కలిగి ఉన్న ఈక్వెస్ట్రియా యొక్క మంత్రించిన భూమికి ప్రయాణం మరియు స్నేహం గురించి విలువైన పాఠాలు నేర్చుకుంటారు."
+    },
+    "genres": [
+      "Comedy",
+      "Sci-Fi"
+    ],
+    "year": 2010,
+    "runtime": null,
+    "totalEpisodes": 221,
+    "totalSeasons": 9,
+    "imdbRating": 8.155,
+    "studio": "DHX Media",
+    "language": "English",
+    "country": "CA",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 5,
+    "popularityScore": 10,
+    "universe": null
+  },
+  {
+    "slug": "bojack-horseman-2014",
+    "type": "CARTOON",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/6JFWzlChcGgLiIUo2COgNlWGFKy.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/qFYDJUIFh8zgEDy3EvnHwhgOl0S.jpg",
+    "title": {
+      "en": "BoJack Horseman",
+      "te": "BoJack Horseman"
+    },
+    "description": {
+      "en": "Meet the most beloved sitcom horse of the '90s , 20 years later. He's a curmudgeon with a heart of...not quite gold...but something like gold. Copper?",
+      "te": "20 సంవత్సరాల తర్వాత 90లలో అత్యంత ప్రియమైన సిట్‌కామ్ గుర్రాన్ని కలవండి. అతను చాలా బంగారం కాదు.. కానీ ఏదో బంగారం లాంటి హృదయం ఉన్న కుర్ముడ్జియన్. రాగి?"
+    },
+    "genres": [
+      "Comedy",
+      "Drama"
+    ],
+    "year": 2014,
+    "runtime": null,
+    "totalEpisodes": 76,
+    "totalSeasons": 6,
+    "imdbRating": 8.5,
+    "studio": "The Tornante Company",
+    "language": "English",
+    "country": "US",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 5,
+    "popularityScore": 9,
+    "universe": null
+  },
+  {
+    "slug": "the-fairly-oddparents-2001",
+    "type": "CARTOON",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/3ryMj7tIvVtiXyI2tLvHYTjOjq4.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/rMKFsYeK3LPJGk9xqUHhGdqA4aB.jpg",
+    "title": {
+      "en": "The Fairly OddParents",
+      "te": "The Fairly OddParents"
+    },
+    "description": {
+      "en": "The zany, fast-paced adventures of a 10-year-old boy and his fairy godparents, who inadvertently create havoc as they grant wishes for their pint-sized charge.",
+      "te": "10 ఏళ్ల బాలుడు మరియు అతని ఫెయిరీ గాడ్ పేరెంట్స్ యొక్క తెలివిగల, వేగవంతమైన సాహసాలు, వారు తమ పింట్-సైజ్ ఛార్జ్ కోసం కోరికలను మంజూరు చేస్తూ అనుకోకుండా విధ్వంసం సృష్టించారు."
+    },
+    "genres": [
+      "Comedy",
+      "Sci-Fi",
+      "Family"
+    ],
+    "year": 2001,
+    "runtime": null,
+    "totalEpisodes": 268,
+    "totalSeasons": 10,
+    "imdbRating": 7.581,
+    "studio": "Billionfold",
+    "language": "English",
+    "country": "CA",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 5,
+    "popularityScore": 9,
+    "universe": null
+  },
+  {
+    "slug": "gravity-falls-2012",
+    "type": "CARTOON",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/qwi3p6PzKfQZ4YXBzv3CP5pO2dE.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/lhg7eA6CTOCL10QNVdKiyxkgPsL.jpg",
+    "title": {
+      "en": "Gravity Falls",
+      "te": "Gravity Falls"
+    },
+    "description": {
+      "en": "Twin brother and sister Dipper and Mabel Pines are in for an unexpected adventure when they spend the summer helping their great uncle Stan run a tourist trap in the mysterious town of Gravity Falls, Oregon.",
+      "te": "కవల సోదరుడు మరియు సోదరి డిప్పర్ మరియు మాబెల్ పైన్స్ వేసవిలో తమ మేనమామ స్టాన్‌కు ఒరెగాన్‌లోని గ్రావిటీ ఫాల్స్‌లోని రహస్యమైన పట్టణంలో పర్యాటక ఉచ్చులో సహాయం చేస్తూ గడిపినప్పుడు ఊహించని సాహసం చేస్తున్నారు."
+    },
+    "genres": [
+      "Action",
+      "Comedy",
+      "Family",
+      "Thriller",
+      "Sci-Fi"
+    ],
+    "year": 2012,
+    "runtime": null,
+    "totalEpisodes": 40,
+    "totalSeasons": 2,
+    "imdbRating": 8.612,
+    "studio": "Disney Television Animation",
+    "language": "English",
+    "country": "US",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 5,
+    "popularityScore": 9,
+    "universe": null
+  },
+  {
+    "slug": "the-tom-and-jerry-show-2014",
+    "type": "CARTOON",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/41EWXLXTZO4MLb2BL28mWZuydyq.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/utqCOvMmjjMTlXNZz6PHOzRM5QP.jpg",
+    "title": {
+      "en": "The Tom and Jerry Show",
+      "te": "The Tom and Jerry Show"
+    },
+    "description": {
+      "en": "The iconic cat and mouse rivals are back in a fresh take on the classic series. Preserving the look, characters and sensibility of the original, this series shines a brightly colored, high-definition lens on the madcap slapstick and never-ending battle that has made Tom and Jerry two of the most beloved characters of all time.",
+      "te": "దిగ్గజ పిల్లి మరియు ఎలుక ప్రత్యర్థులు క్లాసిక్ సిరీస్‌లో తాజాగా తిరిగి వచ్చారు. ఒరిజినల్ యొక్క రూపాన్ని, పాత్రలను మరియు సెన్సిబిలిటీని సంరక్షిస్తూ, ఈ సిరీస్ మ్యాడ్‌క్యాప్ స్లాప్‌స్టిక్‌పై ముదురు రంగు, హై-డెఫినిషన్ లెన్స్‌ను ప్రకాశిస్తుంది మరియు టామ్ మరియు జెర్రీని ఎప్పటికప్పుడు అత్యంత ప్రియమైన పాత్రలలో రెండుగా మార్చింది."
+    },
+    "genres": [
+      "Family",
+      "Comedy"
+    ],
+    "year": 2014,
+    "runtime": null,
+    "totalEpisodes": 325,
+    "totalSeasons": 5,
+    "imdbRating": 7.261,
+    "studio": "Warner Bros. Animation",
+    "language": "English",
+    "country": "US",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 5,
+    "popularityScore": 9,
+    "universe": null
+  },
+  {
+    "slug": "the-amazing-world-of-gumball-2011",
+    "type": "CARTOON",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/VYnnyA2hyxi3VUPgCA71mMtt69.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/gmO3aezFgDcrhcymhNSJLGZ3CT.jpg",
+    "title": {
+      "en": "The Amazing World of Gumball",
+      "te": "The Amazing World of Gumball"
+    },
+    "description": {
+      "en": "The life of Gumball Watterson, a 12-year old cat who attends middle school in Elmore. Accompanied by his pet, adoptive brother, and best friend Darwin Watterson, he frequently finds himself involved in various shenanigans around the city, during which he interacts with various family members: Anais, Richard, and Nicole Watterson, and other various citizens.",
+      "te": "ఎల్మోర్‌లోని మిడిల్ స్కూల్‌లో చదువుతున్న 12 ఏళ్ల పిల్లి గుంబాల్ వాటర్‌సన్ జీవితం. తన పెంపుడు జంతువు, పెంపుడు సోదరుడు మరియు బెస్ట్ ఫ్రెండ్ డార్విన్ వాటర్‌సన్‌తో కలిసి, అతను తరచుగా నగరం చుట్టూ ఉన్న వివిధ షెనానిగన్‌లలో పాల్గొంటాడు, ఈ సమయంలో అతను వివిధ కుటుంబ సభ్యులతో సంభాషిస్తాడు: అనైస్, రిచర్డ్ మరియు నికోల్ వాటర్సన్ మరియు ఇతర వివిధ పౌరులతో."
+    },
+    "genres": [
+      "Family",
+      "Sci-Fi",
+      "Comedy"
+    ],
+    "year": 2011,
+    "runtime": null,
+    "totalEpisodes": 240,
+    "totalSeasons": 6,
+    "imdbRating": 8.5,
+    "studio": "Boulder Media",
+    "language": "English",
+    "country": "DE",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 4,
+    "popularityScore": 9,
+    "universe": null
+  },
+  {
+    "slug": "the-bullwinkle-show-1959",
+    "type": "CARTOON",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/cAMWBJyYynFWxJNrIvVnHlN2e9P.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/6wVEWwNpOOIWalkqsoV8SNGBryI.jpg",
+    "title": {
+      "en": "The Bullwinkle Show",
+      "te": "The Bullwinkle Show"
+    },
+    "description": {
+      "en": "A variety show, with the main feature being the serialized adventures of the two title characters, the anthropomorphic moose Bullwinkle and flying squirrel Rocky. The main adversaries in most of their adventures are the Russian-like spies Boris Badenov and Natasha Fatale. Supporting segments include Dudley Do-Right, Peabody's Improbable History, and Fractured Fairy Tales, among others.",
+      "te": "విభిన్నమైన ప్రదర్శన, ప్రధాన లక్షణం రెండు టైటిల్ పాత్రలు, మానవరూప దుప్పి బుల్‌వింకిల్ మరియు ఫ్లయింగ్ స్క్విరెల్ రాకీ యొక్క ధారావాహిక సాహసాలు. వారి సాహసాలలో ప్రధాన ప్రత్యర్థులు రష్యన్ లాంటి గూఢచారులు బోరిస్ బాడెనోవ్ మరియు నటాషా ఫాటలే. సహాయక విభాగాలలో డడ్లీ డూ-రైట్, పీబాడీస్ ఇంప్రాబబుల్ హిస్టరీ మరియు ఫ్రాక్చర్డ్ ఫెయిరీ టేల్స్ ఉన్నాయి."
+    },
+    "genres": [
+      "Comedy",
+      "Family"
+    ],
+    "year": 1959,
+    "runtime": null,
+    "totalEpisodes": 815,
+    "totalSeasons": 5,
+    "imdbRating": 7.147,
+    "studio": "Jay Ward Productions",
+    "language": "English",
+    "country": "US",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 4,
+    "popularityScore": 9,
+    "universe": null
+  },
+  {
+    "slug": "jackie-chan-adventures-2000",
+    "type": "CARTOON",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/by2GTFpd2BQ5uJxWPlfcmfrNrfB.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/cjvyqIvCKQtUzd3J5TbVnCFbSNZ.jpg",
+    "title": {
+      "en": "Jackie Chan Adventures",
+      "te": "Jackie Chan Adventures"
+    },
+    "description": {
+      "en": "Jackie Chan teams up with his 11-year-old fictive-niece, Jade, traveling the globe to locate a dozen magical talismans before the sinister Dark Hand. Helping Jackie and Jade is Uncle, a cantankerous but wise antiquities expert.",
+      "te": "జాకీ చాన్ తన 11 ఏళ్ల కల్పిత-మేనకోడలు జేడ్‌తో కలిసి, పాపాత్మకమైన డార్క్ హ్యాండ్‌కు ముందు డజను మాంత్రిక టాలిస్మాన్‌లను గుర్తించడానికి ప్రపంచవ్యాప్తంగా ప్రయాణిస్తున్నాడు. జాకీ మరియు జేడ్‌లకు సహాయం చేయడం అంకుల్, విచిత్రమైన కానీ తెలివైన పురాతన వస్తువుల నిపుణుడు."
+    },
+    "genres": [
+      "Action",
+      "Comedy",
+      "Sci-Fi"
+    ],
+    "year": 2000,
+    "runtime": null,
+    "totalEpisodes": 95,
+    "totalSeasons": 5,
+    "imdbRating": 8.17,
+    "studio": "Columbia TriStar Television",
+    "language": "English",
+    "country": "US",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 4,
+    "popularityScore": 9,
+    "universe": null
+  },
+  {
+    "slug": "dexter-s-laboratory-1996",
+    "type": "CARTOON",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/inJJn8lUPWdvdy2h259UnoHWVqC.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/yqKI437ohJAF9EQYkPYH0PTBDEt.jpg",
+    "title": {
+      "en": "Dexter's Laboratory",
+      "te": "Dexter's Laboratory"
+    },
+    "description": {
+      "en": "Dexter, a boy-genius with a secret laboratory, constantly battles his sister Dee Dee, who always gains access despite his best efforts to keep her out, as well as his arch-rival and neighbor, Mandark.",
+      "te": "డెక్స్టర్, ఒక రహస్య ప్రయోగశాలతో ఒక బాలుడు-మేధావి, తన సోదరి డీ డీతో నిరంతరం పోరాడుతూ ఉంటాడు, ఆమెను దూరంగా ఉంచడానికి అతను ఎంత ప్రయత్నించినా, అలాగే అతని ప్రధాన ప్రత్యర్థి మరియు పొరుగువాడు మాండార్క్‌తో ఎల్లప్పుడూ యాక్సెస్‌ను పొందుతుంది."
+    },
+    "genres": [
+      "Comedy",
+      "Sci-Fi"
+    ],
+    "year": 1996,
+    "runtime": null,
+    "totalEpisodes": 220,
+    "totalSeasons": 4,
+    "imdbRating": 7.656,
+    "studio": "Hanna-Barbera Cartoons",
+    "language": "English",
+    "country": "US",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 4,
+    "popularityScore": 9,
+    "universe": null
+  },
+  {
+    "slug": "archer-2009",
+    "type": "CARTOON",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/vhnrkTGYPqcB63ALcSJm0WoaKHT.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/c4dymvMQT45P1j9RnscRyeyyqSg.jpg",
+    "title": {
+      "en": "Archer",
+      "te": "Archer"
+    },
+    "description": {
+      "en": "Smart-mouthed superspy Sterling Archer and his dysfunctional team of secret agents turn dangerous missions into messy misadventures around the globe.",
+      "te": "స్మార్ట్-మౌత్ సూపర్‌స్పై స్టెర్లింగ్ ఆర్చర్ మరియు అతని పనిచేయని రహస్య ఏజెంట్ల బృందం ప్రమాదకరమైన మిషన్‌లను ప్రపంచవ్యాప్తంగా గజిబిజి దురదృష్టాలుగా మార్చారు."
+    },
+    "genres": [
+      "Comedy",
+      "Action"
+    ],
+    "year": 2009,
+    "runtime": null,
+    "totalEpisodes": 140,
+    "totalSeasons": 14,
+    "imdbRating": 7.948,
+    "studio": "Radical Axis",
+    "language": "English",
+    "country": "US",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 4,
+    "popularityScore": 9,
+    "universe": null
+  },
+  {
+    "slug": "batman-the-animated-series-1992",
+    "type": "CARTOON",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/lBomQFW1vlm1yUYMNSbFZ45R4Ox.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/4QnFxk03yAn7U2ZTL5oMCCqxlPc.jpg",
+    "title": {
+      "en": "Batman: The Animated Series",
+      "te": "Batman: The Animated Series"
+    },
+    "description": {
+      "en": "Vowing to avenge the murder of his parents, Bruce Wayne devotes his life to wiping out crime in Gotham City as the masked vigilante \"Batman\".",
+      "te": "తన తల్లిదండ్రుల హత్యకు ప్రతీకారం తీర్చుకుంటానని ప్రతిజ్ఞ చేస్తూ, బ్రూస్ వేన్ గోథమ్ సిటీలో \"బాట్‌మాన్\" అనే ముసుగు ధరించి నేరాలను నిర్మూలించడానికి తన జీవితాన్ని అంకితం చేశాడు."
+    },
+    "genres": [
+      "Action",
+      "Drama",
+      "Thriller"
+    ],
+    "year": 1992,
+    "runtime": null,
+    "totalEpisodes": 85,
+    "totalSeasons": 4,
+    "imdbRating": 8.6,
+    "studio": "DC",
+    "language": "English",
+    "country": "US",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 4,
+    "popularityScore": 8,
+    "universe": "dc"
+  },
+  {
+    "slug": "new-looney-tunes-2015",
+    "type": "CARTOON",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/AdROLFTm3nSnqcmkhPabqdRuETZ.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/h8tzpd1pqyKCu5V4lw3eUiO6L9Y.jpg",
+    "title": {
+      "en": "New Looney Tunes",
+      "te": "New Looney Tunes"
+    },
+    "description": {
+      "en": "Wabbit is an animated series starring Bugs Bunny. The series features many other Looney Tunes characters including Wile E. Coyote, Yosemite Sam, and the Tasmanian Devil.",
+      "te": "వాబిట్ అనేది బగ్స్ బన్నీ నటించిన యానిమేషన్ సిరీస్. ఈ ధారావాహికలో వైల్ E. కొయెట్, యోస్మైట్ సామ్ మరియు టాస్మానియన్ డెవిల్ వంటి అనేక ఇతర లూనీ ట్యూన్స్ పాత్రలు ఉన్నాయి."
+    },
+    "genres": [
+      "Comedy",
+      "Family"
+    ],
+    "year": 2015,
+    "runtime": null,
+    "totalEpisodes": 312,
+    "totalSeasons": 3,
+    "imdbRating": 7.056,
+    "studio": "Warner Bros. Animation",
+    "language": "English",
+    "country": "US",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 4,
+    "popularityScore": 8,
+    "universe": null
+  },
+  {
+    "slug": "lego-ninjago-dragons-rising-2023",
+    "type": "CARTOON",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/5q3tfPVAcL9AlFcb8HXsOdHEtJR.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/p1P0QJ3cqeBnODfyQd2ceEZ23KQ.jpg",
+    "title": {
+      "en": "LEGO Ninjago: Dragons Rising",
+      "te": "LEGO Ninjago: Dragons Rising"
+    },
+    "description": {
+      "en": "A phenomenon known as the Merge has caused many legendary realms to suddenly combine into one, but their union is unstable. A Spinjitzu Ninja Master must train a new generation of heroes to help find Elemental Dragons who can save the planet before the forces of evil use the same dragon energy to destroy this new world.",
+      "te": "మెర్జ్ అని పిలువబడే ఒక దృగ్విషయం అనేక పురాణ రాజ్యాలు అకస్మాత్తుగా ఒకదానిలో ఒకటిగా కలిసిపోయేలా చేసింది, కానీ వాటి యూనియన్ అస్థిరంగా ఉంది. ఈ కొత్త ప్రపంచాన్ని నాశనం చేయడానికి దుష్ట శక్తులు అదే డ్రాగన్ శక్తిని ఉపయోగించే ముందు గ్రహాన్ని రక్షించగల ఎలిమెంటల్ డ్రాగన్‌లను కనుగొనడంలో సహాయపడటానికి స్పిన్‌జిట్జు నింజా మాస్టర్ కొత్త తరం హీరోలకు శిక్షణ ఇవ్వాలి."
+    },
+    "genres": [
+      "Action"
+    ],
+    "year": 2023,
+    "runtime": null,
+    "totalEpisodes": 70,
+    "totalSeasons": 4,
+    "imdbRating": 8.1,
+    "studio": "WildBrain Studios",
+    "language": "English",
+    "country": "US",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 4,
+    "popularityScore": 8,
+    "universe": null
+  },
+  {
+    "slug": "regular-show-the-lost-tapes-2026",
+    "type": "CARTOON",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/jqY3dj70ffSqKpM8XVUEToOEeLG.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/Zk5UmvJ634LhA56R18h8RfipFG.jpg",
+    "title": {
+      "en": "Regular Show: The Lost Tapes",
+      "te": "Regular Show: The Lost Tapes"
+    },
+    "description": {
+      "en": "Familiar duo Mordecai and Rigby navigate mundane park jobs that inevitably spiral into surreal, chaotic disasters.",
+      "te": "సుపరిచితమైన ద్వయం మొర్డెకై మరియు రిగ్బీ లౌకిక పార్క్ ఉద్యోగాలను నావిగేట్ చేస్తారు, అవి అనివార్యంగా అధివాస్తవిక, అస్తవ్యస్తమైన విపత్తులుగా మారతాయి."
+    },
+    "genres": [
+      "Comedy",
+      "Action",
+      "Sci-Fi"
+    ],
+    "year": 2026,
+    "runtime": null,
+    "totalEpisodes": 12,
+    "totalSeasons": 1,
+    "imdbRating": 9.6,
+    "studio": "Cartoon Network Studios",
+    "language": "English",
+    "country": "US",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 4,
+    "popularityScore": 8,
+    "universe": null
+  },
+  {
+    "slug": "the-loud-house-2016",
+    "type": "CARTOON",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/v0xMCeZIkgBUQtiije0IDc8ReHr.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/36iVELhma9MawHkdMDPNRX8onEu.jpg",
+    "title": {
+      "en": "The Loud House",
+      "te": "The Loud House"
+    },
+    "description": {
+      "en": "Welcome to the Loud House, where life can get pretty crazy. One boy, TEN girls?! Lincoln Loud wouldn’t change it for the world!",
+      "te": "లౌడ్ హౌస్‌కి స్వాగతం, ఇక్కడ జీవితం చాలా పిచ్చిగా ఉంటుంది. ఒక అబ్బాయి, పది మంది అమ్మాయిలు?! లింకన్ లౌడ్ దానిని ప్రపంచానికి మార్చలేదు!"
+    },
+    "genres": [
+      "Comedy",
+      "Family",
+      "Thriller"
+    ],
+    "year": 2016,
+    "runtime": null,
+    "totalEpisodes": 413,
+    "totalSeasons": 10,
+    "imdbRating": 7.8,
+    "studio": "Nickelodeon Animation Studio",
+    "language": "English",
+    "country": "US",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 4,
+    "popularityScore": 8,
+    "universe": null
+  },
+  {
+    "slug": "the-flintstones-1960",
+    "type": "CARTOON",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/30P6ifagQ3fguTsI33KMmDLTAx6.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/jqweieg5sg0HLlVjugP9fWDiIJq.jpg",
+    "title": {
+      "en": "The Flintstones",
+      "te": "The Flintstones"
+    },
+    "description": {
+      "en": "The misadventures of two modern-day Stone Age families, the Flintstones and the Rubbles.",
+      "te": "రెండు ఆధునిక రాతియుగ కుటుంబాల దురదృష్టాలు, ది ఫ్లింట్‌స్టోన్స్ మరియు రూబుల్స్."
+    },
+    "genres": [
+      "Family",
+      "Comedy"
+    ],
+    "year": 1960,
+    "runtime": null,
+    "totalEpisodes": 166,
+    "totalSeasons": 6,
+    "imdbRating": 7.436,
+    "studio": "Hanna-Barbera Cartoons",
+    "language": "English",
+    "country": "US",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 4,
+    "popularityScore": 8,
+    "universe": null
+  },
+  {
+    "slug": "star-vs-the-forces-of-evil-2015",
+    "type": "CARTOON",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/dKFL1AOdKNoazqZDg1zq2z69Lx1.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/2UElp7Dkm3SiB9ZEdKEWNmAOijB.jpg",
+    "title": {
+      "en": "Star vs. the Forces of Evil",
+      "te": "Star vs. the Forces of Evil"
+    },
+    "description": {
+      "en": "Intergalactic warrior Star Butterfly arrives on Earth to live with the Diaz family. She continues to battle villains throughout the universe and high school, mainly to protect her extremely powerful wand, an object that still confuses her.",
+      "te": "నక్షత్రమండలాల మద్యవున్న యోధుడు స్టార్ బటర్‌ఫ్లై డియాజ్ కుటుంబంతో కలిసి జీవించడానికి భూమిపైకి వస్తుంది. ఆమె విశ్వం మరియు హైస్కూల్ అంతటా విలన్‌లతో పోరాడుతూనే ఉంది, ప్రధానంగా తన అత్యంత శక్తివంతమైన మంత్రదండం, ఆమెను ఇప్పటికీ గందరగోళానికి గురిచేసే వస్తువును రక్షించుకోవడానికి."
+    },
+    "genres": [
+      "Action",
+      "Comedy",
+      "Sci-Fi",
+      "Family"
+    ],
+    "year": 2015,
+    "runtime": null,
+    "totalEpisodes": 140,
+    "totalSeasons": 4,
+    "imdbRating": 8.4,
+    "studio": "Disney Television Animation",
+    "language": "English",
+    "country": "US",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 4,
+    "popularityScore": 8,
+    "universe": null
+  },
+  {
+    "slug": "arcane-2021",
+    "type": "CARTOON",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/abf8tHznhSvl9BAElD2cQeRr7do.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/q8eejQcg1bAqImEV8jh8RtBD4uH.jpg",
+    "title": {
+      "en": "Arcane",
+      "te": "Arcane"
+    },
+    "description": {
+      "en": "Amid the stark discord of twin cities Piltover and Zaun, two sisters fight on rival sides of a war between magic technologies and clashing convictions.",
+      "te": "జంట నగరాలైన పిల్టోవర్ మరియు జాన్‌ల యొక్క తీవ్ర అసమ్మతి మధ్య, ఇద్దరు సోదరీమణులు మాయా సాంకేతికతలకు మరియు సంఘర్షణల మధ్య జరిగే యుద్ధానికి ప్రత్యర్థి వైపులా పోరాడుతున్నారు."
+    },
+    "genres": [
+      "Action",
+      "Sci-Fi"
+    ],
+    "year": 2021,
+    "runtime": null,
+    "totalEpisodes": 18,
+    "totalSeasons": 2,
+    "imdbRating": 8.8,
+    "studio": "Fortiche Production",
+    "language": "English",
+    "country": "US",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 4,
+    "popularityScore": 8,
+    "universe": null
+  },
+  {
+    "slug": "robot-chicken-2005",
+    "type": "CARTOON",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/lMZv3mJC9QRolgzflM3ajtB3o2U.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/mofoDq8K1tvhSKE00NrlLkS7Mrg.jpg",
+    "title": {
+      "en": "Robot Chicken",
+      "te": "Robot Chicken"
+    },
+    "description": {
+      "en": "A series of pop-culture parodies using stop-motion animation of toys, action figures and dolls. The title character was an ordinary chicken until he was run down by a car and subsequently brought back to life in cyborg form by mad scientist Fritz Huhnmorder, who tortures Robot Chicken by forcing him to watch a random selection of TV shows, the sketches that make up the body of each episode.",
+      "te": "బొమ్మలు, యాక్షన్ బొమ్మలు మరియు బొమ్మల స్టాప్-మోషన్ యానిమేషన్ ఉపయోగించి పాప్-కల్చర్ పేరడీల శ్రేణి. టైటిల్ క్యారెక్టర్ ఒక సాధారణ కోడి పాత్రతో అతను కారుతో పరుగెత్తాడు మరియు తరువాత సైబోర్గ్ రూపంలో పిచ్చి శాస్త్రవేత్త ఫ్రిట్జ్ హుహ్న్‌మోర్డర్ చేత తిరిగి ప్రాణం పోసాడు, అతను రోబోట్ చికెన్‌ను యాదృచ్ఛికంగా ఎంపిక చేసిన టీవీ షోలను చూడమని బలవంతం చేయడం ద్వారా హింసిస్తాడు, ప్రతి ఎపిసోడ్ యొక్క బాడీని రూపొందించే స్కెచ్‌లు."
+    },
+    "genres": [
+      "Comedy"
+    ],
+    "year": 2005,
+    "runtime": null,
+    "totalEpisodes": 218,
+    "totalSeasons": 11,
+    "imdbRating": 7.641,
+    "studio": "Williams Street",
+    "language": "English",
+    "country": "US",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 4,
+    "popularityScore": 8,
+    "universe": null
+  },
+  {
+    "slug": "bluey-2018",
+    "type": "CARTOON",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/b9mY0X5T20ZM073hoa5n0dgmbfN.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/g88VMPtog8sl8riaIRtz4U80dMK.jpg",
+    "title": {
+      "en": "Bluey",
+      "te": "Bluey"
+    },
+    "description": {
+      "en": "Bluey is an inexhaustible six year-old Blue Heeler dog, who loves to play and turns everyday family life into extraordinary adventures, developing her imagination as well as her mental, physical and emotional resilience.",
+      "te": "బ్లూయ్ అనేది తరగని ఆరేళ్ల బ్లూ హీలర్ కుక్క, ఇది ఆడటానికి ఇష్టపడుతుంది మరియు రోజువారీ కుటుంబ జీవితాన్ని అసాధారణ సాహసాలుగా మారుస్తుంది, ఆమె ఊహతో పాటు ఆమె మానసిక, శారీరక మరియు భావోద్వేగ స్థితిస్థాపకతను అభివృద్ధి చేస్తుంది."
+    },
+    "genres": [
+      "Comedy",
+      "Family"
+    ],
+    "year": 2018,
+    "runtime": null,
+    "totalEpisodes": 154,
+    "totalSeasons": 3,
+    "imdbRating": 8.572,
+    "studio": "Ludo Studio",
+    "language": "English",
+    "country": "AU",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 4,
+    "popularityScore": 8,
+    "universe": null
+  },
+  {
+    "slug": "the-smurfs-1981",
+    "type": "CARTOON",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/cezQyM5cO454vUdLiLOkv78K64D.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/1szJqm8ksrwbPheLfEZn2ohTGbg.jpg",
+    "title": {
+      "en": "The Smurfs",
+      "te": "The Smurfs"
+    },
+    "description": {
+      "en": "Classic Saturday-morning cartoon series featuring magical blue elf-like creatures called Smurfs. The Smurfs, named for their personalities, inhabit a village of mushroom houses in an enchanted forest. These loveable creatures are led by Papa Smurf and live carefree... except for one major threat to their existance: Gargamel, an evil but inept wizard who lives in a stone-built house in the forest; and his feline companion, the equally nasty Azrael. ",
+      "te": "క్లాసిక్ శనివారం-ఉదయం కార్టూన్ సిరీస్‌లో స్మర్ఫ్స్ అని పిలువబడే ఇంద్రజాలమైన నీలిరంగు ఎల్ఫ్ లాంటి జీవులు ఉన్నాయి. స్మర్ఫ్‌లు, వారి వ్యక్తిత్వాలకు పేరు పెట్టారు, మంత్రముగ్ధమైన అడవిలో పుట్టగొడుగుల ఇళ్లలో నివసిస్తున్నారు. ఈ ప్రేమగల జీవులు పాపా స్మర్ఫ్‌చే నాయకత్వం వహించబడతాయి మరియు నిర్లక్ష్యంగా జీవిస్తాయి... వాటి ఉనికికి ఒక పెద్ద ముప్పు తప్ప: గార్గామెల్, అడవిలో రాతితో నిర్మించిన ఇంట్లో నివసించే ఒక చెడ్డ కానీ పనికిమాలిన మాంత్రికుడు; మరియు అతని పిల్లి జాతి సహచరుడు, అదే అసహ్యకరమైన అజ్రేల్."
+    },
+    "genres": [
+      "Family",
+      "Sci-Fi",
+      "Comedy"
+    ],
+    "year": 1981,
+    "runtime": null,
+    "totalEpisodes": 422,
+    "totalSeasons": 9,
+    "imdbRating": 6.999,
+    "studio": "SEPP International",
+    "language": "English",
+    "country": "US",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 4,
+    "popularityScore": 7,
+    "universe": null
+  },
+  {
+    "slug": "garfield-and-friends-1988",
+    "type": "CARTOON",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/pE6l6I1ICKOu4pDUXxkl87TTLZx.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/4qcNKcng7HYlKJJ0DFYIH52gWNF.jpg",
+    "title": {
+      "en": "Garfield and Friends",
+      "te": "Garfield and Friends"
+    },
+    "description": {
+      "en": "The animated stories of Garfield the cat, Odie the dog, their owner Jon and the trouble they get into. And also Orson the Pig and his adventures on a farm with his fellow farm animals.",
+      "te": "గార్ఫీల్డ్ ది క్యాట్, ఓడీ ది డాగ్, వాటి యజమాని జోన్ మరియు వారు పడే ఇబ్బందుల గురించి యానిమేటెడ్ కథలు. మరియు ఓర్సన్ ది పిగ్ మరియు అతని తోటి వ్యవసాయ జంతువులతో పొలంలో అతని సాహసాలు."
+    },
+    "genres": [
+      "Comedy"
+    ],
+    "year": 1988,
+    "runtime": null,
+    "totalEpisodes": 363,
+    "totalSeasons": 7,
+    "imdbRating": 7.27,
+    "studio": "Paws",
+    "language": "English",
+    "country": "US",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 4,
+    "popularityScore": 7,
+    "universe": null
+  },
+  {
+    "slug": "we-bare-bears-2015",
+    "type": "CARTOON",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/3xWzlLZ0kAD6SkVZTekFM9lxZyP.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/sgR3BjAOcpyxV9Rq7l1BGm3fXQ8.jpg",
+    "title": {
+      "en": "We Bare Bears",
+      "te": "We Bare Bears"
+    },
+    "description": {
+      "en": "Three brother bears awkwardly attempt to find their place in civilized  society, whether they're looking for food, trying to make human friends,  or scheming to become famous on the internet. Grizzly, Panda and Ice  Bear stack atop one another when they leave their cave and explore the  hipster environs of the San Francisco Bay Area, and it's clear the  siblings have a lot to learn about a technologically driven world. By  their side on many adventures are best friend Chloe (the only human  character in the cast), fame-obsessed panda Nom Nom, and Charlie, aka  Bigfoot.",
+      "te": "ముగ్గురు సోదరులు ఎలుగుబంట్లు నాగరిక సమాజంలో తమ స్థానాన్ని కనుగొనడానికి వికారంగా ప్రయత్నిస్తారు, వారు ఆహారం కోసం చూస్తున్నారా, మానవ స్నేహితులను సంపాదించడానికి ప్రయత్నిస్తున్నారు లేదా ఇంటర్నెట్‌లో ప్రసిద్ధి చెందడానికి కుట్ర పన్నుతున్నారు. గ్రిజ్లీ, పాండా మరియు ఐస్ బేర్ తమ గుహను విడిచిపెట్టి, శాన్ ఫ్రాన్సిస్కో బే ఏరియాలోని హిప్‌స్టర్ పరిసరాలను అన్వేషించేటప్పుడు ఒకదానిపై ఒకటి పేర్చుకుంటారు మరియు సాంకేతికంగా నడిచే ప్రపంచం గురించి తోబుట్టువులు చాలా నేర్చుకోవాలి. అనేక సాహసాలలో వారి పక్షాన బెస్ట్ ఫ్రెండ్ క్లో (తారాగణంలోని ఏకైక మానవ పాత్ర), కీర్తి-నిమగ్నమైన పాండా నోమ్ నోమ్ మరియు చార్లీ, అకా బిగ్‌ఫుట్ ఉన్నారు."
+    },
+    "genres": [
+      "Family",
+      "Comedy"
+    ],
+    "year": 2015,
+    "runtime": null,
+    "totalEpisodes": 138,
+    "totalSeasons": 4,
+    "imdbRating": 7.73,
+    "studio": "Cartoon Network Studios",
+    "language": "English",
+    "country": "US",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 4,
+    "popularityScore": 7,
+    "universe": null
+  },
+  {
+    "slug": "kim-possible-2002",
+    "type": "CARTOON",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/xAIm6KkiQKl0UsagMUyhLFzX2X2.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/tn6eklZGq8T0OQuI9kBPpkojIYX.jpg",
+    "title": {
+      "en": "Kim Possible",
+      "te": "Kim Possible"
+    },
+    "description": {
+      "en": "If there's danger or trouble, Kim Possible is there on the double to save the world from villains... and still make it home in time for cheerleading practice! Luckily, Kim has her sidekick Ron Stoppable and his pet naked mole-rat Rufus by her side.",
+      "te": "ప్రమాదం లేదా ఇబ్బంది ఉంటే, విలన్‌ల నుండి ప్రపంచాన్ని రక్షించడానికి కిమ్ పాజిబుల్ రెట్టింపుగా ఉన్నారు... ఇంకా ఛీర్‌లీడింగ్ ప్రాక్టీస్ కోసం సమయానికి ఇంటికి చేరుకోండి! అదృష్టవశాత్తూ, కిమ్ పక్కన ఆమె సైడ్‌కిక్ రాన్ స్టాపబుల్ మరియు అతని పెంపుడు నేక్డ్ మోల్-ఎలుక రూఫస్ ఉన్నారు."
+    },
+    "genres": [
+      "Action",
+      "Comedy"
+    ],
+    "year": 2002,
+    "runtime": null,
+    "totalEpisodes": 86,
+    "totalSeasons": 4,
+    "imdbRating": 7.521,
+    "studio": "Disney Television Animation",
+    "language": "English",
+    "country": "US",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 4,
+    "popularityScore": 7,
+    "universe": null
+  },
+  {
+    "slug": "steven-universe-2013",
+    "type": "CARTOON",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/8zRstOgaipruJPlsHK2diMx4lPy.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/e5YSF0Inv9eL77jv2WQtNOOB3Bg.jpg",
+    "title": {
+      "en": "Steven Universe",
+      "te": "Steven Universe"
+    },
+    "description": {
+      "en": "A young boy takes his mother's place in a group of gemstone-based beings, and must learn to control his powers.",
+      "te": "ఒక చిన్న పిల్లవాడు రత్నాల ఆధారిత జీవుల సమూహంలో తన తల్లి స్థానాన్ని తీసుకుంటాడు మరియు అతని శక్తులను నియంత్రించడం నేర్చుకోవాలి."
+    },
+    "genres": [
+      "Action",
+      "Comedy",
+      "Sci-Fi",
+      "Family"
+    ],
+    "year": 2013,
+    "runtime": null,
+    "totalEpisodes": 154,
+    "totalSeasons": 5,
+    "imdbRating": 8.4,
+    "studio": "Cartoon Network Studios",
+    "language": "English",
+    "country": "US",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 4,
+    "popularityScore": 7,
+    "universe": null
+  },
+  {
+    "slug": "devil-may-cry-2025",
+    "type": "CARTOON",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/mX9tqfpjqwreONJHhap7SnSSowe.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/nLyXXIDMpDHvUgxchezxuhoJ4Ej.jpg",
+    "title": {
+      "en": "Devil May Cry",
+      "te": "Devil May Cry"
+    },
+    "description": {
+      "en": "In this epic battle of good vs. evil, the lines are blurry as hell. But a devilishly handsome demon hunter could be the world's best hope for salvation.",
+      "te": "మంచి వర్సెస్ చెడు యొక్క ఈ పురాణ యుద్ధంలో, పంక్తులు నరకం వలె అస్పష్టంగా ఉన్నాయి. కానీ ఒక దెయ్యంలా అందంగా ఉండే దెయ్యాల వేటగాడు మోక్షానికి ప్రపంచంలోని ఉత్తమ ఆశగా ఉంటాడు."
+    },
+    "genres": [
+      "Action",
+      "Sci-Fi"
+    ],
+    "year": 2025,
+    "runtime": null,
+    "totalEpisodes": 16,
+    "totalSeasons": 2,
+    "imdbRating": 8.256,
+    "studio": "Capcom",
+    "language": "English",
+    "country": "US",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 4,
+    "popularityScore": 7,
+    "universe": null
+  },
+  {
+    "slug": "blaze-and-the-monster-machines-2014",
+    "type": "CARTOON",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/5DzjYIdgoePjMlmS7RCyUYWhpIK.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/5KrC0kondGLZ6cgZNrOazPYSXGb.jpg",
+    "title": {
+      "en": "Blaze and the Monster Machines",
+      "te": "Blaze and the Monster Machines"
+    },
+    "description": {
+      "en": "AJ is an 8-year-old techie who drives monster-truck Blaze, the top racer in Axle City. The two go on adventures that have them taking on problems involving science and math. Many predicaments they face are caused by Blaze's rival, Crusher, a tractor-trailer that will do anything to beat other vehicles to the finish line. The animated series is billed as the first TV show for preschoolers to comprehensively cover areas of science, technology, engineering and math. Each episode introduces different STEM concepts, including buoyancy and trajectory.",
+      "te": "AJ యాక్సిల్ సిటీలో టాప్ రేసర్ అయిన మాన్స్టర్-ట్రక్ బ్లేజ్‌ను నడుపుతున్న 8 ఏళ్ల టెక్కీ. ఇద్దరూ సైన్స్ మరియు గణితానికి సంబంధించిన సమస్యలను తీసుకునే సాహసాలకు వెళతారు. వారు ఎదుర్కొనే అనేక కష్టాలు బ్లేజ్ యొక్క ప్రత్యర్థి, క్రషర్, ఒక ట్రాక్టర్-ట్రైలర్ కారణంగా ఇతర వాహనాలను ముగింపు రేఖకు అధిగమించడానికి ఏదైనా చేయగలవు. సైన్స్, టెక్నాలజీ, ఇంజనీరింగ్ మరియు గణిత రంగాలను సమగ్రంగా కవర్ చేయడానికి ప్రీస్కూలర్‌ల కోసం యానిమేటెడ్ సిరీస్ మొదటి టీవీ షోగా బిల్ చేయబడింది. ప్రతి ఎపిసోడ్ తేలే మరియు పథంతో సహా విభిన్న STEM భావనలను పరిచయం చేస్తుంది."
+    },
+    "genres": [
+      "Family",
+      "Comedy"
+    ],
+    "year": 2014,
+    "runtime": null,
+    "totalEpisodes": 178,
+    "totalSeasons": 9,
+    "imdbRating": 7.366,
+    "studio": "Nerd Corps Entertainment",
+    "language": "English",
+    "country": "CA",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 4,
+    "popularityScore": 7,
+    "universe": null
+  },
+  {
+    "slug": "craig-of-the-creek-2018",
+    "type": "CARTOON",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/u4LaONJSBi0khRe2L8nqBk81dlc.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/c1CBVe8UzltKScrjnM3aBFd8SA1.jpg",
+    "title": {
+      "en": "Craig of the Creek",
+      "te": "Craig of the Creek"
+    },
+    "description": {
+      "en": "Craig and his two friends, Kelsey and JP, embark on adventures in the untamed wilderness of the Creek, a place where children can run wild and free. The group of friends solve mysteries, fulfil quests and compete in battles against the other kids.",
+      "te": "క్రెయిగ్ మరియు అతని ఇద్దరు స్నేహితులు, కెల్సే మరియు JP, పిల్లలు క్రూరంగా మరియు స్వేచ్ఛగా పరిగెత్తగల క్రీక్ యొక్క అపరిమితమైన అరణ్యంలో సాహసాలను ప్రారంభించారు. స్నేహితుల సమూహం రహస్యాలను పరిష్కరిస్తుంది, అన్వేషణలను పూర్తి చేస్తుంది మరియు ఇతర పిల్లలతో యుద్ధాలలో పోటీపడుతుంది."
+    },
+    "genres": [
+      "Action",
+      "Comedy"
+    ],
+    "year": 2018,
+    "runtime": null,
+    "totalEpisodes": 172,
+    "totalSeasons": 6,
+    "imdbRating": 8.1,
+    "studio": "Cartoon Network Studios",
+    "language": "English",
+    "country": "US",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 4,
+    "popularityScore": 7,
+    "universe": null
+  },
+  {
+    "slug": "star-wars-visions-2021",
+    "type": "CARTOON",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/lG9ltUP4FwvsQBcwOJYceDbP48E.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/m2QTmJhe36uKrkQjC1MsNV7Dcqp.jpg",
+    "title": {
+      "en": "Star Wars: Visions",
+      "te": "Star Wars: Visions"
+    },
+    "description": {
+      "en": "This anthology of animated shorts from around the world celebrates the mythos of Star Wars through unique cultural lenses.",
+      "te": "ప్రపంచవ్యాప్తంగా ఉన్న యానిమేటెడ్ లఘు చిత్రాల ఈ సంకలనం ప్రత్యేకమైన సాంస్కృతిక లెన్స్‌ల ద్వారా స్టార్ వార్స్ యొక్క పురాణాలను జరుపుకుంటుంది."
+    },
+    "genres": [
+      "Sci-Fi",
+      "Action"
+    ],
+    "year": 2021,
+    "runtime": null,
+    "totalEpisodes": 27,
+    "totalSeasons": 3,
+    "imdbRating": 7.086,
+    "studio": "Lucasfilm Ltd.",
+    "language": "English",
+    "country": "JP",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 4,
+    "popularityScore": 7,
+    "universe": null
+  },
+  {
+    "slug": "the-powerpuff-girls-1998",
+    "type": "CARTOON",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/468mmhMd21pY4Yx0S0woqeEcxtL.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/hNwcgo06myd7ei7p8A1Y1b0VabU.jpg",
+    "title": {
+      "en": "The Powerpuff Girls",
+      "te": "The Powerpuff Girls"
+    },
+    "description": {
+      "en": "The Powerpuff Girls is a animated television series about Blossom, Bubbles, and Buttercup, three kindergarten-aged girls with superpowers, as well as their \"father\", the brainy scientist Professor Utonium, who all live in the fictional city of Townsville, USA. The girls are frequently called upon by the town's childlike and naive mayor to help fight nearby criminals using their powers.",
+      "te": "ది పవర్‌పఫ్ గర్ల్స్ అనేది బ్లోసమ్, బబుల్స్ మరియు బటర్‌కప్ గురించి యానిమేటెడ్ టెలివిజన్ ధారావాహిక, సూపర్ పవర్స్ ఉన్న ముగ్గురు కిండర్ గార్టెన్-వయస్సు అమ్మాయిలు, అలాగే వారి \"తండ్రి\", మెదడు గల శాస్త్రవేత్త ప్రొఫెసర్ యుటోనియం, వీరంతా USAలోని కల్పిత నగరమైన టౌన్స్‌విల్లేలో నివసిస్తున్నారు. వారి అధికారాలను ఉపయోగించి సమీపంలోని నేరస్థులతో పోరాడటానికి పట్టణం యొక్క చిన్నపిల్లలు మరియు అమాయక మేయర్ ద్వారా అమ్మాయిలను తరచుగా పిలుస్తుంటారు."
+    },
+    "genres": [
+      "Action",
+      "Comedy",
+      "Family"
+    ],
+    "year": 1998,
+    "runtime": null,
+    "totalEpisodes": 135,
+    "totalSeasons": 6,
+    "imdbRating": 7.5,
+    "studio": "Cartoon Network Studios",
+    "language": "English",
+    "country": "US",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 3,
+    "popularityScore": 7,
+    "universe": null
+  },
+  {
+    "slug": "mickey-mouse-clubhouse-2006",
+    "type": "CARTOON",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/gHtEhlAZHxMawOiPq7JoKwkmETQ.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/89BPrKS6BoktBPTfWcHMQrFNo8s.jpg",
+    "title": {
+      "en": "Mickey Mouse Clubhouse",
+      "te": "Mickey Mouse Clubhouse"
+    },
+    "description": {
+      "en": "Mickey and his friends Minnie, Donald, Pluto, Daisy, Goofy, Pete, Clarabelle and more go on fun and educational adventures.",
+      "te": "మిక్కీ మరియు అతని స్నేహితులు మిన్నీ, డోనాల్డ్, ప్లూటో, డైసీ, గూఫీ, పీట్, క్లారాబెల్లె మరియు మరిన్ని వినోదాలు మరియు విద్యాపరమైన సాహసాలు చేస్తారు."
+    },
+    "genres": [
+      "Comedy",
+      "Sci-Fi",
+      "Action"
+    ],
+    "year": 2006,
+    "runtime": null,
+    "totalEpisodes": 123,
+    "totalSeasons": 4,
+    "imdbRating": 6.76,
+    "studio": "Disney Television Animation",
+    "language": "English",
+    "country": "US",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 3,
+    "popularityScore": 7,
+    "universe": null
+  },
+  {
+    "slug": "animaniacs-1993",
+    "type": "CARTOON",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/c1b2UtrhbMOdHKISB2ZvINo9eyc.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/8TThBwlIZnzCFkj21rv5Nv2lTNG.jpg",
+    "title": {
+      "en": "Animaniacs",
+      "te": "Animaniacs"
+    },
+    "description": {
+      "en": "The two Warner Brothers Yakko and Wakko and their Warner sister Dot had been (supposedly) created in the 1930's, but their cartoons were too screwy for the general public to handle. The three Warners were locked up in the studio water tower until they escaped in the 90's. There, they run wild, causing chaos everywhere!",
+      "te": "ఇద్దరు వార్నర్ బ్రదర్స్ యక్కో మరియు వక్కో మరియు వారి వార్నర్ సోదరి డాట్ 1930లలో సృష్టించబడ్డారు (అనుకోవచ్చు), కానీ వారి కార్టూన్‌లు సాధారణ ప్రజలకు నిర్వహించలేని విధంగా చాలా స్క్రూగా ఉన్నాయి. ముగ్గురు వార్నర్‌లు 90వ దశకంలో తప్పించుకునే వరకు స్టూడియో వాటర్ టవర్‌లో బంధించబడ్డారు. అక్కడ, వారు క్రూరంగా పరిగెత్తుతారు, ప్రతిచోటా గందరగోళానికి కారణమవుతుంది!"
+    },
+    "genres": [
+      "Comedy",
+      "Family"
+    ],
+    "year": 1993,
+    "runtime": null,
+    "totalEpisodes": 275,
+    "totalSeasons": 5,
+    "imdbRating": 8.011,
+    "studio": "Warner Bros. Animation",
+    "language": "English",
+    "country": "US",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 3,
+    "popularityScore": 7,
+    "universe": null
+  },
+  {
+    "slug": "johnny-bravo-1997",
+    "type": "CARTOON",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/obbdeoOk8XSXzJrWGiBbaeMMSMl.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/qrWv2VPdtELZTAalvpCerB1mAXz.jpg",
+    "title": {
+      "en": "Johnny Bravo",
+      "te": "Johnny Bravo"
+    },
+    "description": {
+      "en": "Johnny Bravo tells the story of a biceps-bulging, karate-chopping free spirit who believes he is a gift from God to the women of the earth. Unfortunately for Johnny, everyone else sees him as a narcissistic Mama's boy with big muscles and even bigger hair. In short, he is the quintessential guy who 'just doesn't get it.' No matter what he does, or where he finds himself, he always winds up being his own worst enemy.",
+      "te": "జానీ బ్రావో కండరపుష్టితో ఉబ్బిన, కరాటే-ఛేపింగ్ ఫ్రీ స్పిరిట్ యొక్క కథను చెబుతాడు, అతను భూమిపై ఉన్న మహిళలకు దేవుడు ఇచ్చిన బహుమతి అని నమ్ముతాడు. దురదృష్టవశాత్తూ జానీకి, మిగతా అందరూ అతన్ని పెద్ద కండరాలు మరియు పెద్ద జుట్టుతో నార్సిసిస్టిక్ మామా అబ్బాయిగా చూస్తారు. సంక్షిప్తంగా, అతను 'అది అర్థం చేసుకోని' అత్యుత్తమ వ్యక్తి. అతను ఏమి చేసినా, లేదా అతను ఎక్కడ తనను తాను కనుగొన్నా, అతను ఎల్లప్పుడూ తన స్వంత చెత్త శత్రువుగా ఉంటాడు."
+    },
+    "genres": [
+      "Comedy",
+      "Family"
+    ],
+    "year": 1997,
+    "runtime": null,
+    "totalEpisodes": 181,
+    "totalSeasons": 4,
+    "imdbRating": 7.284,
+    "studio": "Hanna-Barbera Cartoons",
+    "language": "English",
+    "country": "US",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 3,
+    "popularityScore": 7,
+    "universe": null
+  },
+  {
+    "slug": "teenage-mutant-ninja-turtles-2012",
+    "type": "CARTOON",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/n0DN6kJf0kGeuNFUYLT6eZe5ERR.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/jdri5Eu0yQfPe6h0MbOM7hbXrZC.jpg",
+    "title": {
+      "en": "Teenage Mutant Ninja Turtles",
+      "te": "Teenage Mutant Ninja Turtles"
+    },
+    "description": {
+      "en": "The Teenage Mutant Ninja Turtles are back in an all-new animated series on Nickelodeon! Surfacing topside for the first time on their fifteenth birthday, the titular turtles, Leonardo, Michelangelo, Raphael and Donatello, find that life out of the sewers isn't exactly what they thought it would be. Now the turtles must work together as a team to take on new enemies that arise to take over New York City.",
+      "te": "టీనేజ్ ముటాంట్ నింజా తాబేళ్లు నికెలోడియన్‌లో సరికొత్త యానిమేటెడ్ సిరీస్‌లో తిరిగి వచ్చాయి! తమ పదిహేనవ పుట్టినరోజున మొదటిసారిగా టాప్‌సైడ్‌పైకి రావడంతో, పేరుగల తాబేళ్లు, లియోనార్డో, మైఖేలాంజెలో, రాఫెల్ మరియు డొనాటెల్లో, మురుగు కాలువల నుండి బయటికి వచ్చిన జీవితం తాము అనుకున్నట్లుగా లేదని గుర్తించాయి. ఇప్పుడు తాబేళ్లు న్యూయార్క్ నగరాన్ని స్వాధీనం చేసుకునేందుకు ఉత్పన్నమయ్యే కొత్త శత్రువులను ఎదుర్కోవడానికి జట్టుగా కలిసి పని చేయాలి."
+    },
+    "genres": [
+      "Action",
+      "Sci-Fi",
+      "Comedy"
+    ],
+    "year": 2012,
+    "runtime": null,
+    "totalEpisodes": 124,
+    "totalSeasons": 5,
+    "imdbRating": 8.324,
+    "studio": "Nickelodeon Animation Studio",
+    "language": "English",
+    "country": "US",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 3,
+    "popularityScore": 7,
+    "universe": null
+  },
+  {
+    "slug": "what-if--2021",
+    "type": "CARTOON",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/lztz5XBMG1x6Y5ubz7CxfPFsAcW.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/jnzoh5qoxRLFRIQAxnl6D3RStPC.jpg",
+    "title": {
+      "en": "What If...?",
+      "te": "What If...?"
+    },
+    "description": {
+      "en": "Taking inspiration from the comic books of the same name, each episode of this animated anthology series questions, revisits and twists classic Marvel Cinematic moments.",
+      "te": "అదే పేరుతో ఉన్న కామిక్ పుస్తకాలను స్ఫూర్తిగా తీసుకుని, ఈ యానిమేటెడ్ ఆంథాలజీ సిరీస్‌లోని ప్రతి ఎపిసోడ్ క్లాసిక్ మార్వెల్ సినిమాటిక్ మూమెంట్‌లను ప్రశ్నలు, పునశ్చరణలు మరియు మలుపులు తిప్పుతుంది."
+    },
+    "genres": [
+      "Action",
+      "Sci-Fi"
+    ],
+    "year": 2021,
+    "runtime": null,
+    "totalEpisodes": 26,
+    "totalSeasons": 3,
+    "imdbRating": 8.054,
+    "studio": "Marvel Studios",
+    "language": "English",
+    "country": "US",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 3,
+    "popularityScore": 7,
+    "universe": null
+  },
+  {
+    "slug": "summer-camp-island-2018",
+    "type": "CARTOON",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/syipk7iIpV4DTvGuBuEqrVbAbaY.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/AqCZow3yUrQn8ltGgS0p1dcBqLo.jpg",
+    "title": {
+      "en": "Summer Camp Island",
+      "te": "Summer Camp Island"
+    },
+    "description": {
+      "en": "Oscar and Hedgehog are dropped off at a strange summer camp, full of fantastical things ranging from magical camp counselors to sticky notes that are portals to other dimensions.",
+      "te": "ఆస్కార్ మరియు ముళ్ల పంది విచిత్రమైన వేసవి శిబిరంలో వదిలివేయబడ్డారు, మాయా క్యాంప్ కౌన్సెలర్‌ల నుండి ఇతర పరిమాణాలకు పోర్టల్‌లుగా ఉండే స్టిక్కీ నోట్‌ల వరకు అద్భుతమైన విషయాలు ఉన్నాయి."
+    },
+    "genres": [
+      "Comedy",
+      "Sci-Fi",
+      "Family"
+    ],
+    "year": 2018,
+    "runtime": null,
+    "totalEpisodes": 120,
+    "totalSeasons": 6,
+    "imdbRating": 7.7,
+    "studio": "Cartoon Network Studios",
+    "language": "English",
+    "country": "US",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 3,
+    "popularityScore": 7,
+    "universe": null
+  },
+  {
+    "slug": "the-penguins-of-madagascar-2008",
+    "type": "CARTOON",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/1fRG81M83HgwupmndtgZQOBHh8o.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/tdDRR3qnwwicr2DJbaaF8CDW168.jpg",
+    "title": {
+      "en": "The Penguins of Madagascar",
+      "te": "The Penguins of Madagascar"
+    },
+    "description": {
+      "en": "The adventures of four penguins—Skipper, Kowalski, Private, and Rico, who perform various commando-like missions to protect their home in the Central Park Zoo. The penguins often have to deal with problems caused, or made worse, by their zoo neighbors, King Julien XIII (a ring-tailed lemur), Maurice (an aye-aye), and Mort (a mouse lemur).",
+      "te": "సెంట్రల్ పార్క్ జంతుప్రదర్శనశాలలో తమ ఇంటిని రక్షించుకోవడానికి వివిధ కమాండో-వంటి మిషన్‌లను నిర్వహించే నాలుగు పెంగ్విన్‌ల సాహసాలు—స్కిప్పర్, కోవాల్స్కీ, ప్రైవేట్ మరియు రికో. పెంగ్విన్‌లు తమ జూ పొరుగువారు, కింగ్ జూలియన్ XIII (రింగ్-టెయిల్డ్ లెమర్), మారిస్ (ఆయ్-ఆయ్) మరియు మోర్ట్ (మౌస్ లెమర్) వల్ల కలిగే సమస్యలను తరచుగా ఎదుర్కోవలసి ఉంటుంది."
+    },
+    "genres": [
+      "Comedy",
+      "Family"
+    ],
+    "year": 2008,
+    "runtime": null,
+    "totalEpisodes": 149,
+    "totalSeasons": 3,
+    "imdbRating": 7.435,
+    "studio": "DreamWorks Animation",
+    "language": "English",
+    "country": "US",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": false,
+    "isTrending": false,
+    "isTopRated": false,
+    "isFeatured": false,
+    "trendingScore": 3,
+    "popularityScore": 7,
+    "universe": null
+  },
+  {
+    "slug": "the-legend-of-korra-2012",
+    "type": "CARTOON",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/dZgYvSfuh1YHDrJuILlVQ5oA2hF.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/hmrNfrUl3FFaymDj6Iw5oKQjIs2.jpg",
+    "title": {
+      "en": "The Legend of Korra",
+      "te": "The Legend of Korra"
+    },
+    "description": {
+      "en": "Avatar Korra, a headstrong, rebellious, feisty young woman who continually challenges and breaks with tradition, is on her quest to become a fully realized Avatar. In this story, the Avatar struggles to find balance within herself.",
+      "te": "అవతార్ కొర్రా, ఒక తలరాతగల, తిరుగుబాటు చేసే, క్రూరమైన యువతి, నిరంతరం సవాళ్లను ఎదుర్కొంటూ మరియు సంప్రదాయాన్ని విచ్ఛిన్నం చేస్తుంది, పూర్తిగా గ్రహించిన అవతార్ కావాలనే తపనతో ఉంది. ఈ కథలో, అవతార్ తనలో సమతుల్యతను కనుగొనడానికి పోరాడుతుంది."
+    },
+    "genres": [
+      "Action",
+      "Sci-Fi",
+      "Drama"
+    ],
+    "year": 2012,
+    "runtime": null,
+    "totalEpisodes": 52,
+    "totalSeasons": 4,
+    "imdbRating": 8.217,
+    "studio": "Pierrot",
+    "language": "English",
+    "country": "US",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 3,
+    "popularityScore": 6,
+    "universe": null
+  },
+  {
+    "slug": "hazbin-hotel-2024",
+    "type": "CARTOON",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/aVYHMW8pdzJ9qG1OGRMKyGy9xor.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/9K6QtLqyocVHgIZe4yqCIl1q2ZR.jpg",
+    "title": {
+      "en": "Hazbin Hotel",
+      "te": "Hazbin Hotel"
+    },
+    "description": {
+      "en": "In attempt to find a non-violent alternative for reducing Hell's overpopulation, the daughter of Lucifer opens a rehabilitation hotel that offers a group of misfit demons a chance at redemption.",
+      "te": "హెల్ యొక్క అధిక జనాభాను తగ్గించడానికి అహింసాత్మక ప్రత్యామ్నాయాన్ని కనుగొనే ప్రయత్నంలో, లూసిఫెర్ కుమార్తె ఒక పునరావాస హోటల్‌ను తెరుస్తుంది, అది మిస్‌ఫిట్ రాక్షసుల సమూహానికి విముక్తికి అవకాశం కల్పిస్తుంది."
+    },
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Sci-Fi"
+    ],
+    "year": 2024,
+    "runtime": null,
+    "totalEpisodes": 16,
+    "totalSeasons": 5,
+    "imdbRating": 8.575,
+    "studio": "A24",
+    "language": "English",
+    "country": "US",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 3,
+    "popularityScore": 6,
+    "universe": null
+  },
+  {
+    "slug": "hey-arnold--1996",
+    "type": "CARTOON",
+    "status": "COMPLETED",
+    "poster": "https://image.tmdb.org/t/p/w500/c1Yv042okfvMdT1Ulwlat9Tj70B.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/6neiLkVRYIVbbRTLhlSLtt8o5di.jpg",
+    "title": {
+      "en": "Hey Arnold!",
+      "te": "Hey Arnold!"
+    },
+    "description": {
+      "en": "The daily life of Arnold--a fourth-grader with a wild imagination, street smarts and a head shaped like a football.",
+      "te": "ఆర్నాల్డ్ యొక్క దైనందిన జీవితం - నాల్గవ-తరగతి విద్యార్థి, విపరీతమైన కల్పన, వీధి స్మార్ట్‌లు మరియు ఫుట్‌బాల్ ఆకారంలో ఉన్న తల."
+    },
+    "genres": [
+      "Family",
+      "Comedy",
+      "Drama"
+    ],
+    "year": 1996,
+    "runtime": null,
+    "totalEpisodes": 186,
+    "totalSeasons": 5,
+    "imdbRating": 8.02,
+    "studio": "Snee-Oosh Inc.",
+    "language": "English",
+    "country": "US",
+    "teluguDubAvail": true,
+    "teluguSubAvail": true,
+    "hindiDubAvail": true,
+    "isTrending": false,
+    "isTopRated": true,
+    "isFeatured": false,
+    "trendingScore": 3,
+    "popularityScore": 6,
+    "universe": null
+  }
+]

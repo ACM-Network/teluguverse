@@ -5,14 +5,7 @@ import { useStore } from '@/store/useStore'
 import Logo from '@/components/ui/Logo'
 import PremiumIcon from '@/components/ui/PremiumIcon'
 
-const NAV_LINKS = [
-  { labelEn: 'Home', labelTe: 'హోమ్', href: '/' },
-  { labelEn: 'Movies', labelTe: 'సినిమాలు', href: '/search?type=MOVIE' },
-  { labelEn: 'Anime', labelTe: 'అనిమే', href: '/search?type=ANIME' },
-  { labelEn: 'Series', labelTe: 'సిరీస్', href: '/search?type=SERIES' },
-  { labelEn: 'K-Dramas', labelTe: 'కే-డ్రామాస్', href: '/search?type=KDRAMA' },
-  { labelEn: 'Hollywood', labelTe: 'హాలీవుడ్', href: '/search?type=HOLLYWOOD' },
-]
+
 
 export default function Navbar() {
   const { language, openSearch, user, logout } = useStore()
@@ -29,15 +22,11 @@ export default function Navbar() {
   return (
     <>
       <nav
-        className="fixed top-0 left-0 right-0 z-[100] transition-all duration-300"
+        className="absolute top-0 left-0 right-0 z-[100] transition-all duration-300"
         style={{
-          background: scrolled
-            ? 'rgba(7,8,16,0.98)'
-            : 'linear-gradient(180deg, rgba(7,8,16,0.95) 0%, transparent 100%)',
-          backdropFilter: scrolled ? 'blur(20px)' : 'none',
-          borderBottom: scrolled
-            ? '1px solid rgba(255,215,0,0.12)'
-            : '1px solid rgba(255,255,255,0.03)',
+          background: 'transparent',
+          backdropFilter: 'none',
+          borderBottom: 'none',
         }}
       >
         <div className="max-w-screen-2xl mx-auto px-4 xl:px-6 h-[78px] flex items-center gap-3 xl:gap-4">
@@ -47,23 +36,8 @@ export default function Navbar() {
             <Logo variant="primary" />
           </Link>
 
-          {/* Desktop Nav */}
-          <div className="hidden xl:flex items-center gap-1.5 xl:gap-2 flex-1 min-w-0">
-            {NAV_LINKS.map(({ labelEn, labelTe, href }) => (
-              <Link
-                key={labelEn}
-                href={href}
-                className={`
-                  ${isTelugu ? 'text-[13.5px] tracking-normal' : 'text-[12.5px] tracking-[0.14em]'}
-                  text-gray-300 hover:text-yellow-400 font-semibold font-rajdhani
-                  px-2.5 xl:px-3 py-2.5 rounded-xl hover:bg-yellow-400/10
-                  transition-all whitespace-nowrap
-                `}
-              >
-                {isTelugu ? labelTe : labelEn}
-              </Link>
-            ))}
-          </div>
+          {/* Right side spacer */}
+          <div className="flex-1 min-w-0" />
 
           {/* Right side */}
           <div className="ml-auto flex items-center gap-2 xl:gap-3 flex-none">

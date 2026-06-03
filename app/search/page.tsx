@@ -22,6 +22,37 @@ const YEARS = ['', 2024, 2023, 2022, 2021, 2020, 2019, 2018, 2017, 2016, 2015, 2
 const OTTS = ['', 'NETFLIX', 'AMAZON_PRIME', 'JIO_HOTSTAR', 'ZEE5', 'SONY_LIV', 'AHA', 'CRUNCHYROLL', 'YOUTUBE']
 const RATINGS = ['', '9', '8', '7', '6']
 
+const GENRES = [
+  { v: '', l: 'Any Genre' },
+  { v: 'action', l: 'Action' },
+  { v: 'romance', l: 'Romance' },
+  { v: 'thriller', l: 'Thriller' },
+  { v: 'comedy', l: 'Comedy' },
+  { v: 'drama', l: 'Drama' },
+  { v: 'sci-fi', l: 'Sci-Fi' },
+  { v: 'fantasy', l: 'Fantasy' },
+  { v: 'horror', l: 'Horror' },
+  { v: 'historical', l: 'Historical' },
+  { v: 'mythology', l: 'Mythology' },
+  { v: 'crime', l: 'Crime' },
+  { v: 'adventure', l: 'Adventure' },
+  { v: 'supernatural', l: 'Supernatural' },
+  { v: 'family', l: 'Family' },
+  { v: 'sports', l: 'Sports' },
+  { v: 'super-hero', l: 'Super Hero' },
+]
+
+const UNIVERSES = [
+  { v: '', l: 'Any Universe' },
+  { v: 'mcu', l: 'Marvel Cinematic Universe' },
+  { v: 'dc', l: 'DC Universe' },
+  { v: 'baahubali', l: 'Baahubali Universe' },
+  { v: 'onepiece', l: 'One Piece Universe' },
+  { v: 'monsterverse', l: 'MonsterVerse' },
+  { v: 'naruto', l: 'Naruto Universe' },
+  { v: 'lcu', l: 'Lokesh Cinematic Universe (LCU)' },
+]
+
 const PLATFORM_LABELS: Record<string, string> = {
   '': 'Any Platform',
   NETFLIX: 'Netflix',
@@ -236,6 +267,14 @@ export default function SearchPage() {
                 <select value={rating} onChange={e => setRating(e.target.value)}
                   className="bg-white/[0.04] border border-white/[0.06] rounded-lg px-3 py-2 text-sm font-rajdhani font-semibold text-gray-300 focus:border-white/20 outline-none transition-all">
                   {RATINGS.map(r => <option key={r} value={r}>{r ? `${r}+` : 'Any Rating'}</option>)}
+                </select>
+                <select value={genre} onChange={e => setGenre(e.target.value)}
+                  className="bg-white/[0.04] border border-white/[0.06] rounded-lg px-3 py-2 text-sm font-rajdhani font-semibold text-gray-300 focus:border-white/20 outline-none transition-all">
+                  {GENRES.map(g => <option key={g.v} value={g.v}>{g.l}</option>)}
+                </select>
+                <select value={universe} onChange={e => setUniverse(e.target.value)}
+                  className="bg-white/[0.04] border border-white/[0.06] rounded-lg px-3 py-2 text-sm font-rajdhani font-semibold text-gray-300 focus:border-white/20 outline-none transition-all">
+                  {UNIVERSES.map(u => <option key={u.v} value={u.v}>{u.l}</option>)}
                 </select>
                 {hasActiveFilters && (
                   <button onClick={clearAll} className="px-3 py-2 rounded-lg text-xs font-bold font-rajdhani text-red-400 hover:bg-red-400/10 transition-all border border-red-400/20">

@@ -1,11 +1,33 @@
 'use client'
 
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import Link from 'next/link'
+import Image from 'next/image'
 import SectionHeader from '@/components/ui/SectionHeader'
 import OttBadge from '@/components/ui/OttBadge'
 import { PLACEHOLDER_POSTER } from '@/lib/utils'
+
+function SafeImage({ src, alt, fill, width, height, className, sizes, priority }: any) {
+  const [imgSrc, setImgSrc] = useState(src || PLACEHOLDER_POSTER)
+  useEffect(() => {
+    setImgSrc(src || PLACEHOLDER_POSTER)
+  }, [src])
+  return (
+    <Image
+      src={imgSrc}
+      alt={alt || ''}
+      fill={fill}
+      width={width}
+      height={height}
+      className={className}
+      sizes={sizes}
+      priority={priority}
+      onError={() => setImgSrc(PLACEHOLDER_POSTER)}
+      unoptimized
+    />
+  )
+}
 
 const tvPlatforms = ['DISNEY_CHANNEL', 'HUNGAMA_TV', 'CARTOON_NETWORK', 'POGO', 'SONIC', 'NICK', 'SONY_YAY', 'ETV_BAL_BHARAT', 'TV', 'AVAILABLE_ON_TV']
 
@@ -346,7 +368,7 @@ export default function UniversePage({ universe, recommendations }: UniversePage
 
           <div className="bg-surface/50 border border-amber-900/20 rounded-2xl overflow-hidden hover:border-amber-500/40 hover:shadow-[0_8px_30px_rgba(217,119,6,0.15)] transition-all duration-300 flex flex-col md:flex-row gap-5 p-5 md:p-6 w-full backdrop-blur-md">
             <Link href={`/content/${content.slug}`} className="w-full md:w-36 aspect-[2/3] rounded-xl overflow-hidden bg-black/40 border border-white/5 flex-none group-hover:scale-[1.02] transition-all duration-500 relative">
-              <img src={content.poster || PLACEHOLDER_POSTER} alt={content.titleEnglish} className="w-full h-full object-cover" />
+              <SafeImage src={content.poster} alt={content.titleEnglish} fill className="object-cover" sizes="144px" />
             </Link>
             <div className="flex-1 min-w-0 flex flex-col justify-between space-y-4">
               <div className="space-y-2">
@@ -423,7 +445,7 @@ export default function UniversePage({ universe, recommendations }: UniversePage
 
           <div className="bg-surface/50 border border-yellow-500/10 rounded-2xl overflow-hidden hover:border-yellow-400/40 hover:shadow-[0_8px_30px_rgba(234,179,8,0.15)] transition-all duration-300 flex flex-col md:flex-row gap-5 p-5 md:p-6 w-full backdrop-blur-md">
             <Link href={`/content/${content.slug}`} className="w-full md:w-36 aspect-[2/3] rounded-xl overflow-hidden bg-black/40 border border-white/5 flex-none group-hover:scale-[1.02] transition-all duration-500 relative">
-              <img src={content.poster || PLACEHOLDER_POSTER} alt={content.titleEnglish} className="w-full h-full object-cover" />
+              <SafeImage src={content.poster} alt={content.titleEnglish} fill className="object-cover" sizes="144px" />
             </Link>
             <div className="flex-1 min-w-0 flex flex-col justify-between space-y-4">
               <div className="space-y-2">
@@ -502,7 +524,7 @@ export default function UniversePage({ universe, recommendations }: UniversePage
             
             <div className="flex flex-col lg:flex-row gap-6">
               <Link href={`/content/${content.slug}`} className="w-full lg:w-72 aspect-[16/9] rounded-xl overflow-hidden bg-black/40 border border-white/5 flex-none group-hover:scale-[1.02] transition-all duration-500 relative">
-                <img src={content.banner || content.poster || PLACEHOLDER_POSTER} alt={content.titleEnglish} className="w-full h-full object-cover" />
+                <SafeImage src={content.banner || content.poster} alt={content.titleEnglish} fill className="object-cover" sizes="288px" />
               </Link>
               <div className="flex-1 min-w-0 flex flex-col justify-between space-y-4">
                 <div className="space-y-2">
@@ -586,12 +608,7 @@ export default function UniversePage({ universe, recommendations }: UniversePage
         <div className="bg-surface border border-white/5 rounded-2xl overflow-hidden hover:border-white/20 hover:shadow-[0_8px_30px_rgba(0,0,0,0.4)] transition-all duration-300 flex flex-col md:flex-row gap-5 p-5 md:p-6 w-full">
           {/* Poster */}
           <Link href={`/content/${content.slug}`} className="w-full md:w-36 aspect-[2/3] rounded-xl overflow-hidden bg-black/40 border border-white/5 flex-none group-hover:scale-[1.02] transition-all duration-500 relative">
-            <img
-              src={content.poster || PLACEHOLDER_POSTER}
-              alt={content.titleEnglish}
-              className="w-full h-full object-cover"
-              onError={(e) => { e.currentTarget.src = PLACEHOLDER_POSTER }}
-            />
+            <SafeImage src={content.poster} alt={content.titleEnglish} fill className="object-cover" sizes="144px" />
             {isUpcoming && (
               <div className="absolute inset-0 bg-black/70 flex items-center justify-center">
                 <span className="text-[10px] font-black font-rajdhani text-yellow-400 tracking-widest border border-yellow-400/25 px-2.5 py-1 rounded bg-yellow-400/5">
@@ -883,12 +900,7 @@ export default function UniversePage({ universe, recommendations }: UniversePage
                     className="bg-surface border border-white/5 rounded-2xl overflow-hidden hover:border-yellow-400/30 hover:-translate-y-1.5 transition-all duration-300 group flex flex-col justify-between shadow-[0_8px_25px_rgba(0,0,0,0.5)]"
                   >
                     <div className="aspect-[2/3] w-full overflow-hidden bg-black/25 relative">
-                      <img
-                        src={item.poster || PLACEHOLDER_POSTER}
-                        alt={item.titleEnglish}
-                        className="w-full h-full object-cover"
-                        onError={(e) => { e.currentTarget.src = PLACEHOLDER_POSTER }}
-                      />
+                      <SafeImage src={item.poster} alt={item.titleEnglish} fill className="object-cover" sizes="150px" />
                       <div className="absolute top-2 left-2">
                         <span className="text-[9px] font-black px-2 py-0.5 rounded bg-black/80 font-rajdhani border border-white/5" style={{ color: TYPE_COLORS[item.type] || '#FFD700' }}>
                           {item.type}
@@ -1088,12 +1100,7 @@ export default function UniversePage({ universe, recommendations }: UniversePage
                   className="bg-surface border border-white/5 rounded-2xl overflow-hidden hover:border-yellow-400/30 hover:-translate-y-1.5 transition-all duration-300 group flex flex-col justify-between shadow-[0_8px_25px_rgba(0,0,0,0.5)]"
                 >
                   <div className="aspect-[2/3] w-full overflow-hidden bg-black/25 relative">
-                    <img
-                      src={item.poster || PLACEHOLDER_POSTER}
-                      alt={item.titleEnglish}
-                      className="w-full h-full object-cover"
-                      onError={(e) => { e.currentTarget.src = PLACEHOLDER_POSTER }}
-                    />
+                    <SafeImage src={item.poster} alt={item.titleEnglish} fill className="object-cover" sizes="150px" />
                     <div className="absolute top-2 left-2">
                       <span className="text-[9px] font-black px-2 py-0.5 rounded bg-black/80 font-rajdhani border border-white/5" style={{ color: TYPE_COLORS[item.type] || '#FFD700' }}>
                         {item.type}

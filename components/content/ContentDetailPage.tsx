@@ -753,7 +753,7 @@ export default function ContentDetailPage({ content, similar = [] }: Props) {
                                   {prevItem ? (
                                     <Link href={`/content/${prevItem.slug}`} className={`flex items-center gap-3 p-3 rounded-xl bg-black/40 border ${theme.border} hover:border-yellow-400/40 hover:bg-surface-2 transition-all group text-left h-20`}>
                                       <div className="w-10 h-14 rounded-lg overflow-hidden flex-none border border-white/10 relative aspect-[2/3]">
-                                        <img src={prevItem.poster || PLACEHOLDER_POSTER} alt={prevItem.titleEnglish} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+                                        <Image src={prevItem.poster || PLACEHOLDER_POSTER} alt={prevItem.titleEnglish} fill className="object-cover group-hover:scale-105 transition-transform duration-300" sizes="40px" unoptimized />
                                       </div>
                                       <div className="min-w-0">
                                         <p className="text-[8px] text-gray-500 font-extrabold uppercase tracking-wider">← Previous</p>
@@ -779,7 +779,7 @@ export default function ContentDetailPage({ content, similar = [] }: Props) {
                                 <div className="w-full md:w-[36%] z-10">
                                   <div className={`flex items-center gap-3 p-3 rounded-xl bg-black/60 border ${theme.glow} transition-all h-24 transform scale-[1.03]`}>
                                     <div className="w-12 h-18 rounded-lg overflow-hidden flex-none border border-white/20 relative aspect-[2/3]">
-                                      <img src={content.poster || PLACEHOLDER_POSTER} alt={content.titleEnglish} className="w-full h-full object-cover" />
+                                      <Image src={content.poster || PLACEHOLDER_POSTER} alt={content.titleEnglish} fill className="object-cover" sizes="48px" unoptimized />
                                     </div>
                                     <div className="min-w-0 flex-1">
                                       <span className={`inline-block px-1.5 py-0.5 rounded text-[8px] font-extrabold uppercase tracking-wider mb-1 ${theme.badgeBg}`}>
@@ -803,7 +803,7 @@ export default function ContentDetailPage({ content, similar = [] }: Props) {
                                   {nextItem ? (
                                     <Link href={`/content/${nextItem.slug}`} className={`flex items-center gap-3 p-3 rounded-xl bg-black/40 border ${theme.border} hover:border-yellow-400/40 hover:bg-surface-2 transition-all group text-left h-20`}>
                                       <div className="w-10 h-14 rounded-lg overflow-hidden flex-none border border-white/10 relative aspect-[2/3]">
-                                        <img src={nextItem.poster || PLACEHOLDER_POSTER} alt={nextItem.titleEnglish} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+                                        <Image src={nextItem.poster || PLACEHOLDER_POSTER} alt={nextItem.titleEnglish} fill className="object-cover group-hover:scale-105 transition-transform duration-300" sizes="40px" unoptimized />
                                       </div>
                                       <div className="min-w-0">
                                         <p className="text-[8px] text-gray-500 font-extrabold uppercase tracking-wider">Next →</p>

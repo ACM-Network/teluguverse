@@ -112,7 +112,7 @@ export default function ContentCard({ content, index = 0, size = 'md', showRank,
           )}
 
           {/* Cinematic Bottom dark overlay */}
-          <div className="absolute inset-0 bg-gradient-to-t from-black via-black/45 to-transparent opacity-85 group-hover:opacity-95 transition-opacity duration-300 z-10" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/25 to-transparent opacity-65 group-hover:opacity-75 transition-opacity duration-300 z-10" />
 
           {/* Top badges (absolute) */}
           <div className="absolute top-2.5 left-2.5 right-2.5 flex items-center justify-between gap-1 z-20">

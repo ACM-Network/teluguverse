@@ -3,6 +3,7 @@
 import { useState, useEffect, useRef, useCallback } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import Link from 'next/link'
+import Image from 'next/image'
 import { useStore } from '@/store/useStore'
 import { PLACEHOLDER_BACKDROP, PLACEHOLDER_POSTER } from '@/lib/utils'
 import OttBadge from '@/components/ui/OttBadge'
@@ -29,16 +30,39 @@ function getYouTubeEmbedUrl(url: string): string | null {
   return match && match[2].length === 11 ? `https://www.youtube.com/embed/${match[2]}` : url
 }
 
+// Resolution optimizer: replace original with w780/w500 on mobile devices
+function getHeroBackdropUrl(url: string, isMobile: boolean) {
+  if (!url) return url
+  if (isMobile && url.includes('/original/')) {
+    return url.replace('/original/', '/w780/')
+  }
+  return url
+}
+
 export default function HeroSection({ slides = [] }: HeroSectionProps) {
   const [current, setCurrent] = useState(0)
   const [isPaused, setIsPaused] = useState(false)
   const [direction, setDirection] = useState<1 | -1>(1)
   const [failedBgs, setFailedBgs] = useState<Record<string, boolean>>({})
   const [activeTrailerUrl, setActiveTrailerUrl] = useState<string | null>(null)
+  const [isMobile, setIsMobile] = useState(false)
 
   const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null)
   const { toggleWatchlist, watchlist, language } = useStore()
   const isTelugu = language === 'te'
+
+  const touchStartX = useRef<number | null>(null)
+  const touchEndX = useRef<number | null>(null)
+
+  // Listen to viewport width to serve optimized lower-res backgrounds
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768)
+    }
+    handleResize()
+    window.addEventListener('resize', handleResize)
+    return () => window.removeEventListener('resize', handleResize)
+  }, [])
 
   const rawSlides = slides || []
 
@@ -93,17 +117,6 @@ export default function HeroSection({ slides = [] }: HeroSectionProps) {
   const SLIDE_DURATION = 7500
   const slide = SLIDES[current]
 
-  useEffect(() => {
-    if (!slide) return
-    if (typeof window === 'undefined') return
-    const imgDesk = new window.Image()
-    imgDesk.src = slide.visual.poster
-    imgDesk.onerror = () => setFailedBgs(prev => ({ ...prev, [slide.id + '-desk']: true }))
-    const imgMob = new window.Image()
-    imgMob.src = slide.rawPoster || slide.visual.poster
-    imgMob.onerror = () => setFailedBgs(prev => ({ ...prev, [slide.id + '-mob']: true }))
-  }, [slide?.id, slide?.visual.poster, slide?.rawPoster])
-
   const goTo = useCallback((idx: number, dir: 1 | -1 = 1) => {
     setDirection(dir)
     setCurrent(idx)
@@ -116,6 +129,28 @@ export default function HeroSection({ slides = [] }: HeroSectionProps) {
   const prev_ = useCallback(() => {
     if (SLIDES.length > 0) goTo((current - 1 + SLIDES.length) % SLIDES.length, -1)
   }, [current, goTo, SLIDES.length])
+
+  // Touch handlers for responsive swipes
+  const handleTouchStart = (e: React.TouchEvent) => {
+    touchStartX.current = e.targetTouches[0].clientX
+  }
+
+  const handleTouchMove = (e: React.TouchEvent) => {
+    touchEndX.current = e.targetTouches[0].clientX
+  }
+
+  const handleTouchEnd = () => {
+    if (!touchStartX.current || !touchEndX.current) return
+    const diff = touchStartX.current - touchEndX.current
+    const threshold = 60
+    if (diff > threshold) {
+      next()
+    } else if (diff < -threshold) {
+      prev_()
+    }
+    touchStartX.current = null
+    touchEndX.current = null
+  }
 
   useEffect(() => {
     if (isPaused || SLIDES.length <= 1) return
@@ -133,38 +168,54 @@ export default function HeroSection({ slides = [] }: HeroSectionProps) {
     return () => window.removeEventListener('keydown', handler)
   }, [next, prev_])
 
-  useEffect(() => {
-    if (SLIDES.length <= 1) return
-    ;[(current + 1) % SLIDES.length, (current - 1 + SLIDES.length) % SLIDES.length].forEach(i => {
-      if (SLIDES[i]) {
-        const img = new Image()
-        img.src = SLIDES[i].visual.poster
-      }
-    })
-  }, [current, SLIDES])
-
   if (SLIDES.length === 0 || !slide) {
     return <div className="bg-dark" style={{ height: 'clamp(620px, 100vh, 940px)' }} />
   }
 
+  // Animation variants optimized for high performance: no translations/scales on mobile background
   const bgVariants = {
-    enter: (dir: number) => ({ opacity: 0, scale: 1.05, x: dir > 0 ? '1%' : '-1%' }),
-    center: { opacity: 1, scale: 1, x: '0%', transition: { duration: 0.95, ease: [0.25, 0.46, 0.45, 0.94] } },
-    exit: (dir: number) => ({ opacity: 0, scale: 0.98, x: dir > 0 ? '-1%' : '1%', transition: { duration: 0.55, ease: [0.55, 0, 1, 0.45] } }),
+    enter: (dir: number) => ({
+      opacity: 0,
+      scale: isMobile ? 1 : 1.04,
+      x: isMobile ? 0 : (dir > 0 ? '0.8%' : '-0.8%')
+    }),
+    center: {
+      opacity: 1,
+      scale: 1,
+      x: '0%',
+      transition: { duration: 0.85, ease: [0.25, 0.46, 0.45, 0.94] }
+    },
+    exit: (dir: number) => ({
+      opacity: 0,
+      scale: isMobile ? 1 : 0.98,
+      x: isMobile ? 0 : (dir > 0 ? '-0.8%' : '0.8%'),
+      transition: { duration: 0.5, ease: [0.55, 0, 1, 0.45] }
+    }),
   }
 
+  // Optimized content animation (no blur filters to prevent layout calculations)
   const contentVariants = {
-    enter: () => ({ opacity: 0, y: 30, filter: 'blur(4px)' }),
-    center: { opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94], delay: 0.15 } },
-    exit: () => ({ opacity: 0, y: -15, filter: 'blur(3px)', transition: { duration: 0.30 } }),
+    enter: { opacity: 0, y: 15 },
+    center: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.45, ease: [0.25, 0.46, 0.45, 0.94], delay: 0.08 }
+    },
+    exit: { opacity: 0, y: -10, transition: { duration: 0.22 } },
   }
+
+  const deskImgUrl = getHeroBackdropUrl(slide.visual.poster, isMobile)
+  const mobImgUrl = getHeroBackdropUrl(slide.rawPoster || slide.visual.poster, isMobile)
 
   return (
     <section
-      className="relative overflow-hidden"
+      className="relative overflow-hidden bg-dark select-none"
       style={{ height: 'clamp(620px, 100vh, 940px)' }}
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
+      onTouchStart={handleTouchStart}
+      onTouchMove={handleTouchMove}
+      onTouchEnd={handleTouchEnd}
     >
       {/* Mobile background */}
       <AnimatePresence mode="sync" custom={direction}>
@@ -175,15 +226,20 @@ export default function HeroSection({ slides = [] }: HeroSectionProps) {
           initial="enter"
           animate="center"
           exit="exit"
-          className="absolute inset-0 md:hidden"
-          style={{
-            backgroundImage: `url(${failedBgs[slide.id + '-mob'] ? PLACEHOLDER_BACKDROP : slide.rawPoster})`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center center',
-            backgroundRepeat: 'no-repeat',
-            willChange: 'transform, opacity',
-          }}
-        />
+          className="absolute inset-0 md:hidden z-0"
+          style={{ willChange: 'opacity' }}
+        >
+          <Image
+            src={failedBgs[slide.id + '-mob'] ? PLACEHOLDER_BACKDROP : mobImgUrl}
+            alt=""
+            fill
+            priority={current === 0}
+            sizes="100vw"
+            quality={65}
+            className="object-cover"
+            onError={() => setFailedBgs(prev => ({ ...prev, [slide.id + '-mob']: true }))}
+          />
+        </motion.div>
       </AnimatePresence>
 
       {/* Desktop background */}
@@ -195,38 +251,44 @@ export default function HeroSection({ slides = [] }: HeroSectionProps) {
           initial="enter"
           animate="center"
           exit="exit"
-          className="absolute inset-0 hidden md:block"
-          style={{
-            backgroundImage: `url(${failedBgs[slide.id + '-desk'] ? PLACEHOLDER_BACKDROP : slide.visual.poster})`,
-            backgroundSize: 'cover',
-            backgroundPosition: slide.visual.bgPosition,
-            backgroundRepeat: 'no-repeat',
-            willChange: 'transform, opacity',
-          }}
-        />
+          className="absolute inset-0 hidden md:block z-0"
+          style={{ willChange: 'transform, opacity' }}
+        >
+          <Image
+            src={failedBgs[slide.id + '-desk'] ? PLACEHOLDER_BACKDROP : deskImgUrl}
+            alt=""
+            fill
+            priority={current === 0}
+            sizes="100vw"
+            quality={80}
+            className="object-cover"
+            style={{ objectPosition: slide.visual.bgPosition }}
+            onError={() => setFailedBgs(prev => ({ ...prev, [slide.id + '-desk']: true }))}
+          />
+        </motion.div>
       </AnimatePresence>
 
-      {/* Left readability gradient (desktop) */}
+      {/* Left readability gradient (desktop) — seam-free */}
       <div
         className="absolute inset-0 pointer-events-none z-10 hidden md:block"
         style={{
-          background: 'linear-gradient(to right, rgba(7,8,16,0.98) 0%, rgba(7,8,16,0.94) 28%, rgba(7,8,16,0.65) 55%, rgba(7,8,16,0.15) 80%, transparent 100%)',
+          background: 'linear-gradient(to right, #070810 0%, rgba(7,8,16,0.94) 28%, rgba(7,8,16,0.65) 55%, rgba(7,8,16,0.15) 80%, rgba(7,8,16,0) 100%)',
         }}
       />
-      {/* Mobile vertical gradient */}
+      {/* Mobile vertical gradient — seam-free */}
       <div
         className="absolute inset-0 pointer-events-none z-10 md:hidden"
         style={{
-          background: 'linear-gradient(to top, rgba(7,8,16,1) 0%, rgba(7,8,16,0.88) 40%, rgba(7,8,16,0.5) 65%, rgba(7,8,16,0.15) 100%)',
+          background: 'linear-gradient(to top, #070810 0%, rgba(7,8,16,0.88) 40%, rgba(7,8,16,0.5) 65%, rgba(7,8,16,0) 100%)',
         }}
       />
 
-      {/* Bottom blend into page body */}
+      {/* Bottom blend into page body — seam-free with pixel overlap to avoid rendering artifacts */}
       <div
-        className="absolute bottom-0 left-0 right-0 pointer-events-none z-10"
+        className="absolute bottom-[-2px] left-0 right-0 pointer-events-none z-10"
         style={{
           height: '28%',
-          background: 'linear-gradient(to top, rgba(7,8,16,1) 0%, rgba(7,8,16,0.7) 45%, transparent 100%)',
+          background: 'linear-gradient(to top, #070810 0%, rgba(7,8,16,0.7) 45%, rgba(7,8,16,0) 100%)',
         }}
       />
 
@@ -237,10 +299,10 @@ export default function HeroSection({ slides = [] }: HeroSectionProps) {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          transition={{ duration: 1.2 }}
+          transition={{ duration: 1.0 }}
           className="absolute inset-0 pointer-events-none z-10"
           style={{
-            background: `radial-gradient(ellipse 55% 75% at -5% 60%, ${slide.glowColor} 0%, transparent 70%)`,
+            background: `radial-gradient(ellipse 55% 75% at -5% 60%, ${slide.glowColor} 0%, rgba(7,8,16,0) 70%)`,
           }}
         />
       </AnimatePresence>
@@ -270,9 +332,9 @@ export default function HeroSection({ slides = [] }: HeroSectionProps) {
               >
                 {/* Badge row */}
                 <motion.div
-                  initial={{ opacity: 0, x: -15 }}
+                  initial={{ opacity: 0, x: -10 }}
                   animate={{ opacity: 1, x: 0 }}
-                  transition={{ delay: 0.1 }}
+                  transition={{ delay: 0.05 }}
                   className="flex items-center gap-3 mb-3"
                 >
                   <span
@@ -297,9 +359,9 @@ export default function HeroSection({ slides = [] }: HeroSectionProps) {
 
                 {/* Title */}
                 <motion.h1
-                  initial={{ opacity: 0, y: 20 }}
+                  initial={{ opacity: 0, y: 15 }}
                   animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.2, ease: [0.25, 0.46, 0.45, 0.94] }}
+                  transition={{ delay: 0.1, ease: [0.25, 0.46, 0.45, 0.94] }}
                   className="font-cinzel font-black leading-[1.08] mb-4 tracking-wide"
                   style={{
                     fontSize: 'clamp(30px, 5vw, 64px)',
@@ -317,7 +379,7 @@ export default function HeroSection({ slides = [] }: HeroSectionProps) {
                 <motion.div
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
-                  transition={{ delay: 0.25 }}
+                  transition={{ delay: 0.15 }}
                   className="flex items-center gap-3 mb-4 text-xs font-semibold text-gray-300 flex-wrap"
                 >
                   {/* IMDb Rating */}
@@ -345,7 +407,7 @@ export default function HeroSection({ slides = [] }: HeroSectionProps) {
                 <motion.div
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
-                  transition={{ delay: 0.3 }}
+                  transition={{ delay: 0.18 }}
                   className="flex items-center gap-2 mb-4 flex-wrap"
                 >
                   {slide.genres.slice(0, 4).map((g: string, i: number) => (
@@ -368,7 +430,7 @@ export default function HeroSection({ slides = [] }: HeroSectionProps) {
                   <motion.div
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
-                    transition={{ delay: 0.33 }}
+                    transition={{ delay: 0.2 }}
                     className="flex items-center gap-2 mb-5"
                   >
                     <span className="text-gray-500 text-[9px] font-extrabold uppercase tracking-widest">
@@ -394,7 +456,7 @@ export default function HeroSection({ slides = [] }: HeroSectionProps) {
                 <motion.p
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
-                  transition={{ delay: 0.35 }}
+                  transition={{ delay: 0.22 }}
                   className="text-gray-400 leading-relaxed mb-7 line-clamp-3 max-w-[580px] text-[13px] md:text-sm font-medium"
                 >
                   {isTelugu ? slide.desc.te : slide.desc.en}
@@ -402,15 +464,15 @@ export default function HeroSection({ slides = [] }: HeroSectionProps) {
 
                 {/* CTAs */}
                 <motion.div
-                  initial={{ opacity: 0, y: 10 }}
+                  initial={{ opacity: 0, y: 5 }}
                   animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.4, ease: [0.25, 0.46, 0.45, 0.94] }}
+                  transition={{ delay: 0.25 }}
                   className="flex gap-3 flex-wrap"
                 >
                   <button
                     onClick={() => { if (slide.trailer) setActiveTrailerUrl(slide.trailer) }}
                     disabled={!slide.trailer}
-                    className={`group relative flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl font-cinzel font-bold text-[13px] tracking-[0.06em] text-black overflow-hidden transition-all duration-300 hover:-translate-y-0.5 active:translate-y-0 active:scale-95 ${!slide.trailer ? 'opacity-50 cursor-not-allowed bg-gray-600' : ''}`}
+                    className={`group relative flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl font-cinzel font-bold text-[13px] tracking-[0.06em] text-black overflow-hidden transition-all duration-300 active:scale-95 ${!slide.trailer ? 'opacity-50 cursor-not-allowed bg-gray-600' : 'hover:-translate-y-0.5'}`}
                     style={{
                       background: slide.trailer ? 'linear-gradient(135deg, #FFD700 0%, #FFA500 100%)' : undefined,
                       boxShadow: slide.trailer ? '0 6px 24px rgba(255,215,0,0.3), 0 2px 4px rgba(0,0,0,0.3)' : 'none',
