@@ -7,7 +7,7 @@ export const metadata = {
 
 export default function AboutPage() {
   return (
-    <div className="min-h-screen bg-dark pt-32 pb-24 relative overflow-hidden">
+    <div className="min-h-screen bg-dark pt-32 pb-28 relative overflow-hidden">
       {/* Background ambient glows */}
       <div className="absolute top-12 left-1/4 w-96 h-96 rounded-full blur-3xl opacity-10 bg-yellow-400 pointer-events-none" />
       <div className="absolute bottom-24 right-1/4 w-96 h-96 rounded-full blur-3xl opacity-10 bg-purple-500 pointer-events-none" />

@@ -41,7 +41,7 @@ export default function FavoritesPage() {
   )
 
   return (
-    <div className="min-h-screen bg-dark pt-24 pb-16">
+    <div className="min-h-screen bg-dark pt-24 pb-28">
       <div className="container-tv">
         <SectionHeader 
           title="My Favorites" 

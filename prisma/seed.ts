@@ -1,13 +1,13 @@
 import { PrismaClient } from '@prisma/client'
 import bcrypt from 'bcryptjs'
 
-import { movies } from './data/movies'
-import { animes } from './data/animes'
-import { series } from './data/series'
-import { kdramas } from './data/kdramas'
-import { hollywood } from './data/hollywood'
-import { cartoons } from './data/cartoons'
-import { expandedContent } from './data/expanded_data'
+import { movies } from './data/movies.ts'
+import { animes } from './data/animes.ts'
+import { series } from './data/series.ts'
+import { kdramas } from './data/kdramas.ts'
+import { hollywood } from './data/hollywood.ts'
+import { cartoons } from './data/cartoons.ts'
+import { expandedContent } from './data/expanded_data.ts'
 
 const prisma = new PrismaClient()
 

@@ -22,7 +22,7 @@ export default function SearchModal() {
   useEffect(() => {
     if (isSearchOpen) { setTimeout(() => inputRef.current?.focus(), 100) }
     else { setQuery('') }
-  }, [isSearchOpen])
+  }, [isSearchOpen, setQuery])
 
   useEffect(() => {
     const handler = (e: KeyboardEvent) => {
@@ -31,7 +31,7 @@ export default function SearchModal() {
     }
     window.addEventListener('keydown', handler)
     return () => window.removeEventListener('keydown', handler)
-  }, [isSearchOpen])
+  }, [isSearchOpen, closeSearch])
 
   const handleSearch = (q: string) => {
     if (!q.trim()) return

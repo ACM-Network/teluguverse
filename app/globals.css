@@ -293,3 +293,12 @@ a, button, input, select, textarea,
 .type-cartoon { --type-color: #22C55E; }
 .type-hollywood { --type-color: #F59E0B; }
 .type-documentary { --type-color: #06B6D4; }
+
+/* Scrollbar none utility */
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-none {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}

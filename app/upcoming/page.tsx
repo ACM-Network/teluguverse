@@ -112,7 +112,7 @@ export default function UpcomingPage() {
   const filtered = filter ? items.filter(i => i.type === filter) : items
 
   return (
-    <div className="min-h-screen bg-dark pt-28 pb-16 select-none z-10">
+    <div className="min-h-screen bg-dark pt-28 pb-28 select-none z-10">
       <div className="container-tv">
         <SectionHeader
           title="Upcoming Releases"
