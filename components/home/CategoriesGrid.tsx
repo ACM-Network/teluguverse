@@ -34,14 +34,14 @@ const STATIC_FALLBACK: Genre[] = [
 
 const GENRE_BACKDROPS: Record<string, string> = {
   action: 'https://image.tmdb.org/t/p/w500/i0Y0wP8H6SRgjr6QmuwbtQbS24D.jpg', // RRR
-  adventure: 'https://image.tmdb.org/t/p/w500/xJHokZ82w2iVvnh84Pa2QGcd3N1.jpg', // Interstellar
-  fantasy: 'https://image.tmdb.org/t/p/w500/whNjsTOUVg2lZLCKgGhnACnmV8E.jpg', // Baahubali 2
+  adventure: 'https://image.tmdb.org/t/p/w500/fKKoQndNfbDOLfYM1Zogt7miGF1.jpg', // Karthikeya 2
+  fantasy: 'https://image.tmdb.org/t/p/w500/gVzWHYThVODV5MgccDoyQxPFXve.jpg', // Mirai
   'sci-fi': 'https://image.tmdb.org/t/p/w500/o8XSR1SONnjcsv84NRu6Mwsl5io.jpg', // Kalki 2898 AD
   mythology: 'https://image.tmdb.org/t/p/w500/evUpfs4dw7AuZ5k8dkePVMFSg0T.jpg', // HanuMan
-  'super-hero': 'https://image.tmdb.org/t/p/w500/7RyGgVw3LyjmdvOk7mM5iB8e8gc.jpg', // Endgame
-  thriller: 'https://image.tmdb.org/t/p/w500/tVFRpFw3xTedgPGqxW0AOI8Qhh0.jpg', // Inception
-  romance: 'https://image.tmdb.org/t/p/w500/dIWwZWjMjzoP1qiPgOiWltw0nJ0.jpg', // Your Name
-  comedy: 'https://image.tmdb.org/t/p/w500/5SDMPORslLXaYPx7S1kRqsBJYI3.jpg', // Ala Vaikunthapurramuloo
+  'super-hero': 'https://image.tmdb.org/t/p/w500/ulzhLuWrPK07P1YkdWQLZnQh1JL.jpg', // Endgame
+  thriller: 'https://image.tmdb.org/t/p/w500/uRQ31dXsGHbiubJdObhGVzDiH3n.jpg', // Inception
+  romance: 'https://image.tmdb.org/t/p/w500/q719jXXEzOoYaps6babgKnONONX.jpg', // Your Name
+  comedy: 'https://image.tmdb.org/t/p/w500/z6F2Y7zddPFZ2ls9OY006egVClP.jpg', // Nuvvu Naaku Nachav
   drama: 'https://image.tmdb.org/t/p/w500/6JdOkSgd8wkAQbT6Ncib4DrnyiS.jpg', // Rangasthalam
 }
 

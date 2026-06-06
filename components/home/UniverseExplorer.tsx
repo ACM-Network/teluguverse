@@ -70,10 +70,10 @@ const UNIVERSES = [
 ]
 
 const UNIVERSE_BACKDROPS: Record<string, string> = {
-  mcu: 'https://image.tmdb.org/t/p/w500/7RyGgVw3LyjmdvOk7mM5iB8e8gc.jpg', // Endgame
+  mcu: 'https://image.tmdb.org/t/p/w500/ulzhLuWrPK07P1YkdWQLZnQh1JL.jpg', // Endgame
   dc: 'https://image.tmdb.org/t/p/w500/74xTEgt7R36Fpooo50r9T25onhq.jpg', // The Batman
   baahubali: 'https://image.tmdb.org/t/p/w500/whNjsTOUVg2lZLCKgGhnACnmV8E.jpg', // Baahubali 2
-  onepiece: 'https://image.tmdb.org/t/p/w500/m80kHd6r7nS7RFTn4d14QL592tz.jpg', // Film Red
+  onepiece: 'https://image.tmdb.org/t/p/w500/8ibfhe4P7rhmn3lrPhOZzIJHA2B.jpg', // Film Red
   monsterverse: 'https://image.tmdb.org/t/p/w500/pgqgaUx1cJb5oZQQ5v0tNARCeBp.jpg', // Godzilla vs Kong
   lcu: 'https://image.tmdb.org/t/p/w500/dkIX4dSMuVqjfrPGunBJUR7K3LQ.jpg', // Vikram
 }

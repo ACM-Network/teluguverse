@@ -44,7 +44,7 @@ const INDUSTRIES = [
     desc: 'English Cinema',
     href: '/industry/hollywood',
     color: '#3B82F6',
-    backdrop: '/7RyGgVw3LyjmdvOk7mM5iB8e8gc.jpg',
+    backdrop: '/gKY6q7SjCkAU6FqvqWybDYgUKIF.jpg',
     gradient: 'linear-gradient(135deg, rgba(59,130,246,0.2) 0%, rgba(7,8,16,0.95) 70%)',
   },
   {
@@ -54,7 +54,7 @@ const INDUSTRIES = [
     desc: 'Japanese Animation',
     href: '/industry/anime',
     color: '#A855F7',
-    backdrop: '/nSPwA1972CF4x4j975u68SVNAV9.jpg',
+    backdrop: '/dB4EDhre2dsC2kxYDavyKWqLQwi.jpg',
     gradient: 'linear-gradient(135deg, rgba(168,85,247,0.22) 0%, rgba(7,8,16,0.95) 70%)',
   },
   {
