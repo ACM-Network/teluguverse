@@ -393,7 +393,7 @@ export const hollywood = [
     trailer: 'https://www.youtube.com/embed/npvJ9FTgZbM',
     title: { en: 'Thor: The Dark World', te: 'థోర్: ది డార్క్ వరల్డ్' },
     description: {
-      en: 'When the Dark Elves attempt to plunge the universe into darkness, Thor must embark on a perilous personal journey to save humanity and Asgard.',
+      en: 'Faced with the threat of the Dark Elves, who seek to plunge the universe into eternal night, Thor is forced to align with his treacherous brother Loki to save both Earth and Asgard.',
       te: 'విశ్వాన్ని శాశ్వత చీకటిలోకి ముంచాలని చూస్తున్న డార్క్ ఎల్వ్స్‌ను ఆపడానికి థోర్ తన ప్రియురాలితో కలిసి చేసే అడ్వెంచర్ డ్రామా.',
     },
     genres: ['Action', 'Fantasy', 'Adventure', 'Super Hero'],
@@ -1143,7 +1143,7 @@ export const hollywood = [
     trailer: 'https://www.youtube.com/embed/5WfTEZJnv_8',
     title: { en: 'Ant-Man and the Wasp: Quantumania', te: 'యాంట్-మ్యాన్ అండ్ ది వాస్ప్: క్వాంటుమేనియా' },
     description: {
-      en: 'Scott Lang and Hope van Dyne, along with Hank Pym and Janet van Dyne, explore the Quantum Realm, where they interact with strange creatures and embark on an adventure that goes beyond the limits of what they thought was possible.',
+      en: 'Scott Lang and Hope van Dyne are pulled into the microscopic Quantum Realm alongside Hank Pym and Janet van Dyne, facing off against the multiversal tyrant Kang the Conqueror.',
       te: 'క్వాంటం ప్రపంచంలో బందీ అయిన యాంట్ మ్యాన్ బృందం, అక్కడ సమయాన్ని ఏలే కాంగ్ ద కాంకరర్ తో చేసే భీకరమైన పోరాటం.',
     },
     genres: ['Action', 'Sci-Fi', 'Adventure', 'Super Hero'],
@@ -1331,7 +1331,7 @@ export const hollywood = [
     trailer: 'https://www.youtube.com/embed/V8_4yG-x0lM',
     title: { en: 'The Fantastic Four: First Steps', te: 'ది ఫెంటాస్టిక్ ఫోర్: ఫస్ట్ స్టెప్స్' },
     description: {
-      en: 'Marvel\'s original family embark on a journey across a retro-futuristic world while battling the cosmic threat of Galactus.',
+      en: 'Marvel\'s original superhero team navigates a vibrant, retro-futuristic alternate reality while defending their world against the celestial threat of Galactus.',
       te: 'మార్వెల్ మొదటి సూపర్ హీరోల బృందం ఫెంటాస్టిక్ ఫోర్ సరికొత్త అంతరిక్ష శక్తులతో విశ్వాంతరాళంలోకి చేసే అద్భుత యాత్ర.',
     },
     genres: ['Action', 'Sci-Fi', 'Super Hero'],

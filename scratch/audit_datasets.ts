@@ -87,7 +87,7 @@ async function runAudit() {
 
       while (queue.length > 0 && activeCount < CONCURRENCY) {
         const item = queue.shift()!
-        activeCount++
+        activeCount++;
         
         // Run audit on this item asynchronously
         (async () => {

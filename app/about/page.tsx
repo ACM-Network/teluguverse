@@ -19,10 +19,10 @@ export default function AboutPage() {
             About TeluguVerse
           </div>
           <h1 className="font-cinzel font-black text-4xl sm:text-5xl lg:text-6xl tracking-wide bg-gradient-to-r from-white via-yellow-100 to-yellow-400 bg-clip-text text-transparent drop-shadow-lg">
-            Your Cinematic Universe
+            Crafted by Movie Fans, for Movie Fans
           </h1>
           <p className="text-gray-400 font-medium max-w-xl mx-auto text-sm sm:text-base leading-relaxed">
-            The ultimate database and curation hub for Telugu entertainment, dubbed masterpieces, and massive media franchises.
+            A community-driven encyclopedia tracking Telugu dubs, cinematic universes, and global entertainment with editorial precision.
           </p>
         </div>
 
@@ -33,7 +33,7 @@ export default function AboutPage() {
               Our Mission
             </h2>
             <p className="text-gray-300 text-sm sm:text-base leading-relaxed">
-              At TeluguVerse, we aim to bridge the gap between global cinematic content and Telugu-speaking audiences. Whether it is a South Korean thriller, a Japanese anime masterpiece, a Hollywood superhero blockbuster, or local Tollywood blockbusters, we categorize, catalog, and track dubbing/subtitling availability to make discovery simple.
+              We are a team of cinephiles, editors, and translators dedicated to cataloging global cinema for the Telugu-speaking community. From local Tollywood blockbusters and gritty Tamil crime thrillers to Korean dramas, Japanese anime, and Hollywood franchises, we verify dubbing status, map out complex cinematic universes, and write authentic reviews.
             </p>
           </div>
 
@@ -66,7 +66,7 @@ export default function AboutPage() {
               Curation & Curation Integrity
             </h2>
             <p className="text-gray-300 text-sm sm:text-base leading-relaxed">
-              Every content item inside TeluguVerse is curated by a community of film lovers. We provide Telugu translations for summaries, details of OTT streaming availability, casting sheets, and user review modules. We believe movie watching is a community experience.
+              We take cataloging seriously. Our database features human-written overviews, verified streaming links, detailed cast lists, and interactive review boards. No machine-generated placeholders, no automated text—just pure, passionate film journalism.
             </p>
           </div>
         </div>

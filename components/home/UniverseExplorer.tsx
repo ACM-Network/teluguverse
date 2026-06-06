@@ -69,37 +69,13 @@ const UNIVERSES = [
   },
 ]
 
-const UNIVERSE_POSTERS: Record<string, string[]> = {
-  mcu: [
-    'https://image.tmdb.org/t/p/w342/78lPtwv72eTNqFW9COBYI0dWDJa.jpg', // Iron Man
-    'https://image.tmdb.org/t/p/w342/ulzhLuWrPK07P1YkdWQLZnQh1JL.jpg', // Endgame
-    'https://image.tmdb.org/t/p/w342/7WsyChQLEftFiDOVTGkv3hFpyyt.jpg', // Infinity War
-  ],
-  dc: [
-    'https://image.tmdb.org/t/p/w342/qJ2tW6WMUDux911r6m7haRef0WH.jpg', // Dark Knight
-    'https://image.tmdb.org/t/p/w342/74xTEgt7R36Fpooo50r9T25onhq.jpg', // The Batman
-    'https://image.tmdb.org/t/p/w342/udDcl707h26086H87Izk7cz4NWJ.jpg', // Joker
-  ],
-  baahubali: [
-    'https://image.tmdb.org/t/p/w342/9BAjt8nSSms62uOVYn1t3C3dVto.jpg', // Baahubali 1
-    'https://image.tmdb.org/t/p/w342/21sC2assImQIYCEDA84Qh9d1RsK.jpg', // Baahubali 2
-    'https://image.tmdb.org/t/p/w342/n1KLxyMDfktpfFxv3X35OiA9IzF.jpg', // Baahubali: The Eternal War
-  ],
-  onepiece: [
-    'https://image.tmdb.org/t/p/w342/dB4EDhre2dsC2kxYDavyKWqLQwi.jpg', // One Piece
-    'https://image.tmdb.org/t/p/w342/m80kHd6r7nS7RFTn4d14QL592tz.jpg', // Film Red
-    'https://image.tmdb.org/t/p/w342/ihGubKpe3b35u2Sux572a1GmtS1.jpg', // Stampede
-  ],
-  monsterverse: [
-    'https://image.tmdb.org/t/p/w342/pgqgaUx1cJb5oZQQ5v0tNARCeBp.jpg', // Godzilla vs Kong
-    'https://image.tmdb.org/t/p/w342/mzOHg7Q5q9yUmY0b9Esu8Qe6Nnm.jpg', // Godzilla King of Monsters
-    'https://image.tmdb.org/t/p/w342/tphkjmQq8WebuVwNXelmjLUXuPJ.jpg', // Godzilla 2014
-  ],
-  lcu: [
-    'https://image.tmdb.org/t/p/w342/mxvOvom5zKRp4WPURKrhjoatt4P.jpg', // Kaithi
-    'https://image.tmdb.org/t/p/w342/774UV1aCURb4s4JfEFg3IEMu5Zj.jpg', // Vikram
-    'https://image.tmdb.org/t/p/w342/t1oAdt8JjUs4sHEBvE8fKtjV7er.jpg', // Leo
-  ],
+const UNIVERSE_BACKDROPS: Record<string, string> = {
+  mcu: 'https://image.tmdb.org/t/p/w500/7RyGgVw3LyjmdvOk7mM5iB8e8gc.jpg', // Endgame
+  dc: 'https://image.tmdb.org/t/p/w500/74xTEgt7R36Fpooo50r9T25onhq.jpg', // The Batman
+  baahubali: 'https://image.tmdb.org/t/p/w500/whNjsTOUVg2lZLCKgGhnACnmV8E.jpg', // Baahubali 2
+  onepiece: 'https://image.tmdb.org/t/p/w500/m80kHd6r7nS7RFTn4d14QL592tz.jpg', // Film Red
+  monsterverse: 'https://image.tmdb.org/t/p/w500/pgqgaUx1cJb5oZQQ5v0tNARCeBp.jpg', // Godzilla vs Kong
+  lcu: 'https://image.tmdb.org/t/p/w500/dkIX4dSMuVqjfrPGunBJUR7K3LQ.jpg', // Vikram
 }
 
 interface UniverseCardProps {
@@ -107,9 +83,8 @@ interface UniverseCardProps {
 }
 
 function UniverseCard({ u }: UniverseCardProps) {
-  const [imgSrc1, setImgSrc1] = useState(UNIVERSE_POSTERS[u.key]?.[0] || '/placeholder-poster.svg')
-  const [imgSrc2, setImgSrc2] = useState(UNIVERSE_POSTERS[u.key]?.[1] || '/placeholder-poster.svg')
-  const [imgSrc3, setImgSrc3] = useState(UNIVERSE_POSTERS[u.key]?.[2] || '/placeholder-poster.svg')
+  const [hasError, setHasError] = useState(false)
+  const backdrop = UNIVERSE_BACKDROPS[u.key] || ''
 
   return (
     <Link
@@ -123,47 +98,22 @@ function UniverseCard({ u }: UniverseCardProps) {
         style={{ color: u.border }}
       />
 
-      {/* Franchise collage artwork — clearly visible opacity */}
-      <div className="absolute inset-0 flex justify-center items-center gap-1.5 opacity-[0.45] md:group-hover:opacity-[0.65] transition-opacity duration-500 scale-[0.8] md:group-hover:scale-[0.9] transition-transform duration-500 select-none pointer-events-none z-0 pb-10">
-        {/* Left poster */}
-        <div className="w-12 aspect-[2/3] relative rounded-lg shadow-md -rotate-12 translate-x-2.5 translate-y-2 border border-white/5 overflow-hidden">
+      {/* Backdrop Image cover */}
+      {backdrop && !hasError && (
+        <div className="absolute inset-0 w-full h-full select-none pointer-events-none z-0">
           <Image
-            src={imgSrc1}
-            alt=""
+            src={backdrop}
+            alt={u.name}
             fill
-            sizes="48px"
-            className="object-cover"
-            onError={() => setImgSrc1('/placeholder-poster.svg')}
+            sizes="(max-width: 768px) 50vw, 20vw"
+            className="object-cover opacity-45 group-hover:opacity-65 transition-opacity duration-500"
+            onError={() => setHasError(true)}
             loading="lazy"
           />
         </div>
-        {/* Center poster */}
-        <div className="w-14 aspect-[2/3] relative rounded-lg shadow-xl z-10 border border-white/10 overflow-hidden">
-          <Image
-            src={imgSrc2}
-            alt=""
-            fill
-            sizes="56px"
-            className="object-cover"
-            onError={() => setImgSrc2('/placeholder-poster.svg')}
-            loading="lazy"
-          />
-        </div>
-        {/* Right poster */}
-        <div className="w-12 aspect-[2/3] relative rounded-lg shadow-md rotate-12 -translate-x-2.5 translate-y-2 border border-white/5 overflow-hidden">
-          <Image
-            src={imgSrc3}
-            alt=""
-            fill
-            sizes="48px"
-            className="object-cover"
-            onError={() => setImgSrc3('/placeholder-poster.svg')}
-            loading="lazy"
-          />
-        </div>
-      </div>
+      )}
 
-      {/* Gradient bottom plate — seam bug resolved by replacing transparent with rgba */}
+      {/* Gradient bottom plate */}
       <div
         className="absolute bottom-0 left-0 right-0 p-4 z-20"
         style={{

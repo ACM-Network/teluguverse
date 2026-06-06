@@ -14,20 +14,8 @@ const INDUSTRIES = [
     desc: 'Telugu Cinema',
     href: '/industry/tollywood',
     color: '#FFD700',
-    backdrop: '/images/industries/tollywood.png',
+    backdrop: '/i0Y0wP8H6SRgjr6QmuwbtQbS24D.jpg',
     gradient: 'linear-gradient(135deg, rgba(255,215,0,0.22) 0%, rgba(7,8,16,0.95) 70%)',
-    pattern: (c: string) => (
-      <svg className="absolute inset-0 w-full h-full opacity-[0.1]" viewBox="0 0 100 120">
-        <defs>
-          <pattern id="tw-p" width="16" height="16" patternUnits="userSpaceOnUse">
-            <path d="M0 8 L8 0 L16 8 L8 16 Z" fill="none" stroke={c} strokeWidth="0.4" />
-          </pattern>
-        </defs>
-        <rect width="100" height="120" fill="url(#tw-p)" />
-        <circle cx="50" cy="50" r="20" fill="none" stroke={c} strokeWidth="0.8" strokeDasharray="4 4" />
-        <path d="M30 80 L50 65 L70 80" fill="none" stroke={c} strokeWidth="1" />
-      </svg>
-    ),
   },
   {
     key: 'bollywood',
@@ -36,18 +24,8 @@ const INDUSTRIES = [
     desc: 'Hindi Cinema',
     href: '/industry/bollywood',
     color: '#F43F5E',
-    backdrop: '/images/industries/bollywood.png',
+    backdrop: '/9wRAIQeOv2qzcgpfvA4dYZKeezl.jpg',
     gradient: 'linear-gradient(135deg, rgba(244,63,94,0.2) 0%, rgba(7,8,16,0.95) 70%)',
-    pattern: (c: string) => (
-      <svg className="absolute inset-0 w-full h-full opacity-[0.1]" viewBox="0 0 100 120">
-        <circle cx="50" cy="50" r="30" fill="none" stroke={c} strokeWidth="0.6" />
-        <circle cx="50" cy="50" r="18" fill="none" stroke={c} strokeWidth="0.4" strokeDasharray="3 3" />
-        {Array.from({ length: 12 }).map((_, i) => {
-          const a = (i * 30 * Math.PI) / 180
-          return <line key={i} x1="50" y1="50" x2={50 + 30 * Math.cos(a)} y2={50 + 30 * Math.sin(a)} stroke={c} strokeWidth="0.3" />
-        })}
-      </svg>
-    ),
   },
   {
     key: 'kollywood',
@@ -56,16 +34,8 @@ const INDUSTRIES = [
     desc: 'Tamil Cinema',
     href: '/industry/kollywood',
     color: '#06B6D4',
-    backdrop: '/images/industries/kollywood.png',
+    backdrop: '/dkIX4dSMuVqjfrPGunBJUR7K3LQ.jpg',
     gradient: 'linear-gradient(135deg, rgba(6,182,212,0.2) 0%, rgba(7,8,16,0.95) 70%)',
-    pattern: (c: string) => (
-      <svg className="absolute inset-0 w-full h-full opacity-[0.1]" viewBox="0 0 100 120">
-        <rect x="25" y="25" width="50" height="50" rx="4" fill="none" stroke={c} strokeWidth="0.7" />
-        <rect x="32" y="32" width="36" height="36" rx="2" fill="none" stroke={c} strokeWidth="0.4" strokeDasharray="3 3" />
-        <line x1="50" y1="15" x2="50" y2="85" stroke={c} strokeWidth="0.3" />
-        <line x1="15" y1="50" x2="85" y2="50" stroke={c} strokeWidth="0.3" />
-      </svg>
-    ),
   },
   {
     key: 'hollywood',
@@ -74,15 +44,8 @@ const INDUSTRIES = [
     desc: 'English Cinema',
     href: '/industry/hollywood',
     color: '#3B82F6',
-    backdrop: '/images/industries/hollywood.png',
+    backdrop: '/7RyGgVw3LyjmdvOk7mM5iB8e8gc.jpg',
     gradient: 'linear-gradient(135deg, rgba(59,130,246,0.2) 0%, rgba(7,8,16,0.95) 70%)',
-    pattern: (c: string) => (
-      <svg className="absolute inset-0 w-full h-full opacity-[0.1]" viewBox="0 0 100 120">
-        <polygon points="50,15 58,35 80,35 62,48 68,68 50,55 32,68 38,48 20,35 42,35" fill="none" stroke={c} strokeWidth="0.8" />
-        <circle cx="50" cy="42" r="8" fill="none" stroke={c} strokeWidth="0.5" />
-        <path d="M15 85 L85 85" stroke={c} strokeWidth="0.5" strokeDasharray="4 4" />
-      </svg>
-    ),
   },
   {
     key: 'anime',
@@ -91,16 +54,8 @@ const INDUSTRIES = [
     desc: 'Japanese Animation',
     href: '/industry/anime',
     color: '#A855F7',
-    backdrop: '/images/industries/anime.png',
+    backdrop: '/nSPwA1972CF4x4j975u68SVNAV9.jpg',
     gradient: 'linear-gradient(135deg, rgba(168,85,247,0.22) 0%, rgba(7,8,16,0.95) 70%)',
-    pattern: (c: string) => (
-      <svg className="absolute inset-0 w-full h-full opacity-[0.1]" viewBox="0 0 100 120">
-        <path d="M50 20 L60 40 L80 40 L65 55 L72 75 L50 62 L28 75 L35 55 L20 40 L40 40 Z" fill="none" stroke={c} strokeWidth="0.7" />
-        <path d="M20 85 Q35 78 50 85 Q65 92 80 85" fill="none" stroke={c} strokeWidth="0.5" />
-        <circle cx="38" cy="44" r="2" fill={c} fillOpacity="0.3" />
-        <circle cx="62" cy="44" r="2" fill={c} fillOpacity="0.3" />
-      </svg>
-    ),
   },
   {
     key: 'kdrama',
@@ -109,15 +64,8 @@ const INDUSTRIES = [
     desc: 'Korean Drama',
     href: '/industry/kdrama',
     color: '#EC4899',
-    backdrop: '/images/industries/kdrama.png',
+    backdrop: '/8hp2CuGnw1iP5dLBVMAPUv23swx.jpg',
     gradient: 'linear-gradient(135deg, rgba(236,72,153,0.2) 0%, rgba(7,8,16,0.95) 70%)',
-    pattern: (c: string) => (
-      <svg className="absolute inset-0 w-full h-full opacity-[0.1]" viewBox="0 0 100 120">
-        <path d="M50 75 C50 75 20 50 20 35 C20 22 32 18 50 32 C68 18 80 22 80 35 C80 50 50 75 50 75Z" fill="none" stroke={c} strokeWidth="0.8" />
-        <circle cx="50" cy="48" r="5" fill="none" stroke={c} strokeWidth="0.5" />
-        <path d="M45 48 L55 48 M50 43 L50 53" stroke={c} strokeWidth="0.4" />
-      </svg>
-    ),
   },
 ]
 
@@ -147,11 +95,6 @@ function IndustryCard({ industry, i }: { industry: typeof INDUSTRIES[0]; i: numb
           />
         </div>
       )}
-
-      {/* Pattern artwork */}
-      <div className="absolute inset-0 group-hover:opacity-[0.2] transition-opacity duration-500 z-10">
-        {industry.pattern(industry.color)}
-      </div>
 
       {/* Top glow */}
       <div

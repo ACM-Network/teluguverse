@@ -514,8 +514,8 @@ export const animes = [
     slug: 'pokemon-advanced',
     type: ContentType.ANIME,
     status: ContentStatus.COMPLETED,
-    poster: 'https://image.tmdb.org/t/p/w500/lP4zwr0F7hWTbAFltfoFTc2AxRG.jpg',
-    banner: 'https://image.tmdb.org/t/p/original/yYpQV25I7XB6S0POJOScPjxYWV5.jpg',
+    poster: 'https://image.tmdb.org/t/p/w500/6aEFDKdQItpRwwrjZtKUSAlxjO9.jpg',
+    banner: 'https://image.tmdb.org/t/p/original/qUyQMM1dGA1Px08zS7aCOoyFjpP.jpg',
     title: {
       en: 'Pokémon: Advanced',
       te: 'పోకీమాన్ అడ్వాన్స్‌డ్',
@@ -544,8 +544,8 @@ export const animes = [
     slug: 'pokemon-diamond-pearl',
     type: ContentType.ANIME,
     status: ContentStatus.COMPLETED,
-    poster: 'https://image.tmdb.org/t/p/w500/lP4zwr0F7hWTbAFltfoFTc2AxRG.jpg',
-    banner: 'https://image.tmdb.org/t/p/original/yYpQV25I7XB6S0POJOScPjxYWV5.jpg',
+    poster: 'https://image.tmdb.org/t/p/w500/olQwMktOpZLelpey4vOTZCxpZ4c.jpg',
+    banner: 'https://image.tmdb.org/t/p/original/JRHUynzGfL2FSxDhJ1UpNj0FDc.jpg',
     title: {
       en: 'Pokémon: Diamond and Pearl',
       te: 'పోకీమాన్ డైమండ్ అండ్ పెర్ల్',
@@ -574,8 +574,8 @@ export const animes = [
     slug: 'pokemon-journeys',
     type: ContentType.ANIME,
     status: ContentStatus.COMPLETED,
-    poster: 'https://image.tmdb.org/t/p/w500/lP4zwr0F7hWTbAFltfoFTc2AxRG.jpg',
-    banner: 'https://image.tmdb.org/t/p/original/yYpQV25I7XB6S0POJOScPjxYWV5.jpg',
+    poster: 'https://image.tmdb.org/t/p/w500/2k53AsWsLrMtcbFyH0nVOqQjj2x.jpg',
+    banner: 'https://image.tmdb.org/t/p/original/sk0nsB5oynmwZTFqVIC5uCvRugi.jpg',
     title: {
       en: 'Pokémon Journeys: The Series',
       te: 'పోకీమాన్ జర్నీస్',

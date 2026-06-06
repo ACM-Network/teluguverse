@@ -1,6 +1,4 @@
-import { ContentType, ContentStatus } from '@prisma/client'
-
-export const expandedContent: any[] = [
+export const expandedContent = [
   {
     "slug": "peddi-2026",
     "type": "MOVIE",
@@ -220,43 +218,6 @@ export const expandedContent: any[] = [
     "universe": null
   },
   {
-    "slug": "rrr-2022",
-    "type": "MOVIE",
-    "status": "COMPLETED",
-    "poster": "https://image.tmdb.org/t/p/w500/u0XUBNQWlOvrh0Gd97ARGpIkL0.jpg",
-    "banner": "https://image.tmdb.org/t/p/original/i0Y0wP8H6SRgjr6QmuwbtQbS24D.jpg",
-    "title": {
-      "en": "RRR",
-      "te": "RRR"
-    },
-    "description": {
-      "en": "A fictional history of two legendary revolutionaries' journey away from home before they began fighting for their country in the 1920s.",
-      "te": "1920లలో తమ దేశం కోసం పోరాడటం ప్రారంభించడానికి ముందు ఇద్దరు పురాణ విప్లవకారులు ఇంటి నుండి దూరంగా ప్రయాణించిన కల్పిత చరిత్ర."
-    },
-    "genres": [
-      "Action",
-      "Adventure",
-      "Drama"
-    ],
-    "year": 2022,
-    "runtime": 187,
-    "totalEpisodes": null,
-    "totalSeasons": null,
-    "imdbRating": 7.716,
-    "studio": "DVV Entertainment",
-    "language": "Telugu",
-    "country": "IN",
-    "teluguDubAvail": true,
-    "teluguSubAvail": true,
-    "hindiDubAvail": true,
-    "isTrending": false,
-    "isTopRated": false,
-    "isFeatured": false,
-    "trendingScore": 1,
-    "popularityScore": 3,
-    "universe": null
-  },
-  {
     "slug": "laila-2025",
     "type": "MOVIE",
     "status": "COMPLETED",
@@ -285,81 +246,6 @@ export const expandedContent: any[] = [
     "teluguDubAvail": true,
     "teluguSubAvail": true,
     "hindiDubAvail": false,
-    "isTrending": false,
-    "isTopRated": false,
-    "isFeatured": false,
-    "trendingScore": 1,
-    "popularityScore": 2,
-    "universe": null
-  },
-  {
-    "slug": "the-rajasaab-2026",
-    "type": "MOVIE",
-    "status": "COMPLETED",
-    "poster": "https://image.tmdb.org/t/p/w500/nRy56JePNbXgaZc76gqZkB6FFne.jpg",
-    "banner": "https://image.tmdb.org/t/p/original/gTIobmaZTeXDMD2LcIvhnL9rsu8.jpg",
-    "title": {
-      "en": "The Rajasaab",
-      "te": "The Rajasaab"
-    },
-    "description": {
-      "en": "Seeking his lost grandfather, a young man enters a haunted mansion and awakens a family curse powerful enough to upend both his life and reality.",
-      "te": "తప్పిపోయిన తన తాతని వెతుక్కుంటూ, ఒక యువకుడు హాంటెడ్ మాన్షన్‌లోకి ప్రవేశిస్తాడు మరియు అతని జీవితం మరియు వాస్తవికత రెండింటినీ పెంచేంత శక్తివంతమైన కుటుంబ శాపాన్ని మేల్కొల్పాడు."
-    },
-    "genres": [
-      "Comedy",
-      "Horror",
-      "Fantasy",
-      "Action"
-    ],
-    "year": 2026,
-    "runtime": 186,
-    "totalEpisodes": null,
-    "totalSeasons": null,
-    "imdbRating": 5.2,
-    "studio": "People Media Factory",
-    "language": "Telugu",
-    "country": "IN",
-    "teluguDubAvail": true,
-    "teluguSubAvail": true,
-    "hindiDubAvail": false,
-    "isTrending": false,
-    "isTopRated": false,
-    "isFeatured": false,
-    "trendingScore": 1,
-    "popularityScore": 2,
-    "universe": null
-  },
-  {
-    "slug": "pushpa-2-the-rule-2024",
-    "type": "MOVIE",
-    "status": "COMPLETED",
-    "poster": "https://image.tmdb.org/t/p/w500/bhxZj3y59cK7JtGdV285dhDRaMe.jpg",
-    "banner": "https://image.tmdb.org/t/p/original/keC82cQ8q0ZHthrbvzWq04kGnbv.jpg",
-    "title": {
-      "en": "Pushpa 2 - The Rule",
-      "te": "Pushpa 2 - The Rule"
-    },
-    "description": {
-      "en": "As his smuggling empire grows, a brazen Pushpa longs for power and respect on his vengeful journey, while facing old rivals and new.",
-      "te": "అతని స్మగ్లింగ్ సామ్రాజ్యం పెరుగుతున్న కొద్దీ, పాత ప్రత్యర్థులను మరియు కొత్తవారిని ఎదుర్కొంటూనే, తన ప్రతీకార ప్రయాణంలో ఒక ఇత్తడి పుష్ప అధికారం మరియు గౌరవం కోసం ఆశపడుతుంది."
-    },
-    "genres": [
-      "Action",
-      "Drama",
-      "Crime"
-    ],
-    "year": 2024,
-    "runtime": 201,
-    "totalEpisodes": null,
-    "totalSeasons": null,
-    "imdbRating": 6.29,
-    "studio": "Mythri Movie Makers",
-    "language": "Telugu",
-    "country": "IN",
-    "teluguDubAvail": true,
-    "teluguSubAvail": true,
-    "hindiDubAvail": true,
     "isTrending": false,
     "isTopRated": false,
     "isFeatured": false,
@@ -414,8 +300,8 @@ export const expandedContent: any[] = [
       "te": "Hi Nanna"
     },
     "description": {
-      "en": "Six-year-old Mahi, a spirited child with cystic fibrosis, shares a deep yet complex bond with her father, Viraj, a dedicated single parent and successful fashion photographer. Her curiosity about her absent mother leads to a journey of discovery when she runs away with her loyal dog, Pluto. A chance encounter with a kind woman named Yashna sparks unexpected revelations, intertwining their lives in ways they never anticipated. Set against a backdrop of love, sacrifice, and redemption, Mahi’s story is a heartfelt exploration of family, resilience, and the enduring power of connection.",
-      "te": "సిస్టిక్ ఫైబ్రోసిస్‌తో బాధపడుతున్న ఆరేళ్ల మహి, తన తండ్రి విరాజ్‌తో లోతైన ఇంకా సంక్లిష్టమైన బంధాన్ని పంచుకుంటుంది, అంకితమైన సింగిల్ పేరెంట్ మరియు విజయవంతమైన ఫ్యాషన్ ఫోటోగ్రాఫర్. ఆమె లేని తల్లి గురించి ఆమె ఉత్సుకత, ఆమె తన నమ్మకమైన కుక్క ప్లూటోతో పారిపోయినప్పుడు కనుగొనే ప్రయాణానికి దారి తీస్తుంది. యష్నా అనే దయగల స్త్రీతో ఒక అవకాశం ఎదురైనప్పుడు ఊహించని ద్యోతకాలు ఎదురవుతాయి, వారి జీవితాలను వారు ఊహించని విధంగా పెనవేసుకున్నారు. ప్రేమ, త్యాగం మరియు విముక్తి నేపథ్యానికి వ్యతిరేకంగా సెట్ చేయబడిన మహి కథ కుటుంబం, స్థితిస్థాపకత మరియు అనుబంధం యొక్క శాశ్వతమైన శక్తి యొక్క హృదయపూర్వక అన్వేషణ."
+      "en": "A single father raising his young daughter with cystic fibrosis finds his structured life upended when she runs away to seek information about her mother, crossing paths with a warm-hearted woman who holds the key to a shared past.",
+      "te": "సిస్టిక్ ఫైబ్రోసిస్ వ్యాధితో బాధపడుతున్న ఆరేళ్ల మహి అనే చిన్నారితో జీవిస్తున్న విరాజ్, ఒక కొత్త పరిచయం ద్వారా తన గతంలోని మధుర జ్ఞాపకాలను ఎలా తెలుసుకున్నాడు అనే సున్నితమైన కుటుంబ కథాచిత్రం."
     },
     "genres": [
       "Drama",
@@ -473,81 +359,6 @@ export const expandedContent: any[] = [
     "isFeatured": false,
     "trendingScore": 1,
     "popularityScore": 2,
-    "universe": null
-  },
-  {
-    "slug": "salaar-part-1-ceasefire-2023",
-    "type": "MOVIE",
-    "status": "COMPLETED",
-    "poster": "https://image.tmdb.org/t/p/w500/nlu9WbcetNFRGXXPWITr30ob7W6.jpg",
-    "banner": "https://image.tmdb.org/t/p/original/xtOCTmGemASooRkAxRorYODig1p.jpg",
-    "title": {
-      "en": "Salaar: Part 1 - Ceasefire",
-      "te": "Salaar: Part 1 - Ceasefire"
-    },
-    "description": {
-      "en": "Set in the fictional dystopian city-state of Khansaar, the film follows the friendship between Deva, a tribesman, and Varadha, the prince of Khansaar. When a coup d'état is planned by his father's ministers and his relatives, Varadha enlists Deva's help to become Khansaar's undisputed ruler.",
-      "te": "కల్పిత డిస్టోపియన్ సిటీ-స్టేట్ ఆఫ్ ఖాన్సార్‌లో సెట్ చేయబడిన ఈ చిత్రం దేవా, గిరిజనుడు మరియు ఖాన్సార్ యువరాజు వరద మధ్య స్నేహాన్ని అనుసరిస్తుంది. అతని తండ్రి మంత్రులు మరియు అతని బంధువులచే తిరుగుబాటు ప్రణాళిక చేయబడినప్పుడు, వరదుడు ఖాన్సార్ యొక్క తిరుగులేని పాలకుడు కావడానికి దేవ సహాయం తీసుకుంటాడు."
-    },
-    "genres": [
-      "Action",
-      "Crime",
-      "Drama"
-    ],
-    "year": 2023,
-    "runtime": 175,
-    "totalEpisodes": null,
-    "totalSeasons": null,
-    "imdbRating": 6.674,
-    "studio": "Hombale Films",
-    "language": "Telugu",
-    "country": "IN",
-    "teluguDubAvail": true,
-    "teluguSubAvail": true,
-    "hindiDubAvail": false,
-    "isTrending": false,
-    "isTopRated": false,
-    "isFeatured": false,
-    "trendingScore": 1,
-    "popularityScore": 1,
-    "universe": null
-  },
-  {
-    "slug": "kalki-2898-ad-2024",
-    "type": "MOVIE",
-    "status": "COMPLETED",
-    "poster": "https://image.tmdb.org/t/p/w500/rstcAnBeCkxNQjNp3YXrF6IP1tW.jpg",
-    "banner": "https://image.tmdb.org/t/p/original/o8XSR1SONnjcsv84NRu6Mwsl5io.jpg",
-    "title": {
-      "en": "Kalki 2898-AD",
-      "te": "Kalki 2898-AD"
-    },
-    "description": {
-      "en": "In the year 2898 AD, around 6000 years after Kurukshetra war, Ashwatthama gears up for his final battle of redemption at the sign of hope in a dystopian world and Bhairava, a wisecracking and self-interested bounty hunter, tired of the perilous life becomes the hurdle in the process.",
-      "te": "క్రీ.శ. 2898లో, కురుక్షేత్ర యుద్ధం తర్వాత దాదాపు 6000 సంవత్సరాల తర్వాత, అశ్వత్థామ ఒక డిస్టోపియన్ ప్రపంచంలో ఆశ యొక్క చిహ్నంగా విమోచనం కోసం తన చివరి యుద్ధానికి సిద్ధమయ్యాడు మరియు ప్రమాదకరమైన జీవితంతో విసిగిపోయిన భైరవ అనే తెలివైన మరియు స్వయం-ఆసక్తిగల ఔదార్య వేటగాడు ఈ ప్రక్రియలో అడ్డంకిగా మారాడు."
-    },
-    "genres": [
-      "Drama",
-      "Action",
-      "Fantasy",
-      "Sci-Fi"
-    ],
-    "year": 2024,
-    "runtime": 176,
-    "totalEpisodes": null,
-    "totalSeasons": null,
-    "imdbRating": 6.389,
-    "studio": "Vyjayanthi Movies",
-    "language": "Telugu",
-    "country": "IN",
-    "teluguDubAvail": true,
-    "teluguSubAvail": true,
-    "hindiDubAvail": true,
-    "isTrending": false,
-    "isTopRated": false,
-    "isFeatured": false,
-    "trendingScore": 1,
-    "popularityScore": 1,
     "universe": null
   },
   {
@@ -771,79 +582,6 @@ export const expandedContent: any[] = [
     "universe": null
   },
   {
-    "slug": "b-hubali-2-the-conclusion-2017",
-    "type": "MOVIE",
-    "status": "COMPLETED",
-    "poster": "https://image.tmdb.org/t/p/w500/21sC2assImQIYCEDA84Qh9d1RsK.jpg",
-    "banner": "https://image.tmdb.org/t/p/original/whNjsTOUVg2lZLCKgGhnACnmV8E.jpg",
-    "title": {
-      "en": "Bāhubali 2: The Conclusion",
-      "te": "Bāhubali 2: The Conclusion"
-    },
-    "description": {
-      "en": "When Mahendra, the son of Bāhubali, learns about his heritage, he begins to look for answers. His story is juxtaposed with past events that unfolded in the Mahishmati Kingdom.",
-      "te": "బాహుబలి కుమారుడైన మహేంద్ర తన వారసత్వం గురించి తెలుసుకున్నప్పుడు, అతను సమాధానాల కోసం వెతకడం ప్రారంభించాడు. అతని కథ మాహిష్మతి రాజ్యంలో జరిగిన గత సంఘటనలతో జతచేయబడింది."
-    },
-    "genres": [
-      "Action",
-      "Adventure",
-      "Fantasy"
-    ],
-    "year": 2017,
-    "runtime": 167,
-    "totalEpisodes": null,
-    "totalSeasons": null,
-    "imdbRating": 7.46,
-    "studio": "Arka Media Works",
-    "language": "Telugu",
-    "country": "IN",
-    "teluguDubAvail": true,
-    "teluguSubAvail": true,
-    "hindiDubAvail": true,
-    "isTrending": false,
-    "isTopRated": false,
-    "isFeatured": false,
-    "trendingScore": 0,
-    "popularityScore": 1,
-    "universe": null
-  },
-  {
-    "slug": "pushpa-the-rise-2021",
-    "type": "MOVIE",
-    "status": "COMPLETED",
-    "poster": "https://image.tmdb.org/t/p/w500/oaRk2HgOirEeNuDCwwScmq7rKvS.jpg",
-    "banner": "https://image.tmdb.org/t/p/original/jQIcn51nsvMrpB9NFwEOb9QHhFt.jpg",
-    "title": {
-      "en": "Pushpa: The Rise",
-      "te": "Pushpa: The Rise"
-    },
-    "description": {
-      "en": "As Pushpa, a labourer, rises in the world of red sandalwood smuggling, he ends up making many enemies. However, violence ensues when the police try to topple his illegal business.",
-      "te": "పుష్ప అనే కార్మికురాలు ఎర్రచందనం స్మగ్లింగ్ ప్రపంచంలో ఎదగడంతో, అతను చాలా మంది శత్రువులను సృష్టిస్తాడు. అయినప్పటికీ, అతని అక్రమ వ్యాపారాన్ని పోలీసులు పడగొట్టడానికి ప్రయత్నించినప్పుడు హింస జరుగుతుంది."
-    },
-    "genres": [
-      "Action",
-      "Drama"
-    ],
-    "year": 2021,
-    "runtime": 179,
-    "totalEpisodes": null,
-    "totalSeasons": null,
-    "imdbRating": 6.757,
-    "studio": "Mythri Movie Makers",
-    "language": "Telugu",
-    "country": "IN",
-    "teluguDubAvail": true,
-    "teluguSubAvail": true,
-    "hindiDubAvail": true,
-    "isTrending": false,
-    "isTopRated": false,
-    "isFeatured": false,
-    "trendingScore": 0,
-    "popularityScore": 1,
-    "universe": null
-  },
-  {
     "slug": "geetha-govindam-2018",
     "type": "MOVIE",
     "status": "COMPLETED",
@@ -961,8 +699,8 @@ export const expandedContent: any[] = [
       "te": "Devara: Part 1"
     },
     "description": {
-      "en": "Devara, a fearless man from a coastal region, embarks on a perilous journey into the treacherous world of the sea to safeguard the lives of his people. Unbeknownst to him, his brother Bhaira is plotting a conspiracy against him. As events unfold, Devara passes on his legacy to his mild-mannered and timid son, Varada.",
-      "te": "తీరప్రాంతానికి చెందిన దేవారా అనే నిర్భయ వ్యక్తి, తన ప్రజల ప్రాణాలను కాపాడేందుకు సముద్రపు ద్రోహ ప్రపంచంలోకి ప్రమాదకరమైన ప్రయాణాన్ని ప్రారంభించాడు. తనకు తెలియకుండా తన సోదరుడు భైరా తనపై కుట్ర పన్నుతున్నాడు. సంఘటనలు జరుగుతున్నప్పుడు, దేవర తన సౌమ్యమైన మరియు పిరికివాడు అయిన కొడుకు వరదకు అతని వారసత్వాన్ని అందజేస్తాడు."
+      "en": "In a coastal region governed by fear, Devara risks his life to stop smuggling operations and protect his people. While his brother Bhaira secretly plots his downfall, Devara must eventually pass his protective legacy down to his timid son, Varada.",
+      "te": "తమ సముద్ర తీర ప్రాంతాన్ని భయభ్రాంతులకు గురిచేస్తున్న స్మగ్లర్ల నుండి రక్షించడానికి దేవర అనే సాహసవంతుడు చేసిన సముద్రపు పోరాటాల కథ."
     },
     "genres": [
       "Action",
@@ -1010,42 +748,6 @@ export const expandedContent: any[] = [
     "totalSeasons": null,
     "imdbRating": 7,
     "studio": "Lucky Media",
-    "language": "Telugu",
-    "country": "IN",
-    "teluguDubAvail": true,
-    "teluguSubAvail": true,
-    "hindiDubAvail": true,
-    "isTrending": false,
-    "isTopRated": false,
-    "isFeatured": false,
-    "trendingScore": 0,
-    "popularityScore": 1,
-    "universe": null
-  },
-  {
-    "slug": "b-hubali-the-beginning-2015",
-    "type": "MOVIE",
-    "status": "COMPLETED",
-    "poster": "https://image.tmdb.org/t/p/w500/9BAjt8nSSms62uOVYn1t3C3dVto.jpg",
-    "banner": "https://image.tmdb.org/t/p/original/e9ZEuHGHZ06AToHlfN1L7nejJ7W.jpg",
-    "title": {
-      "en": "Bāhubali: The Beginning",
-      "te": "Bāhubali: The Beginning"
-    },
-    "description": {
-      "en": "The young Shivudu is left as a foundling in a small village by his mother. By the time he’s grown up, it has become apparent that he possesses exceptional gifts. He meets the beautiful warrior princess Avanthika and learns that her queen has been held captive for the last 25 years. Shividu sets off to rescue her, discovering his own origins in the process.",
-      "te": "యువకుడు శివుడు తన తల్లి ద్వారా ఒక చిన్న పల్లెలో దొరికిపోయాడు. అతను పెరిగే సమయానికి, అతను అసాధారణమైన బహుమతులను కలిగి ఉన్నాడని స్పష్టమవుతుంది. అతను అందమైన యోధ యువరాణి అవంతికను కలుస్తాడు మరియు ఆమె రాణి గత 25 సంవత్సరాలుగా బందీగా ఉందని తెలుసుకుంటాడు. శివుడు ఆమెను రక్షించడానికి బయలుదేరాడు, ఈ ప్రక్రియలో తన స్వంత మూలాలను కనుగొంటాడు."
-    },
-    "genres": [
-      "Action",
-      "Drama"
-    ],
-    "year": 2015,
-    "runtime": 159,
-    "totalEpisodes": null,
-    "totalSeasons": null,
-    "imdbRating": 7.533,
-    "studio": "Arka Media Works",
     "language": "Telugu",
     "country": "IN",
     "teluguDubAvail": true,
@@ -1178,8 +880,8 @@ export const expandedContent: any[] = [
       "te": "Lucky Baskhar"
     },
     "description": {
-      "en": "A cash-strapped bank cashier embarks on a risky investment scheme and soon gets drawn into the murky world of money laundering.",
-      "te": "నగదు కొరత ఉన్న బ్యాంక్ క్యాషియర్ ప్రమాదకర పెట్టుబడి పథకాన్ని ప్రారంభించాడు మరియు త్వరలో మనీలాండరింగ్ యొక్క గందరగోళ ప్రపంచంలోకి లాగబడతాడు."
+      "en": "A desperate bank cashier plunges into high-stakes investment schemes, quickly becoming entangled in a dangerous money-laundering syndicate.",
+      "te": "ఆర్థిక ఇబ్బందుల్లో ఉన్న ఒక బ్యాంక్ క్యాషియర్ తన తెలివితేటలతో బ్యాంకింగ్ వ్యవస్థలోని లోపాలను ఉపయోగించి ఎలా కోటీశ్వరుడయ్యాడు అనే సస్పెన్స్ క్రైమ్ డ్రామా."
     },
     "genres": [
       "Crime",
@@ -1227,44 +929,6 @@ export const expandedContent: any[] = [
     "totalSeasons": null,
     "imdbRating": 4.2,
     "studio": "Dharma Productions",
-    "language": "Telugu",
-    "country": "IN",
-    "teluguDubAvail": true,
-    "teluguSubAvail": true,
-    "hindiDubAvail": false,
-    "isTrending": false,
-    "isTopRated": false,
-    "isFeatured": false,
-    "trendingScore": 0,
-    "popularityScore": 1,
-    "universe": null
-  },
-  {
-    "slug": "ala-vaikunthapurramuloo-2020",
-    "type": "MOVIE",
-    "status": "COMPLETED",
-    "poster": "https://image.tmdb.org/t/p/w500/2rzORJaegE2bbKNVkQXbZCeV0BP.jpg",
-    "banner": "https://image.tmdb.org/t/p/original/5SDMPORslLXaYPx7S1kRqsBJYI3.jpg",
-    "title": {
-      "en": "Ala Vaikunthapurramuloo",
-      "te": "Ala Vaikunthapurramuloo"
-    },
-    "description": {
-      "en": "After growing up enduring criticism from his father, a young man finds his world shaken upon learning he was switched at birth with a millionaire's son.",
-      "te": "తన తండ్రి నుండి విమర్శలను సహిస్తూ పెరిగిన తర్వాత, ఒక యువకుడు తాను ఒక కోటీశ్వరుని కొడుకుతో పుట్టినప్పుడు మారినట్లు తెలుసుకున్నప్పుడు అతని ప్రపంచం కదిలింది."
-    },
-    "genres": [
-      "Action",
-      "Comedy",
-      "Drama",
-      "Family"
-    ],
-    "year": 2020,
-    "runtime": 165,
-    "totalEpisodes": null,
-    "totalSeasons": null,
-    "imdbRating": 6.588,
-    "studio": "Geetha Arts",
     "language": "Telugu",
     "country": "IN",
     "teluguDubAvail": true,
@@ -1902,8 +1566,8 @@ export const expandedContent: any[] = [
       "te": "Evaru"
     },
     "description": {
-      "en": "When a high-ranking police officer is killed by his alleged rape victim, Sub-inspector Vikram Vasudev is entrusted with investigating what seems like an open-and-shut case. However, as he delves deeper, Vikram finds the case spiralling into a dark tale filled with unexpected surprises.",
-      "te": "ఒక ఉన్నత స్థాయి పోలీసు అధికారి తన అత్యాచార బాధితురాలిచే చంపబడినప్పుడు, సబ్-ఇన్‌స్పెక్టర్ విక్రమ్ వాసుదేవ్‌కు ఓపెన్ అండ్ షట్ కేసు లాగా అనిపించే దానిని దర్యాప్తు చేసే బాధ్యతను అప్పగించారు. అయినప్పటికీ, అతను లోతుగా పరిశోధిస్తున్నప్పుడు, విక్రమ్ కేసు ఊహించని ఆశ్చర్యాలతో నిండిన చీకటి కథగా మారుతున్నట్లు కనుగొన్నాడు."
+      "en": "Sub-inspector Vikram Vasudev is assigned to investigate the killing of a high-ranking police officer, seemingly slain by his rape victim. But as Vikram uncovers hidden clues, the straightforward case unravels into a dark conspiracy.",
+      "te": "తమపై జరిగిన అత్యాచారానికి ప్రతీకారంగా ఒక ఉన్నతాధికారిని చంపిన మహిళ కేసును చేధించడానికి రంగంలోకి దిగిన సబ్-ఇన్‌స్పెక్టర్ విక్రమ్ వాసుదేవ్ కథ."
     },
     "genres": [
       "Crime"
@@ -2154,8 +1818,8 @@ export const expandedContent: any[] = [
       "te": "Bhola Shankar"
     },
     "description": {
-      "en": "A reformed gangster now taxi driver unwittingly draws the vengeance of a crime syndicate after aiding the police in busting a smuggling operation. Fueled by a burning desire for justice and to protect his adopted sister, he embarks on a relentless quest to hunt down the mobsters responsible.",
-      "te": "సంస్కరించబడిన గ్యాంగ్‌స్టర్ ఇప్పుడు టాక్సీ డ్రైవర్, స్మగ్లింగ్ ఆపరేషన్‌ను ఛేదించడంలో పోలీసులకు సహాయం చేసిన తర్వాత క్రైమ్ సిండికేట్ యొక్క ప్రతీకారాన్ని తెలియకుండానే తీసుకుంటాడు. న్యాయం కోసం మరియు తన దత్తత తీసుకున్న సోదరిని రక్షించాలనే కోరికతో అతను బాధ్యులను వేటాడేందుకు కనికరంలేని అన్వేషణను ప్రారంభించాడు."
+      "en": "A reformed gangster working as a taxi driver attracts the wrath of a powerful crime syndicate after helping the police bust a smuggling ring. Determined to protect his sister, he goes on the offensive to eliminate the mobsters.",
+      "te": "కోల్‌కతాలో టాక్సీ డ్రైవర్‌గా ప్రశాంతమైన జీవితాన్ని గడుపుతున్న ఒకప్పటి గ్యాంగ్‌స్టర్ భోలా శంకర్, తన సోదరిని కాపాడుకోవడానికి మానవ రవాణా ముఠాలపై తిరుగుబాటు చేసిన యాక్షన్ ఎంటర్టైనర్."
     },
     "genres": [
       "Action",
@@ -4215,8 +3879,8 @@ export const expandedContent: any[] = [
       "te": "Chennai Express"
     },
     "description": {
-      "en": "Rahul embarks on a journey to a small town in Tamil Nadu to fulfill the last wish of his grandfather: to have his ashes immersed in the Holy water of Rameshwaram. En route, he meets a woman hailing from a unique family down South. As they find love through this journey in the exuberant lands of South India, an unanticipated drive awaits them.",
-      "te": "తన తాతగారి చితాభస్మాన్ని రామేశ్వరంలోని పవిత్ర జలంలో నిమజ్జనం చేయాలనే ఉద్దేశంతో రాహుల్ తమిళనాడులోని ఒక చిన్న పట్టణానికి బయలుదేరాడు. మార్గంలో, అతను దక్షిణాన ఒక ప్రత్యేకమైన కుటుంబానికి చెందిన ఒక మహిళను కలుస్తాడు. దక్షిణ భారతదేశంలోని విపరీతమైన భూభాగాలలో ఈ ప్రయాణం ద్వారా వారు ప్రేమను కనుగొంటారు, ఊహించని డ్రైవ్ వారికి ఎదురుచూస్తుంది."
+      "en": "Rahul travels to Rameshwaram to immerse his grandfather's ashes, meeting a spirited woman from a powerful local family on the way. Their trip turns into an unexpected adventure across South India, filled with danger and romance.",
+      "te": "రాహుల్ తన తాతగారి చితాభస్మాన్ని రామేశ్వరంలో కలపడానికి వెళ్లే క్రమంలో మీనా అనే తమిళ అమ్మాయిని కలిసి ఆమె తండ్రి ముఠా నుండి తప్పించుకునే క్రమంలో పడే ప్రయాణ కథ."
     },
     "genres": [
       "Romance",
@@ -4543,8 +4207,8 @@ export const expandedContent: any[] = [
       "te": "Love Insurance Kompany"
     },
     "description": {
-      "en": "In 2040, an app premised on ensuring romance for all is used widely by the population. When the voice behind the app's AI realizes its misconception to true love, he embarks on a quest to prove that love does not come from a screen.",
-      "te": "2040లో, అందరికీ శృంగారభరితంగా ఉండేలా ఒక యాప్‌ని జనాభాలో విస్తృతంగా ఉపయోగిస్తున్నారు. యాప్ యొక్క AI వెనుక ఉన్న వాయిస్ నిజమైన ప్రేమపై దాని అపోహను గుర్తించినప్పుడు, ప్రేమ అనేది స్క్రీన్ నుండి రాదు అని నిరూపించడానికి అతను అన్వేషణను ప్రారంభించాడు."
+      "en": "In a future dominated by a matchmaking app, the voice actor behind the app's AI begins to doubt the algorithm's definition of romance and sets out to prove that genuine human connection cannot be programmed.",
+      "te": "2040 నాటి ఒక లవ్ ఇన్సూరెన్స్ కంపెనీలో ఒక యువకుడు తన ప్రేమను నిరూపించుకోవడానికి ఎలాంటి కష్టాలు పడ్డాడు అనే వినూత్న ప్రేమ కథ."
     },
     "genres": [
       "Romance",
@@ -4749,42 +4413,6 @@ export const expandedContent: any[] = [
     "trendingScore": 1,
     "popularityScore": 1,
     "universe": null
-  },
-  {
-    "slug": "leo-2023",
-    "type": "MOVIE",
-    "status": "COMPLETED",
-    "poster": "https://image.tmdb.org/t/p/w500/2XUHC4lp3tDsgfFLFygNZ2x2Um9.jpg",
-    "banner": "https://image.tmdb.org/t/p/original/MSNYxWe4u4en9vQ3oZIKQWKYHu.jpg",
-    "title": {
-      "en": "Leo",
-      "te": "Leo"
-    },
-    "description": {
-      "en": "Parthiban, a cafe owner, lives with his family in Himachal Pradesh. Things take an absurd turn for him when he gets in the way of a drug cartel.",
-      "te": "పార్థిబన్ అనే కేఫ్ యజమాని హిమాచల్ ప్రదేశ్‌లో తన కుటుంబంతో నివసిస్తున్నాడు. అతను డ్రగ్ కార్టెల్ దారిలోకి వచ్చినప్పుడు విషయాలు అతనికి అసంబద్ధమైన మలుపు తీసుకుంటాయి."
-    },
-    "genres": [
-      "Action",
-      "Crime"
-    ],
-    "year": 2023,
-    "runtime": 163,
-    "totalEpisodes": null,
-    "totalSeasons": null,
-    "imdbRating": 6.9,
-    "studio": "Seven Screen Studios",
-    "language": "Tamil",
-    "country": "IN",
-    "teluguDubAvail": true,
-    "teluguSubAvail": true,
-    "hindiDubAvail": false,
-    "isTrending": false,
-    "isTopRated": false,
-    "isFeatured": false,
-    "trendingScore": 1,
-    "popularityScore": 1,
-    "universe": "lcu"
   },
   {
     "slug": "por-thozhil-2023",
@@ -5259,42 +4887,6 @@ export const expandedContent: any[] = [
     "universe": null
   },
   {
-    "slug": "coolie-2025",
-    "type": "MOVIE",
-    "status": "COMPLETED",
-    "poster": "https://image.tmdb.org/t/p/w500/kr36awqmziEI5mfUElsHB0pj9zP.jpg",
-    "banner": "https://image.tmdb.org/t/p/original/bLn0CPzrrqFLicjNTgrzaIyE0gZ.jpg",
-    "title": {
-      "en": "Coolie",
-      "te": "Coolie"
-    },
-    "description": {
-      "en": "Deva, once living a quiet life, is shaken when his close friend dies under suspicious circumstances. Determined to uncover the truth, he infiltrates a powerful gang operating in the shadows. As he investigates, Deva becomes entangled in a dangerous web of crime, betrayal, and secrets from his own past, forcing him to confront powerful enemies while protecting the ones he loves.",
-      "te": "ఒకప్పుడు ప్రశాంత జీవితాన్ని గడుపుతున్న దేవా, తన సన్నిహితుడు అనుమానాస్పద పరిస్థితుల్లో చనిపోవడంతో చలించిపోతాడు. నిజాన్ని వెలికి తీయాలని నిశ్చయించుకున్న అతను నీడలో పనిచేస్తున్న శక్తివంతమైన ముఠాలోకి చొరబడ్డాడు. అతను దర్యాప్తు చేస్తున్నప్పుడు, దేవా తన గతం నుండి నేరాలు, ద్రోహం మరియు రహస్యాల యొక్క ప్రమాదకరమైన వెబ్‌లో చిక్కుకుంటాడు, అతను ప్రేమించిన వారిని రక్షించేటప్పుడు శక్తివంతమైన శత్రువులను ఎదుర్కోవలసి వస్తుంది."
-    },
-    "genres": [
-      "Action",
-      "Crime"
-    ],
-    "year": 2025,
-    "runtime": 170,
-    "totalEpisodes": null,
-    "totalSeasons": null,
-    "imdbRating": 6.235,
-    "studio": "Sun Pictures",
-    "language": "Tamil",
-    "country": "IN",
-    "teluguDubAvail": true,
-    "teluguSubAvail": true,
-    "hindiDubAvail": false,
-    "isTrending": false,
-    "isTopRated": false,
-    "isFeatured": false,
-    "trendingScore": 0,
-    "popularityScore": 1,
-    "universe": "lcu"
-  },
-  {
     "slug": "made-in-korea-2026",
     "type": "MOVIE",
     "status": "COMPLETED",
@@ -5764,42 +5356,6 @@ export const expandedContent: any[] = [
     "universe": null
   },
   {
-    "slug": "vikram-2022",
-    "type": "MOVIE",
-    "status": "COMPLETED",
-    "poster": "https://image.tmdb.org/t/p/w500/774UV1aCURb4s4JfEFg3IEMu5Zj.jpg",
-    "banner": "https://image.tmdb.org/t/p/original/dkIX4dSMuVqjfrPGunBJUR7K3LQ.jpg",
-    "title": {
-      "en": "Vikram",
-      "te": "Vikram"
-    },
-    "description": {
-      "en": "Amar is assigned to investigate a case of serial killings. When Amar investigates the case, he realizes it is not what it seems to be and following down this path will lead to nothing but war between everyone involved.",
-      "te": "అమర్ వరుస హత్యల కేసును పరిశోధించడానికి కేటాయించబడ్డాడు. అమర్ కేసును పరిశోధించినప్పుడు, అది కనిపించేది కాదని మరియు ఈ మార్గాన్ని అనుసరించడం వల్ల ప్రమేయం ఉన్న ప్రతి ఒక్కరి మధ్య యుద్ధానికి దారితీయదని అతను గ్రహించాడు."
-    },
-    "genres": [
-      "Action",
-      "Crime"
-    ],
-    "year": 2022,
-    "runtime": 174,
-    "totalEpisodes": null,
-    "totalSeasons": null,
-    "imdbRating": 7.565,
-    "studio": "Raajkamal Films International",
-    "language": "Tamil",
-    "country": "IN",
-    "teluguDubAvail": true,
-    "teluguSubAvail": true,
-    "hindiDubAvail": false,
-    "isTrending": false,
-    "isTopRated": false,
-    "isFeatured": false,
-    "trendingScore": 0,
-    "popularityScore": 1,
-    "universe": "lcu"
-  },
-  {
     "slug": "nanban-2012",
     "type": "MOVIE",
     "status": "COMPLETED",
@@ -5810,8 +5366,8 @@ export const expandedContent: any[] = [
       "te": "Nanban"
     },
     "description": {
-      "en": "The plot of the film illustrates the embankment of two friends on a quest for a lost buddy, who was once an optimistic and successful student. On their journey, they recount their college life and special moments that the three shared up until their lost friend secretly parted ways after convocation. During their quest, the two encounter a rival classmate who once made a long forgotten bet with them, a funeral that goes impossibly out of control, and a wedding they must crash.",
-      "te": "ఒకప్పుడు ఆశావాద మరియు విజయవంతమైన విద్యార్థి అయిన కోల్పోయిన స్నేహితుని కోసం అన్వేషణలో ఇద్దరు స్నేహితుల గట్టును చిత్రం యొక్క కథాంశం వివరిస్తుంది. వారి ప్రయాణంలో, వారు తమ కళాశాల జీవితాన్ని మరియు వారి కోల్పోయిన స్నేహితుడు కాన్వకేషన్ తర్వాత రహస్యంగా విడిపోయే వరకు ముగ్గురు పంచుకున్న ప్రత్యేక క్షణాలను వివరిస్తారు. వారి అన్వేషణలో, ఇద్దరూ ఒక ప్రత్యర్థి క్లాస్‌మేట్‌ను ఎదుర్కొంటారు, అతను ఒకప్పుడు వారితో చాలా కాలంగా మరిచిపోయిన పందెం, ఒక అంత్యక్రియలు అసాధ్యమైన నియంత్రణలో లేవు మరియు వారు క్రాష్ చేయవలసిన వివాహాన్ని ఎదుర్కొంటారు."
+      "en": "Years after graduation, two college friends travel across the country to locate their brilliant, long-lost classmate who mysteriously vanished after convocation, recalling their rebellious college days along the way.",
+      "te": "కళాశాల రోజుల్లో తమ జీవితాలను మార్చేసిన తమ ప్రియ మిత్రుడు రాంచీ కోసం ఇద్దరు స్నేహితులు చేసే సుదీర్ఘ అన్వేషణ మరియు వారి కాలేజీ జ్ఞాపకాల కామెడీ డ్రామా."
     },
     "genres": [
       "Comedy",
@@ -7011,8 +6567,8 @@ export const expandedContent: any[] = [
       "te": "Nymphomaniac: Vol. II"
     },
     "description": {
-      "en": "The continuation of Joe's sexually dictated life delves into the darker aspects of her adult life and what led to her being in Seligman's care.",
-      "te": "జో యొక్క లైంగిక నిర్దేశిత జీవితం యొక్క కొనసాగింపు ఆమె వయోజన జీవితంలోని చీకటి కోణాలను పరిశీలిస్తుంది మరియు ఆమె సెలిగ్మాన్ సంరక్షణలో ఉండటానికి దారితీసింది."
+      "en": "This continuation of Joe's raw autobiographical account exposes the dark struggles of her adulthood and the traumatic events leading up to her rescue by Seligman.",
+      "te": "జో తన లైంగిక అలవాట్లు మరియు తీవ్రమైన భావోద్వేగాల వల్ల ఎదుర్కొన్న సమస్యల గురించి సెలిగ్మాన్‌తో పంచుకునే జీవిత కథాంశం."
     },
     "genres": [
       "Drama",
@@ -7267,8 +6823,8 @@ export const expandedContent: any[] = [
       "te": "Infiltrate"
     },
     "description": {
-      "en": "In a city overrun by crime, government Agent Lily Chen is forced to choose between her duty and her family when her husband is kidnapped, and she’s blackmailed into assassinating high-level criminals to save him. As she delves deeper into the criminal underworld, Lily’s relentless pursuit of justice unravels a web of corruption, leading to a final, life-altering decision that will change her world forever.",
-      "te": "నేరాలతో నిండిన నగరంలో, ప్రభుత్వ ఏజెంట్ లిల్లీ చెన్ తన భర్త కిడ్నాప్ చేయబడినప్పుడు తన డ్యూటీ మరియు ఆమె కుటుంబానికి మధ్య ఎంచుకోవలసి వస్తుంది మరియు అతన్ని రక్షించడానికి ఉన్నత స్థాయి నేరస్థులను హత్య చేసేలా బ్లాక్ మెయిల్ చేయబడింది. ఆమె క్రిమినల్ అండర్‌వరల్డ్‌లో లోతుగా పరిశోధిస్తున్నప్పుడు, లిల్లీ యొక్క కనికరంలేని న్యాయం యొక్క వెంబడించడం అవినీతి యొక్క వెబ్‌ను విప్పుతుంది, ఇది ఆమె ప్రపంచాన్ని శాశ్వతంగా మార్చే తుది, జీవితాన్ని మార్చే నిర్ణయానికి దారి తీస్తుంది."
+      "en": "When a criminal syndicate kidnaps her husband, elite government operative Lily Chen is blackmailed into executing high-profile targets to ensure his release. Operating in the shadows, Lily navigates a dangerous web of systemic corruption that forces her to decide where her true loyalties lie.",
+      "te": "తమ భర్తను కిడ్నాప్ చేసిన క్రిమినల్ గ్యాంగ్ నుండి అతనిని రక్షించడం కోసం, ప్రభుత్వ ఏజెంట్ లిల్లీ చెన్ అండర్‌వరల్డ్‌లోకి ప్రవేశించి బ్లాక్‌మెయిల్ కి లొంగకుండా ఎలా ఎదురుతిరిగింది అనే యాక్షన్ థ్రిల్లర్."
     },
     "genres": [
       "Action"
@@ -7652,43 +7208,6 @@ export const expandedContent: any[] = [
     "universe": null
   },
   {
-    "slug": "interstellar-2014",
-    "type": "MOVIE",
-    "status": "COMPLETED",
-    "poster": "https://image.tmdb.org/t/p/w500/yQvGrMoipbRoddT0ZR8tPoR7NfX.jpg",
-    "banner": "https://image.tmdb.org/t/p/original/2ssWTSVklAEc98frZUQhgtGHx7s.jpg",
-    "title": {
-      "en": "Interstellar",
-      "te": "Interstellar"
-    },
-    "description": {
-      "en": "The adventures of a group of explorers who make use of a newly discovered wormhole to surpass the limitations on human space travel and conquer the vast distances involved in an interstellar voyage.",
-      "te": "మానవ అంతరిక్ష ప్రయాణంలో పరిమితులను అధిగమించడానికి మరియు నక్షత్రాల మధ్య సముద్రయానంలో ఉన్న విస్తారమైన దూరాలను జయించటానికి కొత్తగా కనుగొన్న వార్మ్‌హోల్‌ను ఉపయోగించే అన్వేషకుల బృందం యొక్క సాహసాలు."
-    },
-    "genres": [
-      "Adventure",
-      "Drama",
-      "Sci-Fi"
-    ],
-    "year": 2014,
-    "runtime": 169,
-    "totalEpisodes": null,
-    "totalSeasons": null,
-    "imdbRating": 8.5,
-    "studio": "Legendary Pictures",
-    "language": "English",
-    "country": "US",
-    "teluguDubAvail": true,
-    "teluguSubAvail": true,
-    "hindiDubAvail": true,
-    "isTrending": false,
-    "isTopRated": true,
-    "isFeatured": false,
-    "trendingScore": 7,
-    "popularityScore": 15,
-    "universe": null
-  },
-  {
     "slug": "in-the-grey-2026",
     "type": "MOVIE",
     "status": "COMPLETED",
@@ -7770,8 +7289,8 @@ export const expandedContent: any[] = [
       "te": "Avatar Aang: The Last Airbender"
     },
     "description": {
-      "en": "Avatar Aang, the world's last Airbender, learns of an ancient power that could save his culture from extinction. With the help of his friends, he embarks on a global quest to find it before it falls into the wrong hands and threatens to upend the peace they sacrificed everything to achieve.",
-      "te": "అవతార్ ఆంగ్, ప్రపంచంలోని చివరి ఎయిర్‌బెండర్, తన సంస్కృతిని అంతరించిపోకుండా కాపాడగల పురాతన శక్తి గురించి తెలుసుకుంటాడు. తన స్నేహితుల సహాయంతో, అది తప్పుడు చేతుల్లోకి రాకముందే దానిని కనుగొనడానికి ప్రపంచ అన్వేషణను ప్రారంభించాడు మరియు వారు సాధించడానికి అన్నింటినీ త్యాగం చేసిన శాంతిని ఉల్లంఘిస్తానని బెదిరించాడు."
+      "en": "Aang, the last Airbender, discovers a hidden power that could preserve his culture. Alongside Katara and Sokka, he races across the nations to secure this artifact before the Fire Nation can use it to conquer the world.",
+      "te": "ప్రపంచాన్ని అగ్ని మూలకం చేతిలో పడకుండా రక్షించడానికి అవతార్ ఆంగ్ మరియు అతని స్నేహితులు చేసే సాహసోపేతమైన ఫాంటసీ యాత్ర."
     },
     "genres": [
       "Action",
@@ -7987,8 +7506,8 @@ export const expandedContent: any[] = [
       "te": "Predator: Badlands"
     },
     "description": {
-      "en": "Cast out from his clan, a young Predator finds an unlikely ally in a damaged android and embarks on a treacherous journey in search of the ultimate adversary.",
-      "te": "తన వంశం నుండి బయటకు పంపబడిన, ఒక యువ ప్రిడేటర్ దెబ్బతిన్న ఆండ్రాయిడ్‌లో అవకాశం లేని మిత్రుడిని కనుగొంటాడు మరియు అంతిమ ప్రత్యర్థిని వెతకడానికి ఒక ప్రమాదకరమైన ప్రయాణాన్ని ప్రారంభించాడు."
+      "en": "An exiled young Predator teams up with a malfunctioning android, hunting down the deadliest prey in the galaxy to regain his honor.",
+      "te": "తన తెగ నుండి బహిష్కరించబడిన ఒక యువ ప్రిడేటర్, దెబ్బతిన్న రోబోట్ సహాయంతో అడవి మృగాలను మరియు శత్రువులను ఎలా వేటాడాడనే సైన్స్ ఫిక్షన్ కథ."
     },
     "genres": [
       "Action",
@@ -8024,8 +7543,8 @@ export const expandedContent: any[] = [
       "te": "Greenland 2: Migration"
     },
     "description": {
-      "en": "Having found the safety of the Greenland bunker after the comet Clarke decimated the Earth, the Garrity family must now risk everything to embark on a perilous journey across the wasteland of Europe to find a new home.",
-      "te": "కామెట్ క్లార్క్ భూమిని నాశనం చేసిన తర్వాత గ్రీన్‌ల్యాండ్ బంకర్ యొక్క భద్రతను కనుగొన్న తర్వాత, గారిటీ కుటుంబం ఇప్పుడు కొత్త ఇంటిని కనుగొనడానికి యూరప్‌లోని బంజరు భూమి మీదుగా ప్రమాదకరమైన ప్రయాణాన్ని ప్రారంభించడానికి ప్రతిదాన్ని రిస్క్ చేయాలి."
+      "en": "After surviving the comet strike in a Greenland bunker, the Garrity family must venture across the hazardous, ash-covered European wasteland in search of a permanent sanctuary.",
+      "te": "భూమిపై ఘోరమైన ఉపద్రవం సంభవించిన తర్వాత గ్రీన్‌ల్యాండ్ బంకర్‌లో తలదాచుకున్న గారిటీ కుటుంబం జీవనం కోసం యూరప్ గుండా వెళ్లే సరికొత్త వలస ప్రయాణం."
     },
     "genres": [
       "Adventure",
@@ -8412,80 +7931,6 @@ export const expandedContent: any[] = [
     "universe": null
   },
   {
-    "slug": "avengers-infinity-war-2018",
-    "type": "MOVIE",
-    "status": "COMPLETED",
-    "poster": "https://image.tmdb.org/t/p/w500/7WsyChQLEftFiDOVTGkv3hFpyyt.jpg",
-    "banner": "https://image.tmdb.org/t/p/original/mDfJG3LC3Dqb67AZ52x3Z0jU0uB.jpg",
-    "title": {
-      "en": "Avengers: Infinity War",
-      "te": "Avengers: Infinity War"
-    },
-    "description": {
-      "en": "As the Avengers and their allies have continued to protect the world from threats too large for any one hero to handle, a new danger has emerged from the cosmic shadows: Thanos. A despot of intergalactic infamy, his goal is to collect all six Infinity Stones, artifacts of unimaginable power, and use them to inflict his twisted will on all of reality. Everything the Avengers have fought for has led up to this moment - the fate of Earth and existence itself has never been more uncertain.",
-      "te": "ఎవెంజర్స్ మరియు వారి మిత్రదేశాలు ఏ ఒక్క హీరోని నిర్వహించలేనంత పెద్ద బెదిరింపుల నుండి ప్రపంచాన్ని రక్షించడం కొనసాగించినందున, విశ్వ నీడల నుండి కొత్త ప్రమాదం ఉద్భవించింది: థానోస్. నక్షత్రమండలాల మద్యవున్న అపఖ్యాతి యొక్క నిరంకుశుడు, అతని లక్ష్యం మొత్తం ఆరు ఇన్ఫినిటీ స్టోన్స్, అనూహ్యమైన శక్తి యొక్క కళాఖండాలను సేకరించి, వాస్తవికతపై అతని వక్రీకృత సంకల్పాన్ని కలిగించడానికి వాటిని ఉపయోగించడం. ఎవెంజర్స్ పోరాడిన ప్రతిదానికీ ఈ క్షణం వరకు దారితీసింది - భూమి మరియు ఉనికి యొక్క విధి ఎన్నడూ అనిశ్చితంగా లేదు."
-    },
-    "genres": [
-      "Adventure",
-      "Action",
-      "Sci-Fi"
-    ],
-    "year": 2018,
-    "runtime": 149,
-    "totalEpisodes": null,
-    "totalSeasons": null,
-    "imdbRating": 8.236,
-    "studio": "Marvel Studios",
-    "language": "English",
-    "country": "US",
-    "teluguDubAvail": true,
-    "teluguSubAvail": true,
-    "hindiDubAvail": false,
-    "isTrending": false,
-    "isTopRated": true,
-    "isFeatured": false,
-    "trendingScore": 5,
-    "popularityScore": 10,
-    "universe": "mcu"
-  },
-  {
-    "slug": "the-avengers-2012",
-    "type": "MOVIE",
-    "status": "COMPLETED",
-    "poster": "https://image.tmdb.org/t/p/w500/RYMX2wcKCBAr24UyPD7xwmjaTn.jpg",
-    "banner": "https://image.tmdb.org/t/p/original/9BBTo63ANSmhC4e6r62OJFuK2GL.jpg",
-    "title": {
-      "en": "The Avengers",
-      "te": "The Avengers"
-    },
-    "description": {
-      "en": "When an unexpected enemy emerges and threatens global safety and security, Nick Fury, director of the international peacekeeping agency known as S.H.I.E.L.D., finds himself in need of a team to pull the world back from the brink of disaster. Spanning the globe, a daring recruitment effort begins!",
-      "te": "ఊహించని శత్రువు ఉద్భవించి, ప్రపంచ భద్రత మరియు భద్రతను బెదిరించినప్పుడు, S.H.I.E.L.D. అని పిలువబడే అంతర్జాతీయ శాంతి పరిరక్షక సంస్థ డైరెక్టర్ నిక్ ఫ్యూరీ, ప్రపంచాన్ని విపత్తు అంచు నుండి వెనక్కి తీసుకురావడానికి ఒక బృందం అవసరమని కనుగొన్నాడు. ప్రపంచవ్యాప్తంగా విస్తరించి, సాహసోపేతమైన రిక్రూట్‌మెంట్ ప్రయత్నం ప్రారంభమవుతుంది!"
-    },
-    "genres": [
-      "Sci-Fi",
-      "Action",
-      "Adventure"
-    ],
-    "year": 2012,
-    "runtime": 143,
-    "totalEpisodes": null,
-    "totalSeasons": null,
-    "imdbRating": 8.035,
-    "studio": "Marvel Studios",
-    "language": "English",
-    "country": "US",
-    "teluguDubAvail": true,
-    "teluguSubAvail": true,
-    "hindiDubAvail": false,
-    "isTrending": false,
-    "isTopRated": true,
-    "isFeatured": false,
-    "trendingScore": 5,
-    "popularityScore": 10,
-    "universe": "mcu"
-  },
-  {
     "slug": "avatar-2009",
     "type": "MOVIE",
     "status": "COMPLETED",
@@ -8641,8 +8086,8 @@ export const expandedContent: any[] = [
       "te": "Propeller One-Way Night Coach"
     },
     "description": {
-      "en": "During the golden age of aviation, a young airplane enthusiast and his mother embark on a cross-country journey to Hollywood—and their simple flight transforms into the trip of a lifetime.",
-      "te": "విమానయానం యొక్క స్వర్ణయుగంలో, ఒక యువ విమాన ఔత్సాహికుడు మరియు అతని తల్లి హాలీవుడ్‌కు క్రాస్ కంట్రీ జర్నీని ప్రారంభించారు-మరియు వారి సాధారణ విమాన ప్రయాణం జీవితకాల యాత్రగా మారుతుంది."
+      "en": "A young aviation enthusiast and his mother take a cross-country flight to Hollywood during the golden age of flight, turning a simple trip into an extraordinary adventure.",
+      "te": "విమానయాన స్వర్ణయుగంలో ఒక బాలుడు తన తల్లితో కలిసి హాలీవుడ్ వెళ్ళడానికి చేసిన విమాన ప్రయాణం వారి జీవితంలో ఎలా గుర్తుండిపోయింది అనే సున్నితమైన కథ."
     },
     "genres": [
       "Adventure",
@@ -8740,42 +8185,6 @@ export const expandedContent: any[] = [
     "universe": null
   },
   {
-    "slug": "the-dark-knight-2008",
-    "type": "MOVIE",
-    "status": "COMPLETED",
-    "poster": "https://image.tmdb.org/t/p/w500/qJ2tW6WMUDux911r6m7haRef0WH.jpg",
-    "banner": "https://image.tmdb.org/t/p/original/cfT29Im5VDvjE0RpyKOSdCKZal7.jpg",
-    "title": {
-      "en": "The Dark Knight",
-      "te": "The Dark Knight"
-    },
-    "description": {
-      "en": "Batman raises the stakes in his war on crime. With the help of Lt. Jim Gordon and District Attorney Harvey Dent, Batman sets out to dismantle the remaining criminal organizations that plague the streets. The partnership proves to be effective, but they soon find themselves prey to a reign of chaos unleashed by a rising criminal mastermind known to the terrified citizens of Gotham as the Joker.",
-      "te": "బాట్‌మాన్ నేరంపై తన యుద్ధంలో వాటాను పెంచుతాడు. లెఫ్టినెంట్ జిమ్ గోర్డాన్ మరియు డిస్ట్రిక్ట్ అటార్నీ హార్వే డెంట్ సహాయంతో, బాట్‌మాన్ వీధులను పీడిస్తున్న మిగిలిన క్రిమినల్ సంస్థలను కూల్చివేయడానికి బయలుదేరాడు. భాగస్వామ్యం ప్రభావవంతంగా ఉందని రుజువు చేస్తుంది, అయితే వారు త్వరలో తమను తాము జోకర్‌గా భయభ్రాంతులకు గురిచేసే గోథమ్ పౌరులకు తెలిసిన పెరుగుతున్న నేర సూత్రధారి ద్వారా విప్పబడిన గందరగోళ పాలనకు బలైపోతారు."
-    },
-    "genres": [
-      "Action",
-      "Crime"
-    ],
-    "year": 2008,
-    "runtime": 152,
-    "totalEpisodes": null,
-    "totalSeasons": null,
-    "imdbRating": 8.531,
-    "studio": "Warner Bros. Pictures",
-    "language": "English",
-    "country": "US",
-    "teluguDubAvail": true,
-    "teluguSubAvail": true,
-    "hindiDubAvail": false,
-    "isTrending": false,
-    "isTopRated": true,
-    "isFeatured": false,
-    "trendingScore": 5,
-    "popularityScore": 9,
-    "universe": null
-  },
-  {
     "slug": "the-godfather-1972",
     "type": "MOVIE",
     "status": "COMPLETED",
@@ -8859,8 +8268,8 @@ export const expandedContent: any[] = [
       "te": "Apocalypto"
     },
     "description": {
-      "en": "Set in the Mayan civilization, when a man's idyllic presence is brutally disrupted by a violent invading force, he is taken on a perilous journey to a world ruled by fear and oppression where a harrowing end awaits him. Through a twist of fate and spurred by the power of his love for his woman and his family he will make a desperate break to return home and to ultimately save his way of life.",
-      "te": "మాయన్ నాగరికత నేపథ్యంలో, హింసాత్మక ఆక్రమణ శక్తి ద్వారా ఒక వ్యక్తి యొక్క ఇడిలిక్ ఉనికిని క్రూరంగా భంగపరిచినప్పుడు, అతను భయం మరియు అణచివేతతో పాలించే ప్రపంచానికి ప్రమాదకరమైన ప్రయాణంలో తీసుకువెళతాడు, అక్కడ అతనికి భయంకరమైన ముగింపు ఎదురుచూస్తుంది. విధి యొక్క మలుపు ద్వారా మరియు అతని స్త్రీ మరియు అతని కుటుంబం పట్ల అతని ప్రేమ యొక్క శక్తి ద్వారా అతను ఇంటికి తిరిగి రావడానికి మరియు చివరికి తన జీవన విధానాన్ని కాపాడుకోవడానికి తీరని విరామం చేస్తాడు."
+      "en": "During the collapse of the Mayan civilization, a young hunter is captured by invading warriors and marched to a city slated for human sacrifice. Spurred by the love for his pregnant wife, he stages a daring escape into the jungle to save his family.",
+      "te": "మాయన్ నాగరికత అంతిమ దశలో, శత్రువుల చేతిలో బందీగా చిక్కి నరబలి ఇవ్వబడడానికి తీసుకెళ్లబడిన ఒక యువ వేటగాడు తన గతాన్ని వదలి గొప్ప మాయా శక్తిగా ఎలా ఎదిగాడు అనే కథ."
     },
     "genres": [
       "Action",
@@ -8993,43 +8402,6 @@ export const expandedContent: any[] = [
     "universe": null
   },
   {
-    "slug": "spider-man-no-way-home-2021",
-    "type": "MOVIE",
-    "status": "COMPLETED",
-    "poster": "https://image.tmdb.org/t/p/w500/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg",
-    "banner": "https://image.tmdb.org/t/p/original/zD5v1E4joAzFvmAEytt7fM3ivyT.jpg",
-    "title": {
-      "en": "Spider-Man: No Way Home",
-      "te": "Spider-Man: No Way Home"
-    },
-    "description": {
-      "en": "Peter Parker is unmasked and no longer able to separate his normal life from the high-stakes of being a super-hero. When he asks for help from Doctor Strange the stakes become even more dangerous, forcing him to discover what it truly means to be Spider-Man.",
-      "te": "పీటర్ పార్కర్ ముసుగు వేయబడలేదు మరియు ఇకపై అతని సాధారణ జీవితాన్ని సూపర్-హీరో అనే ఉన్నత స్థాయి నుండి వేరు చేయలేరు. అతను డాక్టర్ స్ట్రేంజ్ నుండి సహాయం కోసం అడిగినప్పుడు వాటాలు మరింత ప్రమాదకరంగా మారాయి, స్పైడర్ మ్యాన్ అంటే నిజంగా అర్థం ఏమిటో కనుగొనవలసి వస్తుంది."
-    },
-    "genres": [
-      "Action",
-      "Adventure",
-      "Sci-Fi"
-    ],
-    "year": 2021,
-    "runtime": 148,
-    "totalEpisodes": null,
-    "totalSeasons": null,
-    "imdbRating": 7.934,
-    "studio": "Marvel Studios",
-    "language": "English",
-    "country": "US",
-    "teluguDubAvail": true,
-    "teluguSubAvail": true,
-    "hindiDubAvail": false,
-    "isTrending": false,
-    "isTopRated": true,
-    "isFeatured": false,
-    "trendingScore": 4,
-    "popularityScore": 9,
-    "universe": "mcu"
-  },
-  {
     "slug": "the-furious-2026",
     "type": "MOVIE",
     "status": "COMPLETED",
@@ -9140,43 +8512,6 @@ export const expandedContent: any[] = [
     "universe": null
   },
   {
-    "slug": "deadpool-wolverine-2024",
-    "type": "MOVIE",
-    "status": "COMPLETED",
-    "poster": "https://image.tmdb.org/t/p/w500/8cdWjvZQUExUUTzyp4t6EDMubfO.jpg",
-    "banner": "https://image.tmdb.org/t/p/original/ufpeVEM64uZHPpzzeiDNIAdaeOD.jpg",
-    "title": {
-      "en": "Deadpool & Wolverine",
-      "te": "Deadpool & Wolverine"
-    },
-    "description": {
-      "en": "A listless Wade Wilson toils away in civilian life with his days as the morally flexible mercenary, Deadpool, behind him. But when his homeworld faces an existential threat, Wade must reluctantly suit-up again with an even more reluctant Wolverine.",
-      "te": "నీతిలేని వాడే విల్సన్ తన వెనుక నైతికంగా అనువైన కిరాయి సైనికుడు డెడ్‌పూల్‌గా పౌర జీవితంలో కష్టపడుతున్నాడు. కానీ అతని స్వస్థలం అస్తిత్వ ముప్పును ఎదుర్కొన్నప్పుడు, వాడే అయిష్టంగానే మరింత అయిష్టంగా ఉన్న వుల్వరైన్‌తో మళ్లీ సూట్ అప్ చేయాలి."
-    },
-    "genres": [
-      "Action",
-      "Comedy",
-      "Sci-Fi"
-    ],
-    "year": 2024,
-    "runtime": 128,
-    "totalEpisodes": null,
-    "totalSeasons": null,
-    "imdbRating": 7.571,
-    "studio": "Marvel Studios",
-    "language": "English",
-    "country": "US",
-    "teluguDubAvail": true,
-    "teluguSubAvail": true,
-    "hindiDubAvail": false,
-    "isTrending": false,
-    "isTopRated": false,
-    "isFeatured": false,
-    "trendingScore": 4,
-    "popularityScore": 8,
-    "universe": null
-  },
-  {
     "slug": "memento-2001",
     "type": "MOVIE",
     "status": "COMPLETED",
@@ -9228,7 +8563,8 @@ export const expandedContent: any[] = [
     "genres": [
       "Sci-Fi",
       "Action",
-      "Adventure"
+      "Adventure",
+      "Super Hero"
     ],
     "year": 2026,
     "runtime": 120,
@@ -9427,42 +8763,6 @@ export const expandedContent: any[] = [
     "universe": null
   },
   {
-    "slug": "jujutsu-kaisen-2020",
-    "type": "ANIME",
-    "status": "COMPLETED",
-    "poster": "https://image.tmdb.org/t/p/w500/fHpKWq9ayzSk8nSwqRuaAUemRKh.jpg",
-    "banner": "https://image.tmdb.org/t/p/original/lthkKBLe1rX6iThgVFg22O02sJw.jpg",
-    "title": {
-      "en": "JUJUTSU KAISEN",
-      "te": "JUJUTSU KAISEN"
-    },
-    "description": {
-      "en": "Yuji Itadori is a boy with tremendous physical strength, though he lives a completely ordinary high school life. One day, to save a classmate who has been attacked by curses, he eats the finger of Ryomen Sukuna, taking the curse into his own soul. From then on, he shares one body with Ryomen Sukuna. Guided by the most powerful of sorcerers, Satoru Gojo, Itadori is admitted to Tokyo Jujutsu High School, an organization that fights the curses... and thus begins the heroic tale of a boy who became a curse to exorcise a curse, a life from which he could never turn back.",
-      "te": "యుజి ఇటాడోరి విపరీతమైన శారీరక బలం కలిగిన బాలుడు, అయినప్పటికీ అతను పూర్తిగా సాధారణ ఉన్నత పాఠశాల జీవితాన్ని గడుపుతున్నాడు. ఒకరోజు, శాపాలతో దాడి చేయబడిన సహవిద్యార్థిని రక్షించడానికి, అతను శాపాన్ని తన ఆత్మలోకి తీసుకొని రియోమెన్ సుకునా వేలును తింటాడు. అప్పటి నుండి, అతను రియోమెన్ సుకునాతో ఒక శరీరాన్ని పంచుకుంటాడు. అత్యంత శక్తివంతమైన మాంత్రికులైన సతోరు గోజోచే మార్గనిర్దేశం చేయబడిన ఇటాడోరి శాపాలకు వ్యతిరేకంగా పోరాడే సంస్థ అయిన టోక్యో జుజుట్సు హైస్కూల్‌లో చేరాడు... తద్వారా శాపాన్ని భూతవైద్యం చేయడానికి శాపంగా మారిన ఒక బాలుడి వీరోచిత కథ ప్రారంభమవుతుంది, అతను ఎప్పటికీ వెనక్కి తిరిగిరాని జీవితం."
-    },
-    "genres": [
-      "Action",
-      "Sci-Fi"
-    ],
-    "year": 2020,
-    "runtime": null,
-    "totalEpisodes": 59,
-    "totalSeasons": 1,
-    "imdbRating": 8.568,
-    "studio": "MAPPA",
-    "language": "Japanese",
-    "country": "JP",
-    "teluguDubAvail": true,
-    "teluguSubAvail": true,
-    "hindiDubAvail": true,
-    "isTrending": false,
-    "isTopRated": true,
-    "isFeatured": false,
-    "trendingScore": 14,
-    "popularityScore": 28,
-    "universe": null
-  },
-  {
     "slug": "overflow-2020",
     "type": "ANIME",
     "status": "COMPLETED",
@@ -9495,44 +8795,6 @@ export const expandedContent: any[] = [
     "isFeatured": false,
     "trendingScore": 13,
     "popularityScore": 26,
-    "universe": null
-  },
-  {
-    "slug": "doraemon-2005",
-    "type": "ANIME",
-    "status": "COMPLETED",
-    "poster": "https://image.tmdb.org/t/p/w500/9ZN1P32SHviL3SV51qLivxycvcx.jpg",
-    "banner": "https://image.tmdb.org/t/p/original/c2oiRa7V3bQzof4wVGzLXtWJ5QU.jpg",
-    "title": {
-      "en": "Doraemon",
-      "te": "Doraemon"
-    },
-    "description": {
-      "en": "Robotic cat Doraemon is sent back in time from the 22nd century to protect 10-year-old Noby, a lazy and uncoordinated boy who is destined to have a tragic future. Doraemon can create secret gadgets from a pocket on his stomach, but they usually cause more bad than good because of Noby's propensity to misuse them.",
-      "te": "రోబోటిక్ క్యాట్ డోరేమాన్ 22వ శతాబ్దానికి చెందిన 10 ఏళ్ల నోబీని రక్షించడానికి తిరిగి పంపబడింది, అతను విషాదకరమైన భవిష్యత్తును కలిగి ఉన్న సోమరి మరియు సమన్వయం లేని బాలుడు. డోరేమాన్ తన పొట్టపై ఉన్న జేబులో నుండి రహస్య గాడ్జెట్‌లను సృష్టించగలడు, కానీ నోబీ వాటిని దుర్వినియోగం చేసే ప్రవృత్తి కారణంగా అవి సాధారణంగా మంచి కంటే చెడ్డవే ఎక్కువ చేస్తాయి."
-    },
-    "genres": [
-      "Action",
-      "Comedy",
-      "Sci-Fi",
-      "Family"
-    ],
-    "year": 2005,
-    "runtime": null,
-    "totalEpisodes": 1464,
-    "totalSeasons": 1,
-    "imdbRating": 8.037,
-    "studio": "Pierrot",
-    "language": "Japanese",
-    "country": "JP",
-    "teluguDubAvail": true,
-    "teluguSubAvail": true,
-    "hindiDubAvail": false,
-    "isTrending": false,
-    "isTopRated": true,
-    "isFeatured": false,
-    "trendingScore": 12,
-    "popularityScore": 24,
     "universe": null
   },
   {
@@ -9656,8 +8918,8 @@ export const expandedContent: any[] = [
       "te": "Frieren: Beyond Journey's End"
     },
     "description": {
-      "en": "After the party of heroes defeated the Demon King, they restored peace to the land and returned to lives of solitude.  Generations pass, and the elven mage Frieren comes face to face with humanity’s mortality. She takes on a new apprentice and promises to fulfill old friends’ dying wishes. Can an elven mind make peace with the nature of life and death? Frieren embarks on her quest to find out.",
-      "te": "హీరోల పార్టీ రాక్షస రాజును ఓడించిన తరువాత, వారు భూమికి శాంతిని పునరుద్ధరించారు మరియు ఏకాంత జీవితానికి తిరిగి వచ్చారు.  తరాలు గడిచిపోతున్నాయి మరియు ఎల్వెన్ మాంత్రికుడు ఫ్రైరెన్ మానవాళి మరణాలతో ముఖాముఖిగా వస్తాడు. ఆమె కొత్త అప్రెంటిస్‌ని తీసుకుంటుంది మరియు పాత స్నేహితుల మరణిస్తున్న కోరికలను నెరవేరుస్తానని హామీ ఇచ్చింది. ఎల్వెన్ మనస్సు జీవితం మరియు మరణం యొక్క స్వభావంతో శాంతిని పొందగలదా? Frieren తెలుసుకోవడానికి తన అన్వేషణను ప్రారంభించింది."
+      "en": "Decades after defeating the Demon King, long-lived elven mage Frieren confronts the mortality of her former companions. Undertaking a new apprenticeship, she travels to the far north to connect with their spirits and understand the human experience.",
+      "te": "రాక్షస రాజును ఓడించిన దశాబ్దాల తర్వాత, మరణం లేని ఎల్వెన్ మాంత్రికురాలు ఫ్రైరెన్ తన తోటి మానవ సహచరుల జ్ఞాపకాలను గౌరవిస్తూ వారి ఆత్మలతో మాట్లాడటానికి చేసే ప్రయాణం."
     },
     "genres": [
       "Action",
@@ -9791,42 +9053,6 @@ export const expandedContent: any[] = [
     "universe": null
   },
   {
-    "slug": "pok-mon-1997",
-    "type": "ANIME",
-    "status": "COMPLETED",
-    "poster": "https://image.tmdb.org/t/p/w500/lP4zwr0F7hWTbAFltfoFTc2AxRG.jpg",
-    "banner": "https://image.tmdb.org/t/p/original/yYpQV25I7XB6S0POJOScPjxYWV5.jpg",
-    "title": {
-      "en": "Pokémon",
-      "te": "Pokémon"
-    },
-    "description": {
-      "en": "Join Ash accompanied by his partner Pikachu, as he travels through many regions, meets new friends and faces new challenges on his quest to become a Pokémon Master.",
-      "te": "తన భాగస్వామి పికాచుతో కలిసి యాష్‌లో చేరండి, అతను అనేక ప్రాంతాలలో ప్రయాణిస్తున్నప్పుడు, కొత్త స్నేహితులను కలుసుకున్నాడు మరియు పోకీమాన్ మాస్టర్ కావాలనే అతని తపనతో కొత్త సవాళ్లను ఎదుర్కొంటాడు."
-    },
-    "genres": [
-      "Action",
-      "Sci-Fi"
-    ],
-    "year": 1997,
-    "runtime": null,
-    "totalEpisodes": 1235,
-    "totalSeasons": 25,
-    "imdbRating": 7.982,
-    "studio": "Shogakukan Production",
-    "language": "Japanese",
-    "country": "JP",
-    "teluguDubAvail": false,
-    "teluguSubAvail": true,
-    "hindiDubAvail": true,
-    "isTrending": false,
-    "isTopRated": true,
-    "isFeatured": false,
-    "trendingScore": 8,
-    "popularityScore": 16,
-    "universe": null
-  },
-  {
     "slug": "mushoku-tensei-jobless-reincarnation-2021",
     "type": "ANIME",
     "status": "COMPLETED",
@@ -9837,8 +9063,8 @@ export const expandedContent: any[] = [
       "te": "Mushoku Tensei: Jobless Reincarnation"
     },
     "description": {
-      "en": "When a 34-year-old underachiever gets run over by a truck, his story doesn't end there. Reincarnated in a new world as an infant, Rudy will seize every opportunity to live the life he's always wanted. Armed with new friends, some freshly acquired magical abilities, and the courage to do the things he's always dreamed of, he's embarking on an epic adventure—with all of his past experience intact!",
-      "te": "34 ఏళ్ల అండర్ అచీవర్‌ని ట్రక్కు ఢీకొట్టినప్పుడు, అతని కథ అక్కడితో ముగియదు. శిశువుగా కొత్త ప్రపంచంలో పునర్జన్మ పొందిన రూడీ, అతను ఎల్లప్పుడూ కోరుకునే జీవితాన్ని గడపడానికి ప్రతి అవకాశాన్ని ఉపయోగించుకుంటాడు. కొత్త స్నేహితులు, తాజాగా సంపాదించిన కొన్ని మాంత్రిక సామర్థ్యాలు మరియు అతను ఎప్పుడూ కలలుగన్న పనులను చేయగల ధైర్యంతో, అతను తన గత అనుభవాలన్నింటినీ చెక్కుచెదరకుండా ఒక పురాణ సాహసయాత్రను ప్రారంభించాడు!"
+      "en": "Reincarnated as an infant in a fantasy world after a fatal accident, a former underachiever resolves to make the most of his second life. Leveraging his adult memories and newfound magical talents, he sets out to make his mark.",
+      "te": "ట్రక్ ప్రమాదంలో మరణించి కొత్త ఫాంటసీ ప్రపంచంలో చిన్న శిశువుగా జన్మించిన ఒక యువకుడు తన గతాన్ని వదలి గొప్ప మాయా శక్తిగా ఎలా ఎదిగాడు అనే కథ."
     },
     "genres": [
       "Action",
@@ -9861,78 +9087,6 @@ export const expandedContent: any[] = [
     "trendingScore": 7,
     "popularityScore": 13,
     "universe": null
-  },
-  {
-    "slug": "naruto-2002",
-    "type": "ANIME",
-    "status": "COMPLETED",
-    "poster": "https://image.tmdb.org/t/p/w500/xppeysfvDKVx775MFuH8Z9BlpMk.jpg",
-    "banner": "https://image.tmdb.org/t/p/original/mpsYIytXhDXjI9yYC1Fp1S3PxsS.jpg",
-    "title": {
-      "en": "Naruto",
-      "te": "Naruto"
-    },
-    "description": {
-      "en": "Naruto Uzumaki, a mischievous adolescent ninja, struggles as he searches for recognition and dreams of becoming the Hokage, the village's leader and strongest ninja.",
-      "te": "నరుటో ఉజుమకి, ఒక కొంటె యుక్తవయస్సు నింజా, అతను గుర్తింపు కోసం వెతుకుతున్నప్పుడు కష్టపడుతున్నాడు మరియు గ్రామ నాయకుడు మరియు బలమైన నింజా అయిన హోకేజ్ కావాలని కలలు కంటున్నాడు."
-    },
-    "genres": [
-      "Action",
-      "Sci-Fi"
-    ],
-    "year": 2002,
-    "runtime": null,
-    "totalEpisodes": 220,
-    "totalSeasons": 4,
-    "imdbRating": 8.364,
-    "studio": "Pierrot",
-    "language": "Japanese",
-    "country": "JP",
-    "teluguDubAvail": true,
-    "teluguSubAvail": true,
-    "hindiDubAvail": true,
-    "isTrending": false,
-    "isTopRated": true,
-    "isFeatured": false,
-    "trendingScore": 8,
-    "popularityScore": 17,
-    "universe": "naruto"
-  },
-  {
-    "slug": "naruto-shipp-den-2007",
-    "type": "ANIME",
-    "status": "COMPLETED",
-    "poster": "https://image.tmdb.org/t/p/w500/kV27j3Nz4d5z8u6mN3EJw9RiLg2.jpg",
-    "banner": "https://image.tmdb.org/t/p/original/z0YhJvomqedHF85bplUJEotkN5l.jpg",
-    "title": {
-      "en": "Naruto Shippūden",
-      "te": "Naruto Shippūden"
-    },
-    "description": {
-      "en": "After 2 and a half years Naruto finally returns to his village of Konoha, and sets about putting his ambitions to work. It will not be easy though as he has amassed a few more dangerous enemies, in the likes of the shinobi organization; Akatsuki.",
-      "te": "2న్నర సంవత్సరాల తర్వాత నరుటో చివరకు కొనోహా అనే తన గ్రామానికి తిరిగి వస్తాడు మరియు తన ఆశయాలను పనిలో పెట్టుకోవడం గురించి ప్రారంభించాడు. అతను షినోబి సంస్థ వంటి వాటిలో మరికొంత మంది ప్రమాదకరమైన శత్రువులను కూడబెట్టుకున్నప్పటికీ అది అంత సులభం కాదు; అకాట్సుకి."
-    },
-    "genres": [
-      "Action",
-      "Sci-Fi"
-    ],
-    "year": 2007,
-    "runtime": null,
-    "totalEpisodes": 500,
-    "totalSeasons": 20,
-    "imdbRating": 8.535,
-    "studio": "TV Tokyo",
-    "language": "Japanese",
-    "country": "JP",
-    "teluguDubAvail": true,
-    "teluguSubAvail": true,
-    "hindiDubAvail": false,
-    "isTrending": false,
-    "isTopRated": true,
-    "isFeatured": false,
-    "trendingScore": 7,
-    "popularityScore": 14,
-    "universe": "naruto"
   },
   {
     "slug": "rurouni-kenshin-2023",
@@ -9967,42 +9121,6 @@ export const expandedContent: any[] = [
     "isFeatured": false,
     "trendingScore": 5,
     "popularityScore": 10,
-    "universe": null
-  },
-  {
-    "slug": "spy-x-family-2022",
-    "type": "ANIME",
-    "status": "COMPLETED",
-    "poster": "https://image.tmdb.org/t/p/w500/7NAvPYPAu7MeHwP8E9sn81PqsRh.jpg",
-    "banner": "https://image.tmdb.org/t/p/original/lysUnU6V0VfcthDbviuVlIqgHOR.jpg",
-    "title": {
-      "en": "SPY x FAMILY",
-      "te": "SPY x FAMILY"
-    },
-    "description": {
-      "en": "A spy, an assassin and a telepath come together to pose as a family, each for their own reasons, while hiding their true identities from each other.",
-      "te": "ఒక గూఢచారి, ఒక హంతకుడు మరియు ఒక టెలిపాత్ ఒక కుటుంబం వలె కలిసి వస్తారు, ప్రతి ఒక్కరు వారి స్వంత కారణాల కోసం, వారి నిజమైన గుర్తింపులను ఒకరికొకరు దాచుకుంటారు."
-    },
-    "genres": [
-      "Action",
-      "Comedy"
-    ],
-    "year": 2022,
-    "runtime": null,
-    "totalEpisodes": 50,
-    "totalSeasons": 3,
-    "imdbRating": 8.506,
-    "studio": "WIT STUDIO",
-    "language": "Japanese",
-    "country": "JP",
-    "teluguDubAvail": true,
-    "teluguSubAvail": true,
-    "hindiDubAvail": true,
-    "isTrending": false,
-    "isTopRated": true,
-    "isFeatured": false,
-    "trendingScore": 9,
-    "popularityScore": 18,
     "universe": null
   },
   {
@@ -10109,42 +9227,6 @@ export const expandedContent: any[] = [
     "isFeatured": false,
     "trendingScore": 5,
     "popularityScore": 11,
-    "universe": null
-  },
-  {
-    "slug": "solo-leveling-2024",
-    "type": "ANIME",
-    "status": "COMPLETED",
-    "poster": "https://image.tmdb.org/t/p/w500/geCRueV3ElhRTr0xtJuEWJt6dJ1.jpg",
-    "banner": "https://image.tmdb.org/t/p/original/xMNH87maNLt9n2bMDYeI6db5VFm.jpg",
-    "title": {
-      "en": "Solo Leveling",
-      "te": "Solo Leveling"
-    },
-    "description": {
-      "en": "They say whatever doesn’t kill you makes you stronger, but that’s not the case for the world’s weakest hunter Sung Jinwoo. After being brutally slaughtered by monsters in a high-ranking dungeon, Jinwoo came back with the System, a program only he could see, that’s leveling him up in every way. Now, he’s inspired to discover the secrets behind his powers and the dungeon that spawned them.",
-      "te": "మిమ్మల్ని చంపనిది మిమ్మల్ని బలపరుస్తుందని వారు అంటున్నారు, కానీ ప్రపంచంలోని అత్యంత బలహీనమైన వేటగాడు సంగ్ జిన్‌వూ విషయంలో అలా కాదు. ఉన్నత స్థాయి చెరసాలలో రాక్షసులచే దారుణంగా వధించబడిన తర్వాత, జిన్వూ సిస్టమ్‌తో తిరిగి వచ్చాడు, అతను మాత్రమే చూడగలిగే ప్రోగ్రామ్, అది అతనిని అన్ని విధాలుగా సమం చేస్తుంది. ఇప్పుడు, అతను తన శక్తుల వెనుక ఉన్న రహస్యాలు మరియు వాటిని సృష్టించిన చెరసాల గురించి తెలుసుకోవడానికి ప్రేరణ పొందాడు."
-    },
-    "genres": [
-      "Action",
-      "Sci-Fi"
-    ],
-    "year": 2024,
-    "runtime": null,
-    "totalEpisodes": 25,
-    "totalSeasons": 1,
-    "imdbRating": 8.647,
-    "studio": "A-1 Pictures",
-    "language": "Japanese",
-    "country": "JP",
-    "teluguDubAvail": true,
-    "teluguSubAvail": true,
-    "hindiDubAvail": false,
-    "isTrending": false,
-    "isTopRated": true,
-    "isFeatured": false,
-    "trendingScore": 6,
-    "popularityScore": 12,
     "universe": null
   },
   {
@@ -10617,42 +9699,6 @@ export const expandedContent: any[] = [
     "universe": null
   },
   {
-    "slug": "one-piece-1999",
-    "type": "ANIME",
-    "status": "COMPLETED",
-    "poster": "https://image.tmdb.org/t/p/w500/dB4EDhre2dsC2kxYDavyKWqLQwi.jpg",
-    "banner": "https://image.tmdb.org/t/p/original/4Mt7WHox67uJ1yErwTBFcV8KWgG.jpg",
-    "title": {
-      "en": "One Piece",
-      "te": "One Piece"
-    },
-    "description": {
-      "en": "Years ago, the fearsome Pirate King, Gol D. Roger was executed leaving a huge pile of treasure and the famous \"One Piece\" behind. Whoever claims the \"One Piece\" will be named the new King of the Pirates.\n\nMonkey D. Luffy, a boy who consumed a \"Devil Fruit,\" decides to follow in the footsteps of his idol, the pirate Shanks, and find the One Piece. It helps, of course, that his body has the properties of rubber and that he's surrounded by a bevy of skilled fighters and thieves to help him along the way.\n\nLuffy will do anything to get the One Piece and become King of the Pirates!",
-      "te": "సంవత్సరాల క్రితం, భయంకరమైన పైరేట్ కింగ్, గోల్ డి. రోజర్‌కు ఉరిశిక్ష విధించబడింది, భారీ నిధిని మరియు ప్రసిద్ధ \"వన్ పీస్\"ని వదిలివేసారు. ఎవరైతే \"వన్ పీస్\"ని క్లెయిమ్ చేస్తారో వారు కొత్త పైరేట్స్ రాజుగా పేర్కొనబడతారు.\n\nమంకీ డి. లఫ్ఫీ, \"డెవిల్ ఫ్రూట్\" తిన్న బాలుడు, తన విగ్రహం, పైరేట్ షాంక్స్ అడుగుజాడల్లో నడవాలని మరియు వన్ పీస్‌ని కనుగొనాలని నిర్ణయించుకున్నాడు. ఇది అతని శరీరం రబ్బరు లక్షణాలను కలిగి ఉందని మరియు అతని చుట్టూ నైపుణ్యం కలిగిన యోధులు మరియు దొంగలు అతనికి సహాయం చేయడానికి సహాయం చేస్తుంది.\n\nలఫ్ఫీ వన్ పీస్ పొందడానికి మరియు పైరేట్స్ రాజుగా మారడానికి ఏదైనా చేస్తుంది!"
-    },
-    "genres": [
-      "Action",
-      "Comedy"
-    ],
-    "year": 1999,
-    "runtime": null,
-    "totalEpisodes": 1181,
-    "totalSeasons": 23,
-    "imdbRating": 8.736,
-    "studio": "Toei Animation",
-    "language": "Japanese",
-    "country": "JP",
-    "teluguDubAvail": true,
-    "teluguSubAvail": true,
-    "hindiDubAvail": true,
-    "isTrending": false,
-    "isTopRated": true,
-    "isFeatured": false,
-    "trendingScore": 6,
-    "popularityScore": 11,
-    "universe": "onepiece"
-  },
-  {
     "slug": "sweet-punishment-i-m-the-guard-s-personal-pet-2018",
     "type": "ANIME",
     "status": "COMPLETED",
@@ -10758,42 +9804,6 @@ export const expandedContent: any[] = [
     "isFeatured": false,
     "trendingScore": 5,
     "popularityScore": 10,
-    "universe": null
-  },
-  {
-    "slug": "attack-on-titan-2013",
-    "type": "ANIME",
-    "status": "COMPLETED",
-    "poster": "https://image.tmdb.org/t/p/w500/hTP1DtLGFamjfu8WqjnuQdP1n4i.jpg",
-    "banner": "https://image.tmdb.org/t/p/original/rqbCbjB19amtOtFQbb3K2lgm2zv.jpg",
-    "title": {
-      "en": "Attack on Titan",
-      "te": "Attack on Titan"
-    },
-    "description": {
-      "en": "100 years ago, the last remnants of humanity were forced to retreat behind the towering walls of a fortified city to escape the massive, man-eating Titans that roamed the land outside their fortress. Only the members of the Scouting Legion dared to stray beyond the safety of the walls – but even those brave warriors seldom returned alive. Those within the city clung to the illusion of a peaceful existence until the day that dream was shattered, and their slim chance at survival was reduced to one horrifying choice: kill – or be devoured!",
-      "te": "100 సంవత్సరాల క్రితం, మానవాళి యొక్క చివరి అవశేషాలు తమ కోట వెలుపల భూమిలో సంచరించే భారీ, నరమాంస భక్షక టైటాన్‌ల నుండి తప్పించుకోవడానికి బలవర్థకమైన నగరం యొక్క ఎత్తైన గోడల వెనుక వెనక్కి వెళ్ళవలసి వచ్చింది. స్కౌటింగ్ లెజియన్ సభ్యులు మాత్రమే గోడల భద్రతను దాటి వెళ్ళడానికి ధైర్యం చేశారు - కానీ ఆ ధైర్య యోధులు కూడా చాలా అరుదుగా సజీవంగా తిరిగి వచ్చారు. ఆ కల చెదిరిపోయే రోజు వరకు నగరంలో ఉన్నవారు శాంతియుత అస్తిత్వం అనే భ్రమలో అతుక్కుపోయారు మరియు మనుగడకు వారి స్వల్ప అవకాశం ఒక భయంకరమైన ఎంపికగా తగ్గించబడింది: చంపండి - లేదా మ్రింగివేయబడండి!"
-    },
-    "genres": [
-      "Sci-Fi",
-      "Action"
-    ],
-    "year": 2013,
-    "runtime": null,
-    "totalEpisodes": 87,
-    "totalSeasons": 4,
-    "imdbRating": 8.679,
-    "studio": "Production I.G",
-    "language": "Japanese",
-    "country": "JP",
-    "teluguDubAvail": false,
-    "teluguSubAvail": true,
-    "hindiDubAvail": false,
-    "isTrending": false,
-    "isTopRated": true,
-    "isFeatured": false,
-    "trendingScore": 5,
-    "popularityScore": 9,
     "universe": null
   },
   {
@@ -11297,43 +10307,6 @@ export const expandedContent: any[] = [
     "hindiDubAvail": true,
     "isTrending": false,
     "isTopRated": false,
-    "isFeatured": false,
-    "trendingScore": 4,
-    "popularityScore": 8,
-    "universe": null
-  },
-  {
-    "slug": "chainsaw-man-2022",
-    "type": "ANIME",
-    "status": "COMPLETED",
-    "poster": "https://image.tmdb.org/t/p/w500/yVtx7Xn9UxNJqvG2BkvhCcmed9S.jpg",
-    "banner": "https://image.tmdb.org/t/p/original/5DUMPBSnHOZsbBv81GFXZXvDpo6.jpg",
-    "title": {
-      "en": "Chainsaw Man",
-      "te": "Chainsaw Man"
-    },
-    "description": {
-      "en": "Denji has a simple dream—to live a happy and peaceful life, spending time with a girl he likes. This is a far cry from reality, however, as Denji is forced by the yakuza into killing devils in order to pay off his crushing debts. Using his pet devil Pochita as a weapon, he is ready to do anything for a bit of cash.",
-      "te": "డెంజీకి ఒక సాధారణ కల ఉంది-ఆనందంగా మరియు ప్రశాంతంగా జీవించడం, తనకు నచ్చిన అమ్మాయితో సమయం గడపడం. ఇది వాస్తవానికి చాలా దూరంగా ఉంది, అయినప్పటికీ, డెంజీ తన అణిచివేత అప్పులను తీర్చడానికి డెవిల్స్‌ను చంపడానికి యాకూజా చేత బలవంతం చేయబడతాడు. తన పెంపుడు దెయ్యం పోచితాన్ని ఆయుధంగా మలచుకుని కాస్త నగదు కోసం ఏం చేయడానికైనా సిద్ధమయ్యాడు."
-    },
-    "genres": [
-      "Action",
-      "Sci-Fi",
-      "Comedy"
-    ],
-    "year": 2022,
-    "runtime": null,
-    "totalEpisodes": 12,
-    "totalSeasons": 1,
-    "imdbRating": 8.502,
-    "studio": "MAPPA",
-    "language": "Japanese",
-    "country": "JP",
-    "teluguDubAvail": false,
-    "teluguSubAvail": true,
-    "hindiDubAvail": true,
-    "isTrending": false,
-    "isTopRated": true,
     "isFeatured": false,
     "trendingScore": 4,
     "popularityScore": 8,
@@ -12416,43 +11389,6 @@ export const expandedContent: any[] = [
     "universe": null
   },
   {
-    "slug": "all-of-us-are-dead-2022",
-    "type": "KDRAMA",
-    "status": "COMPLETED",
-    "poster": "https://image.tmdb.org/t/p/w500/pTEFqAjLd5YTsMD6NSUxV6Dq7A6.jpg",
-    "banner": "https://image.tmdb.org/t/p/original/8hp2CuGnw1iP5dLBVMAPUv23swx.jpg",
-    "title": {
-      "en": "All of Us Are Dead",
-      "te": "All of Us Are Dead"
-    },
-    "description": {
-      "en": "A high school becomes ground zero for a zombie virus outbreak. Trapped students must fight their way out — or turn into one of the rabid infected.",
-      "te": "జోంబీ వైరస్ వ్యాప్తికి ఉన్నత పాఠశాల గ్రౌండ్ జీరో అవుతుంది. చిక్కుకున్న విద్యార్థులు వారి మార్గంలో పోరాడాలి - లేదా క్రూరమైన సోకిన వారిలో ఒకరిగా మారాలి."
-    },
-    "genres": [
-      "Action",
-      "Drama",
-      "Sci-Fi"
-    ],
-    "year": 2022,
-    "runtime": null,
-    "totalEpisodes": 12,
-    "totalSeasons": 2,
-    "imdbRating": 8.278,
-    "studio": "Film Monster",
-    "language": "Korean",
-    "country": "KR",
-    "teluguDubAvail": true,
-    "teluguSubAvail": true,
-    "hindiDubAvail": false,
-    "isTrending": false,
-    "isTopRated": true,
-    "isFeatured": false,
-    "trendingScore": 3,
-    "popularityScore": 7,
-    "universe": null
-  },
-  {
     "slug": "x-man-2003",
     "type": "KDRAMA",
     "status": "COMPLETED",
@@ -12766,42 +11702,6 @@ export const expandedContent: any[] = [
     "teluguDubAvail": true,
     "teluguSubAvail": true,
     "hindiDubAvail": true,
-    "isTrending": false,
-    "isTopRated": true,
-    "isFeatured": false,
-    "trendingScore": 3,
-    "popularityScore": 6,
-    "universe": null
-  },
-  {
-    "slug": "true-beauty-2020",
-    "type": "KDRAMA",
-    "status": "COMPLETED",
-    "poster": "https://image.tmdb.org/t/p/w500/iUF647sSCbKeJ5Q6eHVujWTQmtg.jpg",
-    "banner": "https://image.tmdb.org/t/p/original/3E1GroTJCRdIYHa5n62GqjmqxQR.jpg",
-    "title": {
-      "en": "True Beauty",
-      "te": "True Beauty"
-    },
-    "description": {
-      "en": "After being bullied and discriminated because of her ugly looks, a high school girl transforms herself into a gorgeous \"goddess\" and quickly rises to fame after mastering the art of makeup via online tutorial videos.",
-      "te": "తన వికారమైన రూపాల కారణంగా బెదిరింపులు మరియు వివక్షకు గురైన తర్వాత, ఒక ఉన్నత పాఠశాల అమ్మాయి తనను తాను అందమైన \"దేవత\"గా మార్చుకుంటుంది మరియు ఆన్‌లైన్ ట్యుటోరియల్ వీడియోల ద్వారా మేకప్ కళలో ప్రావీణ్యం సంపాదించిన తర్వాత త్వరగా కీర్తిని పొందుతుంది."
-    },
-    "genres": [
-      "Comedy",
-      "Drama"
-    ],
-    "year": 2020,
-    "runtime": null,
-    "totalEpisodes": 16,
-    "totalSeasons": 1,
-    "imdbRating": 8.259,
-    "studio": "Bon Factory",
-    "language": "Korean",
-    "country": "KR",
-    "teluguDubAvail": true,
-    "teluguSubAvail": true,
-    "hindiDubAvail": false,
     "isTrending": false,
     "isTopRated": true,
     "isFeatured": false,
@@ -14175,8 +13075,8 @@ export const expandedContent: any[] = [
       "te": "Phineas and Ferb"
     },
     "description": {
-      "en": "Each day, two kindhearted suburban stepbrothers on summer vacation embark on some grand new project, which annoys their controlling sister, Candace, who tries to bust them. Meanwhile, their pet platypus plots against evil Dr. Doofenshmirtz.",
-      "te": "ప్రతి రోజు, వేసవి సెలవుల్లో ఇద్దరు దయగల సబర్బన్ సవతి సోదరులు ఏదో ఒక గొప్ప కొత్త ప్రాజెక్ట్‌ను ప్రారంభిస్తారు, ఇది వారి నియంత్రిస్తున్న సోదరి కాండేస్‌ను చికాకుపెడుతుంది. ఇంతలో, వారి పెంపుడు జంతువు ప్లాటిపస్ దుష్ట డాక్టర్ డూఫెన్‌ష్‌మిర్ట్జ్‌కి వ్యతిరేకంగా పన్నాగం చేస్తుంది."
+      "en": "Two inventive stepbrothers spend their summer vacation building outrageous inventions, constantly frustrating their sister Candace who tries to expose them. Meanwhile, their pet platypus leads a double life as a secret agent fighting Dr. Doofenshmirtz.",
+      "te": "ప్రతి వేసవి సెలవుల్లో కొత్త వింతైన వస్తువులను కనిపెట్టే ఇద్దరు అన్నదమ్ములు మరియు వారి పెంపుడు ప్లాటిపస్ చేసే పనుల వల్ల కాండేస్ పడే తలపోటును చూపే కామెడీ సిరీస్."
     },
     "genres": [
       "Comedy",
@@ -14603,42 +13503,6 @@ export const expandedContent: any[] = [
     "universe": null
   },
   {
-    "slug": "the-tom-and-jerry-show-2014",
-    "type": "CARTOON",
-    "status": "COMPLETED",
-    "poster": "https://image.tmdb.org/t/p/w500/41EWXLXTZO4MLb2BL28mWZuydyq.jpg",
-    "banner": "https://image.tmdb.org/t/p/original/utqCOvMmjjMTlXNZz6PHOzRM5QP.jpg",
-    "title": {
-      "en": "The Tom and Jerry Show",
-      "te": "The Tom and Jerry Show"
-    },
-    "description": {
-      "en": "The iconic cat and mouse rivals are back in a fresh take on the classic series. Preserving the look, characters and sensibility of the original, this series shines a brightly colored, high-definition lens on the madcap slapstick and never-ending battle that has made Tom and Jerry two of the most beloved characters of all time.",
-      "te": "దిగ్గజ పిల్లి మరియు ఎలుక ప్రత్యర్థులు క్లాసిక్ సిరీస్‌లో తాజాగా తిరిగి వచ్చారు. ఒరిజినల్ యొక్క రూపాన్ని, పాత్రలను మరియు సెన్సిబిలిటీని సంరక్షిస్తూ, ఈ సిరీస్ మ్యాడ్‌క్యాప్ స్లాప్‌స్టిక్‌పై ముదురు రంగు, హై-డెఫినిషన్ లెన్స్‌ను ప్రకాశిస్తుంది మరియు టామ్ మరియు జెర్రీని ఎప్పటికప్పుడు అత్యంత ప్రియమైన పాత్రలలో రెండుగా మార్చింది."
-    },
-    "genres": [
-      "Family",
-      "Comedy"
-    ],
-    "year": 2014,
-    "runtime": null,
-    "totalEpisodes": 325,
-    "totalSeasons": 5,
-    "imdbRating": 7.261,
-    "studio": "Warner Bros. Animation",
-    "language": "English",
-    "country": "US",
-    "teluguDubAvail": true,
-    "teluguSubAvail": true,
-    "hindiDubAvail": false,
-    "isTrending": false,
-    "isTopRated": false,
-    "isFeatured": false,
-    "trendingScore": 5,
-    "popularityScore": 9,
-    "universe": null
-  },
-  {
     "slug": "the-amazing-world-of-gumball-2011",
     "type": "CARTOON",
     "status": "COMPLETED",
@@ -14837,7 +13701,8 @@ export const expandedContent: any[] = [
     "genres": [
       "Action",
       "Drama",
-      "Thriller"
+      "Thriller",
+      "Super Hero"
     ],
     "year": 1992,
     "runtime": null,
@@ -15448,8 +14313,8 @@ export const expandedContent: any[] = [
       "te": "Craig of the Creek"
     },
     "description": {
-      "en": "Craig and his two friends, Kelsey and JP, embark on adventures in the untamed wilderness of the Creek, a place where children can run wild and free. The group of friends solve mysteries, fulfil quests and compete in battles against the other kids.",
-      "te": "క్రెయిగ్ మరియు అతని ఇద్దరు స్నేహితులు, కెల్సే మరియు JP, పిల్లలు క్రూరంగా మరియు స్వేచ్ఛగా పరిగెత్తగల క్రీక్ యొక్క అపరిమితమైన అరణ్యంలో సాహసాలను ప్రారంభించారు. స్నేహితుల సమూహం రహస్యాలను పరిష్కరిస్తుంది, అన్వేషణలను పూర్తి చేస్తుంది మరియు ఇతర పిల్లలతో యుద్ధాలలో పోటీపడుతుంది."
+      "en": "Craig, Kelsey, and JP rule their neighborhood Creek, a kid-dominated wilderness where they build fortresses, solve local mysteries, and engage in playful battles with rival factions.",
+      "te": "క్రెయిగ్ మరియు అతని స్నేహితులు క్రీక్ అనే అడవి ప్రాంతంలో పిల్లలందరితో కలిసి ఆడే ఆటలు, రహస్య శోధనలు మరియు సాహసాల కథ."
     },
     "genres": [
       "Action",
@@ -15506,43 +14371,6 @@ export const expandedContent: any[] = [
     "isTopRated": false,
     "isFeatured": false,
     "trendingScore": 4,
-    "popularityScore": 7,
-    "universe": null
-  },
-  {
-    "slug": "the-powerpuff-girls-1998",
-    "type": "CARTOON",
-    "status": "COMPLETED",
-    "poster": "https://image.tmdb.org/t/p/w500/468mmhMd21pY4Yx0S0woqeEcxtL.jpg",
-    "banner": "https://image.tmdb.org/t/p/original/hNwcgo06myd7ei7p8A1Y1b0VabU.jpg",
-    "title": {
-      "en": "The Powerpuff Girls",
-      "te": "The Powerpuff Girls"
-    },
-    "description": {
-      "en": "The Powerpuff Girls is a animated television series about Blossom, Bubbles, and Buttercup, three kindergarten-aged girls with superpowers, as well as their \"father\", the brainy scientist Professor Utonium, who all live in the fictional city of Townsville, USA. The girls are frequently called upon by the town's childlike and naive mayor to help fight nearby criminals using their powers.",
-      "te": "ది పవర్‌పఫ్ గర్ల్స్ అనేది బ్లోసమ్, బబుల్స్ మరియు బటర్‌కప్ గురించి యానిమేటెడ్ టెలివిజన్ ధారావాహిక, సూపర్ పవర్స్ ఉన్న ముగ్గురు కిండర్ గార్టెన్-వయస్సు అమ్మాయిలు, అలాగే వారి \"తండ్రి\", మెదడు గల శాస్త్రవేత్త ప్రొఫెసర్ యుటోనియం, వీరంతా USAలోని కల్పిత నగరమైన టౌన్స్‌విల్లేలో నివసిస్తున్నారు. వారి అధికారాలను ఉపయోగించి సమీపంలోని నేరస్థులతో పోరాడటానికి పట్టణం యొక్క చిన్నపిల్లలు మరియు అమాయక మేయర్ ద్వారా అమ్మాయిలను తరచుగా పిలుస్తుంటారు."
-    },
-    "genres": [
-      "Action",
-      "Comedy",
-      "Family"
-    ],
-    "year": 1998,
-    "runtime": null,
-    "totalEpisodes": 135,
-    "totalSeasons": 6,
-    "imdbRating": 7.5,
-    "studio": "Cartoon Network Studios",
-    "language": "English",
-    "country": "US",
-    "teluguDubAvail": true,
-    "teluguSubAvail": true,
-    "hindiDubAvail": false,
-    "isTrending": false,
-    "isTopRated": false,
-    "isFeatured": false,
-    "trendingScore": 3,
     "popularityScore": 7,
     "universe": null
   },

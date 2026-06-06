@@ -13,8 +13,8 @@ export const movies = [
       te: 'RRR',
     },
     description: {
-      en: 'A fictional story about two legendary revolutionaries and their journey away from home before they started fighting for their country in 1920s.',
-      te: 'బ్రిటీష్ పాలనలో ఇద్దరు వీరుల కథ. కోమారం భీమ్ మరియు అల్లూరి సీతారామరాజు అడవిలో నుంచి వచ్చిన విప్లవ శక్తులుగా బ్రిటీష్ సామ్రాజ్యానికి ఎదురు నిలుస్తారు.',
+      en: 'A high-octane historical epic detailing the legendary friendship between two real-life Indian revolutionaries, Komaram Bheem and Alluri Sitarama Raju, as they wage war against the oppressive British Raj in the 1920s.',
+      te: 'బ్రిటీష్ సామ్రాజ్యానికి వ్యతిరేకంగా పోరాడే ముందు, ఇద్దరు గొప్ప విప్లవ వీరులు అల్లూరి సీతారామరాజు మరియు కొమారం భీమ్ మధ్య ఏర్పడిన అసాధారణ స్నేహం, వారి ఉమ్మడి పోరాటం గురించిన అద్భుతమైన చారిత్రాత్మక చిత్రం.',
     },
     genres: ['Action', 'Drama', 'Historical'],
     year: 2022,
@@ -522,16 +522,16 @@ export const movies = [
     slug: 'kalki-2898-ad-part-2',
     type: ContentType.MOVIE,
     status: ContentStatus.UPCOMING,
-    poster: 'https://image.tmdb.org/t/p/w500/rstcAnBeCkxNQjNp3YXrF6IP1tW.jpg',
-    banner: 'https://image.tmdb.org/t/p/original/o8XSR1SONnjcsv84NRu6Mwsl5io.jpg',
+    poster: 'https://image.tmdb.org/t/p/w500/7n64mKx2WigW9tq4F3H87r6w3Z7.jpg',
+    banner: 'https://image.tmdb.org/t/p/original/xkP6m40a02qQ522d057lIecFwT3.jpg',
     trailer: 'https://www.youtube.com/embed/NgBoMJy386M',
     title: {
       en: 'Kalki 2898 AD Part 2',
       te: 'కల్కి 2898 పార్ట్ 2',
     },
     description: {
-      en: 'Kalki will return more powerful to fight against the dark forces in this epic continuation.',
-      te: 'కల్కి అవతారం మరింత శక్తివంతంగా తిరిగి వస్తాడు. చీకటి శక్తులు తయారవుతున్నాయి.',
+      en: 'The legendary prophecy continues as the immortal warrior Ashwatthama and the bounty hunter Bhairava brace for the final clash against Supreme Yaskin\'s dark forces to protect the newborn savior.',
+      te: 'కల్కి అవతారమైన శిశువును కాపాడేందుకు అమరుడైన అశ్వత్థామ మరియు భైరవ, సుప్రీమ్ యాస్కిన్ చీకటి సైన్యంతో తలపడే అంతిమ యుద్ధం గురించిన కథ.',
     },
     genres: ['Sci-Fi', 'Fantasy', 'Action'],
     year: 2027,
@@ -560,8 +560,8 @@ export const movies = [
       te: 'రామాయణం',
     },
     description: {
-      en: 'An epic cinematic adaptation of the ancient Indian epic Ramayana.',
-      te: 'మహాకావ్యం రామాయణం తెలుగు వెండితెరపై అద్భుతంగా రానుంది.',
+      en: 'A grand cinematic retelling of India\'s ancient mythological epic, tracing the exile of Prince Rama, the abduction of Sita, and the legendary war against the demon king Ravana.',
+      te: 'మహోన్నత పురాణ గాథ రామాయణాన్ని అత్యద్భుత దృశ్యకావ్యంగా వెండితెరపై ఆవిష్కరిస్తూ, సీతాపహరణం మరియు రావణుడిపై శ్రీరాముడి విజయాన్ని చూపే అద్భుత చిత్రం.',
     },
     genres: ['Mythology', 'Action', 'Drama'],
     year: 2026,
@@ -590,8 +590,8 @@ export const movies = [
       te: 'కూలీ',
     },
     description: {
-      en: 'A high-octane action thriller starring Superstar Rajinikanth in a powerful avatar.',
-      te: 'రజినీకాంత్ అభినయించే ఈ యాక్షన్ చిత్రం అందరినీ మెప్పించనుంది.',
+      en: 'Superstar Rajinikanth leads this stylish action thriller directed by Lokesh Kanagaraj, diving deep into the dangerous underbelly of gold smuggling and gangland rivalries.',
+      te: 'సూపర్‌స్టార్ రజనీకాంత్ ప్రధాన పాత్రలో దర్శకుడు లోకేష్ కనగరాజ్ రూపొందించిన మోస్ట్ స్ైలిష్ యాక్షన్ థ్రిల్లర్, బంగారు స్మగ్లింగ్ ముఠాల నేపథ్యంలో సాగుతుంది.',
     },
     genres: ['Action', 'Thriller'],
     year: 2026,
@@ -620,8 +620,8 @@ export const movies = [
       te: 'ది రాజా సాబ్',
     },
     description: {
-      en: 'A horror comedy movie starring Prabhas, directed by Maruthi.',
-      te: 'ప్రభాస్ సరికొత్త హారర్ కామెడీ వినోదభరిత చిత్రం.',
+      en: 'Prabhas stars in a spooky yet hilarious horror-comedy entertainer directed by Maruthi, centering on a royal family ghost and a young man caught in a haunted mansion.',
+      te: 'రెబల్ స్టార్ ప్రభాస్ సరికొత్త హారర్ కామెడీ వినోదభరిత చిత్రం, ఒక పురాతన బంగ్లాలో జరిగే వింత సంఘటనలు మరియు హాస్యభరిత హారర్ అంశాలతో సాగుతుంది.',
     },
     genres: ['Comedy', 'Horror', 'Romance'],
     year: 2026,
@@ -650,8 +650,8 @@ export const movies = [
       te: 'స్పిరిట్',
     },
     description: {
-      en: 'Prabhas plays an intense cop in this Sandeep Reddy Vanga action thriller.',
-      te: 'సందీప్ వంగా మరియు ప్రభాస్ కాంబినేషన్ లో భారీ కాప్ డ్రామా.',
+      en: 'An intense, gritty cop action drama directed by Sandeep Reddy Vanga, featuring Prabhas as a ruthless police officer fighting against the drug mafia and systemic corruption.',
+      te: 'సందీప్ రెడ్డి వంగా దర్శకత్వంలో రెబల్ స్టార్ ప్రభాస్ పోలీస్ ఆఫీసర్ గా నటించే హై-వోల్టేజ్ యాక్షన్ డ్రామా, డ్రగ్స్ మాఫియా మరియు వ్యవస్థలోని అవినీతిపై చేసే పోరాటం.',
     },
     genres: ['Action', 'Crime', 'Thriller'],
     year: 2027,
@@ -680,8 +680,8 @@ export const movies = [
       te: 'హరి హర వీర మల్లు',
     },
     description: {
-      en: 'A historic action drama about a legendary outlaw starring Pawan Kalyan.',
-      te: 'పవన్ కళ్యాణ్ ప్రధాన పాత్రలో వస్తున్న చారిత్రాత్మక యాక్షన్ చిత్రం.',
+      en: 'Set in the Mughal era, Pawan Kalyan portrays a legendary outlaw on a mission to steal the Kohinoor diamond and free his people from tyrannical rule.',
+      te: 'మొఘలాయిల కాలం నాటి నేపథ్యంలో సాగే పవన్ కళ్యాణ్ చారిత్రాత్మక యాక్షన్ చిత్రం, కోహినూర్ వజ్రాన్ని దక్కించుకుని ప్రజలను దౌర్జన్యం నుండి రక్షించే కథ.',
     },
     genres: ['Action', 'Historical', 'Drama'],
     year: 2026,
@@ -710,8 +710,8 @@ export const movies = [
       te: 'విశ్వంభర',
     },
     description: {
-      en: 'A high-concept socio-fantasy adventure movie starring Megastar Chiranjeevi.',
-      te: 'చిరంజీవి అద్భుతమైన సోషియో-ఫాంటసీ సినిమా.',
+      en: 'Megastar Chiranjeevi stars in a grand socio-fantasy adventure that bridges the earthly realm with celestial forces, featuring state-of-the-art VFX and epic battles.',
+      te: 'మెగాస్టార్ చిరంజీవి ప్రధాన పాత్రలో వస్తున్న సోషియో-ఫాంటసీ సాహస యాత్ర, భూలోకానికి మరియు దైవ శక్తులకు మధ్య జరిగే అద్భుతమైన కథాంశం.',
     },
     genres: ['Fantasy', 'Action', 'Drama'],
     year: 2026,
@@ -740,8 +740,8 @@ export const movies = [
       te: 'ఓజీ',
     },
     description: {
-      en: 'A stylized gangland action thriller starring Pawan Kalyan as a ruthless protector.',
-      te: 'గ్యాంగ్‌స్టర్ నేపథ్యంలో పవన్ కళ్యాణ్ నటిస్తున్న మోస్ట్ స్టైలిష్ యాక్షన్ చిత్రం.',
+      en: 'A high-octane, stylized neo-noir gangland thriller that marks the return of a ruthless former assassin to Mumbai\'s criminal underworld to protect his people.',
+      te: 'ముంబై అండర్ వరల్డ్ నేపథ్యంలో పవన్ కళ్యాణ్ నటిస్తున్న మోస్ట్ స్టైలిష్ గ్యాంగ్‌స్టర్ యాక్షన్ థ్రిల్లర్, శత్రువుల గుండెల్లో వణుకు పుట్టించే కథ.',
     },
     genres: ['Action', 'Crime', 'Thriller'],
     year: 2026,
@@ -865,15 +865,15 @@ export const movies = [
     type: ContentType.MOVIE,
     status: ContentStatus.UPCOMING,
     poster: 'https://image.tmdb.org/t/p/w500/cq8sALwkbUcMJKWGxtUtPkCbbDi.jpg',
-    banner: 'https://image.tmdb.org/t/p/original/seTFDq1iKyJ6YHr7HePbC20DMsy.jpg',
+    banner: 'https://image.tmdb.org/t/p/original/t4V82jen6LKBjs8WMuMpGxbtFgJ.jpg',
     trailer: 'https://www.youtube.com/embed/NgBoMJy386M',
     title: {
       en: 'Kaithi 2',
       te: 'ఖైదీ 2'
     },
     description: {
-      en: 'The highly anticipated sequel to the blockbuster Kaithi, continuing the journey of Dilli in the LCU.',
-      te: 'బ్లాక్‌బస్టర్ ఖైదీ చిత్రానికి సీక్వెల్, ఇందులో ఢిల్లీ ప్రయాణం మరియు లోకేష్ సినిమాటిక్ యూనివర్స్ లో అతని పాత్ర కొనసాగుతుంది.'
+      en: 'Dilli returns in this direct sequel to the Lokesh Cinematic Universe blockbuster, facing new threats as his past catches up with him and his daughter.',
+      te: 'ఖైదీ విజయవంతమైన సిరీస్ లో రెండవ భాగం, తన కుమార్తెను కాపాడుకోవడానికి దిల్లీ (కార్తి) మళ్లీ ఎల్.సి.యు (LCU) లో ఏ విధమైన పోరాటం చేశాడనే కథ.',
     },
     genres: ['Action', 'Thriller', 'Crime'],
     year: 2027,
@@ -897,15 +897,15 @@ export const movies = [
     type: ContentType.MOVIE,
     status: ContentStatus.UPCOMING,
     poster: 'https://image.tmdb.org/t/p/w500/dnwiaRZxvC5Y0W6tS6GqsBPmy6a.jpg',
-    banner: 'https://image.tmdb.org/t/p/original/dkIX4dSMuVqjfrPGunBJUR7K3LQ.jpg',
+    banner: 'https://image.tmdb.org/t/p/original/n9piaom6mxS4nJHFVIc7tgPjVQB.jpg',
     trailer: 'https://www.youtube.com/embed/NgBoMJy386M',
     title: {
       en: 'Rolex',
       te: 'రోలెక్స్'
     },
     description: {
-      en: 'A standalone spin-off film centering around the ruthless LCU drug kingpin Rolex, starring Suriya.',
-      te: 'లోకేష్ కనగరాజ్ యూనివర్స్ లో అత్యంత క్రూరమైన విలన్ రోలెక్స్ పాత్ర చుట్టూ తిరిగే సోలో చిత్రం, సూర్య కథానాయకుడిగా నటిస్తున్నారు.'
+      en: 'A standalone spin-off film centering around the ruthless LCU drug kingpin Rolex, starring Suriya as the cold-blooded leader.',
+      te: 'ఎల్.సి.యు (LCU) లో అత్యంత భయంకరమైన విలన్ పాత్ర అయిన \'రోలెక్స్\' (సూర్య) సామ్రాజ్య విస్తరణ మరియు అతని నేపథ్యాన్ని చూపే పవర్ ఫుల్ స్పిన్-ఆఫ్ చిత్రం.',
     },
     genres: ['Action', 'Thriller', 'Crime'],
     year: 2028,
@@ -929,15 +929,15 @@ export const movies = [
     type: ContentType.MOVIE,
     status: ContentStatus.UPCOMING,
     poster: 'https://image.tmdb.org/t/p/w500/5c8v2Fev36SRdV0gml44BlHvAwz.jpg',
-    banner: 'https://image.tmdb.org/t/p/original/dkIX4dSMuVqjfrPGunBJUR7K3LQ.jpg',
+    banner: 'https://image.tmdb.org/t/p/original/dCC8c2mRPgrYHtfAVerBLpa8M1g.jpg',
     trailer: 'https://www.youtube.com/embed/NgBoMJy386M',
     title: {
       en: 'Vikram 2',
       te: 'విక్రమ్ 2'
     },
     description: {
-      en: 'The epic conclusion and clash between Vikram and Rolex in the LCU, starring Kamal Haasan.',
-      te: 'విక్రమ్ చిత్రానికి సీక్వెల్, లోకేష్ కనగరాజ్ విశ్వంలో విక్రమ్ మరియు రోలెక్స్ మధ్య జరిగే మహా సంగ్రామం.'
+      en: 'The espionage war reaches its peak as the retired commander Vikram coordinates a massive counter-strike against Rolex and his drug syndicate.',
+      te: 'విక్రమ్ మరియు రోలెక్స్ ముఠాల మధ్య జరిగే అంతిమ పోరాటం, ముసుగు వీరుడు విక్రమ్ (కమల్ హాసన్) మాఫియా సామ్రాజ్యాన్ని ఎలా కూలదోశాడో చూపే చిత్రం.',
     },
     genres: ['Action', 'Thriller', 'Crime'],
     year: 2028,
@@ -968,8 +968,8 @@ export const movies = [
       te: 'బాహుబలి: ది ఎటర్నల్ వార్'
     },
     description: {
-      en: 'An upcoming epic CG-animated feature film expanding the lore of the Baahubali universe, voiced by Prabhas.',
-      te: 'బాహుబలి విశ్వం నుండి రాబోయే తదుపరి అద్భుతమైన యానిమేటెడ్ చిత్రం. మహేష్మతి సామ్రాజ్యానికి సంబంధించిన సరికొత్త కథాంశంతో రూపొందుతోంది.'
+      en: 'A prequel narrative exploring the golden age of Mahishmati, focusing on the early military campaigns and the evolving brotherhood between Amarendra Baahubali and Bhallaladeva.',
+      te: 'మహిష్మతి సామ్రాజ్య నేపధ్యంలో అమరేంద్ర బాహుబలి మరియు భల్లాళదేవుల చిన్ననాటి సైనిక శిక్షణ, వారి మధ్య ఉన్న బంధం మరియు మహిష్మతి రక్షణ కోసం వారు చేసిన యుద్ధాలు.',
     },
     genres: ['Action', 'Fantasy', 'Adventure'],
     year: 2027,

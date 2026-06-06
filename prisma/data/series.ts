@@ -741,8 +741,8 @@ export const series = [
       te: "విజన్ క్వెస్ట్"
     },
     description: {
-      en: "The white Vision seeks to regain his memories and humanity in a new journey.",
-      te: "తెల్లటి విజన్ తన పాత జ్ఞాపకాలను మరియు మానవత్వాన్ని తిరిగి పొందడానికి చేసే అద్భుత ప్రయాణం."
+      en: "Rebuilt as a soulless, pristine white synthezoid, Vision searches for his lost memories and strives to reclaim his core humanity.",
+      te: "జ్ఞాపకాలను కోల్పోయిన వైట్ విజన్, తన గతాన్ని అన్వేషిస్తూ తన నిజమైన రూపాన్ని మరియు భావాలను తిరిగి పొందేందుకు చేసే ప్రయాణం."
     },
     genres: ["Sci-Fi","Drama","Super Hero"],
     year: 2026,
