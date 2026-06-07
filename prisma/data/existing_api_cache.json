@@ -1,0 +1,1200 @@
+{
+  "attackontitan": {
+    "aniListId": 16498,
+    "malId": 16498
+  },
+  "jujutsukaisen": {
+    "aniListId": 113415,
+    "malId": 40748
+  },
+  "naruto": {
+    "aniListId": 20,
+    "tmdbId": 46260,
+    "malId": 20
+  },
+  "pokmon": {
+    "aniListId": 138699,
+    "tmdbId": 60572,
+    "malId": 49730
+  },
+  "sololeveling": {
+    "aniListId": 151807,
+    "tmdbId": 127532,
+    "malId": 52299
+  },
+  "bluelock": {
+    "aniListId": 137822,
+    "tmdbId": 131041,
+    "malId": 49596
+  },
+  "beyblade": {
+    "aniListId": 288,
+    "tmdbId": 54728,
+    "malId": 288
+  },
+  "beyblademetalfusion": {
+    "aniListId": 5962,
+    "tmdbId": 37807,
+    "malId": 5962
+  },
+  "beybladeburst": {
+    "aniListId": 21236,
+    "tmdbId": 67667,
+    "malId": 31049
+  },
+  "pokmonjourneystheseries": {
+    "tmdbId": 60572
+  },
+  "digimondigitalmonsters": {
+    "aniListId": 552,
+    "tmdbId": 31654,
+    "malId": 552
+  },
+  "bakuganbattlebrawlers": {
+    "aniListId": 2156,
+    "tmdbId": 34109,
+    "malId": 2156
+  },
+  "dragonballsuper": {
+    "aniListId": 21175,
+    "tmdbId": 62715,
+    "malId": 30694
+  },
+  "blackclover": {
+    "aniListId": 97940,
+    "tmdbId": 73223,
+    "malId": 34572
+  },
+  "mushokutenseijoblessreincarnation": {
+    "aniListId": 108465,
+    "tmdbId": 94664,
+    "malId": 39535
+  },
+  "narutoshippden": {
+    "aniListId": 10589,
+    "tmdbId": 31910,
+    "malId": 10589
+  },
+  "rurounikenshin": {
+    "aniListId": 45,
+    "tmdbId": 210879,
+    "malId": 45
+  },
+  "theancientmagusbride": {
+    "aniListId": 148584,
+    "tmdbId": 73833,
+    "malId": 51097
+  },
+  "monogatari": {
+    "aniListId": 5081,
+    "tmdbId": 46195,
+    "malId": 5081
+  },
+  "lupinthe3rd": {
+    "aniListId": 1412,
+    "tmdbId": 31572,
+    "malId": 1412
+  },
+  "detectiveconan": {
+    "aniListId": 235,
+    "tmdbId": 30983,
+    "malId": 235
+  },
+  "deathnote": {
+    "aniListId": 1535,
+    "tmdbId": 13916,
+    "malId": 1535
+  },
+  "initiald": {
+    "aniListId": 185,
+    "tmdbId": 40424,
+    "malId": 185
+  },
+  "chainsawman": {
+    "aniListId": 127230,
+    "tmdbId": 114410,
+    "malId": 44511
+  },
+  "pokmondiamondandpearl": {
+    "tmdbId": 60572
+  },
+  "tokyoghoul": {
+    "aniListId": 20605,
+    "tmdbId": 61374,
+    "malId": 22319
+  },
+  "doraemon": {
+    "aniListId": 2471,
+    "tmdbId": 57911,
+    "malId": 2471
+  },
+  "aceofthediamond": {
+    "aniListId": 18689,
+    "tmdbId": 60761,
+    "malId": 18689
+  },
+  "frierenbeyondjourneysend": {
+    "aniListId": 170068,
+    "tmdbId": 209867,
+    "malId": 56885
+  },
+  "spyxfamily": {
+    "aniListId": 140960,
+    "tmdbId": 120089,
+    "malId": 50265
+  },
+  "dragonballz": {
+    "tmdbId": 12971
+  },
+  "hunterxhunter": {
+    "tmdbId": 46298
+  },
+  "ranma": {
+    "tmdbId": 57706
+  },
+  "natsumesbookoffriends": {
+    "tmdbId": 69500
+  },
+  "overflow": {
+    "tmdbId": 95897
+  },
+  "onepiece": {
+    "tmdbId": 37854
+  },
+  "kingdom": {
+    "tmdbId": 46437
+  },
+  "hellsparadise": {
+    "tmdbId": 117465
+  },
+  "rezerostartinglifeinanotherworld": {
+    "tmdbId": 65942
+  },
+  "bleach": {
+    "tmdbId": 30984
+  },
+  "aoashi": {
+    "tmdbId": 126437
+  },
+  "atashinchi": {
+    "tmdbId": 9537
+  },
+  "theapothecarydiaries": {
+    "tmdbId": 220542
+  },
+  "konosubagodsblessingonthiswonderfulworld": {
+    "tmdbId": 65844
+  },
+  "jojosbizarreadventure": {
+    "tmdbId": 45790
+  },
+  "fightingspirit": {
+    "tmdbId": 42705
+  },
+  "mywifehasnoemotion": {
+    "tmdbId": 250596
+  },
+  "mydressupdarling": {
+    "tmdbId": 123249
+  },
+  "thattimeigotreincarnatedasaslime": {
+    "tmdbId": 82684
+  },
+  "secretmissionundercoveragentsneverbackdown": {
+    "tmdbId": 233643
+  },
+  "themisfitofdemonkingacademy": {
+    "tmdbId": 97617
+  },
+  "adamssweetagony": {
+    "tmdbId": 241002
+  },
+  "chihayafuru": {
+    "tmdbId": 45247
+  },
+  "monster": {
+    "tmdbId": 30981
+  },
+  "marchcomesinlikealion": {
+    "tmdbId": 65336
+  },
+  "pokmonhorizons": {
+    "tmdbId": 220150
+  },
+  "mobpsycho100": {
+    "tmdbId": 67075
+  },
+  "haikyu": {
+    "tmdbId": 60863
+  },
+  "sweetpunishmentimtheguardspersonalpet": {
+    "tmdbId": 78501
+  },
+  "mobilesuitgundamseed": {
+    "tmdbId": 20111
+  },
+  "fullmetalalchemistbrotherhood": {
+    "tmdbId": 31911
+  },
+  "rentagirlfriend": {
+    "tmdbId": 96316
+  },
+  "pokmonadvanced": {
+    "tmdbId": 36218
+  },
+  "joshiochi2kaikaraonnanokogafuttekita": {
+    "tmdbId": 81044
+  },
+  "jimihenjimikookaechaujuniseikouyuu": {
+    "tmdbId": 113360
+  },
+  "bungostraydogs": {
+    "tmdbId": 65931
+  },
+  "ninjaboyrantaro": {
+    "tmdbId": 34860
+  },
+  "uruseiyatsura": {
+    "tmdbId": 154524
+  },
+  "kaguyasamaloveiswar": {
+    "tmdbId": 83121
+  },
+  "blueexorcist": {
+    "tmdbId": 38464
+  },
+  "theeminenceinshadow": {
+    "tmdbId": 119495
+  },
+  "demonslayer": {
+    "tmdbId": 85937
+  },
+  "narutoshippuden": {
+    "tmdbId": 31910
+  },
+  "zom-100-bucket-list-of-the-dead-2023": {
+    "aniListId": 159831,
+    "tmdbId": 217766,
+    "malId": 54112
+  },
+  "attack-on-titan": {
+    "aniListId": 16498,
+    "tmdbId": 1429,
+    "malId": 16498
+  },
+  "jujutsu-kaisen": {
+    "aniListId": 113415,
+    "tmdbId": 95479,
+    "malId": 40748
+  },
+  "blue-lock": {
+    "aniListId": 137822,
+    "tmdbId": 131041,
+    "malId": 49596
+  },
+  "beyblade-metal-fusion": {
+    "aniListId": 5962,
+    "tmdbId": 37807,
+    "malId": 5962
+  },
+  "beyblade-burst": {
+    "aniListId": 21236,
+    "tmdbId": 67667,
+    "malId": 31049
+  },
+  "365-days-to-the-wedding-2024": {
+    "aniListId": 165790,
+    "tmdbId": 230189,
+    "malId": 55887
+  },
+  "demon-slayer": {
+    "aniListId": 21612,
+    "tmdbId": 66114,
+    "malId": 32606
+  },
+  "digimon-digital-monsters": {
+    "aniListId": 552,
+    "tmdbId": 31654,
+    "malId": 552
+  },
+  "bakugan-battle-brawlers": {
+    "aniListId": 2156,
+    "tmdbId": 34109,
+    "malId": 2156
+  },
+  "black-clover": {
+    "aniListId": 97940,
+    "tmdbId": 73223,
+    "malId": 34572
+  },
+  "solo-leveling": {
+    "aniListId": 151807,
+    "tmdbId": 127532,
+    "malId": 52299
+  },
+  "pokemon-journeys": {
+    "tmdbId": 60572
+  },
+  "dragon-ball-super": {
+    "aniListId": 21175,
+    "tmdbId": 62715,
+    "malId": 30694
+  },
+  "dan-da-dan-2024": {
+    "aniListId": 171018,
+    "tmdbId": 240411,
+    "malId": 57334
+  },
+  "you-are-ms-servant-2024": {
+    "aniListId": 172190,
+    "tmdbId": 242143,
+    "malId": 57611
+  },
+  "the-rising-of-the-shield-hero-2019": {
+    "aniListId": 99263,
+    "tmdbId": 83095,
+    "malId": 35790
+  },
+  "trillion-game-2024": {
+    "aniListId": 169315,
+    "tmdbId": 1278762,
+    "malId": 56662
+  },
+  "rurouni-kenshin-2023": {
+    "aniListId": 45,
+    "tmdbId": 210879,
+    "malId": 45
+  },
+  "mushoku-tensei-jobless-reincarnation-2021": {
+    "aniListId": 108465,
+    "tmdbId": 94664,
+    "malId": 39535
+  },
+  "berserk-of-gluttony-2023": {
+    "aniListId": 156039,
+    "tmdbId": 213331,
+    "malId": 53439
+  },
+  "i-m-getting-married-to-a-girl-i-hate-in-my-class-2025": {
+    "aniListId": 178462,
+    "tmdbId": 257790,
+    "malId": 59135
+  },
+  "bucchigiri--2024": {
+    "aniListId": 165254,
+    "tmdbId": 226905,
+    "malId": 55358
+  },
+  "monogatari-2009": {
+    "aniListId": 5081,
+    "tmdbId": 46195,
+    "malId": 5081
+  },
+  "lupin-the-3rd-1971": {
+    "aniListId": 1412,
+    "tmdbId": 31572,
+    "malId": 1412
+  },
+  "good-bye-dragon-life-2024": {
+    "aniListId": 176053,
+    "tmdbId": 259786,
+    "malId": 58445
+  },
+  "as-a-reincarnated-aristocrat-i-ll-use-my-appraisal-skill-to-rise-in-the-world-2024": {
+    "aniListId": 164702,
+    "tmdbId": 237150,
+    "malId": 55265
+  },
+  "ghost-in-the-shell-stand-alone-complex-2002": {
+    "aniListId": 467,
+    "tmdbId": 1095,
+    "malId": 467
+  },
+  "initial-d-1998": {
+    "aniListId": 185,
+    "tmdbId": 40424,
+    "malId": 185
+  },
+  "yoasobi-gurashi--2024": {
+    "aniListId": 173489,
+    "tmdbId": 249891,
+    "malId": 58905
+  },
+  "wind-breaker-2024": {
+    "aniListId": 163270,
+    "tmdbId": 223500,
+    "malId": 54900
+  },
+  "why-raeliana-ended-up-at-the-duke-s-mansion-2023": {
+    "aniListId": 151847,
+    "tmdbId": 205366,
+    "malId": 52308
+  },
+  "shoot-goal-to-the-future-2022": {
+    "aniListId": 141775,
+    "tmdbId": 138882,
+    "malId": 50379
+  },
+  "my-status-as-an-assassin-obviously-exceeds-the-hero-s-2025": {
+    "aniListId": 186794,
+    "tmdbId": 284644,
+    "malId": 61026
+  },
+  "heroines-run-the-show-2022": {
+    "aniListId": 138459,
+    "tmdbId": 132213,
+    "malId": 49692
+  },
+  "let-s-play-2025": {
+    "aniListId": 193968,
+    "tmdbId": 293010,
+    "malId": 61773
+  },
+  "the-warrior-princess-and-the-barbaric-king-2026": {
+    "aniListId": 182483,
+    "tmdbId": 273467,
+    "malId": 60028
+  },
+  "my-clueless-first-friend-2023": {
+    "aniListId": 157295,
+    "tmdbId": 214547,
+    "malId": 53621
+  },
+  "hana-kimi-2026": {
+    "aniListId": 177580,
+    "tmdbId": 254492,
+    "malId": 58861
+  },
+  "dragon-ball-z-kai-2009": {
+    "aniListId": 6033,
+    "tmdbId": 61709,
+    "malId": 6033
+  },
+  "chillin-in-another-world-with-level-2-super-cheat-powers-2024": {
+    "aniListId": 170130,
+    "tmdbId": 237233,
+    "malId": 56923
+  },
+  "campfire-cooking-in-another-world-with-my-absurd-skill-2023": {
+    "aniListId": 156067,
+    "tmdbId": 213402,
+    "malId": 53446
+  },
+  "mobile-suit-gundam-the-witch-from-mercury-2022": {
+    "aniListId": 139274,
+    "tmdbId": 196400,
+    "malId": 49828
+  },
+  "chainsaw-man": {
+    "aniListId": 127230,
+    "tmdbId": 114410,
+    "malId": 44511
+  },
+  "kunon-the-sorcerer-can-see-2026": {
+    "aniListId": 186333,
+    "tmdbId": 282946,
+    "malId": 60810
+  },
+  "pokemon-diamond-pearl": {
+    "tmdbId": 60572
+  },
+  "an-adventurer-s-daily-grind-at-age-29-2026": {
+    "aniListId": 192261,
+    "tmdbId": 290667,
+    "malId": 61637
+  },
+  "trigun-stargaze-2026": {
+    "aniListId": 163144,
+    "tmdbId": 1704003,
+    "malId": 54863
+  },
+  "yuri-on-ice-2016": {
+    "aniListId": 21709,
+    "tmdbId": 68129,
+    "malId": 32995
+  },
+  "tokyo-ghoul-2014": {
+    "aniListId": 20605,
+    "tmdbId": 61374,
+    "malId": 22319
+  },
+  "ace-of-the-diamond-2013": {
+    "aniListId": 18689,
+    "tmdbId": 60761,
+    "malId": 18689
+  },
+  "frieren-beyond-journey-s-end-2023": {
+    "aniListId": 170068,
+    "malId": 56885
+  },
+  "dragon-ball-z-1989": {
+    "aniListId": 813,
+    "tmdbId": 12971,
+    "malId": 813
+  },
+  "hunter-x-hunter-2011": {
+    "aniListId": 136,
+    "tmdbId": 46298,
+    "malId": 136
+  },
+  "ranma--1989": {
+    "aniListId": 210,
+    "tmdbId": 57706,
+    "malId": 210
+  },
+  "natsume-s-book-of-friends-2008": {
+    "aniListId": 188619,
+    "tmdbId": 69500,
+    "malId": 48953
+  },
+  "kingdom-2012": {
+    "aniListId": 12031,
+    "tmdbId": 46437,
+    "malId": 12031
+  },
+  "hell-s-paradise-2023": {
+    "aniListId": 128893,
+    "tmdbId": 117465,
+    "malId": 46569
+  },
+  "atashin-chi-2002": {
+    "aniListId": 3006,
+    "tmdbId": 9537,
+    "malId": 3006
+  },
+  "bleach-2004": {
+    "aniListId": 269,
+    "tmdbId": 30984,
+    "malId": 269
+  },
+  "aoashi-2022": {
+    "aniListId": 134732,
+    "tmdbId": 126437,
+    "malId": 49052
+  },
+  "konosuba-god-s-blessing-on-this-wonderful-world--2016": {
+    "aniListId": 21202,
+    "tmdbId": 65844,
+    "malId": 30831
+  },
+  "that-time-i-got-reincarnated-as-a-slime-2018": {
+    "aniListId": 101280,
+    "tmdbId": 82684,
+    "malId": 37430
+  },
+  "release-that-witch-2026": {
+    "aniListId": 137662,
+    "tmdbId": 298026,
+    "malId": 62927
+  },
+  "the-misfit-of-demon-king-academy-2020": {
+    "aniListId": 112301,
+    "tmdbId": 97617,
+    "malId": 40496
+  },
+  "monster-2004": {
+    "aniListId": 204541,
+    "tmdbId": 30981
+  },
+  "pok-mon-horizons-2023": {
+    "tmdbId": 220150
+  },
+  "true-beauty-2020": {
+    "aniListId": 152184,
+    "tmdbId": 112888,
+    "malId": 57192
+  },
+  "mobile-suit-gundam-seed-2002": {
+    "aniListId": 93,
+    "tmdbId": 20111,
+    "malId": 93
+  },
+  "pokemon-advanced": {
+    "tmdbId": 36218
+  },
+  "jimihen-jimiko-o-kae-chau-jun-isei-kouyuu-2021": {
+    "tmdbId": 113360
+  },
+  "ninja-boy-rantaro-1993": {
+    "aniListId": 1199,
+    "tmdbId": 34860,
+    "malId": 1199
+  },
+  "kaguya-sama-love-is-war-2019": {
+    "aniListId": 101921,
+    "tmdbId": 83121,
+    "malId": 37999
+  },
+  "naruto-shippuden": {
+    "aniListId": 1735,
+    "tmdbId": 31910,
+    "malId": 1735
+  },
+  "one-piece": {
+    "aniListId": 21,
+    "tmdbId": 37854,
+    "malId": 21
+  },
+  "spy-x-family": {
+    "aniListId": 140960,
+    "tmdbId": 120089,
+    "malId": 50265
+  },
+  "to-be-hero-x-2025": {
+    "aniListId": 156092,
+    "tmdbId": 272059,
+    "malId": 53447
+  },
+  "ninja-hattori-kun-1981": {
+    "aniListId": 4936,
+    "tmdbId": 80885,
+    "malId": 4936
+  },
+  "karna-the-guardian-2026": {
+    "tmdbId": 217167
+  },
+  "eren-the-southpaw-2026": {
+    "aniListId": 158036,
+    "tmdbId": 305567,
+    "malId": 53732
+  },
+  "marriagetoxin-2026": {
+    "aniListId": 199547,
+    "tmdbId": 301944,
+    "malId": 62601
+  },
+  "liar-game-2026": {
+    "aniListId": 197754,
+    "tmdbId": 300126,
+    "malId": 62331
+  },
+  "an-observation-log-of-my-fianc-e-who-calls-herself-a-villainess-2026": {
+    "tmdbId": 288590
+  },
+  "my-hero-academia-vigilantes-2025": {
+    "aniListId": 185736,
+    "tmdbId": 280110,
+    "malId": 60593
+  },
+  "magic-maker-how-to-make-magic-in-another-world-2025": {
+    "aniListId": 179297,
+    "tmdbId": 258912,
+    "malId": 59265
+  },
+  "gachiakuta-2025": {
+    "aniListId": 178025,
+    "tmdbId": 256721,
+    "malId": 59062
+  },
+  "vinland-saga-2019": {
+    "aniListId": 101348,
+    "tmdbId": 88803,
+    "malId": 37521
+  },
+  "a-couple-of-cuckoos-2022": {
+    "aniListId": 132052,
+    "tmdbId": 122587,
+    "malId": 48675
+  },
+  "fire-force-2019": {
+    "aniListId": 105310,
+    "tmdbId": 88046,
+    "malId": 38671
+  },
+  "darling-in-the-franxx-2018": {
+    "aniListId": 99423,
+    "tmdbId": 76121,
+    "malId": 35849
+  },
+  "metallic-rouge-2024": {
+    "aniListId": 162985,
+    "tmdbId": 222787,
+    "malId": 54794
+  },
+  "sentenced-to-be-a-hero-2026": {
+    "aniListId": 167152,
+    "tmdbId": 249907,
+    "malId": 56009
+  },
+  "kaiju-no-8-2024": {
+    "aniListId": 153288,
+    "tmdbId": 207468,
+    "malId": 52588
+  },
+  "an-archdemon-s-dilemma-how-to-love-your-elf-bride-2024": {
+    "aniListId": 156023,
+    "tmdbId": 238848,
+    "malId": 53434
+  },
+  "mashle-magic-and-muscles-2023": {
+    "aniListId": 151801,
+    "tmdbId": 204832,
+    "malId": 52211
+  },
+  "dr-stone-2019": {
+    "aniListId": 105333,
+    "tmdbId": 86031,
+    "malId": 38691
+  },
+  "dr-stone-special-episode-ryusui-2022": {
+    "aniListId": 142876,
+    "malId": 50612
+  },
+  "my-wife-has-no-emotion-2024": {
+    "aniListId": 175450,
+    "tmdbId": 250596,
+    "malId": 58272
+  },
+  "quality-assurance-in-another-world-2024": {
+    "aniListId": 163077,
+    "tmdbId": 222925,
+    "malId": 54835
+  },
+  "the-daily-life-of-the-immortal-king-2020": {
+    "aniListId": 114121,
+    "tmdbId": 98123,
+    "malId": 41094
+  },
+  "the-strongest-magician-in-the-demon-lord-s-army-was-a-human-2024": {
+    "aniListId": 173584,
+    "tmdbId": 248951,
+    "malId": 57876
+  },
+  "alya-sometimes-hides-her-feelings-in-russian-2024": {
+    "aniListId": 162804,
+    "tmdbId": 235758,
+    "malId": 54744
+  },
+  "blue-exorcist-2011": {
+    "aniListId": 9919,
+    "tmdbId": 38464,
+    "malId": 9919
+  },
+  "no-longer-allowed-in-another-world-2024": {
+    "aniListId": 152137,
+    "tmdbId": 205743,
+    "malId": 52367
+  },
+  "makeine-too-many-losing-heroines--2024": {
+    "aniListId": 171457,
+    "tmdbId": 241535,
+    "malId": 57524
+  },
+  "shangri-la-frontier-2023": {
+    "aniListId": 151970,
+    "tmdbId": 205050,
+    "malId": 52347
+  },
+  "tying-the-knot-with-an-amagami-sister-2024": {
+    "aniListId": 164172,
+    "tmdbId": 234910,
+    "malId": 55071
+  },
+  "overflow-2020": {
+    "aniListId": 113417,
+    "tmdbId": 95897,
+    "malId": 40746
+  },
+  "nina-the-starry-bride-2024": {
+    "aniListId": 171038,
+    "tmdbId": 240641,
+    "malId": 57362
+  },
+  "dragon-ball-daima-2024": {
+    "aniListId": 170083,
+    "tmdbId": 236994,
+    "malId": 56894
+  },
+  "dead-mount-death-play-2023": {
+    "aniListId": 157198,
+    "tmdbId": 214540,
+    "malId": 53613
+  },
+  "tower-of-god-2020": {
+    "aniListId": 115230,
+    "tmdbId": 97860,
+    "malId": 40221
+  },
+  "i-m-in-love-with-the-villainess-2023": {
+    "aniListId": 158704,
+    "malId": 53833
+  },
+  "possibly-the-greatest-alchemist-of-all-time-2025": {
+    "aniListId": 177506,
+    "tmdbId": 261298,
+    "malId": 58822
+  },
+  "the-god-of-high-school-2020": {
+    "aniListId": 116006,
+    "tmdbId": 99778,
+    "malId": 41353
+  },
+  "my-tiny-senpai-2023": {
+    "aniListId": 155730,
+    "tmdbId": 217390,
+    "malId": 53379
+  },
+  "the-magical-girl-and-the-evil-lieutenant-used-to-be-archenemies-2024": {
+    "aniListId": 170938,
+    "tmdbId": 239764,
+    "malId": 57217
+  },
+  "let-this-grieving-soul-retire-2024": {
+    "aniListId": 175019,
+    "tmdbId": 258579,
+    "malId": 58172
+  },
+  "paradox-live-the-animation-2023": {
+    "aniListId": 150077,
+    "tmdbId": 203045,
+    "malId": 51956
+  },
+  "the-share-house-s-secret-rule-2025": {
+    "aniListId": 179333,
+    "tmdbId": 279120,
+    "malId": 60629
+  },
+  "taisho-era-contract-marriage-the-substitute-bride-and-a-soldier-s-fierce-love-2024": {
+    "aniListId": 180747,
+    "tmdbId": 271026,
+    "malId": 59698
+  },
+  "the-gorilla-god-s-go-to-girl-2025": {
+    "aniListId": 182060,
+    "tmdbId": 278816,
+    "malId": 59935
+  },
+  "hokkaido-gals-are-super-adorable--2024": {
+    "aniListId": 155963,
+    "tmdbId": 213181,
+    "malId": 53421
+  },
+  "the-great-cleric-2023": {
+    "aniListId": 155418,
+    "tmdbId": 220779,
+    "malId": 53263
+  },
+  "my-unique-skill-makes-me-op-even-at-level-1-2023": {
+    "aniListId": 148465,
+    "tmdbId": 201363,
+    "malId": 51764
+  },
+  "clevatess-2025": {
+    "aniListId": 178869,
+    "tmdbId": 258348,
+    "malId": 59205
+  },
+  "i-shall-survive-using-potions--2023": {
+    "aniListId": 161992,
+    "tmdbId": 221148,
+    "malId": 54616
+  },
+  "miss-kuroitsu-from-the-monster-development-department-2022": {
+    "aniListId": 136428,
+    "tmdbId": 128826,
+    "malId": 49385
+  },
+  "demon-lord-retry--2019": {
+    "aniListId": 104252,
+    "tmdbId": 88044,
+    "malId": 38297
+  },
+  "robotics-notes-2012": {
+    "aniListId": 13599,
+    "tmdbId": 46435,
+    "malId": 13599
+  },
+  "after-school-dice-club-2019": {
+    "aniListId": 104115,
+    "tmdbId": 91026,
+    "malId": 38276
+  },
+  "girls-frontline-2022": {
+    "aniListId": 128828,
+    "tmdbId": 117310,
+    "malId": 46604
+  },
+  "a-wild-last-boss-appeared--2025": {
+    "aniListId": 180523,
+    "tmdbId": 280042,
+    "malId": 59644
+  },
+  "tojima-wants-to-be-a-kamen-rider-2025": {
+    "aniListId": 187464,
+    "tmdbId": 285788,
+    "malId": 61159
+  },
+  "mechanical-marie-2025": {
+    "aniListId": 179992,
+    "tmdbId": 287278,
+    "malId": 59484
+  },
+  "with-you-our-love-will-make-it-through-2025": {
+    "aniListId": 186161,
+    "tmdbId": 282662,
+    "malId": 60765
+  },
+  "one-punch-man-2015": {
+    "aniListId": 21087,
+    "tmdbId": 63926,
+    "malId": 30276
+  },
+  "if-my-favorite-pop-idol-made-it-to-the-budokan-i-would-die-2020": {
+    "aniListId": 104391,
+    "tmdbId": 91024,
+    "malId": 37890
+  },
+  "dark-moon-the-blood-altar-2026": {
+    "aniListId": 181443,
+    "tmdbId": 271609,
+    "malId": 59853
+  },
+  "shin-chan-1992": {
+    "aniListId": 966,
+    "tmdbId": 30623,
+    "malId": 966
+  },
+  "dragon-ball-1986": {
+    "aniListId": 223,
+    "tmdbId": 12609,
+    "malId": 223
+  },
+  "pokemon": {
+    "aniListId": 138699,
+    "tmdbId": 132636,
+    "malId": 49730
+  },
+  "there-was-a-cute-girl-in-the-hero-s-party-so-i-tried-confessing-to-her-2026": {
+    "aniListId": 195515,
+    "tmdbId": 295366,
+    "malId": 61983
+  },
+  "re-zero-starting-life-in-another-world--2016": {
+    "aniListId": 21355,
+    "tmdbId": 65942,
+    "malId": 31240
+  },
+  "a-misanthrope-teaches-a-class-for-demi-humans-2026": {
+    "aniListId": 198374,
+    "tmdbId": 303434,
+    "malId": 62432
+  },
+  "perman-1967": {
+    "aniListId": 6303,
+    "tmdbId": 65739,
+    "malId": 6303
+  },
+  "detective-conan-1996": {
+    "aniListId": 235,
+    "tmdbId": 30983,
+    "malId": 235
+  },
+  "my-hero-academia-2016": {
+    "aniListId": 21459,
+    "tmdbId": 65930,
+    "malId": 31964
+  },
+  "agents-of-the-four-seasons-dance-of-spring-2026": {
+    "aniListId": 190143,
+    "tmdbId": 288659,
+    "malId": 61443
+  },
+  "daemons-of-the-shadow-realm-2026": {
+    "aniListId": 195600,
+    "tmdbId": 260463,
+    "malId": 62001
+  },
+  "easygoing-territory-defense-by-the-optimistic-lord-2026": {
+    "aniListId": 191205,
+    "tmdbId": 288589,
+    "malId": 61549
+  },
+  "you-and-i-are-polar-opposites-2026": {
+    "aniListId": 184951,
+    "tmdbId": 278043,
+    "malId": 60371
+  },
+  "zenshu-2025": {
+    "aniListId": 176273,
+    "tmdbId": 249882,
+    "malId": 58502
+  },
+  "tsukimichi-moonlit-fantasy--2021": {
+    "aniListId": 125206,
+    "tmdbId": 111819,
+    "malId": 43523
+  },
+  "a-gatherer-s-adventure-in-isekai-2025": {
+    "aniListId": 187663,
+    "tmdbId": 284442,
+    "malId": 61174
+  },
+  "radiant-2018": {
+    "aniListId": 101024,
+    "tmdbId": 82879,
+    "malId": 37202
+  },
+  "ranking-of-kings-2021": {
+    "aniListId": 113717,
+    "tmdbId": 112613,
+    "malId": 40834
+  },
+  "akebi-chan-100-man-bu-2022": {
+    "aniListId": 166053
+  },
+  "trapped-in-a-dating-sim-the-world-of-otome-games-is-tough-for-mobs-2022": {
+    "aniListId": 142074,
+    "tmdbId": 139512,
+    "malId": 50461
+  },
+  "the-weakest-tamer-began-a-journey-to-pick-up-trash-2024": {
+    "aniListId": 156891,
+    "tmdbId": 214310,
+    "malId": 53590
+  },
+  "assassination-classroom-2015": {
+    "aniListId": 20755,
+    "tmdbId": 62110,
+    "malId": 24833
+  },
+  "gods-games-we-play-2024": {
+    "aniListId": 144176,
+    "tmdbId": 156057,
+    "malId": 50869
+  },
+  "black-butler-2008": {
+    "aniListId": 4898,
+    "tmdbId": 50712,
+    "malId": 4898
+  },
+  "kiteretsu-encyclopedia-1988": {
+    "aniListId": 6509,
+    "malId": 6509
+  },
+  "wistoria-wand-and-sword-2024": {
+    "aniListId": 174576,
+    "tmdbId": 245842,
+    "malId": 58059
+  },
+  "bye-bye-earth-2024": {
+    "aniListId": 157371,
+    "tmdbId": 214587,
+    "malId": 53626
+  },
+  "scooped-up-by-an-s-rank-adventurer--2025": {
+    "aniListId": 179885,
+    "tmdbId": 284771,
+    "malId": 59424
+  },
+  "i-ll-become-a-villainess-who-goes-down-in-history-2024": {
+    "aniListId": 168139,
+    "tmdbId": 248817,
+    "malId": 56228
+  },
+  "the-apothecary-diaries-2023": {
+    "aniListId": 161645,
+    "tmdbId": 220542,
+    "malId": 54492
+  },
+  "jojo-s-bizarre-adventure-2012": {
+    "aniListId": 666,
+    "tmdbId": 45790,
+    "malId": 666
+  },
+  "secret-mission-undercover-agents-never-back-down--2023": {
+    "aniListId": 169728,
+    "tmdbId": 233643,
+    "malId": 56497
+  },
+  "adam-s-sweet-agony-2024": {
+    "aniListId": 170913,
+    "tmdbId": 241002,
+    "malId": 57470
+  },
+  "chihayafuru-2011": {
+    "aniListId": 10800,
+    "tmdbId": 45247,
+    "malId": 10800
+  },
+  "the-ancient-magus-bride-2017": {
+    "aniListId": 148584,
+    "malId": 51097
+  },
+  "march-comes-in-like-a-lion-2016": {
+    "aniListId": 21366,
+    "tmdbId": 65336,
+    "malId": 31646
+  },
+  "mob-psycho-100-2016": {
+    "aniListId": 21507,
+    "tmdbId": 67075,
+    "malId": 32182
+  },
+  "haikyu--2014": {
+    "aniListId": 20464,
+    "tmdbId": 60863,
+    "malId": 20583
+  },
+  "sweet-punishment-i-m-the-guard-s-personal-pet-2018": {
+    "aniListId": 101160,
+    "tmdbId": 78501,
+    "malId": 37320
+  },
+  "fullmetal-alchemist-brotherhood-2009": {
+    "aniListId": 5114,
+    "tmdbId": 31911,
+    "malId": 5114
+  },
+  "death-note-2006": {
+    "aniListId": 1535,
+    "tmdbId": 13916,
+    "malId": 1535
+  },
+  "rent-a-girlfriend-2020": {
+    "aniListId": 113813,
+    "tmdbId": 96316,
+    "malId": 40839
+  },
+  "joshiochi-2-kai-kara-onnanoko-ga-futtekita--2018": {
+    "tmdbId": 81044
+  },
+  "bungo-stray-dogs-2016": {
+    "aniListId": 21311,
+    "tmdbId": 65931,
+    "malId": 31478
+  },
+  "fighting-spirit-2000": {
+    "aniListId": 263,
+    "tmdbId": 42705,
+    "malId": 263
+  },
+  "urusei-yatsura-2022": {
+    "aniListId": 1293,
+    "tmdbId": 154524,
+    "malId": 1293
+  },
+  "my-dress-up-darling-2022": {
+    "aniListId": 132405,
+    "tmdbId": 123249,
+    "malId": 48736
+  },
+  "the-eminence-in-shadow-2022": {
+    "aniListId": 130298,
+    "tmdbId": 119495,
+    "malId": 48316
+  },
+  "doraemon-1973": {
+    "aniListId": 501,
+    "tmdbId": 57912,
+    "malId": 501
+  },
+  "doraemon-1979": {
+    "aniListId": 2471,
+    "tmdbId": 57911,
+    "malId": 2471
+  },
+  "obocchama-kun-1989": {
+    "aniListId": 20075,
+    "malId": 20075
+  }
+}

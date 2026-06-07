@@ -4839,7 +4839,7 @@ export const animes = [
     "type": "ANIME",
     "status": "COMPLETED",
     "poster": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/20075.jpg",
-    "banner": "https://image.tmdb.org/t/p/original/gUN71TW4sK9SZij4mHfHyyP81Rb.jpg",
+    "banner": null,
     "title": {
       "en": "Obocchama-kun",
       "te": "ఒబొచ్చమ-కున్"
@@ -4869,12 +4869,7 @@ export const animes = [
     "trendingScore": 0,
     "popularityScore": 0,
     "fileOrigin": "animes",
-    "ottPlatforms": [
-      {
-        "platform": "AMAZON_PRIME",
-        "url": "https://www.themoviedb.org/tv/201909/watch?locale=IN"
-      }
-    ]
+    "ottPlatforms": []
   },
   {
     "slug": "the-share-house-s-secret-rule-2025",
