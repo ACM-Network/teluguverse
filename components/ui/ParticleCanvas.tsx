@@ -5,6 +5,13 @@ export default function ParticleCanvas() {
   const canvasRef = useRef<HTMLCanvasElement>(null)
 
   useEffect(() => {
+    // Disable particle canvas on mobile devices and when reduced motion is preferred
+    const isMobile = window.innerWidth < 768
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+    if (isMobile || prefersReducedMotion) {
+      return
+    }
+
     const canvas = canvasRef.current
     if (!canvas) return
     const ctx = canvas.getContext('2d')
@@ -41,8 +48,19 @@ export default function ParticleCanvas() {
       animId = requestAnimationFrame(draw)
     }
     draw()
-    return () => { cancelAnimationFrame(animId); window.removeEventListener('resize', resize) }
+    return () => { 
+      if (animId) {
+        cancelAnimationFrame(animId)
+      }
+      window.removeEventListener('resize', resize) 
+    }
   }, [])
 
-  return <canvas ref={canvasRef} id="particle-canvas" className="fixed inset-0 pointer-events-none z-0 opacity-40" />
+  return (
+    <canvas 
+      ref={canvasRef} 
+      id="particle-canvas" 
+      className="fixed inset-0 pointer-events-none z-0 opacity-40 hidden md:block" 
+    />
+  )
 }

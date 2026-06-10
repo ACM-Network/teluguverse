@@ -3,7 +3,7 @@
 import { useState, useEffect, useRef, useCallback } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import Link from 'next/link'
-import Image from 'next/image'
+import Image, { getImageProps } from 'next/image'
 import { useStore } from '@/store/useStore'
 import { PLACEHOLDER_BACKDROP, PLACEHOLDER_POSTER } from '@/lib/utils'
 import OttBadge from '@/components/ui/OttBadge'
@@ -204,8 +204,27 @@ export default function HeroSection({ slides = [] }: HeroSectionProps) {
     exit: { opacity: 0, y: -10, transition: { duration: 0.22 } },
   }
 
-  const deskImgUrl = getHeroBackdropUrl(slide.visual.poster, isMobile)
-  const mobImgUrl = getHeroBackdropUrl(slide.rawPoster || slide.visual.poster, isMobile)
+  const deskImgUrl = getHeroBackdropUrl(slide.visual.poster, false)
+  const mobImgUrl = getHeroBackdropUrl(slide.rawPoster || slide.visual.poster, true)
+
+  const commonImgProps = {
+    alt: "",
+    fill: true,
+    priority: current === 0,
+    sizes: "100vw",
+  }
+
+  const { props: { srcSet: desktopSrcSet } } = getImageProps({
+    ...commonImgProps,
+    quality: 80,
+    src: failedBgs[slide.id + '-desk'] ? PLACEHOLDER_BACKDROP : deskImgUrl,
+  })
+
+  const { props: { srcSet: mobileSrcSet, ...restImgProps } } = getImageProps({
+    ...commonImgProps,
+    quality: 65,
+    src: failedBgs[slide.id + '-mob'] ? PLACEHOLDER_BACKDROP : mobImgUrl,
+  })
 
   return (
     <section
@@ -217,54 +236,38 @@ export default function HeroSection({ slides = [] }: HeroSectionProps) {
       onTouchMove={handleTouchMove}
       onTouchEnd={handleTouchEnd}
     >
-      {/* Mobile background */}
+      {/* Background (Responsive Art-Directed) */}
       <AnimatePresence mode="sync" custom={direction}>
         <motion.div
-          key={`bg-mobile-${slide.id}`}
+          key={`bg-${slide.id}`}
           custom={direction}
           variants={bgVariants}
           initial="enter"
           animate="center"
           exit="exit"
-          className="absolute inset-0 md:hidden z-0"
-          style={{ willChange: 'opacity' }}
+          className="absolute inset-0 z-0"
+          style={{ willChange: isMobile ? 'opacity' : 'transform, opacity' }}
         >
-          <Image
-            src={failedBgs[slide.id + '-mob'] ? PLACEHOLDER_BACKDROP : mobImgUrl}
-            alt=""
-            fill
-            priority={current === 0}
-            sizes="100vw"
-            quality={65}
-            className="object-cover"
-            onError={() => setFailedBgs(prev => ({ ...prev, [slide.id + '-mob']: true }))}
-          />
-        </motion.div>
-      </AnimatePresence>
-
-      {/* Desktop background */}
-      <AnimatePresence mode="sync" custom={direction}>
-        <motion.div
-          key={`bg-desktop-${slide.id}`}
-          custom={direction}
-          variants={bgVariants}
-          initial="enter"
-          animate="center"
-          exit="exit"
-          className="absolute inset-0 hidden md:block z-0"
-          style={{ willChange: 'transform, opacity' }}
-        >
-          <Image
-            src={failedBgs[slide.id + '-desk'] ? PLACEHOLDER_BACKDROP : deskImgUrl}
-            alt=""
-            fill
-            priority={current === 0}
-            sizes="100vw"
-            quality={80}
-            className="object-cover"
-            style={{ objectPosition: slide.visual.bgPosition }}
-            onError={() => setFailedBgs(prev => ({ ...prev, [slide.id + '-desk']: true }))}
-          />
+          <picture>
+            <source media="(min-width: 768px)" srcSet={desktopSrcSet} />
+            <source media="(max-width: 767px)" srcSet={mobileSrcSet} />
+            <img
+              {...restImgProps}
+              alt=""
+              className="object-cover"
+              style={{
+                ...restImgProps.style,
+                objectPosition: slide.visual.bgPosition,
+              }}
+              onError={() => {
+                setFailedBgs(prev => ({
+                  ...prev,
+                  [slide.id + '-desk']: true,
+                  [slide.id + '-mob']: true,
+                }))
+              }}
+            />
+          </picture>
         </motion.div>
       </AnimatePresence>
 
